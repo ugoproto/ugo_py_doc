@@ -1,0 +1,40 @@
+site_name: ugo_py_doc
+#site_url: 
+repo_url: https://github.com/ugoproto/ugo_py_doc
+site_description: Python documentation
+site_author: Ugo Spark
+site_favicon: faviconfire.ico
+copyright: null
+#google_analytics: ['UA-36723568-3', 'mkdocs.org']
+remote_branch: master
+remote_name: ugo_py_doc
+pages:
+    - Home: 'index.md'
+    - Apprenez à programmer en Python: 'manuals/Apprenez a programmer en Python.md'
+    - Automate the Boring Stuff with Python: 'manuals/Automate the Boring Stuff with Python.md'
+    - Codecademy Python: 'manuals/Codecademy Python.md'
+    - DataCamp Importing Data into Python 3: 'manuals/DataCamp Importing Data into Python 3.md'
+    - DataCamp Python 3: 'manuals/DataCamp Python 3.md'
+    - Decorators: 'manuals/Decorators.md'
+    - Introduction to Python: 'manuals/Introduction to Python.md'
+    - Learn Python the Hard Way: 'manuals/Learn Python the Hard Way.md'
+    - Managing Your Biological Data with Python: 'manuals/Managing Your Biological Data with Python.md'
+    - Python Code Snippets: 'manuals/Python Code Snippets.md'
+    - Python for Education: 'manuals/Python for Education.md'
+    - Scientific Python (Scipy Stack): 'manuals/Scientific Python (Scipy Stack).md'
+    
+theme: readthedocs
+# Other themes:
+    # readthedocs
+    # mkdocs
+
+markdown_extensions:
+  - wikilinks # internal links with [[bracketed]]
+  - smarty # additional characters
+#  - subscript
+#  - superscript
+  - nl2br # new line to break
+  - toc:
+       title: Content
+       permalink: True
+       baselevel: 3

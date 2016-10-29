@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Decorators - ugo_py_doc</title>
+  
+
+  <link rel="shortcut icon" href="../../faviconfire.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Decorators";
+    var mkdocs_page_input_path = "manuals\Decorators.md";
+    var mkdocs_page_url = "/manuals/Decorators/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Python%203/">DataCamp Python 3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Decorators</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#the-goal-of-decorators">The Goal of Decorators</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#first-thing-first">First thing first</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#invoking-a-decorator">Invoking a Decorator</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#using-decorators">Using Decorators</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#cases">Cases</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#more-cases-and-examples">More Cases and Examples</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20for%20Education/">Python for Education</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Scientific%20Python%20%28Scipy%20Stack%29/">Scientific Python (Scipy Stack)</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Decorators</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ugoproto/ugo_py_doc" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="python-decorators">Python Decorators<a class="headerlink" href="#python-decorators" title="Permanent link">&para;</a></h3>
+<p>TeamTreeHouse.</p>
+<p><strong>Table of Content</strong></p>
+<div class="toc"><span class="toctitle">Content</span><ul>
+<li><a href="#python-decorators">Python Decorators</a><ul>
+<li><a href="#the-goal-of-decorators">The Goal of Decorators</a></li>
+<li><a href="#first-thing-first">First thing first</a></li>
+<li><a href="#invoking-a-decorator">Invoking a Decorator</a></li>
+<li><a href="#using-decorators">Using Decorators</a></li>
+<li><a href="#cases">Cases</a></li>
+<li><a href="#more-cases-and-examples">More Cases and Examples</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h4 id="the-goal-of-decorators">The Goal of Decorators<a class="headerlink" href="#the-goal-of-decorators" title="Permanent link">&para;</a></h4>
+<p><strong>Decorators vs the Decorator Pattern</strong></p>
+<p>Python decorators are best equated to macros.</p>
+<p><strong>Definition</strong></p>
+<ul>
+<li>They modify functions, and in the case of class decorators, entire classes. They provide a simpler alternative to metaclasses.</li>
+<li>A decorator itself is a callable that returns a callable.</li>
+<li>A decorator is a function that takes a function object as its argument, and returns a function object, and in the process, makes necessary modifications to the input function, possibly enhancing it.</li>
+<li>Useful for:<ul>
+<li>bookkeeping,</li>
+<li>repeating insularity functionalities,</li>
+<li>adding functionality of the function,</li>
+<li>modifying the behavior of the function;</li>
+<li>in Django, Flask or other web frameworks.</li>
+</ul>
+</li>
+</ul>
+<h4 id="first-thing-first">First thing first<a class="headerlink" href="#first-thing-first" title="Permanent link">&para;</a></h4>
+<p><strong>First dive</strong></p>
+<p>Decorators are easy to add or remove. They are nested functions; inserted in another function.</p>
+<p>Below, <code>inner()</code> can live inside <code>outer()</code>. When you call <code>outer()</code>, you can also call <code>inner()</code>.</p>
+<pre><code class="python">from functools import wraps
+
+def outer():
+    number = 5
+
+    def inner():
+        print(number)
+
+    inner()
+
+outer() # print 5
+inner() # cannot be called
+</code></pre>
+
+<p>Functions are first-class objects that can be passed around:</p>
+<pre><code class="python">def apply(func, x, y):
+    return func(x, y)
+
+def add(x, y):
+    return x + y
+
+def sub(x, y):
+    return x - y
+
+print(apply(add, 5,5)) # call apply(), that calls add()
+print(apply(sub, 2,8)) # call apply(), that calls sub()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">10
+-6
+</code></pre>
+
+<p>&lsquo;Predefine scope&rsquo;: define the environment for the function. <code>inner()</code> has only access to <code>outer()</code> and <code>number = 5</code>.</p>
+<pre><code class="python">def close():
+    x = 5
+
+    def inner():
+        print(x)
+
+    return inner
+
+closure = close() # change the function name
+closure() # call the 'new' function
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">5
+</code></pre>
+
+<pre><code class="python">def add_to_five(num):
+
+    def inner():
+        print(num + 5)
+
+    return inner
+
+fifteen = add_to_five(10)
+fifteen()
+</code></pre>
+
+<p>Output: </p>
+<pre><code class="text">15
+</code></pre>
+
+<p><strong>Take two !</strong></p>
+<p>A decorator is a function that accept function as an argument and returns a function.</p>
+<p><code>f()</code> is an object, and it&rsquo;s not different from classes (<code>MyClass</code>) or variables (<code>a</code>).</p>
+<pre><code class="python">&gt;&gt;&gt; a = 10
+&gt;&gt;&gt; def f():
+...     pass
+...
+&gt;&gt;&gt; class MyClass():
+...     pass
+...
+&gt;&gt;&gt; print dir()
+['MyClass', '__builtins__', '__doc__', '__name__', '__package__', 'a', 'f']
+</code></pre>
+
+<p>Assign a function to a variable:</p>
+<pre><code class="python">def func():
+   print &quot;func()&quot;
+
+funcObj = func
+funcObj() # inheritance from func()
+</code></pre>
+
+<p>Functions can be passed around in the same way other types of object such as strings, integers, lists, etc. </p>
+<p>A function can accept a function as an argument and return a new function object:</p>
+<pre><code class="python">def myFunction(in_function):
+   def out_function():
+      pass
+   return out_function
+</code></pre>
+
+<p>The <code>myFunction</code> is indeed a decorator because, by definition, a decorator is a function that takes a function object as its argument, and returns a function object (!!!).</p>
+<p>Elaborate:</p>
+<pre><code class="python">def myFunction(in_function):
+   def out_function():
+      print &quot;Entry: &quot;, in_function.__name__
+      in_function()
+      print &quot;Exit: &quot;, in_function.__name__
+   return out_function
+</code></pre>
+
+<h4 id="invoking-a-decorator">Invoking a Decorator<a class="headerlink" href="#invoking-a-decorator" title="Permanent link">&para;</a></h4>
+<p>Put a simple_function into the decorator (<code>myFunction</code>) as an argument, and get a <code>enhanced_function</code> as a return value from the decorator.</p>
+<pre><code class="python">def simple_function():
+   pass
+
+enhanced_function = myFunction(simple_function)
+</code></pre>
+
+<p>Apply the decorator syntax to the code above:</p>
+<pre><code class="python">@myFunction
+def simple_function():
+   pass
+</code></pre>
+
+<p><code>@myFunction</code> is a decorator line or an annotation line. The <code>@</code> indicates the application of the decorator. A decorator is the function itself which takes a function, and returns a new function: <code>myFunction</code>.</p>
+<p>When the compiler passes over this code, <code>simple_function()</code> is compiled. The resulting function object is passed to the <code>myFunction</code> code. It produces a function-like object that is substituted for the original <code>simple_function()</code>.</p>
+<p>The static method:</p>
+<pre><code class="python">&gt;&gt;&gt; class A:
+...    def s(x):
+...       print(x)
+...    s = staticmethod(s)
+... 
+&gt;&gt;&gt; A.s(10)
+10
+</code></pre>
+
+<p>The equivalent code using a decorator looks like this:</p>
+<pre><code class="python">&gt;&gt;&gt; class A:
+...    @staticmethod
+...    def s(x):
+...       print(x)
+...
+&gt;&gt;&gt; A.s(10)
+10
+</code></pre>
+
+<p>For example, suppose you&rsquo;d like to do something at the entry and exit points of a function (perform some kind of security, tracing, locking, etc.):</p>
+<pre><code class="python">@entryExit
+def func1():
+    print &quot;inside func1()&quot;
+
+@entryExit
+def func2():
+    print &quot;inside func2()&quot;
+</code></pre>
+
+<p>Another example:</p>
+<pre><code class="python">&gt;&gt;&gt; def wrapper(f):
+...    return f
+...
+&gt;&gt;&gt; def foo():
+...    pass
+...
+</code></pre>
+
+<p>Then, the wrapper can be used for rebinding <code>foo()</code> like this:</p>
+<pre><code class="python">&gt;&gt;&gt; foo = wrapper(foo)
+</code></pre>
+
+<p>So, it&rsquo;s a decorator:</p>
+<pre><code class="python">&gt;&gt;&gt; @wrapper
+... def foo():
+...    pass
+</code></pre>
+
+<p>With a decorator defined as below:</p>
+<pre><code class="python">def decorator(f):
+   #process function
+   return f
+</code></pre>
+
+<p>Maps the following:</p>
+<pre><code class="python">@decorator
+def f(arg):
+   return arg*arg
+
+f(123)  # output 15129
+</code></pre>
+
+<p>Into:</p>
+<pre><code class="python">def f(arg):
+   print arg*arg
+f = decorator(f)
+</code></pre>
+
+<p>Decoration maps the following line:</p>
+<pre><code class="python">f(123)
+</code></pre>
+
+<p>Into:</p>
+<pre><code class="python">decorator(f)(123)
+</code></pre>
+
+<p>A function decorator is applied to a function definition by placing it on the line before that function definition begins:</p>
+<pre><code class="python">@myDecorator
+def aFunction():
+    print &quot;inside aFunction&quot;
+</code></pre>
+
+<p>The compiler passes over the code. The <code>aFunction()</code> is compiled. The resulting function object is passed to the <code>myDecorator</code> code. It produces a function-like object that is then substituted for the original <code>aFunction()</code>.</p>
+<h4 id="using-decorators">Using Decorators<a class="headerlink" href="#using-decorators" title="Permanent link">&para;</a></h4>
+<p>What should the decorator do? Anything!</p>
+<p>Decorators allow you to modify code in functions or classes.</p>
+<p>The only constraint upon the object returned by the decorator is that it can be used as a function. Any classes we use as decorators must implement <code>__call__</code>.</p>
+<p>Expect the original function code to be used at some point:</p>
+<pre><code class="python">class myDecorator(object):
+
+    def __init__(self, f):
+        print &quot;inside myDecorator.__init__()&quot;
+        f() # Prove that function definition has completed
+
+    def __call__(self):
+        print &quot;inside myDecorator.__call__()&quot;
+
+@myDecorator
+def aFunction():
+    print &quot;inside aFunction()&quot;
+
+print &quot;Finished decorating aFunction()&quot;
+
+aFunction()
+</code></pre>
+
+<p>Run this code:</p>
+<pre><code class="python">inside myDecorator.__init__()
+inside aFunction()
+Finished decorating aFunction()
+inside myDecorator.__call__()
+</code></pre>
+
+<p>The constructor for <code>myDecorator</code> is executed at the point of decoration of the function.</p>
+<p>Call <code>f()</code> inside <code>__init__()</code>. The creation of <code>f()</code> is complete before the decorator is called.</p>
+<p>The decorator constructor receives the function object being decorated. </p>
+<p>Capture the function object in the constructor and later use it in the <code>__call__()</code> method.</p>
+<p>When <code>aFunction()</code> is called after it has been decorated, the <code>myDecorator.__call__()</code> method is called instead of the original code. The act of decoration replaces the original function object.</p>
+<p>Before decorators were added:</p>
+<pre><code class="python">def foo():
+    pass
+foo = staticmethod(foo)
+</code></pre>
+
+<p>With the addition of the <code>@</code> decoration operator:</p>
+<pre><code class="python">@staticmethod
+def foo():
+    pass
+</code></pre>
+
+<p>This syntax brings the idea of &ldquo;applying code to other code&rdquo; (i.e.: macros).</p>
+<p><strong>Slightly More Useful</strong></p>
+<p>Use the code in the decorated functions:</p>
+<pre><code class="python">class entryExit(object):
+
+    def __init__(self, f):
+        self.f = f
+
+    def __call__(self):
+        print &quot;Entering&quot;, self.f.__name__
+        self.f()
+        print &quot;Exited&quot;, self.f.__name__
+
+@entryExit
+def func1():
+    print &quot;inside func1()&quot;
+
+@entryExit
+def func2():
+    print &quot;inside func2()&quot;
+
+func1()
+func2()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">Entering func1
+inside func1()
+Exited func1
+Entering func2
+inside func2()
+Exited func2
+</code></pre>
+
+<p>The decorated functions now have the &lsquo;Entering&rsquo; and &lsquo;Exited&rsquo; trace statements around the call.</p>
+<p>The constructor stores the argument, which is the function object. In the call, use the <code>__name__</code> attribute of the function to display that function&rsquo;s name. </p>
+<p>Then call the function itself.</p>
+<p><strong>Using functions as decorators</strong></p>
+<p>Replace the original function with an object of a class that has a <code>__call__()</code> method. But a function object is also callable. From the previous example, use a function instead of a class:</p>
+<pre><code class="python">def entryExit(f):
+    def new_f():
+        print &quot;Entering&quot;, f.__name__
+        f()
+        print &quot;Exited&quot;, f.__name__
+    return new_f
+
+@entryExit
+def func1():
+    print &quot;inside func1()&quot;
+
+@entryExit
+def func2():
+    print &quot;inside func2()&quot;
+
+func1()
+func2()
+print func1.__name__
+</code></pre>
+
+<p><code>new_f()</code> is defined within the body of <code>entryExit()</code>. It is created and returned when <code>entryExit()</code> is called.  </p>
+<p><code>new_f()</code> is a closure; it captures the actual value of <code>f</code>.</p>
+<p>Once <code>new_f()</code> has been defined, it is returned from <code>entryExit()</code>. The decorator mechanism can assign the result as the decorated function.</p>
+<p>The output of <code>print func1.__name__</code> is <code>new_f</code>, because the <code>new_f</code> function has been substituted for the original function during decoration. If this is a problem, change the name of the decorator function before you return it:</p>
+<pre><code class="python">def entryExit(f):
+    def new_f():
+        print &quot;Entering&quot;, f.__name__
+        f()
+        print &quot;Exited&quot;, f.__name__
+    new_f.__name__ = f.__name__
+    return new_f
+</code></pre>
+
+<h4 id="cases">Cases<a class="headerlink" href="#cases" title="Permanent link">&para;</a></h4>
+<p><strong>1 - Adding <code>$</code> to the return value from <code>price()</code> function</strong></p>
+<pre><code class="python">def dollar(fn):
+    def new(*args):
+        return '$' + str(fn(*args))
+    return new
+
+@dollar
+def price(amount, tax_rate):
+    return amount + amount*tax_rate
+
+print price(100,0.1)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">$110
+</code></pre>
+
+<p>The dollar decorator function takes the <code>price()</code> function, and returns enhanced the output from the original <code>price()</code> after modifying the inner working. Note that the decorator enables us to do it without making any changes on the <code>price()</code> function itself.</p>
+<p>A decorator works as a wrapper, modifying the behavior of the code before and after a target function execution, without the need to modify the function itself, enhancing the original functionality.</p>
+<p>With the pound or euro as well:</p>
+<pre><code class="python">def pound(fn):
+    def new(*args):
+        return (u&quot;\u00A3&quot;).encode('utf-8') + str(fn(*args))
+        return '$' + str(fn(*args))
+    return new
+
+@pound
+def price(amount, tax_rate):
+    return amount + amount*tax_rate
+
+print price(100,0.1)
+</code></pre>
+
+<p><strong>2 - How many times a function called?</strong></p>
+<pre><code class="python">def count(f):
+    def inner(*args, **kargs):
+        inner.counter += 1
+        return f(*args, **kargs)
+    inner.counter = 0
+    return inner
+
+@count
+def my_fnc():
+    pass
+
+if __name__ == '__main__':
+    my_fnc()
+    my_fnc()
+    my_fnc()
+
+    print 'my_fnc.counter=',my_fnc.counter
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">my_fnc.counter= 3
+</code></pre>
+
+<p><strong>3 - Timer</strong></p>
+<pre><code class="python">import time
+def timer(f):
+    def inner(*args, **kargs):
+        t = time.time()
+        ret = f(*args, **kargs)
+        print 'timer = %s' %(time.time()-t) 
+        return ret
+    return inner
+
+@timer
+def my_fnc():
+    pass
+
+if __name__ == '__main__':
+    my_fnc()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">timer = 5.96046447754e-06
+</code></pre>
+
+<h4 id="more-cases-and-examples">More Cases and Examples<a class="headerlink" href="#more-cases-and-examples" title="Permanent link">&para;</a></h4>
+<p><a href="http://www.learnpython.org/en/Decorators">learnpython.org (tutorial, snippets)</a></p>
+<p><strong>Collected examples</strong></p>
+<pre><code class="python">def logme(func):
+    import logging
+    logging.basicConfig(level = logging.DEBUG)
+
+    def inner():
+        logging.debug(&quot;Called {}&quot;.format(func.__name__))
+
+        return func()
+
+    return inner
+</code></pre>
+
+<pre><code class="python">def logme(func):
+    import logging
+    logging.basicConfig(level = logging.DEBUG)
+
+    def inner(*args, **kwargs): # * for tuple, ** for dict.
+        logging.debug(&quot;Called {} with args {} and kwargs {}&quot;.format(
+            func.__name__, args, kwargs)) # to print the tuple and dict.
+
+        return func(*args, **kwargs) # to use the tuple and dict.
+
+    return inner
+</code></pre>
+
+<pre><code class="python">def logme(func):
+    import logging
+    logging.basicConfig(level = logging.DEBUG)
+
+    def inner(*args, **kwargs): # * for tuple, ** for dict.
+        logging.debug(&quot;Called {} with args {} and kwargs {}&quot;.format(
+            func.__name__, args, kwargs)) # to print the tuple and dict.
+
+        return func(*args, **kwargs) # to use the tuple and dict.
+
+    inner.__doc__ = func.__doc__
+    inner.__name__ = func.__name__
+
+    return inner
+</code></pre>
+
+<pre><code class="python">def logme(func):
+    import logging
+    logging.basicConfig(level = logging.DEBUG)
+
+    @wraps(func) # decorator
+    def inner(*args, **kwargs): # * for tuple, ** for dict.
+        logging.debug(&quot;Called {} with args {} and kwargs {}&quot;.format(
+            func.__name__, args, kwargs)) # to print the tuple and dict.
+
+        return func(*args, **kwargs) # to use the tuple and dict.
+
+    # replace all this
+    #inner.__doc__ = func.__doc__
+    #inner.__name__ = func.__name__
+    # with  from functools import wraps  at the top
+    # functools packages
+    # wraps is a decorator; see above
+
+    return inner
+</code></pre>
+
+<pre><code class="python">@logme
+def sub(x, y):
+    &quot;&quot;&quot;Returns the difference between two numbers&quot;&quot;&quot;
+    return x - y
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Introduction%20to%20Python/" class="btn btn-neutral float-right" title="Introduction to Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../DataCamp%20Python%203/" class="btn btn-neutral" title="DataCamp Python 3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ugoproto/ugo_py_doc" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../DataCamp%20Python%203/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Introduction%20to%20Python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
