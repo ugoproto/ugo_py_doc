@@ -29,6 +29,11 @@ theme: readthedocs
     # readthedocs
     # mkdocs
 
+# Build PDF & ePub
+formats:
+    - epub
+    - pdf    
+    
 # Math equations: JS in the docs, extra JS (see below) new extension (see below)
 # Required to load the MathJax javascript for the mdx_math.py
 # https://github.com/mkdocs/mkdocs/issues/253
@@ -37,8 +42,11 @@ extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX
 
 # Python
 python:
-   version: 2 # for unicode
-   setup_py_install: true
+    version: 3 # for unicode
+    setup_py_install: true
+    pip_install: true # virtualenv
+#    extra_requirements:
+#        mdx_math
 
 markdown_extensions:
     - mdx_math:
