@@ -32,7 +32,6 @@ theme: readthedocs
 # Build PDF & ePub
 formats: 
     - pdf
-    - epub
     
 # Math equations:
     # extra JS (see below)
