@@ -59,4 +59,4 @@ class MathExtension(markdown.extensions.Extension):
             md.inlinePatterns.add('math-%d' % i, pattern, '<escape')
 
 def makeExtension(*args, **kwargs):
-return MathExtension(*args, **kwargs)
+    return MathExtension(*args, **kwargs)
