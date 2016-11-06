@@ -30,8 +30,8 @@ theme: readthedocs
     # mkdocs
 
 # Build PDF & ePub
-formats: 
-    - pdf
+#formats: 
+#    - pdf
     
 # Math equations:
     # extra JS (see below)
