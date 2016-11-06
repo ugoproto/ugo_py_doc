@@ -45,8 +45,8 @@ python:
     version: 3 # for unicode
     setup_py_install: true
     pip_install: true # virtualenv
-#    extra_requirements:
-#        mdx_math
+    extra_requirements:
+        python-markdown-math
 
 markdown_extensions:
     - mdx_math:
