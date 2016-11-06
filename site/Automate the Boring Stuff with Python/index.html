@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Automate the Boring Stuff with Python - ugo_py_doc</title>
+  
+
+  <link rel="shortcut icon" href="../faviconfire.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Automate the Boring Stuff with Python";
+    var mkdocs_page_input_path = "Automate the Boring Stuff with Python.md";
+    var mkdocs_page_url = "/Automate the Boring Stuff with Python/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="../mathjaxhelper.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Automate the Boring Stuff with Python</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#chapter-2-flow-control">Chapter 2, Flow Control</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-3-functions">Chapter 3, Functions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-4-lists-and-tuples">Chapter 4, Lists (and Tuples)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-5-dictionaries-and-structuring-data">Chapter 5, Dictionaries and Structuring Data</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-6-manipulating-strings">Chapter 6, Manipulating Strings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-7-pattern-matching-and-regular-expressions">Chapter 7, Pattern Matching and Regular Expressions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-8-reading-and-writing-files">Chapter 8, Reading and Writing Files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-9-organizing-files">Chapter 9, Organizing Files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-10-debugging">Chapter 10, Debugging</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-11-web-scraping">Chapter 11, Web Scraping</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-12-excel-spreadsheets">Chapter 12, Excel Spreadsheets</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-13-pdf-and-word-documents">Chapter 13, PDF and Word Documents</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-14-csv-files-and-json-data">Chapter 14, CSV Files and JSON Data</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-15-time-scheduling-tasks-and-launching-programs">Chapter 15, Time, Scheduling Tasks, and Launching Programs</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-16-sending-email-and-text-messages">Chapter 16, Sending Email and Text Messages</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-17-manipulating-images">Chapter 17, Manipulating Images</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation">Chapter 18, Controlling the Keyboard and Mouse with GUI Automation</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#appendix-a">Appendix A</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#appendix-b">Appendix B</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#appendix-c">Appendix C</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#additional-content">Additional Content</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Decorators/">Decorators</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20for%20Education/">Python for Education</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Scientific%20Python%20%28Scipy%20Stack%29/">Scientific Python (Scipy Stack)</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Automate the Boring Stuff with Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ugoproto/ugo_py_doc" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="automate-the-boring-stuff-with-python">Automate the Boring Stuff with Python<a class="headerlink" href="#automate-the-boring-stuff-with-python" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Notes. Python 3. From No Starch Press, 2015. Creative Commons. More at:</p>
+<ul>
+<li>Online at <a href="https://automatetheboringstuff.com/">automatetheboringstuff.com</a></li>
+<li>More at <a href="http://inventwithpython.com/hacking/chapters/">Invent with Python.com</a><ul>
+<li><a href="http://inventwithpython.com/index.html">Books</a>:<ul>
+<li>Develop video games!</li>
+<li>Make games with graphics!</li>
+<li>Encrypt messages and hack ciphers!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<div class="toc"><span class="toctitle">Content</span><ul>
+<li><a href="#automate-the-boring-stuff-with-python">Automate the Boring Stuff with Python</a><ul>
+<li><a href="#chapter-2-flow-control">Chapter 2, Flow Control</a></li>
+<li><a href="#chapter-3-functions">Chapter 3, Functions</a></li>
+<li><a href="#chapter-4-lists-and-tuples">Chapter 4, Lists (and Tuples)</a></li>
+<li><a href="#chapter-5-dictionaries-and-structuring-data">Chapter 5, Dictionaries and Structuring Data</a></li>
+<li><a href="#chapter-6-manipulating-strings">Chapter 6, Manipulating Strings</a></li>
+<li><a href="#chapter-7-pattern-matching-and-regular-expressions">Chapter 7, Pattern Matching and Regular Expressions</a></li>
+<li><a href="#chapter-8-reading-and-writing-files">Chapter 8, Reading and Writing Files</a></li>
+<li><a href="#chapter-9-organizing-files">Chapter 9, Organizing Files</a></li>
+<li><a href="#chapter-10-debugging">Chapter 10, Debugging</a></li>
+<li><a href="#chapter-11-web-scraping">Chapter 11, Web Scraping</a></li>
+<li><a href="#chapter-12-excel-spreadsheets">Chapter 12, Excel Spreadsheets</a></li>
+<li><a href="#chapter-13-pdf-and-word-documents">Chapter 13, PDF and Word Documents</a></li>
+<li><a href="#chapter-14-csv-files-and-json-data">Chapter 14, CSV Files and JSON Data</a></li>
+<li><a href="#chapter-15-time-scheduling-tasks-and-launching-programs">Chapter 15, Time, Scheduling Tasks, and Launching Programs</a></li>
+<li><a href="#chapter-16-sending-email-and-text-messages">Chapter 16, Sending Email and Text Messages</a></li>
+<li><a href="#chapter-17-manipulating-images">Chapter 17, Manipulating Images</a></li>
+<li><a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation">Chapter 18, Controlling the Keyboard and Mouse with GUI Automation</a></li>
+<li><a href="#appendix-a">Appendix A</a></li>
+<li><a href="#appendix-b">Appendix B</a></li>
+<li><a href="#appendix-c">Appendix C</a></li>
+<li><a href="#additional-content">Additional Content</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h4 id="chapter-2-flow-control">Chapter 2, Flow Control<a class="headerlink" href="#chapter-2-flow-control" title="Permanent link">&para;</a></h4>
+<p><sub>boolean, comparison, operator, flow control, condition, conditional, loop</sub></p>
+<ul>
+<li><code>True</code>, <code>False</code>.</li>
+<li><code>and</code>, <code>or</code>, <code>not</code>.</li>
+<li><code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, etc.</li>
+<li><code>if</code>, <code>else</code>, <code>elif</code></li>
+<li>Loops: <code>while</code>, <code>for</code> with <code>in</code>, <code>range</code>.</li>
+<li><code>break</code>, <code>continue</code>.</li>
+<li><code>import random, sys, os, math</code>.</li>
+<li><code>random.randint</code>.</li>
+<li><code>from random import *</code>.</li>
+<li><code>sys.exit()</code>.</li>
+</ul>
+<h4 id="chapter-3-functions">Chapter 3, Functions<a class="headerlink" href="#chapter-3-functions" title="Permanent link">&para;</a></h4>
+<p><sub>global, local, variable, scope</sub></p>
+<p>Exception handling with <code>try:</code> and <code>except</code>.</p>
+<h4 id="chapter-4-lists-and-tuples">Chapter 4, Lists (and Tuples)<a class="headerlink" href="#chapter-4-lists-and-tuples" title="Permanent link">&para;</a></h4>
+<p><sub>data type, index, sublist, subset, slice,  change, concatenate, concatenation, tuple, convert, tuple to list</sub></p>
+<ul>
+<li><code>len()</code> function; length.</li>
+<li><code>in</code> and <code>not in</code> operators.</li>
+<li><code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code> augmented assignments.</li>
+<li><code>index()</code> method; extract the position of an element.</li>
+<li><code>append()</code> method.</li>
+<li><code>insert()</code> method.</li>
+<li><code>remove()</code> method.</li>
+<li><code>sort()</code> method.</li>
+<li><code>copy</code> module and <code>copy()</code> method.</li>
+<li><code>deepcopy()</code> method; for inner list or a list of lists (ensure the key exists).</li>
+</ul>
+<h4 id="chapter-5-dictionaries-and-structuring-data">Chapter 5, Dictionaries and Structuring Data<a class="headerlink" href="#chapter-5-dictionaries-and-structuring-data" title="Permanent link">&para;</a></h4>
+<p><sub>loop</sub></p>
+<p>Dictionaries are not indexed and ordered like lists.</p>
+<ul>
+<li><code>keys()</code> method; extract keys.</li>
+<li><code>values()</code> method; extract values.</li>
+<li><code>items()</code> method; extract both.</li>
+<li><code>get()</code> method; check out both.</li>
+<li><code>in</code> and <code>not in</code> operators. </li>
+<li><code>setdefault()</code> method, check out a key and set value to a key.</li>
+</ul>
+<p>Pretty print with the <code>pprint()</code> and <code>pformat()</code> functions.</p>
+<p>Nested dictionaries and lists.</p>
+<h4 id="chapter-6-manipulating-strings">Chapter 6, Manipulating Strings<a class="headerlink" href="#chapter-6-manipulating-strings" title="Permanent link">&para;</a></h4>
+<p>Escape character: <code>\</code>: <code>\'</code>, <code>\"</code>, <code>\t</code>, <code>\n</code>, <code>\\</code>.</p>
+<p>Raw strings: <code>print(r'That is Carol')</code>.</p>
+<p>Triple quotes:</p>
+<pre><code class="python">print('''Dear Alice,
+bla-bla-bla
+cheers''')
+
+print(&quot;&quot;&quot;Dear Alice,
+bla-bla-bla
+cheers&quot;&quot;&quot;)
+</code></pre>
+
+<p>Comment: <code>#</code>.<br />
+Multiline comments: <code>""" """</code>.</p>
+<ul>
+<li>Slice, subset with <code>[:]</code>.</li>
+<li><code>in</code> and <code>not in</code> operators.</li>
+<li><code>lower()</code> method.</li>
+<li><code>upper()</code> method.</li>
+<li><code>capitalize()</code> method.</li>
+<li><code>is</code> method; check if x is part of y.</li>
+<li><code>islower()</code> method.</li>
+<li><code>isupper()</code> method.</li>
+<li><code>isalpha()</code> method; check letters, not blank.</li>
+<li><code>isalnum()</code> method; check letters and numbers, and not blank.</li>
+<li><code>isdecimal()</code> method; check numeric characters and not blank.</li>
+<li><code>isspace()</code> method; check spaces, tabs and new lines and not blank.</li>
+<li><code>istitle()</code> method; check if it begins with an uppercase letter followed with lowercase letters.</li>
+<li><code>startwith()</code> method; check if a string begins with a string of characters.</li>
+<li><code>endwith()</code> method; idem.</li>
+<li><code>join()</code> method; concatenate.</li>
+<li><code>split()</code> method.</li>
+<li><code>rjust()</code> method; justify.</li>
+<li><code>ljust()</code> method justify.</li>
+<li><code>center()</code> method.</li>
+<li><code>strip()</code> method; remove white space.</li>
+<li><code>rstrip()</code> method; ; remove white space to the right.</li>
+<li><code>lstrip()</code> method; remove white space to the left.</li>
+</ul>
+<p><code>pyperclip</code> module.</p>
+<p>The <code>pyperclip.pyclip</code> function send text to and receive text from the clipboard:</p>
+<p>In addition:</p>
+<pre><code class="python">import pyperclip
+
+pyperclip.copy('Hello world!')
+pyperclip.paste()
+</code></pre>
+
+<h4 id="chapter-7-pattern-matching-and-regular-expressions">Chapter 7, Pattern Matching and Regular Expressions<a class="headerlink" href="#chapter-7-pattern-matching-and-regular-expressions" title="Permanent link">&para;</a></h4>
+<p><sub>patterns of text, with, without regular expression, regex, object, match, matching, group, grouping, pipe, question mark, star, ?, *, plus, +, curly bracket, {, }, character class, digit, numeric, letter, underscore, space, tab, newline, caret, ^, dollar sign, $, wildcard, dot, ., dotstar, newline, symbols, case-sensitive, case-insensitive</sub></p>
+<p><code>re</code> module.</p>
+<ul>
+<li><code>re.compile()</code> method; find a single occurrence.</li>
+<li><code>re.findall()</code> method; find all occurrences.</li>
+<li><code>sub()</code> method; substitute.</li>
+<li><code>re.IGNORECASE</code>; ignore capitalization with the <code>compile()</code> method.</li>
+<li><code>re.DOTALL</code>; ignore dots with the <code>re.compile()</code> method.</li>
+<li><code>re.VERBOSE</code>; write comment with the <code>re.compile()</code> method.</li>
+</ul>
+<h4 id="chapter-8-reading-and-writing-files">Chapter 8, Reading and Writing Files<a class="headerlink" href="#chapter-8-reading-and-writing-files" title="Permanent link">&para;</a></h4>
+<p><sub>file, file path, filename</sub></p>
+<p><code>os</code> module.</p>
+<ul>
+<li>A relative path: <code>..\eggs\spam.txt</code>, <code>.\fizz\spam.txt</code>.</li>
+<li>An absolute path: <code>C:\bacon\fizz\spam.txt</code>.</li>
+<li><code>os.getcwd()</code> or <code>os.chdir()</code> functions; extract the current working directory.</li>
+<li><code>os.makedir()</code>function; create a new folder.</li>
+</ul>
+<p><code>os.path</code> module. </p>
+<p>Handle absolute and relative paths. Find file sizes and folder contents. Check path validity.</p>
+<p>Windows: backslash or <code>\</code>:</p>
+<pre><code class="python">import os
+os.path.join('usr', 'bin', 'spam')
+</code></pre>
+
+<p>Yields:</p>
+<pre><code class="python">'usr\\bin\\spam'
+</code></pre>
+
+<p>UNIX: forwardslash or <code>/</code>:</p>
+<pre><code class="python">import os
+os.path.join('usr', 'bin', 'spam')
+</code></pre>
+
+<p>Yields:</p>
+<pre><code class="python">'usr/bin/spam'
+</code></pre>
+
+<p>Read and write files:</p>
+<ul>
+<li><code>os.path.open()</code> function.</li>
+<li><code>os.path.read()</code> method.</li>
+<li><code>os.path.readline()</code> method.</li>
+<li><code>os.path.write()</code> method.</li>
+<li><code>os.path.close()</code> method.</li>
+</ul>
+<p><code>shelve</code> module.</p>
+<p>Handle binary files.</p>
+<p><code>pprint</code> module. </p>
+<p>Pretty printing:</p>
+<ul>
+<li><code>pprint.pprint()</code>.</li>
+<li><code>pprint.pformat()</code>.</li>
+</ul>
+<h4 id="chapter-9-organizing-files">Chapter 9, Organizing Files<a class="headerlink" href="#chapter-9-organizing-files" title="Permanent link">&para;</a></h4>
+<p><sub>pdf, every sub-folder, folder, foldername, subfolder, filename, file, remove, zero, change titles, compress, decompress, zip, unzip</sub></p>
+<p><code>shutil</code> module. </p>
+<p>Copy, move, rename, and delete files and folders. <code>shutil.rmtree()</code> function; delete file and folder.</p>
+<p><code>os</code> module. </p>
+<p>Delete, empty, remove files and folders, and change the path. <code>os.walk()</code> method; walk the tree directory.</p>
+<p><code>send2trash</code> module. </p>
+<p>Delete files and folders, but much safer.</p>
+<p><code>zipfile</code> module. </p>
+<p>Compress and uncompress. Read the content of compressed and zipped files.</p>
+<ul>
+<li><code>zipfile.extracall()</code>; method  extracts all the files and folders from a zip file.</li>
+<li><code>write()</code> method; create a zip file.</li>
+</ul>
+<h4 id="chapter-10-debugging">Chapter 10, Debugging<a class="headerlink" href="#chapter-10-debugging" title="Permanent link">&para;</a></h4>
+<p>Handle errors with <code>try</code> and <code>except</code>.</p>
+<p>Raise exceptions with a <code>raise</code> statement and the <code>Exception()</code> function.</p>
+<p><code>traceback</code> module. </p>
+<p>Discover what and how an error happens and obtain it as a string with the <code>traceback.format_exc()</code> method. </p>
+<p>An assertion is a sanity check performed with an <code>assert</code> statement. </p>
+<p><code>logging</code> module. </p>
+<p>Display log messages as the program runs. Log to a file. Debug a code. Enable and disable logging. Enable an IDLE debugger.</p>
+<p>Set a <code>breakpoint</code> to check out potential bugs.</p>
+<h4 id="chapter-11-web-scraping">Chapter 11, Web Scraping<a class="headerlink" href="#chapter-11-web-scraping" title="Permanent link">&para;</a></h4>
+<p><sub>html</sub></p>
+<p><code>webbrowser</code> module.</p>
+<p>Open a browser to a specific webpage (in conjunction with the <code>sys</code> module). </p>
+<p>Use:</p>
+<ul>
+<li>Get a street address from the command line to the clipboard.</li>
+<li>Go to a Google Maps page.</li>
+<li>Read command line arguments from <code>sys.argv</code>.</li>
+<li>Read the clipboard content.</li>
+<li>Open all links on a page in separate tabs.</li>
+<li>Open the browser to the url for local weather.</li>
+<li>Open several social network sites.</li>
+</ul>
+<p><code>requests</code> module.</p>
+<p>Download files and webpages; similar to opening, reading, writing, closing files and folders. </p>
+<ul>
+<li>Simpler than the <code>urllib2</code> module.</li>
+<li>Can check out errors.</li>
+<li>Save the downloaded files.</li>
+</ul>
+<p>HTML crash course!</p>
+<p><code>bs4</code> module (BeautifulSoup).</p>
+<ul>
+<li><code>BeautifulSoup()</code> function; parses HTML. </li>
+<li><code>select()</code> method;  find an element. </li>
+<li>Get data from an element&rsquo;s attributes.</li>
+</ul>
+<p>Use:</p>
+<ul>
+<li>Search Google.</li>
+<li>Retrieve search results.</li>
+<li>Open tabs for each results.</li>
+<li>Read the command line arguments from <code>sys.argv</code>.</li>
+<li>Fetch results with the <code>requests</code> module.</li>
+<li>Find the links.</li>
+<li>Download all images, videos, files, etc.</li>
+<li>Back up an entire site by following all of its links.</li>
+<li>Copy all the messages off a web forum.</li>
+<li>Duplicate the catalogue of items for sale on an online store.</li>
+</ul>
+<p><code>selenium</code> module.</p>
+<p>Launches and controls a web browser. Fill and submit forms. Simulate mouse clicks. Find elements on a page. Click on a page. Send special keys.</p>
+<p>Combining modules :</p>
+<ul>
+<li>Command line emailer.</li>
+<li>Image site downloader.</li>
+<li>Link verification.</li>
+</ul>
+<h4 id="chapter-12-excel-spreadsheets">Chapter 12, Excel Spreadsheets<a class="headerlink" href="#chapter-12-excel-spreadsheets" title="Permanent link">&para;</a></h4>
+<p><code>openpyxl</code> module.</p>
+<p>Read Excel documents. Open Excel documents. Get sheets from a workbook. Get cells from the sheets. Convert letters and numbers. Get rows and columns from sheets. Write results to a file.</p>
+<p>Use:</p>
+<ul>
+<li>Compare data across multiple rows in a spreadsheet.</li>
+<li>Open multiple files and compare data.</li>
+<li>Check blank rows or invalid data in any cells.</li>
+<li>Read data and use it as the input for Python programs.</li>
+<li>Write Excel Documents.</li>
+<li>Create and save Excel documents.</li>
+<li>Create and remove sheets.</li>
+<li>Write values to cells.</li>
+<li>Update a spreadsheet.</li>
+<li>Read data from one spreadsheet and write it to parts of other spreadsheets.</li>
+<li>Read data from websites, text files, or the clipboard and write it to a spreadsheet.</li>
+<li>Clean up data, regular expressions.</li>
+<li>Set the font style, objects, formulas.</li>
+<li>Adjust rows and columns.</li>
+<li>Set row height and column width.</li>
+<li>Merge and unmerge cells.</li>
+<li>Freeze panes.</li>
+<li>Create charts.</li>
+<li>Insert blank rows.</li>
+<li>Convert text files to spreadsheets, vice-versa.</li>
+</ul>
+<h4 id="chapter-13-pdf-and-word-documents">Chapter 13, PDF and Word Documents<a class="headerlink" href="#chapter-13-pdf-and-word-documents" title="Permanent link">&para;</a></h4>
+<p><code>PyPDF2</code> module.</p>
+<p>Extract text from a PDF. Decrypt a PDF. Create PDF. Copy pages, rotate pages, overlay pages from a PDF. Add a logo, a timestamp, a watermark to a PDF.</p>
+<p>Use:</p>
+<ul>
+<li>Combine pages from many PDF.</li>
+<li>Cut out specific pages.</li>
+<li>Reorder pages.</li>
+<li>Create a PDF from only those pages that have some specific text.</li>
+</ul>
+<p><code>python-docx</code> module.</p>
+<p>Read word documents. Get the full text from a .docs file. Style paragraphs. Create word documents with nondefault styles. Write word documents. Add headings, lines, page breaks, and pictures. </p>
+<p>Use:</p>
+<ul>
+<li>PDF Paranoia or encrypting a bunch of files.</li>
+<li>Custom invitations in Word.</li>
+<li>Brute-force PDF password breaker.</li>
+</ul>
+<h4 id="chapter-14-csv-files-and-json-data">Chapter 14, CSV Files and JSON Data<a class="headerlink" href="#chapter-14-csv-files-and-json-data" title="Permanent link">&para;</a></h4>
+<p><code>csv</code> module.</p>
+<p>Read, open CSV. Split the file. Print CSV. Loop within a file or through many files. Write CSV. Change delimiters and lineterminators. Remove the header.</p>
+<p>Use:</p>
+<ul>
+<li>Compare data between different rows in a CSV file or between multiple CSV files.</li>
+<li>Copy specific data from a CSV file to an Excel file; vice-versa.</li>
+<li>Check for invalid data or formatting mistakes in CSV files and alert the user.</li>
+<li>Read data from CSV file as input for Python programs.</li>
+<li>Excel to CSV to Excel converter (in conjunction with the <code>openpyxl</code> module).</li>
+</ul>
+<p><code>json</code> module.</p>
+<p>Alike web scraping. API. Read,  load, write, dump data.</p>
+<p>Use:</p>
+<ul>
+<li>Fetch weather from a website.</li>
+<li>Collect weather forecasts for several campsites or hiking trails.</li>
+<li>Schedule a program to regularly check weather and send your a frost alert.</li>
+<li>Pull weather data from multiple sites to show all at once, or calculate and show the average of multiple weather predictions.</li>
+</ul>
+<h4 id="chapter-15-time-scheduling-tasks-and-launching-programs">Chapter 15, Time, Scheduling Tasks, and Launching Programs<a class="headerlink" href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Permanent link">&para;</a></h4>
+<p><code>time</code> module.</p>
+<p>Read the system clock for the current time. Pause a program (sleep). Round numbers.</p>
+<p>Use:</p>
+<ul>
+<li>Track how much time spent on tasks with a stopwatch.</li>
+<li>Record track times or lap times.</li>
+<li>Build a program that launches other programs on a schedule by using the <code>subprocess</code> and <code>threading</code> modules.</li>
+<li>Create a timesheet app that records when you enter data, and use the current time to clock them in or out.</li>
+<li>Add a feature to a program to display the elapsed time since a process started (in conjunction with the <code>requests</code> module).</li>
+<li>Check how long a program has been running and offer the user a chance to cancel tasks.</li>
+</ul>
+<p><code>datetime</code> module.</p>
+<p>Compute time and date delta. Retrieve a specific moment. Add a timestamp. Add pauses to a routine. Convert datetime object to strings. Convert strings to datetime objects.   </p>
+<p>Use:</p>
+<ul>
+<li>Multithreading; modify a program to use a function. Create and start threads (see above).</li>
+<li>Pass command line arguments.</li>
+<li>Task scheduler.</li>
+<li>Open websites (time event).</li>
+<li>Run Python scripts (time event).</li>
+<li>Open files (time event).</li>
+<li>Create a countdown program.</li>
+<li>Schedule downloader (time event).</li>
+</ul>
+<h4 id="chapter-16-sending-email-and-text-messages">Chapter 16, Sending Email and Text Messages<a class="headerlink" href="#chapter-16-sending-email-and-text-messages" title="Permanent link">&para;</a></h4>
+<p><sub>http, smtp, mail, imap</sub></p>
+<p><code>smtplib</code> module.</p>
+<p>Connect to an SMTP server. Log in. Search for emails. Send a message. Encrypt emails. Retrieve and delete emails. Disconnect from the SMTP server.</p>
+<p><code>imapclient</code> module.</p>
+<p>Connect to an IMAP server. Log in. Search for emails. Fetch an email and mark it as read. Get email addresses from a raw message. Get the body from a raw message. Delete emails. Disconnect from the IMAP server.</p>
+<p>Use:</p>
+<ul>
+<li>Send members dues reminders.</li>
+<li>Send text messages.</li>
+<li>Random emailer.</li>
+<li>&lsquo;Umbrella&rsquo; reminder (in conjunction with weather forecasts and the <code>requests</code> module).</li>
+<li>Auto-unsubscriber.</li>
+</ul>
+<p><code>twilio</code> module.</p>
+<p>Send text messages, SMS.</p>
+<h4 id="chapter-17-manipulating-images">Chapter 17, Manipulating Images<a class="headerlink" href="#chapter-17-manipulating-images" title="Permanent link">&para;</a></h4>
+<p>Color and RGBA crash course!</p>
+<p><code>PIL</code> module.</p>
+<p>Manipulate images with Pillow. Work with the image data type. Crop, copy, paste an image. Multiply images tiles. Resize, rotate, flip an image. Change pixels. Draw on images (points, lines, rectangles, ellipses, polygons, text). </p>
+<p>Use:</p>
+<ul>
+<li>Loop through a folder of images.</li>
+<li>Image batch processing: resizing, cropping, copying and pasting, rotating, etc.</li>
+<li>Adding a logo to several images.</li>
+<li>Identify the photo folders.</li>
+<li>Create custom cards with custom invitations in Word (see chapter 13).</li>
+</ul>
+<h4 id="chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation">Chapter 18, Controlling the Keyboard and Mouse with GUI Automation<a class="headerlink" href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Permanent link">&para;</a></h4>
+<p><sub>virtual keystrokes, mouse clicks</sub></p>
+<p><code>pyautogui</code> module and dependencies based of the OS in use.</p>
+<p>Shutdown the computer. Log out from a session. Pauses, fail-safes. Control mouse movements and move the mouse. Get the mouse position and control the mouse. Control the keyboard. Send a string from the keyboard. Type in key name. Press and release buttons. Activate hotkey.</p>
+<p>Use:</p>
+<ul>
+<li>Image recognition.</li>
+<li>Automatic form filler.</li>
+<li>Look busy!</li>
+<li>Instant messenger bot.</li>
+<li>Game-playing bot tutorial.</li>
+</ul>
+<h4 id="appendix-a">Appendix A<a class="headerlink" href="#appendix-a" title="Permanent link">&para;</a></h4>
+<ul>
+<li>PIP.</li>
+<li>Installing modules.</li>
+</ul>
+<h4 id="appendix-b">Appendix B<a class="headerlink" href="#appendix-b" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Running programs.</li>
+<li>Shebang line.</li>
+<li>On Windows.</li>
+<li>On UNIX.</li>
+</ul>
+<h4 id="appendix-c">Appendix C<a class="headerlink" href="#appendix-c" title="Permanent link">&para;</a></h4>
+<p>Answers from questions: chapter 2 to 18.</p>
+<h4 id="additional-content">Additional Content<a class="headerlink" href="#additional-content" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Download files used in the book.</li>
+<li>List of JSON API:<ul>
+<li>Twitter API.</li>
+<li>Facebook Social Graph API.</li>
+<li>Flickr.</li>
+<li>YouTube.</li>
+<li>OpenStreetMap.</li>
+<li>Google Maps.</li>
+<li>Imgur API.</li>
+<li>26 Weather APIs.</li>
+<li>Rotten Tomatoes.</li>
+<li>Reddit.</li>
+</ul>
+</li>
+<li>List of programming practice sites. (programming problems you can try to practice your coding skills).</li>
+<li>List of web comics.</li>
+<li>Schedulers (operating system scheduling process).</li>
+<li>How to do PyCon or any tech conference.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Codecademy%20Python/" class="btn btn-neutral float-right" title="Codecademy Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Apprenez%20a%20programmer%20en%20Python/" class="btn btn-neutral" title="Apprenez à programmer en Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ugoproto/ugo_py_doc" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Apprenez%20a%20programmer%20en%20Python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Codecademy%20Python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

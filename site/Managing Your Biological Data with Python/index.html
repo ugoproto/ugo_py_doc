@@ -1,0 +1,4340 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Managing Your Biological Data with Python - ugo_py_doc</title>
+  
+
+  <link rel="shortcut icon" href="../faviconfire.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Managing Your Biological Data with Python";
+    var mkdocs_page_input_path = "Managing Your Biological Data with Python.md";
+    var mkdocs_page_url = "/Managing Your Biological Data with Python/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="../mathjaxhelper.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Decorators/">Decorators</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Managing Your Biological Data with Python</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#part-1-getting-started">Part 1, Getting Started</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-1-the-python-shell-and-basics">Chapter 1, The Python Shell and Basics</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-2-your-first-python-program">Chapter 2, Your First Python Program</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#part-2-data-management">Part 2, Data management</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-3-analyzing-a-data-column">Chapter 3, Analyzing a Data Column</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-4-parsing-data-records">Chapter 4, Parsing Data Records</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-5-searching-data">Chapter 5, Searching Data</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-6-filtering-data">Chapter 6, Filtering Data</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-7-managing-tabular-data">Chapter 7, Managing Tabular Data</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-8-sorting-data">Chapter 8, Sorting Data</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-9-pattern-matching-and-text-mining">Chapter 9, Pattern Matching and Text Mining</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#part-3-modular-programming">Part 3, Modular Programming</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-10-divide-a-program-into-functions">Chapter 10, Divide a Program into Functions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-11-managing-complexity-with-classes">Chapter 11 Managing Complexity with Classes</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-12-debugging">Chapter 12 Debugging</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-13-using-external-modules-the-python-interface-to-r">Chapter 13, Using External Modules, The Python Interface to R</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-14-building-program-pipelines">Chapter 14, Building Program Pipelines</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-15-writing-good-programs">Chapter 15, Writing Good Programs</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#part-4-data-visualization">Part 4, Data Visualization</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-16-creating-scientific-diagrams">Chapter 16, Creating Scientific Diagrams</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-18-manipulating-images">Chapter 18, Manipulating Images</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#part-6-cookbook">Part 6, Cookbook</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#recipe-2-reversing-and-randomizing-a-sequence">Recipe 2, Reversing and Randomizing a Sequence</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#recipe-3-creating-a-random-sequence-with-probabilities">Recipe 3, Creating a Random Sequence with Probabilities</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20for%20Education/">Python for Education</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Scientific%20Python%20%28Scipy%20Stack%29/">Scientific Python (Scipy Stack)</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Managing Your Biological Data with Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/ugoproto/ugo_py_doc" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="managing-your-biological-data-with-python">Managing Your Biological Data with Python<a class="headerlink" href="#managing-your-biological-data-with-python" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Notes and code snippets. The book comes with files and cases. Python 2. From CRC Press, 2014.</p>
+<hr />
+<div class="toc"><span class="toctitle">Content</span><ul>
+<li><a href="#managing-your-biological-data-with-python">Managing Your Biological Data with Python</a><ul>
+<li><a href="#part-1-getting-started">Part 1, Getting Started</a></li>
+<li><a href="#chapter-1-the-python-shell-and-basics">Chapter 1, The Python Shell and Basics</a></li>
+<li><a href="#chapter-2-your-first-python-program">Chapter 2, Your First Python Program</a></li>
+<li><a href="#part-2-data-management">Part 2, Data management</a></li>
+<li><a href="#chapter-3-analyzing-a-data-column">Chapter 3, Analyzing a Data Column</a></li>
+<li><a href="#chapter-4-parsing-data-records">Chapter 4, Parsing Data Records</a></li>
+<li><a href="#chapter-5-searching-data">Chapter 5, Searching Data</a></li>
+<li><a href="#chapter-6-filtering-data">Chapter 6, Filtering Data</a></li>
+<li><a href="#chapter-7-managing-tabular-data">Chapter 7, Managing Tabular Data</a></li>
+<li><a href="#chapter-8-sorting-data">Chapter 8, Sorting Data</a></li>
+<li><a href="#chapter-9-pattern-matching-and-text-mining">Chapter 9, Pattern Matching and Text Mining</a></li>
+<li><a href="#part-3-modular-programming">Part 3, Modular Programming</a></li>
+<li><a href="#chapter-10-divide-a-program-into-functions">Chapter 10, Divide a Program into Functions</a></li>
+<li><a href="#chapter-11-managing-complexity-with-classes">Chapter 11 Managing Complexity with Classes</a></li>
+<li><a href="#chapter-12-debugging">Chapter 12 Debugging</a></li>
+<li><a href="#chapter-13-using-external-modules-the-python-interface-to-r">Chapter 13, Using External Modules, The Python Interface to R</a></li>
+<li><a href="#chapter-14-building-program-pipelines">Chapter 14, Building Program Pipelines</a></li>
+<li><a href="#chapter-15-writing-good-programs">Chapter 15, Writing Good Programs</a></li>
+<li><a href="#part-4-data-visualization">Part 4, Data Visualization</a></li>
+<li><a href="#chapter-16-creating-scientific-diagrams">Chapter 16, Creating Scientific Diagrams</a></li>
+<li><a href="#chapter-18-manipulating-images">Chapter 18, Manipulating Images</a></li>
+<li><a href="#part-6-cookbook">Part 6, Cookbook</a></li>
+<li><a href="#recipe-2-reversing-and-randomizing-a-sequence">Recipe 2, Reversing and Randomizing a Sequence</a></li>
+<li><a href="#recipe-3-creating-a-random-sequence-with-probabilities">Recipe 3, Creating a Random Sequence with Probabilities</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h4 id="part-1-getting-started">Part 1, Getting Started<a class="headerlink" href="#part-1-getting-started" title="Permanent link">&para;</a></h4>
+<h4 id="chapter-1-the-python-shell-and-basics">Chapter 1, The Python Shell and Basics<a class="headerlink" href="#chapter-1-the-python-shell-and-basics" title="Permanent link">&para;</a></h4>
+<p><strong>Data structure</strong></p>
+<ul>
+<li>Booleans: <code>True</code> or <code>False</code>.</li>
+<li>Dictionaries: unordered collections of key-value pairs; both can be numbers or strings; indicated with <code>{key1: value1, 'key2': 'value2'}</code>.</li>
+<li>Floats: numbers with digits after the dicemal point,</li>
+<li>Integers: numbers without digits after the decimal point.</li>
+<li>Lists: mutable ordered collections of objects; indicated with <code>[a, b, c]</code>.</li>
+<li>Sets: immutable unordered collections of unique elements; indicated by <code>([a, b, c])</code>.</li>
+<li>Strings: immutable ordered collections of characters; indicated with <code>'single'</code> or <code>"double"</code> quotation marks.</li>
+<li>Tuples: immutable ordered collections of objects; indicated with <code>(a, b, c)</code>.</li>
+</ul>
+<p><strong>Conversions</strong></p>
+<p>Convert or coerce data:<br />
+- <code>float(value)</code>; into a float.<br />
+- <code>int(value)</code>; into an integer.<br />
+- <code>str(value)</code>; into a string.</p>
+<p><strong>Strings</strong></p>
+<p><code>'Single'</code> and <code>"double"</code> quotes are for short strings.</p>
+<p>&rsquo;&lsquo;&rsquo;Triple single and double quotes<br />
+are rather multilines.&rsquo;&lsquo;&rsquo;</p>
+<p><strong>Access character and substrings</strong></p>
+<ul>
+<li><code>print s[-1]</code>; print the last character of a string.</li>
+<li><code>print s[-5:]</code>; print from the 5th position from the end to the end.</li>
+</ul>
+<p><strong>String functions</strong></p>
+<ul>
+<li><code>len(s)</code>; length of the string,</li>
+<li><code>s.upper()</code>; convert to uppercase.</li>
+<li><code>s.lower()</code>; convert to lowercase.</li>
+<li><code>s.strip()</code>; remove white spaces and tabs from both ends.</li>
+<li><code>s.strio('m')</code>; remove <code>'m'</code> from both ends.</li>
+<li><code>s.rstrip()</code>; remove on the right only.</li>
+<li><code>s.lstrip('m')</code>; remove on the left only.</li>
+<li><code>s.split(' ')</code>; cut into words where there is space.</li>
+<li><code>s.find('m')</code>; search for the <code>'m'</code> substring and return the starting position.</li>
+<li><code>s.replace('m', 'n')</code>; replace <code>'m'</code> with <code>'n'</code>.</li>
+<li><code>s.startwith('m')</code>; check beginning and return <code>True</code> or <code>False</code>.</li>
+<li><code>s.endwith('m')</code>; check end and return <code>True</code> or <code>False</code>.</li>
+</ul>
+<p><strong>Create lists</strong></p>
+<ul>
+<li><code>data = [1, 2, 3, 4, 5]</code>.</li>
+<li><code>data[1:3]</code>; <code>[2, 3]</code>.</li>
+<li><code>data[0:2]</code>; <code>[1, 2]</code>.</li>
+<li><code>data[:3]</code>; <code>[1, 2, 3]</code>.</li>
+<li><code>data[-2:]</code>; <code>[4, 5]</code>.</li>
+<li><code>data2 = data[:]</code>; create a copy.</li>
+</ul>
+<p><strong>Modify lists</strong></p>
+<ul>
+<li><code>l[i] = x</code>; replace the i^th^ element with <code>x</code>.</li>
+<li><code>l[i;j] = t</code>; replace elements from <code>i</code> to <code>j</code> by <code>t</code> (iterable).</li>
+<li><code>del l[i;j]</code>; delete the elements of the list from <code>i</code> to <code>j</code>.</li>
+<li><code>del s[i;k;k]</code>; delete the elements of the list from <code>i</code> to <code>j</code> with stop <code>k</code>.</li>
+<li><code>l.append(x)</code>; add element <code>x</code> to the list.</li>
+<li><code>l.extend(x)</code>; add several element <code>x</code> to the list (iterable).</li>
+<li><code>l.count(x)</code>; return the number of elements <code>x</code> in the list.</li>
+<li><code>l.index(x[. i[. j]])</code>; return the smaller <code>k</code> such that <code>l[k] = x</code> and <code>i &lt;= k &lt;= j</code>.</li>
+<li><code>l.insert(i.x)</code>; insert(wedge in) <code>x</code>.</li>
+<li><code>l.pop(i)</code>; cancel the ith element and return its value; <code>l.pop()</code> does it for the last element.</li>
+<li><code>l.remove(x)</code>; delete a choosen <code>x</code> element.</li>
+<li><code>l.reverse()</code>; reverse the list order.</li>
+<li><code>l.sort()</code>; sort the list.</li>
+<li><code>l.sort([cmp[. key[. reverse]]])</code>; sort the list; <code>cmp</code> is a customized function for the comparison of element pairs that must return a negative value, zero, or a positive value depending on if the first element of the pair is lower than. equal to. or greater than the second element.</li>
+<li><code>sorted(l)</code>; create a new list made of a simple ascending sort of the list without modifying the list.</li>
+</ul>
+<p><strong>Functions working of lists</strong></p>
+<ul>
+<li><code>len(data)</code>; length of the list.</li>
+<li><code>min(data)</code>; smallest.</li>
+<li><code>max(data)</code>; largest.</li>
+<li><code>sum(data)</code>; sum.</li>
+<li><code>range(4)</code>; create a list of number from 0 to 3.</li>
+<li><code>range(1.5)</code>; create a list of number from 1 to 4.</li>
+<li><code>range(2.9.2)</code>; create <code>[2, 4, 6, 8]</code>.</li>
+<li><code>range(5, 0, -1)</code>; create <code>[5, 4, 3, 2, 1]</code></li>
+</ul>
+<p><strong>Tuples</strong></p>
+<ul>
+<li><code>t = 1, 2, 3</code> or <code>t = (1, 2, 3)</code></li>
+<li><code>t = 1</code> or <code>tuple = (1,)</code></li>
+</ul>
+<p><strong>Accessing data in dictionaries</strong></p>
+<ul>
+<li><code>prices['banana']</code>; return the value of the key.</li>
+<li><code>prices.get('banaba')</code>; do the same thing, but if the key does not exit, it returns <code>None</code>.</li>
+<li><code>prices.has_key('apple')</code>; check whether the key(s) is(are) defined.</li>
+<li><code>prices.keys()</code>; return a list of all keys.</li>
+<li><code>prices.values()</code>; return a list of all values.</li>
+<li><code>prices.items()</code>; return all keys and values as a list of tuples.</li>
+</ul>
+<p><strong>Modifying dictionaries</strong></p>
+<ul>
+<li><code>prices['kiwi'] = 0.6</code>; set the value of the key.</li>
+<li><code>prices.setdefault('egg', 0.9)</code>; set the value of the key if it is not yet defined.</li>
+</ul>
+<p><strong>None</strong></p>
+<p>None indicate the object or part of it is empty. For example:<br />
+- <code>a = None</code>.<br />
+- <code>b = [None, None, 'green']</code>.</p>
+<h4 id="chapter-2-your-first-python-program">Chapter 2, Your First Python Program<a class="headerlink" href="#chapter-2-your-first-python-program" title="Permanent link">&para;</a></h4>
+<p><strong>Difference between functions and methods</strong></p>
+<p>Functions are generic; use them anywhere without constraints. For example, <code>len()</code> works on all data.</p>
+<pre><code class="python">&gt;&gt;&gt; len('protein')
+7
+&gt;&gt;&gt; len('111')
+3
+</code></pre>
+
+<p>Other funtions, called methods, are specific; use them on a certain type of data. For example, <code>count()</code> works only for strings or a &lsquo;string&rsquo; variable (below, <code>protein</code> is a string).</p>
+<pre><code class="python">&gt;&gt;&gt; 'protein'.count('r')
+1
+&gt;&gt;&gt; 'occurence'.count('c')
+3
+</code></pre>
+
+<p><strong>Count the occurrence of each amino acid in a protein sequence</strong></p>
+<p><sub>count, element, in, string</sub></p>
+<pre><code class="python">insulin = &quot;GIVEQCCTSICSLYQLENYCNFVNQHLCGSHLVEALYLVCGERGFFYTPKT&quot;
+
+for amino_acid in &quot;ACDEFGHIKLMNPQRSTVWY&quot;:
+    number = insulin.count(amino_acid)
+    print amino_acid, number
+</code></pre>
+
+<p><strong>Create a random DNA sequence of length 10</strong></p>
+<pre><code class="python">import random
+
+alphabet = &quot;AGCT&quot;
+sequence = &quot;&quot;
+for i in range(10):
+    index = random.randint(0, 3)
+    sequence = sequence + alphabet[index]
+
+print sequence
+</code></pre>
+
+<h4 id="part-2-data-management">Part 2, Data management<a class="headerlink" href="#part-2-data-management" title="Permanent link">&para;</a></h4>
+<h4 id="chapter-3-analyzing-a-data-column">Chapter 3, Analyzing a Data Column<a class="headerlink" href="#chapter-3-analyzing-a-data-column" title="Permanent link">&para;</a></h4>
+<p><strong>Read from a text file</strong></p>
+<ul>
+<li><code>readlines()</code>.</li>
+</ul>
+<pre><code class="python">text_file = open('neuron_data.txt', 'r')
+# 'r' is facultative
+
+lines = text_file.readlines()
+
+text_file.close()
+
+print lines
+</code></pre>
+
+<ul>
+<li><code>read()</code>. </li>
+</ul>
+<pre><code class="python">text_file = open('neuron_data.txt')
+# 'r' is facultative
+
+print text_file.read()
+
+text_file.close()
+</code></pre>
+
+<p><strong>Difference between <code>read()</code> and <code>readlines()</code></strong></p>
+<ul>
+<li><code>read(x)</code>; read up to x bytes in a file. If you don&rsquo;t supply the size, it reads the entire file. The output is displayed as strings only once.</li>
+<li>One character = 1 byte.</li>
+<li>Close and reopen the file to read it again.</li>
+<li><code>readlines(x)</code>; read up to x bytes. If you don&rsquo;t supply a size, it reads all the data until it reaches a newline (<code>\n</code>) or the end of a paragraph.</li>
+<li>Close and reopen the file to read it again.</li>
+</ul>
+<p><strong>Write a text file</strong></p>
+<pre><code class="python">output_file = open('counts.txt', 'w')
+# 'w' is mandatory
+
+output_file.write('number of neuron lengths: 7\n')
+
+output_file.close()
+</code></pre>
+
+<p><strong>Clean a text file</strong></p>
+<p><sub>strip</sub></p>
+<ul>
+<li><code>strip()</code>; removes blanks spaces.</li>
+<li><code>rstrip()</code>; right only.</li>
+<li><code>lstrip()</code>; left only.</li>
+</ul>
+<pre><code class="python">output_file = open('counts.txt')
+output_file.read()
+output_file.close()
+
+# vs
+
+output_file = open('counts.txt')
+output_file.read().strip()
+output_file.close()
+</code></pre>
+
+<p><strong>Write and then read the same file</strong></p>
+<ul>
+<li><code>'r'</code>; cannot write with, only reads.</li>
+<li><code>'w'</code>; cannot read with, only writes (an existing file with the same name will be erased).</li>
+<li><code>'a'</code> append; data added to the end. </li>
+<li><code>'r+'</code>; both read and write (by replacing the existing string at the beginning by the new string).</li>
+</ul>
+<pre><code class="python">file1 = open('count.txt','w')
+file1.write('this is just a dummy test\n')
+file1.close()
+
+file2 = open('count.txt', 'r')
+print file2.read()
+file2.close()
+
+file3 = open('count.txt','a')
+file3.write('this is another test\n')
+file3.close()
+
+file4 = open('count.txt', 'r')
+print file4.read()
+file4.close()
+
+file5 = open('count.txt', 'w')
+file5.write('this is a final test\n')
+file5.close()
+
+file6 = open('count.txt', 'r')
+print file6.read()
+file6.close()
+</code></pre>
+
+<p><strong>Read a series of numbers from a text file and print a summary of the data</strong></p>
+<p><sub>strip, append, length, minimum, maximum, sort, format, integer, float</sub></p>
+<ul>
+<li><code>strip()</code>; remove blank spaces.</li>
+<li>A text is string by default even thought the file contains numbers; transform the text into float.</li>
+<li><code>append()</code>; each line to a list.</li>
+<li><code>len(data)</code>.</li>
+<li><code>sum(data)</code>.</li>
+<li><code>min(data)</code>.</li>
+<li><code>max(data)</code>.</li>
+<li><code>sort()</code>.</li>
+<li><code>%4i</code> is an integer with 4 digits.</li>
+<li><code>%6.1f</code> is a float with 6 digits and 2 decimals.</li>
+</ul>
+<pre><code class="python">data = []
+
+for line in open('neuron_data.txt'):
+    length = float(line.strip())
+    data.append(length)
+
+n_items = len(data)
+total = sum(data)
+shortest = min(data)
+longest = max(data)
+
+data.sort()
+
+
+output = open(&quot;results.txt&quot;,&quot;w&quot;)
+
+output.write(&quot;number of dendritic lengths : %4i \n&quot;%(n_items))
+output.write(&quot;total dendritic length      : %6.1f \n&quot;%(total))
+output.write(&quot;shortest dendritic length   : %7.2f \n&quot;%(shortest))
+output.write(&quot;longest dendritic length    : %7.2f \n&quot;%(longest))
+output.write(&quot;%37.2f\n%37.2f&quot;%(data[-2], data[-3]))
+
+output.close()
+</code></pre>
+
+<p><strong>Format the data</strong></p>
+<p><sub>formatting, variable</sub></p>
+<ul>
+<li><code>%s</code>; a string.</li>
+<li><code>%d</code>; a digit.</li>
+<li><code>%r</code>; raw data.</li>
+<li><code>%10s</code>; left-justify by 10 bytes.</li>
+<li><code>%-10s</code>; right-justify. by bytes</li>
+<li><code>%i</code>; an integer.</li>
+<li><code>%f</code>; a float.</li>
+<li><code>%2f</code>; a float with 2 digits.</li>
+<li><code>%2.2f</code>; has 2 digits and 2 decimals.</li>
+<li><code>%2i</code>; has 2 digits.</li>
+<li>And so on.</li>
+<li><code>str()</code>; turn a variable into a string (digit <code>3</code> to string <code>'3'</code> for example).</li>
+<li><code>int()</code>; turn a variable into an integer (string <code>'3'</code> to digit <code>3</code> for example).</li>
+<li><code>float()</code>; turn a variable into a float (digit <code>3</code> to <code>3.0</code> for example).</li>
+</ul>
+<pre><code class="python">file1 = open('count.txt','w')
+file1.write('this is just a dummy test')
+file1.close()
+
+file2 = open('count.txt', 'r')
+variable = file2.read()
+
+print &quot;Test1: %r&quot; % (variable)
+print &quot;Test2: %s&quot; % (variable)
+print &quot;Test3: %30s&quot; % (variable)
+print &quot;Test4: %-30s&quot; % (variable)
+print &quot;Test5: %30r&quot; % (variable)
+print &quot;Test6: %-30r&quot; % (variable)
+print &quot;Test7: %d, %d, %d&quot; % (1, 2, 3)
+print &quot;Test8: %2d, %3d, %10d&quot; % (1, 2, 3)
+print &quot;Test9: %d, %i, %f&quot; % (1, 2, 3)
+print &quot;Test10: %i, %i, %i&quot; % (1, 2.8, 3.1416)
+print &quot;Test11: %2i, %5i, %10i&quot; % (1, 2.8, 3.1416)
+print &quot;Test12: %f, %f, %f&quot; % (1, 2.8, 3.1416)
+print &quot;Test13: %2f, %2.2f, %10.3f&quot; % (1, 2.8, 3.1416)
+print &quot;Test14: %2f, %2f, %2f&quot; % (0.11, 10.111, 1000.1111)
+print &quot;Test15: %2.1f, %2.1f, %2.10f&quot; % (0.11, 10.111, 1000.1111)
+
+file2.close()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">Test1: 'this is just a dummy test'
+Test2: this is just a dummy test
+Test3:      this is just a dummy test
+Test4: this is just a dummy test     
+Test5:    'this is just a dummy test'
+Test6: 'this is just a dummy test'   
+Test7: 1, 2, 3
+Test8:  1,   2,          3
+Test9: 1, 2, 3.000000
+Test10: 1, 2, 3
+Test11:  1,     2,          3
+Test12: 1.000000, 2.800000, 3.141600
+Test13: 1.000000, 2.80,      3.142
+Test14: 0.110000, 10.111000, 1000.111100
+Test15: 0.1, 10.1, 1000.1111000000
+</code></pre>
+
+<p><strong>Write a list of numbers to a text file</strong></p>
+<pre><code class="python">data = [16.38, 139.90, 441.46, 29.03, 40.93, 202.07, 142.30, 346.00, 300.00]
+
+out = []
+
+for value in data:
+    out.append(str(value) + '\n')
+open('results.txt', 'w').writelines(out)
+</code></pre>
+
+<p>Ouput:</p>
+<pre><code class="text">16.38
+139.9
+441.46
+29.03
+40.93
+202.07
+142.3
+346.0
+300.0
+</code></pre>
+
+<p><strong>Calculate the average from a list of numbers</strong></p>
+<pre><code class="python"># calculate average from float numbers
+data = [3.53, 3.47, 3.51, 3.72, 3.43]
+average = sum(data) / len(data)
+print average
+
+# calculate average from integer numbers
+data = [1, 2, 3, 4]
+average = float(sum(data)) / len(data)
+print average
+</code></pre>
+
+<p><strong>Calculate the median from a list of numbers</strong></p>
+<pre><code class="python">data = [3.53, 3.47, 3.51, 3.72, 3.43]
+
+data.sort()
+
+mid = len(data) / 2 
+if len(data) % 2 == 0:
+    median = (data[mid - 1] + data[mid]) / 2.0
+else:
+    median = data[mid]
+
+print median
+</code></pre>
+
+<p><strong>Join or concatenate a list</strong></p>
+<pre><code class="python">&gt;&gt;&gt; L = ['1', '2', '3']
+&gt;&gt;&gt; '+'.join(L)
+'1+2+3'
+
+&gt;&gt;&gt; L = ['a', 'b', 'c']
+&gt;&gt;&gt; ''.join(L)
+'abc'
+
+&gt;&gt;&gt; L = ['1', '2', '3']
+&gt;&gt;&gt; int(''.join(L))
+123
+</code></pre>
+
+<p><strong>Calculate (a variance and )a standard deviation from a list of numbers</strong></p>
+<pre><code class="python">import math
+
+data = [3.53, 3.47, 3.51, 3.72, 3.43]
+average = sum(data) / len(data)
+
+total = 0.0
+
+for value in data:
+    total += (value - average) ** 2
+
+variance = total / len(data) # population variance
+stddev = math.sqrt(variance) # population stddev
+
+print variance
+print stddev
+</code></pre>
+
+<h4 id="chapter-4-parsing-data-records">Chapter 4, Parsing Data Records<a class="headerlink" href="#chapter-4-parsing-data-records" title="Permanent link">&para;</a></h4>
+<p><strong>Find items common to two lists</strong></p>
+<pre><code class="python"># proteins participating in cell cycle
+
+list_a = []
+
+for line in open(&quot;cell_cycle_proteins.txt&quot;):
+    list_a.append(line.strip())
+
+print list_a
+
+# proteins expressed in a given cancer cell
+
+list_b = []
+
+for line in open(&quot;cancer_cell_proteins.txt&quot;):
+    list_b.append(line.strip()) 
+
+print list_b
+
+for protein in list_a:
+    if protein in list_b:
+        print protein, 'detected in the cancer cell'
+    else:
+        print protein, 'not observed'
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">['P62258', 'P61981', 'P62191', 'P17980', 'P43686', 'P35998', 'P62333', 'Q99460', 'O75832']
+['P43686', 'P62333']
+
+P62258 not observed
+P61981 not observed
+P62191 not observed
+P17980 not observed
+P43686 detected in the cancer cell
+P35998 not observed
+P62333 detected in the cancer cell
+Q99460 not observed
+O75832 not observed
+</code></pre>
+
+<p>**Find if two or more conditions are met</p>
+<p><sub>boolean, operators, and, or, not</sub></p>
+<pre><code class="python">seq = &quot;MGSNKSKPKDASQRRRSLEPAENVHGAGGGAFPASQTPSKPASADGHRGPSAAFAPAAAE&quot;
+
+if 'GGG' in seq and 'RRR'in seq:
+    print 'GGG is at position: ', seq.find('GGG')
+    print 'RRR is at position: ', seq.find('RRR')
+
+if 'WWW' in seq or 'AAA' in seq:
+    print 'Either WWW or AAA occur in the sequence'
+
+if 'AAA' in seq and not 'PPP' in seq:
+    print 'AAA occurs in the sequence but not PPP'
+</code></pre>
+
+<p><strong>Boolean Operators</strong></p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A &lt; B</td>
+<td>A lower than B</td>
+</tr>
+<tr>
+<td>A &lt;= B</td>
+<td>A lower than or equal to B</td>
+</tr>
+<tr>
+<td>A &gt; B</td>
+<td>A greater than B</td>
+</tr>
+<tr>
+<td>A &gt;= B</td>
+<td>A greater than or equal to B</td>
+</tr>
+<tr>
+<td>A == B</td>
+<td>A equal to B</td>
+</tr>
+<tr>
+<td>A != B</td>
+<td>A different from B</td>
+</tr>
+<tr>
+<td>A&lt;&gt; B</td>
+<td>idem</td>
+</tr>
+<tr>
+<td>A is B</td>
+<td>A is the same thing as B &lsquo;thing&rsquo; being an object</td>
+</tr>
+<tr>
+<td>A is not B</td>
+<td>A is not the same thing as B</td>
+</tr>
+<tr>
+<td>A in B</td>
+<td>A is present in the sequence B</td>
+</tr>
+<tr>
+<td>A not in B</td>
+<td>A is not present in the sequence B</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Find all prime numbers under 30</strong></p>
+<pre><code class="python">for i in range(30):
+    if i &lt; 4:
+        print &quot;prime number:&quot;, i
+    elif i % 2 == 0:
+        print &quot;multiple of two:&quot;, i
+    elif i % 3 == 0:
+        print &quot;multiple of three:&quot;, i
+    elif i % 5 == 0:
+        print &quot;multiple of five:&quot;, i
+    else:
+        print &quot;prime number:&quot;, i
+</code></pre>
+
+<p><strong>List vs Tuple vs Set</strong></p>
+<ul>
+<li>mutable: change, replace, reorder, add elements.</li>
+<li><code>List = [1, 2, 3]</code>; mutable sequences of objects. </li>
+<li><code>Tuple = (1, 2, 3)</code>; immutable ordered sequences of objects;.</li>
+<li><code>Set = set([1, 2, 3])</code>; immutable unordered  collections of unique elements.</li>
+<li>The three can contain digits, strings or other objects (embedded).</li>
+</ul>
+<p><strong>More on lists</strong></p>
+<ul>
+<li><code>List[0]</code>; extract</li>
+<li><code>Llist = [[1, 2, 3],[a, b, c],[x, 4, 'text'], 'seq']</code>; embedded lists.</li>
+<li><code>List[0][1]</code>; extract from embedded lists.</li>
+<li><code>List.append(5)</code>; add.</li>
+<li>Create:<ul>
+<li><code>range(3)</code>.</li>
+<li><code>seq(0, 2, 1)</code>.</li>
+<li><code>[0.0] * 10</code>.</li>
+<li><code>[x**2 for x in range(5)]</code>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Creating a list with a one-line loop</strong></p>
+<p><sub>loop, conditional, conditional, on one line</sub></p>
+<pre><code class="python"># remove non-base symbols from a sequence
+squares = [x**2 for x in range(5)]
+print squares
+
+bases = ['A', 'C', 'T', 'G']
+print bases
+
+seq = 'GGACXCAGXXGATT'
+print seq
+
+seqlist = [base for base in seq if base in bases]
+print seqlist
+</code></pre>
+
+<p><strong>Write all headers from a file to a separate file</strong></p>
+<pre><code class="python">fasta_file = open('SwissProt.fasta','r')
+out_file = open('SwissProt.header','w')
+
+for line in fasta_file:
+    if line[0:1] == '&gt;':
+        out_file.write(line)
+
+out_file.close()
+</code></pre>
+
+<p><strong>Reads all AC numbers from the deflines of a file</strong></p>
+<p><sub>parse, parsing, text, file</sub></p>
+<pre><code class="python">input_file = open(&quot;SwissProt.fasta&quot;,&quot;r&quot;)
+
+ac_list = []
+
+for line in input_file:
+    if line[0] == '&gt;':
+        fields = line.split('|')
+        ac_list.append(fields[1])
+
+print ac_list
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">['P31946', 'P62258', 'Q04917', 'P61981', 'P31947', 'P27348', 'P63104', 'P30443']
+</code></pre>
+
+<p><strong>Read a file (genbank_file) and convert it to another file (output_file)</strong></p>
+<pre><code class="python">genbank_file = open(&quot;AY810830.gb&quot;)
+output_file = open(&quot;AY810830.fasta&quot;,&quot;w&quot;)
+
+flag = False
+for line in genbank_file:
+    if line[0:9] == 'ACCESSION':
+        accession = line.split()[1].strip()
+        output_file.write('&gt;' + accession + '\n')
+    if line[0:6] == 'ORIGIN': 
+        flag = True
+    elif flag:
+        fields = line.split()
+        if fields != []:
+            seq = ''.join(fields[1:])
+            output_file.write(seq.upper() + '\n')
+
+genbank_file.close()
+output_file.close()
+</code></pre>
+
+<p><strong>Read multiple files and extract data</strong></p>
+<pre><code class="python">fasta_file = open('SwissProt.fasta','r')
+out_file = open('SwissProtHuman.fasta','w')
+
+seq = ''
+for line in fasta_file:
+    if line[0] == '&gt;' and seq == '':
+        # process the first line of the input file
+        header = line
+    elif line [0] != '&gt;':
+        # join the lines with sequence
+        seq = seq + line
+    elif line[0] == '&gt;' and seq != '':
+        # in subsequent lines starting with '&gt;',
+        # write the previous header and sequence
+        # to the output file. Then re-initialize
+        # the header and seq variables for the next record
+        if &quot;Homo sapiens&quot; in header:
+            out_file.write(header + seq)
+        seq = ''
+        header = line
+
+# take care of the very last record of the input file
+if &quot;Homo sapiens&quot; in header:
+    out_file.write(header + seq)
+out_file.close()
+</code></pre>
+
+<h4 id="chapter-5-searching-data">Chapter 5, Searching Data<a class="headerlink" href="#chapter-5-searching-data" title="Permanent link">&para;</a></h4>
+<p><strong>Translate a RNA sequence to a protein sequence in three reading frames</strong></p>
+<p><sub>dictionary</sub></p>
+<pre><code class="python">codon_table = {
+    'GCU':'A', 'GCC':'A', 'GCA':'A', 'GCG':'A', 'CGU':'R', 'CGC':'R',   
+    'CGA':'R', 'CGG':'R', 'AGA':'R', 'AGG':'R', 'UCU':'S', 'UCC':'S',
+    'UCA':'S', 'UCG':'S', 'AGU':'S', 'AGC':'S', 'AUU':'I', 'AUC':'I',
+    'AUA':'I', 'UUA':'L', 'UUG':'L', 'CUU':'L', 'CUC':'L', 'CUA':'L',
+    'CUG':'L', 'GGU':'G', 'GGC':'G', 'GGA':'G', 'GGG':'G', 'GUU':'V',
+    'GUC':'V', 'GUA':'V', 'GUG':'V', 'ACU':'T', 'ACC':'T', 'ACA':'T',
+    'ACG':'T', 'CCU':'P', 'CCC':'P', 'CCA':'P', 'CCG':'P', 'AAU':'N',
+    'AAC':'N', 'GAU':'D', 'GAC':'D', 'UGU':'C', 'UGC':'C', 'CAA':'Q',
+    'CAG':'Q', 'GAA':'E', 'GAG':'E', 'CAU':'H', 'CAC':'H', 'AAA':'K',
+    'AAG':'K', 'UUU':'F', 'UUC':'F', 'UAU':'Y', 'UAC':'Y', 'AUG':'M',
+    'UGG':'W',
+    'UAG':'STOP', 'UGA':'STOP', 'UAA':'STOP'
+    }
+
+# read the RNA sequence into a single string
+rna = ''
+for line in open('A06662-RNA.fasta'):
+    if not line.startswith('&gt;'): 
+        rna = rna + line.strip()
+
+# translate one frame at a time
+for frame in range(3):
+    prot = '' 
+    print 'Reading frame ' + str(frame + 1)
+    for i in range(frame, len(rna), 3):
+        codon = rna[i:i + 3]
+        if codon in codon_table:
+            if codon_table[codon] == 'STOP':
+                prot = prot + '*'
+            else: 
+                prot = prot + codon_table[codon]
+        else:
+            # handle too short codons
+            prot = prot + '-'   
+
+    # format to blocks of 48 columns
+    i = 0
+    while i &lt; len(prot):
+        print prot[i:i + 48]
+        i = i + 48
+</code></pre>
+
+<p>Output (contains a translated sequence for each reading frame):</p>
+<pre><code class="text">Reading frame 1
+WDQSAEAACVRVRVRVCACVCVRLHLCRVGKEIEMGGQ*AQVPKALNP
+LVWSLLRAMGAIEKSEQGCV*M*GLEGSSREASSKAFAIIW*ENPARM
+DRQNGIEMSWQLKWTGFGTSLVVGSKQRRIWDSGGLAWGRRGCLRGWE
+G*E*DDTWWCLAGGGQG*LCEGTARATEAF*DPAVPEPGRQDLHCGRP
+GEHLA
+
+Reading frame 2
+GTSQQRQRVCACVCVCVRVCVYACICVGWVRR*RWAGSRPRSRRP*TH
+WFGVS*GQWGPLRSLNRAVSECEV*KDPPEKPALKLLQSSGERTQQGW
+TGRME*R*VGS*SGQDLVLAWLWGASRGESGTLVVWPGADGGVSGAGR
+DESRMIHGGVWQEAGKDDYVKALPGQLKPFETLLSQNQGGKTFIVGDQ
+VSIW-
+
+Reading frame 3
+GPVSRGSVCARACACVCVCVCTLAFVSGG*GDRDGRAVGPGPEGLEPT
+GLESPKGNGGH*EV*TGLCLNVRSRRILQRSQL*SFCNHLVREPSKDG
+QAEWNRDELAAEVDRIWY*PGCGEQAEENLGLWWSGLGQTGVSQGLGG
+MRVG*YMVVSGRRRARMTM*RHCPGN*SLLRPCCPRTREARPSLWETR
+*ASG-
+</code></pre>
+
+<p><strong>While loop</strong></p>
+<pre><code class="python">seq = &quot;IVGGYTCGANTVPYQVSLNSGYHFCGGSLINSQWVVSAAHCYKSGIQVRLGEDNINVVEGNEQF&quot;
+
+i = 0
+while i &lt; len(seq):
+    print seq[i:i + 12]
+    i = i + 12
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">IVGGYTCGANTV
+PYQVSLNSGYHF
+CGGSLINSQWVV
+SAAHCYKSGIQV
+RLGEDNINVVEG
+NEQF
+</code></pre>
+
+<p><strong>Find the a sequence in a file</strong></p>
+<pre><code class="python">swissprot = open(&quot;SwissProt.fasta&quot;)
+insulin_ac = 'P61981'
+result = None
+
+while result == None:
+    line = swissprot.next()
+    if line.startswith('&gt;'):
+        ac = line.split('|')[1]
+        if ac == insulin_ac:
+            result = line.strip()
+
+print result
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">&gt;sp|P61981|1433G_HUMAN 14-3-3 protein gamma OS=Homo sapiens GN=YWHAG PE=1 SV=2
+</code></pre>
+
+<p><strong>Searching a list</strong></p>
+<p><sub>search</sub></p>
+<pre><code class="python">bases = ['A', 'C', 'T', 'G']
+seq = 'CAGGCCATTRKGL'
+
+for i in seq:
+    if i not in bases:
+        print i, &quot;is not a nucleotide&quot;
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">R is not a nucleotide
+K is not a nucleotide
+L is not a nucleotide
+</code></pre>
+
+<p><strong>Read a file and store entries in a dictionary</strong></p>
+<pre><code class="python">sequences = {}
+ac = ''
+seq = ''
+
+for line in open(&quot;SwissProt.fasta&quot;):
+    if line.startswith('&gt;') and seq != '':
+        sequences[ac] = seq
+        seq = ''
+    if line.startswith('&gt;'):
+        ac = line.split('|')[1]
+    else:
+        seq = seq + line.strip()
+
+sequences[ac] = seq
+print sequences.keys()
+print sequences['P62258']
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">['Q04917', 'P63104', 'P27348', 'P31947', 'P31946', 'P30443', 'P61981', 'P62258']
+
+MDDREDLVYQAKLAEQAERYDEMVESMKKVAGMDVELTVEERNLLSVAYKNVIGARRASWRIISSIEQKEENKGGEDKLKMIREYRQMVETELKLICCDILDVLDKHLIPAANTGESKVFYYKMKGDYHRYLAEFATGNDRKEAAENSLVAYKAASDIAMTELPPTHPIRLGLALNFSVFYYEILNSPDRACRLAKAAFDDAIAELDTLSEESYKDSTLIMQLLRDNLTLWTSDMQGDGEEQNKEALQDVEDENQ
+</code></pre>
+
+<p><strong>Read a sequence from a structure</strong></p>
+<pre><code class="python">aa_codes = {
+     'ALA':'A', 'CYS':'C', 'ASP':'D', 'GLU':'E',
+     'PHE':'F', 'GLY':'G', 'HIS':'H', 'LYS':'K',
+     'ILE':'I', 'LEU':'L', 'MET':'M', 'ASN':'N',
+     'PRO':'P', 'GLN':'Q', 'ARG':'R', 'SER':'S',
+     'THR':'T', 'VAL':'V', 'TYR':'Y', 'TRP':'W'}
+
+seq = ''
+
+for line in open(&quot;1TLD.pdb&quot;):
+    if line[0:6] == &quot;SEQRES&quot;:
+        columns = line.split()
+        for resname in columns[4:]:
+            seq = seq + aa_codes[resname]
+
+i = 0
+print &quot;&gt;1TLD&quot;
+while i &lt; len(seq):
+    print seq[i:i + 64]
+    i = i + 64
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">&gt;1TLD
+IVGGYTCGANTVPYQVSLNSGYHFCGGSLINSQWVVSAAHCYKSGIQVRLGEDNINVVEGNEQF
+ISASKSIVHPSYNSNTLNNDIMLIKLKSAASLNSRVASISLPTSCASAGTQCLISGWGNTKSSG
+TSYPDVLKCLKAPILSDSSCKSAYPGQITSNMFCAGYLEGGKDSCQGDSGGPVVCSGKLQGIVS
+WGSGCAQKNKPGVYTKVCNYVSWIKQTIASN
+</code></pre>
+
+<h4 id="chapter-6-filtering-data">Chapter 6, Filtering Data<a class="headerlink" href="#chapter-6-filtering-data" title="Permanent link">&para;</a></h4>
+<p><strong>Calculate the intersection of two lists</strong></p>
+<p><sub>venn</sub></p>
+<pre><code class="python">data_a = [1, 2, 3, 4, 5, 6]
+data_b = [1, 5, 7, 8, 9]
+
+a_and_b = []
+
+for num in data_a:
+    if num in data_b:
+        a_and_b.append(num)
+
+print a_and_b
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">[1, 5]
+</code></pre>
+
+<p><strong>More about sets</strong></p>
+<p><sub>set</sub></p>
+<ul>
+<li><code>Set = set([1, 2, 3])</code>; immutable unordered collections of unique elements.</li>
+<li>They are not sequential objects like lists.</li>
+<li>They cannot contain identical elements.<ul>
+<li>to remove duplicates</li>
+<li>to calculate the intersection</li>
+<li>the union</li>
+<li>the difference between two or more group of objects</li>
+<li>as long as the order is not important.</li>
+</ul>
+</li>
+<li>They do not support indexing and slicing operations.</li>
+<li>They take the <code>in</code> and <code>not in</code> operators (test an element for membership in a set).</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; s1 = set('LDFGJLDFGDGD')
+&gt;&gt;&gt; s1
+set(['J', 'F', 'L', 'G', 'D'])
+
+&gt;&gt;&gt; 'L' in s1
+True
+
+&gt;&gt;&gt; 'Z' not in s1
+True
+
+&gt;&gt;&gt; s2 = ('LDF')
+&gt;&gt;&gt; s1.issubset(s2)
+False
+
+&gt;&gt;&gt; s1.issuperset(s2)
+True
+
+&gt;&gt;&gt; s1 = set(['a', 1, 2, 3, 4, 5, 'c', 'b'])
+&gt;&gt;&gt; 5 in s1
+True
+
+&gt;&gt;&gt; 6 in s1
+False
+
+&gt;&gt;&gt; s2 = set([10, 4, 5])
+&gt;&gt;&gt; s1.issubset(s2)
+False
+
+&gt;&gt;&gt; s1.issuperset(s2)
+False
+
+&gt;&gt;&gt; s3 = set((1, 2, 3, 4))
+&gt;&gt;&gt; s3
+set([1, 2, 3, 4])
+
+&gt;&gt;&gt; s3.add(5)
+&gt;&gt;&gt; s3
+set([1, 2, 3, 4, 5])
+
+&gt;&gt;&gt; s5 = set([1, 2, 3, 'b', 'c'])
+&gt;&gt;&gt; s5
+set([1, 2, 3, 'b', 'c'])
+
+&gt;&gt;&gt; s5.update(['a', 'd', 4])
+&gt;&gt;&gt; s5
+set(['a', 1, 2, 3, 4, 'd', 'c', 'b'])
+
+&gt;&gt;&gt; s1 = set(['a', 'b', 'c'])
+&gt;&gt;&gt; s2 = set(['c', 'd', 'e'])
+&gt;&gt;&gt; s1.union(s2)
+set(['a', 'c', 'b', 'e', 'd'])
+
+&gt;&gt;&gt; s1.intersection(s2)
+set(['c'])
+
+&gt;&gt;&gt; s1.symmetric_difference(s2)
+set(['a', 'b', 'e', 'd'])
+
+&gt;&gt;&gt; s1.difference(s2)
+set(['a', 'b'])
+
+&gt;&gt;&gt; s2.difference(s1)
+set(['e', 'd'])
+</code></pre>
+
+<p><strong>Calculate the intersection of two sets</strong></p>
+<pre><code class="python">data_a = set([1, 2, 3, 4, 5, 6])
+data_b = set([1, 5, 7, 8, 9])
+
+a_and_b = data_a.intersection(data_b)
+print a_and_b
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">set([1, 5])
+</code></pre>
+
+<p><strong>Find numbers common to three sets</strong></p>
+<pre><code class="python">reduce() is
+
+a = set((1, 2, 3, 4, 5))
+b = set((2, 4, 6, 7, 1))
+c = set((1, 4, 5, 9))
+
+triple_set = [a, b, c]
+common = reduce(set.intersection, triple_set)
+print common
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">set([1, 4])
+</code></pre>
+
+<p><strong>Calculate the differences of two lists</strong></p>
+<pre><code class="python">data_a = [1, 2, 3, 4, 5, 6]
+data_b = [1, 5, 7, 8, 9]
+
+a_not_b = []
+b_not_a = []
+
+for num in data_a:
+    if num not in data_b:
+        a_not_b.append(num)
+
+for num in data_b:
+    if num not in data_a:
+        b_not_a.append(num)
+
+print a_not_b
+print b_not_a
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">[2, 3, 4, 6]
+[7, 8, 9]
+</code></pre>
+
+<p><strong>Calculate the differences of two sets 1</strong></p>
+<pre><code class="python">data_a = set([1, 2, 3, 4, 5, 6])
+data_b = set([1, 5, 7, 8, 9])
+
+a_not_b = data_a.difference(data_b)
+b_not_a = data_b.difference(data_a)
+
+print a_not_b
+print b_not_a
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">set([2, 3, 4, 6])
+set([8, 9, 7])
+</code></pre>
+
+<p><strong>Calculate the differences of two sets 2</strong></p>
+<pre><code class="python">data_a = set([1, 2, 3, 4, 5, 6])
+data_b = set([1, 5, 7, 8, 9])
+
+a_or_b = data_a.union(data_b)
+a_xor_b = data_a.symmetric_difference(data_b)
+
+print a_or_b
+print a_xor_b
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">set([1, 2, 3, 4, 5, 6, 7, 8, 9])
+set([2, 3, 4, 6, 7, 8, 9])
+</code></pre>
+
+<p><strong>Remove elements from a list</strong></p>
+<ul>
+<li><code>pop()</code>; return and remove the first value.</li>
+<li><code>pop(0)</code>; return and remove a specific position in the index.</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; data_a = [1, 2, 3, 4, 5, 6, 7]
+&gt;&gt;&gt; data_a.pop()
+1
+
+&gt;&gt;&gt; print data_a
+[2, 3, 4, 5, 6, 7]
+</code></pre>
+
+<ul>
+<li><code>del()</code>; remove a specific position in the index only.</li>
+</ul>
+<p><sub>delete</sub></p>
+<pre><code class="python">&gt;&gt;&gt; data_a = [1, 2, 3, 4, 5, 6, 7]
+&gt;&gt;&gt; del(data_a[1])
+&gt;&gt;&gt; print data_a
+[1, 3, 4, 5, 6, 7]
+</code></pre>
+
+<ul>
+<li><code>remove()</code>;  remove a specific element only.</li>
+</ul>
+<p><sub>remove</sub></p>
+<pre><code class="python">&gt;&gt;&gt; data_a = [1, 2, 3, 4, 5, 6]
+&gt;&gt;&gt; data_a.remove(2)
+&gt;&gt;&gt; print data_a
+[1, 3, 4, 5, 6]
+
+&gt;&gt;&gt; data = [x for x in data_a if x != 3]
+</code></pre>
+
+<p><strong>Slicing a list</strong></p>
+<p><sub>slice, subset</sub></p>
+<pre><code class="python">&gt;&gt;&gt; data_a = [1, 2, 3, 4, 5, 6]
+&gt;&gt;&gt; data_2 = data_a[:2]
+[1, 2]
+</code></pre>
+
+<p><strong>Remove elements from a dictionary</strong></p>
+<p><sub>pop, delete</sub></p>
+<pre><code class="python">&gt;&gt;&gt; d = {'a': 1, 'b': 2, 'c': 3}
+&gt;&gt;&gt; d.pop('a')
+1
+
+&gt;&gt;&gt; d
+{'b': 2, 'c': 3}
+
+&gt;&gt;&gt; d = {'a': 1, 'b': 2, 'c': 3}
+&gt;&gt;&gt; del d['a']
+1
+
+&gt;&gt;&gt; d
+{'b': 2, 'c': 3}
+</code></pre>
+
+<p><strong>Delete particular lines from a text file or write back particular lines in a new file</strong></p>
+<pre><code class="python">lines = open('text.txt').readlines()
+open('new.txt', 'w').writelines(lines[2:4]+lines[6:])
+</code></pre>
+
+<p><strong>Remove some lines from a text file</strong></p>
+<pre><code class="python">in_file = open('text.txt')
+out_file = open('new.txt', 'w')
+
+index = 0
+indices_to_remove = [1, 2, 5, 6]
+for line in in_file:
+    index = index + 1
+    if index not in indices_to_remove:
+        out_file.write(line)
+
+in_file.close()
+out_file.close()
+</code></pre>
+
+<p><strong>Remove some lines from a text file with <code>enumerate()</code></strong></p>
+<p><sub>enumerate</sub></p>
+<pre><code class="python">out_file = open('new.txt', 'w')
+indices_to_remove = [1, 2, 5, 6]
+
+for index, line in enumerate(open('text.txt')):
+    if (index + 1) not in indices_to_remove:
+        out_file_write(line)
+
+out_file.close()
+</code></pre>
+
+<p><strong>Remove duplicates from a file with accession numbers 1</strong></p>
+<p><sub>set</sub></p>
+<ul>
+<li>Using a set is faster but distorts the order.</li>
+</ul>
+<pre><code class="python">input_file = open('UniprotID.txt')
+output_file = open('UniprotID-unique.txt','w')
+
+unique = set(input_file)
+for line in input_file:
+    unique.add(line)
+
+for line in unique:
+    output_file.write(line)
+</code></pre>
+
+<p><strong>Remove duplicates from a list of accession numbers 2</strong></p>
+<p><sub>list</sub></p>
+<pre><code class="python">input_file = open('UniprotID.txt')
+output_file = open('UniprotID-unique.txt','w')
+
+unique = []
+for line in input_file:
+    if line not in unique:
+        output_file.write(line)
+        unique.append(line)
+
+input_file.close()
+output_file.close()
+</code></pre>
+
+<p><strong>Compare two lists of accession codes using sets</strong></p>
+<p><sub>set comparison, difference</sub></p>
+<pre><code class="python"># read the old database release
+old_db = set()
+for line in open(&quot;list_old.txt&quot;):
+    accession = line.strip()
+    old_db.add(accession)
+
+# read the new database release
+new_db = set()
+for line in open(&quot;list_new.txt&quot;):
+    accession = line.strip()
+    new_db.add(accession)
+
+# report the differences
+new_entries = new_db.difference(old_db)
+print &quot;new entries&quot;, list(new_entries)
+old_entries = old_db.difference(new_db)
+print &quot;deprecated entries&quot;, list(old_entries)
+unique_entries = new_db.symmetric_difference(old_db)
+print &quot;unique entries&quot;, list(unique_entries)
+</code></pre>
+
+<h4 id="chapter-7-managing-tabular-data">Chapter 7, Managing Tabular Data<a class="headerlink" href="#chapter-7-managing-tabular-data" title="Permanent link">&para;</a></h4>
+<p><strong>The original data</strong></p>
+<table>
+<thead>
+<tr>
+<th>protein</th>
+<th>ext1</th>
+<th>ext2</th>
+<th>ext3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.16</td>
+<td>0.038</td>
+<td>0.044</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>0.33</td>
+<td>0.089</td>
+<td>0.095</td>
+<td>0.091</td>
+</tr>
+<tr>
+<td>0.66</td>
+<td>0.184</td>
+<td>0.191</td>
+<td>0.191</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>0.28</td>
+<td>0.292</td>
+<td>0.283</td>
+</tr>
+<tr>
+<td>1.32</td>
+<td>0.365</td>
+<td>0.367</td>
+<td>0.365</td>
+</tr>
+<tr>
+<td>1.66</td>
+<td>0.441</td>
+<td>0.443</td>
+<td>0.444</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Read tabular data from a tab-separated text file</strong></p>
+<pre><code class="python">table = []
+
+for line in open('lowry_data.txt'):
+    table.append(line.strip().split('\t'))
+
+print table
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">[
+['protein', 'ext1', 'ext2', 'ext3'],
+['0.16', '0.038', '0.044', '0.04'],
+['0.33', '0.089', '0.095', '0.091'],
+['0.66', '0.184', '0.191', '0.191'],
+['1.0', '0.28', '0.292', '0.283'],
+['1.32', '0.365', '0.367', '0.365'],
+['1.66', '0.441', '0.443', '0.444']
+]
+</code></pre>
+
+<p><strong>Write a nested list to a text file</strong></p>
+<pre><code class="python">table = [
+    ['protein', 'ext1', 'ext2', 'ext3'],
+    [0.16, 0.038, 0.044, 0.040],
+    [0.33, 0.089, 0.095, 0.091],
+    [0.66, 0.184, 0.191, 0.191],
+    [1.00, 0.280, 0.292, 0.283],
+    [1.32, 0.365, 0.367, 0.365],
+    [1.66, 0.441, 0.443, 0.444]
+    ]
+
+out = ''
+
+for row in table:
+    line = [str(cell) for cell in row]
+    out = out + '\t'.join(line) + '\n'
+
+open('lowry_data.txt', 'w').write(out)
+</code></pre>
+
+<p><strong>Reformat a four-column to a two-column table</strong></p>
+<p>Create a 2D table.</p>
+<p>Print the table line by line.</p>
+<pre><code class="python">table = [
+    ['protein', 'ext1', 'ext2', 'ext3'],
+    [0.16, 0.038, 0.044, 0.040],
+    [0.33, 0.089, 0.095, 0.091],
+    [0.66, 0.184, 0.191, 0.191],
+    [1.00, 0.280, 0.292, 0.283],
+    [1.32, 0.365, 0.367, 0.365],
+    [1.66, 0.441, 0.443, 0.444]
+    ]
+
+# remove the first row
+table = table[1:]
+
+protein, ext1, ext2, ext3 = zip(*table)
+
+# create a single column for `ext` or concatenate each `ext`
+# extend (`* 3`) the `protein` column to match the `ext` column.
+extinction = ext1 + ext2 + ext3
+protein = protein * 3
+
+# create four tuples for each column
+table = zip(protein, extinction)
+
+for prot, ext in table:
+    print prot, ext
+</code></pre>
+
+<p>Output:</p>
+<table>
+<thead>
+<tr>
+<th>protein</th>
+<th>ext</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.16</td>
+<td>0.038</td>
+</tr>
+<tr>
+<td>0.33</td>
+<td>0.089</td>
+</tr>
+<tr>
+<td>0.66</td>
+<td>0.184</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>0.28</td>
+</tr>
+<tr>
+<td>1.32</td>
+<td>0.365</td>
+</tr>
+<tr>
+<td>1.66</td>
+<td>0.441</td>
+</tr>
+<tr>
+<td>0.16</td>
+<td>0.044</td>
+</tr>
+<tr>
+<td>0.33</td>
+<td>0.095</td>
+</tr>
+<tr>
+<td>0.66</td>
+<td>0.191</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>0.292</td>
+</tr>
+<tr>
+<td>1.32</td>
+<td>0.367</td>
+</tr>
+<tr>
+<td>1.66</td>
+<td>0.443</td>
+</tr>
+<tr>
+<td>0.16</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>0.33</td>
+<td>0.091</td>
+</tr>
+<tr>
+<td>0.66</td>
+<td>0.191</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>0.283</td>
+</tr>
+<tr>
+<td>1.32</td>
+<td>0.365</td>
+</tr>
+<tr>
+<td>1.66</td>
+<td>0.444</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Create a table; lists in a list</strong></p>
+<ul>
+<li>Empty 1.</li>
+</ul>
+<pre><code class="python">table = [[0] * 3 for x in range(3)]
+</code></pre>
+
+<ul>
+<li>Empty 2.</li>
+</ul>
+<pre><code class="python">table = []
+for i in range(3):
+    table.append([0] * 3)
+</code></pre>
+
+<p><strong>Encode a 2D list; lists in a list</strong></p>
+<p><sub>tabular, table, two dimensions</sub></p>
+<pre><code class="python">table = [
+    [ 0,  1,  2,  3],
+    [10, 11, 12, 13],
+    [20, 21, 22, 23]
+    ]
+</code></pre>
+
+<p><strong>Encode a list of nested tuples; tuples in a list</strong></p>
+<pre><code class="python">table = [
+    ( 0,  1,  2,  3),
+    (10, 11, 12, 13),
+    (20, 21, 22, 23)
+    ]
+</code></pre>
+
+<p><strong>Extract, access rows and cells from a 2D table</strong></p>
+<p><sub>tabular, table, two dimensions</sub></p>
+<ul>
+<li><code>table[1]</code>; extract the 2nd row.</li>
+<li><code>table[1][2]</code>; extract a single cell (2nd row, 3rd column).</li>
+<li><code>table[1:]</code> or <code>table.pop(0)</code>; slice the 1st row, keep the remaining.</li>
+<li><code>table.pop(2)</code>; delete the 3rd row.</li>
+<li><code>table[:2]</code>; slice the 3rd column, keep the remaining.</li>
+<li><code>table[:2] + table[3:]</code>; slice the 3rd column and 4th row, keep the remaining.</li>
+<li><code>table.insert(2, [0.55, 0.12, 0.12, 0.14])</code>; insert a new row in 3rd position</li>
+<li><code>table.append([0.55, 0.12, 0.12, 0.14])</code>; insert a new row at the end.</li>
+</ul>
+<p><strong>Looping to access each row</strong></p>
+<pre><code class="python">for row in table:
+    print row
+</code></pre>
+
+<p><strong>Looping to access each cell</strong></p>
+<pre><code class="python">for row in table:
+    for cell in row:
+        print cell
+</code></pre>
+
+<p><strong>Extract, access columns from a 2D table</strong></p>
+<p><sub>tabular, table, two dimensions</sub></p>
+<pre><code class="python">protein = []
+
+# access the 1st, 2nd... column (separate the columns)
+for row in table:
+    protein.append(row[0])
+</code></pre>
+
+<pre><code class="python"># access the 4th column
+columns = zip(*table)
+fourth = column[3]
+</code></pre>
+
+<ul>
+<li><code>protein, ex1. ext2, ext3 = zip(*table)</code>; access many columns; now each column is in a separate tuple.</li>
+</ul>
+<p><strong>Flip a table 90 degrees</strong></p>
+<p><sub>convert column to row, row to column</sub></p>
+<ul>
+<li>Column becomes rows. Easier to extract or insert rows and cells.</li>
+</ul>
+<pre><code class="python">data = [
+    [ 0,  1,  2,  3],
+    [10, 11, 12, 13],
+    [20, 21, 22, 23]
+]
+
+columns = zip(*data)
+print columns
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">[
+(0, 10, 20),
+(1, 11, 21),
+(2, 12, 22),
+(3, 13, 23)
+]
+</code></pre>
+
+<ul>
+<li>But rows are now immutable tuples!</li>
+<li>You cannot manipulate individual cells.</li>
+<li>Convert the rows to lists again in order to extract a cell.</li>
+</ul>
+<pre><code class="python">table[1] = list(table[1])
+table[1][2]
+</code></pre>
+
+<p><strong>Insert, access or extract columns from a 2D table</strong></p>
+<p><sub>tabular, table, two dimensions</sub></p>
+<pre><code class="python">table = zip(*table)
+table.append(['ext4', 0, 0, 0, 0, 0, 0])
+table = zip(*table)
+
+table = zip(*table)
+table.pop(1)
+table = zip(*table)
+
+table = zip(*table)
+table
+</code></pre>
+
+<p><strong>The <code>zip()</code> function</strong></p>
+<ul>
+<li><code>zip()</code>; iterate though lists, tuples, and strings.</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; zip([1, 2, 3], [4, 5, 6])
+[
+(1, 4),
+(2, 5),
+(3, 6)
+]
+</code></pre>
+
+<ul>
+<li>The asterik tells the function to use all the arguments.</li>
+</ul>
+<pre><code class="python">zip(*table)
+
+# vs
+
+zip(table[0], table[1], table[2], table[3])
+</code></pre>
+
+<p><strong>Multi-dimentional tables</strong></p>
+<p><sub>tabular, table, two dimensions, three dimensions, 2D, 3D, lists in list</sub></p>
+<pre><code class="python">cube = [[[0, 1], [2, 3]], [[4, 5], [6, 7]]]
+</code></pre>
+
+<ul>
+<li>Warning: more dimensions means more nested data.</li>
+<li>It slows down the calculations!!! </li>
+<li>Prefer Numpy, Pandas, parallel computing.</li>
+<li>Avoid going over 2D!</li>
+</ul>
+<p><strong>Create a table; dictionaries in a table, in a list</strong></p>
+<pre><code class="python">table = [
+   {'protein': 0.16, 'ext1': 0.038, 'ext2': 0.044, 'ext3': 0.040},
+   {'protein': 0.33, 'ext1': 0.089, 'ext2': 0.095, 'ext3': 0.091},
+   {'protein': 0.66, 'ext1': 0.184, 'ext2': 0.191, 'ext3': 0.191},
+   {'protein': 1.00, 'ext1': 0.280, 'ext2': 0.292, 'ext3': 0.283},
+   {'protein': 1.32, 'ext1': 0.365, 'ext2': 0.367, 'ext3': 0.365},
+   {'protein': 1.66, 'ext1': 0.441, 'ext2': 0.443, 'ext3': 0.444}
+   ]
+</code></pre>
+
+<p><strong>Extract, access cells in a table</strong></p>
+<pre><code class="python"># second row, cell 'ext2' instead of a number
+cell = table[1]['ext2']
+
+print table
+print cell
+</code></pre>
+
+<p><strong>Create a table; dictionaries in a dictionary</strong></p>
+<pre><code class="python">table = {
+   'row1': {'protein': 0.16, 'ext1': 0.038, 'ext2': 0.044, 'ext3': 0.040},
+   'row2': {'protein': 0.33, 'ext1': 0.089, 'ext2': 0.095, 'ext3': 0.091},
+   'row3': {'protein': 0.66, 'ext1': 0.184, 'ext2': 0.191, 'ext3': 0.191},
+   'row4': {'protein': 1.00, 'ext1': 0.280, 'ext2': 0.292, 'ext3': 0.283},
+   'row5': {'protein': 1.32, 'ext1': 0.365, 'ext2': 0.367, 'ext3': 0.365},
+   'row6': {'protein': 1.66, 'ext1': 0.441, 'ext2': 0.443, 'ext3': 0.444}
+   }
+</code></pre>
+
+<p><strong>Extract, access cells in a table, in a dictionary</strong></p>
+<p>More readable this way; second row, cell <code>'ext2'</code>:</p>
+<pre><code class="python">cell = table['row1']['ext2']
+
+print table
+print cell
+</code></pre>
+
+<p><strong>Create a table: lists in a dictionaries</strong></p>
+<p>Data for each row are in a simpler format.</p>
+<pre><code class="python">table = {
+   '1': ['protein': 0.16, 'ext1': 0.038, 'ext2': 0.044, 'ext3': 0.040¸],
+   '2': ['protein': 0.33, 'ext1': 0.089, 'ext2': 0.095, 'ext3': 0.091],
+   '3': ['protein': 0.66, 'ext1': 0.184, 'ext2': 0.191, 'ext3': 0.191],
+   '4': ['protein': 1.00, 'ext1': 0.280, 'ext2': 0.292, 'ext3': 0.283],
+   '5': ['protein': 1.32, 'ext1': 0.365, 'ext2': 0.367, 'ext3': 0.365],
+   '6': ['protein': 1.66, 'ext1': 0.441, 'ext2': 0.443, 'ext3': 0.444]
+   }
+</code></pre>
+
+<p><strong>Create a table; formats</strong></p>
+<ul>
+<li>Lists in a list: <ul>
+<li>Easy to access/add/delete rows, to sort. </li>
+<li>Difficult to deal with columns and a specific cell.</li>
+</ul>
+</li>
+<li>Dictionaries in a dictionary:<ul>
+<li>Easy to access column entries.</li>
+<li>Easy to read (find data).</li>
+<li>Unsorted and impossible to sort.</li>
+</ul>
+</li>
+<li>Mixed lists and dictionaries:<ul>
+<li>Use the advantage of both types and build the table accordingly (l, d or d, l for rows, columns) depending on the operations (see above).</li>
+<li>The code is harder to read or less straightforward.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Convert a table from a nested list to a nested dictionary&hellip;</strong></p>
+<pre><code class="python">table = [
+    ['protein', 'ext'],
+    [0.16, 0.038],
+    [0.33, 0.089],
+    [0.66, 0.184],
+    [1.00, 0.280],
+    [1.32, 0.365],
+    [1.66, 0.441]
+]
+
+# convert nested list to nested dict
+nested_dict = {}
+n = 0
+key = table[0]
+for row in table[1:]: # for row in table[0:]  includes the header
+    n += 1
+    entry = {key[0]: row[0], key[1]: row[1]}
+    nested_dict['row'+str(n)] = entry
+
+print nested_dict
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">{
+'row1': {'protein': 0.16, 'ext': 0.038},
+'row2': {'protein': 0.33, 'ext': 0.089},
+'row3': {'protein': 0.66, 'ext': 0.184},
+'row4': {'protein': 1.0, 'ext': 0.28},
+'row5': {'protein': 1.32, 'ext': 0.365},
+'row6': {'protein': 1.66, 'ext': 0.441}
+}
+</code></pre>
+
+<p><strong>&hellip;and convert a nested dictionary to a table</strong></p>
+<pre><code class="python"># convert nested dict back to nested list
+nested_list = []
+for entry in nested_dict:
+    key = nested_dict[entry]
+    nested_list.append([key['protein'], key['ext']])
+
+print nested_list
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">[
+[0.16, 0.038],
+[0.33, 0.089],
+[0.66, 0.184],
+[1.0, 0.28],
+[1.32, 0.365],
+[1.66, 0.441]
+]
+</code></pre>
+
+<h4 id="chapter-8-sorting-data">Chapter 8, Sorting Data<a class="headerlink" href="#chapter-8-sorting-data" title="Permanent link">&para;</a></h4>
+<p><strong>Sort a table by one column and write it to a file</strong></p>
+<p><sub>add, index, list</sub></p>
+<ul>
+<li><code>sorted()</code>.</li>
+<li><code>itemgetter()</code>; turn elements of each column into a sortable key.</li>
+</ul>
+<pre><code class="python">from operator import itemgetter
+
+# read table to a nested list of floats
+table = []
+for line in open(&quot;random_distribution.tsv&quot;):
+    columns = line.split()
+    columns = [float(x) for x in columns]
+    table.append(columns)
+
+# sort the table by second column
+column = 1
+table_sorted = sorted(table, key = itemgetter(column))
+
+# format table as strings
+for row in table_sorted:
+    row = [str(x) for x in row]
+    print &quot;\t&quot;.join(row)
+</code></pre>
+
+<p>Output (first 3 lines only):</p>
+<pre><code class="text">6153.0  58.0    0.00942629611572    40.0    0.00650089387291    260.0   0.0422558101739
+6101.0  64.0    0.0104900835929 41.0    0.00672020980167    299.0   0.0490083592854
+6101.0  68.0    0.0111457138174 39.0    0.0063923946894 274.0   0.0449106703819
+</code></pre>
+
+<p><strong>List are good for sorting</strong></p>
+<ul>
+<li>ASCII sort order chart (top to bottom, left to right):</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>space</td>
+<td>0</td>
+<td>:</td>
+<td>A</td>
+<td>Q</td>
+<td>[</td>
+<td>a</td>
+<td>q</td>
+<td>}</td>
+</tr>
+<tr>
+<td>!</td>
+<td>1</td>
+<td>;</td>
+<td>B</td>
+<td>R</td>
+<td>\</td>
+<td>b</td>
+<td>r</td>
+<td>tick</td>
+</tr>
+<tr>
+<td>&ldquo;</td>
+<td>2</td>
+<td>&lt;</td>
+<td>C</td>
+<td>S</td>
+<td>]</td>
+<td>c</td>
+<td>s</td>
+<td>{</td>
+</tr>
+<tr>
+<td>#</td>
+<td>3</td>
+<td>=</td>
+<td>D</td>
+<td>T</td>
+<td>^</td>
+<td>d</td>
+<td>t</td>
+<td><sub></td>
+</tr>
+<tr>
+<td>$</td>
+<td>4</td>
+<td>&gt;</td>
+<td>E</td>
+<td>U</td>
+<td>_</td>
+<td>e</td>
+<td>u</td>
+<td>DEL</td>
+</tr>
+<tr>
+<td>%</td>
+<td>5</td>
+<td>?</td>
+<td>F</td>
+<td>V</td>
+<td>`</td>
+<td>f</td>
+<td>v</td>
+<td></td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>6</td>
+<td>@</td>
+<td>G</td>
+<td>W</td>
+<td></td>
+<td>g</td>
+<td>w</td>
+<td></td>
+</tr>
+<tr>
+<td>&lsquo;</td>
+<td>7</td>
+<td></td>
+<td>H</td>
+<td>X</td>
+<td></td>
+<td>h</td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td>(</td>
+<td>8</td>
+<td></td>
+<td>I</td>
+<td>Y</td>
+<td></td>
+<td>i</td>
+<td>y</td>
+<td></td>
+</tr>
+<tr>
+<td>)</td>
+<td>9</td>
+<td></td>
+<td>J</td>
+<td>Z</td>
+<td></td>
+<td>j</td>
+<td>z</td>
+<td></td>
+</tr>
+<tr>
+<td>*</td>
+<td></td>
+<td></td>
+<td>K</td>
+<td></td>
+<td></td>
+<td>k</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>+</td>
+<td></td>
+<td></td>
+<td>L</td>
+<td></td>
+<td></td>
+<td>l</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>,</td>
+<td></td>
+<td></td>
+<td>M</td>
+<td></td>
+<td></td>
+<td>m</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td></td>
+<td></td>
+<td>N</td>
+<td></td>
+<td></td>
+<td>n</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>.</td>
+<td></td>
+<td></td>
+<td>O</td>
+<td></td>
+<td></td>
+<td>o</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>/</td>
+<td></td>
+<td></td>
+<td>P</td>
+<td></td>
+<td></td>
+<td>p</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Difference between <code>sort()</code> and <code>sorted()</code></strong></p>
+<ul>
+<li><code>sort()</code>; apply to lists</li>
+<li><code>sorted()</code>; apply to lists, tuples, and dictionary keys.</li>
+<li><code>reverse()</code> sort the other way around.</li>
+<li><code>sorted(data, reverse = True)</code>; idem.</li>
+<li><code>operator.itemgetter(i)(T)</code> returns the <code>i</code>th element of <code>T</code>, a string, a list, a tuple, or a dictionary.</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; from operator import itemgetter
+&gt;&gt;&gt; data = ['A', 'T', 'C']
+&gt;&gt;&gt; itemgetter(1)(data)
+'A'
+&gt;&gt;&gt; itemgetter(1, -1)(data)
+('A', 'T')
+</code></pre>
+
+<pre><code class="python">new_table = sorted(table, key = itemgetter(1, 3))
+</code></pre>
+
+<p><strong>Sort entries in a tabular output file in reverse order</strong></p>
+<ul>
+<li>Notice the <code>table_sorted = sorted(table, key = itemgetter(2), reverse=True)</code>.</li>
+</ul>
+<pre><code class="python">from operator import itemgetter
+
+input_file = open(&quot;BlastOut.csv&quot;)
+output_file = open(&quot;BlastOutSorted.csv&quot;,&quot;w&quot;)
+
+# read BLAST output table
+table = []
+for line in input_file:
+    col = line.split(',')
+    col[2] = float(col[2])
+    table.append(col)
+
+table_sorted = sorted(table, key = itemgetter(2), reverse=True)
+
+# write sorted table to an output file
+for row in table_sorted:
+    row = [str(x) for x in row]
+    output_file.write(&quot;\t&quot;.join(row) + '\n')
+
+input_file.close()
+output_file.close()
+</code></pre>
+
+<p><strong>Sort a tuple by converting it to a list</strong></p>
+<pre><code class="python"># sort a tuple
+data = (1, 4, 5, 3, 8, 9, 2, 6, 8, 9, 30)
+list_data = list(data)
+list_data.sort()
+new_tup = tuple(data)
+print new_tup
+
+# sort a tuple using the sorted() built-in function
+new_tup = tuple(sorted(data))
+print new_tup
+</code></pre>
+
+<p>Both outputs:</p>
+<pre><code class="python">(1, 4, 5, 3, 8, 9, 2, 6, 8, 9, 30)
+(1, 2, 3, 4, 5, 6, 8, 8, 9, 9, 30)
+</code></pre>
+
+<p><strong>Convert a dictionary to a sorted list</strong></p>
+<pre><code class="python">data = {1: 'a', 2: 'b', 4: 'd', 3: 'c',
+        5: 't', 6: 'm', 36: 'z'}
+
+# create a list of keys and go through them one by one
+keys = list(data)
+keys.sort()
+for key in keys:
+    print key, data[key]
+
+
+# sort keys using the sorted() built-in function
+for key in sorted(data):
+    print key, data[key]
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">1  a
+2  b
+3  c
+4  d
+5  t
+6  m
+36 z
+1  a
+2  b
+3  c
+4  d
+5  t
+6  m
+36 z
+</code></pre>
+
+<p><strong>Sort strings by their length</strong></p>
+<p><sub>lamda, function</sub></p>
+<ul>
+<li>Use a <code>lambda</code> function and replace <code>itemgetter()</code>.</li>
+</ul>
+<pre><code class="python">data = ['ASDF', 'SDFSADGSAG', 'SDFSD', 'GSGDGG']
+
+new_data = sorted(data, key = lambda x: len(x))
+print new_data
+</code></pre>
+
+<pre><code class="python">data = ['ASDF', 'SDFSADGSAG', 'SDFSD', 'GSGDGG']
+
+new_data = sorted(data, key = lambda col: col[1]) # alternative
+print new_data
+</code></pre>
+
+<p>Same output:</p>
+<pre><code class="python">['ASDF', 'SDFSD', 'GSGDGG', 'SDFSADGSAG']
+</code></pre>
+
+<p><strong>Sort a table by seven columns in one operation</strong></p>
+<pre><code class="python">from operator import itemgetter
+
+# read table
+in_file = open(&quot;random_distribution.tsv&quot;)
+table = []
+for line in in_file:
+    columns = line.split()
+    columns = [float(x) for x in columns]
+    table.append(columns)
+
+table_sorted = sorted(table, key=itemgetter(0, 1, 2, 3, 4, 5, 6))
+print table_sorted
+</code></pre>
+
+<p>Output (first 3 lines only):</p>
+<pre><code class="python">[
+[6041.0, 87.0, 0.0144015891409, 44.0, 0.00728356232412, 213.0, 0.035259063069],
+[6042.0, 121.0, 0.0200264812976, 35.0, 0.00579278384641, 262.0, 0.0433631247931],
+[6044.0, 113.0, 0.0186962276638, 67.0, 0.0110853739246, 266.0, 0.0440105890139],
+...
+]
+</code></pre>
+
+<p><strong>Sort entries in a tabular BLAST output file in reverse order</strong></p>
+<pre><code class="python">from operator import itemgetter
+
+input_file = open(&quot;BlastOut.csv&quot;)
+output_file = open(&quot;BlastOutSorted.csv&quot;,&quot;w&quot;)
+
+# read BLAST output table
+table = []
+for line in input_file:
+    col = line.split(',')
+    col[2] = float(col[2])
+    table.append(col)
+
+table_sorted = sorted(table, key=itemgetter(2), reverse=True)
+
+# write sorted table to an output file
+for row in table_sorted:
+    row = [str(x) for x in row]
+    output_file.write(&quot;\t&quot;.join(row) + '\n')
+
+input_file.close()
+output_file.close()
+</code></pre>
+
+<p><strong>Sort entries in a comma separated file by two columns</strong></p>
+<pre><code class="python">from operator import itemgetter
+
+input_file = open(&quot;PDBhaemoglobinReport.csv&quot;)
+output_file = open(&quot;PDBhaemoglobinSorted.csv&quot;,&quot;w&quot;)
+
+table = []
+header = input_file.readline()
+for line in input_file:
+    col = line.split(',')
+    col[3] = float(col[3][1:-1])
+    col[4] = int(col[4][1:-2])
+    table.append(col)
+
+table_sorted = sorted(table, key=itemgetter(3, 4))
+
+output_file.write(header + '\t')
+for row in table_sorted:
+    row = [str(x) for x in row]
+    output_file.write(&quot;\t&quot;.join(row) + '\n')
+
+input_file.close()
+output_file.close()
+</code></pre>
+
+<h4 id="chapter-9-pattern-matching-and-text-mining">Chapter 9, Pattern Matching and Text Mining<a class="headerlink" href="#chapter-9-pattern-matching-and-text-mining" title="Permanent link">&para;</a></h4>
+<p><strong>Find a sequence pattern in a sequence</strong></p>
+<p><sub>regex, regular expression</sub></p>
+<ul>
+<li><code>re</code> package.</li>
+</ul>
+<pre><code class="python">import re
+
+# define a string with occurrences of regex:
+seq = 'VSVLTMFRYAGWLDRLYMLVGTQLAAIIHGVALPLMMLI'
+
+# compile a pattern and assign it to a variable
+pattern = re.compile('[ST]Q')
+
+# search for the pattern in the string
+match = pattern.search(seq)
+if match:
+    # print the first match along the sequence with the group() method
+    # 4 characters before and after the pattern
+    print '%10s' %(seq[match.start() - 4:match.end() + 4])
+    print '%6s' % match.group()
+else:
+    print &quot;no match&quot;
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">MLVGTQLAAI
+    TQ
+</code></pre>
+
+<p><strong><code>re</code> methods</strong></p>
+<ul>
+<li><code>group()</code>; return the matching subgroup.</li>
+<li><code>span()</code>; return a tuple containing the starting and ending position of the match.</li>
+<li><code>start()</code>; return the starting position.</li>
+<li><code>end()</code>; return the ending position.</li>
+<li><code>search()</code>; find the <strong>first</strong> occurence within the string.</li>
+<li><code>match()</code>; attempt to match a pattern to a string. If the pattern is within the string, it will not match it. It will find &lsquo;S&rsquo; in &lsquo;ST&rsquo;, but not in &lsquo;TST&rsquo;. </li>
+<li><code>findall()</code>; return a list containing <strong>all</strong> the matching substrings.</li>
+<li><code>finditer()</code>; find <strong>all</strong> the match objects corresponding to the regex matches and returns them in the form of an iterator.</li>
+</ul>
+<pre><code class="python">import re
+
+pattern = re.compile('R.[ST][^P]')
+seq = 'RQSAMGSNKSKPKDASQRRRSLEPAENVHGAGGGAFPASQRPSKP'
+
+# findall returns a list of all matches
+matches = pattern.findall(seq)
+print matches
+
+# finditer returns an iterator of match objects
+match_iter = pattern.finditer(seq)
+for match in match_iter:
+    print match.group(), match.span(), match.start(), match.end()
+</code></pre>
+
+<p>Ouput:</p>
+<pre><code class="python">['RQSA', 'RRSL', 'RPSK']
+RQSA (0, 4) 0 4
+RRSL (18, 22) 18 22
+RPSK (40, 44) 40 44
+</code></pre>
+
+<p><strong>More <code>re</code> methods</strong></p>
+<ul>
+<li>Divide regex in subgroups, each matching a different component of interest.</li>
+<li><code>(.)</code>; delimite a group.</li>
+<li><code>R(.)[ST][^P]</code>; stand for &lsquo;R&rsquo;, &lsquo;any character&rsquo;, pattern &lsquo;ST&rsquo;, any character different from &lsquo;P&rsquo;.<ul>
+<li>The &lsquo;any character&rsquo; is also a subgroup.</li>
+<li>What ever is found between <code>R</code> and <code>[ST][^P]</code> is a subgroup.</li>
+</ul>
+</li>
+<li><code>R(.{0,3})[ST][^P]</code>; add a `{0,3}.<ul>
+<li>This qualifier or quantifiers means that at least 0 and at most 3 repetitions of &lsquo;R&rsquo;.</li>
+</ul>
+</li>
+<li><code>group()</code>; always return the complete matching substring (0 for no subgroup).</li>
+<li><code>group(#)</code>; return subgroups numbered from left to right in increasing order (subgroup #).</li>
+</ul>
+<p><strong>Find multiple patterns in a search string</strong></p>
+<pre><code class="python">import re
+
+seq = 'QSAMGSNKSKPKDASQRRRSLEPAENVHGAGGGAFPASQRPSKP'
+
+pattern1 = re.compile('R(.)[ST][^P]')
+match1 = pattern1.search(seq)
+print match1.group()
+print match1.group(1)
+
+pattern2 = re.compile('R(.{0,3})[ST][^P]')
+match2 = pattern2.search(seq)
+print match2.group()
+print match2.group(1)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="text">RRSL
+R
+RRRSL
+RR
+</code></pre>
+
+<p><strong>Another example with two subgroups</strong></p>
+<pre><code class="python">import re
+
+seq = 'zzabcdzz'
+
+pattern = re.compile('(a(b)c)d')
+match = pattern.search(seq)
+print match.group(0)
+print match.group(1)
+print match.group(2)
+print match.groups()
+</code></pre>
+
+<ul>
+<li><code>groups()</code>; return a tuple with the substrings corresponding to all subgroups.</li>
+</ul>
+<p>Output:</p>
+<pre><code class="python">abcd
+abc
+b
+('abc', 'b')
+</code></pre>
+
+<p><strong>Assign  names to subgroup: <code>?P&lt;w1&gt;</code> and <code>?P&lt;w2&gt;</code></strong></p>
+<pre><code class="python">import re
+
+seq = 'zzabcdzz'
+
+pattern = re.compile('(?P&lt;w1&gt;a(?P&lt;w2&gt;b)c)d')
+match = pattern.search(seq)
+print match.group(0)
+print match.group('w1')
+print match.group('w2')
+</code></pre>
+
+<p>Ouput:</p>
+<pre><code class="text">abcd
+abc
+b
+</code></pre>
+
+<p><strong>More <code>re</code> methods</strong></p>
+<ul>
+<li><code>splits(s)</code>; split the string <code>s</code> at the matches of a regex.</li>
+<li><code>sub(r, s, [c])</code>; return a new string <code>s</code> where nonoverlapping occurrences of a given pattern in the string are all replaced with the value of <code>r</code>. <code>c</code>, an optional number, stands for the maximum numbers of occurences.</li>
+<li><code>subn(r, s, [c])</code>; do what <code>sub()</code> does, but returns a tuple of two elements; the first element is the new string (as with <code>sub(r, s, [c])</code>) and the second is the number of replacements.</li>
+</ul>
+<p><strong>Split text and replace separators with a pattern</strong></p>
+<pre><code class="python">import re
+
+separator = re.compile('\|')
+
+# split
+annotation = 'ATOM:CA|RES:ALA|CHAIN:B|NUMRES:166'
+columns = separator.split(annotation)
+print columns
+
+# replace
+new_annotation = separator.sub('@', annotation)
+print &quot;replace all |:&quot;
+print new_annotation
+
+new_annotation2 = separator.sub('@', annotation, 2)
+print &quot;replace 2 |:&quot;
+print new_annotation2
+
+new_annotation3 = separator.subn('@', annotation)
+print &quot;replace all |:&quot;
+print new_annotation3
+
+new_annotation4 = separator.subn('@', annotation, 2)
+print &quot;replace 2 |:&quot;
+print new_annotation4
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">['ATOM:CA', 'RES:ALA', 'CHAIN:B', 'NUMRES:166']
+replace all |:
+ATOM:CA@RES:ALA@CHAIN:B@NUMRES:166
+replace 2 |:
+ATOM:CA@RES:ALA@CHAIN:B|NUMRES:166
+replace all |:
+('ATOM:CA@RES:ALA@CHAIN:B@NUMRES:166', 3)
+replace 2 |:
+('ATOM:CA@RES:ALA@CHAIN:B|NUMRES:166', 2)
+</code></pre>
+
+<p><strong>Find transcription factor binding sites</strong></p>
+<pre><code class="python">import re
+
+genome_seq = open('genome.txt').read()
+
+# read transcription factor binding site patterns
+sites = []
+for line in open('TFBS.txt'):
+    fields = line.split()
+    tf = fields[0]
+    site = fields[1]
+    sites.append((tf, site))
+
+# match all TF's to the genome and print matches
+for tf, site in sites:
+    tfbs_regexp = re.compile(site)
+    all_matches = tfbs_regexp.findall(genome_seq)
+    matches = tfbs_regexp.finditer(genome_seq)
+    if all_matches:
+        print tf, ':'
+        for tfbs in matches:
+            print '\t', tfbs.group(), tfbs.start(), tfbs.end()
+</code></pre>
+
+<p><strong>Parse abstracts from PubMed HTML pages</strong></p>
+<ul>
+<li>The script opens the HTML webpage and parses it in order to selectively fetch some parts of it.</li>
+<li>Extract the title and the abstract text.</li>
+<li>The title of the paper is enclosed between <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>.</li>
+<li>Whereas the text of the abstract is enclosed between <code>&lt;h3&gt;Abstract&lt;/h3&gt;&lt;div class = ""&gt;&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.</li>
+<li><a href="http://www.ncbi.nlm.nih.gov/pubmed/18235848">The paper.</a></li>
+</ul>
+<pre><code class="python">import urllib2
+import re
+
+pmid = '18235848'
+url = 'http://www.ncbi.nlm.nih.gov/pubmed?term=%s' % pmid
+handler = urllib2.urlopen(url)
+html = handler.read()
+
+title_regexp = re.compile('&lt;h1&gt;.{5,400}&lt;/h1&gt;')
+title_text = title_regexp.search(html)
+
+abstract_regexp = re.compile('&lt;AbstractText&gt;.{20,3000}&lt;/AbstractText&gt;')
+abstract_text = abstract_regexp.search(html)
+
+print 'TITLE:', title_text.group() 
+print 'ABSTRACT:', abstract_text.group()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="html">TITLE: &lt;h1&gt;Quantitative high-throughput screen identifies inhibitors of the Schistosoma mansoni redox cascade.&lt;/h1&gt;
+ABSTRACT: &lt;AbstractText&gt;Schistosomiasis is a tropical disease associated with high morbidity and mortality, currently affecting over 200 million people worldwide. Praziquantel is the only drug used to treat the disease, and with its increased use the probability of developing drug resistance has grown significantly. The Schistosoma parasites can survive for up to decades in the human host due in part to a unique set of antioxidant enzymes that continuously degrade the reactive oxygen species produced by the host's innate immune response. Two principal components of this defense system have been recently identified in S. mansoni as thioredoxin/glutathione reductase (TGR) and peroxiredoxin (Prx) and as such these enzymes present attractive new targets for anti-schistosomiasis drug development. Inhibition of TGR/Prx activity was screened in a dual-enzyme format with reducing equivalents being transferred from NADPH to glutathione via a TGR-catalyzed reaction and then to hydrogen peroxide via a Prx-catalyzed step. A fully automated quantitative high-throughput (qHTS) experiment was performed against a collection of 71,028 compounds tested as 7- to 15-point concentration series at 5 microL reaction volume in 1536-well plate format. In order to generate a robust data set and to minimize the effect of compound autofluorescence, apparent reaction rates derived from a kinetic read were utilized instead of end-point measurements. Actives identified from the screen, along with previously untested analogues, were subjected to confirmatory experiments using the screening assay and subsequently against the individual targets in secondary assays. Several novel active series were identified which inhibited TGR at a range of potencies, with IC(50)s ranging from micromolar to the assay response limit ( approximately 25 nM). This is, to our knowledge, the first report of a large-scale HTS to identify lead compounds for a helminthic disease, and provides a paradigm that can be used to jump-start development of novel therapeutics for other neglected tropical diseases.&lt;/AbstractText&gt;
+</code></pre>
+
+<p><strong>Search for keywords in a series of PubMed abstracts</strong></p>
+<ul>
+<li>This example can be applied to perform very simple text mining and can be compared to the &ldquo;find&rdquo; tool in Microsoft Word.</li>
+<li>It might stop on the first occurence.</li>
+</ul>
+<pre><code class="python">import urllib2
+import re
+
+# word to be searched
+word_regexp = re.compile('schistosoma')
+
+# list of PMIDs where we want to search the word
+pmids = ['18235848', '22607149', '22405002', '21630672']
+for pmid in pmids:
+    url = 'http://www.ncbi.nlm.nih.gov/pubmed?term=' + pmid
+    handler = urllib2.urlopen(url)
+    html = handler.read()
+    title_regexp = re.compile('&lt;h1&gt;.{5,400}&lt;/h1&gt;')
+    title = title_regexp.search(html)
+    title = title.group() 
+    abstract_regexp = re.compile('&lt;AbstractText&gt;.{20,3000}&lt;/AbstractText&gt;')
+    abstract = abstract_regexp.search(html)
+    abstract = abstract.group()
+    word = word_regexp.search(abstract, re.IGNORECASE)
+    if word:
+        # display title and where the keyword was found
+        print title
+        print word.group(), word.start(), word.end()
+</code></pre>
+
+<ul>
+<li>Circumvent the problem with the <code>finditer()</code> method.</li>
+</ul>
+<pre><code class="python">import urllib2
+import re
+
+# word to be searched
+word_regexp = re.compile('schistosoma')
+
+# list of PMIDs where we want to search the word
+pmids = ['18235848', '22607149', '22405002', '21630672']
+for pmid in pmids:
+    url = 'http://www.ncbi.nlm.nih.gov/pubmed?term=' + pmid
+    handler = urllib2.urlopen(url)
+    html = handler.read()
+    title_regexp = re.compile('&lt;h1&gt;.{5,400}&lt;/h1&gt;')
+    title = title_regexp.search(html)
+    title = title.group() 
+    abstract_regexp = re.compile('&lt;AbstractText&gt;.{20,3000}&lt;/AbstractText&gt;')
+    abstract = abstract_regexp.search(html)
+    abstract = abstract.group()
+    words = word_regexp.finditer(abstract)
+    if words:
+        # display title and where the keyword was found
+        print title
+        for word in words:
+            print word.group(), word.start(), word.end()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="html">&lt;h1&gt;Quantitative high-throughput screen identifies inhibitors of the Schistosoma mansoni redox cascade.&lt;/h1&gt;
+&lt;h1&gt;The redox biology of schistosome parasites and applications for drug development.&lt;/h1&gt;
+&lt;h1&gt;Moonlighting by different stressors: crystal structure of the chaperone species of a 2-Cys peroxiredoxin.&lt;/h1&gt;
+&lt;h1&gt;Investigations of the catalytic mechanism of thioredoxin glutathione reductase from Schistosoma mansoni.&lt;/h1&gt;
+</code></pre>
+
+<p><strong>More <code>re</code> methods</strong></p>
+<ul>
+<li><code>findall()</code>; look for all (non-overlapping) occurrences of pattern in string; return a list of matches.</li>
+<li><code>finditer()</code>; same as above except returns an iterator instead of a list; for each match, the iterator returns a match object; it is adapted for loops!</li>
+<li><code>|</code>;  &lsquo;OR&rsquo;.</li>
+<li><code>$</code>; indicate that a match exists in the string only if the pattern is in the last position of the string.</li>
+<li><code>^</code>; indicate that a match exists in the string only if the pattern is in the first position of the string.</li>
+</ul>
+<p><strong>Python Regex, Characters and Metacharaters</strong></p>
+<p><img alt="Regex" src="../img/managing_your_biological/regex.png" /></p>
+<h4 id="part-3-modular-programming">Part 3, Modular Programming<a class="headerlink" href="#part-3-modular-programming" title="Permanent link">&para;</a></h4>
+<h4 id="chapter-10-divide-a-program-into-functions">Chapter 10, Divide a Program into Functions<a class="headerlink" href="#chapter-10-divide-a-program-into-functions" title="Permanent link">&para;</a></h4>
+<p><strong>Built-in functions</strong></p>
+<p><sub>length, total, sum, range</sub></p>
+<ul>
+<li><code>len()</code>.</li>
+<li><code>sum()</code>.</li>
+<li><code>range(n, m, step)</code>; from n to m-1, n = 0 by default.</li>
+<li><code>xrange(n, m, step)</code>; better suited for big numbers.</li>
+</ul>
+<p><strong>Define functions</strong></p>
+<p><sub>docstring, docstrings</sub></p>
+<ul>
+<li>The documentation is retrieved with the <code>__doc__</code> attribute: type <code>addition.__doc__</code>.</li>
+</ul>
+<pre><code class="python">def addition(arg1, arg2):
+    '''
+    documentation: calculates the sum of two numbers
+    '''
+    result = arg1 + arg2
+    return result
+
+print addition(1,1)
+</code></pre>
+
+<p><strong>Lambda functions</strong></p>
+<ul>
+<li>Small anonymous functions; they are not declared using <code>def</code>.</li>
+<li>They do not contain return statement.</li>
+<li>They can be defined in an argument in a function (useful).</li>
+<li>There are nameless.</li>
+</ul>
+<pre><code class="python">def f(x):
+    return x ** 2
+
+print f(8)
+</code></pre>
+
+<p>vs</p>
+<pre><code class="python">g = lambda x: x ** 2
+
+print g(8)
+</code></pre>
+
+<p>or</p>
+<pre><code class="python">(lambda x: x ** 2)(8)
+</code></pre>
+
+<ul>
+<li>Use a <code>lambda</code> function as an argument of a built-in function:</li>
+</ul>
+<pre><code class="python">data = ['ASDF', 'SDFSADGSAG', 'SDFSD', 'GSGDGG']
+
+new_data = sorted(data, key = lambda x: len(x))
+print new_data
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">['ASDF', 'SDFSD', 'GSGDGG', 'SDFSADGSAG']
+</code></pre>
+
+<p><strong>Function Arguments</strong></p>
+<ol>
+<li>required arguments.</li>
+<li>keyword arguments.</li>
+<li>default arguments.</li>
+<li>variable-length arguments.</li>
+</ol>
+<p><strong>1. Required Arguments</strong></p>
+<pre><code class="python">def print_funct(num, seq):
+    print num, seq
+
+print_funct(10, &quot;ABC&quot;)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">10 ABC
+</code></pre>
+
+<p><strong>2. Keyword Arguments</strong></p>
+<pre><code class="python">def print_funct(num, seq):
+    print num, seq
+
+print_funct(seq = &quot;ABC&quot;, num = 10)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">10 ABC
+</code></pre>
+
+<p><strong>3. Default Arguments</strong></p>
+<p><sub>sequence</sub></p>
+<ul>
+<li>The argument is given by default; but can be overwritten!</li>
+</ul>
+<pre><code class="python">def print_funct(num, seq = &quot;A&quot;):
+    print num, seq
+
+print_funct(10, &quot;ABC&quot;)
+print_funct(10)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">10 ABC
+10 A
+</code></pre>
+
+<p><strong>4. Variable-Length Arguments</strong></p>
+<p><sub>argument, list, tuple, dictionary</sub></p>
+<ul>
+<li>Flexibility of providing any tuple.</li>
+</ul>
+<pre><code class="python">def print_args(*args):
+    print args
+
+print_args(1, 2, 3, 4, 5)
+print_args('Hi')
+print_args(100, 200, &quot;ABC&quot;)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">(1, 2, 3, 4, 5)
+('Hi')
+(100, 200, 'ABC')
+</code></pre>
+
+<ul>
+<li>Provide both the keys and values for a returned dictionary.</li>
+</ul>
+<pre><code class="python">def print_args2(**args):
+    print args
+
+print_args2(num = 100, num2 = 200, seq = &quot;ABC&quot;)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">{'num': 100, 'seq': 'ABC, 'num2': 200}
+</code></pre>
+
+<p><strong>Convert a string into a tuple or vice-versa</strong></p>
+<ul>
+<li><code>struct</code> package.</li>
+<li>In the format, <code>s</code> stands for string, <code>3s</code> stands for a three-character string.</li>
+</ul>
+<pre><code class="python">import struct
+
+# pack() method; creates a string
+format = '2s1s1s1s1s'
+group = struct.pack(format, '10', '2', '3', '4', '5')
+print group
+
+# unpack() method; parses the string to a tuple
+format = '1s2s1s1s'
+line = '12345'
+col = struct.unpack(format, line)
+print col
+
+# calcsize() returns the number of characters
+# in a given format string
+format = '30s30s20s1s'
+print struct.calcsize(format)
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">102345
+('1', '23', '4', '5')
+81
+</code></pre>
+
+<ul>
+<li>Then, convert the tuple to a list if needed.</li>
+</ul>
+<p><strong>Function to calculate distance between two coordinates</strong></p>
+<p><sub>power</sub></p>
+<ul>
+<li><code>math</code> package.<ul>
+<li><code>pow(x, y)</code> replaces <code>x ** y</code>.</li>
+</ul>
+</li>
+<li><code>distance</code> package; geometric calculations.<ul>
+<li><code>calc-dist()</code>.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="python">from math import sqrt
+
+def calc_dist(p1, p2):
+    '''returns the pythagorian distance between two 3D points'''
+    dx = p1[0] - p2[0]
+    dy = p1[1] - p2[1]
+    dz = p1[2] - p2[2]
+    distsq = pow(dx, 2) + pow(dy, 2) + pow(dz, 2)
+    distance = sqrt(distsq)
+    return distance
+
+print calc_dist([3.0, 3.0, 3.0], [9.0, 9.0, 9.0])
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">10.3923048454
+</code></pre>
+
+<h4 id="chapter-11-managing-complexity-with-classes">Chapter 11 Managing Complexity with Classes<a class="headerlink" href="#chapter-11-managing-complexity-with-classes" title="Permanent link">&para;</a></h4>
+<p><strong>Classes</strong></p>
+<ul>
+<li>Define a Class: <code>class Protein</code>.</li>
+<li>Add docstrings.</li>
+<li>The constructor <code>__init__()</code> is a special function that defines what kinds of data your class should contain and enables the creation of instances. Add a docstring.</li>
+<li>One class can have many instances. <code>lys = Protein('lysozyme')</code> is an instance of <code>class Protein</code>.</li>
+<li>Create a class function; a class function works like a method.</li>
+</ul>
+<pre><code class="python">class Protein:
+    '''Class storing protein names'''
+
+    def __init__(self, name):
+        '''Sets the name of a protein'''
+        self.name = name
+
+    def write(self):
+        '''Writes protein name to the screen.'''
+        print 'I am ' + self.name
+
+lys = Protein('lysozyme')
+myo = Protein('myoglobin')
+
+print &quot;Docstrings:&quot;
+print Protein.__doc__
+print Protein.__init__.__doc__
+print Protein.write.__doc__
+
+print &quot;&quot;
+
+print lys.name
+print myo.name
+
+lys.write() # a class function works like a method
+myo.write()
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">Docstrings:
+Class storing protein names
+Sets the name of a protein
+Writes protein name to the screen.
+
+lysozyme
+myoglobin
+I am lysozyme
+I am myoglobin
+</code></pre>
+
+<p><strong>Printing a object created from a class</strong></p>
+<ul>
+<li>Printing an object from a class is not very informative.</li>
+</ul>
+<pre><code class="python">class Pea:
+
+    def __init__(self, genotype):
+        self.genotype = genotype
+
+class PeaStrain:
+
+    def __init__(self, peas):
+        self.peas = peas
+
+yellow = Pea('GG')
+green = Pea('gg')
+strain = PeaStrain([yellow, green])
+
+print Pea
+print PeaStrain
+print Pea.__init__
+print PeaStrain.__init__
+
+print yellow
+print green
+print strain
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">__main__.Pea
+__main__.PeaStrain
+&lt;unbound method Pea.__init__&gt;
+&lt;unbound method PeaStrain.__init__&gt;
+&lt;__main__.Pea instance at 0x0000000001DC6748&gt;
+&lt;__main__.Pea instance at 0x0000000001DC6748&gt;
+&lt;__main__.Pea instance at 0x000000000216BE08&gt;
+&lt;__main__.PeaStrain instance at 0x000000000216BE48&gt;
+</code></pre>
+
+<ul>
+<li><code>__repr__</code> fixes this problem. The <code>__repr__</code> method takes no parameters except self.</li>
+</ul>
+<pre><code class="python">class Pea:
+
+    def __init__(self, genotype):
+        self.genotype = genotype
+
+    def __repr__(self):
+        return 'genotype: [%s]' % (self.genotype)
+
+class PeaStrain:
+
+    def __init__(self, peas):
+        self.peas = peas
+
+    def __repr__(self):
+        return 'strain with %i peas' % (len(self.peas))
+
+yellow = Pea('GG')
+green = Pea('gg')
+strain = PeaStrain([yellow, green])
+
+print Pea
+print PeaStrain
+print Pea.__init__
+print PeaStrain.__init__
+
+print yellow
+print repr(yellow)
+print repr(green)
+print repr(strain)
+</code></pre>
+
+<p>New output:</p>
+<pre><code class="python">__main__.Pea
+__main__.PeaStrain
+&lt;unbound method Pea.__init__&gt;
+&lt;unbound method PeaStrain.__init__&gt;
+genotype: [GG]
+genotype: [GG]
+genotype: [gg]
+strain with 2 peas
+</code></pre>
+
+<ul>
+<li>
+<p>No difference between <code>print yellow</code> and <code>print repr(yellow)</code>.</p>
+</li>
+<li>
+<p>Objects&rsquo; predefined class attributes:</p>
+<ul>
+<li><code>__doc__</code>: the docstring.</li>
+<li><code>__dict__</code>: a list of attributes.</li>
+<li><code>__name__</code>: the name of the object.</li>
+<li><code>__bases__</code>: the object inherits from what object. For example, above, the PeaStrain class inherits from the Pea class. Classes (subclasses) can inherit from other classes<br />
+and extend their functionality.</li>
+<li><code>__module__</code>: the name of the module in which this class was defined. <code>__main__</code> means the object is in the current module. </li>
+</ul>
+</li>
+<li>
+<p>A python script can be imported just like a package:</p>
+<ul>
+<li><code>import Protein</code>.</li>
+<li><code>from Protein import write</code>.</li>
+<li><code>import math</code>.</li>
+<li><code>from math import sqrt</code>.</li>
+</ul>
+</li>
+<li>Synonyms: packages, library, module, script, etc.</li>
+</ul>
+<pre><code class="python">class Pea:
+    '''docstring 1'''
+
+    def __init__(self, genotype):
+        self.genotype = genotype
+
+    def __repr__(self):
+        return 'genotype: [%s]' % (self.genotype)
+
+yellow = Pea('GG')
+
+print yellow
+print Pea.__doc__
+print Pea.__dict__
+print Pea.__name__
+print Pea.__bases__
+print Pea.__module__
+
+print &quot;&quot;
+
+class Peaclone(Pea):
+    '''docstring 2'''
+
+blue = Peaclone('AA')
+
+print blue
+print Peaclone.__doc__
+print Peaclone.__dict__
+print Peaclone.__name__
+print Peaclone.__bases__
+print Peaclone.__module__
+</code></pre>
+
+<p>Output:</p>
+<pre><code class="python">genotype: [GG]
+docstring 1
+{'__module__': '__main__', '__doc__': 'docstring 1', '__init__': &lt;function __init__ at 0x000000000229FC18&gt;, '__repr__': &lt;function __repr__ at 0x000000000229FC88&gt;}
+Pea
+()
+__main__
+
+genotype: [AA]
+docstring 2
+{'__module__': '__main__', '__doc__': 'docstring 2'}
+Peaclone
+(&lt;class __main__.Pea at 0x0000000001D3C828&gt;,)
+__main__
+</code></pre>
+
+<ul>
+<li>More attributes:<ul>
+<li><code>__del__</code>.</li>
+<li><code>__getattr__</code>.</li>
+<li><code>__setattr__</code>.</li>
+<li><code>__delattr__</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="chapter-12-debugging">Chapter 12 Debugging<a class="headerlink" href="#chapter-12-debugging" title="Permanent link">&para;</a></h4>
+<p><sub>bug</sub></p>
+<ul>
+<li>Kinds of errors:<ol>
+<li>Logical errors.</li>
+<li>Syntax errors.</li>
+<li>Runtime errors.</li>
+</ol>
+</li>
+</ul>
+<p>IDE (Eric, PyCharm, etc.) automate debugging.</p>
+<p><strong>1. Logical (semantic) errors</strong></p>
+<ul>
+<li>Results are wrong because the program does something different from what you had in mind.</li>
+</ul>
+<p><strong>2. Syntax errors</strong></p>
+<ul>
+<li>Wrong symbol, mispelling, wrong position in the code, etc..</li>
+</ul>
+<pre><code class="python">def evaluate_data(data, lower = 100, upper = 300):
+    &quot;&quot;&quot;Analyze a two-column table. Counts data points in three bins.&quot;&quot;&quot;
+
+    smaller = 0
+    between = 0
+    bigger  = 0
+
+    for length in data:
+        if length &lt; lower:
+            smaller = smaller + 1
+        elif lower &lt; length &lt; upper:
+            between = between + 1
+        elif length &gt; upper:
+            bigger = 1
+    return smaller, between, bigger
+
+def read_data(filename):
+    &quot;&quot;&quot;Reads neuron lengths from a text file.&quot;&quot;&quot;
+
+    primary, secondry = [], []
+
+    for line in open(filename):
+        category, length = line.split(&quot;\t&quot;)
+        length = float(length)
+        if category == &quot;Primary&quot;
+            primary.append(length)
+        elif category == &quot;Secondary&quot;:
+            secondary.append(length)
+    return primary, secondary
+
+def write_output(filename, count_pri, count_sec):
+    &quot;&quot;&quot;Writes counted values to a file.&quot;&quot;&quot;
+
+    output = open(filename,&quot;w&quot;)
+    output.write(&quot;category      &lt;100  100-300   &gt;300\n&quot;)
+    output.write(&quot;Primary  :  %5i   %5i   %5i\n&quot; % count_pri)
+    output.write(&quot;Secondary:  %5i   %5i   %5i\n&quot; % count_sec)
+    output.close()
+
+primary, secondary = read_data('neuron_data.xls')
+count_pri = evaluate_data(primary)
+count_sec = evaluate_data(secondary)
+write_output_file('results.txt' , count_pri,count_sec)
+</code></pre>
+
+<p><strong>Bug 1</strong></p>
+<pre><code class="python">if category == &quot;Primary&quot;
+</code></pre>
+
+<ul>
+<li>Cause: <code>SyntaxError: invalid syntax</code>.</li>
+<li>Fix:</li>
+</ul>
+<pre><code class="python">if category == &quot;Primary&quot;:
+</code></pre>
+
+<ul>
+<li>Other common <code>SyntaxErrors</code>:<ul>
+<li><code>EOL</code>or End Of Line; an open quote somewhere without a matching closing quote.</li>
+<li><code>TokenError</code>; an open parenthesis, but not a matching closing parenthesis.</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Bug 2</strong></p>
+<pre><code class="python">write_output_file('results.txt' , count_pri,count_sec)
+</code></pre>
+
+<ul>
+<li>Cause: <code>NameError: name 'write_output_file' is not defined</code>.</li>
+<li>Fix:</li>
+</ul>
+<pre><code class="python">file = open('results.txt' , 'w')
+file.write(str(count_pri))
+file.write('\n')
+file.write(str(count_sec))
+file.close()
+</code></pre>
+
+<p><strong>3. Runtime Error</strong></p>
+<p><strong><code>IOError</code></strong></p>
+<pre><code class="python">primary, secondary = read_data('neuron_data.xls')
+</code></pre>
+
+<ul>
+<li>Cause: <code>IOError: [Errno21] No such file or directory: 'neuron_data.xls'</code></li>
+<li>Fix: the file extention is .txt.</li>
+<li>Other common bugs and causes:<ul>
+<li>Mispelled files, directory name.</li>
+<li>Wrong website URL.</li>
+<li>User without the permission or access.</li>
+<li>The file is already opened.</li>
+<li>Problem with the Internet connection.</li>
+<li>Whitespace, uppercase, lowercase letters.</li>
+<li>File in a different directory.</li>
+<li>Expected date format.</li>
+<li>etc.</li>
+</ul>
+</li>
+</ul>
+<p><strong><code>NameError</code></strong></p>
+<pre><code class="python">primary, secondry = [], []
+...
+...
+elif category == &quot;Secondary&quot;:
+</code></pre>
+
+<ul>
+<li>Cause: <code>NameError: 'secondary' is not defined</code>. The &lsquo;name&rsquo; was misspelled when called.</li>
+<li>Fix: add the line <code>print dir()</code> before the errors occurs. It shows the list of variables that are known. In the above case, only <code>secondry</code> exits while <code>secondary</code> is called. Choose one.</li>
+<li>Other common bugs and causes:<ul>
+<li>Unknown object name:<ul>
+<li>a name was not imported (<code>import *</code>).</li>
+<li>a name was not initialized (as in <code>counter = 0</code> for <code>counter += 1</code>).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong><code>IndexError</code></strong></p>
+<ul>
+<li>Cause and fix: when <code>print data[3]</code> looks into <code>data = [1, 2, 3]</code>, the list index is out of range.</li>
+</ul>
+<p><strong><code>KeyError</code></strong></p>
+<pre><code class="python">spam = {'cat': 'Zophie', 'dog': 'Basil', 'mouse': 'Whiskers'}
+print('The name of my pet zebra is ' + spam['zebra'])
+</code></pre>
+
+<ul>
+<li>Cause and fix: the key does not exist!</li>
+</ul>
+<p><strong><code>ImportError</code></strong></p>
+<ul>
+<li>Causes and fixes:<ul>
+<li>The imported module name is mispelled.</li>
+<li>The imported module is located in a subdirectory without an <code>__init__.py</code> file.</li>
+<li>Try adding import sys and print sys.path; you need to add the directory to the PYTHONPATH variable or to append it to the sys.path.</li>
+<li>The imported module has a duplicate name (two functions with the same name; try working with classes to avoir that).</li>
+</ul>
+</li>
+</ul>
+<p><strong><code>ValueError</code></strong></p>
+<ul>
+<li>Cause and fix: when an object is loaded with a wrong type to perform another operation; variable <code>range_a</code> should be a number for the loop <code>for a in range(range_a):</code>, but a string is given instead.</li>
+<li>Other common bugs and causes: <code>IndentationError: unexpected indent</code>, <code>IndentationError: unindent does not match any outer indentation level</code>, and <code>IndentationError: expected an indented block</code>.</li>
+</ul>
+<p><strong><code>TypeError</code></strong></p>
+<ul>
+<li>Cause and fix: an object does not support item assignment.</li>
+</ul>
+<pre><code class="python">spam = 'I have a pet cat.'
+spam[13] = 'r'
+</code></pre>
+
+<ul>
+<li>Cause:  cannot convert implicitly an object.</li>
+</ul>
+<pre><code class="python">numEggs = 12
+print('I have ' + numEggs + ' eggs.')
+</code></pre>
+
+<ul>
+<li>Fix:</li>
+</ul>
+<pre><code class="python">numEggs = 12
+print('I have ' + str(numEggs) + ' eggs.')
+</code></pre>
+
+<ul>
+<li>Cause:  an object is misinterpreted (for another object).</li>
+</ul>
+<pre><code class="python">spam = ['cat', 'dog', 'mouse']
+for i in range(spam):
+    print(spam[i])
+</code></pre>
+
+<ul>
+<li>Fix: <code>for i in spam:</code>.</li>
+</ul>
+<p><strong><code>AttributeError</code></strong></p>
+<ul>
+<li>Cause and fix: apply the right method.</li>
+</ul>
+<pre><code class="python">spam = 'THIS IS IN LOWERCASE.'
+spam = spam.lowerr()
+</code></pre>
+
+<p><strong><code>UnboundLocalError</code></strong></p>
+<ul>
+<li>Cause and fix: a variable is referenced before assignment.</li>
+</ul>
+<p><strong>Countermeasures to prevent errors</strong></p>
+<ul>
+<li>Break down the code in parts; print to a file using <code>python code.py &gt; output.txt</code>.</li>
+<li>Compare the input and output (print the input data, print the output data, create control points).</li>
+<li>Add lots of <code>print</code> statements within the code as control points,</li>
+<li>Use descriptive and explicit object names (<code>sequence_file</code> is better than <code>s_file</code>).</li>
+<li>Start function with verbs (<code>read_sequence_file</code> is better than <code>seq_file</code>).</li>
+<li>Add comments.</li>
+<li>Avoid <code>import *</code>, but rather <code>from math import pi</code>.</li>
+<li>Follow PEP8 and PEP20! <code>pylint</code> and <code>flake8</code> packages.</li>
+<li>IDE (Eric, PyCharm, Spyder, etc.) automate debugging and easily execute <code>pylint</code> and <code>flake8</code>.</li>
+</ul>
+<p><strong>A note on <code>raw_input()</code> and <code>input()</code></strong></p>
+<p><sub>python2, python3, py2, py3</sub></p>
+<ul>
+<li>In Python 2, <code>raw_input()</code> takes exactly what the user typed and passes it back as a string. <code>input()</code> takes the <code>raw_input()</code> and performs an <code>eval()</code> on it as well. <code>input()</code> expects a syntactically correct python statement where <code>raw_input()</code> does not.</li>
+<li>The <code>eval()</code> function run the code within itself:</li>
+</ul>
+<pre><code class="python">&gt;&gt;&gt; x = 1
+&gt;&gt;&gt; eval('x + 1')
+2
+&gt;&gt;&gt; eval('x')
+1
+</code></pre>
+
+<ul>
+<li>In Python 3, <code>raw_input()</code> is renamed to <code>input()</code> and the old <code>input()</code> is removed. If you want to use the old <code>input()</code>, you can do <code>eval(input())</code>.</li>
+</ul>
+<p><strong>Countermeasures to prevent errors: the Python debugger or <code>pdb</code></strong></p>
+<ul>
+<li><code>pdb</code> package.</li>
+</ul>
+<pre><code class="python"># on top of the code
+import pdb
+
+pdb.set_trace()
+</code></pre>
+
+<ul>
+<li>The code is executed line by line:<ul>
+<li>&lsquo;n&rsquo; execute the next line.</li>
+<li>&lsquo;s&rsquo; execute the next line but does not descend into functions.</li>
+<li>&lsquo;l&rsquo; shows where in the code the program currently is.</li>
+<li>&lsquo;c&rsquo; continues execution normally.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Countermeasurea to prevent errors: <code>try, except</code></strong></p>
+<pre><code class="python">try:
+    a = float(raw_input(&quot;Insert a number:&quot;))
+    print a
+except ValueError:
+    print &quot;You haven't inserted a number. Please retry.&quot;
+    raise SystemExit
+</code></pre>
+
+<ul>
+<li><code>else</code> is optional and only executed if no exception was generated.</li>
+</ul>
+<pre><code class="python">try:
+    filename = raw_input(&quot;Insert a filename:&quot;)
+    in_file = open(filename)
+except IOError:
+    print &quot;The filename %s has not been found.&quot; % filename
+    raise SystemExit
+else:
+    for line in in_file:
+        print line
+        in_file.close()
+</code></pre>
+
+<ul>
+<li>Usually, exceptions are typos and wrong entries:<ul>
+<li><code>SyntaxError</code>.</li>
+<li><code>IOError</code>.</li>
+<li><code>NameError</code>.</li>
+<li><code>ValueError</code>.</li>
+</ul>
+</li>
+<li>Rarely will we see:<ul>
+<li><code>IndexError</code>.</li>
+<li><code>KeyError</code>.</li>
+<li><code>ImportError</code>.</li>
+<li><code>TypeError</code>.</li>
+<li><code>AttributeError</code>.</li>
+<li><code>UnbounLocalError</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="chapter-13-using-external-modules-the-python-interface-to-r">Chapter 13, Using External Modules, The Python Interface to R<a class="headerlink" href="#chapter-13-using-external-modules-the-python-interface-to-r" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>RPy2</code> package; bridge Python with R.</li>
+</ul>
+<p>The R code:</p>
+<pre><code class="r">p = pi
+x = c(1, 2, 3, 4, 5, 6)
+y = seq(1, 10)
+m = matrix(y, nrow = 5)
+n = matrix(y, ncol = 5)
+f = read.table('RandomDistribution.tsv', sep = '\t')
+f_matrix = matrix(f, ncol = 7)
+mean_first_col = mean(f_mean[0])
+</code></pre>
+
+<p>The Python code:</p>
+<pre><code class="python">import rpy2.reobjects as robjects
+
+r = robjects.r
+
+pi = r.pi
+x = r.c(1, 2, 3, 4, 5, 6)
+y = r.seq(1, 10)
+m = r.matrix(y, nrow = 5)
+n = r.matrix(y, ncol = 5)
+f = r(&quot;read.table('RandomDistribution.tsv', sep = '\t')&quot;)
+f_matrix = r.matrix(f, ncol = 7)
+mean_first_col = r.mean(f_mean[0])
+</code></pre>
+
+<ul>
+<li>Python is better suited to implement solutions by building GUIs or freezing the code.</li>
+<li>Rpy2 is the best of both worlds: <ul>
+<li>R statistical analyses and data visualization.</li>
+<li>Python computation power with SciPy/NumPy/Pandas.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Calculate a mean value from a table file</strong></p>
+<pre><code class="python">import rpy2.robjects as robjects
+
+r = robjects.r
+table = r(&quot;read.table('RandomDistribution.tsv', sep = '\t')&quot;)
+matrix = r.matrix(table, ncol = 7)
+mean_first_col = r.mean(matrix[0])
+print mean_first_col
+</code></pre>
+
+<p><strong>Draw a histogram</strong></p>
+<pre><code class="python">import rpy2.robjects as ro
+from rpy2.robjects.packages import importr
+
+r = ro.r
+table = r(&quot;read.table('RandomDistribution.tsv',sep = '\t')&quot;)
+grdevices = importr('grDevices')
+grdevices.png(file = &quot;Plot.png&quot;, width = 512, height = 512)
+r.plot(table[1], table[2], xlab = &quot;x&quot;, ylab = &quot;y&quot;)
+grdevices.dev_off()
+
+grdevices.png(file=&quot;Histogram.png&quot;, width = 512, height = 512)
+r.hist(table[4], xlab = 'x', main = 'Distribution of values')
+grdevices.dev_off()
+</code></pre>
+
+<p><strong>Calculate a z-score and a p-value</strong></p>
+<pre><code class="python">import rpy2.robjects as ro
+
+r = ro.r
+table = r(&quot;read.table('RandomDistribution.tsv',sep = '\t')&quot;)
+m = r.mean(table[2], trim = 0, na_rm = 'FALSE')
+sdev = r.sd(table[2], na_rm = 'FALSE')
+value = 0.01844
+zscore = (m[0] - value) / sdev[0]
+print zscore
+
+x = r.abs(zscore)
+pvalue = r.pnorm(-x[0])
+print pvalue[0]
+</code></pre>
+
+<p><strong>Create an interactive plot and histogram from data in a file</strong></p>
+<pre><code class="python">import rpy2.robjects as robjects
+
+r = robjects.r
+table = r(&quot;read.table('RandomDistribution.tsv', sep = '\t')&quot;)
+r.plot(table[1], table[2], xlab = &quot;x&quot;, ylab = &quot;y&quot;)
+r.hist(table[4], xlab = 'x', main = 'Distribution of values')
+</code></pre>
+
+<p><strong>Create an interactive plot</strong></p>
+<pre><code class="python">import rpy2.robjects as ro
+
+r = ro.r
+r.plot(r.pnorm(100), xlab = &quot;y&quot;, ylab = &quot;y&quot;)
+</code></pre>
+
+<p><strong>Conduct a chi-square test on data from a text file</strong></p>
+<pre><code class="python">import rpy2.robjects as ro
+
+r = ro.r
+table = r(&quot;read.table('Chi-square_input.txt', header = TRUE, sep = '\t')&quot;)
+print r.names(table)
+
+cont_table = r.table(table[1], table[2])
+chitest = r['chisq.test']
+print chitest(table[1], table[2])
+</code></pre>
+
+<h4 id="chapter-14-building-program-pipelines">Chapter 14, Building Program Pipelines<a class="headerlink" href="#chapter-14-building-program-pipelines" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>os</code> package.</li>
+<li><code>sys</code> package.</li>
+</ul>
+<p><strong>Programs can work together with Python</strong></p>
+<ul>
+<li>Create path and file variables.</li>
+<li>Create command line.</li>
+<li>Execute commands from the command line (as if you did it with a mouse and keyboard) with <code>os.system</code>.</li>
+</ul>
+<p><em>REF: Appendix D.</em></p>
+<pre><code class="python">import os
+
+output_dir = '/home/RNA-seq/tophat_dir/'
+output_file = 'accepted_hits.txt'
+
+command_line = 'pgm -o %s%s' % (output_dir, output_file)
+
+os.system(command_line)
+
+</code></pre>
+
+<p><strong>Command lines in Python</strong></p>
+<ul>
+<li>UNIX to Python:<ul>
+<li>UNIX <code>pwd</code>; <code>print os.getcwd()</code>.</li>
+<li>UNIX <code>ls</code>; <code>print os.listdir('.')</code>.</li>
+<li>UNIX <code>cd</code>; <code>os.chdir('../data/')</code>.</li>
+<li>UNIX <code>mkdir</code>; <code>os.mkdir()</code>.</li>
+<li>UNIX <code>rmdir</code>; <code>os.rmdir()</code>.</li>
+<li>and many more.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pipelines</strong></p>
+<ul>
+<li>Pipeline are scripts connecting programs to each other (run two or more external programs from command lines).</li>
+<li>A program that runs another program is a <em>wrapper</em>.</li>
+<li>Exchange filenames and data between programs.</li>
+<li><code>sys.argv</code>; Python program sorted parameters.</li>
+<li><code>import sys</code>; access or print them.</li>
+</ul>
+<pre><code class="python">import sys
+import os
+
+sys.path.append('/home/RNA-seq/')
+
+from pathvariables import tophat_dir, index_dir
+
+if os.path.exists(tophat_dir) and os.path.exists(index_dir):
+    os.system('tophat -o ' + tophat_dir + ' ' + index_dir + 'sample.txt')
+else:
+    print &quot;You have to create tophat and/or index directories before running your wrapper&quot;
+</code></pre>
+
+<ul>
+<li>One problem with pipelines is lagging. </li>
+<li>The system call of the second program should occur when the execution of the first program has finished, especially if the second one uses as input the output of the first one.</li>
+<li>Use subprocesses, such as <code>os.popen()</code> or <code>subprocess.call()</code>, to wait for the command to complete and return a value corresponding to the program exit status (0 for success, 256 for failure)</li>
+<li>A more robust trick is to insert an action and verify its success after a system call and before the subsequent system call.</li>
+</ul>
+<pre><code class="python">import sys
+import os
+
+from pathvariables import tophat_dir, index_dir, cufflinks_dir
+
+sys.path.append('/home/RNA-seq/')
+from pathvariables import tophat_dir, index_dir, cufflinks_dir
+
+# the tophat program crates an output file
+os.system('tophat -o ' + tophat_dir + ' ' + index_dir + 'sample.txt')
+
+# here we don't know whether the tophat output file is comleted and available
+# we open and close a dummy file, so the operating system catches up
+lag_file = open('dummy.txt, 'w')
+lag_file.write('tophat completed')
+lag_file.close()
+
+# read the output file
+if os.path.exists('/home/RNA-seq/dummy.txt'):
+    os.system('cufflinks -o ' + cufflinks_dir + ' ' + tophat_dir + '/accepted_hits.txt')
+</code></pre>
+
+<p><strong>Attributes</strong></p>
+<ul>
+<li><code>print dir()</code>; Visualize attributes.</li>
+<li>Some attributes are module-specific, such as locatime, whereas others refer to modules in general:<ul>
+<li><code>__file__</code>; return the path of the module.</li>
+<li><code>__doc__</code>; return the module documentation, if present.</li>
+<li><code>__name__</code>; return the name of the imported file without the .py suffix if the module is imported and the string <code>'__main__'</code> is executed.<ul>
+<li>Execute <code>&lt;statements&gt;</code> only if the module is run from the command line and not imported by means of an import statement:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="python">if __name__ == '__main__':
+    &lt;statements&gt;
+</code></pre>
+
+<p><strong>Working with files and directories</strong></p>
+<ul>
+<li><code>os.path</code> package.</li>
+<li><code>os.path.split(filename)</code>; split a filename from the directory names.</li>
+<li><code>os.path.exists(filename)</code>; verify if the file exists, return True or False.</li>
+</ul>
+<p><strong>Export the path</strong></p>
+<ul>
+<li>In Windows, add the path to the PATH environment variables.<ul>
+<li>In PowerShell: <code>$env:PYTHONPATH = "$env:PYTHONPATH;."</code></li>
+</ul>
+</li>
+<li>In UNIX, enter in the bash: <code>export PYTHONPATH=.</code> or <code>add PYTHONPATH=.</code>.</li>
+<li>In a Python code, add to the beginning of the script:</li>
+</ul>
+<pre><code class="python">import sys
+
+sys.path.append('.') # '/var/www/'
+</code></pre>
+
+<ul>
+<li>Or with <code>sys.path.append('pathmodules/')</code>.</li>
+</ul>
+<p><strong>Read files from directories</strong></p>
+<pre><code class="python">import os
+
+for filename is os.listdir('data/'):
+    os.system('&lt;my_program&gt;%s' % (filename))
+</code></pre>
+
+<ul>
+<li>
+<p><code>os.remove('log.txt')</code>; remove files.</p>
+</li>
+<li>
+<p><code>tempfile</code> package;  create temporary files. </p>
+</li>
+</ul>
+<h4 id="chapter-15-writing-good-programs">Chapter 15, Writing Good Programs<a class="headerlink" href="#chapter-15-writing-good-programs" title="Permanent link">&para;</a></h4>
+<p><strong>Priorities</strong></p>
+<ol>
+<li>Make it work.</li>
+<li>Make it nice.</li>
+<li>Make if fast.</li>
+</ol>
+<p><strong>Tips</strong></p>
+<ol>
+<li>Divide a programming project into smaller tasks.</li>
+<li>What are the inputs?</li>
+<li>What are the outputs?</li>
+<li>What is between them?</li>
+<li>Write smaller programs; split a program into functions and classes.</li>
+<li>Analyze and run tests.</li>
+<li>Adopt PEP.</li>
+<li>Scaffold before writing a functional program:</li>
+</ol>
+<pre><code class="python">def read_files(directory):
+    '''
+    Reads a...
+    '''
+    pass
+
+def filter(sequences):
+    '''
+    Removes all...
+    '''
+    pass
+
+...
+
+if __name == '__main__':
+    INPUT_DIR = 'aaa/'
+    OUTPUT_FILE = 'filtered.txt'
+    seq = read_files(INPUT_DIR)
+    filter(seq)
+    ...
+</code></pre>
+
+<p><strong>Adopt PEP</strong></p>
+<ul>
+<li>Variables in functions in lowercase.</li>
+<li>Constants in modules in uppercase.</li>
+<li>A function name starts with a verb.</li>
+<li>After each function, two empty lines.</li>
+<li>After each logical chunks of long functions, one empty line.</li>
+<li>Comment.</li>
+<li>Keep lines shorter than 80 characters long.</li>
+<li>Each class, function, and variable has a docstring; docstrings can be read with <code>print object.__doc__</code>.</li>
+</ul>
+<p><strong>Enforce PEP</strong></p>
+<ul>
+<li><code>pylint</code> package.<ul>
+<li><code>pylint</code> is a Python source code analyzer which looks for programming errors, helps enforcing a coding standard and sniffs for some code smells.</li>
+<li><a href="https://www.pylint.org/">Download</a> an install pylint.</li>
+<li>Or install it with <code>pip</code>.</li>
+<li><a href="https://www.pylint.org/">Doc</a></li>
+<li>Run <code>pylint python_file.py</code>.</li>
+</ul>
+</li>
+<li><code>flake8</code> package.<ul>
+<li><code>flake8</code> is a modular source code checker (a <em>wrapper</em>).</li>
+<li>It works with <code>pep8</code>, <code>pyflakes</code>, <code>pycodestyle</code>, and so on.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Version controls</strong></p>
+<ul>
+<li>Use version control programs (Mercurial, git, SVN).</li>
+<li>Use repository (GitHub, Bitbucket) to control program versions.<ul>
+<li>GitHub</li>
+<li>Bitbucket</li>
+<li>SourceForce</li>
+<li>Gitlab</li>
+<li>and others.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Before releasing (to a repository)</strong></p>
+<ol>
+<li>Create a directory with a concise name containing all the project.</li>
+<li>Set a version number (0.1 or 1.0).</li>
+<li>Write a README.TXT file with the name of the program, the author, contacts, numbers, emails, a version number, the program purpose in 50-100 words, how to use the program, simple command-line examples, the license (&ldquo;All rights reserved&rdquo;, MIT, etc.)</li>
+<li>Create a zip file out of the directory including the README.TXT file in addition to the unzipped directory.</li>
+<li>Release the project on a repository (for example, with git, push the project to the repository).</li>
+</ol>
+<p><strong>Releasing a distribution</strong></p>
+<ul>
+<li>Release a distribution to a repository for others to download and install. </li>
+</ul>
+<p><strong>Freezing a program</strong></p>
+<ul>
+<li>Non-programmer would rather want an execuble program they can unzip and run.</li>
+<li>Compile the code or freeze it!<ol>
+<li>&lsquo;cx_freeze&rsquo; is a set of utilities that create standalone executables from python scripts for any platform or OS.</li>
+<li><code>bbfreeze</code> is a Python package; an alternative to &lsquo;cx_freeze&rsquo;.</li>
+<li>&lsquo;PyInstaller&rsquo; is a program; another alternative.</li>
+<li><code>distutils</code> is a Python package that provides support for building and installing additional modules (libraries or packages) into a Python installation. The new modules may be either 100%-pure Python, written in C, or coded in both Python and C. <code>distutils</code> autogenerates an install script.<ul>
+<li>Such distribution needs a <code>setup.py</code> file with the group of subdirectories and program files.</li>
+<li><code>py2exe</code> is an extension to the <code>distutils</code> package to create executable files on Windows.</li>
+<li><code>py2app</code> is an extension to the <code>distutils</code> packages to create executable files on OS X.</li>
+</ul>
+</li>
+<li>&lsquo;Nuitka&rsquo; is a Python compiler, compatible with &lsquo;CPython&rsquo;.<ul>
+<li>&lsquo;CPython&rsquo; is a source code interpreter with an interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.</li>
+</ul>
+</li>
+<li><code>PyPy</code> is a Python package; an alternative to &lsquo;Nuitka&rsquo;.</li>
+<li>&lsquo;Cython&rsquo; is a compiled language that generates CPython extension modules.</li>
+<li>&lsquo;Jython&rsquo; does the same, but in Java.</li>
+</ol>
+</li>
+</ul>
+<p><strong>Continuous improvement</strong></p>
+<ul>
+<li>A good program is never finished:<ol>
+<li>Create a baseline release.</li>
+<li>Update and release new versions. Tell the users what is new.</li>
+<li>Listen to users, improve on it.</li>
+<li>Go on programming.</li>
+</ol>
+</li>
+</ul>
+<p><strong>Software development</strong></p>
+<ul>
+<li>The Agile Manifesto.</li>
+<li>Methodologies: Scrum, eXtreme Programming, etc.</li>
+</ul>
+<h4 id="part-4-data-visualization">Part 4, Data Visualization<a class="headerlink" href="#part-4-data-visualization" title="Permanent link">&para;</a></h4>
+<h4 id="chapter-16-creating-scientific-diagrams">Chapter 16, Creating Scientific Diagrams<a class="headerlink" href="#chapter-16-creating-scientific-diagrams" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>matplotlib</code> package.</li>
+<li><code>Pillow</code> or <code>PIL</code> package.</li>
+<li>Tip: install the entire SciPy Stack: (Python (2.x &gt;= 2.6 or 3.x &gt;= 3.2), NumPy (&gt;= 1.6), SciPy library (&gt;= 0.10), Matplotlib (&gt;= 1.1) with dateutil and pytz, IPython (&gt;= 0.13) with pyzmq and tornado, pandas (&gt;= 0.8), Sympy (&gt;= 0.7), nose (&gt;= 1.1).</li>
+<li><code>Matplotlib</code> depends on <code>Pillow</code> for reading and saving JPEG, BMP, and TIFF image files. <code>Matplotlib</code> requires MiKTeX and GhostScript for rendering text with LaTeX. FFmpeg, avconv, mencoder, or ImageMagick are required for the animation module. Add <code>nose</code>, <code>mock</code>, and Inkscape.</li>
+</ul>
+<p><strong>Draw a simple line plot</strong></p>
+<ul>
+<li>Provide <code>(x, y)</code> points.</li>
+<li><code>figure()</code>; main function is</li>
+<li><code>plot()</code>.</li>
+<li><code>savefig()</code>; save the plot in a file.</li>
+<li><code>show()</code>; show the plot in a window.</li>
+</ul>
+<pre><code class="python">from pylab import figure, plot, savefig
+
+xdata = [1, 2, 3, 4]
+ydata = [1.25, 2.5, 5.0, 10.0]
+
+figure()
+plot(xdata, ydata)
+
+savefig('figure1.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Figure 1" src="../img/managing_your_biological/figure1.png" /></p>
+<p><strong>Plot a sine function</strong></p>
+<ul>
+<li>Generate <code>(x, y)</code> points; first the <code>x</code>; then generate the <code>y</code> with the <code>x</code>.</li>
+<li><code>plot()</code> with a line type <code>'kd'</code> and <code>linewidth = 1</code>.</li>
+</ul>
+<pre><code class="python">from pylab import figure, plot, text, axis, savefig
+import math
+
+figure()
+
+xdata = [0.1 * i for i in range(100)]
+ydata = [math.sin(j) for j in xdata]
+
+plot(xdata, ydata, 'kd', linewidth = 1)
+text(4.8, 0, &quot;$y = sin(x)$&quot;, horizontalalignment = 'center', fontsize = 20)
+axis([0, 3 * math.pi, -1.2, 1.2])
+
+savefig('sinfunc.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Sin Function" src="../img/managing_your_biological/sinfunc.png" /></p>
+<p><strong>Draw a histogram</strong></p>
+<ul>
+<li>Provide the <code>(x, y)</code> points in lists, and the number of bins.</li>
+<li><code>hist()</code> needs <code>data</code> points and <code>n_bins</code>.</li>
+<li><code>alpha</code> stands for the graph color transparency.</li>
+<li>Add a title, labels, axes, and gridlines.</li>
+</ul>
+<pre><code class="python">from pylab import figure, title, xlabel, ylabel, hist, axis, grid, savefig
+
+data = [1, 1, 9, 1, 3, 5, 8, 2, 1, 5, 11, 8, 3, 4, 2, 5]
+n_bins = 5
+
+figure()
+num, bins, patches = hist(data, n_bins, normed = 1.0, histtype = 'bar', facecolor = 'green', alpha = 0.75)
+
+title('Histogram')
+xlabel('value')
+ylabel('frequency')
+axis()
+grid(True)
+
+savefig('histogram.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Histogram" src="../img/managing_your_biological/histogram.png" /></p>
+<p><strong>Draw a bar plot</strong></p>
+<ul>
+<li><code>count</code>: two series, <code>x1</code> and <code>x2</code> with each four categories, <code>nucleotides</code>. </li>
+<li>Add a title, labels, axes and ticks to the axes, and a legend.</li>
+<li><code>xticks(x1, nucleotides)</code>,  where the first element is the list of <code>x</code> points and the second element is the label variable.</li>
+<li><code>legend()</code> takes the labels of all data sets that are plotted.</li>
+<li><code>axis()</code> is set with a list [from left to right, bottom,  and top].</li>
+</ul>
+<pre><code class="python">from pylab import figure, title, xlabel, ylabel, xticks, bar, legend, axis, savefig
+
+nucleotides = [&quot;A&quot;, &quot;G&quot;, &quot;C&quot;, &quot;U&quot;]
+
+counts = [
+    [606, 1024, 759, 398],
+    [762, 912, 639, 591],
+    ]
+
+figure()
+title('RNA nucleotides in the ribosome')
+xlabel('RNA')
+ylabel('base count')
+
+x1 = [2.0, 4.0, 6.0, 8.0]
+x2 = [x - 0.5 for x in x1]
+
+xticks(x1, nucleotides)
+
+bar(x1, counts[1], width = 0.5, color = &quot;#cccccc&quot;, label = &quot;E.coli 23S&quot;)
+bar(x2, counts[0], width = 0.5, color = &quot;#808080&quot;, label = &quot;T.thermophilus 23S&quot;)
+
+legend()
+axis([1.0, 9.0, 0, 1200])
+
+savefig('barplot.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Bar Plot" src="../img/managing_your_biological/barplot.png" /></p>
+<p><strong>Add error bars to a scatterplot or a bar chart</strong></p>
+<ul>
+<li><code>errorbar()</code>.</li>
+<li><code>bar()</code>.</li>
+</ul>
+<pre><code class="python">from pylab import figure, errorbar, bar, savefig
+
+figure()
+
+# scatterplot with error bars
+x1 = [0.1, 0.3, 0.5, 0.6, 0.7]
+y1 = [1, 5, 5, 10, 20]
+err1 = [3, 3, 3, 10, 12]
+errorbar(x1, y1, err1 , fmt = 'ro')
+
+# barplot with error bars
+x2 = [1.1, 1.2, 1.3, 1.4, 1.5]
+y2 = [10, 15, 10, 15, 17]
+err2 = (2, 3, 4, 1, 2)
+width = 0.05
+bar(x2, y2, width, color = 'r', yerr = err2, ecolor = &quot;black&quot;)
+
+savefig('errorbars.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Error Bars" src="../img/managing_your_biological/errorbars.png" /></p>
+<p><strong>Draw a pie chart with protruding slices</strong></p>
+<pre><code class="python">from pylab import figure, title, pie, savefig
+
+nucleotides = 'G', 'C', 'A', 'U'
+count = [1024, 759, 606, 398]
+explode = [0.0, 0.0, 0.05, 0.05]
+
+colors = [&quot;#f0f0f0&quot;, &quot;#dddddd&quot;, &quot;#bbbbbb&quot;, &quot;#999999&quot;]
+
+def get_percent(value):
+    '''Formats float values in pie slices to percent.'''
+    return &quot;%4.1f%%&quot; % (value)
+
+figure(1)
+title('nucleotides in 23S RNA from T.thermophilus')
+
+pie(count, explode = explode, labels = nucleotides, shadow = True,
+    colors = colors, autopct = get_percent)
+
+savefig('piechart.png', dpi = 150)
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Pie Chart" src="../img/managing_your_biological/piechart.png" /></p>
+<ul>
+<li>It is possible to use math symbols, subscripts, and superscripts in the strings:<ul>
+<li><code>xlabel('protein concentration [mM]')</code>.</li>
+<li><code>xlabel('protein concentration [$\muM$]')</code>.</li>
+</ul>
+</li>
+<li>It is possible to use placeholder for variables such as:<ul>
+<li><code>"4.1f%%" % (variable)</code>.</li>
+<li><code>"2i%" % (variable)</code>.</li>
+<li>etc. </li>
+<li>The <code>%%</code> stands for percentage.</li>
+</ul>
+</li>
+<li>Change the image file resolution (dpi = 100 or 150 or 300 or 600) as in <code>savefig('chart.png', dpi=150)</code>.</li>
+<li>Colors are based on the PIL library.</li>
+<li>PIL has 140 colors (X11 color names) such as:<ul>
+<li><code>'red'</code>, <code>'lightred'</code>, <code>'magenta'</code>, etc.</li>
+<li>in RGB, red is <code>(255, 0, 0)</code>.</li>
+<li>white is <code>(255, 255, 255)</code> or <code>'#ffffff'</code>.</li>
+<li>&lsquo;black&rsquo; is <code>(0, 0, 0)</code> or <code>'#000000'</code>.</li>
+<li>etc.</li>
+</ul>
+</li>
+<li>The <a href="http://en.wikipedia.org/wiki/X11_color_names">X11 color names</a>.</li>
+</ul>
+<h4 id="chapter-18-manipulating-images">Chapter 18, Manipulating Images<a class="headerlink" href="#chapter-18-manipulating-images" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>Pillow</code> or <code>PIL</code> package.</li>
+</ul>
+<p><strong>Paste a small image into a big one</strong></p>
+<pre><code class="python">from PIL import Image
+
+image = Image.open('color.png', 'r')
+label = Image.open('label.png', 'r') # small legend
+image.paste(label, (40, 460))
+
+image.save('combined.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Combined" src="../img/managing_your_biological/combined.png" /></p>
+<p><strong>Resizes a big image to a small one</strong></p>
+<pre><code class="python">from PIL import Image
+
+image = Image.open('big.png')
+small = image.resize((100, 100))
+
+small.save('small.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Small" src="../img/managing_your_biological/small.png" /></p>
+<p><strong>Converts a color to a black/white image</strong></p>
+<pre><code class="python">from PIL import Image
+
+image = Image.open('color.png', 'r')
+bw_image = Image.new('LA', image.size, (255, 255))
+bw_image.paste(image, (0, 0))
+
+bw_image.save('black_white.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Black &amp; White" src="../img/managing_your_biological/black_white.png" /></p>
+<p><strong>Diminishes the size of all .png files by half</strong></p>
+<pre><code class="python">from PIL import Image
+import os
+
+for filename in os.listdir('.'):
+    if filename.endswith('.png'):
+        im = Image.open(filename)
+        x = im.size[0] / 2
+        y = im.size[1] / 2
+        small = im.resize((x, y))
+        small.save('small_'+filename)
+</code></pre>
+
+<p>For <code>os.listdir('.')</code>, consult <a href="#chapter-14,-building-program-pipelines,-command-line-in-python">Chapter 14, Building Program Pipelines, Command lines in Python</a>.</p>
+<p><strong>Draw an image of a plasmid</strong></p>
+<ul>
+<li>Use constant variable: <code>PLASMID_LENGTH = 4361</code> is the total number of base pairs in the entire plastmid, <code>SIZE = (500, 500)</code> is the size of the entire image, <code>CENTER = (250, 250)</code> is the center point of the plasmid circle, the center of the image.</li>
+<li>Create an image: <code>pBR322 = Image.new('RGB', SIZE, 'white')</code>. <code>'RGB'</code> color scheme, <code>SIZE = (x, y)</code> size in pixels, <code>'white'</code> set the background color.</li>
+<li>Draw object <code>pBR322</code>: <code>DRAW = ImageDraw.Draw(pBR322)</code>.</li>
+<li>The image object is now in object <code>DRAW</code>.</li>
+<li>Finally, save the object: <code>pBR322.save('plasmid_pBR322.png')</code>.</li>
+</ul>
+<pre><code class="python">from PIL import Image, ImageDraw
+import math
+
+PLASMID_LENGTH = 4361
+SIZE = (500, 500)
+CENTER = (250, 250)
+
+pBR322 = Image.new('RGB', SIZE, 'white')
+DRAW = ImageDraw.Draw(pBR322)
+
+def get_angle(bp, length=PLASMID_LENGTH):
+    &quot;&quot;&quot;Converts base position into an angle.&quot;&quot;&quot;
+    return bp * 360 / length
+
+def coord(angle, center, radius):
+    &quot;&quot;&quot;Return (x, y) coordinates of a point in a circle.&quot;&quot;&quot;
+    rad = math.radians(90 - angle)
+    x = int(center[0] + math.sin(rad) * radius)
+    y = int(center[1] + math.cos(rad) * radius)
+    return x, y
+
+def draw_arrow_tip(start, direction, color):
+    &quot;&quot;&quot;Draws a triangle at the given start angle.&quot;&quot;&quot;
+    p1 = coord(start + direction, CENTER, 185)
+    p2 = coord(start, CENTER, 160)
+    p3 = coord(start, CENTER, 210)
+    DRAW.polygon((p1, p2, p3), fill = color)
+
+
+TET_START, TET_END = get_angle(88), get_angle(1276)
+AMP_START, AMP_END = get_angle(3293), get_angle(4153)
+ORI_START, ORI_END = get_angle(2519), get_angle(3133)
+
+# drawing the plasmid
+BOX = (50, 50, 450, 450)
+DRAW.pieslice(BOX, 0, 360, fill = 'gray')
+DRAW.pieslice(BOX, TET_START, TET_END, fill = 'blue')
+DRAW.pieslice(BOX, AMP_START, AMP_END, fill = 'orange')
+DRAW.pieslice(BOX, ORI_START, ORI_END, fill = 'darkmagenta')
+DRAW.pieslice((80, 80, 420, 420), 0, 360, fill = 'white')
+
+draw_arrow_tip(TET_END, 10, 'blue')
+draw_arrow_tip(AMP_START, -10, 'orange')
+draw_arrow_tip(ORI_START, -10, 'darkmagenta')
+
+pBR322.save('plasmid_pBR322.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Plasmid" src="../img/managing_your_biological/plasmid_pBR322.png" /></p>
+<p><strong>Drawings</strong></p>
+<ul>
+<li>Image extensions:<ul>
+<li>BMP; simple table of pixels.</li>
+<li>PNG; preserves the color of every single pixel; can be partially transparent.</li>
+<li>GIF; can be animated; similar to PNG.</li>
+<li>JPG; compressed format, blurred.</li>
+<li>TIF; bigger and more precise than PNG.</li>
+</ul>
+</li>
+<li><code>image = Image.open('color.png', 'r')</code>; read the object.</li>
+<li>Write points:<ul>
+<li><code>point = (100, 100)</code>; with tuples (x, y); x pixels from the left border, y pixels from the top of the image.</li>
+</ul>
+</li>
+<li>Write rectangles<ul>
+<li><code>BOX = (100, 100, 150, 150)</code>; with tuple (x, y, x&rsquo;, y&rsquo;); <code>BOX</code> becomes a constant.</li>
+<li><code>DRAW.rectangle(BOX, fill = 'lightblue', outline = 'black')</code></li>
+</ul>
+</li>
+<li>Draw circles inside &lsquo;guidelines&rsquo; or a rectangle:<ul>
+<li><code>DRAW.pieslice((50, 50, 450, 450), 0, 360, fill = 'grey')</code>.</li>
+<li><code>DRAW.pieslice((50, 50, 450, 450), 0, 360, fill = (0, 0, 0))</code>.</li>
+<li><code>DRAW.pieslice((50, 50, 450, 450), 0, 360, fill = '#ffffff')</code>.</li>
+<li><code>BOX = (50, 50, 450, 450)</code><ul>
+<li><code>DRAW.pieslice(BOX, 0, 360, fill = 'grey', outline = 'black')</code></li>
+<li><code>DRAW.pieslice(BOX, 7, 106, fill = 'blue')</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Draw an arc:<ul>
+<li><code>DRAW.arc(BOX, 0, 360, fill = 'black')</code></li>
+</ul>
+</li>
+<li>Draw a polygon:<ul>
+<li><code>DRAW.polygon((point1, point2, point3) fill = 'lightblue', outline = 'blue')</code></li>
+</ul>
+</li>
+<li>Draw a line:<ul>
+<li><code>ECOR1 = angle(4359)</code></li>
+<li><code>p1 = coord(ECOR1, CENTER, 160)</code></li>
+<li><code>p1 = coord(ECOR1, CENTER, 210)</code></li>
+<li><code>DRAW.line((p1, p2), fill = 'black', width = 3)</code></li>
+</ul>
+</li>
+<li>Rotate the image:<ul>
+<li><code>pBR322 = pBR322.rotate(45)</code></li>
+</ul>
+</li>
+<li>Add text:<ul>
+<li><code>DRAW.text((370, 240), "EcoR1", fill = "black")</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Draw an image of a plasmid and label it</strong></p>
+<pre><code class="python">from PIL import Image, ImageDraw
+import math
+
+PLASMID_LENGTH = 4361
+SIZE = (500, 500)
+CENTER = (250, 250)
+
+pBR322 = Image.new('RGB', SIZE, 'white')
+DRAW = ImageDraw.Draw(pBR322)
+
+def get_angle(bp, length=PLASMID_LENGTH):
+    &quot;&quot;&quot;Converts base position into an angle.&quot;&quot;&quot;
+    return bp * 360 / length
+
+def coord(angle, center, radius):
+    &quot;&quot;&quot;Return (x, y) coordinates of a point in a circle.&quot;&quot;&quot;
+    rad = math.radians(90 - angle)
+    x = int(center[0] + math.sin(rad) * radius)
+    y = int(center[1] + math.cos(rad) * radius)
+    return x, y
+
+def draw_arrow_tip(start, direction, color):
+    &quot;&quot;&quot;Draws a triangle at the given start angle.&quot;&quot;&quot;
+    p1 = coord(start + direction, CENTER, 185)
+    p2 = coord(start, CENTER, 160)
+    p3 = coord(start, CENTER, 210)
+    DRAW.polygon((p1, p2, p3), fill = color)
+
+
+TET_START, TET_END = get_angle(88), get_angle(1276)
+AMP_START, AMP_END = get_angle(3293), get_angle(4153)
+ORI_START, ORI_END = get_angle(2519), get_angle(3133)
+
+# drawing the plasmid
+BOX = (50, 50, 450, 450)
+DRAW.pieslice(BOX, 0, 360, fill = 'gray')
+DRAW.pieslice(BOX, TET_START, TET_END, fill = 'blue')
+DRAW.pieslice(BOX, AMP_START, AMP_END, fill = 'orange')
+DRAW.pieslice(BOX, ORI_START, ORI_END, fill = 'darkmagenta')
+DRAW.pieslice((80, 80, 420, 420), 0, 360, fill = 'white')
+
+draw_arrow_tip(TET_END, 10, 'blue')
+draw_arrow_tip(AMP_START, -10, 'orange')
+draw_arrow_tip(ORI_START, -10, 'darkmagenta')
+
+DRAW.text((150, 130), &quot;ori&quot;, fill = (0, 0, 0))
+DRAW.text((340, 130), &quot;amp&quot;, fill =(0, 0, 0))
+DRAW.text((300, 380), &quot;tet&quot;, fill = (0, 0, 0))
+
+pBR322.save('plasmid_pBR322.png')
+</code></pre>
+
+<p>Result:</p>
+<p><img alt="Plasmid" src="../img/managing_your_biological/plasmid_pBR322.png" /></p>
+<h4 id="part-6-cookbook">Part 6, Cookbook<a class="headerlink" href="#part-6-cookbook" title="Permanent link">&para;</a></h4>
+<h4 id="recipe-2-reversing-and-randomizing-a-sequence">Recipe 2, Reversing and Randomizing a Sequence<a class="headerlink" href="#recipe-2-reversing-and-randomizing-a-sequence" title="Permanent link">&para;</a></h4>
+<p><sub>sort, reverse, random, probability, list, loop<sub></p>
+<pre><code class="python">seq = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+print(seq)
+
+seq_list = list(seq)
+seq_list.reverse()
+rev_seq = ''.join(seq_list)
+print(rev_seq)
+
+print(&quot;=&quot; * 25)
+
+# reverse a sequence, using a loop
+# rev_seq = ''
+rev_seq = ''
+for s in reversed(seq):
+    rev_seq = rev_seq + s
+print(rev_seq)
+
+print(&quot;=&quot; * 25)
+
+# reverse a sequence, using seq[start:end:step]
+rev_seq = seq[:-1]
+print(rev_seq)
+
+print(&quot;=&quot; * 25)
+
+# mixing a sequence
+import random
+
+ran_seq = random.sample(seq, len(seq))
+print(ran_seq)
+ran_seq = ''.join(random.sample(seq, len(seq)))
+print(ran_seq)
+ran_seq = ''.join(random.sample(seq, len(seq)-10))
+print(ran_seq)
+
+print(&quot;=&quot; * 25)
+
+# mixing a sequence (using random again)
+ran_seq = ''.join([random.choice(seq) \
+ for x in range(len(seq))])
+print(ran_seq)
+
+print(&quot;=&quot; * 25)
+
+# shuffle a sequence (using random again)
+data = list(seq)
+random.shuffle(data)
+shuffled_seq = data
+print(shuffled_seq)
+
+shuffled_seq = ''.join(data)
+print(shuffled_seq)
+</code></pre>
+
+<p>Ouput:</p>
+<pre><code class="text">ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+=========================
+ZYXWVUTSRQPONMLKJIHGFEDCBA
+=========================
+ABCDEFGHIJKLMNOPQRSTUVWXY
+=========================
+['F', 'J', 'I', 'L', 'O', 'R', 'U', 'C', 'A', 'V', 'Q', 'M', 'T', 'N', 'B', 'G', 'W', 'P', 'Y', 'H', 'D', 'S', 'Z', 'E', 'X', 'K']
+LKAZHTVFGQROUXIMYWESDPCBJN
+LXRDUVFHKGJZMIAB
+=========================
+RYYEYKWUGMYFYMUWWBOSZWSRMJ
+=========================
+['R', 'N', 'S', 'E', 'M', 'H', 'A', 'P', 'X', 'F', 'W', 'K', 'J', 'I', 'Y', 'T', 'Z', 'G', 'V', 'O', 'C', 'B', 'Q', 'D', 'L', 'U']
+RNSEMHAPXFWKJIYTZGVOCBQDLU
+</code></pre>
+
+<h4 id="recipe-3-creating-a-random-sequence-with-probabilities">Recipe 3, Creating a Random Sequence with Probabilities<a class="headerlink" href="#recipe-3-creating-a-random-sequence-with-probabilities" title="Permanent link">&para;</a></h4>
+<p><sub>random, list, generate, probability</sub></p>
+<pre><code class="python">import random
+
+nucleotides = list('ACGT')
+dna = ''
+while len(dna) &lt; 100:
+    dna += random.choice(nucleotides) # choose amoung the list, fetch 1 item
+print(dna)
+
+print(&quot;=&quot; * 25)
+
+nucleotides = list('ACGT')
+probs = {'A': 0.3, 'C': 0.2, 'G': 0.2, 'T': 0.3} # sum of 1.0
+assert sum(probs.values()) == 1.0
+# or
+# if sum(probs.values()) != 1.0:
+#   raise Exception('Sum of probabilites is not 1.0!')
+
+dna = ''
+while len(dna) &lt; 100:
+    nuc = random.choi
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Python%20Code%20Snippets/" class="btn btn-neutral float-right" title="Python Code Snippets">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Learn%20Python%20the%20Hard%20Way/" class="btn btn-neutral" title="Learn Python the Hard Way"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ugoproto/ugo_py_doc" class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Learn%20Python%20the%20Hard%20Way/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Python%20Code%20Snippets/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
