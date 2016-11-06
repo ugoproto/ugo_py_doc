@@ -36,13 +36,13 @@ theme: readthedocs
 extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','mathjaxhelper.js']
 
 # Python
-#python:
-#   version: 2 # for unicode
-#   setup_py_install: true
+python:
+   version: 2 # for unicode
+   setup_py_install: true
 
 markdown_extensions:
     - mdx_math:
-        enable_dollar_delimiter: True
+        enable_dollar_delimiter: True # for use of inline $..$
     - wikilinks # internal links with [[bracketed]]
     - smarty # additional characters
 #    - subscript
