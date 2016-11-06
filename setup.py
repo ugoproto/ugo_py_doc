@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 from distutils.core import setup
 
@@ -13,11 +13,11 @@ Please refer to the `README file`_ for details on how to use it.
 """
 
 setup(name='python-markdown-math',
-      description='Math extension for Python-Markdown',
-      long_description=long_description,
-      author='Dmitry Shachnev',
-      author_email='mitya57@gmail.com',
-      version='0.2',
-      url='https://github.com/mitya57/python-markdown-math',
-      py_modules=['mdx_math'],
-license='BSD')
+        description='Math extension for Python-Markdown',
+        long_description=long_description,
+        author='Dmitry Shachnev',
+        author_email='mitya57@gmail.com',
+        version='0.2',
+        url='https://github.com/mitya57/python-markdown-math',
+        py_modules=['mdx_math'],
+        license='BSD')
