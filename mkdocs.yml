@@ -45,9 +45,6 @@ formats:
 python:
     version: 2 # for unicode
     setup_py_install: true
-    #pip_install: true # virtualenv
-    #extra_requirements:
-    #    python-markdown-math
 
 markdown_extensions:
     - mdx_math:
