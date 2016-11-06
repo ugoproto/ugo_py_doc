@@ -34,19 +34,20 @@ formats:
     - epub
     - pdf    
     
-# Math equations: JS in the docs, extra JS (see below) new extension (see below)
+# Math equations:
+    # extra JS (see below)
+    # extra Python (see below)
+    # new extension (see below)
 # Required to load the MathJax javascript for the mdx_math.py
 # https://github.com/mkdocs/mkdocs/issues/253
 
-extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','mathjaxhelper.js']
-
 # Python
 python:
-    version: 3 # for unicode
+    version: 2 # for unicode
     setup_py_install: true
-    pip_install: true # virtualenv
-    extra_requirements:
-        python-markdown-math
+    #pip_install: true # virtualenv
+    #extra_requirements:
+    #    python-markdown-math
 
 markdown_extensions:
     - mdx_math:
@@ -60,3 +61,6 @@ markdown_extensions:
         title: Content
         permalink: True
         baselevel: 3
+
+# Required to load the MathJax javascript for the mdx_math.py        
+extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','mathjaxhelper.js']
