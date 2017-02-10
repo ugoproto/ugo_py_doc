@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  
+  <title>Apprenez à programmer en Python - ugo_py_doc</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Apprenez à programmer en Python";
+    var mkdocs_page_input_path = "Apprenez a programmer en Python.md";
+    var mkdocs_page_url = "/Apprenez a programmer en Python/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+  <script src="../mathjaxhelper.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Apprenez à programmer en Python</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#shebang-line">Shebang Line</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-8-exceptions">Chapter 8, Exceptions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-10-strings">Chapter 10, Strings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-11-lists-and-tuples-1">Chapter 11, Lists and Tuples 1</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-12-lists-and-tuples-2">Chapter 12, Lists and Tuples 2</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-13-dictionaries">Chapter 13, Dictionaries</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-14-files">Chapter 14, Files</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-17-classes-and-docstrings">Chapter 17, Classes and docstrings</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-18-class-properties">Chapter 18, (Class) Properties</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-19-special-methods">Chapter 19, Special Methods</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-20-heritage">Chapter 20, Heritage</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-21-the-for-loop-again">Chapter 21, The for Loop Again</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-23-decorators">Chapter 23, Decorators</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-24-metaclasses">Chapter 24, Metaclasses</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-25-regular-expressions">Chapter 25, Regular Expressions</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-26-time">Chapter 26, Time</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-27-system-programming">Chapter 27, System Programming</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-28-maths">Chapter 28, Maths</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-29-password-management">Chapter 29, Password Management</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-30-network">Chapter 30, Network</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-31-tkinter">Chapter 31, Tkinter</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-33-distribute-scripts-and-programs">Chapter 33, Distribute Scripts and Programs</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-34-pep">Chapter 34, PEP</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#chapter-35-more">Chapter 35, More...</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Decorators/">Decorators</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Python%20for%20Education/">Python for Education</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Scientific%20Python%20%28Scipy%20Stack%29/">Scientific Python (Scipy Stack)</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Apprenez à programmer en Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="apprenez-a-programmer-en-python">Apprenez à programmer en Python<a class="headerlink" href="#apprenez-a-programmer-en-python" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Notes. Python 3. From Le Livre du Zéro, Simple IT, 2011.</p>
+<hr />
+<div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#apprenez-a-programmer-en-python">Apprenez à programmer en Python</a><ul>
+<li><a href="#shebang-line">Shebang Line</a></li>
+<li><a href="#chapter-8-exceptions">Chapter 8, Exceptions</a></li>
+<li><a href="#chapter-10-strings">Chapter 10, Strings</a></li>
+<li><a href="#chapter-11-lists-and-tuples-1">Chapter 11, Lists and Tuples 1</a></li>
+<li><a href="#chapter-12-lists-and-tuples-2">Chapter 12, Lists and Tuples 2</a></li>
+<li><a href="#chapter-13-dictionaries">Chapter 13, Dictionaries</a></li>
+<li><a href="#chapter-14-files">Chapter 14, Files</a></li>
+<li><a href="#chapter-17-classes-and-docstrings">Chapter 17, Classes and docstrings</a></li>
+<li><a href="#chapter-18-class-properties">Chapter 18, (Class) Properties</a></li>
+<li><a href="#chapter-19-special-methods">Chapter 19, Special Methods</a></li>
+<li><a href="#chapter-20-heritage">Chapter 20, Heritage</a></li>
+<li><a href="#chapter-21-the-for-loop-again">Chapter 21, The for Loop Again</a></li>
+<li><a href="#chapter-23-decorators">Chapter 23, Decorators</a></li>
+<li><a href="#chapter-24-metaclasses">Chapter 24, Metaclasses</a></li>
+<li><a href="#chapter-25-regular-expressions">Chapter 25, Regular Expressions</a></li>
+<li><a href="#chapter-26-time">Chapter 26, Time</a></li>
+<li><a href="#chapter-27-system-programming">Chapter 27, System Programming</a></li>
+<li><a href="#chapter-28-maths">Chapter 28, Maths</a></li>
+<li><a href="#chapter-29-password-management">Chapter 29, Password Management</a></li>
+<li><a href="#chapter-30-network">Chapter 30, Network</a></li>
+<li><a href="#chapter-31-tkinter">Chapter 31, Tkinter</a></li>
+<li><a href="#chapter-33-distribute-scripts-and-programs">Chapter 33, Distribute Scripts and Programs</a></li>
+<li><a href="#chapter-34-pep">Chapter 34, PEP</a></li>
+<li><a href="#chapter-35-more">Chapter 35, More&hellip;</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h4 id="shebang-line">Shebang Line<a class="headerlink" href="#shebang-line" title="Permanent link">&para;</a></h4>
+<p><sub>shebang, top, file, environment, language, kernel, python2, python 2, python3, python 3, utf, utf8, utf-8</sub></p>
+<p>Other names: sha-bang, hashbang, pound-bang, hash-pling.</p>
+<p>The shebang line goes on top of the file:</p>
+<ul>
+<li>Windows, Python 2: <code>#! python 2</code>.</li>
+<li>Windows, Python 3: <code>#! python 3</code>.</li>
+<li>UNIX, Python 2: <code>#! /usr/bin/env python 2</code>.</li>
+<li>UNIX, Python 3: <code>#! /usr/bin/env python 3</code>.</li>
+</ul>
+<p>Launch</p>
+<ul>
+<li>In Windows, Python 2:<ul>
+<li><code>python script.py</code></li>
+<li><code>py script.py</code></li>
+<li><code>py -2 script.py</code></li>
+<li><code>py -2.7 script.py</code></li>
+</ul>
+</li>
+<li>In UNIX, Python 2:<ul>
+<li><code>python script.py</code></li>
+</ul>
+</li>
+<li>In Windows, Python 3:<ul>
+<li><code>py -3 script.py</code></li>
+<li><code>py -3,5 script.py</code></li>
+</ul>
+</li>
+<li>In UNIX, Python 3:<ul>
+<li><code>python3 script.py</code></li>
+</ul>
+</li>
+<li>The shell, Python 2:<ul>
+<li><code>python</code></li>
+<li><code>py -2</code></li>
+<li><code>py -2.7</code></li>
+</ul>
+</li>
+<li>The bash, Python 2:<ul>
+<li><code>python</code></li>
+<li><code>python2</code></li>
+</ul>
+</li>
+<li>The shell, Python 3:<ul>
+<li><code>py -3</code></li>
+<li><code>py -3.5</code></li>
+</ul>
+</li>
+<li>The bash, Python 3:<ul>
+<li><code>python3</code></li>
+</ul>
+</li>
+</ul>
+<p>Add another line to specify the language:</p>
+<ul>
+<li><code># -*coding: utf-8 -*-</code>..</li>
+<li><code># -*coding: latin-1 -*-</code>.</li>
+</ul>
+<h4 id="chapter-8-exceptions">Chapter 8, Exceptions<a class="headerlink" href="#chapter-8-exceptions" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<ul>
+<li><code>try:</code> block.</li>
+<li><code>except</code> errors.</li>
+<li><code>else:</code>.</li>
+<li><code>finally:</code>.</li>
+<li><code>assert</code> tests and conditions.</li>
+<li><code>raise</code> an exception.</li>
+</ul>
+<h4 id="chapter-10-strings">Chapter 10, Strings<a class="headerlink" href="#chapter-10-strings" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p>A <code>"string"</code>.</p>
+<ul>
+<li><code>str()</code> function.</li>
+<li><code>upper()</code> and <code>lower()</code> methods; upper/lower characters.</li>
+<li><code>capitalize()</code> method; first-letter upper character.</li>
+<li><code>left()</code>, <code>right()</code>, <code>center()</code> methods.</li>
+<li><code>strip()</code>, <code>lstrip()</code>, <code>rstrip()</code> methods; remove white space</li>
+<li><code>format()</code> method.</li>
+<li><code>count()</code> method.</li>
+<li><code>find()</code> method.</li>
+<li><code>replace()</code> method.</li>
+<li><code>[:]</code> to subset a string.</li>
+<li><code>while</code> loop on a string.</li>
+</ul>
+<h4 id="chapter-11-lists-and-tuples-1">Chapter 11, Lists and Tuples 1<a class="headerlink" href="#chapter-11-lists-and-tuples-1" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>delete, length, size</sub></p>
+<p>Lists are mutable; can add or remove elements from a list; can change the order of elements.</p>
+<p>A <code>[list]</code>.</p>
+<ul>
+<li><code>insert()</code> method.</li>
+<li><code>append()</code> method.</li>
+<li><code>extends()</code> method.</li>
+<li><code>del()</code> function; delete an indexed element.</li>
+<li><code>remove()</code> method; remove an occurrence.</li>
+<li><code>len()</code> function; length.</li>
+<li><code>for</code> loop, <code>in</code> a list.</li>
+<li><code>enumerate()</code> function; return the index and elements.</li>
+</ul>
+<p>Tuples are immutable; cannot be modified.</p>
+<p><code>(tuple)</code>.</p>
+<h4 id="chapter-12-lists-and-tuples-2">Chapter 12, Lists and Tuples 2<a class="headerlink" href="#chapter-12-lists-and-tuples-2" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>flexible, function, flexibility, parameter</sub></p>
+<p>With lists, functions can have an undetermined number of parameters (very flexible!):</p>
+<ul>
+<li><code>def my_function(*parameter):</code>.</li>
+<li><code>def my_function(a, b, *parameter):</code>.</li>
+</ul>
+<p>Strings and lists. Create, split, loop through a sequence. Even in a list of list.</p>
+<ul>
+<li><code>split()</code> method.</li>
+<li><code>join()</code> method.</li>
+<li><code>for</code> loop, <code>in</code> a list.</li>
+</ul>
+<p>Find the <code>type()</code> of a variable (integer, float, boolean, etc.)</p>
+<h4 id="chapter-13-dictionaries">Chapter 13, Dictionaries<a class="headerlink" href="#chapter-13-dictionaries" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>dictionary, flexible, function, flexibility, parameter</sub></p>
+<p>Dictionaries are mutable; you can add or remove elements from a dictionary; order of elements is unimportant.</p>
+<p>One-entry dictionary: <code>{'key': 'value'}</code>.</p>
+<p>With dictionaries, functions can have an undetermined number of parameters (very flexible!):</p>
+<ul>
+<li><code>def my_function(**parameter):</code>.</li>
+<li><code>def my_function(a, b, **parameter):</code>.</li>
+</ul>
+<p>Combine lists and dictionaries in a function with an undetermined number of parameters:</p>
+<ul>
+<li><code>def my_function(*, parameter, **parameter):</code>.</li>
+<li>
+<p><code>def my_function(a, b, *parameter, **parameter):</code>.</p>
+</li>
+<li>
+<p><code>del dict['key']</code> function; delete.</p>
+</li>
+<li><code>pop()</code> method; pop out an element.</li>
+<li><code>for</code> loop, <code>in</code> a dictionary.</li>
+<li><code>in dict.keys()</code> method; extract the dictionary <code>dict</code> in order.</li>
+<li><code>in dict.values()</code> method; extract the values from dictionary <code>dict</code>.</li>
+<li><code>in dict.items()</code> method to extract the keys and values from dictionary <code>dict</code>.</li>
+</ul>
+<h4 id="chapter-14-files">Chapter 14, Files<a class="headerlink" href="#chapter-14-files" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><code>os</code> module. Perform bash, shell operations such as opening, closing, reading, and writing files. Manage relative and absolute path. In UNIX and Windows.</p>
+<ul>
+<li><code>open()</code> method.</li>
+<li><code>close()</code> method.</li>
+<li><code>read()</code> method.</li>
+<li>
+<p><code>write()</code> method.</p>
+</li>
+<li>
+<p><code>with/as</code> method; create aliases.</p>
+</li>
+</ul>
+<p><code>pickle</code> module. Record objects in a file and retrieve them.</p>
+<ul>
+<li><code>Pickler()</code> method.</li>
+</ul>
+<h4 id="chapter-17-classes-and-docstrings">Chapter 17, Classes and docstrings<a class="headerlink" href="#chapter-17-classes-and-docstrings" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>class, instance, self</sub></p>
+<p><code>docstring</code> module. Under a <code>Class</code>, a docstring documents the class. Under <code>def __init__():</code>, a docstring documents the attributes. Under <code>def function():</code>, a docstring documents the use of the function or class method, under <code>variable</code>, a docstring documents the use of the variable.</p>
+<p><code>object.__doc__</code> method; accesses the docstring.</p>
+<p><code>__all__</code> function; displays the list of public names (of objects).</p>
+<p><code>pydoc</code> module. Displays information about an object with the <code>help(object)</code> function.</p>
+<p><code>dir(object)</code> function; returns an object&rsquo;s parameters (all the attributes, methods, functions).</p>
+<p><code>object.__dict__</code> method; returns an object&rsquo;s attributes.</p>
+<p><code>object.__dict__["att_a"] = "att_b"</code> changes an object&rsquo;s attribute.</p>
+<h4 id="chapter-18-class-properties">Chapter 18, (Class) Properties<a class="headerlink" href="#chapter-18-class-properties" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>instance, constructor</sub></p>
+<p>More about the <code>def __init__():</code> constructor.</p>
+<h4 id="chapter-19-special-methods">Chapter 19, Special Methods<a class="headerlink" href="#chapter-19-special-methods" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>mathematics, display results</sub></p>
+<ul>
+<li><code>def __repr__(self):</code> modifies the way an object is displayed when called.</li>
+<li>
+<p><code>def __str__(self):</code> method modifies the way an object is displayed when printed.</p>
+</li>
+<li>
+<p><code>def __getattr__():</code> defines a message when an inexistent object&rsquo;s attributes is called (like a <code>try</code> block) vs the built-in <code>object.__dict__</code></p>
+</li>
+<li><code>def __setattr__():</code> does the same when an object&rsquo;s attribute is modified vs the built-in <code>object.__dict__["att_a"] = "att_b"</code></li>
+<li><code>def __delattr__():</code> does the same when an object&rsquo;s attribute is deleted.</li>
+<li>
+<p><code>def __hasattr__():</code> returns true or false if the attribute exists.</p>
+</li>
+<li>
+<p><code>def __getitem__():</code>, <code>def __setitem__():</code>, and <code>def __delitem__():</code> all define what to do when we write, respectively: <code>object[index]</code>, <code>object[index] = value</code>, and <code>del object[index]</code>.</p>
+</li>
+<li>
+<p><code>object.__contains__</code> checks out if a list contains a specific element; like <code>in</code></p>
+</li>
+<li>
+<p><code>object.__len__()</code> shows the size of an object.</p>
+</li>
+<li>
+<p><code>object.__add__(4)</code> is equivalent to <code>object + 4</code>; </p>
+</li>
+<li><code>def __add():</code> as well.</li>
+<li><code>object.__sub__()</code> or <code>-</code>.</li>
+<li><code>__mul__</code> or <code>*</code>.</li>
+<li><code>__truediv__</code> or <code>/</code>.</li>
+<li><code>__floordiv__</code> or <code>//</code>.</li>
+<li><code>__mod__</code> or <code>%</code>.</li>
+<li><code>__pow__</code> or <code>**</code>.</li>
+<li><code>__radd__</code>, <code>__iadd__</code>, etc.</li>
+<li><code>def __eq__():</code> or <code>==</code>.</li>
+<li><code>__ne__</code> or <code>!=</code>.</li>
+<li><code>__gt__</code> or <code>&gt;</code>.</li>
+<li><code>__ge__</code> or <code>&gt;=</code>.</li>
+<li><code>__lt__</code> or <code>&lt;</code>.</li>
+<li>
+<p><code>__le__</code> or <code>&lt;=</code>.</p>
+</li>
+<li>
+<p><code>pickle</code> module. Record objects in a file and retrieve them.</p>
+</li>
+<li>
+<p><code>__getstate__</code> method.</p>
+</li>
+<li><code>__setstate__</code> method.</li>
+</ul>
+<h4 id="chapter-20-heritage">Chapter 20, Heritage<a class="headerlink" href="#chapter-20-heritage" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>except</sub></p>
+<p>Class heritage transfers all attributes, parameters and methods from a class to a subclass.</p>
+<ul>
+<li><code>issubclass</code> verifies (true or false) if a class is a subclass of another class.</li>
+<li><code>isinstance</code> verifies if an object comes from a class.</li>
+</ul>
+<p>A subclass can inherit from two or more classes (multiple heritage).</p>
+<p>More exceptions in a <code>try</code> block, <code>except</code>, heritage, <code>AttributeError</code>, <code>Exception</code>, <code>BaseException</code>, and resolution. </p>
+<p>Exceptions are classes with hierarchy.</p>
+<h4 id="chapter-21-the-for-loop-again">Chapter 21, The for Loop Again<a class="headerlink" href="#chapter-21-the-for-loop-again" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p>Related to the <code>for</code> loop and how to dig deeper into the iterator with <code>__iter__</code> and <code>__next__</code>.</p>
+<p>Iterator can also skip items in a list: iterate from 1 to 5, them jump to 10 and go on. A sort of conditional <code>break</code>. For that, we must generate intervals with <code>yield</code>.</p>
+<h4 id="chapter-23-decorators">Chapter 23, Decorators<a class="headerlink" href="#chapter-23-decorators" title="Permanent link">&para;</a></h4>
+<p>Advanced!</p>
+<p><sub>simplify code</sub></p>
+<p>A decorator simplifies:</p>
+<pre><code class="python">def function(...):
+    ...
+...
+function = decorator (function)
+</code></pre>
+
+<p>With:</p>
+<pre><code class="python">@decorator
+def function(...):
+    ...
+</code></pre>
+
+<p>There are decorators without parameters, with parameters, applied to classes; chained together.</p>
+<p>Use:</p>
+<ol>
+<li>Limit a class instance to only one instance  or one object (a <code>singleton</code>).</li>
+<li>Add more control on the type of data going into functions. </li>
+</ol>
+<h4 id="chapter-24-metaclasses">Chapter 24, Metaclasses<a class="headerlink" href="#chapter-24-metaclasses" title="Permanent link">&para;</a></h4>
+<p>Advanced!</p>
+<p><code>__init__</code> initiates an object with attributes, but does not create the object itself. </p>
+<p>It is done by coding a new instance or with <code>__new__</code>. The method is useful to create immutable objects that cannot be modified.</p>
+<p>Create dynamic classes with <code>type</code>.</p>
+<h4 id="chapter-25-regular-expressions">Chapter 25, Regular Expressions<a class="headerlink" href="#chapter-25-regular-expressions" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>regex, string, search, beginning, end, replace,  occurrence, character, class, group, number, numbered group, name, named</sub></p>
+<p><code>re</code> module.</p>
+<h4 id="chapter-26-time">Chapter 26, Time<a class="headerlink" href="#chapter-26-time" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>date, time, year, month, day, hour, minute, second, time zone, timezone, time delta, timedelta, time stamp, timestamp, format</sub></p>
+<p><code>time</code> module and <code>datetime</code> module.</p>
+<h4 id="chapter-27-system-programming">Chapter 27, System Programming<a class="headerlink" href="#chapter-27-system-programming" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><sub>input, output, stdin, stdout, open, close, read, write, directory, file</sub></p>
+<p><code>sys</code> module and <code>os</code> module. Access system variables and control the operating system.</p>
+<p><code>signal</code> module. Read process signals sent to programs (such as stopping and exiting). </p>
+<p>Access and control the OS console, enter CLI arguments, program actions usually done with the mouse and the keyboard. </p>
+<p><code>system</code> module, related to <code>os</code>.</p>
+<ul>
+<li><code>os.system('ls')</code> on Linux.</li>
+<li><code>os.system('dir')</code> on Windows.</li>
+</ul>
+<p>For example:</p>
+<pre><code class="python">import os
+
+cmd = os.popen('ls')
+
+cmd
+cmd.read()
+</code></pre>
+
+<h4 id="chapter-28-maths">Chapter 28, Maths<a class="headerlink" href="#chapter-28-maths" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p><code>math</code> module.</p>
+<p>Enables new methods in arithmetics, trigonometry, rounding: <code>pow()</code>, <code>sqrt()</code>, <code>exp()</code>, <code>fabs()</code>, <code>radians()</code>, <code>degrees()</code>, <code>ceil()</code>, <code>floor()</code>, <code>trunc()</code>, etc</p>
+<p><code>fractions</code> module.</p>
+<p><code>Fraction()</code>, <code>from_float()</code>, etc.</p>
+<p><code>random</code> module.</p>
+<p><code>random()</code>, <code>randrange()</code>, <code>randint()</code>, <code>choice()</code>, etc.</p>
+<h4 id="chapter-29-password-management">Chapter 29, Password Management<a class="headerlink" href="#chapter-29-password-management" title="Permanent link">&para;</a></h4>
+<p>Web framework.</p>
+<p><code>getpass</code> module.</p>
+<p>Receive a password, cypher a password, etc.</p>
+<h4 id="chapter-30-network">Chapter 30, Network<a class="headerlink" href="#chapter-30-network" title="Permanent link">&para;</a></h4>
+<p>Web framework.</p>
+<p><sub>tcp, protocol, client, server, connection, http, port, socket, connect,  </sub></p>
+<p><code>socket</code> module and <code>select</code> module.</p>
+<h4 id="chapter-31-tkinter">Chapter 31, Tkinter<a class="headerlink" href="#chapter-31-tkinter" title="Permanent link">&para;</a></h4>
+<p>Software, application.</p>
+<p><sub>gui, graphic, interface, window, button, interactive, box, toggle, widget, labels, square, checkbox, list, command</sub></p>
+<p><code>Tkinter</code> module.</p>
+<h4 id="chapter-33-distribute-scripts-and-programs">Chapter 33, Distribute Scripts and Programs<a class="headerlink" href="#chapter-33-distribute-scripts-and-programs" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<p>Method 1: Executable File</p>
+<p>Cx_freeze creates a standalone executable file. cx_Freeze is portable (Windows, Linux, Mac OS), compatible with Py -2 and Py -3, simple, fast, flexible.</p>
+<p>Download, install, use the <code>cxfreeze</code> script</p>
+<p>Alternative: py2exe (Windows only).</p>
+<p>Method 2: Setup File</p>
+<p>The traditional way of distributing a code and a more powerful approach.</p>
+<h4 id="chapter-34-pep">Chapter 34, PEP<a class="headerlink" href="#chapter-34-pep" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<ul>
+<li>PEP 20: The Zen of Python.</li>
+<li>PEP 8: coding conventions.<ul>
+<li>identation, tabulation, line length, line spacing, encoding, importing, spacing, commenting, naming, coding comparisons.</li>
+</ul>
+</li>
+<li>PEP 257: documentation and docstrings.</li>
+</ul>
+<h4 id="chapter-35-more">Chapter 35, More&hellip;<a class="headerlink" href="#chapter-35-more" title="Permanent link">&para;</a></h4>
+<p>Basic.</p>
+<ul>
+<li>References.</li>
+<li>Wiki.</li>
+<li>PEP.</li>
+<li>Documentation.</li>
+<li>Basic library</li>
+<li>Additional libraries.<ul>
+<li>graphical interfaces: Tk, PyQT, PyGTK, wx Python.</li>
+<li>web framworks: Django, CherryPy.</li>
+<li>networks: Twisted.</li>
+</ul>
+</li>
+<li>Index.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Automate%20the%20Boring%20Stuff%20with%20Python/" class="btn btn-neutral float-right" title="Automate the Boring Stuff with Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Automate%20the%20Boring%20Stuff%20with%20Python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
