@@ -1,12 +1,8 @@
 site_name: ugo_py_doc
-site_url: http://ugo-py-doc.readthedocs.io/en/latest/
-repo_url: https://github.com/ugoproto/ugo_py_doc
 site_description: A Python documentation website.
 site_author: Ugo Spark
-site_favicon: faviconfire.ico
 copyright: null
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
-remote_branch: master
 remote_name: ugo_py_doc
 pages:
     - Home: 'index.md'
@@ -29,32 +25,36 @@ theme: readthedocs
     # readthedocs
     # mkdocs
 
-# Build PDF & ePub
+# Build PDF & ePub (only on Readthedocs)
 #formats: 
 #    - pdf
-    
-# Math equations:
-    # extra JS (see below)
-    # extra Python (see below)
-    # new extension (see below)
-# Required to load the MathJax javascript for the mdx_math.py
-# https://github.com/mkdocs/mkdocs/issues/253
 
+# Interlinks
+# [link](to_other_page.md)
+# [link](../relative/page.md)
+    
 # Python
 python:
     version: 2 # for unicode
-    setup_py_install: true
+    setup_py_install: True
+
+# Math equations:
+# extra JS (see below)
+# extra Python (see below)
+# new extension (see below)
+# Required to load the MathJax javascript for the mdx_math.py
+# https://github.com/mkdocs/mkdocs/issues/253
 
 markdown_extensions:
     - mdx_math:
         enable_dollar_delimiter: True # for use of inline $..$
     - wikilinks # internal links with [[bracketed]]
     - smarty # additional characters
-#    - subscript
-#    - superscript
+    - subscript
+    - superscript
     - nl2br # new line to break
     - toc:
-        title: Content
+        title: CONTENT
         permalink: True
         baselevel: 3
 
