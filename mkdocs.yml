@@ -18,7 +18,7 @@ pages:
     - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
     - Python Code Snippets: 'Python Code Snippets.md'
     - Python for Education: 'Python for Education.md'
-    - Scientific Python (the SciPy Stack): 'Scientific Python (SciPy Stack).md'
+    - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
     
 theme: readthedocs
 # Other themes:
