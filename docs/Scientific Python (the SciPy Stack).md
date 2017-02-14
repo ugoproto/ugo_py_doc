@@ -10,7 +10,7 @@ Notes.
 
 -----
 
-## A word on the Scipy Stack
+## A word on the SciPy Stack
 
 The Scipy Stack is a Python-based ecosystem for mathematics, science, and engineering:
 
