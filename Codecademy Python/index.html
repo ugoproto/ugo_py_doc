@@ -7,19 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="Ugo Spark">
-  
-  <title>Codecademy Python - ugo_py_doc</title>
-  
-
   <link rel="shortcut icon" href="../img/favicon.ico">
-
-  
+  <title>Codecademy Python - ugo_py_doc</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="../css/highlight.css">
-
   
   <script>
     // Current page data
@@ -30,11 +24,7 @@
   
   <script src="../js/jquery-2.1.1.min.js"></script>
   <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script>
-  <script src="../js/theme.js"></script> 
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-  <script src="../mathjaxhelper.js"></script>
-
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -54,7 +44,7 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
+	<ul class="current">
           
             <li>
     <li class="toctree-l1 ">
@@ -3719,24 +3709,12 @@ a | b:  00101111  47
 </code></pre>
 
 <p>Note that the bitwise <code>|</code> operator can only create results that are greater than or equal to the larger of the two integer inputs.</p>
-<table>
-<thead>
-<tr>
-<th>- 0</th>
-<th>0 = 0</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>- 1</td>
-<td>0 = 1</td>
-</tr>
-<tr>
-<td>- 1</td>
-<td>1 = 1</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li>0 | 0 = 0</li>
+<li>0 | 1 = 1 </li>
+<li>1 | 0 = 1</li>
+<li>1 | 1 = 1</li>
+</ul>
 <p>For example: <code>110 (6) | 1010 (10) = 1110 (14)</code>.</p>
 <pre><code class="python">print bin(0b1110|0b101)
 </code></pre>
@@ -4996,6 +4974,8 @@ SUSPECT3 : no evidence; the suspect can be freed.
   <div role="contentinfo">
     <!-- Copyright etc -->
     
+      <p>© Ugo Spark</p>
+    
   </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -5005,10 +4985,10 @@ SUSPECT3 : no evidence; the suspect can be freed.
       </div>
 
     </section>
-
+    
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -5019,6 +4999,9 @@ SUSPECT3 : no evidence; the suspect can be freed.
       
     </span>
 </div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
 
 </body>
 </html>
