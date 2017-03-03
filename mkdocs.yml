@@ -1,9 +1,14 @@
 site_name: ugo_py_doc
+site_url: https://ugoproto.github.io/ugo_py_doc/
+#repo_url: https://github.com/ugoproto/ugo_py_doc
 site_description: A Python documentation website.
 site_author: Ugo Spark
-copyright: null
+#site_favicon: favicon.ico
+copyright: © Ugo Spark
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
-remote_name: ugo_py_doc
+#remote_branch: master
+#remote_name: ugo_py_doc
+
 pages:
     - Home: 'index.md'
     - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
@@ -53,11 +58,12 @@ markdown_extensions:
     - smarty # additional characters
     - subscript
     - superscript
-    - nl2br # new line to break
+    - nl2br # need a new line to break
     - toc:
         title: CONTENT
         permalink: True
         baselevel: 3
+    - footnotes
 
 # Required to load the MathJax javascript for the mdx_math.py        
 extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','mathjaxhelper.js']
