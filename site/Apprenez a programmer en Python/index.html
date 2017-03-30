@@ -297,14 +297,31 @@
 <h4 id="shebang-line">Shebang Line<a class="headerlink" href="#shebang-line" title="Permanent link">&para;</a></h4>
 <p><sub>shebang, top, file, environment, language, kernel, python2, python 2, python3, python 3, utf, utf8, utf-8</sub></p>
 <p>Other names: sha-bang, hashbang, pound-bang, hash-pling.</p>
-<p>The shebang line goes on top of the file:</p>
+<p><strong>At the top of scripts</strong></p>
 <ul>
-<li>Windows, Python 2: <code>#! python 2</code>.</li>
-<li>Windows, Python 3: <code>#! python 3</code>.</li>
-<li>UNIX, Python 2: <code>#! /usr/bin/env python 2</code>.</li>
-<li>UNIX, Python 3: <code>#! /usr/bin/env python 3</code>.</li>
+<li>In Windows, Python 2:<ul>
+<li><code>#! python</code></li>
 </ul>
-<p>Launch</p>
+</li>
+<li>Windows, Python 3:<ul>
+<li><code>#! python 3</code></li>
+</ul>
+</li>
+<li>UNIX, Python 2:<ul>
+<li><code>#!/usr/bin/env python</code></li>
+</ul>
+</li>
+<li>UNIX, Python 3:<ul>
+<li><code>#!/usr/bin/env python 3</code></li>
+</ul>
+</li>
+<li>Add:<ul>
+<li><code># -*coding: utf-8 -*-</code></li>
+<li><code># -*coding: latin-1 -*-</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Launch a script</strong></p>
 <ul>
 <li>In Windows, Python 2:<ul>
 <li><code>python script.py</code></li>
@@ -319,13 +336,16 @@
 </li>
 <li>In Windows, Python 3:<ul>
 <li><code>py -3 script.py</code></li>
-<li><code>py -3,5 script.py</code></li>
+<li><code>py -3.5 script.py</code></li>
 </ul>
 </li>
 <li>In UNIX, Python 3:<ul>
 <li><code>python3 script.py</code></li>
 </ul>
 </li>
+</ul>
+<p><strong>Launch the shell/bash</strong></p>
+<ul>
 <li>The shell, Python 2:<ul>
 <li><code>python</code></li>
 <li><code>py -2</code></li>
@@ -346,11 +366,6 @@
 <li><code>python3</code></li>
 </ul>
 </li>
-</ul>
-<p>Add another line to specify the language:</p>
-<ul>
-<li><code># -*coding: utf-8 -*-</code>..</li>
-<li><code># -*coding: latin-1 -*-</code>.</li>
 </ul>
 <h4 id="chapter-8-exceptions">Chapter 8, Exceptions<a class="headerlink" href="#chapter-8-exceptions" title="Permanent link">&para;</a></h4>
 <p>Basic.</p>
@@ -612,9 +627,9 @@ cmd.read()
 <h4 id="chapter-33-distribute-scripts-and-programs">Chapter 33, Distribute Scripts and Programs<a class="headerlink" href="#chapter-33-distribute-scripts-and-programs" title="Permanent link">&para;</a></h4>
 <p>Basic.</p>
 <p>Method 1: Executable File</p>
-<p>Cx_freeze creates a standalone executable file. cx_Freeze is portable (Windows, Linux, Mac OS), compatible with Py -2 and Py -3, simple, fast, flexible.</p>
+<p><code>cx_freeze</code> creates a standalone executable file. <code>cx_Freeze</code> is portable (Windows, Linux, Mac OS X), compatible with Py -2 and Py -3, simple, fast, flexible.</p>
 <p>Download, install, use the <code>cxfreeze</code> script</p>
-<p>Alternative: py2exe (Windows only).</p>
+<p>Alternative: <code>py2exe</code> (Windows only).</p>
 <p>Method 2: Setup File</p>
 <p>The traditional way of distributing a code and a more powerful approach.</p>
 <h4 id="chapter-34-pep">Chapter 34, PEP<a class="headerlink" href="#chapter-34-pep" title="Permanent link">&para;</a></h4>

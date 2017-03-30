@@ -3425,18 +3425,18 @@ if __name == '__main__':
 
 - Non-programmer would rather want an execuble program they can unzip and run.
 - Compile the code or freeze it!
-	1. 'cx_freeze' is a set of utilities that create standalone executables from python scripts for any platform or OS.
-	1. `bbfreeze` is a Python package; an alternative to 'cx_freeze'.
-	1. 'PyInstaller' is a program; another alternative.
+	1. `cx_freeze` is a set of utilities that create standalone executables from python scripts for any platform or OS.
+        i. There are alternatives to 'cx_freeze' such as `bbfreeze`.
+	1. `pyinstaller` is a simpler alternative (it is not as flexible as `cx_freeze` but it can create single files).
 	1. `distutils` is a Python package that provides support for building and installing additional modules (libraries or packages) into a Python installation. The new modules may be either 100%-pure Python, written in C, or coded in both Python and C. `distutils` autogenerates an install script.
-		- Such distribution needs a `setup.py` file with the group of subdirectories and program files.
-		- `py2exe` is an extension to the `distutils` package to create executable files on Windows.
-		- `py2app` is an extension to the `distutils` packages to create executable files on OS X.
-	1. 'Nuitka' is a Python compiler, compatible with 'CPython'.
-		- 'CPython' is a source code interpreter with an interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.
-	1. `PyPy` is a Python package; an alternative to 'Nuitka'.
-	1. 'Cython' is a compiled language that generates CPython extension modules.
-	1. 'Jython' does the same, but in Java.
+		i. Such distribution needs a `setup.py` file with the group of subdirectories and program files.
+		i. `py2exe` is an extension to the `distutils` package to create executable files on Windows.
+		i. `py2app` is an extension to the `distutils` packages to create executable files on OS X.
+	1. `nuitka` is a Python compiler, compatible with CPython.
+		i. CPython is a source code interpreter with an interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.
+	1. `pypy` is an alternative to `nuitka`.
+	1. Cython is a compiled language that generates CPython extension modules.
+	1. Jython does the same, but in Java.
 
 **Continuous improvement**
 

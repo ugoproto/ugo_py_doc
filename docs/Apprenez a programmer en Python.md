@@ -16,44 +16,49 @@ Notes. Python 3. From Le Livre du Zéro, Simple IT, 2011.
 
 Other names: sha-bang, hashbang, pound-bang, hash-pling.
  
-The shebang line goes on top of the file:
-
-- Windows, Python 2: `#! python 2`.
-- Windows, Python 3: `#! python 3`.
-- UNIX, Python 2: `#! /usr/bin/env python 2`.
-- UNIX, Python 3: `#! /usr/bin/env python 3`.
-
-Launch
+**At the top of scripts**
 
 - In Windows, Python 2:
-	-  `python script.py`
-	-  `py script.py`
-	-  `py -2 script.py`
-	-  `py -2.7 script.py`
+    - `#! python`
+- Windows, Python 3:
+    - `#! python 3`
+- UNIX, Python 2:
+    - `#!/usr/bin/env python`
+- UNIX, Python 3:
+    - `#!/usr/bin/env python 3`
+- Add:
+    - `# -*coding: utf-8 -*-`
+    - `# -*coding: latin-1 -*-`
+
+**Launch a script**
+
+- In Windows, Python 2:
+    - `python script.py`
+    - `py script.py`
+    - `py -2 script.py`
+    - `py -2.7 script.py`
 - In UNIX, Python 2:
-	- `python script.py`
+    - `python script.py`
 - In Windows, Python 3:
-	- `py -3 script.py`
-	- `py -3,5 script.py`
+    - `py -3 script.py`
+    - `py -3.5 script.py`
 - In UNIX, Python 3:
-	- `python3 script.py`
+    - `python3 script.py`
+    
+**Launch the shell/bash**
+
 - The shell, Python 2:
-	-  `python`
-	-  `py -2`
-	-  `py -2.7`
+    - `python`
+    - `py -2`
+    - `py -2.7`
 - The bash, Python 2:
-	- `python`
-	- `python2`
+    - `python`
+    - `python2`
 - The shell, Python 3:
-	- `py -3`
-	- `py -3.5`
+    - `py -3`
+    - `py -3.5`
 - The bash, Python 3:
-	- `python3`
-
-Add another line to specify the language:
-
-- `# -*coding: utf-8 -*-`..
-- `# -*coding: latin-1 -*-`.
+    - `python3`
 
 ## Chapter 8, Exceptions
 
@@ -393,11 +398,11 @@ Basic.
 
 Method 1: Executable File
 
-Cx_freeze creates a standalone executable file. cx_Freeze is portable (Windows, Linux, Mac OS), compatible with Py -2 and Py -3, simple, fast, flexible.
+`cx_freeze` creates a standalone executable file. `cx_Freeze` is portable (Windows, Linux, Mac OS X), compatible with Py -2 and Py -3, simple, fast, flexible.
 
 Download, install, use the `cxfreeze` script
 
-Alternative: py2exe (Windows only).
+Alternative: `py2exe` (Windows only).
 
 Method 2: Setup File
 
