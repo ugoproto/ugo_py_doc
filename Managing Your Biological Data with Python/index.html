@@ -3738,22 +3738,18 @@ if __name == '__main__':
 <ul>
 <li>Non-programmer would rather want an execuble program they can unzip and run.</li>
 <li>Compile the code or freeze it!<ol>
-<li>&lsquo;cx_freeze&rsquo; is a set of utilities that create standalone executables from python scripts for any platform or OS.</li>
-<li><code>bbfreeze</code> is a Python package; an alternative to &lsquo;cx_freeze&rsquo;.</li>
-<li>&lsquo;PyInstaller&rsquo; is a program; another alternative.</li>
-<li><code>distutils</code> is a Python package that provides support for building and installing additional modules (libraries or packages) into a Python installation. The new modules may be either 100%-pure Python, written in C, or coded in both Python and C. <code>distutils</code> autogenerates an install script.<ul>
-<li>Such distribution needs a <code>setup.py</code> file with the group of subdirectories and program files.</li>
-<li><code>py2exe</code> is an extension to the <code>distutils</code> package to create executable files on Windows.</li>
-<li><code>py2app</code> is an extension to the <code>distutils</code> packages to create executable files on OS X.</li>
-</ul>
-</li>
-<li>&lsquo;Nuitka&rsquo; is a Python compiler, compatible with &lsquo;CPython&rsquo;.<ul>
-<li>&lsquo;CPython&rsquo; is a source code interpreter with an interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.</li>
-</ul>
-</li>
-<li><code>PyPy</code> is a Python package; an alternative to &lsquo;Nuitka&rsquo;.</li>
-<li>&lsquo;Cython&rsquo; is a compiled language that generates CPython extension modules.</li>
-<li>&lsquo;Jython&rsquo; does the same, but in Java.</li>
+<li><code>cx_freeze</code> is a set of utilities that create standalone executables from python scripts for any platform or OS.<br />
+    i. There are alternatives to &lsquo;cx_freeze&rsquo; such as <code>bbfreeze</code>.</li>
+<li><code>pyinstaller</code> is a simpler alternative (it is not as flexible as <code>cx_freeze</code> but it can create single files).</li>
+<li><code>distutils</code> is a Python package that provides support for building and installing additional modules (libraries or packages) into a Python installation. The new modules may be either 100%-pure Python, written in C, or coded in both Python and C. <code>distutils</code> autogenerates an install script.<br />
+    i. Such distribution needs a <code>setup.py</code> file with the group of subdirectories and program files.<br />
+    i. <code>py2exe</code> is an extension to the <code>distutils</code> package to create executable files on Windows.<br />
+    i. <code>py2app</code> is an extension to the <code>distutils</code> packages to create executable files on OS X.</li>
+<li><code>nuitka</code> is a Python compiler, compatible with CPython.<br />
+    i. CPython is a source code interpreter with an interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.</li>
+<li><code>pypy</code> is an alternative to <code>nuitka</code>.</li>
+<li>Cython is a compiled language that generates CPython extension modules.</li>
+<li>Jython does the same, but in Java.</li>
 </ol>
 </li>
 </ul>
