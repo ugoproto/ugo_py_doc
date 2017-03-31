@@ -11,21 +11,28 @@ copyright: © Ugo Spark
 
 pages:
     - Home: 'index.md'
-    - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
-    - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
-    - Codecademy Python: 'Codecademy Python.md'
-    - DataCamp Importing Data into Python 3: 'DataCamp Importing Data into Python 3.md'
-    - DataCamp Python 3 for Data Science: 'DataCamp Python 3 for Data Science.md'
-    - Decorators: 'Decorators.md'
-    - Introduction to Python: 'Introduction to Python.md'
-    - IPython Notebook, Collection: 'IPython Notebook.md'
-    - Learn Python the Hard Way: 'Learn Python the Hard Way.md'
-    - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
-    - Python Code Snippets: 'Python Code Snippets.md'
-    - Python for Education: 'Python for Education.md'
-    - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
-    - Tidy Data in Python: 'Tidy+Data+in+Python.md'
-    
+    - Basics & More:
+        - Python Preliminaries: 'Python_Preliminaries.md'
+        - Python Nice to Have: 'Python_Nice_to_Have.md'
+        - Freeze the Code: 'Freeze_the_Code.md'
+        - Decorators: 'Decorators.md'
+    - SciPy Stack:
+        - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
+        - DataCamp Importing Data into Python 3: 'DataCamp Importing Data into Python 3.md'
+        - DataCamp Python 3 for Data Science: 'DataCamp Python 3 for Data Science.md'
+        - Tidy Data in Python: 'Tidy_Data_in_Python.md'
+        - IPython Notebook, Collection: 'IPython Notebook.md'
+    - Courses:
+        - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
+        - Codecademy Python: 'Codecademy Python.md'
+        - Learn Python the Hard Way: 'Learn Python the Hard Way.md'
+        - Python Code Snippets: 'Python Code Snippets.md'
+        - Introduction to Python: 'Introduction to Python.md'
+    - Manuals:
+        - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
+        - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
+        - Python for Education: 'Python for Education.md'
+ 
 theme: readthedocs
 # Other themes:
     # readthedocs

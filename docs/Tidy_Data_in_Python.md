@@ -61,11 +61,11 @@ print(df2.head())
 
 **Using Melt to Tidy Data**
 
-Its basic syntax is `pd.melt(df, id_vars = lst)`, where `df` is the name of the dataframe we're dealing with and `lst` is a list of all the columns that we want to keep as columns. 
+Its basic syntax is `pd.melt(df, id_vars = lst)`, where `df` is the name of the data frame we're dealing with and `lst` is a list of all the columns that we want to keep as columns. 
 
 
 ```python
-# Melt df2 into new dataframe: df2_melted
+# Melt df2 into a new data frame: df2_melted
 df2_melted = pd.melt(df2, id_vars = 'Country')
 
 # print df2_melted
