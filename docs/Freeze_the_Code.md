@@ -10,7 +10,7 @@ Notes.
 
 -----
 
-- Freezing a Python file is similar to compiling the file.
+- Freezing a Python file is similar to compiling the file. When running the executable file, the code runs faster than with interpreted code.
     - http://docs.python-guide.org/en/latest/shipping/freezing/?highlight=freeze
 - It is done on Windows in the following examples.
 - It can be executed on all OS: Windows, Linux and Max OS X (using Wine for all UNIX OS).
@@ -88,10 +88,6 @@ script = "hello.py", # the name of the main python script goes here
 initScript = None,
 base = None, # if creating a GUI instead of a console app, type "Win32GUI"
 targetName = "hello.exe", # the name of the executable file
-copyDependentFiles = True,
-compress = True,
-appendScriptToExe = True,
-appendScriptToLibrary = True,
 icon = None # if you want to use an icon file, specify the file name here
 )
 
@@ -128,7 +124,7 @@ python setup.py bdist_msi
 - The installer is located in C:\PythonXX\dist\
 - It can be distributed and installed/repaired/removed as a Windows program.
 - The installation creates what the build command does in a directory of our choice.
-- Build an installer for Mac OS X.
+- Build an installer on Mac OS X.
 
 ```python
 python setup.py bdist_dmg
@@ -173,8 +169,8 @@ executables = [Executable("bin/FileName.py", base = None)]
 
 ## pyInstaller (with Snippets)
 
-- `pyinstaller` is a simpler alternative to cx_Freeze.
-- Libraries like PyQt, Django or `matplotlib` are fully supported, without having to handle plugins or external data files manually.
+- `pyinstaller` is a simpler alternative to cx-Freeze.
+- Libraries like `PyQt`, `Django` or `matplotlib` are fully supported, without having to handle plugins or external data files manually.
 
 **Documentation**
 
@@ -257,7 +253,7 @@ pyinstaller -F -i "favicon.ico" bin/hello.py
 - It can handle a set of files (such as with the last example).
 - Linux and Mac OS X can read the executable (using Wine).
 - Easy to deploy (download, open, execute). Easier than with cx-Freeze, but without the flexibility a `setup.py` file can allow.
-- However, it can generate a single file; a single-click trigger.
+- However, it can generate a single file: dowload, then launch in a single click.
 
 ## Nuitka (an Overview)
 

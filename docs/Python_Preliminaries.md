@@ -10,13 +10,21 @@ Notes.
 
 -----
 
-## Installing
+## Installing (complementary details)
 
 **Python**
 
 - Installing Python, basic libraries, and virtual environments.
     - http://docs.python-guide.org/en/latest/starting/install/win/#install-windows
     - http://docs.python-guide.org/en/latest/starting/install/linux/
+- Setting the path in Windows (examples):
+    - `set PATH=%PATH%;C:\Python27`.
+    - `set PATH=%PATH%;C:\Python27\Scripts`.
+    - `set PATH=%PATH%;C:\PythonXX`.
+    - `set PATH=%PATH%;C:\PythonXX\Scripts`.
+- Setting the path in Linux (example):
+    - `export PYTHONPATH=$PYTHONPATH:`.
+    - ...
 
 **pip**
 
@@ -28,6 +36,10 @@ Important commands:
 - `pip install <module>`,
 - `pip uninstall <module>`,
 - `pip install --user <module>`: circumvent the `sudo` command.
+
+**Git**
+
+After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): `PATH=$PATH:/c/Python27/`, `PATH=$PATH:/c/Python27/Scripts`, ... The Git Bash simulates a UNIX-type environment.
 
 **Virtual environment**
 
