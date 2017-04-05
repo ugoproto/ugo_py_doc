@@ -65,10 +65,13 @@
     <a class="current" href="./">Python Nice to Have</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#mistune">Mistune</a></li>
+    <li class="toctree-l3"><a href="#mistune-converts-documents">mistune Converts Documents</a></li>
     
 
-    <li class="toctree-l3"><a href="#image-manipulation">Image Manipulation</a></li>
+    <li class="toctree-l3"><a href="#logging-collects-data">logging Collects Data</a></li>
+    
+
+    <li class="toctree-l3"><a href="#pil-manipulates-images">PIL Manipulates Images</a></li>
     
 
     </ul>
@@ -80,6 +83,18 @@
                 <li class="">
                     
     <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
                 </li>
     </ul>
 	    </li>
@@ -195,20 +210,22 @@
               
                 <h3 id="python-nice-to-have">Python Nice to Have<a class="headerlink" href="#python-nice-to-have" title="Permanent link">&para;</a></h3>
 <p><strong>Foreword</strong></p>
-<p>Notes.</p>
+<p>Notes. Python 2. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
 <hr />
 <div class="toc"><span class="toctitle">CONTENT</span><ul>
 <li><a href="#python-nice-to-have">Python Nice to Have</a><ul>
-<li><a href="#mistune">Mistune</a></li>
-<li><a href="#image-manipulation">Image Manipulation</a></li>
+<li><a href="#mistune-converts-documents">mistune Converts Documents</a></li>
+<li><a href="#logging-collects-data">logging Collects Data</a></li>
+<li><a href="#pil-manipulates-images">PIL Manipulates Images</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <hr />
-<h4 id="mistune">Mistune<a class="headerlink" href="#mistune" title="Permanent link">&para;</a></h4>
+<h4 id="mistune-converts-documents"><code>mistune</code> Converts Documents<a class="headerlink" href="#mistune-converts-documents" title="Permanent link">&para;</a></h4>
 <p><sub>convert, conversion, document, file</sub></p>
-<p>The <code>mistune</code> module converts .md to .html. Run this script to see the html result in the terminal. For more on converting documents, check Pandoc.</p>
+<p>mistune is a markdown parser, turn into HTML markdown</p>
+<p>The <code>mistune</code> module is a markdown parser that turns markdown file into HTML. Run this script to see the html result in the terminal. For more on converting documents, check Pandoc. Install <code>mistune</code> with pip.</p>
 <pre><code class="python">import mistune
 
 text_block = 'The `mistune` module converts .md to .html.'
@@ -222,7 +239,75 @@ print html_block
 <pre><code class="bash">python mistune_pgm.py &gt; mistune_html.html
 </code></pre>
 
-<h4 id="image-manipulation">Image Manipulation<a class="headerlink" href="#image-manipulation" title="Permanent link">&para;</a></h4>
+<h4 id="logging-collects-data"><code>logging</code> Collects Data<a class="headerlink" href="#logging-collects-data" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Logging is a library recording what users pass in the code.</li>
+<li>It creates log files (text documents); it collects data.</li>
+<li>First, it is a good tool for gathering data.</li>
+<li>Second, it could also be a good tool for debugging; we can monitor what is inputed in the variables.</li>
+</ul>
+<p>We have a starting script.</p>
+<pre><code class="python">def get_location(monster, door, player):
+    &quot;&quot;&quot;Takes 3 arguments; string type.
+    Asks to enter 3 inputs.
+    Uses the 3 inputs in a sentence to print a sentence.
+    &quot;&quot;&quot;
+
+    print &quot;The %s behind the %s door was slayed by %s.&quot; % (monster, door, player)
+
+
+monsterr = raw_input(&quot;Enter a monster type: &quot;)
+doorr = raw_input(&quot;Enter a door color: &quot;)
+playerr = raw_input(&quot;Enter the player's name: &quot;)
+
+get_location(monsterr, doorr, playerr)
+</code></pre>
+
+<p>We run the script, the console displays 3 input messages, we input strings (Blob, blue, Al), and the script prints the results.</p>
+<pre><code class="python">The Blob behind the blue door was slayed by Al.
+</code></pre>
+
+<p>Now, we add the <code>logging</code> library.</p>
+<pre><code class="python">import logging
+
+
+logging.basicConfig(filename='game.log', level=logging.DEBUG) # invisible to the user
+
+
+def get_location(monster, door, player):
+    &quot;&quot;&quot;
+    Takes 3 arguments; string type.
+    Asks to enter 3 inputs.
+    Uses the 3 inputs in a sentence to print a sentence.
+    &quot;&quot;&quot;
+
+    print &quot;The %s behind the %s door was slayed by %s&quot; % (monster, door, player)
+
+
+monsterr = raw_input(&quot;Enter a monster type: &quot;)
+doorr = raw_input(&quot;Enter a door color: &quot;)
+playerr = raw_input(&quot;Enter the player's name: &quot;)
+
+get_location(monsterr, doorr, playerr)
+
+logging.info('monsterr: {}; doorr: {}; playerr {}'.format(
+    monsterr, doorr, playerr)) # invisible to the user
+</code></pre>
+
+<p>The user does not see the difference. But anytime someone runs the script, inputs are save to a log file: game.log.txt.</p>
+<p>We open the file.</p>
+<pre><code class="text">INFO:root:monsterr: Blob; doorr: blue; playerr Al
+INFO:root:monsterr: Puik; doorr: red; playerr Felicia
+</code></pre>
+
+<p>In the <code>logging.basicConfig</code> function, we select <code>level=logging.DEBUG</code>.</p>
+<p>There are 6 log levels (higher to lower): <code>CRITICAL</code>, <code>ERROR</code>, <code>WARNING</code>, <code>INFO</code>, <code>DEBUG</code>, <code>NOTSET</code>.</p>
+<ul>
+<li><code>INFO</code>, <code>DEBUG</code> are information about the running of an app.</li>
+<li><code>WARNING</code> is for keeping track of questionable or exceptional things happening.</li>
+<li><code>ERROR</code>, <code>CRITICAL</code> are for when things go wrong.</li>
+</ul>
+<h4 id="pil-manipulates-images"><code>PIL</code> Manipulates Images<a class="headerlink" href="#pil-manipulates-images" title="Permanent link">&para;</a></h4>
 <p>The <code>PIL</code> package stands for &lsquo;Python Image library&rsquo; or Pillow. Pillow adds image processing capabilities. The library supports many file formats and provides powerful image processing and graphics capabilities. Given these images:</p>
 <table>
 <thead>

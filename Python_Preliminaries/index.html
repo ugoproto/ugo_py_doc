@@ -61,13 +61,19 @@
     <a class="current" href="./">Python Preliminaries</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#installing-complementary-details">Installing (complementary details)</a></li>
+    <li class="toctree-l3"><a href="#installing-complementary-details">Installing (Complementary Details)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#pip">pip</a></li>
+    
+
+    <li class="toctree-l3"><a href="#git">Git</a></li>
+    
+
+    <li class="toctree-l3"><a href="#virtual-environment">Virtual Environment</a></li>
     
 
     <li class="toctree-l3"><a href="#launching">Launching</a></li>
-    
-
-    <li class="toctree-l3"><a href="#better-python">Better Python</a></li>
     
 
     </ul>
@@ -83,6 +89,18 @@
                 <li class="">
                     
     <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
                 </li>
     </ul>
 	    </li>
@@ -198,19 +216,21 @@
               
                 <h3 id="python-preliminaries">Python Preliminaries<a class="headerlink" href="#python-preliminaries" title="Permanent link">&para;</a></h3>
 <p><strong>Foreword</strong></p>
-<p>Notes.</p>
+<p>Notes. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
 <hr />
 <div class="toc"><span class="toctitle">CONTENT</span><ul>
 <li><a href="#python-preliminaries">Python Preliminaries</a><ul>
-<li><a href="#installing-complementary-details">Installing (complementary details)</a></li>
+<li><a href="#installing-complementary-details">Installing (Complementary Details)</a></li>
+<li><a href="#pip">pip</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#virtual-environment">Virtual Environment</a></li>
 <li><a href="#launching">Launching</a></li>
-<li><a href="#better-python">Better Python</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <hr />
-<h4 id="installing-complementary-details">Installing (complementary details)<a class="headerlink" href="#installing-complementary-details" title="Permanent link">&para;</a></h4>
+<h4 id="installing-complementary-details">Installing (Complementary Details)<a class="headerlink" href="#installing-complementary-details" title="Permanent link">&para;</a></h4>
 <p><strong>Python</strong></p>
 <ul>
 <li>Installing Python, basic libraries, and virtual environments.<ul>
@@ -231,23 +251,27 @@
 </ul>
 </li>
 </ul>
-<p><strong>pip</strong></p>
+<h4 id="pip">pip<a class="headerlink" href="#pip" title="Permanent link">&para;</a></h4>
 <p><sub>pypi</sub></p>
+<p>PyPY directory of libraries.</p>
 <p>Important commands:</p>
 <ul>
-<li><code>pip help</code> ou <code>pip --help</code>,</li>
-<li><code>pip install &lt;module&gt;</code>,</li>
-<li><code>pip uninstall &lt;module&gt;</code>,</li>
+<li><code>pip help</code> ou <code>pip --help</code>.</li>
+<li><code>pip install &lt;module&gt;</code>.</li>
+<li><code>pip --version</code>.</li>
+<li><code>pip install --upgrade pip</code></li>
+<li><code>sudo pip install &lt;module&gt;</code>.</li>
+<li><code>pip uninstall &lt;module&gt;</code>.</li>
 <li><code>pip install --user &lt;module&gt;</code>: circumvent the <code>sudo</code> command.</li>
 </ul>
-<p><strong>Git</strong></p>
-<p>After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): <code>PATH=$PATH:/c/Python27/</code>, <code>PATH=$PATH:/c/Python27/Scripts</code>, &hellip; The Git Bash simulates a UNIX-type environment.</p>
-<p><strong>Virtual environment</strong></p>
+<h4 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h4>
+<p>After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): <code>export PATH="$PATH:/c/Python27"</code>, <br />
+<code>export PATH="$PATH:/c/Python27/Scripts"</code>, &hellip; The Git Bash simulates a UNIX-type environment.</p>
+<h4 id="virtual-environment">Virtual Environment<a class="headerlink" href="#virtual-environment" title="Permanent link">&para;</a></h4>
 <p><sub>virtual, environment, separate, project</sub></p>
 <p>When you install a library, it is accessible to all python scripts. Project A and B have access to the library. </p>
 <p>It brings out a problem if &ldquo;Project A depends on version 1.x but, Project B needs 4.x&rdquo;. This problem is recurrent when working with web frameworks. For example, you can work on a project which requires Django 1.3 while also maintaining a project which requires Django 1.0.</p>
 <p>A virtual environment solves this problem by building a sandbox for a project.</p>
-<p>Find more in the resources.</p>
 <h4 id="launching">Launching<a class="headerlink" href="#launching" title="Permanent link">&para;</a></h4>
 <p>Windows vs. UNIX (Linux or Mac OS X).</p>
 <p><strong>At the top of scripts</strong></p>
@@ -274,7 +298,7 @@
 </ul>
 </li>
 </ul>
-<p><strong>Launch a script</strong></p>
+<p><strong>Launch a script &ndash; Part 1</strong></p>
 <ul>
 <li>In Windows, Python 2:<ul>
 <li><code>python script.py</code></li>
@@ -294,6 +318,15 @@
 </li>
 <li>In UNIX, Python 3:<ul>
 <li><code>python3 script.py</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Launch a script &ndash; Part 2</strong></p>
+<ul>
+<li>In Windows (examples):<ul>
+<li><code>py -2 -m pip install script</code> if <code>pip install script</code> does not work.</li>
+<li><code>py -2 -m pip install flake8</code>.</li>
+<li><code>py -2 -m pip install pylint</code>.    </li>
 </ul>
 </li>
 </ul>
@@ -320,9 +353,6 @@
 </ul>
 </li>
 </ul>
-<h4 id="better-python">Better Python<a class="headerlink" href="#better-python" title="Permanent link">&para;</a></h4>
-<p>Install the <code>flake8</code> module to inspect a script with PEP8. The module integrates with IDE and text editors (VIM, Emacs, gedit, Notepad++, etc.).</p>
-<p>Install the <code>pdb</code> module: the debugger. The module runs within IDE or in the terminal by adding a few lines of code to a script.</p>
               
             </div>
           </div>
