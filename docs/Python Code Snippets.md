@@ -2,7 +2,7 @@
 
 **Foreword**
 
-Code snippets.
+Code snippets. Python 2.
 
 -----
 

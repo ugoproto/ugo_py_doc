@@ -2,7 +2,7 @@
 
 **Foreword**
 
-Notes.
+Notes. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
 -----
 
@@ -10,7 +10,7 @@ Notes.
 
 -----
 
-## Installing (complementary details)
+## Installing (Complementary Details)
 
 **Python**
 
@@ -26,22 +26,28 @@ Notes.
     - `export PYTHONPATH=$PYTHONPATH:`.
     - ...
 
-**pip**
+## pip
 
 <sub>pypi</sub>
 
+PyPY directory of libraries.
+
 Important commands:
 
-- `pip help` ou `pip --help`,
-- `pip install <module>`,
-- `pip uninstall <module>`,
+- `pip help` ou `pip --help`.
+- `pip install <module>`.
+- `pip --version`.
+- `pip install --upgrade pip`
+- `sudo pip install <module>`.
+- `pip uninstall <module>`.
 - `pip install --user <module>`: circumvent the `sudo` command.
 
-**Git**
+## Git
 
-After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): `PATH=$PATH:/c/Python27/`, `PATH=$PATH:/c/Python27/Scripts`, ... The Git Bash simulates a UNIX-type environment.
+After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): `export PATH="$PATH:/c/Python27"`, 
+`export PATH="$PATH:/c/Python27/Scripts"`, ... The Git Bash simulates a UNIX-type environment.
 
-**Virtual environment**
+## Virtual Environment
 
 <sub>virtual, environment, separate, project</sub>
 
@@ -50,8 +56,6 @@ When you install a library, it is accessible to all python scripts. Project A an
 It brings out a problem if "Project A depends on version 1.x but, Project B needs 4.x". This problem is recurrent when working with web frameworks. For example, you can work on a project which requires Django 1.3 while also maintaining a project which requires Django 1.0.
 
 A virtual environment solves this problem by building a sandbox for a project.
-
-Find more in the resources.
 
 ## Launching
 
@@ -71,7 +75,7 @@ Windows vs. UNIX (Linux or Mac OS X).
     - `# -*coding: utf-8 -*-`
     - `# -*coding: latin-1 -*-`
 
-**Launch a script**
+**Launch a script -- Part 1**
 
 - In Windows, Python 2:
     - `python script.py`
@@ -85,6 +89,13 @@ Windows vs. UNIX (Linux or Mac OS X).
     - `py -3.5 script.py`
 - In UNIX, Python 3:
     - `python3 script.py`
+    
+**Launch a script -- Part 2**
+
+- In Windows (examples):
+    - `py -2 -m pip install script` if `pip install script` does not work.
+    - `py -2 -m pip install flake8`.
+    - `py -2 -m pip install pylint`.    
     
 **Launch the shell/bash**
 
@@ -100,9 +111,3 @@ Windows vs. UNIX (Linux or Mac OS X).
     - `py -3.5`
 - The bash, Python 3:
     - `python3`
-    
-## Better Python
-
-Install the `flake8` module to inspect a script with PEP8. The module integrates with IDE and text editors (VIM, Emacs, gedit, Notepad++, etc.).
-
-Install the `pdb` module: the debugger. The module runs within IDE or in the terminal by adding a few lines of code to a script.

@@ -2,7 +2,7 @@
 
 **Foreword**
 
-Notes and code snippets. Python 3. From TeamTreeHouse.
+Notes and code snippets. Python 3. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
 -----
 

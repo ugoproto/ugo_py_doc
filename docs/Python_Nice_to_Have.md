@@ -2,7 +2,7 @@
 
 **Foreword**
 
-Notes.
+Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
 -----
 
@@ -10,11 +10,13 @@ Notes.
 
 -----
 
-## Mistune
+## `mistune` Converts Documents
 
 <sub>convert, conversion, document, file</sub>
 
-The `mistune` module converts .md to .html. Run this script to see the html result in the terminal. For more on converting documents, check Pandoc.
+mistune is a markdown parser, turn into HTML markdown
+
+The `mistune` module is a markdown parser that turns markdown file into HTML. Run this script to see the html result in the terminal. For more on converting documents, check Pandoc. Install `mistune` with pip.
 
 ```python
 import mistune
@@ -32,7 +34,85 @@ Or run this command  to produce a .html document:
 python mistune_pgm.py > mistune_html.html
 ```
 
-## Image Manipulation
+## `logging` Collects Data
+
+- Logging is a library recording what users pass in the code.
+- It creates log files (text documents); it collects data.
+- First, it is a good tool for gathering data.
+- Second, it could also be a good tool for debugging; we can monitor what is inputed in the variables.
+
+We have a starting script.
+
+```python
+def get_location(monster, door, player):
+    """Takes 3 arguments; string type.
+	Asks to enter 3 inputs.
+	Uses the 3 inputs in a sentence to print a sentence.
+	"""
+    
+    print "The %s behind the %s door was slayed by %s." % (monster, door, player)
+
+
+monsterr = raw_input("Enter a monster type: ")
+doorr = raw_input("Enter a door color: ")
+playerr = raw_input("Enter the player's name: ")
+
+get_location(monsterr, doorr, playerr)
+```
+
+We run the script, the console displays 3 input messages, we input strings (Blob, blue, Al), and the script prints the results.
+
+```python
+The Blob behind the blue door was slayed by Al.
+```
+
+Now, we add the `logging` library.
+
+```python
+import logging
+
+
+logging.basicConfig(filename='game.log', level=logging.DEBUG) # invisible to the user
+
+
+def get_location(monster, door, player):
+    """
+    Takes 3 arguments; string type.
+    Asks to enter 3 inputs.
+    Uses the 3 inputs in a sentence to print a sentence.
+    """
+
+    print "The %s behind the %s door was slayed by %s" % (monster, door, player)
+
+
+monsterr = raw_input("Enter a monster type: ")
+doorr = raw_input("Enter a door color: ")
+playerr = raw_input("Enter the player's name: ")
+    
+get_location(monsterr, doorr, playerr)
+
+logging.info('monsterr: {}; doorr: {}; playerr {}'.format(
+    monsterr, doorr, playerr)) # invisible to the user
+```
+
+The user does not see the difference. But anytime someone runs the script, inputs are save to a log file: game.log.txt.
+
+We open the file.
+
+```text
+INFO:root:monsterr: Blob; doorr: blue; playerr Al
+INFO:root:monsterr: Puik; doorr: red; playerr Felicia
+```
+
+In the `logging.basicConfig` function, we select `level=logging.DEBUG`.
+
+There are 6 log levels (higher to lower): `CRITICAL`, `ERROR`, `WARNING`, `INFO`, `DEBUG`, `NOTSET`.
+
+- `INFO`, `DEBUG` are information about the running of an app.
+- `WARNING` is for keeping track of questionable or exceptional things happening.
+- `ERROR`, `CRITICAL` are for when things go wrong.
+
+## `PIL` Manipulates Images
 
 The `PIL` package stands for 'Python Image library' or Pillow. Pillow adds image processing capabilities. The library supports many file formats and provides powerful image processing and graphics capabilities. Given these images:
 

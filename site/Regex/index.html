@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Regular Expressions (REGEX) - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Regular Expressions (REGEX)";
+    var mkdocs_page_input_path = "Regex.md";
+    var mkdocs_page_url = "/Regex/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Regular Expressions (REGEX)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#match-search">match &amp; search</a></li>
+    
+
+    <li class="toctree-l3"><a href="#escape-characters">Escape Characters</a></li>
+    
+
+    <li class="toctree-l3"><a href="#repetitions">Repetitions</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sets">Sets</a></li>
+    
+
+    <li class="toctree-l3"><a href="#boundaries">Boundaries</a></li>
+    
+
+    <li class="toctree-l3"><a href="#groups">Groups</a></li>
+    
+
+    <li class="toctree-l3"><a href="#compile-build-dictionaries">Compile &amp; Build Dictionaries</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20for%20Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Basics & More &raquo;</li>
+        
+      
+    
+    <li>Regular Expressions (REGEX)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="regular-expressions-regex">Regular Expressions (REGEX)<a class="headerlink" href="#regular-expressions-regex" title="Permanent link">&para;</a></h3>
+<p><strong>Foreword</strong></p>
+<p>Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
+<hr />
+<div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#regular-expressions-regex">Regular Expressions (REGEX)</a><ul>
+<li><a href="#match-search">match &amp; search</a></li>
+<li><a href="#escape-characters">Escape Characters</a></li>
+<li><a href="#repetitions">Repetitions</a></li>
+<li><a href="#sets">Sets</a></li>
+<li><a href="#boundaries">Boundaries</a></li>
+<li><a href="#groups">Groups</a></li>
+<li><a href="#compile-build-dictionaries">Compile &amp; Build Dictionaries</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<ul>
+<li>Regular expressions or natural language processing &ndash; NLP.</li>
+<li>Check out &lsquo;Managing Your Biological Data with Python, Chapter 9, Pattern Matching and Text Mining&rsquo;.</li>
+<li><a href="http://www.regexplanet.com/advanced/java/index.html">Test</a>.</li>
+<li>Find cheat sheets online.</li>
+</ul>
+<p>Expressions not used, but nice to know:</p>
+<ul>
+<li><code>span</code>, return a tuple containing the start, end positions of the match.</li>
+<li><code>start</code>, return the starting position of the match.</li>
+<li><code>end</code>, return the ending position of the match.</li>
+<li><code>group</code>, return the string matched by the RE</li>
+<li><code>groups</code>, return a tuple containing the strings fal all the subgroups</li>
+<li><code>split(s)</code>, split the string into a list, splitting it wherever the RE matches</li>
+<li><code>sub(r, s)</code>, find all substrings where the RE matches and replaces them with a different string</li>
+<li><code>subn(r, s)</code>, do the same thing, but return the new string and the number of replacements</li>
+<li><code>IGNORECASE</code>, <code>I</code>, case-insensitive matches.</li>
+</ul>
+<h4 id="match-search"><code>match</code> &amp; <code>search</code><a class="headerlink" href="#match-search" title="Permanent link">&para;</a></h4>
+<p>First, we have a text file called names.txt.</p>
+<pre><code class="text">Liff, Kenneth   kenneth@submarine.com   (555) 555-5555  Teacher, Submarine  @kennethliff
+McFarland, Arthur   arty@submarine.com  (555) 555-5555  Teacher, Submarine
+Arthur, King    king_arthur@camelot.co.uk   King, Camelot
+Österberg, Gustav   governor@norrbotten.co.se   Governor, Norrbotten    @gustata
+, Tim   tim@killerrabbit.com    Enchanter, Killer Rabbit Cave
+Carson, Ryan    ryan@submarine.com  (555) 555-5543  CEO, Submarine  @ryancarson
+Doctor  The doctor+companion@tardis.co.uk   Time Lord, Gallifrey
+Exampleson, Exampleme   me@example.com  555-555-5552    Example, Example Co.    @exemple
+Obama, Barack   president.44@us.gov 555 555-5551    President, United States of America @potus44
+Chalks, Andrew  andrew@submarine.com    (555) 555-5553  Teacher, Submarine  @chalkers
+Vader, Darth    darth-vader@empire.gov  (555) 555-4444  Sith lord, Galactic Empire  @darthvader
+</code></pre>
+
+<p>Second, we want to process the file: extract strings. </p>
+<p>We could use <code>re.match</code>, but the function is picky. <code>re.search</code> is more forgiving in terms of precision. In both cases, the function should return the first match it finds, then stop.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# print what is in memory
+print re.search(r'McFarland', data).group() # r for raw string, no need for \
+print re.search(r'Arthur', data).group() # search in the strings
+</code></pre>
+
+<p>Results (in Windows).</p>
+<pre><code class="text">&lt;_sre.SRE_Match object at 0x00000000021DB510&gt;
+&lt;_sre.SRE_Match object at 0x00000000021DB510&gt;
+</code></pre>
+
+<p>Results may vary in UNIX-type OS. We might get.</p>
+<pre><code class="text">&lt;_sre.SRE_Match object; span=(0, 8), match='McFarland'&gt;
+&lt;_sre.SRE_Match object; span=(10, 15), match='Arthur'&gt;
+</code></pre>
+
+<p>Change the script and rerun it.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# print what is in memory
+print re.search(r'McFarland', data).group() # CHANGE
+print re.search(r'Arthur', data).group() # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">McFarland
+Arthur
+</code></pre>
+
+<p>Alternatively.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# print what is in memory
+last_name = r'McFarland'
+first_name = r'Arthur'
+print re.search(last_name, data).group() # CHANGE
+print re.search(first_name, data).group() # CHANGE
+</code></pre>
+
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+</ul>
+<h4 id="escape-characters">Escape Characters<a class="headerlink" href="#escape-characters" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>\w</code>, match any Unicode word character.</li>
+<li><code>\W</code>, match anything that isn&rsquo;t a Unicode word character.</li>
+<li><code>\s</code>, any whitespace.</li>
+<li><code>\S</code>, not.</li>
+<li><code>\d</code>, any number 0-9.</li>
+<li><code>\D</code>, not.</li>
+<li><code>\b</code>, boundaries or the edges of a word.</li>
+<li><code>\B</code>, not.</li>
+</ul>
+<p>Try.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+print re.match(r'\w, \w', data) # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">None
+</code></pre>
+
+<p>We get <code>None</code> because of <code>re.match</code>. Try.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# catch phone numbers
+print re.search(r'\d\d\d-\d\d\d\d', data).group() # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">555-5555
+</code></pre>
+
+<p>Improve the code.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# catch complete phone numbers
+print re.search(r'\(\d\d\d\) \d\d\d-\d\d\d\d', data).group() # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">(555) 555-5555
+</code></pre>
+
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+<li>Escape characters.</li>
+</ul>
+<h4 id="repetitions">Repetitions<a class="headerlink" href="#repetitions" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>{3}</code>, repeat 3 times.</li>
+<li><code>{,3}</code>, repeat 0 to 3 times.</li>
+<li><code>{3,}</code>, repeat 3 or more times.</li>
+<li><code>{3, 5}</code>, repeat 3, 4 or 5 times.</li>
+<li><code>?</code>, repeat 0 or once.</li>
+<li><code>*</code>, repeat at least 0 times (no upper bound).</li>
+<li><code>+</code>, repeat at least once (no upper bound).</li>
+</ul>
+<p>Catch a name.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# catch a name
+print re.search(r'\w+, \w+', data).group() # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">Liff, Kenneth
+</code></pre>
+
+<p>Catch a phone number.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# catch a complete phone numbers
+print re.search(r'\(\d{3}\) \d{3}-\d{4}', data).group() # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">(555) 555-5555
+</code></pre>
+
+<p>Catch multiple phone numbers.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# more universal way (parentheses, hyphen, space become optional)
+# on multiple lines!
+print re.findall(r'\(?\d{3}\)?-?\s?\d{3}-\d{4}', data) # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['(555) 555-5555', '(555) 555-5555', '(555) 555-5543', '555-555-5552', '555 555-5551', '(555) 555-5553', '(555) 555-4444']
+</code></pre>
+
+<p>Catch multiple names.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# universal way for names
+print re.findall(r'\w*, \w+', data)  # CHANGE: findall
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['Liff, Kenneth', 'Teacher, Submarine', 'McFarland, Arthur', 'Teacher, Submarine', 'Arthur, King', 'King, Camelot', 'sterberg, Gustav', 'Governor, Norrbotten', ', Tim', 'Enchanter, Killer', 'Carson, Ryan', 'CEO, Submarine', 'Lord, Gallifrey', 'Exampleson, Exampleme', 'Obama, Barack', 'President, United', 'Chalks, Andrew', 'Teacher, Submarine', 'Vader, Darth', 'lord, Galactic']
+</code></pre>
+
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+<li>Escape characters.</li>
+<li>Repetitions.</li>
+<li><code>findall</code>.</li>
+</ul>
+<h4 id="sets">Sets<a class="headerlink" href="#sets" title="Permanent link">&para;</a></h4>
+<p>Catch patterns. We only need unique characters even when a word contains repetitive characters.</p>
+<ul>
+<li><code>[aple]</code>, search for &lsquo;apple&rsquo;.</li>
+<li><code>[a-z]</code>, search for any lowercase letters.</li>
+<li><code>[^2]</code>, search for anything that is not 2.</li>
+<li><code>.</code>, stands for any possible character.</li>
+</ul>
+<p>For finding email addresses, search better &lsquo;cures&rsquo; on email adresses. Search for email address regex or email address regular expressions on Stack Overflow, Quora, etc.</p>
+<p>We can also try.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# find emails
+print re.findall(r'[-\w\d+.]+@[-\w\d.]+', data) # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['kenneth@submarine.com', 'arty@submarine.com', 'king_arthur@camelot.co.uk', 'governor@norrbotten.co.se', 'tim@killerrabbit.com', 'ryan@submarine.com', 'doctor+companion@tardis.co.uk', 'me@example.com', 'president.44@us.gov', 'andrew@submarine.com', 'darth-vader@empire.gov']
+</code></pre>
+
+<p>Retrieve &lsquo;submarine&rsquo;. All character are unique. The set should be &lsquo;submarine&rsquo;.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# set [submarine] should catch 'submarine'
+# add word boundaries, at least once, ignore lower or upper cases
+print re.findall(r'\b[submarine]+\b', data, re.IGNORECASE) # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['submarine', 'Submarine', 'submarine', 'Submarine', 'se', 'submarine', 'Submarine', 'me', 'us', 'submarine', 'Submarine']
+</code></pre>
+
+<p>However, we also collect shorter strings (&lsquo;se&rsquo;, &lsquo;me&rsquo;, &lsquo;us&rsquo;, &lsquo;Maria&rsquo;) with characters from [submarine]. If we wanted to limit the search to &lsquo;submarine&rsquo; only.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# always 9 letters
+print re.findall(r'\b[submarine]{9}\b', data, re.IGNORECASE) # CHANGE
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine']
+</code></pre>
+
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+<li>Escape characters.</li>
+<li>Repetitions.</li>
+<li><code>findall</code>.<ul>
+<li><code>re.IGNORECASE</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="boundaries">Boundaries<a class="headerlink" href="#boundaries" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>'''</code>, add a multiline string.</li>
+<li><code>\b@</code>, word boundary <code>@</code>.</li>
+<li><code>\b</code>, word boundary <code></code>.</li>
+<li><code>^</code>, ignore.</li>
+<li><code>\t</code>, tab character.</li>
+<li><code>.</code>, any character.</li>
+</ul>
+<p>Find emails with word boundaries, spaces, words, explicit spaces (without using VERBOSE!!!), at least once for any number of characters, ignore tabs, and ignore newlines.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# multiline strings
+print re.findall(r'''
+    \b@[-\w\d.]* # First a word boundary, an @, and then any number of characters
+    [^gov\t] # Ignore 1+ instances of the letters 'g', 'o' or 'v' and a tab
+    \b # Another word boundary
+''', data, re.VERBOSE|re.I)
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['@submarine.com', '@submarine.com', '@camelot.co.uk', '@norrbotten.co.se', '@killerrabbit.com', '@submarine.com', '@tardis.co.uk', '@example.com', '@us.', '@submarine.com', '@empire.']
+</code></pre>
+
+<p>We left off a few details in the email addresses. </p>
+<p>Retrieve the names and workplaces.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# name and place of work
+print re.findall(r'''
+    \b[-\w]*, # Find a word boundary, 1+ hyphens or characters, and a comma
+    \s  # Find 1 whitespace
+    [-\w ]+ # 1+ hyphens and characters and explicit spaces
+    [^\t\n] # Ignore tabs and newlines
+''', data, re.X)
+</code></pre>
+
+<p>Results.</p>
+<pre><code class="text">['Liff, Kenneth', 'Teacher, Submarine', 'McFarland, Arthur', 'Teacher, Submarine', 'Arthur, King', 'King, Camelot', 'sterberg, Gustav', 'Governor, Norrbotten', 'Enchanter, Killer Rabbit Cave', 'Carson, Ryan', 'CEO, Submarine', 'Lord, Gallifrey', 'Exampleson, Exampleme', 'Example, Example Co.', 'Obama, Barack', 'President, United States of America', 'Chalks, Andrew', 'Teacher, Submarine', 'Vader, Darth', 'lord, Galactic Empire']
+</code></pre>
+
+<p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+<li>Escape characters.</li>
+<li>Repetitions.</li>
+<li><code>findall</code>.<ul>
+<li><code>re.IGNORECASE</code>.</li>
+<li><code>re.VERBOSE|re.I</code>, more readable, introduce whitespaces or comments.</li>
+<li><code>re.X</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link">&para;</a></h4>
+<ul>
+<li>last and first names.</li>
+<li>emails.</li>
+<li>phone numbers.</li>
+<li>job and workplaces.</li>
+<li>Twitter accounts.</li>
+<li>etc&hellip;</li>
+</ul>
+<p>For that, we need parentheses.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# retrieve groups...
+print re.findall(r'''
+    ([-\w ]+,\s[-\w ]+)\t # last and first names
+    ([-\w\d.+]+@[-\w\d.]+)\t # emails
+    (\(?\d{3}\)?-?\s?\d{3}-\d{4})\t # phone numbers
+    ([\w\s]+,\s[\w\s]+)\t # job and work place
+    (@[\w\d]+)$ # Twitter account
+''', data, re.X)
+</code></pre>
+
+<p>Results (a tupple).</p>
+<pre><code class="text">[('Liff, Kenneth', 'kenneth@submarine.com', '(555) 555-5555', 'Teacher, Submarine', '@kennethliff'), ('Carson, Ryan', 'ryan@submarine.com', '(555) 555-5543', 'CEO, Submarine', '@ryancarson'), ('Obama, Barack', 'president.44@us.gov', '555 555-5551', 'President, United States of America', '@potus44'), ('Chalks, Andrew', 'andrew@submarine.com', '(555) 555-5553', 'Teacher, Submarine', '@chalkers'), ('Vader, Darth', 'darth-vader@empire.gov', '(555) 555-4444', 'Sith lord, Galactic Empire', '@darthvader')]
+</code></pre>
+
+<p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
+<p>On the other hand, there are some details missing. We need to make the code more universal for the first and last names. The phone number should be optional, tabs are optional, without Twitter accounts, and tabs should become a new line instead.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# retrieve groups...
+print re.findall(r'''
+    ^([-\w ]*,\s[-\w ]+)\t # last and first names CHANGE
+    ([-\w\d.+]+@[-\w\d.]+)\t # emails
+    (\(?\d{3}\)?-?\s?\d{3}-\d{4})?\t # phone numbers CHANGE
+    ([\w\s]+,\s[\w\s.]+)\t? # job and work place CHANGE
+    (@[\w\d]+)?$ # Twitter account CHANGE
+''', data, re.X|re.MULTILINE)
+</code></pre>
+
+<p>Results (a tupple). More.</p>
+<pre><code class="text">[('Liff, Kenneth', 'kenneth@submarine.com', '(555) 555-5555', 'Teacher, Submarine', '@kennethliff'), ('McFarland, Arthur', 'arty@submarine.com', '(555) 555-5555', 'Teacher, Submarine', ''), ('Carson, Ryan', 'ryan@submarine.com', '(555) 555-5543', 'CEO, Submarine\t', '@ryancarson'), ('Exampleson, Exampleme', 'me@example.com', '555-555-5552', 'Example, Example Co.\t', '@exemple'), ('Obama, Barack', 'president.44@us.gov', '555 555-5551', 'President, United States of America\t', '@potus44'), ('Chalks, Andrew', 'andrew@submarine.com', '(555) 555-5553', 'Teacher, Submarine\t', '@chalkers'), ('Vader, Darth', 'darth-vader@empire.gov', '(555) 555-4444', 'Sith lord, Galactic Empire\t', '@darthvader')]
+</code></pre>
+
+<p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
+<p>Turn the results into a <strong>dictionary</strong> with &lsquo;patterns&rsquo; or <code>P&lt;...&gt;</code>.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# build a dictionary CHANGE ALL
+line = re.search(r'''
+    ^(?P&lt;name&gt;[-\w ]*,\s[-\w ]+)\t
+    (?P&lt;email&gt;[-\w\d.+]+@[-\w\d.]+)\t
+    (?P&lt;phone&gt;\(?\d{3}\)?-?\s?\d{3}-\d{4})?\t
+    (?P&lt;job&gt;[\w\s]+,\s[\w\s.]+)\t?
+    (?P&lt;twitter&gt;@[\w\d]+)?$
+''', data, re.X|re.MULTILINE)
+
+print &quot;print line...&quot;
+print line
+print &quot;=&quot; * 25
+print &quot;print line.group()...&quot;
+print line.group()
+print &quot;=&quot; * 25
+print &quot;print line.groupdict()...&quot;
+print line.groupdict()
+</code></pre>
+
+<p>Results (a tupple). Say we remove the first line in the data&hellip;</p>
+<pre><code class="text">print line...
+&lt;_sre.SRE_Match object at 0x00000000021DDDD8&gt;
+=========================
+print line.group()...
+McFarland, Arthur   arty@submarine.com  (555) 555-5555  Teacher, Submarine
+=========================
+print line.groupdict()...
+{'phone': '(555) 555-5555', 'job': 'Teacher, Submarine', 'name': 'McFarland, Arthur', 'twitter': None, 'email': 'arty@submarine.com'}
+</code></pre>
+
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+<li>Escape characters.</li>
+<li>Repetitions.</li>
+<li><code>findall</code>.<ul>
+<li><code>re.IGNORECASE</code>.</li>
+<li><code>re.VERBOSE|re.I</code>.</li>
+<li><code>re.X</code>.</li>
+<li><code>re.X|re.MULTILINE</code> or <code>re.X|re.M</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="compile-build-dictionaries">Compile &amp; Build Dictionaries<a class="headerlink" href="#compile-build-dictionaries" title="Permanent link">&para;</a></h4>
+<p>Compile a pattern into an object. Replace <code>findall</code> or <code>search</code> with <code>compile</code>. Remove <code>data</code> to make a generic function to process any data.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# build a dictionary CHANGE
+line = re.compile(r'''
+    ^(?P&lt;name&gt;[-\w ]*,\s[-\w ]+)\t
+    (?P&lt;email&gt;[-\w\d.+]+@[-\w\d.]+)\t
+    (?P&lt;phone&gt;\(?\d{3}\)?-?\s?\d{3}-\d{4})?\t
+    (?P&lt;job&gt;[\w\s]+,\s[\w\s.]+)\t?
+    (?P&lt;twitter&gt;@[\w\d]+)?$
+''', re.X|re.MULTILINE)
+
+print re.search(line, data).groupdict() # CHANGE
+</code></pre>
+
+<p>Results (a tupple). Say we remove the first line in the data&hellip;</p>
+<pre><code class="text">{'phone': '(555) 555-5555', 'job': 'Teacher, Submarine', 'name': 'McFarland, Arthur', 'twitter': None, 'email': 'arty@submarine.com'}
+</code></pre>
+
+<p>Alternatively.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# build a dictionary CHANGE
+line = re.compile(r'''
+    ^(?P&lt;name&gt;[-\w ]*,\s[-\w ]+)\t
+    (?P&lt;email&gt;[-\w\d.+]+@[-\w\d.]+)\t
+    (?P&lt;phone&gt;\(?\d{3}\)?-?\s?\d{3}-\d{4})?\t
+    (?P&lt;job&gt;[\w\s]+,\s[\w\s.]+)\t?
+    (?P&lt;twitter&gt;@[\w\d]+)?$
+''', re.X|re.MULTILINE)
+
+print line.search(data).groupdict() # CHANGE
+</code></pre>
+
+<p>Compiling not only does it make the script universal (ready for any data), but it also make the execution faster. It becomes easier to compile the script into an executable.</p>
+<p>We want all the lines, but a specific group (say &lsquo;names&rsquo;).</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# build a dictionary
+line = re.compile(r'''
+    ^(?P&lt;name&gt;[-\w ]*,\s[-\w ]+)\t
+    (?P&lt;email&gt;[-\w\d.+]+@[-\w\d.]+)\t
+    (?P&lt;phone&gt;\(?\d{3}\)?-?\s?\d{3}-\d{4})?\t
+    (?P&lt;job&gt;[\w\s]+,\s[\w\s.]+)\t?
+    (?P&lt;twitter&gt;@[\w\d]+)?$
+''', re.X|re.MULTILINE)
+
+for match in line.finditer(data): # CHANGE
+    print match.group('name')
+</code></pre>
+
+<p>Results (a tupple).</p>
+<pre><code class="text">Liff, Kenneth
+McFarland, Arthur
+Carson, Ryan
+Exampleson, Exampleme
+Obama, Barack
+Chalks, Andrew
+Vader, Darth
+</code></pre>
+
+<p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
+<p>Create sub-patterns and extract specific groups.</p>
+<pre><code class="python">import re
+
+# read the file
+name_file = open(&quot;names.txt&quot;)
+data = name_file.read()
+
+# data is now in memory
+name_file.close()
+
+# build a dictionary
+line = re.compile(r'''
+    ^(?P&lt;name&gt;(?P&lt;last&gt;[-\w ]*),\s(?P&lt;first&gt;[-\w ]+))\t # CHANGE
+    (?P&lt;email&gt;[-\w\d.+]+@[-\w\d.]+)\t
+    (?P&lt;phone&gt;\(?\d{3}\)?-?\s?\d{3}-\d{4})?\t
+    (?P&lt;job&gt;[\w\s]+,\s[\w\s.]+)\t?
+    (?P&lt;twitter&gt;@[\w\d]+)?$
+''', re.X|re.MULTILINE)
+
+for match in line.finditer(data):
+    print '{first} {last} &lt;{email}&gt;'.format(**match.groupdict())
+</code></pre>
+
+<p>Results</p>
+<pre><code class="text">Kenneth Liff &lt;kenneth@submarine.com&gt;
+Arthur McFarland &lt;arty@submarine.com&gt;
+Ryan Carson &lt;ryan@submarine.com&gt;
+Exampleme Exampleson &lt;me@example.com&gt;
+Barack Obama &lt;president.44@us.gov&gt;
+Andrew Chalks &lt;andrew@submarine.com&gt;
+Darth Vader &lt;darth-vader@empire.gov&gt;
+</code></pre>
+
+<p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>match</code>.</li>
+<li><code>search</code>.</li>
+<li>Escape characters.</li>
+<li>Repetitions.</li>
+<li><code>findall</code>.<ul>
+<li><code>re.IGNORECASE</code>.</li>
+<li><code>re.VERBOSE|re.I</code>.</li>
+<li><code>re.X</code>.</li>
+<li><code>re.X|re.MULTILINE</code> or <code>re.X|re.M</code>.</li>
+</ul>
+</li>
+<li><code>compile</code>.</li>
+<li><code>groupdict</code>.</li>
+<li><code>line.finditer</code>.</li>
+<li><code>match.group</code>.</li>
+<li><code>match.groupdict</code>.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Databases/" class="btn btn-neutral float-right" title="Databases">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Write_Better_Python/" class="btn btn-neutral" title="Write Better Python with PEP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Spark</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Write_Better_Python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Databases/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>

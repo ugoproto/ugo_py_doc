@@ -2,7 +2,7 @@
 
 **Foreword**
 
-Notes and code snippets. The book comes with files and cases. Python 2. From CRC Press, 2014.
+Notes and code snippets. Python 2. The book comes with files and cases. Python 2. From CRC Press, 2014.
 
 -----
 

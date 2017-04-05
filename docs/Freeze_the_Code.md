@@ -2,7 +2,7 @@
 
 **Foreword**
 
-Notes.
+Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
 -----
 

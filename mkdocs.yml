@@ -16,6 +16,9 @@ pages:
         - Python Nice to Have: 'Python_Nice_to_Have.md'
         - Freeze the Code: 'Freeze_the_Code.md'
         - Decorators: 'Decorators.md'
+        - Write Better Python with PEP: 'Write_Better_Python.md'
+        - Regular Expressions (REGEX): 'Regex.md'
+        - Databases: 'Databases.md'
     - SciPy Stack:
         - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
         - DataCamp Importing Data into Python 3: 'DataCamp Importing Data into Python 3.md'
