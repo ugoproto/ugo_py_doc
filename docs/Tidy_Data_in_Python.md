@@ -12,6 +12,8 @@ Notes. Python 3.
 
 It is often said that data scientists spend only 20% of their time analyzing their data, and 80% of time cleaning it. Indeed, maintaining a tidy, easy-to-use dataset is crucial in our age of big data. In the paper Tidy Data, veteran statistician Hadley Wickham gives definitions of tidy and messy data so that all data scientists can keep their work organized. 
 
+## 1, Loading
+
 First, load all the datasets.
 
 ```python
@@ -23,14 +25,16 @@ df2 = pd.read_csv('df2.csv')
 eyes = pd.read_csv('eyes.csv')
 ```
 
+## 2, Tidy vs. Messy Data
+
 What exactly marks the difference between tidy data and messy data? It is not only how organized and intuitive the datasets look to our human eyes, but also how easily and efficiently they can be processed by computers. In his seminal paper [Tidy Data](https://www.jstatsoft.org/article/view/v059i10), Hadley Wickham proposed three standards for tidy data:
 
 1. Each variable forms a column
 2. Each observation forms a row
 3. Each type of observation forms a unit.
 
-To get started, execute `messy` in the shell. This dataset, which appears in Wickham's paper, shows the number of people who choose either of two treatments in a hospital. Observe its structure in comparison with Wickham's rules. This dataset is *messy* because it violates rule 2: it combines Treatment A and Treatment B, two distinct observations, in a single row.
 
+To get started, execute `messy` in the shell. This dataset, which appears in Wickham's paper, shows the number of people who choose either of two treatments in a hospital. Observe its structure in comparison with Wickham's rules. This dataset is *messy* because it violates rule 2: it combines Treatment A and Treatment B, two distinct observations, in a single row.
 
 ```python
 print(messy.head())
@@ -68,7 +72,7 @@ print(df2.head())
 
 `df2` is messy because it violates rule 2.
 
-**Using Melt to Tidy Data**
+## 4, Using `melt` to Tidy Data
 
 Its basic syntax is `pd.melt(df, id_vars = lst)`, where `df` is the name of the data frame we're dealing with and `lst` is a list of all the columns that we want to keep as columns. 
 
@@ -143,8 +147,7 @@ It violates rule 1 of tidy data: there are several columns that represent the sa
 
 **Deal with it**
 
- Use `melt`.
-
+Use `melt`.
 
 ```python
 # Melt the Black, Blue, and Brown columns of eyes: eyes_melted

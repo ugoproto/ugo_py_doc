@@ -10,7 +10,7 @@ Notes.
 
 -----
 
-## A word on the SciPy Stack
+## 1, A word on the SciPy Stack
 
 The Scipy Stack is a Python-based ecosystem for mathematics, science, and engineering:
 
@@ -22,7 +22,7 @@ The Scipy Stack is a Python-based ecosystem for mathematics, science, and engine
 - One would be careful to look on the side of other scientific libraries to find existing tools: GSL - GNU Scientific Library in C/C++ and Matlab toolboxes.
 
 
-## Resources
+## 2, Resources
 
 - [SciPy.org](https://scipy.org/)
 	- Install

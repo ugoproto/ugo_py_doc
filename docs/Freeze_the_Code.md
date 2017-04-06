@@ -15,7 +15,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 - It is done on Windows in the following examples.
 - It can be executed on all OS: Windows, Linux and Max OS X (using Wine for all UNIX OS).
 
-## Distutils (an Overview)
+## 1, Distutils (an Overview)
 
 - Building with distutils works well on all OS.
 - The package provides support for building and installing additional modules (libraries or packages) into a Python installation.
@@ -27,7 +27,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 - https://wiki.python.org/moin/Distutils/Tutorial
 - https://docs.python.org/2/distutils/
 
-## cx-Freeze (with Snippets)
+## 2, cx-Freeze (with Snippets)
 
 - `cx_Freeze` freezes Python scripts into executables.
 - Alike `py2exe` for Windows only and `py2app` for Mac OS X only.
@@ -167,7 +167,7 @@ executables = [Executable("bin/FileName.py", base = None)]
 - Easy to deploy (download, open, execute).
 - It does not generate a single file, except with the `bdist_` commands. However, a distribution requires additional steps to deploy.
 
-## pyInstaller (with Snippets)
+## 3, pyInstaller (with Snippets)
 
 - `pyinstaller` is a simpler alternative to cx-Freeze.
 - Libraries like `PyQt`, `Django` or `matplotlib` are fully supported, without having to handle plugins or external data files manually.
@@ -255,7 +255,7 @@ pyinstaller -F -i "favicon.ico" bin/hello.py
 - Easy to deploy (download, open, execute). Easier than with cx-Freeze, but without the flexibility a `setup.py` file can allow.
 - However, it can generate a single file: dowload, then launch in a single click.
 
-## Nuitka (an Overview)
+## 4, Nuitka (an Overview)
 
 - Python compiler compatible with CPython.
 - Works on all OS.
@@ -267,7 +267,7 @@ pyinstaller -F -i "favicon.ico" bin/hello.py
 - Check out the requirements.
     - Need for a C++ compiler.
 
-## PyPy (an Overview)
+## 5, PyPy (an Overview)
 
 - Alternative to CPython: RPython (restricted Python).
 - Works on all OS, best on Linux.

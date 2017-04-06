@@ -69,19 +69,19 @@
     <a class="current" href="./">Freeze the Code</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#distutils-an-overview">Distutils (an Overview)</a></li>
+    <li class="toctree-l3"><a href="#1-distutils-an-overview">1, Distutils (an Overview)</a></li>
     
 
-    <li class="toctree-l3"><a href="#cx-freeze-with-snippets">cx-Freeze (with Snippets)</a></li>
+    <li class="toctree-l3"><a href="#2-cx-freeze-with-snippets">2, cx-Freeze (with Snippets)</a></li>
     
 
-    <li class="toctree-l3"><a href="#pyinstaller-with-snippets">pyInstaller (with Snippets)</a></li>
+    <li class="toctree-l3"><a href="#3-pyinstaller-with-snippets">3, pyInstaller (with Snippets)</a></li>
     
 
-    <li class="toctree-l3"><a href="#nuitka-an-overview">Nuitka (an Overview)</a></li>
+    <li class="toctree-l3"><a href="#4-nuitka-an-overview">4, Nuitka (an Overview)</a></li>
     
 
-    <li class="toctree-l3"><a href="#pypy-an-overview">PyPy (an Overview)</a></li>
+    <li class="toctree-l3"><a href="#5-pypy-an-overview">5, PyPy (an Overview)</a></li>
     
 
     </ul>
@@ -220,11 +220,11 @@
 <hr />
 <div class="toc"><span class="toctitle">CONTENT</span><ul>
 <li><a href="#freeze-the-code">Freeze the Code</a><ul>
-<li><a href="#distutils-an-overview">Distutils (an Overview)</a></li>
-<li><a href="#cx-freeze-with-snippets">cx-Freeze (with Snippets)</a></li>
-<li><a href="#pyinstaller-with-snippets">pyInstaller (with Snippets)</a></li>
-<li><a href="#nuitka-an-overview">Nuitka (an Overview)</a></li>
-<li><a href="#pypy-an-overview">PyPy (an Overview)</a></li>
+<li><a href="#1-distutils-an-overview">1, Distutils (an Overview)</a></li>
+<li><a href="#2-cx-freeze-with-snippets">2, cx-Freeze (with Snippets)</a></li>
+<li><a href="#3-pyinstaller-with-snippets">3, pyInstaller (with Snippets)</a></li>
+<li><a href="#4-nuitka-an-overview">4, Nuitka (an Overview)</a></li>
+<li><a href="#5-pypy-an-overview">5, PyPy (an Overview)</a></li>
 </ul>
 </li>
 </ul>
@@ -238,7 +238,7 @@
 <li>It is done on Windows in the following examples.</li>
 <li>It can be executed on all OS: Windows, Linux and Max OS X (using Wine for all UNIX OS).</li>
 </ul>
-<h4 id="distutils-an-overview">Distutils (an Overview)<a class="headerlink" href="#distutils-an-overview" title="Permanent link">&para;</a></h4>
+<h4 id="1-distutils-an-overview">1, Distutils (an Overview)<a class="headerlink" href="#1-distutils-an-overview" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Building with distutils works well on all OS.</li>
 <li>The package provides support for building and installing additional modules (libraries or packages) into a Python installation.</li>
@@ -250,7 +250,7 @@
 <li>https://wiki.python.org/moin/Distutils/Tutorial</li>
 <li>https://docs.python.org/2/distutils/</li>
 </ul>
-<h4 id="cx-freeze-with-snippets">cx-Freeze (with Snippets)<a class="headerlink" href="#cx-freeze-with-snippets" title="Permanent link">&para;</a></h4>
+<h4 id="2-cx-freeze-with-snippets">2, cx-Freeze (with Snippets)<a class="headerlink" href="#2-cx-freeze-with-snippets" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>cx_Freeze</code> freezes Python scripts into executables.</li>
 <li>Alike <code>py2exe</code> for Windows only and <code>py2app</code> for Mac OS X only.</li>
@@ -397,7 +397,7 @@ executables = [Executable(&quot;bin/FileName.py&quot;, base = None)]
 <li>Easy to deploy (download, open, execute).</li>
 <li>It does not generate a single file, except with the <code>bdist_</code> commands. However, a distribution requires additional steps to deploy.</li>
 </ul>
-<h4 id="pyinstaller-with-snippets">pyInstaller (with Snippets)<a class="headerlink" href="#pyinstaller-with-snippets" title="Permanent link">&para;</a></h4>
+<h4 id="3-pyinstaller-with-snippets">3, pyInstaller (with Snippets)<a class="headerlink" href="#3-pyinstaller-with-snippets" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>pyinstaller</code> is a simpler alternative to cx-Freeze.</li>
 <li>Libraries like <code>PyQt</code>, <code>Django</code> or <code>matplotlib</code> are fully supported, without having to handle plugins or external data files manually.</li>
@@ -495,7 +495,7 @@ main()
 <li>Easy to deploy (download, open, execute). Easier than with cx-Freeze, but without the flexibility a <code>setup.py</code> file can allow.</li>
 <li>However, it can generate a single file: dowload, then launch in a single click.</li>
 </ul>
-<h4 id="nuitka-an-overview">Nuitka (an Overview)<a class="headerlink" href="#nuitka-an-overview" title="Permanent link">&para;</a></h4>
+<h4 id="4-nuitka-an-overview">4, Nuitka (an Overview)<a class="headerlink" href="#4-nuitka-an-overview" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Python compiler compatible with CPython.</li>
 <li>Works on all OS.</li>
@@ -509,7 +509,7 @@ main()
 </ul>
 </li>
 </ul>
-<h4 id="pypy-an-overview">PyPy (an Overview)<a class="headerlink" href="#pypy-an-overview" title="Permanent link">&para;</a></h4>
+<h4 id="5-pypy-an-overview">5, PyPy (an Overview)<a class="headerlink" href="#5-pypy-an-overview" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Alternative to CPython: RPython (restricted Python).</li>
 <li>Works on all OS, best on Linux.</li>

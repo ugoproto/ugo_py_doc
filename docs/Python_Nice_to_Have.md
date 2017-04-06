@@ -10,7 +10,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 
 -----
 
-## `mistune` Converts Documents
+## 1, `mistune` Converts Documents
 
 <sub>convert, conversion, document, file</sub>
 
@@ -34,7 +34,7 @@ Or run this command  to produce a .html document:
 python mistune_pgm.py > mistune_html.html
 ```
 
-## `logging` Collects Data
+## 2, `logging` Collects Data
 
 - Logging is a library recording what users pass in the code.
 - It creates log files (text documents); it collects data.
@@ -112,7 +112,7 @@ There are 6 log levels (higher to lower): `CRITICAL`, `ERROR`, `WARNING`, `INFO`
 - `WARNING` is for keeping track of questionable or exceptional things happening.
 - `ERROR`, `CRITICAL` are for when things go wrong.
 
-## `PIL` Manipulates Images
+## 3, `PIL` Manipulates Images
 
 The `PIL` package stands for 'Python Image library' or Pillow. Pillow adds image processing capabilities. The library supports many file formats and provides powerful image processing and graphics capabilities. Given these images:
 

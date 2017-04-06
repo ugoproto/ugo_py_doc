@@ -85,6 +85,27 @@
     <a class="current" href="./">Databases</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#1-sqlite3">1, SQLite3</a></li>
+    
+
+    <li class="toctree-l3"><a href="#2-sqlite3-cli">2, SQLite3 CLI</a></li>
+    
+
+    <li class="toctree-l3"><a href="#3-sql-db-gui-administation-and-management-tools">3, SQL DB GUI, Administation, and Management Tools</a></li>
+    
+
+    <li class="toctree-l3"><a href="#4-excel-data-and-sqlite">4, Excel Data and SQLite</a></li>
+    
+
+    <li class="toctree-l3"><a href="#5-r-and-python-with-sql">5, R and Python with SQL</a></li>
+    
+
+    <li class="toctree-l3"><a href="#6-the-chinook-sqlite-sample-database">6, The Chinook SQLite Sample Database</a></li>
+    
+
+    <li class="toctree-l3"><a href="#7-using-a-python-orm-peewee">7, Using a Python ORM: peewee</a></li>
+    
+
     </ul>
                 </li>
     </ul>
@@ -202,16 +223,568 @@
                 <h3 id="databases">Databases<a class="headerlink" href="#databases" title="Permanent link">&para;</a></h3>
 <p><strong>Foreword</strong></p>
 <p>Notes. Python 3. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
+<p>Although we work with SQLite, most concepts are applicable to MySQL and PostgreSQL.</p>
 <hr />
 <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#databases">Databases</a></li>
+<li><a href="#databases">Databases</a><ul>
+<li><a href="#1-sqlite3">1, SQLite3</a></li>
+<li><a href="#2-sqlite3-cli">2, SQLite3 CLI</a></li>
+<li><a href="#3-sql-db-gui-administation-and-management-tools">3, SQL DB GUI, Administation, and Management Tools</a></li>
+<li><a href="#4-excel-data-and-sqlite">4, Excel Data and SQLite</a></li>
+<li><a href="#5-r-and-python-with-sql">5, R and Python with SQL</a></li>
+<li><a href="#6-the-chinook-sqlite-sample-database">6, The Chinook SQLite Sample Database</a></li>
+<li><a href="#7-using-a-python-orm-peewee">7, Using a Python ORM: peewee</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <hr />
-<p>Download<br />
-http://chinookdatabase.codeplex.com/</p>
-<p>SQLite Sample Database<br />
-http://www.sqlitetutorial.net/sqlite-sample-database/</p>
+<h4 id="1-sqlite3">1, SQLite3<a class="headerlink" href="#1-sqlite3" title="Permanent link">&para;</a></h4>
+<p>Follow the tutorial on <a href="https://www.tutorialspoint.com">TutorialPoint</a>. Especially the <a href="https://www.tutorialspoint.com/sqlite/sqlite_quick_guide.htm">Quick Guide</a> for installation, basic commands, syntax, comments, SQL statement, data type, affinity type, boolean, date &amp; time, creating a db, a table, dropping a table, querying, operators, expressions, and clauses. Each topic has also a dedicated section such as unions, joins, truncated table, etc.</p>
+<ul>
+<li>Install.<ul>
+<li>Download from the <a href="http://www.sqlite.org/download.html">SQLite website</a>.</li>
+<li>Follow the Quick Guide or Find instruction online.</li>
+<li>On Windows, the db is on C:\sqlite and this is where we store the db.</li>
+<li>On Linux, the db is in the root directory(/usr/lib/&hellip;), but the db are/can be stored in the Personal folder (or in a directory of choice; for example, in a new subdirectory under Documents).</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-sqlite3-cli">2, SQLite3 CLI<a class="headerlink" href="#2-sqlite3-cli" title="Permanent link">&para;</a></h4>
+<p><strong>Basics</strong></p>
+<ul>
+<li>In the shell/bash:<ul>
+<li><code>sqlite3 test.db</code>, create and open a db (show the prompt); the db is located in SQLite&rsquo;s directory.</li>
+</ul>
+</li>
+<li>Basic commands inside a db.<ul>
+<li><code>.help</code>.</li>
+<li><code>.databases</code>, show all databases.</li>
+<li><code>create table first (a int, b string);</code>, create a table with two fields.</li>
+<li><code>.schema</code>, show the last commands.</li>
+<li><code>.tables</code>, show all tables in the db.</li>
+<li><code>insert into first (a, b) values (1, "hello");</code>, load the table.</li>
+<li><code>select * from first;</code>, extract all values from the table.</li>
+<li><code>.quit</code> or <code>.exit</code>.</li>
+<li><code>drop table first;</code>, delete a table.</li>
+<li>Delete a db by deleting the file in the directory.</li>
+</ul>
+</li>
+<li>Intermediate commands.<ul>
+<li><code>.mode insert</code>, change the view (insertions to build the db).</li>
+<li><code>.dump</code>, dump on screen.</li>
+<li><code>.output .\Documents\sqlite3Files.sql</code>, create a folder in a file (Windows).</li>
+<li><code>.output ./Documents/sqlite3Files.sql</code>, create a folder in a file (UNIX-based).<ul>
+<li><code>.dump</code>, dump into the above. VERY USEFUL for recreating a db/table.</li>
+</ul>
+</li>
+<li><code>.output stdout</code>, to the screen.</li>
+<li><code>.mode column</code>, change the view (flat table with fixed width).<ul>
+<li><code>.width 15 20</code>, define the width by column.<ul>
+<li><code>.output ./Documents/sqlite3Files/table.sql</code>, prepare the dump.</li>
+<li><code>select * from table;</code>, extract.</li>
+<li><code>.output stdout</code>, dump.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>.mode line</code>, change the view (long list without commas).<br />
+        - Idem.</li>
+<li><code>.mode html</code>, change the view (html formats ready to be dumbed).<br />
+        - <code>.output ./Documents/sqlite3Files/table.html</code>, prepare the dump.<br />
+        - <code>select * from table;</code>, extract.<br />
+        - <code>.output stdout</code>, dump.</li>
+<li><code>.mode tabs</code>, change the view (flat table separated by tabs).<br />
+        - <code>.output ./Documents/sqlite3Files/table.tsv</code>, prepare the dump.<br />
+        - <code>select * from table;</code>, extract.<br />
+        - <code>.output stdout</code>, dump.</li>
+<li><code>.mode csv</code>, change the view (flat table separated by commas or semi-colons).<br />
+        - <code>.separator ;</code>, change the separator.<br />
+        - <code>.output ./Documents/sqlite3Files/table.csv</code>, prepare the dump.<br />
+        - <code>select * from table;</code>, extract.<br />
+        - <code>.output stdout</code>, dump.</li>
+<li><code>.mode tcs</code>, change the view (flat table with double-quotes).</li>
+<li><code>.headers on</code>, show the headers.</li>
+<li><code>.show</code>, show the (above) parameters (and change them).</li>
+<li><code>.prompt 'sqlite3&gt; '</code>, change the prompt.</li>
+<li><code>.read &lt;path&gt;</code>, repopulate the db with the above.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Advanced</strong></p>
+<p>There are plenty of resources on SQLite: books, online documents, online tutorials, etc. We can learn how to:</p>
+<ul>
+<li>Build a db, tables.</li>
+<li>Query a db, create, alter, select, order by, limit, offset, update, delete, and other functions.</li>
+<li>Joins and Triggers.</li>
+</ul>
+<h4 id="3-sql-db-gui-administation-and-management-tools">3, SQL DB GUI, Administation, and Management Tools<a class="headerlink" href="#3-sql-db-gui-administation-and-management-tools" title="Permanent link">&para;</a></h4>
+<p>With db managers, we can create scripts to automate operations.</p>
+<ul>
+<li>SQLite is free, open source, and cross-platform.<ul>
+<li>DB Browser for SQLite, free, for all OS.</li>
+<li>Add-ons to browsers such as the SQLite Managers for Firefox.</li>
+</ul>
+</li>
+<li>MySQL is free, open source, and cross-platform.<ul>
+<li>MySQL Workbench, free, for all OS.<ul>
+<li>Database Design &amp; Modeling, SQL Development (replacing MySQL Query Browser), and Database Administration (replacing MySQL Administrator). MySQL features: SQL editor, SQL code completion, SQL code formatter, SQL Syntax highlighting, server start/stop, server status/health, server logs, server/replication configuration, user management, session management, and much more.</li>
+</ul>
+</li>
+<li>Web-based managers&hellip;</li>
+</ul>
+</li>
+<li>PostgreSQL is free, open source, also cross-platform.<ul>
+<li>pgAdminIII.</li>
+<li>Web-based managers&hellip;</li>
+</ul>
+</li>
+<li>SQL in general.<ul>
+<li>DB Browser, free, for all OS.</li>
+<li>phpMyAdmin, free, for all OS.</li>
+<li>Toad, free, for Windows.</li>
+<li>HeidiSQL, free, for Windows.</li>
+<li>Web-based managers&hellip;</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-excel-data-and-sqlite">4, Excel Data and SQLite<a class="headerlink" href="#4-excel-data-and-sqlite" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>Option 1</p>
+</li>
+<li>
+<p>Export data (save as) from Excel in a.csv file.</p>
+</li>
+<li>
+<p>Import the .csv into SQLite.</p>
+<ul>
+<li>In can be done with a manager such as DB Browser for SQLite.</li>
+<li>It can be done with a web-based manager such as SQLite Managers for Firefox.</li>
+<li>Adjust the general and the field parameters.</li>
+<li>Create a primary key.</li>
+<li>Populate a table with the .csv file.</li>
+</ul>
+</li>
+<li>
+<p>Option 2</p>
+</li>
+<li>
+<p>Connect Excel with SQLite with an add-ons.</p>
+<ul>
+<li>There are add-ons or add-ins that can execute SQL queries in a cell and dumb the results in other cells.</li>
+<li>Excellic, Microsoft SQL Server Data Mining, SaveToDB, Database Connection Wizard, Publish Wizard, etc.</li>
+</ul>
+</li>
+</ol>
+<h4 id="5-r-and-python-with-sql">5, R and Python with SQL<a class="headerlink" href="#5-r-and-python-with-sql" title="Permanent link">&para;</a></h4>
+<ul>
+<li>R can import data from / export data to relational db using specialized packages such as <code>DBI</code>, <code>RSQLite</code>, <code>RMySQL</code>, <code>RPostgreSQL</code>, etc.</li>
+<li>Python libraries are: <code>python-sql</code>, <code>sqlalchemy</code>, <code>records</code>, <code>peewee</code>, etc.<ul>
+<li><code>pip install &lt;library&gt;</code>.    </li>
+</ul>
+</li>
+</ul>
+<h4 id="6-the-chinook-sqlite-sample-database">6, The Chinook SQLite Sample Database<a class="headerlink" href="#6-the-chinook-sqlite-sample-database" title="Permanent link">&para;</a></h4>
+<p>Learn, practice and test commands with a fake database. </p>
+<ul>
+<li>Download the <a href="http://chinookdatabase.codeplex.com/">database</a>.</li>
+<li>Consult the <a href="../SQLite Sample Database
+http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
+<li>We can also download the database and diagrams.</li>
+</ul>
+</li>
+</ul>
+<h4 id="7-using-a-python-orm-peewee">7, Using a Python ORM: <code>peewee</code><a class="headerlink" href="#7-using-a-python-orm-peewee" title="Permanent link">&para;</a></h4>
+<p>1.1</p>
+<p>We can run queries with SQL or use a Python wrapper: <code>peewee</code>. It is a lightweight Object Relational Mapper (ORM). <code>peewee</code> works with SQLite, MySQL, and PostgreSQL.</p>
+<p>Install it with pip.</p>
+<p>We can manage our db with Python scripts.</p>
+<p>1.2</p>
+<p>In <code>peewee</code>, models are Python classes. Everything in the db is an object: tables, rows, columns, entries, etc.</p>
+<p>We create a new db, <code>students.db</code>, with Python. We connect to the db and create two fields with their SQL parameters. We run the script in the terminal.</p>
+<pre><code class="python">from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\students.db')
+
+
+class Student(Model): # use a singular name convention
+    username = CharField(max_length=255, unique=True) # varchar, unique value, no duplicates
+    points = IntegerField(default=0) # if not supplies, it inputs 0 by default
+
+    class Meta: # a class inside a class (meta-class)
+        database = db
+
+if __name__ == '__main__': # for running the script directly, not import it
+    db.connect()
+    db.create_tables([Student], safe=True) # safe is a mandatory convention
+</code></pre>
+
+<p>We get no result in the terminal: good sign. Check out the db to see the results.</p>
+<p>1.3</p>
+<p>Five useful methods:</p>
+<ul>
+<li><code>.create()</code>, add a new record to the table.</li>
+<li><code>.select()</code>, pick rows out of the table.</li>
+<li><code>.save()</code>, update an existing row in a table.</li>
+<li><code>.get()</code>, fetch a single record from a table.</li>
+<li><code>.delete_instance()</code>, delete a row from a table.</li>
+</ul>
+<p>Improve the script.</p>
+<pre><code class="python">from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\students.db')
+
+
+class Student(Model):
+    username = CharField(max_length=255, unique=True)
+    points = IntegerField(default=0)
+
+    class Meta:
+        database = db
+
+
+# ADD a dictionary
+students = [
+    {'username': 'kennethliff',
+    'points': 4888},
+    {'username': 'chalkers',
+    'points': 11912},
+    {'username': 'joykesten2',
+    'points': 7363},
+    {'username': 'craigsrob',
+    'points': 4079},
+    {'username': 'adammcfarland',
+    'points': 14717}
+]    
+
+
+def add_students(): # ADD a function
+    for student in students:
+        Student.create(username=student['username'],
+                        points=student['points']) 
+
+
+if __name__ == '__main__':
+    db.connect()
+    db.create_tables([Student], safe=True)
+    add_students() # ADD
+</code></pre>
+
+<p>We can run the script one, but not twice because of the <code>unique=True</code> in the <code>class Student(Model):</code>. We get an <code>IntegrityError</code> in the terminal. We need to add a <code>try</code> block.</p>
+<pre><code class="python">from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\students.db')
+
+
+class Student(Model):
+    username = CharField(max_length=255, unique=True)
+    points = IntegerField(default=0)
+
+    class Meta:
+        database = db
+
+
+students = [
+    {'username': 'kennethliff',
+    'points': 4888},
+    {'username': 'chalkers',
+    'points': 11912},
+    {'username': 'joykesten2',
+    'points': 7363},
+    {'username': 'craigsrob',
+    'points': 4079},
+    {'username': 'adammcfarland',
+    'points': 14717}
+]    
+
+
+def add_students(): # CHANGE the function
+    for student in students:
+        try:
+            Student.create(username=student['username'],
+                            points=student['points'])
+        except IntegrityError:
+            student_record = Student.get(username=student['username'])
+            student_record.points = student['points']
+            student_record.save()
+
+
+if __name__ == '__main__':
+    db.connect()
+    db.create_tables([Student], safe=True)
+    add_students()
+</code></pre>
+
+<p>We get no result in the terminal: good sign. We can run the script at will. We can check out the results in the db.</p>
+<p>Add a function to select the top students, order them in descending order (high to low) and get them.</p>
+<pre><code class="python">from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\students.db')
+
+
+class Student(Model):
+    username = CharField(max_length=255, unique=True)
+    points = IntegerField(default=0)
+
+    class Meta:
+        database = db
+
+
+students = [
+    {'username': 'kennethliff',
+    'points': 4888},
+    {'username': 'chalkers',
+    'points': 11912},
+    {'username': 'joykesten2',
+    'points': 7363},
+    {'username': 'craigsrob',
+    'points': 4079},
+    {'username': 'adammcfarland',
+    'points': 14717}
+]    
+
+
+def add_students():
+    for student in students:
+        try:
+            Student.create(username=student['username'],
+                            points=student['points'])
+        except IntegrityError:
+            student_record = Student.get(username=student['username'])
+            student_record.points = student['points']
+            student_record.save()
+
+
+def top_student():
+    student = Student.select().order_by(Student.points.desc()).get() # ADD
+    return student            
+
+if __name__ == '__main__':
+    db.connect()
+    db.create_tables([Student], safe=True)
+    add_students()
+    print(&quot;Our top student right now is: {0.username}.&quot;.format(top_student())) # ADD
+</code></pre>
+
+<p>This time, we should get a result in the terminal.</p>
+<pre><code class="text">Our top student right now is: adammcfarland.
+</code></pre>
+
+<p>Change the points in the dictionary and rerun the script.</p>
+<pre><code class="python">from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\students.db')
+
+
+class Student(Model):
+    username = CharField(max_length=255, unique=True)
+    points = IntegerField(default=0)
+
+    class Meta:
+        database = db
+
+
+students = [
+    {'username': 'kennethliff',
+    'points': 14718}, # CHANGE, make it the top student
+    {'username': 'chalkers',
+    'points': 11912},
+    {'username': 'joykesten2',
+    'points': 7363},
+    {'username': 'craigsrob',
+    'points': 4079},
+    {'username': 'adammcfarland',
+    'points': 14717}
+]    
+
+
+def add_students():
+    for student in students:
+        try:
+            Student.create(username=student['username'],
+                            points=student['points'])
+        except IntegrityError:
+            student_record = Student.get(username=student['username'])
+            student_record.points = student['points']
+            student_record.save()
+
+
+def top_student():
+    student = Student.select().order_by(Student.points.desc()).get()
+    return student            
+
+if __name__ == '__main__':
+    db.connect()
+    db.create_tables([Student], safe=True)
+    add_students()
+    print(&quot;Our top student right now is: {0.username}.&quot;.format(top_student()))
+</code></pre>
+
+<p>Results in the terminal.</p>
+<pre><code class="text">Our top student right now is: kennethliff.
+</code></pre>
+
+<p><strong>Recap:</strong></p>
+<ul>
+<li><code>.create()</code>, add a new record to the table.</li>
+<li><code>.select()</code>, pick rows out of the table.</li>
+<li><code>.get()</code>, fetch a single record from a table.</li>
+</ul>
+<p>Create, Read, Ipdate, and Delete is knows as CRUD; the backbone of ORM.</p>
+<p>2.1</p>
+<p>Now, we build a diary app using a SQLite db. Such an application can be integrated to a web framework (like Flask). We must be able to load data and extract them. We start with a skeleton and write docstrings.</p>
+<pre><code class="python">from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    # content
+    # timestamp
+
+    class Meta:
+        database = db
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+
+
+def add_entry():
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+
+
+def view_entries():
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+
+
+def delete_entry(entry):
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+
+
+if __name__ == '__main__': # for running the script directly, not import it
+    menu_loop()
+</code></pre>
+
+<p>2.2</p>
+<p>Let&rsquo;s add some flesh to the skeleton.</p>
+<pre><code class="python">import datetime # ADD
+from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model): # CHANGE
+    content = TextField() # content: TextField ia more flexible, holds any type of data; contrary to CharField, a varchar with a maximum length
+    timestamp = DateTimeField(default=datetime.datetime.now) # timestamp; now does take parentheses
+
+    class Meta:
+        database = db
+
+
+def initialize(): # ADD
+    &quot;&quot;&quot;Create the database and the table if they don't exist.&quot;&quot;&quot;
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+
+
+def add_entry():
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+
+
+def view_entries():
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+
+
+def delete_entry(entry):
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+
+
+if __name__ == '__main__': # for running the script directly, not import it
+    initialize() # INSERT
+    menu_loop()
+</code></pre>
+
+<p>We get no result in the terminal: good sign. We can check out the results in the db.</p>
+<p>2.3</p>
+<p>We add a menu.</p>
+<pre><code class="python">from collections import OrderedDict # ADD
+import datetime
+from peewee import *
+
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    &quot;&quot;&quot;Create the database and the table if they don't exist.&quot;&quot;&quot;
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+    choice = None # new variable with a default value
+
+    while choice != 'q': # ADD
+        print(&quot;Enter 'q' to quit.&quot;) # starting message
+        for key, value in menu.items(): # loop through the dictionary
+            print('{}) {}'.format(key, value.__doc__)) # value from the menu variables furthur down in the script; __doc__ is the docstrings
+        choice = raw_input('Action: ').lower().strip() # lowercase, remove white spaces
+
+        if choice in menu: # check if the selection is in the menu
+            menu[choice]() # execute the choice
+
+def add_entry():
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+
+
+def view_entries():
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+
+
+def delete_entry(entry):
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+
+
+menu = OrderedDict([ # ADD tuple
+    ('a', add_entry),
+    ('v', view_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+</code></pre>
+
+<p>This is coded in Python 2. In Python 3, we would replace <code>raw_input</code> by <code>input</code>; a major difference between the two versions.</p>
+<p>The result is dynamic. We can input <code>Actions</code> in the terminal and the script continues to run until we quit with <code>q</code>. We cannot do much since the functions are still empty (<code>def add_entry():</code> and <code>def view_entries():</code>). The following is a snapshot.</p>
+<pre><code class="text">Enter 'q' to quit.
+a) Add an entry.
+v) View previous entries.
+Actions:
+</code></pre>
               
             </div>
           </div>

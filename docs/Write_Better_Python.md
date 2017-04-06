@@ -10,7 +10,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 
 -----
 
-## PEP20
+## 1, PEP20
 
 PEP : Python Enhancement Proposals. In the Python shell, type `import this`. We get the following 'easter egg'.
 
@@ -45,7 +45,7 @@ The 'easter egg' is a poem. A poem of best practices.
 - Special cases aren't special enough to break the rules. The`len` function for all. A function applies to all. A method applied to some. Find the built-in function before coding new functions.
 - The code should be pleasant and easy to read.
 
-## PEP8
+## 2, PEP8
 
 PEP : Python Enhancement Proposals. Improves the look of the code. Here are a few principles:
 
@@ -102,7 +102,7 @@ print fourteen
 print Submarine().two() # class.method
 ```
 
-## PEP Diagnoses with `flake8` & `pylint`
+## 3, PEP Diagnoses with `flake8` & `pylint`
 
 The modules can be integrated with IDE and text editors (VIM, Emacs, gedit, Notepad++, etc.).
 
@@ -121,7 +121,7 @@ The modules can be integrated with IDE and text editors (VIM, Emacs, gedit, Note
 
 `pylint` runs a diagnosis and returns a report about the script.
 
-## Help & Docstrings
+## 4, Help & Docstrings
 
 - In the shell, for any command 'cmd', type `help(cmd)` to get a definition.
 - Type `dir(cmd)` to get the attributes from the Python glossary.
@@ -159,7 +159,7 @@ def does_better(arg):
 
 - In the shell, type `help(docstrings.does_better)` to print the function's docstring.
 
-## `pdb` Debugs Scripts
+## 5, `pdb` Debugs Scripts
 
 Go inside the code.
 

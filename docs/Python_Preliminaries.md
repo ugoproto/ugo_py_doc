@@ -10,7 +10,7 @@ Notes. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/e
 
 -----
 
-## Installing (Complementary Details)
+## 1, Installing (Complementary Details)
 
 **Python**
 
@@ -26,7 +26,7 @@ Notes. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/e
     - `export PYTHONPATH=$PYTHONPATH:`.
     - ...
 
-## pip
+## 2, pip
 
 <sub>pypi</sub>
 
@@ -42,12 +42,12 @@ Important commands:
 - `pip uninstall <module>`.
 - `pip install --user <module>`: circumvent the `sudo` command.
 
-## Git
+## 3, Git
 
 After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): `export PATH="$PATH:/c/Python27"`, 
 `export PATH="$PATH:/c/Python27/Scripts"`, ... The Git Bash simulates a UNIX-type environment.
 
-## Virtual Environment
+## 4, Virtual Environment
 
 <sub>virtual, environment, separate, project</sub>
 
@@ -57,7 +57,7 @@ It brings out a problem if "Project A depends on version 1.x but, Project B need
 
 A virtual environment solves this problem by building a sandbox for a project.
 
-## Launching
+## 5, Launching
 
 Windows vs. UNIX (Linux or Mac OS X).
 

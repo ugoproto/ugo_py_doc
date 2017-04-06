@@ -10,7 +10,7 @@ Code snippets and excerpts from the courses (Introduction and Intermediate). Pyt
 
 -----
 
-## Introduction
+## 1, Introduction
 
 ### Basic operations
 
@@ -385,7 +385,7 @@ print(np.logical_and(my_house < 11, your_house < 11))
     [False  True False  True]
     [False False False  True]
 
-## Intermediate
+## 2, Intermediate
 
 ### Plotting basics
 
