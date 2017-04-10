@@ -153,7 +153,6 @@ We create a new db, `students.db`, with Python. We connect to the db and create 
 ```python
 from peewee import *
 
-
 db = SqliteDatabase('C:\sqlite\students.db')
 
 
@@ -171,6 +170,20 @@ if __name__ == '__main__': # for running the script directly, not import it
 
 We get no result in the terminal: good sign. Check out the db to see the results.
 
+The script run on Windows in Python 2. In Python 3, we would need minor adjustments; they are documented along the way. In addition, in UNIX-based OS, we would need two extra lines at the top of the script.
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+```
+
+Or.
+
+```python
+#!/usr/bin/env python 3
+# -*- coding: utf-8 -*-
+```
+
 1.3
 
 Five useful methods:
@@ -185,7 +198,6 @@ Improve the script.
 
 ```python
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -229,7 +241,6 @@ We can run the script one, but not twice because of the `unique=True` in the `cl
 
 ```python
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -279,7 +290,6 @@ Add a function to select the top students, order them in descending order (high 
 
 ```python
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -338,7 +348,6 @@ Change the points in the dictionary and rerun the script.
 
 ```python
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -403,11 +412,14 @@ Create, Read, Ipdate, and Delete is knows as CRUD; the backbone of ORM.
 
 2.1
 
-Now, we build a diary app using a SQLite db. Such an application can be integrated to a web framework (like Flask). We must be able to load data and extract them. We start with a skeleton and write docstrings.
+Now, we build a diary app using a SQLite db. Such an application can be integrated to a web framework (like Flask). We must be able to load data and extract them. 
+
+The more general use could be a log book: we can write stuff and retrieve it. We can classify the entries and search for a specific word. Etc.
+
+We start with a skeleton, bare functions and docstrings.
 
 ```python
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\diary.db')
 
@@ -442,12 +454,11 @@ if __name__ == '__main__': # for running the script directly, not import it
 
 2.2
 
-Let's add some flesh to the skeleton.
+Let's add some flesh to the skeleton. Add the the `datetime` library and a new function to initialize the diary.
 
 ```python
 import datetime # ADD
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\diary.db')
 
@@ -491,13 +502,12 @@ We get no result in the terminal: good sign. We can check out the results in the
 
 2.3
 
-We add a menu.
+We add a menu using a dictionary (we need the `OrderedDict` library).
 
 ```python
 from collections import OrderedDict # ADD
 import datetime
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\diary.db')
 
@@ -563,6 +573,386 @@ v) View previous entries.
 Actions:
 ```
 
+3.1
+
+Add the `sys` library. We want to enter data (load the db).
+
+```python
+from collections import OrderedDict
+import datetime
+import sys # ADD
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    """Create the database and the table if they don't exist."""
+    db.connect()
+    db.create_tables([Entry], safe=True)
+        
+        
+def menu_loop():
+    """Show the menu."""
+    choice = None
+    
+    while choice != 'q':
+        print("Enter 'q' to quit.")
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            menu[choice]()
+
+            
+def add_entry(): # IMPROVE
+    """Add an entry."""
+    print("Enter your entry. Press ctrl+z when finished.")
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print("Saved successfully!")
+    
+
+def view_entries():
+    """View previous entries."""
+
+
+def delete_entry(entry):
+    """Delete an entry."""
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+```
+
+The result is dynamic.
+
+To the question `Enter your entry. Press ctrl+d when finished.`, write `Working with databases. I enjoy my day.`. Press enter, then press ctrl+z, then enter in Windows, ctrl+d in UNIX-based OS (for End-of-File key sequence). Save it (with a `y` input). Repeat. This time, do not save it (`n`). Check out the results in the database.
+
+`raw_input` in Python 2 vs. `input` in Python 3. In Python 2, we can print with `print " "` or `print(" ")`. The later is only possible in Python 3.
+
+3.2
+
+We now want to read the data (query the db). We also want to search throught the entries. In SQL, we would code: `SELECT * FROM entry WHERE content LIKE '%search_query$' ORDER BY timestamp DESC;`.
+
+```python
+from collections import OrderedDict
+import datetime
+import sys
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    """Create the database and the table if they don't exist."""
+    db.connect()
+    db.create_tables([Entry], safe=True)
+        
+        
+def menu_loop():
+    """Show the menu."""
+    choice = None
+    
+    while choice != 'q':
+        print("Enter 'q' to quit.")
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            menu[choice]()
+
+            
+def add_entry():
+    """Add an entry."""
+    print("Enter your entry. Press ctrl+z when finished.")
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print("Saved successfully!")
+    
+
+def view_entries(search_query=None): # IMPROVE
+    """View previous entries."""
+    entries = Entry.select().order_by(Entry.timestamp.desc()) # sort them
+    if search_query:
+        entries = entries.where(Entry.content.contains(search_query))
+
+    for entry in entries:
+        timestamp = entry.timestamp.strftime('%A %B %d, %Y %I:%M%p') # day name, month, date, year, hour (12h), minute, am/pm
+        print(timestamp)
+        print('='*len(timestamp)) # print the number of characters in the timestamp
+        print(entry.content)
+        print('n) next entry')
+        print('q) return to main menu')
+
+        next_action = raw_input('Action: [Nq] ').lower().strip()
+        if next_action == 'q':
+            break
+
+
+def search_entries():
+    """Search entries for a string."""
+    view_entries(raw_input('Search query: '))
+
+
+def delete_entry(entry):
+    """Delete an entry."""
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+    ('s', search_entries), # ADD
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+```
+
+The result is dynamic. Try entering stuff, save it. Back to the menu, read the entry. We should get a date, a line of `=` and the entry. Quit and go back to the menu. Try search for a word. It should find a single word among all the entry and pull out the entry where the word appears.
+
+3.3
+
+Complete the last function: `def delete_entry(entry):`.
+
+
+```python
+from collections import OrderedDict
+import datetime
+import sys
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    """Create the database and the table if they don't exist."""
+    db.connect()
+    db.create_tables([Entry], safe=True)
+        
+        
+def menu_loop():
+    """Show the menu."""
+    choice = None
+    
+    while choice != 'q':
+        print("Enter 'q' to quit.")
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            menu[choice]()
+
+            
+def add_entry():
+    """Add an entry."""
+    print("Enter your entry. Press ctrl+z when finished.")
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print("Saved successfully!")
+    
+
+def view_entries(search_query=None):
+    """View previous entries."""
+    entries = Entry.select().order_by(Entry.timestamp.desc())
+    if search_query:
+        entries = entries.where(Entry.content.contains(search_query))
+
+    for entry in entries:
+        timestamp = entry.timestamp.strftime('%A %B %d, %Y %I:%M%p')
+        print(timestamp)
+        print('='*len(timestamp))
+        print(entry.content)
+        print('n) next entry')
+        print('d) delete entry') # ADD
+        print('q) return to main menu')
+
+        next_action = raw_input('Action: [Ndq] ').lower().strip()
+        if next_action == 'q':
+            break
+        elif next_action == 'd': # ADD
+            delete_entry(entry)
+
+
+def search_entries():
+    """Search entries for a string."""
+    view_entries(raw_input('Search query: '))
+
+
+def delete_entry(entry): # IMPROVE
+    """Delete an entry."""
+    if raw_input("Are you sure? [yN] ").lower() == 'y':
+        entry.delete_instance()
+        print("Entry deleted!")
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+    ('s', search_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+```
+
+The result is dynamic. Enter something. Save it. View it. Delete it (the last entry). Confirm it. Go back to the main menu. View the previous entries. The last entry was deleted and we see the previous entry.
+
+3.4
+
+We can polish up the final result. We need to ventilate the onscreen printouts by cleaning the screen here and there. On Windows, we clear the screen with `cls`; on UNIX-based OS, with `clear`.
+
+Here is the final product. It's not perfect, but it works.
+
+```python
+from collections import OrderedDict
+import datetime
+import os # ADD
+import sys
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    """Create the database and the table if they don't exist."""
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def clear(): # ADD
+    os.system('cls' if os.name == 'nt' else 'clear') # ADD; cls for Windows, clear for Linux or Mac OS X
+    
+
+def menu_loop():
+    """Show the menu."""
+    choice = None
+    
+    while choice != 'q':
+        clear()
+        print("Enter 'q' to quit.")
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            clear()
+            menu[choice]()
+
+            
+def add_entry():
+    """Add an entry."""
+    print("Enter your entry. Press ctrl+z when finished.")
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print("Saved successfully!")
+    
+
+def view_entries(search_query=None):
+    """View previous entries."""
+    entries = Entry.select().order_by(Entry.timestamp.desc())
+    if search_query:
+        entries = entries.where(Entry.content.contains(search_query))
+
+    for entry in entries:
+        timestamp = entry.timestamp.strftime('%A %B %d, %Y %I:%M%p')
+        clear()
+        print(timestamp)
+        print('='*len(timestamp))
+        print(entry.content)
+        print('\n\n'+'='*len(timestamp)) # ADD
+        print('n) next entry')
+        print('d) delete entry')
+        print('q) return to main menu')
+
+        next_action = raw_input('Action: [Ndq] ').lower().strip()
+        if next_action == 'q':
+            break
+        elif next_action == 'd':
+            delete_entry(entry)
+
+
+def search_entries():
+    """Search entries for a string."""
+    view_entries(raw_input('Search query: '))
+
+
+def delete_entry(entry):
+    """Delete an entry."""
+    if raw_input("Are you sure? [yN] ").lower() == 'y':
+        entry.delete_instance()
+        print("Entry deleted!")
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+    ('s', search_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+```
 
 
 

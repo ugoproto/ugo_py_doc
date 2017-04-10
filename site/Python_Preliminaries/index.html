@@ -102,6 +102,10 @@
                     
     <a class="" href="../Databases/">Databases</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
     </ul>
 	    </li>
           
@@ -298,7 +302,7 @@
 </ul>
 </li>
 </ul>
-<p><strong>Launch a script &ndash; Part 1</strong></p>
+<p><strong>Launch a script</strong></p>
 <ul>
 <li>In Windows, Python 2:<ul>
 <li><code>python script.py</code></li>
@@ -321,10 +325,12 @@
 </ul>
 </li>
 </ul>
-<p><strong>Launch a script &ndash; Part 2</strong></p>
+<p>In UNIX-based OS, with a shebang, once the script is created, we can go in the folder and enter <code>chmod +x script.py</code> to change the properties. Now, we can launch a script with <code>./script.py</code>.</p>
+<p><strong>Launch a module</strong></p>
 <ul>
+<li>Sometimes, launching Python modules cannot be done directly with <code>pip install &lt;script&gt;</code> for example.</li>
 <li>In Windows (examples):<ul>
-<li><code>py -2 -m pip install script</code> if <code>pip install script</code> does not work.</li>
+<li><code>py -2 -m pip install &lt;script&gt;</code> if <code>pip install script</code> does not work.</li>
 <li><code>py -2 -m pip install flake8</code>.</li>
 <li><code>py -2 -m pip install pylint</code>.    </li>
 </ul>

@@ -19,6 +19,7 @@ pages:
         - Write Better Python with PEP: 'Write_Better_Python.md'
         - Regular Expressions (REGEX): 'Regex.md'
         - Databases: 'Databases.md'
+        - Datetime: 'Datetime.md'
     - SciPy Stack:
         - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
         - DataCamp Importing Data into Python 3: 'DataCamp Importing Data into Python 3.md'
