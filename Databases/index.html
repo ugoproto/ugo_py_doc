@@ -108,6 +108,10 @@
 
     </ul>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
     </ul>
 	    </li>
           
@@ -405,7 +409,6 @@ http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
 <p>We create a new db, <code>students.db</code>, with Python. We connect to the db and create two fields with their SQL parameters. We run the script in the terminal.</p>
 <pre><code class="python">from peewee import *
 
-
 db = SqliteDatabase('C:\sqlite\students.db')
 
 
@@ -422,6 +425,16 @@ if __name__ == '__main__': # for running the script directly, not import it
 </code></pre>
 
 <p>We get no result in the terminal: good sign. Check out the db to see the results.</p>
+<p>The script run on Windows in Python 2. In Python 3, we would need minor adjustments; they are documented along the way. In addition, in UNIX-based OS, we would need two extra lines at the top of the script.</p>
+<pre><code class="python">#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+</code></pre>
+
+<p>Or.</p>
+<pre><code class="python">#!/usr/bin/env python 3
+# -*- coding: utf-8 -*-
+</code></pre>
+
 <p>1.3</p>
 <p>Five useful methods:</p>
 <ul>
@@ -433,7 +446,6 @@ if __name__ == '__main__': # for running the script directly, not import it
 </ul>
 <p>Improve the script.</p>
 <pre><code class="python">from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -475,7 +487,6 @@ if __name__ == '__main__':
 
 <p>We can run the script one, but not twice because of the <code>unique=True</code> in the <code>class Student(Model):</code>. We get an <code>IntegrityError</code> in the terminal. We need to add a <code>try</code> block.</p>
 <pre><code class="python">from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -522,7 +533,6 @@ if __name__ == '__main__':
 <p>We get no result in the terminal: good sign. We can run the script at will. We can check out the results in the db.</p>
 <p>Add a function to select the top students, order them in descending order (high to low) and get them.</p>
 <pre><code class="python">from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -577,7 +587,6 @@ if __name__ == '__main__':
 
 <p>Change the points in the dictionary and rerun the script.</p>
 <pre><code class="python">from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\students.db')
 
@@ -638,9 +647,10 @@ if __name__ == '__main__':
 </ul>
 <p>Create, Read, Ipdate, and Delete is knows as CRUD; the backbone of ORM.</p>
 <p>2.1</p>
-<p>Now, we build a diary app using a SQLite db. Such an application can be integrated to a web framework (like Flask). We must be able to load data and extract them. We start with a skeleton and write docstrings.</p>
+<p>Now, we build a diary app using a SQLite db. Such an application can be integrated to a web framework (like Flask). We must be able to load data and extract them. </p>
+<p>The more general use could be a log book: we can write stuff and retrieve it. We can classify the entries and search for a specific word. Etc.</p>
+<p>We start with a skeleton, bare functions and docstrings.</p>
 <pre><code class="python">from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\diary.db')
 
@@ -674,10 +684,9 @@ if __name__ == '__main__': # for running the script directly, not import it
 </code></pre>
 
 <p>2.2</p>
-<p>Let&rsquo;s add some flesh to the skeleton.</p>
+<p>Let&rsquo;s add some flesh to the skeleton. Add the the <code>datetime</code> library and a new function to initialize the diary.</p>
 <pre><code class="python">import datetime # ADD
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\diary.db')
 
@@ -719,11 +728,10 @@ if __name__ == '__main__': # for running the script directly, not import it
 
 <p>We get no result in the terminal: good sign. We can check out the results in the db.</p>
 <p>2.3</p>
-<p>We add a menu.</p>
+<p>We add a menu using a dictionary (we need the <code>OrderedDict</code> library).</p>
 <pre><code class="python">from collections import OrderedDict # ADD
 import datetime
 from peewee import *
-
 
 db = SqliteDatabase('C:\sqlite\diary.db')
 
@@ -785,6 +793,368 @@ a) Add an entry.
 v) View previous entries.
 Actions:
 </code></pre>
+
+<p>3.1</p>
+<p>Add the <code>sys</code> library. We want to enter data (load the db).</p>
+<pre><code class="python">from collections import OrderedDict
+import datetime
+import sys # ADD
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    &quot;&quot;&quot;Create the database and the table if they don't exist.&quot;&quot;&quot;
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+    choice = None
+
+    while choice != 'q':
+        print(&quot;Enter 'q' to quit.&quot;)
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            menu[choice]()
+
+
+def add_entry(): # IMPROVE
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+    print(&quot;Enter your entry. Press ctrl+z when finished.&quot;)
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print(&quot;Saved successfully!&quot;)
+
+
+def view_entries():
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+
+
+def delete_entry(entry):
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+</code></pre>
+
+<p>The result is dynamic.</p>
+<p>To the question <code>Enter your entry. Press ctrl+d when finished.</code>, write <code>Working with databases. I enjoy my day.</code>. Press enter, then press ctrl+z, then enter in Windows, ctrl+d in UNIX-based OS (for End-of-File key sequence). Save it (with a <code>y</code> input). Repeat. This time, do not save it (<code>n</code>). Check out the results in the database.</p>
+<p><code>raw_input</code> in Python 2 vs. <code>input</code> in Python 3. In Python 2, we can print with <code>print " "</code> or <code>print(" ")</code>. The later is only possible in Python 3.</p>
+<p>3.2</p>
+<p>We now want to read the data (query the db). We also want to search throught the entries. In SQL, we would code: <code>SELECT * FROM entry WHERE content LIKE '%search_query$' ORDER BY timestamp DESC;</code>.</p>
+<pre><code class="python">from collections import OrderedDict
+import datetime
+import sys
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    &quot;&quot;&quot;Create the database and the table if they don't exist.&quot;&quot;&quot;
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+    choice = None
+
+    while choice != 'q':
+        print(&quot;Enter 'q' to quit.&quot;)
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            menu[choice]()
+
+
+def add_entry():
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+    print(&quot;Enter your entry. Press ctrl+z when finished.&quot;)
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print(&quot;Saved successfully!&quot;)
+
+
+def view_entries(search_query=None): # IMPROVE
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+    entries = Entry.select().order_by(Entry.timestamp.desc()) # sort them
+    if search_query:
+        entries = entries.where(Entry.content.contains(search_query))
+
+    for entry in entries:
+        timestamp = entry.timestamp.strftime('%A %B %d, %Y %I:%M%p') # day name, month, date, year, hour (12h), minute, am/pm
+        print(timestamp)
+        print('='*len(timestamp)) # print the number of characters in the timestamp
+        print(entry.content)
+        print('n) next entry')
+        print('q) return to main menu')
+
+        next_action = raw_input('Action: [Nq] ').lower().strip()
+        if next_action == 'q':
+            break
+
+
+def search_entries():
+    &quot;&quot;&quot;Search entries for a string.&quot;&quot;&quot;
+    view_entries(raw_input('Search query: '))
+
+
+def delete_entry(entry):
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+    ('s', search_entries), # ADD
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+</code></pre>
+
+<p>The result is dynamic. Try entering stuff, save it. Back to the menu, read the entry. We should get a date, a line of <code>=</code> and the entry. Quit and go back to the menu. Try search for a word. It should find a single word among all the entry and pull out the entry where the word appears.</p>
+<p>3.3</p>
+<p>Complete the last function: <code>def delete_entry(entry):</code>.</p>
+<pre><code class="python">from collections import OrderedDict
+import datetime
+import sys
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    &quot;&quot;&quot;Create the database and the table if they don't exist.&quot;&quot;&quot;
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+    choice = None
+
+    while choice != 'q':
+        print(&quot;Enter 'q' to quit.&quot;)
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            menu[choice]()
+
+
+def add_entry():
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+    print(&quot;Enter your entry. Press ctrl+z when finished.&quot;)
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print(&quot;Saved successfully!&quot;)
+
+
+def view_entries(search_query=None):
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+    entries = Entry.select().order_by(Entry.timestamp.desc())
+    if search_query:
+        entries = entries.where(Entry.content.contains(search_query))
+
+    for entry in entries:
+        timestamp = entry.timestamp.strftime('%A %B %d, %Y %I:%M%p')
+        print(timestamp)
+        print('='*len(timestamp))
+        print(entry.content)
+        print('n) next entry')
+        print('d) delete entry') # ADD
+        print('q) return to main menu')
+
+        next_action = raw_input('Action: [Ndq] ').lower().strip()
+        if next_action == 'q':
+            break
+        elif next_action == 'd': # ADD
+            delete_entry(entry)
+
+
+def search_entries():
+    &quot;&quot;&quot;Search entries for a string.&quot;&quot;&quot;
+    view_entries(raw_input('Search query: '))
+
+
+def delete_entry(entry): # IMPROVE
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+    if raw_input(&quot;Are you sure? [yN] &quot;).lower() == 'y':
+        entry.delete_instance()
+        print(&quot;Entry deleted!&quot;)
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+    ('s', search_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+</code></pre>
+
+<p>The result is dynamic. Enter something. Save it. View it. Delete it (the last entry). Confirm it. Go back to the main menu. View the previous entries. The last entry was deleted and we see the previous entry.</p>
+<p>3.4</p>
+<p>We can polish up the final result. We need to ventilate the onscreen printouts by cleaning the screen here and there. On Windows, we clear the screen with <code>cls</code>; on UNIX-based OS, with <code>clear</code>.</p>
+<p>Here is the final product. It&rsquo;s not perfect, but it works.</p>
+<pre><code class="python">from collections import OrderedDict
+import datetime
+import os # ADD
+import sys
+from peewee import *
+
+db = SqliteDatabase('C:\sqlite\diary.db')
+
+
+class Entry(Model):
+    content = TextField()
+    timestamp = DateTimeField(default=datetime.datetime.now)
+
+    class Meta:
+        database = db
+
+
+def initialize():
+    &quot;&quot;&quot;Create the database and the table if they don't exist.&quot;&quot;&quot;
+    db.connect()
+    db.create_tables([Entry], safe=True)
+
+
+def clear(): # ADD
+    os.system('cls' if os.name == 'nt' else 'clear') # ADD; cls for Windows, clear for Linux or Mac OS X
+
+
+def menu_loop():
+    &quot;&quot;&quot;Show the menu.&quot;&quot;&quot;
+    choice = None
+
+    while choice != 'q':
+        clear()
+        print(&quot;Enter 'q' to quit.&quot;)
+        for key, value in menu.items():
+            print('{}) {}'.format(key, value.__doc__))
+        choice = raw_input('Action: ').lower().strip()
+
+        if choice in menu:
+            clear()
+            menu[choice]()
+
+
+def add_entry():
+    &quot;&quot;&quot;Add an entry.&quot;&quot;&quot;
+    print(&quot;Enter your entry. Press ctrl+z when finished.&quot;)
+    data = sys.stdin.read().strip()
+
+    if data:
+        if raw_input('Save entry? [Yn] ').lower() != 'n':
+            Entry.create(content=data)
+            print(&quot;Saved successfully!&quot;)
+
+
+def view_entries(search_query=None):
+    &quot;&quot;&quot;View previous entries.&quot;&quot;&quot;
+    entries = Entry.select().order_by(Entry.timestamp.desc())
+    if search_query:
+        entries = entries.where(Entry.content.contains(search_query))
+
+    for entry in entries:
+        timestamp = entry.timestamp.strftime('%A %B %d, %Y %I:%M%p')
+        clear()
+        print(timestamp)
+        print('='*len(timestamp))
+        print(entry.content)
+        print('\n\n'+'='*len(timestamp)) # ADD
+        print('n) next entry')
+        print('d) delete entry')
+        print('q) return to main menu')
+
+        next_action = raw_input('Action: [Ndq] ').lower().strip()
+        if next_action == 'q':
+            break
+        elif next_action == 'd':
+            delete_entry(entry)
+
+
+def search_entries():
+    &quot;&quot;&quot;Search entries for a string.&quot;&quot;&quot;
+    view_entries(raw_input('Search query: '))
+
+
+def delete_entry(entry):
+    &quot;&quot;&quot;Delete an entry.&quot;&quot;&quot;
+    if raw_input(&quot;Are you sure? [yN] &quot;).lower() == 'y':
+        entry.delete_instance()
+        print(&quot;Entry deleted!&quot;)
+
+
+menu = OrderedDict([
+    ('a', add_entry),
+    ('v', view_entries),
+    ('s', search_entries),
+])
+
+
+if __name__ == '__main__':
+    initialize()
+    menu_loop()
+</code></pre>
               
             </div>
           </div>
@@ -792,7 +1162,7 @@ Actions:
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/" class="btn btn-neutral float-right" title="Scientific Python (the SciPy Stack)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Datetime/" class="btn btn-neutral float-right" title="Datetime">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../Regex/" class="btn btn-neutral" title="Regular Expressions (REGEX)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -826,7 +1196,7 @@ Actions:
         <span><a href="../Regex/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../Datetime/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
