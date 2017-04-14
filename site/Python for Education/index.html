@@ -2419,7 +2419,7 @@ show()
 for any point in the same interval.</p>
 <p>In other words, we find an equation with several observation by reverse engineering; we stand at the doorstep of machine and statistical learning here!</p>
 <p>The easiest way is to construct a polynomial of degree <script type="math/tex">n</script>, such as a Newton&rsquo;s interpolating polynomial, that passes through the <script type="math/tex">n + 1</script> distinct data points. Consult the document for the mathematical demonstration. Let&rsquo;s do an example.</p>
-<pre><code class="python"># calculate the coeffcients
+<pre><code class="python"># calculate the coefficients
 
 from copy import copy
 
@@ -2452,7 +2452,7 @@ def coef(x, y):
     return a
 </code></pre>
 
-<pre><code class="python">x = array([0,1, 2, 3])
+<pre><code class="python">x = array([0, 1, 2, 3])
 y = array([0, 3, 14, 39])
 
 print(coef(x, y))

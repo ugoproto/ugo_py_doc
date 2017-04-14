@@ -2283,7 +2283,7 @@ The easiest way is to construct a polynomial of degree $n$, such as a Newton's i
 
 
 ```python
-# calculate the coeffcients
+# calculate the coefficients
 
 from copy import copy
 
@@ -2323,7 +2323,7 @@ def coef(x, y):
 
 
 ```python
-x = array([0,1, 2, 3])
+x = array([0, 1, 2, 3])
 y = array([0, 3, 14, 39])
 
 print(coef(x, y))
