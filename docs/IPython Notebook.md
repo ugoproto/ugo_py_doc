@@ -1,14 +1,14 @@
-# IPython Notebook
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes and books' tables of contents.
 
------
-
-[TOC]
-
------
+---
 
 ## Websites
 

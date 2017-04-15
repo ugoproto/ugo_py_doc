@@ -1,21 +1,19 @@
-# Regular Expressions (REGEX)
-
-**Foreword**
-
-Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
-
------
+---
 
 [TOC]
 
------
+---
 
-- Regular expressions or natural language processing -- NLP.
+**Foreword**
+
+Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Contrary to Windows, UNIX-based OS easily process international characters. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
+
 - Check out 'Managing Your Biological Data with Python, Chapter 9, Pattern Matching and Text Mining'.
 - [Test](http://www.regexplanet.com/advanced/java/index.html).
-- Find cheat sheets online.
 
-Expressions not used, but nice to know:
+---
+
+## 1, Additional Commands (unused)
 
 - `span`, return a tuple containing the start, end positions of the match.
 - `start`, return the starting position of the match.
@@ -27,7 +25,7 @@ Expressions not used, but nice to know:
 - `subn(r, s)`, do the same thing, but return the new string and the number of replacements
 - `IGNORECASE`, `I`, case-insensitive matches.
 
-## `match` & `search`
+## 2, `match` & `search` -- One Expression, One Search
 
 First, we have a text file called names.txt.
 
@@ -71,7 +69,7 @@ Results (in Windows).
 <_sre.SRE_Match object at 0x00000000021DB510>
 ```
 
-Results may vary in UNIX-type OS. We might get.
+Results may vary in UNIX-type OS. In Linux, we get.
 
 ```text
 <_sre.SRE_Match object; span=(0, 8), match='McFarland'>
@@ -121,12 +119,12 @@ print re.search(last_name, data).group() # CHANGE
 print re.search(first_name, data).group() # CHANGE
 ```
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
 
-## Escape Characters
+## 3, Escape Characters -- Comprenhensive Search
 
 - `\w`, match any Unicode word character.
 - `\W`, match anything that isn't a Unicode word character.
@@ -158,7 +156,7 @@ Results.
 None
 ```
 
-We get `None` because of `re.match`. Try.
+We get `None` because of `re.match`. Instead, try.
 
 ```python
 import re
@@ -202,13 +200,13 @@ Results.
 (555) 555-5555
 ```
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
-- Escape characters.
+- Escape characters (see above).
 
-## Repetitions
+## 4, Repetitions -- Power Search
 
 - `{3}`, repeat 3 times.
 - `{,3}`, repeat 0 to 3 times.
@@ -307,15 +305,15 @@ Results.
 ['Liff, Kenneth', 'Teacher, Submarine', 'McFarland, Arthur', 'Teacher, Submarine', 'Arthur, King', 'King, Camelot', 'sterberg, Gustav', 'Governor, Norrbotten', ', Tim', 'Enchanter, Killer', 'Carson, Ryan', 'CEO, Submarine', 'Lord, Gallifrey', 'Exampleson, Exampleme', 'Obama, Barack', 'President, United', 'Chalks, Andrew', 'Teacher, Submarine', 'Vader, Darth', 'lord, Galactic']
 ```
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
-- Escape characters.
-- Repetitions.
+- Escape characters (previous section).
+- Repetitions (see above).
 - `findall`.
 
-## Sets
+## 5, Sets -- Target Search
 
 Catch patterns. We only need unique characters even when a word contains repetitive characters.
 
@@ -348,7 +346,7 @@ Results.
 ['kenneth@submarine.com', 'arty@submarine.com', 'king_arthur@camelot.co.uk', 'governor@norrbotten.co.se', 'tim@killerrabbit.com', 'ryan@submarine.com', 'doctor+companion@tardis.co.uk', 'me@example.com', 'president.44@us.gov', 'andrew@submarine.com', 'darth-vader@empire.gov']
 ```
 
-Retrieve 'submarine'. All character are unique. The set should be 'submarine'.
+Retrieve 'submarine'. All characters are unique. The set should be 'submarine'.
 
 ```python
 import re
@@ -393,16 +391,16 @@ Results.
 ['submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine']
 ```
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
-- Escape characters.
-- Repetitions.
+- Escape characters (previous section).
+- Repetitions (previous section).
 - `findall`.
     - `re.IGNORECASE`.
 
-## Boundaries
+## 6, Boundaries -- Smart Search
 
 - `'''`, add a multiline string.
 - `\b@`, word boundary `@`.
@@ -468,18 +466,18 @@ Results.
 
 The only problem: it did not catch `Ö` and `, Tim`. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
-- Escape characters.
-- Repetitions.
+- Escape characters (previous section).
+- Repetitions (previous section).
 - `findall`.
     - `re.IGNORECASE`.
     - `re.VERBOSE|re.I`, more readable, introduce whitespaces or comments.
     - `re.X`.
 
-## Groups
+## 7, Groups -- Subdivided Search
 
 - last and first names.
 - emails.
@@ -592,19 +590,19 @@ print line.groupdict()...
 {'phone': '(555) 555-5555', 'job': 'Teacher, Submarine', 'name': 'McFarland, Arthur', 'twitter': None, 'email': 'arty@submarine.com'}
 ```
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
-- Escape characters.
-- Repetitions.
+- Escape characters (previous section).
+- Repetitions (previous section).
 - `findall`.
     - `re.IGNORECASE`.
     - `re.VERBOSE|re.I`.
     - `re.X`.
     - `re.X|re.MULTILINE` or `re.X|re.M`.
 
-## Compile & Build Dictionaries
+## 8, Compile & Build Dictionaries -- Operationalized Search
 
 Compile a pattern into an object. Replace `findall` or `search` with `compile`. Remove `data` to make a generic function to process any data.
 
@@ -740,12 +738,12 @@ Darth Vader <darth-vader@empire.gov>
 
 The only problem: it did not catch `Ö` and `, Tim`. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.
 
-**Recap:**
+### Recap:
 
 - `match`.
 - `search`.
-- Escape characters.
-- Repetitions.
+- Escape characters (previous section).
+- Repetitions (previous section).
 - `findall`.
     - `re.IGNORECASE`.
     - `re.VERBOSE|re.I`.

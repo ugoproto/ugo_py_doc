@@ -1,14 +1,14 @@
-# Introduction to Python
-
-**Foreword**
-
-Notes.
-
------
+---
 
 [TOC]
 
------
+---
+
+**Foreword**
+
+Notes. Python 2 & 3.
+
+---
 
 ## 1, A Good Way to Start (Crash Courses).
 

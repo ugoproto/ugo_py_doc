@@ -1,14 +1,14 @@
-# Python Preliminaries
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
------
-
-[TOC]
-
------
+---
 
 ## 1, Installing (Complementary Details)
 

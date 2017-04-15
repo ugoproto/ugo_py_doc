@@ -1,24 +1,22 @@
-# Datetime
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. Python 2 & 3. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
------
+---
 
-[TOC]
+## The `datatime` library
 
------
+When building an application incorporating a time triggers, events, records log entries, and much more, we need to deal with dates and times; and time zones. Whether it is a simple script that starts every morning to scrape web data, build a report, and send emails or a comprehensive web framework script that records data entries.
 
-## 1.1
+### `now` or any date-time
 
-When building an application incorporating a time triggers, events, records log entries, and many more, we need to deal with dates and times; and time zones. Whether it is a simple script that starts every morning to scrape web data, build a report, and send emails, or a comprehensive program that records data entries.
-
-Automate the Boring Stuff with Python
-
-The `datatime` library has handy built-in functions: `date`, `time`, `datetime`, `timedelta`, and `tzinfo`.
-
-The following script demonstrates some of the functionalities.
+The `datatime` library has handy built-in functions: `date`, `time`, `datetime`, `timedelta`, and `tzinfo`. The following script demonstrates some of the functionalities.
 
 ```python
 import datetime
@@ -51,17 +49,19 @@ The datatime library:
 =========================
 
 The current datetime: 
-2017-04-08 10:03:06.120000
+2016-04-08 10:03:06.120000
 ...in a variable: 
-2017-04-08 10:03:06.120000
+2016-04-08 10:03:06.120000
 =========================
 
 Replace the attributes: new formatting.
-2017-04-08 07:39:00
+2016-04-08 07:39:00
 =========================
 ```
 
-Create a time and compute the time difference.
+### Date-time difference
+
+Create a date-time and compute the time difference.
 
 ```python
 import datetime
@@ -83,7 +83,7 @@ Results.
 
 ```text
 Start: 
-2017-04-08 07:39:00
+2016-04-08 07:39:00
 =========================
 
 duration = datetime.datetime.now() - test_start: 
@@ -96,9 +96,9 @@ minutes (round(seconds/60)) =  144.0
 =========================
 ```
 
-## 1.2
+### Measure duration with `timedelta`
 
-Create a timedelta.
+Create a delta.
 
 ```python
 print "datetime.datetime.now():"
@@ -133,28 +133,28 @@ Results.
 
 ```text
 datetime.datetime.now():
-2017-04-08 10:06:25.895000
+2016-04-08 10:06:25.895000
 datetime.datetime.now() + datetime.timedelta(days=3): 
-2017-04-11 10:06:25.895000
+2016-04-11 10:06:25.895000
 ...........................................(days=-5): 
-2017-04-03 10:06:25.895000
+2016-04-03 10:06:25.895000
 ...........................................(days=-1): 
-2017-04-07 10:06:25.895000
+2016-04-07 10:06:25.895000
 =========================
 
 datetime.datetime.now() + datetime.timedelta(hours=1): 
-2017-04-08 11:06:25.895000
+2016-04-08 11:06:25.895000
 datetime.datetime.now() + datetime.timedelta(0, 3600): 
-2017-04-08 11:06:25.895000
+2016-04-08 11:06:25.895000
 =========================
 
 work =  9
 datetime.datetime.now() + datetime.timedelta(hours=work):
-2017-04-08 19:06:25.895000
+2016-04-08 19:06:25.895000
 =========================
 ```
 
-Use timedeltas.
+Use `timedelta`.
 
 ```python
 print "Simplify: "
@@ -199,9 +199,9 @@ Results.
 ```text
 Simplify: 
 now: 
-2017-04-08 10:16:11.476000
+2016-04-08 10:16:11.476000
 now.date: 
-2017-04-08
+2016-04-08
 now.time: 
 10:16:11.476000
 =========================
@@ -211,9 +211,9 @@ now.time:
 =========================
 
 Add 1 day: 
-2017-04-09 09:00:11.476000
+2016-04-09 09:00:11.476000
 Add 1 day (2): 
-2017-04-09 17:00:11.476000
+2016-04-09 17:00:11.476000
 =========================
 
 Appointment: 
@@ -221,7 +221,7 @@ Appointment:
 =========================
 ```
 
-## 1.3
+### `now` vs. `today`
 
 The difference between `now` and `today` is...
 
@@ -239,8 +239,8 @@ print ""
 Results.
 
 ```text
-2017-04-08 10:34:28.444000
-2017-04-08 10:34:28.444000
+2016-04-08 10:34:28.444000
+2016-04-08 10:34:28.444000
 =========================
 ```
 
@@ -262,15 +262,15 @@ print ""
 Results.
 
 ```text
-2017-04-08 00:00:00
+2016-04-08 00:00:00
 4
 0
-2017
+2016
 5
 =========================
 ```
 
-## 1.4
+### Formatting date-time
 
 Format date and time.
 
@@ -291,10 +291,10 @@ print now.strftime('%m/%m/%y')
 Results.
 
 ```text
-2017-04-08 11:08:26.757000
+2016-04-08 11:08:26.757000
 formatting datetime:
 April 08
-04/04/17
+04/04/16
 ```
 
 `strptime` (strings-parse-time) turns strings into datetime digits. Look for help online for date and time types.
@@ -326,7 +326,7 @@ Results.
 ```text
 Formatting datetime: 
 April 08
-04/04/17
+04/04/16
 =========================
 
 bithday: 
@@ -338,9 +338,9 @@ bithday_party:
 =========================
 ```
 
-## 1.5
+### A little printing app
 
-Build an application that print out a date in a sentence.
+Build an application that prints out a date in a sentence.
 
 ```python
 import datetime
@@ -369,7 +369,9 @@ while True:
 
 Run it; it creates an output file. Open output.txt. Copy the link and paste it into a web browser.
 
-## 2.1
+## Build a Quiz application
+
+### Build the skeleton
 
 Build an application (questions.py) that add and multiply numbers.
 
@@ -473,7 +475,7 @@ Multiply:
 4
 ```
 
-## 2.2
+### Generate questions
 
 Complete some functions and test the script.
 
@@ -566,7 +568,7 @@ Multiply:
 4
 ```
 
-## 2.3
+### Finalize the application
 
 Complete the script and test it.
 
@@ -687,11 +689,13 @@ You got 9 out of 10 rights.
 It took you 21 seconds total.
 ```
 
-## 3.1
+## Time zones
 
 Timezones are major challenges for websites and web frameworks. The following is coded in Python 3 since the most common Python frameworks (Flask, Django, Pyramid) at the time this documentation is written work under Python 3. One of the reason is the multi-language ability.
 
-We build two daytime-aware variables.
+### Time zones with `datatime` only
+
+We build two timezone-aware variables.
 
 ```python
 import datetime
@@ -751,7 +755,7 @@ Results.
 2014-04-21 12:00:00-05:00
 ```
 
-Other interesting timezones.
+Other interesting time zones.
 
 ```python
 # ...
@@ -776,9 +780,9 @@ UTC+05:30
 2014-04-21 22:30:00+05:30
 ```
 
-## 3.2
+### Time zones with `datatime` and `pytz`
 
-Before carrying on, install a new library: `sudo pip3 install pytz` and use it. `pytz` simplify things (a lot!).
+`pytz` simplify things (a lot!).
 
 ```python
 import datetime
@@ -844,7 +848,7 @@ convert:
 =========================
 ```
 
-Set a datetime and convert it.
+Set a date-time and convert it.
 
 ```python
 # ...
@@ -885,6 +889,8 @@ convert it, change location:
 
 ```
 
+### Find out more about `pytz`
+
 Find out about timezones: `print(pytz.all_timezones)`. Or focus on a country's timezones. The US.
 
 ```python
@@ -921,7 +927,7 @@ Results.
 ['Europe/Kaliningrad', 'Europe/Moscow', 'Europe/Simferopol', 'Europe/Volgograd', 'Europe/Kirov', 'Europe/Astrakhan', 'Europe/Saratov', 'Europe/Ulyanovsk', 'Europe/Samara', 'Asia/Yekaterinburg', 'Asia/Omsk', 'Asia/Novosibirsk', 'Asia/Barnaul', 'Asia/Tomsk', 'Asia/Novokuznetsk', 'Asia/Krasnoyarsk', 'Asia/Irkutsk', 'Asia/Chita', 'Asia/Yakutsk', 'Asia/Khandyga', 'Asia/Vladivostok', 'Asia/Ust-Nera', 'Asia/Magadan', 'Asia/Sakhalin', 'Asia/Srednekolymsk', 'Asia/Kamchatka', 'Asia/Anadyr']
 ```
 
-## 3.3
+### Build a script to convert time zones
 
 Build a script that takes a datetime and give it back in 6 other timezones. For any given datetime, an appointment for example, we can know the equivalent elsewhere in the world.
 

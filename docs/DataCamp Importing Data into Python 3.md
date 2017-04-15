@@ -1,14 +1,14 @@
-# DataCamp Importing Data into Python 3
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets and excerpts from the courses. Python 3. From DataCamp.
 
------
-
-[TOC]
-
------
+---
 
 ## 1, Importing from Flat Files
 

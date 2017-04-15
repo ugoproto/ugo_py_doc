@@ -1,14 +1,14 @@
-# Apprenez à programmer en Python
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. Python 3. From Le Livre du Zéro, Simple IT, 2011.
 
------
-
-[TOC]
-
------
+---
 
 ## Shebang Line
 

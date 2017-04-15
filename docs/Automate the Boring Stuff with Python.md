@@ -1,4 +1,8 @@
-# Automate the Boring Stuff with Python
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
@@ -11,11 +15,7 @@ Notes. Python 3. From No Starch Press, 2015. Creative Commons. More at:
 		- Make games with graphics!
 		- Encrypt messages and hack ciphers!
 
------
-
-[TOC]
-
------
+---
 
 ## Chapter 2, Flow Control
 

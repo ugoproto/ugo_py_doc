@@ -1,4 +1,8 @@
-# Learn Python the Hard Way
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
@@ -6,11 +10,7 @@ Notes, code snippets, and excerpts from the course. Python 2. From the book and 
 
 - [LPTHW](https://learnpythonthehardway.org/book/)
 
------
-
-[TOC]
-
------
+---
 
 ## Exercise 1, A Good First Program
 

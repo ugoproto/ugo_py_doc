@@ -1,14 +1,14 @@
-# Python Code Snippets
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets. Python 2.
 
------
-
-[TOC]
-
-----
+---
 
 ## A Battleship Game
 

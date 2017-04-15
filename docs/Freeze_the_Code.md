@@ -1,14 +1,14 @@
-# Freeze the Code
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
------
-
-[TOC]
-
------
+---
 
 - Freezing a Python file is similar to compiling the file. When running the executable file, the code runs faster than with interpreted code.
     - http://docs.python-guide.org/en/latest/shipping/freezing/?highlight=freeze

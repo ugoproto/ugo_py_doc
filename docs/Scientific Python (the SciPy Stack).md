@@ -1,14 +1,14 @@
-# Scientific Python (Scipy Stack)
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes.
 
------
-
-[TOC]
-
------
+---
 
 ## 1, A word on the SciPy Stack
 

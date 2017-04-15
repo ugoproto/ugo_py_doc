@@ -1,14 +1,14 @@
-# Codecademy Python
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets and excerpts from the course. Python 2. From Codecademy. 
 
------
-
-[TOC]
-
------
+---
 
 ## UNIT 1, Python Syntax
 

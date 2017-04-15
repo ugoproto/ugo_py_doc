@@ -1,14 +1,14 @@
-# DataCamp Python 3 for Data Science
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Code snippets and excerpts from the courses (Introduction and Intermediate). Python 3. From DataCamp.
 
------
-
-[TOC]
-
------
+---
 
 ## 1, Introduction
 

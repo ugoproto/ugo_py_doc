@@ -1,14 +1,14 @@
-# Python Nice to Have
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
------
-
-[TOC]
-
------
+---
 
 ## 1, `mistune` Converts Documents
 

@@ -81,25 +81,67 @@
     <a class="current" href="./">Regular Expressions (REGEX)</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#match-search">match &amp; search</a></li>
+    <li class="toctree-l3"><a href="#2-match-search-one-expression-one-search">2, match &amp; search -- One Expression, One Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap">Recap:</a></li>
+        
+        </ul>
     
 
-    <li class="toctree-l3"><a href="#escape-characters">Escape Characters</a></li>
+    <li class="toctree-l3"><a href="#3-escape-characters-comprenhensive-search">3, Escape Characters -- Comprenhensive Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap_1">Recap:</a></li>
+        
+        </ul>
     
 
-    <li class="toctree-l3"><a href="#repetitions">Repetitions</a></li>
+    <li class="toctree-l3"><a href="#4-repetitions-power-search">4, Repetitions -- Power Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap_2">Recap:</a></li>
+        
+        </ul>
     
 
-    <li class="toctree-l3"><a href="#sets">Sets</a></li>
+    <li class="toctree-l3"><a href="#5-sets-target-search">5, Sets -- Target Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap_3">Recap:</a></li>
+        
+        </ul>
     
 
-    <li class="toctree-l3"><a href="#boundaries">Boundaries</a></li>
+    <li class="toctree-l3"><a href="#6-boundaries-smart-search">6, Boundaries -- Smart Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap_4">Recap:</a></li>
+        
+        </ul>
     
 
-    <li class="toctree-l3"><a href="#groups">Groups</a></li>
+    <li class="toctree-l3"><a href="#7-groups-subdivided-search">7, Groups -- Subdivided Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap_5">Recap:</a></li>
+        
+        </ul>
     
 
-    <li class="toctree-l3"><a href="#compile-build-dictionaries">Compile &amp; Build Dictionaries</a></li>
+    <li class="toctree-l3"><a href="#8-compile-build-dictionaries-operationalized-search">8, Compile &amp; Build Dictionaries -- Operationalized Search</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#recap_6">Recap:</a></li>
+        
+        </ul>
     
 
     </ul>
@@ -224,31 +266,47 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="regular-expressions-regex">Regular Expressions (REGEX)<a class="headerlink" href="#regular-expressions-regex" title="Permanent link">&para;</a></h3>
-<p><strong>Foreword</strong></p>
-<p>Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
-<hr />
-<div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#regular-expressions-regex">Regular Expressions (REGEX)</a><ul>
-<li><a href="#match-search">match &amp; search</a></li>
-<li><a href="#escape-characters">Escape Characters</a></li>
-<li><a href="#repetitions">Repetitions</a></li>
-<li><a href="#sets">Sets</a></li>
-<li><a href="#boundaries">Boundaries</a></li>
-<li><a href="#groups">Groups</a></li>
-<li><a href="#compile-build-dictionaries">Compile &amp; Build Dictionaries</a></li>
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#1-additional-commands-unused">1, Additional Commands (unused)</a></li>
+<li><a href="#2-match-search-one-expression-one-search">2, match &amp; search &ndash; One Expression, One Search</a><ul>
+<li><a href="#recap">Recap:</a></li>
+</ul>
+</li>
+<li><a href="#3-escape-characters-comprenhensive-search">3, Escape Characters &ndash; Comprenhensive Search</a><ul>
+<li><a href="#recap_1">Recap:</a></li>
+</ul>
+</li>
+<li><a href="#4-repetitions-power-search">4, Repetitions &ndash; Power Search</a><ul>
+<li><a href="#recap_2">Recap:</a></li>
+</ul>
+</li>
+<li><a href="#5-sets-target-search">5, Sets &ndash; Target Search</a><ul>
+<li><a href="#recap_3">Recap:</a></li>
+</ul>
+</li>
+<li><a href="#6-boundaries-smart-search">6, Boundaries &ndash; Smart Search</a><ul>
+<li><a href="#recap_4">Recap:</a></li>
+</ul>
+</li>
+<li><a href="#7-groups-subdivided-search">7, Groups &ndash; Subdivided Search</a><ul>
+<li><a href="#recap_5">Recap:</a></li>
+</ul>
+</li>
+<li><a href="#8-compile-build-dictionaries-operationalized-search">8, Compile &amp; Build Dictionaries &ndash; Operationalized Search</a><ul>
+<li><a href="#recap_6">Recap:</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <hr />
+<p><strong>Foreword</strong></p>
+<p>Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Contrary to Windows, UNIX-based OS easily process international characters. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
 <ul>
-<li>Regular expressions or natural language processing &ndash; NLP.</li>
 <li>Check out &lsquo;Managing Your Biological Data with Python, Chapter 9, Pattern Matching and Text Mining&rsquo;.</li>
 <li><a href="http://www.regexplanet.com/advanced/java/index.html">Test</a>.</li>
-<li>Find cheat sheets online.</li>
 </ul>
-<p>Expressions not used, but nice to know:</p>
+<hr />
+<h4 id="1-additional-commands-unused">1, Additional Commands (unused)<a class="headerlink" href="#1-additional-commands-unused" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>span</code>, return a tuple containing the start, end positions of the match.</li>
 <li><code>start</code>, return the starting position of the match.</li>
@@ -260,7 +318,7 @@
 <li><code>subn(r, s)</code>, do the same thing, but return the new string and the number of replacements</li>
 <li><code>IGNORECASE</code>, <code>I</code>, case-insensitive matches.</li>
 </ul>
-<h4 id="match-search"><code>match</code> &amp; <code>search</code><a class="headerlink" href="#match-search" title="Permanent link">&para;</a></h4>
+<h4 id="2-match-search-one-expression-one-search">2, <code>match</code> &amp; <code>search</code> &ndash; One Expression, One Search<a class="headerlink" href="#2-match-search-one-expression-one-search" title="Permanent link">&para;</a></h4>
 <p>First, we have a text file called names.txt.</p>
 <pre><code class="text">Liff, Kenneth   kenneth@submarine.com   (555) 555-5555  Teacher, Submarine  @kennethliff
 McFarland, Arthur   arty@submarine.com  (555) 555-5555  Teacher, Submarine
@@ -296,7 +354,7 @@ print re.search(r'Arthur', data).group() # search in the strings
 &lt;_sre.SRE_Match object at 0x00000000021DB510&gt;
 </code></pre>
 
-<p>Results may vary in UNIX-type OS. We might get.</p>
+<p>Results may vary in UNIX-type OS. In Linux, we get.</p>
 <pre><code class="text">&lt;_sre.SRE_Match object; span=(0, 8), match='McFarland'&gt;
 &lt;_sre.SRE_Match object; span=(10, 15), match='Arthur'&gt;
 </code></pre>
@@ -338,12 +396,12 @@ print re.search(last_name, data).group() # CHANGE
 print re.search(first_name, data).group() # CHANGE
 </code></pre>
 
-<p><strong>Recap:</strong></p>
+<h5 id="recap">Recap:<a class="headerlink" href="#recap" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
 </ul>
-<h4 id="escape-characters">Escape Characters<a class="headerlink" href="#escape-characters" title="Permanent link">&para;</a></h4>
+<h4 id="3-escape-characters-comprenhensive-search">3, Escape Characters &ndash; Comprenhensive Search<a class="headerlink" href="#3-escape-characters-comprenhensive-search" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>\w</code>, match any Unicode word character.</li>
 <li><code>\W</code>, match anything that isn&rsquo;t a Unicode word character.</li>
@@ -371,7 +429,7 @@ print re.match(r'\w, \w', data) # CHANGE
 <pre><code class="text">None
 </code></pre>
 
-<p>We get <code>None</code> because of <code>re.match</code>. Try.</p>
+<p>We get <code>None</code> because of <code>re.match</code>. Instead, try.</p>
 <pre><code class="python">import re
 
 # read the file
@@ -407,13 +465,13 @@ print re.search(r'\(\d\d\d\) \d\d\d-\d\d\d\d', data).group() # CHANGE
 <pre><code class="text">(555) 555-5555
 </code></pre>
 
-<p><strong>Recap:</strong></p>
+<h5 id="recap_1">Recap:<a class="headerlink" href="#recap_1" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
-<li>Escape characters.</li>
+<li>Escape characters (see above).</li>
 </ul>
-<h4 id="repetitions">Repetitions<a class="headerlink" href="#repetitions" title="Permanent link">&para;</a></h4>
+<h4 id="4-repetitions-power-search">4, Repetitions &ndash; Power Search<a class="headerlink" href="#4-repetitions-power-search" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>{3}</code>, repeat 3 times.</li>
 <li><code>{,3}</code>, repeat 0 to 3 times.</li>
@@ -496,15 +554,15 @@ print re.findall(r'\w*, \w+', data)  # CHANGE: findall
 <pre><code class="text">['Liff, Kenneth', 'Teacher, Submarine', 'McFarland, Arthur', 'Teacher, Submarine', 'Arthur, King', 'King, Camelot', 'sterberg, Gustav', 'Governor, Norrbotten', ', Tim', 'Enchanter, Killer', 'Carson, Ryan', 'CEO, Submarine', 'Lord, Gallifrey', 'Exampleson, Exampleme', 'Obama, Barack', 'President, United', 'Chalks, Andrew', 'Teacher, Submarine', 'Vader, Darth', 'lord, Galactic']
 </code></pre>
 
-<p><strong>Recap:</strong></p>
+<h5 id="recap_2">Recap:<a class="headerlink" href="#recap_2" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
-<li>Escape characters.</li>
-<li>Repetitions.</li>
+<li>Escape characters (previous section).</li>
+<li>Repetitions (see above).</li>
 <li><code>findall</code>.</li>
 </ul>
-<h4 id="sets">Sets<a class="headerlink" href="#sets" title="Permanent link">&para;</a></h4>
+<h4 id="5-sets-target-search">5, Sets &ndash; Target Search<a class="headerlink" href="#5-sets-target-search" title="Permanent link">&para;</a></h4>
 <p>Catch patterns. We only need unique characters even when a word contains repetitive characters.</p>
 <ul>
 <li><code>[aple]</code>, search for &lsquo;apple&rsquo;.</li>
@@ -531,7 +589,7 @@ print re.findall(r'[-\w\d+.]+@[-\w\d.]+', data) # CHANGE
 <pre><code class="text">['kenneth@submarine.com', 'arty@submarine.com', 'king_arthur@camelot.co.uk', 'governor@norrbotten.co.se', 'tim@killerrabbit.com', 'ryan@submarine.com', 'doctor+companion@tardis.co.uk', 'me@example.com', 'president.44@us.gov', 'andrew@submarine.com', 'darth-vader@empire.gov']
 </code></pre>
 
-<p>Retrieve &lsquo;submarine&rsquo;. All character are unique. The set should be &lsquo;submarine&rsquo;.</p>
+<p>Retrieve &lsquo;submarine&rsquo;. All characters are unique. The set should be &lsquo;submarine&rsquo;.</p>
 <pre><code class="python">import re
 
 # read the file
@@ -568,18 +626,18 @@ print re.findall(r'\b[submarine]{9}\b', data, re.IGNORECASE) # CHANGE
 <pre><code class="text">['submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine']
 </code></pre>
 
-<p><strong>Recap:</strong></p>
+<h5 id="recap_3">Recap:<a class="headerlink" href="#recap_3" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
-<li>Escape characters.</li>
-<li>Repetitions.</li>
+<li>Escape characters (previous section).</li>
+<li>Repetitions (previous section).</li>
 <li><code>findall</code>.<ul>
 <li><code>re.IGNORECASE</code>.</li>
 </ul>
 </li>
 </ul>
-<h4 id="boundaries">Boundaries<a class="headerlink" href="#boundaries" title="Permanent link">&para;</a></h4>
+<h4 id="6-boundaries-smart-search">6, Boundaries &ndash; Smart Search<a class="headerlink" href="#6-boundaries-smart-search" title="Permanent link">&para;</a></h4>
 <ul>
 <li><code>'''</code>, add a multiline string.</li>
 <li><code>\b@</code>, word boundary <code>@</code>.</li>
@@ -635,12 +693,12 @@ print re.findall(r'''
 </code></pre>
 
 <p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
-<p><strong>Recap:</strong></p>
+<h5 id="recap_4">Recap:<a class="headerlink" href="#recap_4" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
-<li>Escape characters.</li>
-<li>Repetitions.</li>
+<li>Escape characters (previous section).</li>
+<li>Repetitions (previous section).</li>
 <li><code>findall</code>.<ul>
 <li><code>re.IGNORECASE</code>.</li>
 <li><code>re.VERBOSE|re.I</code>, more readable, introduce whitespaces or comments.</li>
@@ -648,7 +706,7 @@ print re.findall(r'''
 </ul>
 </li>
 </ul>
-<h4 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link">&para;</a></h4>
+<h4 id="7-groups-subdivided-search">7, Groups &ndash; Subdivided Search<a class="headerlink" href="#7-groups-subdivided-search" title="Permanent link">&para;</a></h4>
 <ul>
 <li>last and first names.</li>
 <li>emails.</li>
@@ -747,12 +805,12 @@ print line.groupdict()...
 {'phone': '(555) 555-5555', 'job': 'Teacher, Submarine', 'name': 'McFarland, Arthur', 'twitter': None, 'email': 'arty@submarine.com'}
 </code></pre>
 
-<p><strong>Recap:</strong></p>
+<h5 id="recap_5">Recap:<a class="headerlink" href="#recap_5" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
-<li>Escape characters.</li>
-<li>Repetitions.</li>
+<li>Escape characters (previous section).</li>
+<li>Repetitions (previous section).</li>
 <li><code>findall</code>.<ul>
 <li><code>re.IGNORECASE</code>.</li>
 <li><code>re.VERBOSE|re.I</code>.</li>
@@ -761,7 +819,7 @@ print line.groupdict()...
 </ul>
 </li>
 </ul>
-<h4 id="compile-build-dictionaries">Compile &amp; Build Dictionaries<a class="headerlink" href="#compile-build-dictionaries" title="Permanent link">&para;</a></h4>
+<h4 id="8-compile-build-dictionaries-operationalized-search">8, Compile &amp; Build Dictionaries &ndash; Operationalized Search<a class="headerlink" href="#8-compile-build-dictionaries-operationalized-search" title="Permanent link">&para;</a></h4>
 <p>Compile a pattern into an object. Replace <code>findall</code> or <code>search</code> with <code>compile</code>. Remove <code>data</code> to make a generic function to process any data.</p>
 <pre><code class="python">import re
 
@@ -879,12 +937,12 @@ Darth Vader &lt;darth-vader@empire.gov&gt;
 </code></pre>
 
 <p>The only problem: it did not catch <code>Ö</code> and <code>, Tim</code>. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.</p>
-<p><strong>Recap:</strong></p>
+<h5 id="recap_6">Recap:<a class="headerlink" href="#recap_6" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>match</code>.</li>
 <li><code>search</code>.</li>
-<li>Escape characters.</li>
-<li>Repetitions.</li>
+<li>Escape characters (previous section).</li>
+<li>Repetitions (previous section).</li>
 <li><code>findall</code>.<ul>
 <li><code>re.IGNORECASE</code>.</li>
 <li><code>re.VERBOSE|re.I</code>.</li>

@@ -1,14 +1,14 @@
-# Tidy Data and Messy Data
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes. Python 3.
 
------
-
-[TOC]
-
------
+---
 
 It is often said that data scientists spend only 20% of their time analyzing their data, and 80% of time cleaning it. Indeed, maintaining a tidy, easy-to-use dataset is crucial in our age of big data. In the paper Tidy Data, veteran statistician Hadley Wickham gives definitions of tidy and messy data so that all data scientists can keep their work organized. 
 

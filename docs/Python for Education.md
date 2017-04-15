@@ -1,14 +1,14 @@
-# Python for Education
+---
+
+[TOC]
+
+---
 
 **Foreword**
 
 Notes and code snippets. IPython 2 & 3. From Inter University Accelerator Centre, 2010. Creative Commons.
 
------
-
-[TOC]
-
------
+---
 
 ## 2, Programming in Python
 
