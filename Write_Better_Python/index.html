@@ -318,7 +318,7 @@ print Submarine().two() # class.method
 <p><strong><code>flake8</code></strong></p>
 <ul>
 <li>Install <code>flake8</code> with pip.</li>
-<li>Run a script with <code>flake8</code>: <code>python flake8 script.py</code>. </li>
+<li>Run a script with <code>flake8</code>: <code>python flake8 &lt;script.py&gt;</code>. </li>
 <li>Instead of running the code, <code>flake8</code> runs a diagnosis and returns the results. </li>
 <li>The results suggest improvement to the look of the script. </li>
 <li>It shows a list: the line number, the character positions, and the improvement. We can then go back to the script, improve it and rerun <code>flake8</code>.</li>
@@ -331,8 +331,8 @@ print Submarine().two() # class.method
 <p><code>pylint</code> runs a diagnosis and returns a report about the script.</p>
 <h4 id="4-help-docstrings">4, Help &amp; Docstrings<a class="headerlink" href="#4-help-docstrings" title="Permanent link">&para;</a></h4>
 <ul>
-<li>In the shell, for any command &lsquo;cmd&rsquo;, type <code>help(cmd)</code> to get a definition.</li>
-<li>Type <code>dir(cmd)</code> to get the attributes from the Python glossary.</li>
+<li>In the shell, for any command &lsquo;<cmd>&lsquo;, type <code>help(&lt;cmd&gt;)</code> to get a definition.</li>
+<li>Type <code>dir(&lt;cmd&gt;)</code> to get the attributes from the Python glossary.</li>
 <li>A docstrings is an enhancement to the <code>help</code> glossary.</li>
 </ul>
 <p>Without docstrings.</p>
@@ -392,7 +392,7 @@ del my_list[6] # ADD
 print my_list
 </code></pre>
 
-<p>Instead, use the Python debugger: <code>pdb</code> and <code>set_trace()</code> in the code.</p>
+<p>Instead, use the Python debugger: <code>pdb.set_trace()</code> in the code.</p>
 <pre><code class="python">import pdb # ADD
 
 
