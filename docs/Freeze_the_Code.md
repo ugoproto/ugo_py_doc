@@ -141,7 +141,7 @@ python setup.py bdist_dmg
 ```
 
 - Under the project folder, the bin folder contains the main .py file to be launched; this file relies on other files in its own folders or in the other folders.
-- The setup.py and project folders (bin, map, …) are located in C:\PythonXX\
+- The setup.py and project folders (bin, map, ...) are located in C:\PythonXX\
 - Create a `setup.py`.
     - Find out more in the doc.
 - Simple setup (or a more elaborate setup).
@@ -240,7 +240,7 @@ pyinstaller -F -i "favicon.ico" hello.py
 
 - Under the project folder, the bin folder contains the main .py file to be launched; this file relies on other files in its own folders or in the other folders.
 
-- The setup.py and project folders (bin, map, …) are located in C:\PythonXX\
+- The setup.py and project folders (bin, map, ...) are located in C:\PythonXX\
 
 - Build the single executable file.
 

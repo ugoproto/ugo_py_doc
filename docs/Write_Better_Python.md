@@ -109,7 +109,7 @@ The modules can be integrated with IDE and text editors (VIM, Emacs, gedit, Note
 **`flake8`**
 
 - Install `flake8` with pip.
-- Run a script with `flake8`: `python flake8 script.py`. 
+- Run a script with `flake8`: `python flake8 <script.py>`. 
 - Instead of running the code, `flake8` runs a diagnosis and returns the results. 
 - The results suggest improvement to the look of the script. 
 - It shows a list: the line number, the character positions, and the improvement. We can then go back to the script, improve it and rerun `flake8`.
@@ -123,8 +123,8 @@ The modules can be integrated with IDE and text editors (VIM, Emacs, gedit, Note
 
 ## 4, Help & Docstrings
 
-- In the shell, for any command 'cmd', type `help(cmd)` to get a definition.
-- Type `dir(cmd)` to get the attributes from the Python glossary.
+- In the shell, for any command '<cmd>', type `help(<cmd>)` to get a definition.
+- Type `dir(<cmd>)` to get the attributes from the Python glossary.
 - A docstrings is an enhancement to the `help` glossary.
 
 Without docstrings.
@@ -191,7 +191,7 @@ del my_list[6] # ADD
 print my_list
 ```
 
-Instead, use the Python debugger: `pdb` and `set_trace()` in the code.
+Instead, use the Python debugger: `pdb.set_trace()` in the code.
 
 ```python
 import pdb # ADD

@@ -78,25 +78,25 @@ Windows vs. UNIX (Linux or Mac OS X).
 **Launch a script**
 
 - In Windows, Python 2:
-    - `python script.py`
-    - `py script.py`
-    - `py -2 script.py`
-    - `py -2.7 script.py`
+    - `python <script.py>`
+    - `py <script.py>`
+    - `py -2 <script.py>`
+    - `py -2.7 <script.py>`
 - In UNIX, Python 2:
-    - `python script.py`
+    - `python <script.py>`
 - In Windows, Python 3:
-    - `py -3 script.py`
-    - `py -3.5 script.py`
+    - `py -3 <script.py>`
+    - `py -3.5 <script.py>`
 - In UNIX, Python 3:
-    - `python3 script.py`
+    - `python3 <script.py>`
 
-In UNIX-based OS, with a shebang, once the script is created, we can go in the folder and enter `chmod +x script.py` to change the properties. Now, we can launch a script with `./script.py`.
+In UNIX-based OS, with a shebang, once the script is created, we can go in the folder and enter `chmod +x <script.py>` to change the properties. Now, we can launch a script with `./<script.py>`.
 
 **Launch a module**
 
 - Sometimes, launching Python modules cannot be done directly with `pip install <script>` for example.
 - In Windows (examples):
-    - `py -2 -m pip install <script>` if `pip install script` does not work.
+    - `py -2 -m pip install <script>` if `pip install <script>` does not work.
     - `py -2 -m pip install flake8`.
     - `py -2 -m pip install pylint`.    
     
