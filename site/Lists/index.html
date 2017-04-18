@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Lists - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Lists";
+    var mkdocs_page_input_path = "Lists.md";
+    var mkdocs_page_url = "/Lists/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Lists</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#iterable">Iterable</a></li>
+    
+
+    <li class="toctree-l3"><a href="#lists-versus-tuples">Lists Versus tuples</a></li>
+    
+
+    <li class="toctree-l3"><a href="#lists-versus-sets">Lists Versus sets</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#frozensets">Frozensets</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#lists-versus-dictionaries">Lists Versus dictionaries</a></li>
+    
+
+    <li class="toctree-l3"><a href="#hashable-or-not">Hashable or Not</a></li>
+    
+
+    <li class="toctree-l3"><a href="#2-snippets">2, Snippets</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#select-an-element-from-a-list">Select an element from a list</a></li>
+        
+            <li><a class="toctree-l4" href="#select-the-last-element">Select the last element</a></li>
+        
+            <li><a class="toctree-l4" href="#out-of-range-error">Out of range error</a></li>
+        
+            <li><a class="toctree-l4" href="#slice">Slice</a></li>
+        
+            <li><a class="toctree-l4" href="#random">Random</a></li>
+        
+            <li><a class="toctree-l4" href="#convert-a-list-to-a-string-with-join">Convert a list to a string with join()</a></li>
+        
+            <li><a class="toctree-l4" href="#convert-a-list-to-a-tuple-with-tuple">Convert a list to a tuple with tuple()</a></li>
+        
+            <li><a class="toctree-l4" href="#convert-a-list-to-a-set-with-set">Convert a list to a set with set()</a></li>
+        
+            <li><a class="toctree-l4" href="#convert-a-list-to-a-dictionary-with-zip">Convert a list to a dictionary with zip()</a></li>
+        
+            <li><a class="toctree-l4" href="#size-of-your-list-with-len">Size of your list with len()</a></li>
+        
+            <li><a class="toctree-l4" href="#append-and-extend">append() and extend()</a></li>
+        
+            <li><a class="toctree-l4" href="#concatenate-lists">Concatenate lists</a></li>
+        
+            <li><a class="toctree-l4" href="#sort-a-list">Sort a list</a></li>
+        
+            <li><a class="toctree-l4" href="#copy-a-list-3-ways">Copy a List (3 ways):</a></li>
+        
+            <li><a class="toctree-l4" href="#list-comprehension">List comprehension</a></li>
+        
+            <li><a class="toctree-l4" href="#dictionary-comprehension-also">Dictionary comprehension also...</a></li>
+        
+            <li><a class="toctree-l4" href="#counting-the-occurrences-of-one-item-in-a-list">Counting the occurrences of one item in a list</a></li>
+        
+            <li><a class="toctree-l4" href="#counting-all-items-in-a-list-with-count">Counting all items in a list with count()</a></li>
+        
+            <li><a class="toctree-l4" href="#counting-all-items-in-a-list-with-counter-from-the-collections-library">Counting all items in a list with Counter() from the collections library</a></li>
+        
+            <li><a class="toctree-l4" href="#split-a-python-list-into-evenly-sized-chunks">Split A Python List Into Evenly Sized Chunks</a></li>
+        
+            <li><a class="toctree-l4" href="#loop-over-a-list">Loop over a list</a></li>
+        
+            <li><a class="toctree-l4" href="#create-flat-lists-out-of-lists">Create flat lists out of lists</a></li>
+        
+            <li><a class="toctree-l4" href="#get-an-intersection-of-two-python-lists">Get an intersection of two Python lists</a></li>
+        
+            <li><a class="toctree-l4" href="#remove-duplicates-from-a-list">Remove duplicates from a list</a></li>
+        
+            <li><a class="toctree-l4" href="#create-empty-numpy-arrays">Create Empty NumPy Arrays</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#do-math-with-lists-wt-avg">Do math with lists (wt avg)</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#do-math-with-lists-quantiles">Do math with lists (quantiles)</a></li>
+        
+            <li><a class="toctree-l4" href="#do-math-with-lists-sum">Do math with lists (sum)</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20for%20Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Lists</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#1-notes">1, Notes</a><ul>
+<li><a href="#iterable">Iterable</a></li>
+<li><a href="#lists-versus-tuples">Lists Versus tuples</a></li>
+<li><a href="#lists-versus-sets">Lists Versus sets</a><ul>
+<li><a href="#frozensets">Frozensets</a></li>
+</ul>
+</li>
+<li><a href="#lists-versus-dictionaries">Lists Versus dictionaries</a></li>
+<li><a href="#hashable-or-not">Hashable or Not</a></li>
+</ul>
+</li>
+<li><a href="#2-snippets">2, Snippets</a><ul>
+<li><a href="#select-an-element-from-a-list">Select an element from a list</a></li>
+<li><a href="#select-the-last-element">Select the last element</a></li>
+<li><a href="#out-of-range-error">Out of range error</a></li>
+<li><a href="#slice">Slice</a></li>
+<li><a href="#random">Random</a></li>
+<li><a href="#convert-a-list-to-a-string-with-join">Convert a list to a string with join()</a></li>
+<li><a href="#convert-a-list-to-a-tuple-with-tuple">Convert a list to a tuple with tuple()</a></li>
+<li><a href="#convert-a-list-to-a-set-with-set">Convert a list to a set with set()</a></li>
+<li><a href="#convert-a-list-to-a-dictionary-with-zip">Convert a list to a dictionary with zip()</a></li>
+<li><a href="#size-of-your-list-with-len">Size of your list with len()</a></li>
+<li><a href="#append-and-extend">append() and extend()</a></li>
+<li><a href="#concatenate-lists">Concatenate lists</a></li>
+<li><a href="#sort-a-list">Sort a list</a></li>
+<li><a href="#copy-a-list-3-ways">Copy a List (3 ways):</a></li>
+<li><a href="#list-comprehension">List comprehension</a></li>
+<li><a href="#dictionary-comprehension-also">Dictionary comprehension also&hellip;</a></li>
+<li><a href="#counting-the-occurrences-of-one-item-in-a-list">Counting the occurrences of one item in a list</a></li>
+<li><a href="#counting-all-items-in-a-list-with-count">Counting all items in a list with count()</a></li>
+<li><a href="#counting-all-items-in-a-list-with-counter-from-the-collections-library">Counting all items in a list with Counter() from the collections library</a></li>
+<li><a href="#split-a-python-list-into-evenly-sized-chunks">Split A Python List Into Evenly Sized Chunks</a></li>
+<li><a href="#loop-over-a-list">Loop over a list</a></li>
+<li><a href="#create-flat-lists-out-of-lists">Create flat lists out of lists</a></li>
+<li><a href="#get-an-intersection-of-two-python-lists">Get an intersection of two Python lists</a></li>
+<li><a href="#remove-duplicates-from-a-list">Remove duplicates from a list</a></li>
+<li><a href="#create-empty-numpy-arrays">Create Empty NumPy Arrays</a></li>
+</ul>
+</li>
+<li><a href="#do-math-with-lists-wt-avg">Do math with lists (wt avg)</a><ul>
+<li><a href="#do-math-with-lists-quantiles">Do math with lists (quantiles)</a></li>
+<li><a href="#do-math-with-lists-sum">Do math with lists (sum)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Notes and snippets. Python 3.</p>
+<hr />
+<h4 id="1-notes">1, Notes<a class="headerlink" href="#1-notes" title="Permanent link">&para;</a></h4>
+<p><code>list_zoo = ['bear', 'lion', 'panda', 'zebra']</code></p>
+<ul>
+<li>Lists in Python store ordered collections of items or objects, we can say that they are sequence types.</li>
+</ul>
+<h5 id="iterable">Iterable<a class="headerlink" href="#iterable" title="Permanent link">&para;</a></h5>
+<ul>
+<li>The program can iterate over them.</li>
+<li>Lists, strings, tuples, and sets are called “iterables”.</li>
+</ul>
+<h5 id="lists-versus-tuples">Lists Versus tuples<a class="headerlink" href="#lists-versus-tuples" title="Permanent link">&para;</a></h5>
+<p><code>tup_course = ('physics', 'chemistry', 1997, 2000)</code></p>
+<ul>
+<li>You can’t add elements to a tuple. There’s no <code>append()</code> or <code>extend()</code> method for tuples,</li>
+<li>You can’t remove elements from a tuple. Tuples have no <code>remove()</code> or <code>pop()</code> method,</li>
+<li>You can find elements in a tuple since this doesn’t change the tuple.</li>
+<li>You can also use the in operator to check if an element exists in the tuple.</li>
+<li>If you’re defining a constant set of values, use a tuple instead of a list. It will be faster and safer.</li>
+</ul>
+<h5 id="lists-versus-sets">Lists Versus sets<a class="headerlink" href="#lists-versus-sets" title="Permanent link">&para;</a></h5>
+<p><code>set_code = set{"Perl", "Python", "Java"}</code></p>
+<ul>
+<li>Just like dictionaries, sets have no order in their collection of items. Not like lists.</li>
+<li>Set requires the items contained in it to be hashable, lists store non-hashable items.</li>
+<li>Sets require your items to be unique and immutable. Duplicates are not allowed in sets, while lists allow for duplicates and are mutable.</li>
+<li>Use sets when you have an unordered set of UNIQUE, immutable values that are hashable.</li>
+</ul>
+<h6 id="frozensets">Frozensets<a class="headerlink" href="#frozensets" title="Permanent link">&para;</a></h6>
+<p><code>set_cities = frozenset{"Frankfurt", "Basel","Freiburg"}</code></p>
+<ul>
+<li>Frozensets are like sets except that they cannot be changed, i.e. they are immutable.</li>
+</ul>
+<h5 id="lists-versus-dictionaries">Lists Versus dictionaries<a class="headerlink" href="#lists-versus-dictionaries" title="Permanent link">&para;</a></h5>
+<p><code>dict_kid = {'Name': 'Zara', 'Age': 7, 'Class': 'First'</code></p>
+<ul>
+<li>A list stores an ordered collection of items, so it keeps some order. Dictionaries don’t have any order.</li>
+<li>Dictionaries are known to associate each key with a value, while lists just contain values.</li>
+<li>Use a dictionary when you have an unordered set of unique keys that map to values.</li>
+</ul>
+<h5 id="hashable-or-not">Hashable or Not<a class="headerlink" href="#hashable-or-not" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Hashable: float, integer, tuple, string.</li>
+<li>Not: dictionary, set, list.</li>
+</ul>
+<h4 id="2-snippets">2, Snippets<a class="headerlink" href="#2-snippets" title="Permanent link">&para;</a></h4>
+<h5 id="select-an-element-from-a-list">Select an element from a list<a class="headerlink" href="#select-an-element-from-a-list" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># These list elements are all of the same type
+zoo = ['bear', 'lion', 'panda', 'zebra']
+print(zoo)
+</code></pre>
+
+<pre><code>['bear', 'lion', 'panda', 'zebra']
+</code></pre>
+<pre><code class="python"># But these list elements are not
+biggerZoo = ['bear', 'lion', 'panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+print(biggerZoo)
+</code></pre>
+
+<pre><code>['bear', 'lion', 'panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+</code></pre>
+<pre><code class="python"># Select the first list element
+oneZooAnimal = biggerZoo[0]
+
+# Print oneZooAnimal
+print(oneZooAnimal)
+print(biggerZoo[0])
+</code></pre>
+
+<pre><code>bear
+bear
+</code></pre>
+<h5 id="select-the-last-element">Select the last element<a class="headerlink" href="#select-the-last-element" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Pass -1 to the index operator on `biggerZoo`
+monkeys = biggerZoo[-1]
+print(monkeys)
+
+# Pass -2 to the index operator on `biggerZoo`
+zebra = biggerZoo[-2]
+print(zebra)
+</code></pre>
+
+<pre><code>['chimpanzees', 'gorillas', 'orangutans', 'gibbons']
+zebra
+</code></pre>
+<h5 id="out-of-range-error">Out of range error<a class="headerlink" href="#out-of-range-error" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Run this code to trigger an &quot;Index Out Of Range&quot; Error
+print(&quot;print(biggerZoo[6])&quot;)
+</code></pre>
+
+<pre><code>print(biggerZoo[6])
+</code></pre>
+<h5 id="slice">Slice<a class="headerlink" href="#slice" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Print all
+print(biggerZoo)
+
+# Print a[start: ]
+someZooAnimals = biggerZoo[2: ]
+
+# Print to see what you exactly select from `biggerZoo`
+print(someZooAnimals)
+
+# Print a[ :end]
+otherZooAnimals = biggerZoo[ :2]
+
+# Print to see what you're getting back
+print(otherZooAnimals)
+
+# Print a[start:end]
+print(biggerZoo[2:4])
+
+# Print a[start:end:step]
+print(biggerZoo[2::4])
+print(biggerZoo[2::2])
+print(biggerZoo[2::1])
+</code></pre>
+
+<pre><code>['bear', 'lion', 'panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+['panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+['bear', 'lion']
+['panda', 'zebra']
+['panda']
+['panda', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+['panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+</code></pre>
+<h5 id="random">Random<a class="headerlink" href="#random" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Import `choice` from the `random` library
+from random import choice
+
+# Construct your `list` variable with a list of the first 4 letters of the alphabet
+list1 = ['a','b','c','d']
+
+# Print your random 'list' element
+print(choice(list1))
+print(choice(list1))
+
+# Import `randrange` from the `random` library
+from random import randrange
+
+# Construct your `randomLetters` variable with a list of the first 4 letters of the alphabet
+randomLetters = ['e','f', 'g', 'h']
+
+# Select a random index from 'randomLetters`
+randomIndex = randrange(0,len(randomLetters))
+
+# Print your random element from `random`
+print(randomLetters[randomIndex])
+</code></pre>
+
+<pre><code>c
+c
+g
+</code></pre>
+<h5 id="convert-a-list-to-a-string-with-join">Convert a list to a string with <code>join()</code><a class="headerlink" href="#convert-a-list-to-a-string-with-join" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># List of Strings to a String
+listOfStrings = ['One', 'Two', 'Three']
+strOfStrings = ''.join(listOfStrings)
+print(strOfStrings)
+
+# List Of Integers to a String
+listOfNumbers = [1, 2, 3]
+strOfNumbers = ''.join(str(n) for n in listOfNumbers)
+print(strOfNumbers)
+</code></pre>
+
+<pre><code>OneTwoThree
+123
+</code></pre>
+<h5 id="convert-a-list-to-a-tuple-with-tuple">Convert a list to a tuple with <code>tuple()</code><a class="headerlink" href="#convert-a-list-to-a-tuple-with-tuple" title="Permanent link">&para;</a></h5>
+<pre><code class="python">listOfStrings = ['One', 'Two', 'Three']
+tupOfStrings = tuple(listOfStrings)
+print(tupOfStrings)
+</code></pre>
+
+<pre><code>('One', 'Two', 'Three')
+</code></pre>
+<h5 id="convert-a-list-to-a-set-with-set">Convert a list to a set with <code>set()</code><a class="headerlink" href="#convert-a-list-to-a-set-with-set" title="Permanent link">&para;</a></h5>
+<pre><code class="python">listOfStrings = ['One', 'Two', 'Three']
+setOfStrings = set(listOfStrings)
+print(setOfStrings)
+</code></pre>
+
+<pre><code>{'One', 'Three', 'Two'}
+</code></pre>
+<h5 id="convert-a-list-to-a-dictionary-with-zip">Convert a list to a dictionary with <code>zip()</code><a class="headerlink" href="#convert-a-list-to-a-dictionary-with-zip" title="Permanent link">&para;</a></h5>
+<pre><code class="python">helloWorld = ['hello','world','1','2']
+
+# Convert to a dictionary
+# 1 will be interpreted as a key and 2 as a value
+helloWorldDictionary = dict(zip(helloWorld[0::2], helloWorld[1::2]))
+
+# Print out the result
+print(helloWorldDictionary)
+
+a = [1, 2, 3, 4, 5]
+
+# Create a list iterator object
+i = iter(a)
+
+# Zip and create a dictionary
+print(dict(zip(i, i)))
+</code></pre>
+
+<pre><code>{'hello': 'world', '1': '2'}
+{1: 2, 3: 4}
+</code></pre>
+<h5 id="size-of-your-list-with-len">Size of your list with <code>len()</code><a class="headerlink" href="#size-of-your-list-with-len" title="Permanent link">&para;</a></h5>
+<pre><code class="python">print(biggerZoo)
+
+# Pass `justAList` to `len()`
+print(len(biggerZoo))
+</code></pre>
+
+<pre><code>['bear', 'lion', 'panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
+5
+</code></pre>
+<h5 id="append-and-extend"><code>append()</code> and <code>extend()</code><a class="headerlink" href="#append-and-extend" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># This is your list
+list1 = [5, 6, 7, 8, 9]
+print(list1)
+
+# Check whether it's iterable
+print(list1.__iter__)
+
+shortList = [5, 6, 7, 8, 9]
+print(shortList)
+
+# Append [4,5] to `shortList`
+shortList.append([4, 5])
+
+# Use the print() method to show shortList
+print(shortList)
+
+longerList = [5, 6, 7, 8, 9]
+print(longerList)
+
+# Extend `longerList` with [4,5]
+longerList.extend([4, 5])
+
+# Use the print() method to see longerList
+print(longerList)
+</code></pre>
+
+<pre><code>[5, 6, 7, 8, 9]
+&lt;method-wrapper '__iter__' of list object at 0x7ff7a7d2dd88&gt;
+[5, 6, 7, 8, 9]
+[5, 6, 7, 8, 9, [4, 5]]
+[5, 6, 7, 8, 9]
+[5, 6, 7, 8, 9, 4, 5]
+</code></pre>
+<h5 id="concatenate-lists">Concatenate lists<a class="headerlink" href="#concatenate-lists" title="Permanent link">&para;</a></h5>
+<pre><code class="python">shortList = [5, 6, 7, 8, 9]
+print(shortList)
+
+# Concatenate `shortList` with `[4,5]`
+plusList = shortList + [4,5]
+</code></pre>
+
+<pre><code>[5, 6, 7, 8, 9]
+</code></pre>
+<h5 id="sort-a-list">Sort a list<a class="headerlink" href="#sort-a-list" title="Permanent link">&para;</a></h5>
+<pre><code class="python">zoo = ['zebra', 'bear', 'lion', 'panda']
+print(zoo)
+
+# Use sort() on the rooms list
+zoo.sort() # lists only
+print(zoo)
+
+zoo = ['zebra', 'bear', 'lion', 'panda']
+print(zoo)
+
+# Now use the sorted() function on orders
+print(sorted(zoo)) # lists, strings, sets, dictionaries
+</code></pre>
+
+<pre><code>['zebra', 'bear', 'lion', 'panda']
+['bear', 'lion', 'panda', 'zebra']
+['zebra', 'bear', 'lion', 'panda']
+['bear', 'lion', 'panda', 'zebra']
+</code></pre>
+<h5 id="copy-a-list-3-ways">Copy a List (3 ways):<a class="headerlink" href="#copy-a-list-3-ways" title="Permanent link">&para;</a></h5>
+<pre><code class="python">zoo = ['zebra', 'bear', 'lion', 'panda']
+print(zoo)
+
+# Copy the grocery list by slicing and store it in the `newGroceries` variable
+newZoo = zoo[:]
+print(newZoo)
+
+# Import the copy library as c
+import copy as c
+
+# Create a `groceriesForFamily` variable and assign the copied grocery list to it
+zooForFamily =  c.copy(zoo)
+print(zooForFamily)
+
+# Use `deepcopy()` and assign the copied list to a `groceriesForKids` variable
+zooForKids= c.deepcopy(zoo)
+print(zooForKids)
+</code></pre>
+
+<pre><code>['zebra', 'bear', 'lion', 'panda']
+['zebra', 'bear', 'lion', 'panda']
+['zebra', 'bear', 'lion', 'panda']
+['zebra', 'bear', 'lion', 'panda']
+</code></pre>
+<p>When you use the ‘simple’ copy methods, your original lists will be modified. However, if you use the <code>deepcopy()</code> method, it will be prevented.</p>
+<pre><code class="python"># This is your list
+objectList = ['a','b',['ab','ba']]
+print(objectList)
+
+# Copy the `objectList`
+copiedList = objectList[:]
+
+# Change the first list element of `copiedList`
+copiedList[0] = 'c'
+
+# Go to the third element (the nested list) and change the second element
+copiedList[2][1] = 'd'
+
+# Print out the original list to see what happened to it
+print(objectList); print(copiedList)
+print(&quot;Both lists are equal.&quot;)
+</code></pre>
+
+<pre><code>['a', 'b', ['ab', 'ba']]
+['a', 'b', ['ab', 'd']]
+['c', 'b', ['ab', 'd']]
+Both lists are equal.
+</code></pre>
+<pre><code class="python"># 2, this is your list
+objectList = ['a','b',['ab','ba']]
+print(objectList)
+
+# Copy the `objectList`
+import copy as c
+copiedList2 = c.deepcopy(objectList)
+
+# Change the first list element of `copiedList`
+copiedList2[0] = 'c'
+
+# Go to the third element (the nested list) and change the second element
+copiedList2[2][1] = 'd'
+
+# Print out the original list to see what happened to it
+print(objectList); print(copiedList2)
+print(&quot;Both lists are different.&quot;)
+</code></pre>
+
+<pre><code>['a', 'b', ['ab', 'ba']]
+['a', 'b', ['ab', 'ba']]
+['c', 'b', ['ab', 'd']]
+Both lists are different.
+</code></pre>
+<h5 id="list-comprehension">List comprehension<a class="headerlink" href="#list-comprehension" title="Permanent link">&para;</a></h5>
+<pre><code class="python">print([x for x in range(10)]) # 10 not included
+print([x**2 for x in range(10)])
+print([x for x in range(10) if x%2==0])
+print([x**2 for x in range(10) if x%2==0])
+</code></pre>
+
+<pre><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+[0, 2, 4, 6, 8]
+[0, 4, 16, 36, 64]
+</code></pre>
+<pre><code class="python">myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(myList)
+[(lambda x: x*x)(x) for x in myList]
+print([(lambda x: x*x)(x) for x in myList])
+# or
+print(range(10))
+f = lambda x: x*x
+[f(x) for x in range(10)]
+print([f(x) for x in range(10)])
+</code></pre>
+
+<pre><code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+range(0, 10)
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+</code></pre>
+<h5 id="dictionary-comprehension-also">Dictionary comprehension also&hellip;<a class="headerlink" href="#dictionary-comprehension-also" title="Permanent link">&para;</a></h5>
+<h5 id="counting-the-occurrences-of-one-item-in-a-list">Counting the occurrences of one item in a list<a class="headerlink" href="#counting-the-occurrences-of-one-item-in-a-list" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># tallying
+print(&quot;Count the occurrences of the number 4 in the list.&quot;)
+print([1, 2, 9, 4, 5, 4, 1])
+print([1, 2, 9, 4, 5, 4, 1].count(4))
+
+print(&quot;Count the occurrences of the letter 'a' in the list&quot;)
+list1 = [&quot;d&quot;, &quot;a&quot;, &quot;t&quot;, &quot;a&quot;, &quot;c&quot;, &quot;a&quot;, &quot;m&quot;, &quot;p&quot;]
+print(list)
+list1.count(&quot;a&quot;)
+</code></pre>
+
+<pre><code>Count the occurrences of the number 4 in the list.
+[1, 2, 9, 4, 5, 4, 1]
+2
+Count the occurrences of the letter 'a' in the list
+&lt;class 'list'&gt;
+
+
+
+
+
+3
+</code></pre>
+<h5 id="counting-all-items-in-a-list-with-count">Counting all items in a list with <code>count()</code><a class="headerlink" href="#counting-all-items-in-a-list-with-count" title="Permanent link">&para;</a></h5>
+<pre><code class="python">list2 = [&quot;a&quot;,&quot;b&quot;,&quot;b&quot;]
+print(list2)
+[[x,list2.count(x)] for x in list(list2)]
+print([[x,list2.count(x)] for x in list(list2)])
+# now a set; sets only contain unique items
+# only the unique list items are kept
+</code></pre>
+
+<pre><code>['a', 'b', 'b']
+[['a', 1], ['b', 2], ['b', 2]]
+</code></pre>
+<h5 id="counting-all-items-in-a-list-with-counter-from-the-collections-library">Counting all items in a list with <code>Counter()</code> from the <code>collections</code> library<a class="headerlink" href="#counting-all-items-in-a-list-with-counter-from-the-collections-library" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Import `Counter` from the `collections` library
+from collections import Counter
+
+# This is your list
+list2 = [&quot;a&quot;,&quot;b&quot;,&quot;b&quot;]
+print(list2)
+
+# Pass `list` to `Counter()`
+Counter(list2)
+print(Counter(list2))
+</code></pre>
+
+<pre><code>['a', 'b', 'b']
+Counter({'b': 2, 'a': 1})
+</code></pre>
+<h5 id="split-a-python-list-into-evenly-sized-chunks">Split A Python List Into Evenly Sized Chunks<a class="headerlink" href="#split-a-python-list-into-evenly-sized-chunks" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Your list `x`
+x = [1,2,3,4,5,6,7,8,9]
+print(x)
+
+# Split `x` up in chunks of 3
+y = zip(*[iter(x)]*3)
+</code></pre>
+
+<pre><code>[1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre>
+<p><code>[1,2,3,4,5,6,7,8,9], [1,2,3,4,5,6,7,8,9], [1,2,3,4,5,6,7,8,9]</code></p>
+<ul>
+<li>The first time, zip() will take one element of the list sequentially, which leaves you with:</li>
+</ul>
+<p><code>[1][2][3]</code></p>
+<ul>
+<li>The second time, elements will be added to the three lists you just created:</li>
+</ul>
+<p><code>[1, 4], [2, 5], [3, 6]</code></p>
+<ul>
+<li>The third and last time:</li>
+</ul>
+<p><code>[1, 2, 3], [4, 5, 6], [7, 8, 9]</code></p>
+<pre><code class="python"># Use `list()` to print the result of `zip()`
+print(y.__doc__)
+type(y)
+</code></pre>
+
+<pre><code>zip(iter1 [,iter2 [...]]) --&gt; zip object
+
+Return a zip object whose .__next__() method returns a tuple where
+the i-th element comes from the i-th iterable argument.  The .__next__()
+method continues until the shortest iterable in the argument sequence
+is exhausted and then it raises StopIteration.
+
+
+
+
+
+zip
+</code></pre>
+<pre><code class="python">print(list(y))
+</code></pre>
+
+<pre><code>[]
+</code></pre>
+<pre><code class="python"># Method to split up your lists into chunks
+def chunks(myList, chunkSize):
+    &quot;&quot;&quot;Yield successive chunkSize-sized chunks from list.&quot;&quot;&quot;
+    for i in range(0, len(myList), chunkSize):
+        yield myList[i:i + chunkSize]
+
+# Use your `chunks` function to print out chunks of the same size
+import pprint # pretty print
+
+pprint.pprint(range(10, 75))
+pprint.pprint(list(chunks(range(10, 75), 10)))
+</code></pre>
+
+<pre><code>range(10, 75)
+[range(10, 20),
+ range(20, 30),
+ range(30, 40),
+ range(40, 50),
+ range(50, 60),
+ range(60, 70),
+ range(70, 75)]
+</code></pre>
+<pre><code class="python"># Set up your list and chunk size
+list1 = range(0, 50)
+chunk = 5
+
+# Split up your list into chunks
+print([list1[i:i + chunk] for i in range(0, len(list1), chunk)])
+</code></pre>
+
+<pre><code>[range(0, 5), range(5, 10), range(10, 15), range(15, 20), range(20, 25), range(25, 30), range(30, 35), range(35, 40), range(40, 45), range(45, 50)]
+</code></pre>
+<h5 id="loop-over-a-list">Loop over a list<a class="headerlink" href="#loop-over-a-list" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># This is your list
+myList = [[1,2,3],[4,5,6,7],[8,9,10]]
+print(myList)
+
+# Loop over your list and print all elements that are of size 3
+for x in myList:
+      if len(x)==3:
+        print(x) # element
+</code></pre>
+
+<pre><code>[[1, 2, 3], [4, 5, 6, 7], [8, 9, 10]]
+[1, 2, 3]
+[8, 9, 10]
+</code></pre>
+<pre><code class="python"># Alternatively
+print([x for x in myList if len(x)==3])
+</code></pre>
+
+<pre><code>[[1, 2, 3], [8, 9, 10]]
+</code></pre>
+<pre><code class="python"># This is your list
+myList = [3,4,5,6]
+print(myList)
+
+# Loop over `myList` and print tuples of all indices and values 
+for i, val in enumerate(myList): # return an index and a value
+     print(i, val) # indexElement, element
+</code></pre>
+
+<pre><code>[3, 4, 5, 6]
+0 3
+1 4
+2 5
+3 6
+</code></pre>
+<h5 id="create-flat-lists-out-of-lists">Create flat lists out of lists<a class="headerlink" href="#create-flat-lists-out-of-lists" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Your initial list of lists
+listOfLists = [[1,2],[3,4],[5,6]]
+print(listOfLists)
+
+# Flatten out your original list of lists with `sum()`
+print(sum(listOfLists, []))
+print(sum.__doc__)
+
+myList = [1,2,3,4,5,6]
+
+print(sum(myList))
+</code></pre>
+
+<pre><code>[[1, 2], [3, 4], [5, 6]]
+[1, 2, 3, 4, 5, 6]
+Return the sum of a 'start' value (default: 0) plus an iterable of numbers
+
+When the iterable is empty, return the start value.
+This function is intended specifically for use with numeric values and may
+reject non-numeric types.
+21
+</code></pre>
+<pre><code class="python"># Alternatively
+from functools import reduce
+
+print(reduce(lambda x,y: x+y,listOfLists)) #  iterable is reduced to a single value
+</code></pre>
+
+<pre><code>[1, 2, 3, 4, 5, 6]
+</code></pre>
+<p>What happens, is that <code>[1,2]</code> is added to <code>[3,4]</code> and this result is added to <code>[5,6]</code>.</p>
+<p><code>([1,2]+[3,4])+[5,6])</code></p>
+<p>Consider item for item in sublist, printing out each item from the sublist.</p>
+<pre><code class="python">list1 = []
+print(list1)
+
+for sublist in listOfLists:
+  for item in sublist:
+    list1.append(item)
+
+print(list1)
+</code></pre>
+
+<pre><code>[]
+[1, 2, 3, 4, 5, 6]
+</code></pre>
+<pre><code class="python"># Or you can use list comprehension
+print([item for sublist in listOfLists for item in sublist])
+</code></pre>
+
+<pre><code>[1, 2, 3, 4, 5, 6]
+</code></pre>
+<h5 id="get-an-intersection-of-two-python-lists">Get an intersection of two Python lists<a class="headerlink" href="#get-an-intersection-of-two-python-lists" title="Permanent link">&para;</a></h5>
+<pre><code class="python">list1 = [1, 6, 7, 10, 13, 28, 32, 41, 58, 63]
+print(list1)
+
+list2 = [[13, 17, 18, 21, 32], [7, 11, 13, 14, 28], [1, 5, 6, 8, 15, 16]]
+print(list2)
+
+# Intersect both lists with list comprehension
+intersection = [list(filter(lambda x: x in list1, sublist)) for sublist in list2]
+
+# Print the result of the intersection
+print(intersection)
+</code></pre>
+
+<pre><code>[1, 6, 7, 10, 13, 28, 32, 41, 58, 63]
+[[13, 17, 18, 21, 32], [7, 11, 13, 14, 28], [1, 5, 6, 8, 15, 16]]
+[[13, 32], [7, 13, 28], [1, 6]]
+</code></pre>
+<pre><code class="python"># An intersection of both lists, stored in `intersection`
+intersection = [[x for x in sublist if x in list1] for sublist in list2]
+
+# Print the result of the intersection
+print(intersection)
+</code></pre>
+
+<pre><code>[[13, 32], [7, 13, 28], [1, 6]]
+</code></pre>
+<h5 id="remove-duplicates-from-a-list">Remove duplicates from a list<a class="headerlink" href="#remove-duplicates-from-a-list" title="Permanent link">&para;</a></h5>
+<p>Check whether a variable is an iterable by applying the method <code>.__iter__</code>.</p>
+<pre><code class="python"># Your list with duplicate values
+duplicates = [1, 2, 3, 1, 2, 5, 6, 7, 8]
+
+# Print the unique `duplicates` list
+#print(list(set(duplicates)))
+
+# A list with small numbers 
+smallNumbers = [1, 2, 3]
+
+# Print the unique `duplicates` list without the small numbers
+# detract the set elements of smallNumbers
+list(set(duplicates) - set(smallNumbers))
+</code></pre>
+
+<pre><code>[8, 5, 6, 7]
+</code></pre>
+<h5 id="create-empty-numpy-arrays">Create Empty NumPy Arrays<a class="headerlink" href="#create-empty-numpy-arrays" title="Permanent link">&para;</a></h5>
+<p>Prefer NumPy arrays over lists in Python:</p>
+<ul>
+<li>Because NumPy arrays are more compact than lists.</li>
+<li>Because access in reading and writing items is faster with NumPy.</li>
+<li>Because NumPy can be more convenient to work with, thanks to the fact that you get a lot of vector and matrix operations for free</li>
+<li>Because NumPy can be more efficient to work with because they are implemented more efficiently.</li>
+</ul>
+<pre><code class="python">import numpy
+print(numpy.array([]))
+
+# Make a NumPy array of four rows and two columns and filled with 0
+print(numpy.zeros(shape=(4,2)))
+
+# Make a NumPy array of 1 values of three columns
+print(numpy.ones(3))
+
+# Make an empty NumPy array
+print(numpy.empty(shape=(0,0)))
+</code></pre>
+
+<pre><code>[]
+[[ 0.  0.]
+ [ 0.  0.]
+ [ 0.  0.]
+ [ 0.  0.]]
+[ 1.  1.  1.]
+[]
+</code></pre>
+<h4 id="do-math-with-lists-wt-avg">Do math with lists (wt avg)<a class="headerlink" href="#do-math-with-lists-wt-avg" title="Permanent link">&para;</a></h4>
+<pre><code class="python">cost = [0.424, 0.4221, 0.4185, 0.4132, 0.413]
+cases = [10, 20, 30, 40, 50]
+</code></pre>
+
+<pre><code class="python">for c in range(len(cost)):
+   cost[c] = (cost[c] * cases[c] / sum(cases))
+cost = sum(cost)
+print(cost)
+</code></pre>
+
+<pre><code>0.41609999999999997
+</code></pre>
+<pre><code class="python">cost = [0.424, 0.4221, 0.4185, 0.4132, 0.413]
+cases = [10, 20, 30, 40, 50]
+
+sum(cost[c] * cases[c] / sum(cases) for c in range(len(cost)))
+</code></pre>
+
+<pre><code>0.41609999999999997
+</code></pre>
+<pre><code class="python">cost = [0.424, 0.4221, 0.4185, 0.4132, 0.413]
+cases = [10, 20, 30, 40, 50]
+
+sum(cost[c] * cases[c] for c in range(len(cost))) / sum(cases)
+</code></pre>
+
+<pre><code>0.41609999999999997
+</code></pre>
+<pre><code class="python">cost = [0.424, 0.4221, 0.4185, 0.4132, 0.413]
+cases = [10, 20, 30, 40, 50]
+
+# See what `zip()` does to your `cost` and `cases`
+print(list(zip(cost, cases)))
+# zips your lists together
+
+# Calculate the weighted average
+print(sum([x * y for x, y in zip(cost, cases)]) / sum(cases))
+</code></pre>
+
+<pre><code>[(0.424, 10), (0.4221, 20), (0.4185, 30), (0.4132, 40), (0.413, 50)]
+0.41609999999999997
+</code></pre>
+<h5 id="do-math-with-lists-quantiles">Do math with lists (quantiles)<a class="headerlink" href="#do-math-with-lists-quantiles" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Import numpy as np
+import numpy as np
+
+# Make a NumPy array
+a = np.array([1,2,3,4,5])
+
+# Return the 50th percentile of our NumPy array
+p50 = np.percentile(a, 50)
+
+#Print the result
+print(p50)
+
+print(np.percentile(a, (25, 75)))
+</code></pre>
+
+<pre><code>3.0
+[ 2.  4.]
+</code></pre>
+<h5 id="do-math-with-lists-sum">Do math with lists (<code>sum</code>)<a class="headerlink" href="#do-math-with-lists-sum" title="Permanent link">&para;</a></h5>
+<pre><code class="python">list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+
+from operator import add
+list(map(add, list1, list2))
+</code></pre>
+
+<pre><code>[5, 7, 9]
+</code></pre>
+<pre><code class="python">[sum(x) for x in zip(list1, list2)]
+</code></pre>
+
+<pre><code>[5, 7, 9]
+</code></pre>
+<pre><code class="python"># Import numpy as np
+import numpy as np
+
+# Make your lists into NumPy arrays
+vector1 = np.array([1, 2, 3])
+vector2 = np.array([4, 5, 6])
+
+# Element-wise addition
+sum_vector = vector1 + vector2 
+
+# Print the result
+print(sum_vector)
+</code></pre>
+
+<pre><code>[5 7 9]
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../IPython%20Notebook/" class="btn btn-neutral float-right" title="IPython Notebook, Collection">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Tidy_Data_in_Python/" class="btn btn-neutral" title="Tidy Data in Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Spark</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Tidy_Data_in_Python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../IPython%20Notebook/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>
