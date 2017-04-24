@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Jupyter Notebook Cheat Sheets - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Jupyter Notebook Cheat Sheets";
+    var mkdocs_page_input_path = "JN_CS.md";
+    var mkdocs_page_url = "/JN_CS/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Jupyter Notebook Cheat Sheets</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#img">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#objects">Objects</a></li>
+    
+
+    <li class="toctree-l3"><a href="#logging">Logging</a></li>
+    
+
+    <li class="toctree-l3"><a href="#magic-help">Magic &amp; Help</a></li>
+    
+
+    <li class="toctree-l3"><a href="#function">Function</a></li>
+    
+
+    <li class="toctree-l3"><a href="#navigation">Navigation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#external">External</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20for%20Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Jupyter Notebook Cheat Sheets</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#jupyter-notebook-commands">Jupyter Notebook commands</a><ul>
+<li><a href="#img">IMG</a></li>
+</ul>
+</li>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#magic-help">Magic &amp; Help</a></li>
+<li><a href="#function">Function</a></li>
+<li><a href="#navigation">Navigation</a></li>
+<li><a href="#external">External</a></li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Cheat sheets and snippets.</p>
+<hr />
+<ul>
+<li><a href="../weidadeyue_jupyter-notebook.pdf">Jupyter Notebook</a>.</li>
+</ul>
+<h4 id="jupyter-notebook-commands">Jupyter Notebook commands<a class="headerlink" href="#jupyter-notebook-commands" title="Permanent link">&para;</a></h4>
+<h5 id="img">IMG<a class="headerlink" href="#img" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h4 id="objects">Objects<a class="headerlink" href="#objects" title="Permanent link">&para;</a></h4>
+<p>Find, list, search, reset.</p>
+<pre><code class="python">a = 10
+b = 20.1
+c = &quot;test&quot;
+d = [1, 2, 3]
+</code></pre>
+
+<pre><code class="python">who
+</code></pre>
+
+<pre><code>a    b   c   d
+</code></pre>
+<pre><code class="python">whos
+</code></pre>
+
+<pre><code>Variable   Type     Data/Info
+-----------------------------
+a          int      10
+b          float    20.1
+c          str      test
+d          list     n=3
+</code></pre>
+<pre><code class="python">reset
+</code></pre>
+
+<pre><code>Once deleted, variables cannot be recovered. Proceed (y/[n])? y
+</code></pre>
+<pre><code class="python">who
+</code></pre>
+
+<pre><code>Interactive namespace is empty.
+</code></pre>
+<pre><code class="python">a = 10
+b = 20
+c = &quot;test&quot;
+d = [1, 2, 3]
+</code></pre>
+
+<pre><code class="python">who
+</code></pre>
+
+<pre><code>a    b   c   d
+</code></pre>
+<hr />
+<h4 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h4>
+<p>Start, state, on, off.</p>
+<pre><code class="python">logstate
+
+</code></pre>
+
+<pre><code>Logging has not been activated.
+</code></pre>
+<pre><code class="python">logstart
+
+</code></pre>
+
+<pre><code>Activating auto-logging. Current session state plus future input saved.
+Filename       : ipython_log.py
+Mode           : rotate
+Output logging : False
+Raw input log  : False
+Timestamping   : False
+State          : active
+</code></pre>
+<pre><code class="python">logstate
+
+</code></pre>
+
+<pre><code>Filename       : ipython_log.py
+Mode           : rotate
+Output logging : False
+Raw input log  : False
+Timestamping   : False
+State          : active
+</code></pre>
+<pre><code class="python">logoff
+
+</code></pre>
+
+<pre><code>Switching logging OFF
+</code></pre>
+<pre><code class="python">logstate
+
+</code></pre>
+
+<pre><code>Filename       : ipython_log.py
+Mode           : rotate
+Output logging : False
+Raw input log  : False
+Timestamping   : False
+State          : temporarily suspended
+</code></pre>
+<pre><code class="python">logon
+
+</code></pre>
+
+<pre><code>Switching logging ON
+</code></pre>
+<pre><code class="python">logstate
+
+</code></pre>
+
+<pre><code>Filename       : ipython_log.py
+Mode           : rotate
+Output logging : False
+Raw input log  : False
+Timestamping   : False
+State          : active
+</code></pre>
+<hr />
+<h4 id="magic-help">Magic &amp; Help<a class="headerlink" href="#magic-help" title="Permanent link">&para;</a></h4>
+<p>List, help.</p>
+<pre><code class="python">lsmagic
+
+</code></pre>
+
+<pre><code>Available line magics:
+%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+</code></pre>
+<p>Open a window about magic commands.</p>
+<pre><code class="python">magic
+</code></pre>
+
+<p>Open a window about the command (minimum, maximum help).</p>
+<pre><code class="python">%alias?
+</code></pre>
+
+<pre><code class="python">%alias??
+</code></pre>
+
+<hr />
+<h4 id="function">Function<a class="headerlink" href="#function" title="Permanent link">&para;</a></h4>
+<p>docstrings, info, source.</p>
+<pre><code class="python">def print_number(nb):
+
+    &quot;&quot;&quot;
+    The docstring. print_number prints Hi!
+    &quot;&quot;&quot;
+    print(&quot;Hi!&quot; * nb)
+</code></pre>
+
+<pre><code class="python">print_number(1)
+print_number(5)
+</code></pre>
+
+<pre><code>Hi!
+Hi!Hi!Hi!Hi!Hi!
+</code></pre>
+<pre><code class="python">pdef print_number
+</code></pre>
+
+<pre><code> print_number(nb)
+</code></pre>
+<p>Open a window about the docstrings.</p>
+<pre><code class="python">pdoc print_number
+
+</code></pre>
+
+<p>Open a window about the function.</p>
+<pre><code class="python">pinfo print_number
+
+</code></pre>
+
+<hr />
+<h4 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h4>
+<p>Bookmark, history.</p>
+<pre><code class="python">bookmark -l
+</code></pre>
+
+<pre><code>Current bookmarks:
+name     -&gt; path
+untitled -&gt; /home/user
+</code></pre>
+<p>Add a bookmark.</p>
+<pre><code class="python">bookmark aaa path
+</code></pre>
+
+<pre><code class="python">bookmark -l
+</code></pre>
+
+<pre><code>Current bookmarks:
+aaa      -&gt; path
+name     -&gt; path
+untitled -&gt; /home/user
+</code></pre>
+<p>Delete a bookmark.</p>
+<pre><code class="python">bookmark -d aaa
+</code></pre>
+
+<pre><code class="python">bookmark -l
+</code></pre>
+
+<pre><code>Current bookmarks:
+name     -&gt; path
+untitled -&gt; /home/user
+</code></pre>
+<p>Print the directory navigation history.</p>
+<pre><code class="python">dhist
+</code></pre>
+
+<pre><code>Directory history (kept in _dh)
+0: /home/user
+</code></pre>
+<hr />
+<h4 id="external">External<a class="headerlink" href="#external" title="Permanent link">&para;</a></h4>
+<p>Bash, script.</p>
+<p>The following is an example of one bash command.</p>
+<pre><code class="python">!pwd
+</code></pre>
+
+<pre><code>/home/user
+</code></pre>
+<pre><code class="python">abc = !pwd
+</code></pre>
+
+<pre><code class="python">abc
+</code></pre>
+
+<pre><code>['/home/user']
+</code></pre>
+<pre><code class="python">alias
+</code></pre>
+
+<pre><code>Total number of aliases: 12
+
+[('cat', 'cat'),
+ ('cp', 'cp'),
+ ('ldir', 'ls -F -o --color %l | grep /$'),
+ ('lf', 'ls -F -o --color %l | grep ^-'),
+ ('lk', 'ls -F -o --color %l | grep ^l'),
+ ('ll', 'ls -F -o --color'),
+ ('ls', 'ls -F --color'),
+ ('lx', 'ls -F -o --color %l | grep ^-..x'),
+ ('mkdir', 'mkdir'),
+ ('mv', 'mv'),
+ ('rm', 'rm'),
+ ('rmdir', 'rmdir')]
+</code></pre>
+<p>Invoke an external script into IPython.</p>
+<pre><code class="python">run print_text.py
+</code></pre>
+
+<pre><code>Hi!
+</code></pre>
+<p>Invoke an external script into IPython and open a window about the script&rsquo;s profile.</p>
+<pre><code class="python">run -p print_text.py
+</code></pre>
+
+<pre><code>Hi!
+</code></pre>
+<p>Load the external script into IPython (<code>load print_text.py</code> turns into <code># %load print_text.py</code>).</p>
+<pre><code class="python"># %load print_text.py
+def print_text():
+
+    &quot;&quot;&quot;
+    The docstring. print_text prints Hi!
+    &quot;&quot;&quot;
+    print(&quot;Hi!&quot;)
+
+print_text()
+
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/" class="btn btn-neutral float-right" title="Scientific Python (the SciPy Stack)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Scipy_CS/" class="btn btn-neutral" title="Scipy Stack Cheat Sheets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Spark</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Scipy_CS/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>

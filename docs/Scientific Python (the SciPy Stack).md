@@ -10,20 +10,6 @@ Notes.
 
 ---
 
-## 1, A word on the SciPy Stack
-
-The Scipy Stack is a Python-based ecosystem for mathematics, science, and engineering:
-
-- `numpy` and `pandas` packages handle data.
-- `matplolib` package handles 2D graphics.
-	- There exists other graphic packages (for 3D).
-- `scipy` is made of a group a math packages enabling interpolation, derivative and integral calculus, optimization and image processing.
-- And other packages.
-- One would be careful to look on the side of other scientific libraries to find existing tools: GSL - GNU Scientific Library in C/C++ and Matlab toolboxes.
-
-
-## 2, Resources
-
 - [SciPy.org](https://scipy.org/)
 	- Install
 	- Getting Started

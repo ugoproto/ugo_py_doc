@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Spark">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Scipy Stack Cheat Sheets - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Scipy Stack Cheat Sheets";
+    var mkdocs_page_input_path = "Scipy_CS.md";
+    var mkdocs_page_url = "/Scipy_CS/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Scipy Stack Cheat Sheets</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#img">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#machine-learning">Machine Learning</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#img_1">IMG</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#visualization">Visualization</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#img_2">IMG</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific%20Python%20%28the%20SciPy%20Stack%29/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Importing%20Data%20into%20Python%203/">DataCamp Importing Data into Python 3</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DataCamp%20Python%203%20for%20Data%20Science/">DataCamp Python 3 for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython%20Notebook/">IPython Notebook, Collection</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez%20a%20programmer%20en%20Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy%20Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn%20Python%20the%20Hard%20Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20Code%20Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction%20to%20Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate%20the%20Boring%20Stuff%20with%20Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing%20Your%20Biological%20Data%20with%20Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python%20for%20Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Scipy Stack Cheat Sheets</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#data-mining">Data Mining</a><ul>
+<li><a href="#img">IMG</a></li>
+</ul>
+</li>
+<li><a href="#machine-learning">Machine Learning</a><ul>
+<li><a href="#img_1">IMG</a></li>
+</ul>
+</li>
+<li><a href="#visualization">Visualization</a><ul>
+<li><a href="#img_2">IMG</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Cheat sheets.</p>
+<hr />
+<h4 id="data-mining">Data Mining<a class="headerlink" href="#data-mining" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../Numpy_Python_Cheat_Sheet.pdf">NumPy</a>.<ul>
+<li><a href="../Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf">Linear Algebra</a>.</li>
+</ul>
+</li>
+<li><a href="../PandasPythonForDataScience.pdf">Pandas</a>.</li>
+<li><a href="../Pandas-DataFrame-Notes.pdf">Pandas DataFrame Notes</a>.</li>
+</ul>
+<h5 id="img">IMG<a class="headerlink" href="#img" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h4 id="machine-learning">Machine Learning<a class="headerlink" href="#machine-learning" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../4127-rc183-010d-data-mining_2.pdf">Data Mining</a>.</li>
+<li><a href="../PySpark_Cheat_Sheet_Python.pdf">PySpark</a>.</li>
+<li><a href="../Scikit_Learn_Cheat_Sheet_Python.pdf">scikit-learn</a>.</li>
+</ul>
+<p><em>add: TensorFlow, neural nets, deep learning, orange</em></p>
+<h5 id="img_1">IMG<a class="headerlink" href="#img_1" title="Permanent link">&para;</a></h5>
+<hr />
+<p><center></p>
+<p><img alt="scikit-learn" src="../img/CS/drop_shadows_background.png" />.</p>
+<p></center></p>
+<hr />
+<h4 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../Python_Matplotlib_Cheat_Sheet.pdf">Matplotlib</a>.</li>
+<li><a href="../Matplotlib-Notes.pdf">Matplotlib Notes</a>.</li>
+<li><a href="../Python_Bokeh_Cheat_Sheet.pdf">Bokeh</a>.</li>
+</ul>
+<h5 id="img_2">IMG<a class="headerlink" href="#img_2" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../JN_CS/" class="btn btn-neutral float-right" title="Jupyter Notebook Cheat Sheets">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Datetime/" class="btn btn-neutral" title="Datetime"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Spark</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Datetime/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../JN_CS/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>

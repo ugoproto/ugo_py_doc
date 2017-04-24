@@ -11,6 +11,36 @@
             "title": "Layout"
         }, 
         {
+            "location": "/Py_CS/", 
+            "text": "CONTENT\n\n\nPython 2\n\n\nIMG\n\n\n\n\n\n\nPython 3\n\n\nIMG\n\n\n\n\n\n\nLibraries\n\n\nIMG\n\n\n\n\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nPython 2\n\n\n\n\nPython 2\n.\n\n\nsys\n variables \n argv, \nos\n variables, class methods, list methods, string methods, file methods, slice, datatime methods \n formatting.\n\n\n\n\n\n\nQuick Reference\n.\n\n\nhelp, operators, import, data types, syntax structure, built-in functions, math module functions, string methods \n formatting, list methods, tuple methods, dictionary methods, file methods, ASCII.\n\n\n\n\n\n\nPython 2\n.\n\n\nlogic, strings, tuples, dictionaries, list, class \n function, files.\n\n\n\n\n\n\nPython 2\n.\n\n\nvariables, data types, functions, classes, imports, lists, comparisons, arithmetics, comments, control flow, exceptions \n errors, files.\n\n\n\n\n\n\n\n\nIMG\n\n\n\n\n\n\nPython 3\n\n\n\n\n\n\nPython 3\n.\n\n\n\n\ndata types, identifiers, variables, sequences, conversions, indexing, boolean, maths, imports, conditional statements, exceptions \n errors, conditional loop, iterative loops, display, inputs, operations, lists, dictionaries, sets, files, integers, functions, strings, formatting.\n\n\n\n\nIMG\n\n\n\n\n\n\n\n\n\n\nLibraries\n\n\n\n\nPython Debugger\n.\n\n\nPython Decorators\n.\n\n\n\n\nIMG", 
+            "title": "Python Cheat Sheets"
+        }, 
+        {
+            "location": "/Py_CS/#img", 
+            "text": "", 
+            "title": "IMG"
+        }, 
+        {
+            "location": "/Py_CS/#python-3", 
+            "text": "Python 3 .   data types, identifiers, variables, sequences, conversions, indexing, boolean, maths, imports, conditional statements, exceptions   errors, conditional loop, iterative loops, display, inputs, operations, lists, dictionaries, sets, files, integers, functions, strings, formatting.", 
+            "title": "Python 3"
+        }, 
+        {
+            "location": "/Py_CS/#img_1", 
+            "text": "", 
+            "title": "IMG"
+        }, 
+        {
+            "location": "/Py_CS/#libraries", 
+            "text": "Python Debugger .  Python Decorators .", 
+            "title": "Libraries"
+        }, 
+        {
+            "location": "/Py_CS/#img_2", 
+            "text": "", 
+            "title": "IMG"
+        }, 
+        {
             "location": "/Python_Preliminaries/", 
             "text": "CONTENT\n\n\n1, Installing (Complementary Details)\n\n\n2, pip\n\n\n3, Git\n\n\n4, Virtual Environment\n\n\n5, Launching\n\n\n\n\n\n\n\n\nForeword\n\n\nNotes. Consult the \nHitchicker\ns Guide to Python\n.\n\n\n\n\n1, Installing (Complementary Details)\n\n\nPython\n\n\n\n\nInstalling Python, basic libraries, and virtual environments.\n\n\nhttp://docs.python-guide.org/en/latest/starting/install/win/#install-windows\n\n\nhttp://docs.python-guide.org/en/latest/starting/install/linux/\n\n\n\n\n\n\nSetting the path in Windows (examples):\n\n\nset PATH=%PATH%;C:\\Python27\n.\n\n\nset PATH=%PATH%;C:\\Python27\\Scripts\n.\n\n\nset PATH=%PATH%;C:\\PythonXX\n.\n\n\nset PATH=%PATH%;C:\\PythonXX\\Scripts\n.\n\n\n\n\n\n\nSetting the path in Linux (example):\n\n\nexport PYTHONPATH=$PYTHONPATH:\n.\n\n\n\n\n\n\n\n\n\n\n2, pip\n\n\npypi\n\n\nPyPY directory of libraries.\n\n\nImportant commands:\n\n\n\n\npip help\n ou \npip --help\n.\n\n\npip install \nmodule\n.\n\n\npip --version\n.\n\n\npip install --upgrade pip\n\n\nsudo pip install \nmodule\n.\n\n\npip uninstall \nmodule\n.\n\n\npip install --user \nmodule\n: circumvent the \nsudo\n command.\n\n\n\n\n3, Git\n\n\nAfter installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): \nexport PATH=\"$PATH:/c/Python27\"\n, \n\n\nexport PATH=\"$PATH:/c/Python27/Scripts\"\n, \n The Git Bash simulates a UNIX-type environment.\n\n\n4, Virtual Environment\n\n\nvirtual, environment, separate, project\n\n\nWhen you install a library, it is accessible to all python scripts. Project A and B have access to the library. \n\n\nIt brings out a problem if \nProject A depends on version 1.x but, Project B needs 4.x\n. This problem is recurrent when working with web frameworks. For example, you can work on a project which requires Django 1.3 while also maintaining a project which requires Django 1.0.\n\n\nA virtual environment solves this problem by building a sandbox for a project.\n\n\n5, Launching\n\n\nWindows vs. UNIX (Linux or Mac OS X).\n\n\nAt the top of scripts\n\n\n\n\nIn Windows, Python 2:\n\n\n#! python\n\n\n\n\n\n\nWindows, Python 3:\n\n\n#! python 3\n\n\n\n\n\n\nUNIX, Python 2:\n\n\n#!/usr/bin/env python\n\n\n\n\n\n\nUNIX, Python 3:\n\n\n#!/usr/bin/env python 3\n\n\n\n\n\n\nAdd:\n\n\n# -*coding: utf-8 -*-\n\n\n# -*coding: latin-1 -*-\n\n\n\n\n\n\n\n\nLaunch a script\n\n\n\n\nIn Windows, Python 2:\n\n\npython \nscript.py\n\n\npy \nscript.py\n\n\npy -2 \nscript.py\n\n\npy -2.7 \nscript.py\n\n\n\n\n\n\nIn UNIX, Python 2:\n\n\npython \nscript.py\n\n\n\n\n\n\nIn Windows, Python 3:\n\n\npy -3 \nscript.py\n\n\npy -3.5 \nscript.py\n\n\n\n\n\n\nIn UNIX, Python 3:\n\n\npython3 \nscript.py\n\n\n\n\n\n\n\n\nIn UNIX-based OS, with a shebang, once the script is created, we can go in the folder and enter \nchmod +x \nscript.py\n to change the properties. Now, we can launch a script with \n./\nscript.py\n.\n\n\nLaunch a module\n\n\n\n\nSometimes, launching Python modules cannot be done directly with \npip install \nscript\n for example.\n\n\nIn Windows (examples):\n\n\npy -2 -m pip install \nscript\n if \npip install \nscript\n does not work.\n\n\npy -2 -m pip install flake8\n.\n\n\npy -2 -m pip install pylint\n.    \n\n\n\n\n\n\n\n\nLaunch the shell/bash\n\n\n\n\nThe shell, Python 2:\n\n\npython\n\n\npy -2\n\n\npy -2.7\n\n\n\n\n\n\nThe bash, Python 2:\n\n\npython\n\n\npython2\n\n\n\n\n\n\nThe shell, Python 3:\n\n\npy -3\n\n\npy -3.5\n\n\n\n\n\n\nThe bash, Python 3:\n\n\npython3", 
             "title": "Python Preliminaries"
@@ -376,14 +406,79 @@
             "title": "Build a script to convert time zones"
         }, 
         {
-            "location": "/Scientific Python (the SciPy Stack)/", 
-            "text": "CONTENT\n\n\n1, A word on the SciPy Stack\n\n\n2, Resources\n\n\n\n\n\n\n\n\nForeword\n\n\nNotes.\n\n\n\n\n1, A word on the SciPy Stack\n\n\nThe Scipy Stack is a Python-based ecosystem for mathematics, science, and engineering:\n\n\n\n\nnumpy\n and \npandas\n packages handle data.\n\n\nmatplolib\n package handles 2D graphics.\n\n\nThere exists other graphic packages (for 3D).\n\n\n\n\n\n\nscipy\n is made of a group a math packages enabling interpolation, derivative and integral calculus, optimization and image processing.\n\n\nAnd other packages.\n\n\nOne would be careful to look on the side of other scientific libraries to find existing tools: GSL - GNU Scientific Library in C/C++ and Matlab toolboxes.\n\n\n\n\n2, Resources\n\n\n\n\nSciPy.org\n\n\nInstall\n\n\nGetting Started\n\n\nDocumentation\n\n\nSciPy Central (collection of code snippets, modules and links for solving scientific problems with SciPy and related Python tools)\n\n\nBlogs\n\n\nNumpy (Base N-dimensional array)\n\n\nMatplotlib (Comprehensive 2D Plotting) (official documentation, examples, gallery, commands)\n\n\nSympy (Symbolic mathematics) (official documentation, features, projects)\n\n\n\n\nIPython (Enhanced Interactive Console) (official documentation, Jupyter)\n\n\nPandas (Data structures \n analysis) (official documentation)\n\n\n\n\n\n\nNumpy examples (crash course and snippets in a IPython notebook)\n\n\nL\u2019informatique scientifique avec Python\n\n\n\n\nComment cr\u00e9er et manipuler les donn\u00e9es scientifiques : autour de Numpy (crash course, snippets\n\n\nSavoir chercher (trouver) de l\u2019aide\n\n\n\n\n\n\n\n\nMPIA Python Workshop (hands-on workshops on using Python to solve real-world problems)\n\n\nIntroduction and Motivation (quick tour, who is using, examples)\n\n\nPython Installation and Understanding Packages\n\n\nAn introduction to Pure Python (crash course)\n\n\nCore packages for analysis: NumPy and SciPy (snippets)\n\n\nPlotting and Images\n\n\nMatplotlib (procedural method, snippets)\n\n\nAdvanced plotting (object-based method)\n\n\nPublication-quality plots (tips)\n\n\n\n\n\n\nObject-Oriented Programming in Python (snippets)\n\n\nFitting data with Python (models, algorithms, how-to)", 
-            "title": "Scientific Python (the SciPy Stack)"
+            "location": "/Scipy_CS/", 
+            "text": "CONTENT\n\n\nData Mining\n\n\nIMG\n\n\n\n\n\n\nMachine Learning\n\n\nIMG\n\n\n\n\n\n\nVisualization\n\n\nIMG\n\n\n\n\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nData Mining\n\n\n\n\nNumPy\n.\n\n\nLinear Algebra\n.\n\n\n\n\n\n\nPandas\n.\n\n\nPandas DataFrame Notes\n.\n\n\n\n\nIMG\n\n\n\n\n\n\nMachine Learning\n\n\n\n\nData Mining\n.\n\n\nPySpark\n.\n\n\nscikit-learn\n.\n\n\n\n\nadd: TensorFlow, neural nets, deep learning, orange\n\n\nIMG\n\n\n\n\n\n\n.\n\n\n\n\n\n\nVisualization\n\n\n\n\nMatplotlib\n.\n\n\nMatplotlib Notes\n.\n\n\nBokeh\n.\n\n\n\n\nIMG", 
+            "title": "Scipy Stack Cheat Sheets"
         }, 
         {
-            "location": "/Scientific Python (the SciPy Stack)/#2-resources", 
-            "text": "SciPy.org  Install  Getting Started  Documentation  SciPy Central (collection of code snippets, modules and links for solving scientific problems with SciPy and related Python tools)  Blogs  Numpy (Base N-dimensional array)  Matplotlib (Comprehensive 2D Plotting) (official documentation, examples, gallery, commands)  Sympy (Symbolic mathematics) (official documentation, features, projects)   IPython (Enhanced Interactive Console) (official documentation, Jupyter)  Pandas (Data structures   analysis) (official documentation)    Numpy examples (crash course and snippets in a IPython notebook)  L\u2019informatique scientifique avec Python   Comment cr\u00e9er et manipuler les donn\u00e9es scientifiques : autour de Numpy (crash course, snippets  Savoir chercher (trouver) de l\u2019aide     MPIA Python Workshop (hands-on workshops on using Python to solve real-world problems)  Introduction and Motivation (quick tour, who is using, examples)  Python Installation and Understanding Packages  An introduction to Pure Python (crash course)  Core packages for analysis: NumPy and SciPy (snippets)  Plotting and Images  Matplotlib (procedural method, snippets)  Advanced plotting (object-based method)  Publication-quality plots (tips)    Object-Oriented Programming in Python (snippets)  Fitting data with Python (models, algorithms, how-to)", 
-            "title": "2, Resources"
+            "location": "/Scipy_CS/#img", 
+            "text": "", 
+            "title": "IMG"
+        }, 
+        {
+            "location": "/Scipy_CS/#machine-learning", 
+            "text": "Data Mining .  PySpark .  scikit-learn .   add: TensorFlow, neural nets, deep learning, orange", 
+            "title": "Machine Learning"
+        }, 
+        {
+            "location": "/Scipy_CS/#img_1", 
+            "text": ".", 
+            "title": "IMG"
+        }, 
+        {
+            "location": "/Scipy_CS/#visualization", 
+            "text": "Matplotlib .  Matplotlib Notes .  Bokeh .", 
+            "title": "Visualization"
+        }, 
+        {
+            "location": "/Scipy_CS/#img_2", 
+            "text": "", 
+            "title": "IMG"
+        }, 
+        {
+            "location": "/JN_CS/", 
+            "text": "CONTENT\n\n\nJupyter Notebook commands\n\n\nIMG\n\n\n\n\n\n\nObjects\n\n\nLogging\n\n\nMagic \n Help\n\n\nFunction\n\n\nNavigation\n\n\nExternal\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets and snippets.\n\n\n\n\n\n\nJupyter Notebook\n.\n\n\n\n\nJupyter Notebook commands\n\n\nIMG\n\n\n\n\n\n\nObjects\n\n\nFind, list, search, reset.\n\n\na = 10\nb = 20.1\nc = \ntest\n\nd = [1, 2, 3]\n\n\n\n\nwho\n\n\n\n\na    b   c   d\n\n\n\nwhos\n\n\n\n\nVariable   Type     Data/Info\n-----------------------------\na          int      10\nb          float    20.1\nc          str      test\nd          list     n=3\n\n\n\nreset\n\n\n\n\nOnce deleted, variables cannot be recovered. Proceed (y/[n])? y\n\n\n\nwho\n\n\n\n\nInteractive namespace is empty.\n\n\n\na = 10\nb = 20\nc = \ntest\n\nd = [1, 2, 3]\n\n\n\n\nwho\n\n\n\n\na    b   c   d\n\n\n\n\n\nLogging\n\n\nStart, state, on, off.\n\n\nlogstate\n\n\n\n\n\nLogging has not been activated.\n\n\n\nlogstart\n\n\n\n\n\nActivating auto-logging. Current session state plus future input saved.\nFilename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : active\n\n\n\nlogstate\n\n\n\n\n\nFilename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : active\n\n\n\nlogoff\n\n\n\n\n\nSwitching logging OFF\n\n\n\nlogstate\n\n\n\n\n\nFilename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : temporarily suspended\n\n\n\nlogon\n\n\n\n\n\nSwitching logging ON\n\n\n\nlogstate\n\n\n\n\n\nFilename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : active\n\n\n\n\n\nMagic \n Help\n\n\nList, help.\n\n\nlsmagic\n\n\n\n\n\nAvailable line magics:\n%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode\n\nAvailable cell magics:\n%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile\n\nAutomagic is ON, % prefix IS NOT needed for line magics.\n\n\n\nOpen a window about magic commands.\n\n\nmagic\n\n\n\n\nOpen a window about the command (minimum, maximum help).\n\n\n%alias?\n\n\n\n\n%alias??\n\n\n\n\n\n\nFunction\n\n\ndocstrings, info, source.\n\n\ndef print_number(nb):\n\n    \n\n    The docstring. print_number prints Hi!\n    \n\n    print(\nHi!\n * nb)\n\n\n\n\nprint_number(1)\nprint_number(5)\n\n\n\n\nHi!\nHi!Hi!Hi!Hi!Hi!\n\n\n\npdef print_number\n\n\n\n\n print_number(nb)\n\n\n\nOpen a window about the docstrings.\n\n\npdoc print_number\n\n\n\n\n\nOpen a window about the function.\n\n\npinfo print_number\n\n\n\n\n\n\n\nNavigation\n\n\nBookmark, history.\n\n\nbookmark -l\n\n\n\n\nCurrent bookmarks:\nname     -\n path\nuntitled -\n /home/user\n\n\n\nAdd a bookmark.\n\n\nbookmark aaa path\n\n\n\n\nbookmark -l\n\n\n\n\nCurrent bookmarks:\naaa      -\n path\nname     -\n path\nuntitled -\n /home/user\n\n\n\nDelete a bookmark.\n\n\nbookmark -d aaa\n\n\n\n\nbookmark -l\n\n\n\n\nCurrent bookmarks:\nname     -\n path\nuntitled -\n /home/user\n\n\n\nPrint the directory navigation history.\n\n\ndhist\n\n\n\n\nDirectory history (kept in _dh)\n0: /home/user\n\n\n\n\n\nExternal\n\n\nBash, script.\n\n\nThe following is an example of one bash command.\n\n\n!pwd\n\n\n\n\n/home/user\n\n\n\nabc = !pwd\n\n\n\n\nabc\n\n\n\n\n['/home/user']\n\n\n\nalias\n\n\n\n\nTotal number of aliases: 12\n\n[('cat', 'cat'),\n ('cp', 'cp'),\n ('ldir', 'ls -F -o --color %l | grep /$'),\n ('lf', 'ls -F -o --color %l | grep ^-'),\n ('lk', 'ls -F -o --color %l | grep ^l'),\n ('ll', 'ls -F -o --color'),\n ('ls', 'ls -F --color'),\n ('lx', 'ls -F -o --color %l | grep ^-..x'),\n ('mkdir', 'mkdir'),\n ('mv', 'mv'),\n ('rm', 'rm'),\n ('rmdir', 'rmdir')]\n\n\n\nInvoke an external script into IPython.\n\n\nrun print_text.py\n\n\n\n\nHi!\n\n\n\nInvoke an external script into IPython and open a window about the script\ns profile.\n\n\nrun -p print_text.py\n\n\n\n\nHi!\n\n\n\nLoad the external script into IPython (\nload print_text.py\n turns into \n# %load print_text.py\n).\n\n\n# %load print_text.py\ndef print_text():\n\n    \n\n    The docstring. print_text prints Hi!\n    \n\n    print(\nHi!\n)\n\nprint_text()", 
+            "title": "Jupyter Notebook Cheat Sheets"
+        }, 
+        {
+            "location": "/JN_CS/#img", 
+            "text": "", 
+            "title": "IMG"
+        }, 
+        {
+            "location": "/JN_CS/#objects", 
+            "text": "Find, list, search, reset.  a = 10\nb = 20.1\nc =  test \nd = [1, 2, 3]  who  a    b   c   d  whos  Variable   Type     Data/Info\n-----------------------------\na          int      10\nb          float    20.1\nc          str      test\nd          list     n=3  reset  Once deleted, variables cannot be recovered. Proceed (y/[n])? y  who  Interactive namespace is empty.  a = 10\nb = 20\nc =  test \nd = [1, 2, 3]  who  a    b   c   d", 
+            "title": "Objects"
+        }, 
+        {
+            "location": "/JN_CS/#logging", 
+            "text": "Start, state, on, off.  logstate  Logging has not been activated.  logstart  Activating auto-logging. Current session state plus future input saved.\nFilename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : active  logstate  Filename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : active  logoff  Switching logging OFF  logstate  Filename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : temporarily suspended  logon  Switching logging ON  logstate  Filename       : ipython_log.py\nMode           : rotate\nOutput logging : False\nRaw input log  : False\nTimestamping   : False\nState          : active", 
+            "title": "Logging"
+        }, 
+        {
+            "location": "/JN_CS/#magic-help", 
+            "text": "List, help.  lsmagic  Available line magics:\n%alias  %alias_magic  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %popd  %pprint  %precision  %profile  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode\n\nAvailable cell magics:\n%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile\n\nAutomagic is ON, % prefix IS NOT needed for line magics.  Open a window about magic commands.  magic  Open a window about the command (minimum, maximum help).  %alias?  %alias??", 
+            "title": "Magic &amp; Help"
+        }, 
+        {
+            "location": "/JN_CS/#function", 
+            "text": "docstrings, info, source.  def print_number(nb):\n\n     \n    The docstring. print_number prints Hi!\n     \n    print( Hi!  * nb)  print_number(1)\nprint_number(5)  Hi!\nHi!Hi!Hi!Hi!Hi!  pdef print_number   print_number(nb)  Open a window about the docstrings.  pdoc print_number  Open a window about the function.  pinfo print_number", 
+            "title": "Function"
+        }, 
+        {
+            "location": "/JN_CS/#navigation", 
+            "text": "Bookmark, history.  bookmark -l  Current bookmarks:\nname     -  path\nuntitled -  /home/user  Add a bookmark.  bookmark aaa path  bookmark -l  Current bookmarks:\naaa      -  path\nname     -  path\nuntitled -  /home/user  Delete a bookmark.  bookmark -d aaa  bookmark -l  Current bookmarks:\nname     -  path\nuntitled -  /home/user  Print the directory navigation history.  dhist  Directory history (kept in _dh)\n0: /home/user", 
+            "title": "Navigation"
+        }, 
+        {
+            "location": "/JN_CS/#external", 
+            "text": "Bash, script.  The following is an example of one bash command.  !pwd  /home/user  abc = !pwd  abc  ['/home/user']  alias  Total number of aliases: 12\n\n[('cat', 'cat'),\n ('cp', 'cp'),\n ('ldir', 'ls -F -o --color %l | grep /$'),\n ('lf', 'ls -F -o --color %l | grep ^-'),\n ('lk', 'ls -F -o --color %l | grep ^l'),\n ('ll', 'ls -F -o --color'),\n ('ls', 'ls -F --color'),\n ('lx', 'ls -F -o --color %l | grep ^-..x'),\n ('mkdir', 'mkdir'),\n ('mv', 'mv'),\n ('rm', 'rm'),\n ('rmdir', 'rmdir')]  Invoke an external script into IPython.  run print_text.py  Hi!  Invoke an external script into IPython and open a window about the script s profile.  run -p print_text.py  Hi!  Load the external script into IPython ( load print_text.py  turns into  # %load print_text.py ).  # %load print_text.py\ndef print_text():\n\n     \n    The docstring. print_text prints Hi!\n     \n    print( Hi! )\n\nprint_text()", 
+            "title": "External"
+        }, 
+        {
+            "location": "/Scientific Python (the SciPy Stack)/", 
+            "text": "CONTENT\n\n\n\n\n\n\nForeword\n\n\nNotes.\n\n\n\n\n\n\nSciPy.org\n\n\nInstall\n\n\nGetting Started\n\n\nDocumentation\n\n\nSciPy Central (collection of code snippets, modules and links for solving scientific problems with SciPy and related Python tools)\n\n\nBlogs\n\n\nNumpy (Base N-dimensional array)\n\n\nMatplotlib (Comprehensive 2D Plotting) (official documentation, examples, gallery, commands)\n\n\nSympy (Symbolic mathematics) (official documentation, features, projects)\n\n\n\n\nIPython (Enhanced Interactive Console) (official documentation, Jupyter)\n\n\nPandas (Data structures \n analysis) (official documentation)\n\n\n\n\n\n\nNumpy examples (crash course and snippets in a IPython notebook)\n\n\nL\u2019informatique scientifique avec Python\n\n\n\n\nComment cr\u00e9er et manipuler les donn\u00e9es scientifiques : autour de Numpy (crash course, snippets\n\n\nSavoir chercher (trouver) de l\u2019aide\n\n\n\n\n\n\n\n\nMPIA Python Workshop (hands-on workshops on using Python to solve real-world problems)\n\n\nIntroduction and Motivation (quick tour, who is using, examples)\n\n\nPython Installation and Understanding Packages\n\n\nAn introduction to Pure Python (crash course)\n\n\nCore packages for analysis: NumPy and SciPy (snippets)\n\n\nPlotting and Images\n\n\nMatplotlib (procedural method, snippets)\n\n\nAdvanced plotting (object-based method)\n\n\nPublication-quality plots (tips)\n\n\n\n\n\n\nObject-Oriented Programming in Python (snippets)\n\n\nFitting data with Python (models, algorithms, how-to)", 
+            "title": "Scientific Python (the SciPy Stack)"
         }, 
         {
             "location": "/DataCamp Importing Data into Python 3/", 

@@ -12,6 +12,7 @@ copyright: © Ugo Spark
 pages:
     - Home: 'index.md'
     - Basics & More:
+        - Python Cheat Sheets: 'Py_CS.md'
         - Python Preliminaries: 'Python_Preliminaries.md'
         - Python Nice to Have: 'Python_Nice_to_Have.md'
         - Freeze the Code: 'Freeze_the_Code.md'
@@ -20,7 +21,9 @@ pages:
         - Regular Expressions (REGEX): 'Regex.md'
         - Databases: 'Databases.md'
         - Datetime: 'Datetime.md'
-    - SciPy Stack:
+    - SciPy Stack:  
+        - Scipy Stack Cheat Sheets: 'Scipy_CS.md'
+        - Jupyter Notebook Cheat Sheets: 'JN_CS.md'        
         - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
         - DataCamp Importing Data into Python 3: 'DataCamp Importing Data into Python 3.md'
         - DataCamp Python 3 for Data Science: 'DataCamp Python 3 for Data Science.md'
