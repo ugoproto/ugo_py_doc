@@ -8,7 +8,7 @@
   
   <meta name="author" content="Ugo Spark">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Python Nice to Have - ugo_py_doc</title>
+  <title>Python Cheat Sheets - ugo_py_doc</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Python Nice to Have";
-    var mkdocs_page_input_path = "Python_Nice_to_Have.md";
-    var mkdocs_page_url = "/Python_Nice_to_Have/";
+    var mkdocs_page_name = "Python Cheat Sheets";
+    var mkdocs_page_input_path = "Py_CS.md";
+    var mkdocs_page_url = "/Py_CS/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -56,26 +56,41 @@
 		
     <span class="caption-text">Basics & More</span>
     <ul class="subnav">
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+    <a class="current" href="./">Python Cheat Sheets</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#img">IMG</a></li>
+    
+
+    <li class="toctree-l3"><a href="#python-3">Python 3</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#img_1">IMG</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#libraries">Libraries</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#img_2">IMG</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
     <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Python Nice to Have</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#2-logging-collects-data">2, logging Collects Data</a></li>
-    
-
-    <li class="toctree-l3"><a href="#3-pil-manipulates-images">3, PIL Manipulates Images</a></li>
-    
-
-    </ul>
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
                 </li>
                 <li class="">
                     
@@ -215,7 +230,7 @@
         
       
     
-    <li>Python Nice to Have</li>
+    <li>Python Cheat Sheets</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -226,134 +241,66 @@
             <div class="section">
               
                 <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#1-mistune-converts-documents">1, mistune Converts Documents</a></li>
-<li><a href="#2-logging-collects-data">2, logging Collects Data</a></li>
-<li><a href="#3-pil-manipulates-images">3, PIL Manipulates Images</a></li>
+<li><a href="#python-2">Python 2</a><ul>
+<li><a href="#img">IMG</a></li>
+</ul>
+</li>
+<li><a href="#python-3">Python 3</a><ul>
+<li><a href="#img_1">IMG</a></li>
+</ul>
+</li>
+<li><a href="#libraries">Libraries</a><ul>
+<li><a href="#img_2">IMG</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Notes. Python 2. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
+<p>Cheat sheets.</p>
 <hr />
-<h4 id="1-mistune-converts-documents">1, <code>mistune</code> Converts Documents<a class="headerlink" href="#1-mistune-converts-documents" title="Permanent link">&para;</a></h4>
-<p><sub>convert, conversion, document, file</sub></p>
-<p>mistune is a markdown parser, turn into HTML markdown</p>
-<p>The <code>mistune</code> module is a markdown parser that turns markdown file into HTML. Run this script to see the html result in the terminal. For more on converting documents, check Pandoc. Install <code>mistune</code> with pip.</p>
-<pre><code class="python">import mistune
-
-text_block = 'The `mistune` module converts .md to .html.'
-
-html_block = mistune.markdown(text_block) # convert to html
-
-print html_block
-</code></pre>
-
-<p>Or run this command  to produce a .html document:</p>
-<pre><code class="bash">python mistune_pgm.py &gt; mistune_html.html
-</code></pre>
-
-<h4 id="2-logging-collects-data">2, <code>logging</code> Collects Data<a class="headerlink" href="#2-logging-collects-data" title="Permanent link">&para;</a></h4>
+<h4 id="python-2">Python 2<a class="headerlink" href="#python-2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Logging is a library recording what users pass in the code.</li>
-<li>It creates log files (text documents); it collects data.</li>
-<li>First, it is a good tool for gathering data.</li>
-<li>Second, it could also be a good tool for debugging; we can monitor what is inputed in the variables.</li>
+<li><a href="../Python-Cheatsheet-1.pdf">Python 2</a>.<ul>
+<li><code>sys</code> variables &amp; argv, <code>os</code> variables, class methods, list methods, string methods, file methods, slice, datatime methods &amp; formatting.</li>
 </ul>
-<p>We have a starting script.</p>
-<pre><code class="python">def get_location(monster, door, player):
-    &quot;&quot;&quot;Takes 3 arguments; string type.
-    Asks to enter 3 inputs.
-    Uses the 3 inputs in a sentence to print a sentence.
-    &quot;&quot;&quot;
-
-    print &quot;The %s behind the %s door was slayed by %s.&quot; % (monster, door, player)
-
-
-monsterr = raw_input(&quot;Enter a monster type: &quot;)
-doorr = raw_input(&quot;Enter a door color: &quot;)
-playerr = raw_input(&quot;Enter the player's name: &quot;)
-
-get_location(monsterr, doorr, playerr)
-</code></pre>
-
-<p>We run the script, the console displays 3 input messages, we input strings (Blob, blue, Al), and the script prints the results.</p>
-<pre><code class="python">The Blob behind the blue door was slayed by Al.
-</code></pre>
-
-<p>Now, we add the <code>logging</code> library.</p>
-<pre><code class="python">import logging
-
-
-logging.basicConfig(filename='game.log', level=logging.DEBUG) # invisible to the user
-
-
-def get_location(monster, door, player):
-    &quot;&quot;&quot;
-    Takes 3 arguments; string type.
-    Asks to enter 3 inputs.
-    Uses the 3 inputs in a sentence to print a sentence.
-    &quot;&quot;&quot;
-
-    print &quot;The %s behind the %s door was slayed by %s&quot; % (monster, door, player)
-
-
-monsterr = raw_input(&quot;Enter a monster type: &quot;)
-doorr = raw_input(&quot;Enter a door color: &quot;)
-playerr = raw_input(&quot;Enter the player's name: &quot;)
-
-get_location(monsterr, doorr, playerr)
-
-logging.info('monsterr: {}; doorr: {}; playerr {}'.format(
-    monsterr, doorr, playerr)) # invisible to the user
-</code></pre>
-
-<p>The user does not see the difference. But anytime someone runs the script, inputs are save to a log file: game.log.txt.</p>
-<p>We open the file.</p>
-<pre><code class="text">INFO:root:monsterr: Blob; doorr: blue; playerr Al
-INFO:root:monsterr: Puik; doorr: red; playerr Felicia
-</code></pre>
-
-<p>In the <code>logging.basicConfig</code> function, we select <code>level=logging.DEBUG</code>.</p>
-<p>There are 6 log levels (higher to lower): <code>CRITICAL</code>, <code>ERROR</code>, <code>WARNING</code>, <code>INFO</code>, <code>DEBUG</code>, <code>NOTSET</code>.</p>
+</li>
+<li><a href="../Python-Quick-Reference'Sheet.pdf">Quick Reference</a>.<ul>
+<li>help, operators, import, data types, syntax structure, built-in functions, math module functions, string methods &amp; formatting, list methods, tuple methods, dictionary methods, file methods, ASCII.</li>
+</ul>
+</li>
+<li><a href="../Python-Cheatsheet-2.pdf">Python 2</a>.<ul>
+<li>logic, strings, tuples, dictionaries, list, class &amp; function, files.</li>
+</ul>
+</li>
+<li><a href="../PythonCheatsheet-3.pdf">Python 2</a>.<ul>
+<li>variables, data types, functions, classes, imports, lists, comparisons, arithmetics, comments, control flow, exceptions &amp; errors, files.</li>
+</ul>
+</li>
+</ul>
+<h5 id="img">IMG<a class="headerlink" href="#img" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
+<h4 id="python-3">Python 3<a class="headerlink" href="#python-3" title="Permanent link">&para;</a></h4>
 <ul>
-<li><code>INFO</code>, <code>DEBUG</code> are information about the running of an app.</li>
-<li><code>WARNING</code> is for keeping track of questionable or exceptional things happening.</li>
-<li><code>ERROR</code>, <code>CRITICAL</code> are for when things go wrong.</li>
+<li>
+<p><a href="../Python-3-Cheatsheet.pdf">Python 3</a>.</p>
+<ul>
+<li>data types, identifiers, variables, sequences, conversions, indexing, boolean, maths, imports, conditional statements, exceptions &amp; errors, conditional loop, iterative loops, display, inputs, operations, lists, dictionaries, sets, files, integers, functions, strings, formatting.</li>
 </ul>
-<h4 id="3-pil-manipulates-images">3, <code>PIL</code> Manipulates Images<a class="headerlink" href="#3-pil-manipulates-images" title="Permanent link">&para;</a></h4>
-<p>The <code>PIL</code> package stands for &lsquo;Python Image library&rsquo; or Pillow. Pillow adds image processing capabilities. The library supports many file formats and provides powerful image processing and graphics capabilities. Given these images:</p>
-<table>
-<thead>
-<tr>
-<th>ballons.jpg</th>
-<th>ribbons.jpg</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="" src="../img/image_balloons.jpg" /></td>
-<td><img alt="" src="../img/image_ribbons.jpg" /></td>
-</tr>
-</tbody>
-</table>
-<pre><code class="python">import PIL
-
-ballons = Image.open('ballons.jpg')
-ribbons = Image.open('ribbons.jpg')
-
-# pixels; left, top, right, bottom (clockwise)
-box = (22, 324, 826, 846)
-ballons.crop(box).show()
-
-ballons.rotate(90).show()
-
-ballons.rotate(45).show() # won't work
-
-ballons.rotate(45, expand = True).show() # instead
-
-ballons.rotate(90).save('balloon2,jpg') # to the same directory
-ballons.rotate(90).save('path/balloon2,jpg') # to another directory
-</code></pre>
+<h5 id="img_1">IMG<a class="headerlink" href="#img_1" title="Permanent link">&para;</a></h5>
+</li>
+</ul>
+<hr />
+<hr />
+<h4 id="libraries">Libraries<a class="headerlink" href="#libraries" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="../Python-Debugger-Cheatsheet.pdf">Python Debugger</a>.</li>
+<li><a href="../Python-Decorators.pdf">Python Decorators</a>.</li>
+</ul>
+<h5 id="img_2">IMG<a class="headerlink" href="#img_2" title="Permanent link">&para;</a></h5>
+<hr />
+<hr />
               
             </div>
           </div>
@@ -361,10 +308,10 @@ ballons.rotate(90).save('path/balloon2,jpg') # to another directory
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Freeze_the_Code/" class="btn btn-neutral float-right" title="Freeze the Code">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Python_Preliminaries/" class="btn btn-neutral float-right" title="Python Preliminaries">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Python_Preliminaries/" class="btn btn-neutral" title="Python Preliminaries"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -392,10 +339,10 @@ ballons.rotate(90).save('path/balloon2,jpg') # to another directory
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Python_Preliminaries/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Freeze_the_Code/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../Python_Preliminaries/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
