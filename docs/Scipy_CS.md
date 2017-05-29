@@ -91,11 +91,3 @@ Cheat sheets.
 </center>
 
 ---
-
-## Jupyter Notebook
-
-<center>
-![](img/py_cs/weidadeyue_jupyter-notebook.png)
-</center>
-
----

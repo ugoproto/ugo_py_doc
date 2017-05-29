@@ -10,13 +10,13 @@ Cheat sheets and snippets.
 
 ---
 
-- [Jupyter Notebook](weidadeyue_jupyter-notebook.pdf).
-
 ## Jupyter Notebook commands
 
-### IMG
+- [Jupyter Notebook](weidadeyue_jupyter-notebook.pdf).
 
----
+<center>
+![](img/py_cs/weidadeyue_jupyter-notebook.png)
+</center>
 
 --- 
 
