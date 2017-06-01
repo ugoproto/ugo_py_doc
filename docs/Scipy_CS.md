@@ -44,8 +44,6 @@ Cheat sheets.
 ![](img/py_cs/PandasPythonForDataScience.png)
 </center>
 
----
-
 ## Machine Learning
 
 <center>
@@ -69,9 +67,7 @@ Cheat sheets.
 ![](img/py_cs/Scikit_Learn_Cheat_Sheet_Python.png)
 </center>
 
-*add: TensorFlow, neural nets, deep learning, orange*
-
----
+*Add: TensorFlow, neural nets, deep learning, orange*
 
 ## Visualization
 
@@ -89,5 +85,3 @@ Cheat sheets.
 <center>
 ![](img/py_cs/Python_Bokeh_Cheat_Sheet.png)
 </center>
-
----

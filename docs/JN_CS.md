@@ -18,8 +18,6 @@ Cheat sheets and snippets.
 ![](img/py_cs/weidadeyue_jupyter-notebook.png)
 </center>
 
---- 
-
 ## Objects
 
 Find, list, search, reset.
