@@ -12,8 +12,7 @@ Cheat sheets.
 
 ## Data Mining
 
-- [Numpy](Numpy_Python_Cheat_Sheet.pdf). PDF.
-- [Python Numpy Array](Python+Numpy+Array.html). HTML.
+- [Numpy](Numpy_Python_Cheat_Sheet.pdf).
 
 <center>
 ![](img/py_cs/Numpy_Python_Cheat_Sheet.png)
@@ -21,7 +20,7 @@ Cheat sheets.
 
 ---
 
-- [SciPy Linear Algebra](Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf). PDF.
+- [SciPy Linear Algebra](Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf).
 
 <center>
 ![](img/py_cs/Python_SciPy_Cheat_Sheet_Linear_Algebra.png)
@@ -29,7 +28,7 @@ Cheat sheets.
 
 ---
 
-- [Pandas](PandasPythonForDataScience.pdf). PDF.
+- [Pandas](PandasPythonForDataScience.pdf).
 
 <center>
 ![](img/py_cs/Pandas_Cheat_Sheeta.png)
@@ -39,7 +38,7 @@ Cheat sheets.
 
 ---
 
-- [Pandas DataFrame Notes](Pandas-DataFrame-Notes.pdf). PDF.
+- [Pandas DataFrame Notes](Pandas-DataFrame-Notes.pdf).
 
 <center>
 ![](img/py_cs/PandasPythonForDataScience.png)
@@ -54,7 +53,7 @@ Cheat sheets.
 ---
 
 - [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
-- [PySpark](PySpark_Cheat_Sheet_Python.pdf). PDF.
+- [PySpark](PySpark_Cheat_Sheet_Python.pdf).
 
 <center>
 ![](img/py_cs/PySpark_Cheat_Sheet_Python.png)
@@ -62,7 +61,7 @@ Cheat sheets.
 
 ---
 
-- [scikit-learn](Scikit_Learn_Cheat_Sheet_Python.pdf). PDF.
+- [scikit-learn](Scikit_Learn_Cheat_Sheet_Python.pdf).
 
 <center>
 ![](img/py_cs/Scikit_Learn_Cheat_Sheet_Python.png)
@@ -72,7 +71,7 @@ Cheat sheets.
 
 ## Visualization
 
-- [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
+- [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf).
 
 <center>
 ![](img/py_cs/Python_Matplotlib_Cheat_Sheet.png)
@@ -81,7 +80,7 @@ Cheat sheets.
 ---
 
 - [Matplotlib Notes](Matplotlib-Notes.pdf). PDF only.
-- [Bokeh](Python_Bokeh_Cheat_Sheet.pdf). PDF.
+- [Bokeh](Python_Bokeh_Cheat_Sheet.pdf).
 
 <center>
 ![](img/py_cs/Python_Bokeh_Cheat_Sheet.png)
