@@ -12,11 +12,15 @@ Cheat sheets.
 
 ## Data Mining
 
+- [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
+
+---
+
 - [Numpy](Numpy_Python_Cheat_Sheet.pdf). PDF.
 - [Python Numpy Array](Python+Numpy+Array.html). HTML.
 
 <center>
-![](img/py_cs/Numpy_Python_Cheat_Sheet.png)
+![](img/scipy_cs/Numpy_Python_Cheat_Sheet.png)
 </center>
 
 ---
@@ -24,7 +28,7 @@ Cheat sheets.
 - [SciPy Linear Algebra](Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf). PDF.
 
 <center>
-![](img/py_cs/Python_SciPy_Cheat_Sheet_Linear_Algebra.png)
+![](img/scipy_cs/Python_SciPy_Cheat_Sheet_Linear_Algebra.png)
 </center>
 
 ---
@@ -32,9 +36,9 @@ Cheat sheets.
 - [Pandas](PandasPythonForDataScience.pdf). PDF.
 
 <center>
-![](img/py_cs/Pandas_Cheat_Sheeta.png)
+![](img/scipy_cs/Pandas_Cheat_Sheeta.png)
 
-![](img/py_cs/Pandas_Cheat_Sheetb.png)
+![](img/scipy_cs/Pandas_Cheat_Sheetb.png)
 </center>
 
 ---
@@ -42,22 +46,13 @@ Cheat sheets.
 - [Pandas DataFrame Notes](Pandas-DataFrame-Notes.pdf). PDF.
 
 <center>
-![](img/py_cs/PandasPythonForDataScience.png)
+![](img/scipy_cs/PandasPythonForDataScience.png)
 </center>
 
 ## Machine Learning
 
 <center>
-![scikit-learn](img/CS/drop_shadows_background.png).
-</center>
-
----
-
-- [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
-- [PySpark](PySpark_Cheat_Sheet_Python.pdf). PDF.
-
-<center>
-![](img/py_cs/PySpark_Cheat_Sheet_Python.png)
+![](img/scipy_cs/drop_shadows_background.png).
 </center>
 
 ---
@@ -65,24 +60,46 @@ Cheat sheets.
 - [scikit-learn](Scikit_Learn_Cheat_Sheet_Python.pdf). PDF.
 
 <center>
-![](img/py_cs/Scikit_Learn_Cheat_Sheet_Python.png)
-</center>
-
-*Add: TensorFlow, neural nets, deep learning, orange*
-
-## Visualization
-
-- [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
-
-<center>
-![](img/py_cs/Python_Matplotlib_Cheat_Sheet.png)
+![](img/scipy_cs/Scikit_Learn_Cheat_Sheet_Python.png)
 </center>
 
 ---
 
+- [PySpark](PySpark_Cheat_Sheet_Python.pdf). PDF.
+
+<center>
+![](img/scipy_cs/PySpark_Cheat_Sheet_Python.png)
+</center>
+
+---
+
+- [PySpark SQL](PySpark_SQL_Cheat_Sheet_Python.pdf). PDF.
+
+<center>
+![](img/scipy_cs/PySpark_SQL_Cheat_Sheet_Python.png)
+</center>
+
+---
+
+- [Keras](Keras_Cheat_Sheet_Python.pdf). PDF.
+
+<center>
+![](img/scipy_cs/Keras_Cheat_Sheet_Python.png)
+</center>
+
+## Visualization
+
+- [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
 - [Matplotlib Notes](Matplotlib-Notes.pdf). PDF only.
+
+<center>
+![](img/scipy_cs/Python_Matplotlib_Cheat_Sheet.png)
+</center>
+
+---
+
 - [Bokeh](Python_Bokeh_Cheat_Sheet.pdf). PDF.
 
 <center>
-![](img/py_cs/Python_Bokeh_Cheat_Sheet.png)
+![](img/scipy_cs/Python_Bokeh_Cheat_Sheet.png)
 </center>
