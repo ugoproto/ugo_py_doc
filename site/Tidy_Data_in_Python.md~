@@ -33,9 +33,8 @@ What exactly marks the difference between tidy data and messy data? It is not on
 2. Each observation forms a row
 3. Each type of observation forms a unit.
 
-## 3, Messy data
 
-To get started, execute `messy`. This dataset, which appears in Wickham's paper, shows the number of people who choose either of two treatments in a hospital. Observe its structure in comparison with Wickham's rules. This dataset is *messy* because it violates rule 2: it combines Treatment A and Treatment B, two distinct observations, in a single row.
+To get started, execute `messy` in the shell. This dataset, which appears in Wickham's paper, shows the number of people who choose either of two treatments in a hospital. Observe its structure in comparison with Wickham's rules. This dataset is *messy* because it violates rule 2: it combines Treatment A and Treatment B, two distinct observations, in a single row.
 
 ```python
 print(messy.head())

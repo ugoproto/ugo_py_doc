@@ -127,6 +127,9 @@
     <li class="toctree-l3"><a href="#2-tidy-vs-messy-data">2, Tidy vs. Messy Data</a></li>
     
 
+    <li class="toctree-l3"><a href="#3-messy-data">3, Messy data</a></li>
+    
+
     <li class="toctree-l3"><a href="#4-using-melt-to-tidy-data">4, Using melt to Tidy Data</a></li>
     
 
@@ -232,6 +235,7 @@
                 <div class="toc"><span class="toctitle">CONTENT</span><ul>
 <li><a href="#1-loading">1, Loading</a></li>
 <li><a href="#2-tidy-vs-messy-data">2, Tidy vs. Messy Data</a></li>
+<li><a href="#3-messy-data">3, Messy data</a></li>
 <li><a href="#4-using-melt-to-tidy-data">4, Using melt to Tidy Data</a></li>
 </ul>
 </div>
@@ -257,7 +261,8 @@ eyes = pd.read_csv('eyes.csv')
 <li>Each observation forms a row</li>
 <li>Each type of observation forms a unit.</li>
 </ol>
-<p>To get started, execute <code>messy</code> in the shell. This dataset, which appears in Wickham&rsquo;s paper, shows the number of people who choose either of two treatments in a hospital. Observe its structure in comparison with Wickham&rsquo;s rules. This dataset is <em>messy</em> because it violates rule 2: it combines Treatment A and Treatment B, two distinct observations, in a single row.</p>
+<h4 id="3-messy-data">3, Messy data<a class="headerlink" href="#3-messy-data" title="Permanent link">&para;</a></h4>
+<p>To get started, execute <code>messy</code>. This dataset, which appears in Wickham&rsquo;s paper, shows the number of people who choose either of two treatments in a hospital. Observe its structure in comparison with Wickham&rsquo;s rules. This dataset is <em>messy</em> because it violates rule 2: it combines Treatment A and Treatment B, two distinct observations, in a single row.</p>
 <pre><code class="python">print(messy.head())
 </code></pre>
 
