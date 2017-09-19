@@ -392,7 +392,7 @@
         },
         {
             "location": "/Scipy_CS/",
-            "text": "CONTENT\n\n\nData Mining\n\n\nMachine Learning\n\n\nVisualization\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nData Mining\n\u00b6\n\n\n\n\nData Mining\n. PDF only.\n\n\n\n\n\n\n\n\nNumpy\n. PDF.\n\n\nPython Numpy Array\n. HTML.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSciPy Linear Algebra\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas DataFrame Notes\n. PDF.\n\n\n\n\n\n\n\n\n\n\nMachine Learning\n\u00b6\n\n\n\n\n.\n\n\n\n\n\n\n\n\nscikit-learn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark SQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeras\n. PDF.\n\n\n\n\n\n\n\n\n\n\nVisualization\n\u00b6\n\n\n\n\nMatplotlib\n. PDF.\n\n\nMatplotlib Notes\n. PDF only.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBokeh\n. PDF.",
+            "text": "CONTENT\n\n\nData Mining\n\n\nMachine Learning\n\n\nVisualization\n\n\n\n\n\n\n\n\nForeword\n\n\nCheat sheets.\n\n\n\n\nData Mining\n\u00b6\n\n\n\n\nData Mining\n. PDF only.\n\n\n\n\n\n\n\n\nNumPy/SciPy/Pandas Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython Numpy Array\n. HTML only.\n\n\nNumpy\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSciPy Linear Algebra\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas DataFrame Notes\n. PDF.\n\n\n\n\n\n\n\n\n\n\nMachine Learning\n\u00b6\n\n\n\n\n.\n\n\n\n\n\n\n\n\nscikit-learn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark SQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeras\n. PDF.\n\n\n\n\n\n\n\n\n\n\nVisualization\n\u00b6\n\n\n\n\nMatplotlib\n. PDF.\n\n\nMatplotlib Notes\n. PDF only.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeaborn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBokeh\n. PDF.",
             "title": "Scipy Stack Cheat Sheets"
         },
         {
@@ -402,7 +402,7 @@
         },
         {
             "location": "/Scipy_CS/#visualization",
-            "text": "Matplotlib . PDF.  Matplotlib Notes . PDF only.        Bokeh . PDF.",
+            "text": "Matplotlib . PDF.  Matplotlib Notes . PDF only.        Seaborn . PDF.        Bokeh . PDF.",
             "title": "Visualization"
         },
         {

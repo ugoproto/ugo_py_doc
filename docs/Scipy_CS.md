@@ -16,8 +16,22 @@ Cheat sheets.
 
 ---
 
+- [NumPy/SciPy/Pandas Cheat Sheet](NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf). PDF.
+
+<center>
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheeta.png)
+
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetb.png)
+
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetc.png)
+
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetd.png)
+</center>
+
+---
+
+- [Python Numpy Array](Python+Numpy+Array.html). HTML only.
 - [Numpy](Numpy_Python_Cheat_Sheet.pdf). PDF.
-- [Python Numpy Array](Python+Numpy+Array.html). HTML.
 
 <center>
 ![](img/scipy_cs/Numpy_Python_Cheat_Sheet.png)
@@ -94,6 +108,14 @@ Cheat sheets.
 
 <center>
 ![](img/scipy_cs/Python_Matplotlib_Cheat_Sheet.png)
+</center>
+
+---
+
+- [Seaborn](Python_Seaborn_Cheat_Sheet.pdf). PDF.
+
+<center>
+![](img/scipy_cs/Python_Seaborn_Cheat_Sheet.png)
 </center>
 
 ---
