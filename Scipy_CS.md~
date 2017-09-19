@@ -12,8 +12,26 @@ Cheat sheets.
 
 ## Data Mining
 
+- [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
+
+---
+
+- [NumPy/SciPy/Pandas Cheat Sheet](NumPy_SciPy_Pandas_Quandl_Cheat_Sheet.pdf). PDF.
+
+<center>
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheeta.png)
+
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetb.png)
+
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetc.png)
+
+![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetd.png)
+</center>
+
+---
+
+- [Python Numpy Array](Python+Numpy+Array.html). HTML only.
 - [Numpy](Numpy_Python_Cheat_Sheet.pdf). PDF.
-- [Python Numpy Array](Python+Numpy+Array.html). HTML.
 
 <center>
 ![](img/scipy_cs/Numpy_Python_Cheat_Sheet.png)
@@ -53,9 +71,13 @@ Cheat sheets.
 
 ---
 
-- [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
+- [scikit-learn](Scikit_Learn_Cheat_Sheet_Python.pdf). PDF.
 
-----
+<center>
+![](img/scipy_cs/Scikit_Learn_Cheat_Sheet_Python.png)
+</center>
+
+---
 
 - [PySpark](PySpark_Cheat_Sheet_Python.pdf). PDF.
 
@@ -73,14 +95,6 @@ Cheat sheets.
 
 ---
 
-- [scikit-learn](Scikit_Learn_Cheat_Sheet_Python.pdf). PDF.
-
-<center>
-![](img/scipy_cs/Scikit_Learn_Cheat_Sheet_Python.png)
-</center>
-
----
-
 - [Keras](Keras_Cheat_Sheet_Python.pdf). PDF.
 
 <center>
@@ -94,6 +108,15 @@ Cheat sheets.
 
 <center>
 ![](img/scipy_cs/Python_Matplotlib_Cheat_Sheet.png)
+</center>
+
+---
+
+- [Seaborn](Python_Seaborn_Cheat_Sheet.pdf). PDF.
+Python_Seaborn_Cheat_Sheet.pdf
+
+<center>
+![](img/scipy_cs/Python_Seaborn_Cheat_Sheet.png)
 </center>
 
 ---
