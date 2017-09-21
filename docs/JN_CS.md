@@ -12,10 +12,18 @@ Cheat sheets and snippets.
 
 ## Jupyter Notebook commands
 
+- [Jupyter Notebook](Jupyter_Notebook_Cheat_Sheet.pdf). PDF.
+
+<center>
+![](img/scipy_cs/Jupyter_Notebook_Cheat_Sheet.png)
+</center>
+
+---
+
 - [Jupyter Notebook](weidadeyue_jupyter-notebook.pdf). PDF
 
 <center>
-![](img/py_cs/weidadeyue_jupyter-notebook.png)
+![](img/scipy_cs/weidadeyue_jupyter-notebook.png)
 </center>
 
 ## Objects
