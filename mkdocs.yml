@@ -2,9 +2,9 @@ site_name: ugo_py_doc
 site_url: https://ugoproto.github.io/ugo_py_doc/
 #repo_url: https://github.com/ugoproto/ugo_py_doc
 site_description: A Python documentation website.
-site_author: Ugo Spark
+site_author: Ugo Sparks
 #site_favicon: favicon.ico
-copyright: © Ugo Spark
+copyright: © Ugo Sparks
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
 #remote_branch: master
 #remote_name: ugo_py_doc

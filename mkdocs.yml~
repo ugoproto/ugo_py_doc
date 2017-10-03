@@ -38,6 +38,7 @@ pages:
         - Introduction to Python: 'Introduction to Python.md'
     - Manuals:
         - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
+        - Real Python: 'Real_Python.md'
         - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
         - Python for Education: 'Python for Education.md'
  
