@@ -22,13 +22,14 @@ Cheat sheets.
 </center>
 
 ---
-    
+
+  
 - [Python Quick Reference](Python-Quick-Reference'Sheet.pdf). PDF
     - *help, operators, import, data types, syntax structure, built-in functions, math module functions, string methods & formatting, list methods, tuple methods, dictionary methods, file methods, ASCII.
     
 <center>
 ![](img/py_cs/Python-Quick-Reference-Sheeta.png)
-
+../img/
 ![](img/py_cs/Python-Quick-Reference-Sheetb.png)
 </center>
 
