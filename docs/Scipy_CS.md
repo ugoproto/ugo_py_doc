@@ -39,6 +39,7 @@ Cheat sheets.
 
 ---
 
+- [Linear Algebra](linear_algebra_in_4_pages.pdf). PDF only.
 - [SciPy Linear Algebra](Python_SciPy_Cheat_Sheet_Linear_Algebra.pdf). PDF.
 
 <center>
@@ -125,3 +126,7 @@ Cheat sheets.
 <center>
 ![](img/scipy_cs/Python_Bokeh_Cheat_Sheet.png)
 </center>
+
+---
+
+- [plotly](plotly_python_cheat_sheet.pdf). PDF only.
