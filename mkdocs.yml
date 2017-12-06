@@ -5,7 +5,7 @@ site_description: A Python documentation website.
 site_author: Ugo Sparks
 #site_favicon: favicon.ico
 copyright: © Ugo Sparks
-#google_analytics: ['UA-36723568-3', 'mkdocs.org']
+google_analytics: ['UA-93008985-2', 'mkdocs.org']
 #remote_branch: master
 #remote_name: ugo_py_doc
 
