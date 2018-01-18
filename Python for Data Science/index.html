@@ -8,7 +8,7 @@
   
   <meta name="author" content="Ugo Sparks">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>DataCamp Python 3 for Data Science - ugo_py_doc</title>
+  <title>Python for Data Science - ugo_py_doc</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "DataCamp Python 3 for Data Science";
-    var mkdocs_page_input_path = "DataCamp Python 3 for Data Science.md";
-    var mkdocs_page_url = "/DataCamp Python 3 for Data Science/";
+    var mkdocs_page_name = "Python for Data Science";
+    var mkdocs_page_input_path = "Python for Data Science.md";
+    var mkdocs_page_url = "/Python for Data Science/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -123,11 +123,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../DataCamp Importing Data into Python 3/">DataCamp Importing Data into Python 3</a>
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="./">DataCamp Python 3 for Data Science</a>
+    <a class="current" href="./">Python for Data Science</a>
     <ul class="subnav">
             
     <li class="toctree-l3"><a href="#basic-operations">Basic operations</a></li>
@@ -169,6 +169,10 @@
                 <li class="">
                     
     <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
                 </li>
     </ul>
 	    </li>
@@ -249,7 +253,7 @@
         
       
     
-    <li>DataCamp Python 3 for Data Science</li>
+    <li>Python for Data Science</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -655,7 +659,7 @@ plt.plot(year, pop)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_50_0.png" /></p>
+<p><img alt="png" src="../img/python/output_50_0.png" /></p>
 <p><strong>Scatter plot</strong></p>
 <pre><code class="python">eco = np.recfromcsv('economic.csv', delimiter=';', names=True, dtype=None)
 
@@ -675,7 +679,7 @@ plt.xscale('log')
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_53_0.png" /></p>
+<p><img alt="png" src="../img/python/output_53_0.png" /></p>
 <pre><code class="python"># Build Scatter plot
 plt.scatter(pop, life_exp)
 
@@ -685,7 +689,7 @@ plt.show()
 # There's no clear relationship between population and life expectancy, which makes perfect sense.
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_54_0.png" /></p>
+<p><img alt="png" src="../img/python/output_54_0.png" /></p>
 <p><strong>Histograms</strong></p>
 <pre><code class="python"># Create histogram of life_exp data (bins = 10 by default)
 plt.hist(life_exp)
@@ -694,7 +698,7 @@ plt.hist(life_exp)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_56_0.png" /></p>
+<p><img alt="png" src="../img/python/output_56_0.png" /></p>
 <pre><code class="python"># Build histogram with 5 bins
 plt.hist(life_exp, bins = 5)
 
@@ -710,8 +714,8 @@ plt.show()
 plt.clf()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_57_0.png" /></p>
-<p><img alt="png" src="../img/python_3/output_57_1.png" /></p>
+<p><img alt="png" src="../img/python/output_57_0.png" /></p>
+<p><img alt="png" src="../img/python/output_57_1.png" /></p>
 <pre><code>&lt;matplotlib.figure.Figure at 0x7578cf8&gt;
 </code></pre>
 <p><strong>Label</strong></p>
@@ -736,7 +740,7 @@ plt.title(title)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_59_0.png" /></p>
+<p><img alt="png" src="../img/python/output_59_0.png" /></p>
 <pre><code class="python"># Scatter plot
 plt.scatter(gdp_cap, life_exp)
 
@@ -757,7 +761,7 @@ plt.xticks(tick_val, tick_lab)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_60_0.png" /></p>
+<p><img alt="png" src="../img/python/output_60_0.png" /></p>
 <h5 id="a-plotting-project-gapminder">A plotting project: Gapminder<a class="headerlink" href="#a-plotting-project-gapminder" title="Permanent link">&para;</a></h5>
 <p><strong>Size, the 3rd dimension</strong></p>
 <ul>
@@ -784,7 +788,7 @@ plt.xticks([1000, 10000, 100000],['1k', '10k', '100k'])
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_62_0.png" /></p>
+<p><img alt="png" src="../img/python/output_62_0.png" /></p>
 <p><strong>Colors</strong></p>
 <pre><code class="python"># adding con
 con = ['red', 'green', 'blue', 'blue', 'yellow', 'black', 'green', 'red', 'red', 'green', 'blue', 'yellow', 'green', 'blue', 'yellow', 'green', 'blue', 'blue', 'red', 'blue', 'yellow', 'blue', 'blue', 'yellow', 'red', 'yellow', 'blue', 'blue', 'blue', 'yellow', 'blue', 'green', 'yellow', 'green', 'green', 'blue', 'yellow', 'yellow', 'blue', 'yellow', 'blue', 'blue', 'blue', 'green', 'green', 'blue', 'blue', 'green', 'blue', 'green', 'yellow', 'blue', 'blue', 'yellow', 'yellow', 'red', 'green', 'green', 'red', 'red', 'red', 'red', 'green', 'red', 'green', 'yellow', 'red', 'red', 'blue', 'red', 'red', 'red', 'red', 'blue', 'blue', 'blue', 'blue', 'blue', 'red', 'blue', 'blue', 'blue', 'yellow', 'red', 'green', 'blue', 'blue', 'red', 'blue', 'red', 'green', 'black', 'yellow', 'blue', 'blue', 'green', 'red', 'red', 'yellow', 'yellow', 'yellow', 'red', 'green', 'green', 'yellow', 'blue', 'green', 'blue', 'blue', 'red', 'blue', 'green', 'blue', 'red', 'green', 'green', 'blue', 'blue', 'green', 'red', 'blue', 'blue', 'green', 'green', 'red', 'red', 'blue', 'red', 'blue', 'yellow', 'blue', 'green', 'blue', 'green', 'yellow', 'yellow', 'yellow', 'red', 'red', 'red', 'blue', 'blue']
@@ -817,7 +821,7 @@ plt.xticks([1000,10000,100000], ['1k','10k','100k'])
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_65_0.png" /></p>
+<p><img alt="png" src="../img/python/output_65_0.png" /></p>
 <p><strong>Additional Customizations</strong></p>
 <pre><code class="python"># Scatter plot
 plt.scatter(x = gdp_cap, y = life_exp, s = np_pop * 2, c = con, alpha = 0.8)
@@ -840,7 +844,7 @@ plt.grid(True)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_67_0.png" /></p>
+<p><img alt="png" src="../img/python/output_67_0.png" /></p>
 <p><strong>List</strong></p>
 <pre><code class="python"># Definition of countries and capital
 countries = ['spain', 'france', 'germany', 'norway']
@@ -1508,7 +1512,7 @@ print(random_walk)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_128_0.png" /></p>
+<p><img alt="png" src="../img/python/output_128_0.png" /></p>
 <ul>
 <li>Build a Monte Carlo as an alternative.</li>
 </ul>
@@ -1566,7 +1570,7 @@ plt.plot(np_aw)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_131_0.png" /></p>
+<p><img alt="png" src="../img/python/output_131_0.png" /></p>
 <ul>
 <li>Now every row in <code>np_all_walks</code> represents the position after 1 throw (of dice) for the 10 random walks.</li>
 </ul>
@@ -1619,7 +1623,7 @@ plt.plot(np_aw_t)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_135_0.png" /></p>
+<p><img alt="png" src="../img/python/output_135_0.png" /></p>
 <ul>
 <li>What are the odds that you&rsquo;ll reach 60 steps high on the Empire State Building? </li>
 <li>Basically, you want to know about the end points of all the random walks you&rsquo;ve simulated. </li>
@@ -1658,7 +1662,7 @@ plt.hist(ends)
 plt.show()
 </code></pre>
 
-<p><img alt="png" src="../img/python_3/output_137_0.png" /></p>
+<p><img alt="png" src="../img/python/output_137_0.png" /></p>
 <ul>
 <li>The histogram of the previous exercise was created from a Numpy array <code>ends</code>, that contains 1,000 integers. </li>
 <li>Each integer represents the end point of a random walk. </li>
@@ -1683,7 +1687,7 @@ plt.show()
         <a href="../Tidy_Data_in_Python/" class="btn btn-neutral float-right" title="Tidy Data in Python">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../DataCamp Importing Data into Python 3/" class="btn btn-neutral" title="DataCamp Importing Data into Python 3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Importing Data into Python/" class="btn btn-neutral" title="Importing Data into Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -1711,7 +1715,7 @@ plt.show()
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../DataCamp Importing Data into Python 3/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Importing Data into Python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../Tidy_Data_in_Python/" style="color: #fcfcfc">Next &raquo;</a></span>
