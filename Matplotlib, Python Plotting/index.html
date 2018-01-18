@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Matplotlib, Python Plotting - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Matplotlib, Python Plotting";
+    var mkdocs_page_input_path = "Matplotlib, Python Plotting.md";
+    var mkdocs_page_url = "/Matplotlib, Python Plotting/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'mkdocs.org');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Matplotlib, Python Plotting</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#matplotlib-pyplot-and-pylab-how-are-they-related">matplotlib, pyplot and pylab: how are they related?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#create-a-plot">Create a Plot</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#a-subplot">A Subplot</a></li>
+        
+            <li><a class="toctree-l4" href="#the-difference-between-add_axes-and-add_subplot">The Difference Between add_axes() and add_subplot()</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#change-the-size-of-figures">Change the Size of Figures</a></li>
+    
+
+    <li class="toctree-l3"><a href="#working-with-pyplot-plotting-routines">Working With Pyplot: Plotting Routines</a></li>
+    
+
+    <li class="toctree-l3"><a href="#customize-pyplot">Customize pyplot</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#delete-an-axis">Delete an Axis</a></li>
+        
+            <li><a class="toctree-l4" href="#put-the-legend-out-of-the-plot">Put the Legend out of the Plot</a></li>
+        
+            <li><a class="toctree-l4" href="#set-plot-title-and-axes-labels">Set Plot Title and Axes Labels</a></li>
+        
+            <li><a class="toctree-l4" href="#set-the-plot-layout">Set the Plot Layout</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#show-save-and-close-the-plot">Show, Save, and Close the Plot</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#save-a-plot-to-an-image-file">Save a Plot to an Image File</a></li>
+        
+            <li><a class="toctree-l4" href="#save-a-plot-to-a-pdf-file">Save a Plot to a Pdf File</a></li>
+        
+            <li><a class="toctree-l4" href="#use-cla-clf-or-close">Use cla(), clf() or close()</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#customizing-matplotlib">Customizing Matplotlib</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#use-a-ggplot2-style">Use a ggplot2 Style</a></li>
+        
+            <li><a class="toctree-l4" href="#rc-settings">rc Settings</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Matplotlib, Python Plotting</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#a-matplotlib-python-plot">A Matplotlib Python Plot</a></li>
+<li><a href="#matplotlib-pyplot-and-pylab-how-are-they-related">matplotlib, pyplot and pylab: how are they related?</a></li>
+<li><a href="#create-a-plot">Create a Plot</a><ul>
+<li><a href="#a-subplot">A Subplot</a></li>
+<li><a href="#the-difference-between-add_axes-and-add_subplot">The Difference Between add_axes() and add_subplot()</a></li>
+</ul>
+</li>
+<li><a href="#change-the-size-of-figures">Change the Size of Figures</a></li>
+<li><a href="#working-with-pyplot-plotting-routines">Working With Pyplot: Plotting Routines</a></li>
+<li><a href="#customize-pyplot">Customize pyplot</a><ul>
+<li><a href="#delete-an-axis">Delete an Axis</a></li>
+<li><a href="#put-the-legend-out-of-the-plot">Put the Legend out of the Plot</a></li>
+<li><a href="#set-plot-title-and-axes-labels">Set Plot Title and Axes Labels</a></li>
+<li><a href="#set-the-plot-layout">Set the Plot Layout</a></li>
+</ul>
+</li>
+<li><a href="#show-save-and-close-the-plot">Show, Save, and Close the Plot</a><ul>
+<li><a href="#save-a-plot-to-an-image-file">Save a Plot to an Image File</a></li>
+<li><a href="#save-a-plot-to-a-pdf-file">Save a Plot to a Pdf File</a></li>
+<li><a href="#use-cla-clf-or-close">Use cla(), clf() or close()</a></li>
+</ul>
+</li>
+<li><a href="#customizing-matplotlib">Customizing Matplotlib</a><ul>
+<li><a href="#use-a-ggplot2-style">Use a ggplot2 Style</a></li>
+<li><a href="#rc-settings">rc Settings</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<h3 id="a-matplotlib-python-plot">A Matplotlib Python Plot<a class="headerlink" href="#a-matplotlib-python-plot" title="Permanent link">&para;</a></h3>
+<p>Imports, prepare some data, and start plotting.</p>
+<pre><code class="python">%matplotlib inline
+
+# Import the necessary packages and modules
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Prepare the plot
+import matplotlib as mpl
+mpl.rcParams['lines.linewidth'] = 1
+plt.style.use(&quot;default&quot;)
+</code></pre>
+
+<pre><code class="python"># Prepare the data
+x = np.linspace(0, 10, 100)
+print(x)
+</code></pre>
+
+<pre><code>[  0.           0.1010101    0.2020202    0.3030303    0.4040404
+   0.50505051   0.60606061   0.70707071   0.80808081   0.90909091
+   1.01010101   1.11111111   1.21212121   1.31313131   1.41414141
+   1.51515152   1.61616162   1.71717172   1.81818182   1.91919192
+   2.02020202   2.12121212   2.22222222   2.32323232   2.42424242
+   2.52525253   2.62626263   2.72727273   2.82828283   2.92929293
+   3.03030303   3.13131313   3.23232323   3.33333333   3.43434343
+   3.53535354   3.63636364   3.73737374   3.83838384   3.93939394
+   4.04040404   4.14141414   4.24242424   4.34343434   4.44444444
+   4.54545455   4.64646465   4.74747475   4.84848485   4.94949495
+   5.05050505   5.15151515   5.25252525   5.35353535   5.45454545
+   5.55555556   5.65656566   5.75757576   5.85858586   5.95959596
+   6.06060606   6.16161616   6.26262626   6.36363636   6.46464646
+   6.56565657   6.66666667   6.76767677   6.86868687   6.96969697
+   7.07070707   7.17171717   7.27272727   7.37373737   7.47474747
+   7.57575758   7.67676768   7.77777778   7.87878788   7.97979798
+   8.08080808   8.18181818   8.28282828   8.38383838   8.48484848
+   8.58585859   8.68686869   8.78787879   8.88888889   8.98989899
+   9.09090909   9.19191919   9.29292929   9.39393939   9.49494949
+   9.5959596    9.6969697    9.7979798    9.8989899   10.        ]
+</code></pre>
+<pre><code class="python"># Plot the data
+plt.plot(x, x, label='linear')
+
+# Add a legend
+plt.legend()
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_4_0.png" /></p>
+<ul>
+<li>Figure.</li>
+<li>Title, sub, text, legend.</li>
+<li>Axes with <code>plot()</code> and <code>scatter()</code> with ticks, labels, etc.</li>
+</ul>
+<p><img alt="" src="../img/matplotlib_python_plotting/content_content_unknown.png" /></p>
+<ul>
+<li><code>ax.plot()</code> calls <code>plt.plot()</code>.</li>
+<li><code>ax.scatter</code> calls <code>plt.scatter</code>.</li>
+<li><code>ax.set_xlim</code> call <code>plt.xlim</code>.</li>
+</ul>
+<p>With multiple axes, be explicit and prefer the first snippet to the second. See below.</p>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+fig = plt.figure()
+ax = fig.add_subplot(111)
+
+ax.plot([1, 2, 3, 4], [10, 20, 25, 30], color='lightblue', linewidth=3)
+ax.scatter([0.3, 3.8, 1.2, 2.5], [11, 25, 9, 26], color='darkgreen', marker='^')
+ax.set_xlim(0.5, 4.5)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_6_0.png" /></p>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3, 4], [10, 20, 25, 30], color='lightblue', linewidth=3)
+plt.scatter([0.3, 3.8, 1.2, 2.5], [11, 25, 9, 26], color='darkgreen', marker='^')
+plt.xlim(0.5, 4.5)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_7_0.png" /></p>
+<ul>
+<li>Each Axes has an x-axis and a y-axis, which contain ticks, which have major and minor ticklines and ticklabels.</li>
+<li>The axis labels, title, and legend.</li>
+<li>Spines are lines that connect the axis tick marks and that designate the boundaries of the data area. The right and top spines are set to invisible.</li>
+</ul>
+<p><img alt="" src="../img/matplotlib_python_plotting/plot3_matplotlib.png" /></p>
+<ul>
+<li>Everything drawn using <code>matplotlib</code> is part of the Artist module. The containers to plot the data, such as Axis, Axes, and Figure, and other graphical objects such as text, patches, etc.</li>
+<li><a href="https://matplotlib.org/gallery.html">GALLERY</a>.</li>
+</ul>
+<h3 id="matplotlib-pyplot-and-pylab-how-are-they-related"><code>matplotlib</code>, <code>pyplot</code> and <code>pylab</code>: how are they related?<a class="headerlink" href="#matplotlib-pyplot-and-pylab-how-are-they-related" title="Permanent link">&para;</a></h3>
+<p><code>pyplot</code> is a module in <code>matplotlib</code> to implicitly and automatically create figures and axes. Everything can be customized though.</p>
+<p><code>%pylab</code> and <code>%pylab inline</code> import <code>pyplot</code> and <code>numpy</code>. <code>%matplotlib</code> and <code>%matplotlib inline</code> import <code>pyplot</code>.</p>
+<p><code>matplotlib</code> can save images to the local file system.</p>
+<h3 id="create-a-plot">Create a Plot<a class="headerlink" href="#create-a-plot" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import `pyplot`
+import matplotlib.pyplot as plt
+
+# Initialize a Figure 
+fig = plt.figure()
+
+# Add Axes to the Figure
+fig.add_axes([0,0,1,1])
+</code></pre>
+
+<pre><code>&lt;matplotlib.axes._axes.Axes at 0x7f796d5c7ac8&gt;
+</code></pre>
+<p><img alt="" src="../img/matplotlib_python_plotting/output_9_1.png" /></p>
+<h4 id="a-subplot">A Subplot<a class="headerlink" href="#a-subplot" title="Permanent link">&para;</a></h4>
+<p>Axes and subplot are synonymous. There is, however, a difference between the <code>add_axes()</code> and the <code>add_subplots()</code> function.</p>
+<pre><code class="python"># Import the necessary packages and modules
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create a Figure
+fig = plt.figure()
+
+# Set up Axes
+ax = fig.add_subplot(111)
+
+# Scatter the data
+ax.scatter(np.linspace(0, 1, 5), np.linspace(0, 5, 5))
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_11_0.png" /></p>
+<p><code>111</code> designates the number of rows (1), the number of columns (1) and the plot number (1); it means one subplot.</p>
+<pre><code class="python"># Create a Figure
+fig = plt.figure()
+
+# Set up Axes of no 1
+ax = fig.add_subplot(121)
+
+# Scatter the data
+ax.scatter(np.linspace(0, 1, 5), np.linspace(0, 5, 5))
+
+# Set up Axes of no 2
+ax = fig.add_subplot(122)
+
+# Scatter the data
+ax.scatter(np.linspace(0, 1, 5), np.linspace(0, 5, 5))
+
+# Show the plots
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_13_0.png" /></p>
+<h4 id="the-difference-between-add_axes-and-add_subplot">The Difference Between <code>add_axes()</code> and <code>add_subplot()</code><a class="headerlink" href="#the-difference-between-add_axes-and-add_subplot" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>add_axes()</code> is the lower left point, the width, and the height. In cases where the positioning matters.</li>
+<li><code>add_subplot()</code> is a grid: the number of rows, columns, and the plot number.</li>
+</ul>
+<h3 id="change-the-size-of-figures">Change the Size of Figures<a class="headerlink" href="#change-the-size-of-figures" title="Permanent link">&para;</a></h3>
+<p><code>plt.figure(figsize=(3,4))</code> for the width and height in inches.</p>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+# Initialize the plot
+fig = plt.figure(figsize=(20,10))
+ax1 = fig.add_subplot(121)
+ax2 = fig.add_subplot(122)
+
+ax1.bar([1,2,3],[3,4,5])
+ax2.barh([0.5,1,2.5],[0,1,2])
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_16_0.png" /></p>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+# Initialize the plot
+fig, (ax1, ax2) = plt.subplots(1,2, figsize=(20,10))
+
+ax1.bar([1,2,3],[3,4,5])
+ax2.barh([0.5,1,2.5],[0,1,2])
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_17_0.png" /></p>
+<h3 id="working-with-pyplot-plotting-routines">Working With Pyplot: Plotting Routines<a class="headerlink" href="#working-with-pyplot-plotting-routines" title="Permanent link">&para;</a></h3>
+<p>Common plots.</p>
+<ul>
+<li><code>ax.bar()</code>: Vertical rectangles.</li>
+<li><code>ax.barh()</code>: Horizontal rectangles.</li>
+<li><code>ax.axhline()</code>: Horizontal line across axes.</li>
+<li><code>ax.axvline()</code>: Vertical line across axes.</li>
+<li><code>ax.fill()</code>: Filled polygons.</li>
+<li><code>ax.fill_between()</code>: Fill between y-values and 0 (area plot).</li>
+<li><code>ax.stackplot()</code>: Stack plot.</li>
+</ul>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize=(20,10))
+ax1 = fig.add_subplot(231)
+ax2 = fig.add_subplot(232)
+ax3 = fig.add_subplot(233)
+ax4 = fig.add_subplot(234)
+ax5 = fig.add_subplot(235)
+ax6 = fig.add_subplot(236)
+
+ax1.bar([1,2,3],[3,4,5])
+ax1.axvline(1.65, color='red', linewidth=2)
+
+ax2.barh([0.5,1,2.5],[0,1,2])
+ax2.axhline(1.45, color='red', linewidth=2)
+
+ax3.scatter([1,2,3],[3,4,8], marker='^')
+
+ax4.plot([1, 2, 3, 4], [10, 20, 25, 30], color='lightblue', linewidth=3)
+
+ax5.fill_between([1,2,3],[3,4,8])
+
+ax6.stackplot([1,2,3],[3,4,8])
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_19_0.png" /></p>
+<p>Specialized plots.</p>
+<ul>
+<li><code>ax.arrow()</code>: Arrow.</li>
+<li><code>ax.quiver()</code>: 2D field of arrows.</li>
+<li><code>ax.streamplot()</code>: 2D vector fields.</li>
+<li><code>ax.hist()</code>: Histogram.</li>
+<li><code>ax.boxplot()</code>: Boxplot.</li>
+<li><code>ax.violinplot()</code>: Violinplot.</li>
+</ul>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize=(20,10))
+ax1 = fig.add_subplot(231)
+ax2 = fig.add_subplot(232)
+ax3 = fig.add_subplot(233)
+ax4 = fig.add_subplot(234)
+ax5 = fig.add_subplot(235)
+ax6 = fig.add_subplot(236)
+
+ax1.arrow(0, 0, 0.5, 0.5, head_width=0.05, head_length=0.1, fc='k', ec='k')
+
+X, Y = np.meshgrid(np.arange(0, 2 * np.pi, .2), np.arange(0, 2 * np.pi, .2))
+U = np.cos(X)
+V = np.sin(Y)
+ax2.quiver(X, Y, U, V, units='width')
+
+Y, X = np.mgrid[-3:3:100j, -3:3:100j]
+U = -1 - X**2 + Y
+V = 1 + X - Y**2
+speed = np.sqrt(U*U + V*V)
+ax3.streamplot(X, Y, U, V, color=U)
+
+ax4.hist(np.random.rand(50) * 100)
+
+ax5.boxplot(np.random.rand(50) * 100)
+
+ax6.violinplot(np.random.rand(50) * 100)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_21_0.png" /></p>
+<p>And more specialized plots.</p>
+<ul>
+<li><code>ax.pcolor()</code>: Pseudocolor plot.</li>
+<li><code>ax.pcolormesh()</code>: Pseudocolor plot.</li>
+<li><code>ax.contour()</code>: Contour plot.</li>
+<li><code>ax.contourf()</code>: Filled contour plot.</li>
+<li><code>ax.clabel()</code>: Labeled contour plot.</li>
+</ul>
+<p>Contour plots are used to explore the potential relationship between three variables. Pseudocolor plots can be used for this purpose since they are surface plot seen from above. </p>
+<h3 id="customize-pyplot">Customize <code>pyplot</code><a class="headerlink" href="#customize-pyplot" title="Permanent link">&para;</a></h3>
+<p>See the online plot <a href="https://matplotlib.org/gallery.html">Gallery</a></p>
+<h4 id="delete-an-axis">Delete an Axis<a class="headerlink" href="#delete-an-axis" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(20,10))
+ax1 = fig.add_subplot(131)
+ax2 = fig.add_subplot(132)
+ax3 = fig.add_subplot(133)
+
+ax1.bar([1,2,3],[3,4,5])
+ax1.axvline(0.65, color='red')
+
+ax2.barh([0.5,1,2.5],[0,1,2])
+ax2.axhline(0.45, color='red')
+
+ax3.scatter(np.linspace(0, 1, 5), np.linspace(0, 5, 5))
+
+# Delete `ax3` !!! (add them back further down)
+fig.delaxes(ax3)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_24_0.png" /></p>
+<pre><code class="python">import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(20,10))
+ax1 = fig.add_subplot(131)
+ax2 = fig.add_subplot(132)
+ax3 = fig.add_subplot(133)
+
+ax1.bar([1,2,3],[3,4,5])
+ax1.axvline(0.65, color='red')
+
+ax2.barh([0.5,1,2.5],[0,1,2])
+ax2.axhline(0.45, color='red')
+
+ax3.scatter(np.linspace(0, 1, 5), np.linspace(0, 5, 5))
+
+# Delete `ax3` !!!
+fig.delaxes(ax3)
+# Add them back !!!
+fig.add_axes(ax3)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_25_0.png" /></p>
+<h4 id="put-the-legend-out-of-the-plot">Put the Legend out of the Plot<a class="headerlink" href="#put-the-legend-out-of-the-plot" title="Permanent link">&para;</a></h4>
+<p><code>legend()</code> with many options.</p>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize=(10,5))
+ax = fig.add_subplot(111)
+ax.bar([1,2,3],[3,4,5], width=0.2, align='center', label=&quot;test1&quot;)
+ax.bar([1.2,2.2,3.2],[4,5,3], color='darkgreen', width=0.2, align='center', label=&quot;test2&quot;)
+
+ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.2)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_27_0.png" /></p>
+<h4 id="set-plot-title-and-axes-labels">Set Plot Title and Axes Labels<a class="headerlink" href="#set-plot-title-and-axes-labels" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>ax.set(title="A title", xlabel="x", ylabel="y")</code> or <code>ax.set_xlim()</code>, <code>ax.set_ylim()</code> or <code>ax.set_title()</code>. </li>
+<li><code>plt.title()</code>, <code>plt.xlabel()</code>, <code>plt.ylabel()</code>.</li>
+</ul>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize=(10,5))
+ax = fig.add_subplot(111)
+ax.bar([1,2,3],[3,4,5], width=0.2, align='center', label=&quot;test1&quot;)
+ax.bar([1.2,2.2,3.2],[4,5,3], color='darkgreen', width=0.2, align='center', label=&quot;test2&quot;)
+
+ax.set(title=&quot;A title&quot;, xlabel=&quot;x-axis&quot;, ylabel=&quot;y-axis&quot;)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_29_0.png" /></p>
+<h4 id="set-the-plot-layout">Set the Plot Layout<a class="headerlink" href="#set-the-plot-layout" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>plt.tight_layout()</code> before <code>plt.show()</code>.</li>
+<li><code>subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=None, hspace=None)</code>, which allows to manually set the width and height reserved for blank space between subplots, and also fix the left and right sides, and the top and bottom of the subplots.</li>
+</ul>
+<pre><code class="python">import matplotlib.pyplot as plt
+
+fig = plt.figure(figsize=(10,5))
+ax = fig.add_subplot(111)
+ax.bar([1,2,3],[3,4,5], width=0.2, align='center', label=&quot;test1&quot;)
+ax.bar([1.2,2.2,3.2],[4,5,3], color='darkgreen', width=0.2, align='center', label=&quot;test2&quot;)
+
+plt.tight_layout()         
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_31_0.png" /></p>
+<pre><code class="python">import matplotlib.pyplot as plt
+import numpy as np
+
+fig = plt.figure(figsize=(15,7))
+ax1 = fig.add_subplot(121)
+ax2 = fig.add_subplot(122)
+
+ax1.bar([1,2,3],[3,4,5])
+ax1.axvline(0.65, color='red')
+
+ax2.barh([0.5,1,2.5],[0,1,2])
+ax2.axhline(0.45, color='red')
+
+plt.subplots_adjust(top=0.9)
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_32_0.png" /></p>
+<h3 id="show-save-and-close-the-plot">Show, Save, and Close the Plot<a class="headerlink" href="#show-save-and-close-the-plot" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import the necessary packages and modules
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Prepare the data
+x = np.linspace(0, 10, 100)
+
+# Plot the data
+plt.plot(x, x, label='linear')
+
+# Add a legend
+plt.legend()
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_34_0.png" /></p>
+<h4 id="save-a-plot-to-an-image-file">Save a Plot to an Image File<a class="headerlink" href="#save-a-plot-to-an-image-file" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+
+plt.plot(x, x, label='linear')
+
+plt.legend()
+
+# Save Figure
+plt.savefig(&quot;foo1.png&quot;)
+
+# Save Transparent (alpha layer) Figure
+plt.savefig(&quot;foo2.png&quot;, transparent=True)
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_36_0.png" /></p>
+<p>Bring back the image:</p>
+<p>foo1.png: <img alt="" src="../img/matplotlib_python_plotting/foo1.png" /></p>
+<h4 id="save-a-plot-to-a-pdf-file">Save a Plot to a Pdf File<a class="headerlink" href="#save-a-plot-to-a-pdf-file" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import matplotlib.pyplot as plt
+import numpy as np
+
+from matplotlib.backends.backend_pdf import PdfPages
+
+x = np.linspace(0, 10, 100)
+
+plt.plot(x, x, label='linear')
+
+plt.legend()
+
+# Initialize the pdf file
+pp = PdfPages('multipage.pdf')
+
+# Save the figure to the file
+pp.savefig()
+
+# Close the file
+pp.close()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_39_0.png" /></p>
+<h4 id="use-cla-clf-or-close">Use <code>cla()</code>, <code>clf()</code> or <code>close()</code><a class="headerlink" href="#use-cla-clf-or-close" title="Permanent link">&para;</a></h4>
+<p>Tell <code>matplotlib</code> to close down the plot and move on. When plotting in a pop-up window.</p>
+<ul>
+<li><code>plt.cla()</code> to clear an axis.</li>
+<li><code>plt.clf()</code> to clear the entire figure.</li>
+<li><code>plt.close()</code> to close a window that has popped up to show the plot.</li>
+</ul>
+<pre><code class="python">import matplotlib.pyplot as plt
+import numpy as np
+
+# 1
+x = np.linspace(0, 10, 100)
+
+plt.plot(x, x, label='linear')
+
+plt.legend()
+
+plt.show()
+
+# 2
+x = np.linspace(0, 20, 100)
+
+plt.plot(x, x, label='linear', color='red')
+
+plt.legend()
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_41_0.png" /></p>
+<p><img alt="" src="../img/matplotlib_python_plotting/output_41_1.png" /></p>
+<h3 id="customizing-matplotlib">Customizing Matplotlib<a class="headerlink" href="#customizing-matplotlib" title="Permanent link">&para;</a></h3>
+<p><a href="https://matplotlib.org/users/customizing.html">Customizing</a> <code>matplotlib</code>.</p>
+<h4 id="use-a-ggplot2-style">Use a ggplot2 Style<a class="headerlink" href="#use-a-ggplot2-style" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># Import `pyplot` 
+import matplotlib.pyplot as plt
+
+# Set the style to `ggplot`
+plt.style.use(&quot;ggplot&quot;)
+
+x = np.linspace(0, 10, 100)
+
+plt.plot(x, x, label='linear')
+
+plt.legend()
+
+plt.show()
+
+plt.style.use(&quot;default&quot;)
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_43_0.png" /></p>
+<h4 id="rc-settings">rc Settings<a class="headerlink" href="#rc-settings" title="Permanent link">&para;</a></h4>
+<p>Automatically <strong>r</strong>un and <strong>c</strong>onfigure settings.</p>
+<pre><code class="python">import matplotlib as mpl
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Uncomment following line to see the effect 
+mpl.rcParams['lines.linewidth'] = 5
+
+x = np.linspace(0, 10, 100)
+
+plt.plot(x, x, label='linear')
+
+plt.legend()
+
+plt.show()
+
+mpl.rcParams['lines.linewidth'] = 1
+</code></pre>
+
+<p><img alt="" src="../img/matplotlib_python_plotting/output_45_0.png" /></p>
+<p>To work more statically, there is a <code>matplotlibrc</code> configuration file which  can be used to customize all kinds of properties.</p>
+<pre><code class="python">import matplotlib
+
+matplotlib.matplotlib_fname()
+</code></pre>
+
+<p>Run the commands, go to the subdir indicated by the result, pull up the file, change the parameters, save the file and see the results on the next plots.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Apprenez a programmer en Python/" class="btn btn-neutral float-right" title="Apprenez à programmer en Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Vectors and Arrays (Linear Algebra)/" class="btn btn-neutral" title="Vectors and Arrays (Linear Algebra)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Vectors and Arrays (Linear Algebra)/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Apprenez a programmer en Python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>
