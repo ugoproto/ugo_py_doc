@@ -135,6 +135,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://ugoproto.github.io/ugo_py_doc//Viewing+3D+Volumetric+Data+With+Matplotlib/</loc>
+     <lastmod>2018-01-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://ugoproto.github.io/ugo_py_doc//Seaborn, Python Statistical Data Visualization Library/</loc>
+     <lastmod>2018-01-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
