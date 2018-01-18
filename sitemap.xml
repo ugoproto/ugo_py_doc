@@ -147,6 +147,24 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://ugoproto.github.io/ugo_py_doc//Pandas+DataFrames/</loc>
+     <lastmod>2018-01-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://ugoproto.github.io/ugo_py_doc//Write Idiomatic Pandas Code/</loc>
+     <lastmod>2018-01-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://ugoproto.github.io/ugo_py_doc//Exploratory Data Analysis/</loc>
+     <lastmod>2018-01-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

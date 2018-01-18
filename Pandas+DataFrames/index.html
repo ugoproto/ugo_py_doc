@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Pandas DataFrames - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Pandas DataFrames";
+    var mkdocs_page_input_path = "Pandas+DataFrames.md";
+    var mkdocs_page_url = "/Pandas+DataFrames/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'mkdocs.org');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Pandas DataFrames</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#create-a-pandas-dataframe">Create a Pandas DataFrame</a></li>
+    
+
+    <li class="toctree-l3"><a href="#fundamental-dataframe-operations">Fundamental DataFrame Operations</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#select-an-index-or-column-from-a-pandas-dataframe">Select an Index or Column from a Pandas DataFrame</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#add-an-index-row-or-column-to-a-pandas-dataframe">Add an Index, Row or Column to a Pandas DataFrame</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#add-an-index-to-a-dataframe">Add an Index to a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#add-rows-to-a-dataframe">Add Rows to a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#add-a-column-to-a-dataframe">Add a Column to a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#reset-the-index-of-a-dataframe">Reset the Index of a DataFrame</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#delete-indices-rows-or-columns-from-a-pandas-data-frame">Delete Indices, Rows or Columns From a Pandas Data Frame</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#delete-an-index-from-a-dataframe">Delete an Index from a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#delete-a-column-from-a-dataframe">Delete a Column from a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#remove-a-row-from-a-dataframe">Remove a Row from a DataFrame</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#rename-the-index-or-columns-of-a-pandas-dataframe">Rename the Index or Columns of a Pandas DataFrame</a></li>
+    
+
+    <li class="toctree-l3"><a href="#format-the-data-in-a-pandas-dataframe">Format The Data in a Pandas DataFrame</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#replace-all-occurrences-of-a-string-in-a-dataframe">Replace All Occurrences of a String in a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#remove-parts-from-strings-in-the-cells-of-a-dataframe">Remove Parts from Strings in the Cells of a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#split-text-in-a-column-into-multiple-rows-in-a-dataframe">Split Text in a Column into Multiple Rows in a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#apply-a-function-to-a-pandas-dataframes-columns-or-rows">Apply a Function to a Pandas DataFrame’s Columns or Rows</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#create-an-empty-dataframe">Create an Empty DataFrame</a></li>
+    
+
+    <li class="toctree-l3"><a href="#does-pandas-recognize-dates-when-importing-data">Does Pandas Recognize Dates when Importing Data?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#when-why-and-how-we-should-reshape-a-dataframe">When, Why and How we should Reshape a DataFrame</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#pivot-a-dataframe">Pivot a DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#use-stack-and-unstack-to-reshape-a-pandas-dataframe">Use stack() and unstack() to Reshape a Pandas DataFrame</a></li>
+        
+            <li><a class="toctree-l4" href="#reshape-a-dataframe-with-melt">Reshape a DataFrame with melt()</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#iterate-over-a-pandas-dataframe">Iterate over a Pandas DataFrame</a></li>
+    
+
+    <li class="toctree-l3"><a href="#write-a-pandas-dataframe-to-a-file">Write a Pandas DataFrame to a File</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#output-a-dataframe-to-csv">Output a DataFrame to CSV</a></li>
+        
+            <li><a class="toctree-l4" href="#write-a-dataframe-to-excel">Write a DataFrame to Excel</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Pandas DataFrames</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#what-are-pandas-data-frames">What are Pandas Data Frames?</a></li>
+<li><a href="#create-a-pandas-dataframe">Create a Pandas DataFrame</a></li>
+<li><a href="#fundamental-dataframe-operations">Fundamental DataFrame Operations</a><ul>
+<li><a href="#select-an-index-or-column-from-a-pandas-dataframe">Select an Index or Column from a Pandas DataFrame</a><ul>
+<li><a href="#element">Element</a></li>
+<li><a href="#row-column">Row, Column</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#add-an-index-row-or-column-to-a-pandas-dataframe">Add an Index, Row or Column to a Pandas DataFrame</a><ul>
+<li><a href="#add-an-index-to-a-dataframe">Add an Index to a DataFrame</a></li>
+<li><a href="#add-rows-to-a-dataframe">Add Rows to a DataFrame</a></li>
+<li><a href="#add-a-column-to-a-dataframe">Add a Column to a DataFrame</a></li>
+<li><a href="#reset-the-index-of-a-dataframe">Reset the Index of a DataFrame</a></li>
+</ul>
+</li>
+<li><a href="#delete-indices-rows-or-columns-from-a-pandas-data-frame">Delete Indices, Rows or Columns From a Pandas Data Frame</a><ul>
+<li><a href="#delete-an-index-from-a-dataframe">Delete an Index from a DataFrame</a></li>
+<li><a href="#delete-a-column-from-a-dataframe">Delete a Column from a DataFrame</a></li>
+<li><a href="#remove-a-row-from-a-dataframe">Remove a Row from a DataFrame</a></li>
+</ul>
+</li>
+<li><a href="#rename-the-index-or-columns-of-a-pandas-dataframe">Rename the Index or Columns of a Pandas DataFrame</a></li>
+<li><a href="#format-the-data-in-a-pandas-dataframe">Format The Data in a Pandas DataFrame</a><ul>
+<li><a href="#replace-all-occurrences-of-a-string-in-a-dataframe">Replace All Occurrences of a String in a DataFrame</a></li>
+<li><a href="#remove-parts-from-strings-in-the-cells-of-a-dataframe">Remove Parts from Strings in the Cells of a DataFrame</a></li>
+<li><a href="#split-text-in-a-column-into-multiple-rows-in-a-dataframe">Split Text in a Column into Multiple Rows in a DataFrame</a></li>
+<li><a href="#apply-a-function-to-a-pandas-dataframes-columns-or-rows">Apply a Function to a Pandas DataFrame’s Columns or Rows</a></li>
+</ul>
+</li>
+<li><a href="#create-an-empty-dataframe">Create an Empty DataFrame</a></li>
+<li><a href="#does-pandas-recognize-dates-when-importing-data">Does Pandas Recognize Dates when Importing Data?</a></li>
+<li><a href="#when-why-and-how-we-should-reshape-a-dataframe">When, Why and How we should Reshape a DataFrame</a><ul>
+<li><a href="#pivot-a-dataframe">Pivot a DataFrame</a></li>
+<li><a href="#use-stack-and-unstack-to-reshape-a-pandas-dataframe">Use stack() and unstack() to Reshape a Pandas DataFrame</a></li>
+<li><a href="#reshape-a-dataframe-with-melt">Reshape a DataFrame with melt()</a></li>
+</ul>
+</li>
+<li><a href="#iterate-over-a-pandas-dataframe">Iterate over a Pandas DataFrame</a></li>
+<li><a href="#write-a-pandas-dataframe-to-a-file">Write a Pandas DataFrame to a File</a><ul>
+<li><a href="#output-a-dataframe-to-csv">Output a DataFrame to CSV</a></li>
+<li><a href="#write-a-dataframe-to-excel">Write a DataFrame to Excel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<h3 id="what-are-pandas-data-frames">What are Pandas Data Frames?<a class="headerlink" href="#what-are-pandas-data-frames" title="Permanent link">&para;</a></h3>
+<ul>
+<li>a Pandas <code>DataFrame</code>.</li>
+<li>a Pandas <code>Series</code>: a one-dimensional labeled array capable of holding any data type with axis labels or index. An example of a Series object is one column from a DataFrame.</li>
+<li>a Numpy <code>ndarray</code>, which can be a record or structured</li>
+<li>a two-dimensional <code>ndarray</code></li>
+<li>dictionaries of one-dimensional <code>ndarrays</code>, lists, dictionaries or Series.</li>
+</ul>
+<p><code>np.ndarray</code> is the actual data type, while <code>np.array()</code> is a function.</p>
+<p>Besides the data that a DataFrame needs to contain, we can also specify the index and column names. The index, on the one hand, indicates the difference in rows, while the column names indicate the difference in columns.</p>
+<pre><code class="python">%pylab inline
+import numpy as np
+import pandas as pd
+</code></pre>
+
+<pre><code>Populating the interactive namespace from numpy and matplotlib
+</code></pre>
+<pre><code class="python">import os
+
+os.chdir('/home/ugo/Documents/Notebooks/DataCamp, Pandas tutorial/')
+
+print(os.getcwd())
+</code></pre>
+
+<pre><code>/home/ugo/Documents/Notebooks/DataCamp, Pandas tutorial
+</code></pre>
+<pre><code class="python"># A structured array
+my_array = np.ones(3, dtype=([('foo', int), ('bar', float)]))
+# Print the structured array
+print(my_array['foo'])
+</code></pre>
+
+<pre><code>[1 1 1]
+</code></pre>
+<pre><code class="python"># A record array
+my_array2 = my_array.view(np.recarray)
+# Print the record array
+print(my_array2.foo)
+</code></pre>
+
+<pre><code>[1 1 1]
+</code></pre>
+<h3 id="create-a-pandas-dataframe">Create a Pandas DataFrame<a class="headerlink" href="#create-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<p>First, select the values that are contained in the lists that start with <code>Row1</code> and <code>Row2</code>, then select the index or row numbers <code>Row1</code> and <code>Row2</code>, and then the column names <code>Col1</code> and <code>Col2</code>.</p>
+<pre><code class="python">data = np.array([['','Col1','Col2'],
+                ['Row1',1,2],
+                ['Row2',3,4]])
+print(data)
+</code></pre>
+
+<pre><code>[['' 'Col1' 'Col2']
+ ['Row1' '1' '2']
+ ['Row2' '3' '4']]
+</code></pre>
+<pre><code class="python">print(pd.DataFrame(data=data[1:,1:],
+                  index=data[1:,0],
+                  columns=data[0,1:]))
+</code></pre>
+
+<pre><code>     Col1 Col2
+Row1    1    2
+Row2    3    4
+</code></pre>
+<pre><code class="python"># Take a 2D array as input to a DataFrame 
+my_2darray = np.array([[1, 2, 3], [4, 5, 6]])
+print(pd.DataFrame(my_2darray))
+</code></pre>
+
+<pre><code>   0  1  2
+0  1  2  3
+1  4  5  6
+</code></pre>
+<pre><code class="python"># Take a dictionary as input to a DataFrame 
+my_dict = {1: ['1', '3'], 2: ['1', '2'], 3: ['2', '4']}
+print(pd.DataFrame(my_dict))
+</code></pre>
+
+<pre><code>   1  2  3
+0  1  1  2
+1  3  2  4
+</code></pre>
+<pre><code class="python"># Take a DataFrame as input to a DataFrame 
+my_df = pd.DataFrame(data=[4,5,6,7], index=range(0,4), columns=['A'])
+print(pd.DataFrame(my_df))
+</code></pre>
+
+<pre><code>   A
+0  4
+1  5
+2  6
+3  7
+</code></pre>
+<pre><code class="python"># Take a Series as input to a DataFrame
+my_series = pd.Series({&quot;United Kingdom&quot;:&quot;London&quot;, &quot;India&quot;:&quot;New Delhi&quot;, &quot;United States&quot;:&quot;Washington&quot;, &quot;Belgium&quot;:&quot;Brussels&quot;})
+print(pd.DataFrame(my_series))
+</code></pre>
+
+<pre><code>                         0
+Belgium           Brussels
+India            New Delhi
+United Kingdom      London
+United States   Washington
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(np.array([[1, 2, 3], [4, 5, 6]]))
+print(df)
+</code></pre>
+
+<pre><code>   0  1  2
+0  1  2  3
+1  4  5  6
+</code></pre>
+<pre><code class="python"># header
+list(df.columns.values)
+</code></pre>
+
+<pre><code>[0, 1, 2]
+</code></pre>
+<pre><code class="python"># Use the `shape` property
+print(df.shape)
+</code></pre>
+
+<pre><code>(2, 3)
+</code></pre>
+<pre><code class="python"># Or use the `len()` function with the `index` property
+print(len(df.index))
+# length = rows
+</code></pre>
+
+<pre><code>2
+</code></pre>
+<pre><code class="python"># exclude the NaN
+df[0].count()
+</code></pre>
+
+<pre><code>2
+</code></pre>
+<h3 id="fundamental-dataframe-operations">Fundamental DataFrame Operations<a class="headerlink" href="#fundamental-dataframe-operations" title="Permanent link">&para;</a></h3>
+<h4 id="select-an-index-or-column-from-a-pandas-dataframe">Select an Index or Column from a Pandas DataFrame<a class="headerlink" href="#select-an-index-or-column-from-a-pandas-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A','B','C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<h5 id="element">Element<a class="headerlink" href="#element" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Using `iloc[]`
+print(df.iloc[0][0])
+</code></pre>
+
+<pre><code>1
+</code></pre>
+<pre><code class="python"># Using `loc[]`
+print(df.loc[0]['A'])
+</code></pre>
+
+<pre><code>1
+</code></pre>
+<pre><code class="python"># Using `at[]`
+print(df.at[0,'A'])
+</code></pre>
+
+<pre><code>1
+</code></pre>
+<pre><code class="python"># Using `iat[]`
+print(df.iat[0,0])
+</code></pre>
+
+<pre><code>1
+</code></pre>
+<pre><code class="python"># Using `get_value(index, column)`
+print(df.get_value(0, 'A'))
+</code></pre>
+
+<pre><code>1
+</code></pre>
+<h5 id="row-column">Row, Column<a class="headerlink" href="#row-column" title="Permanent link">&para;</a></h5>
+<pre><code class="python"># Use `iloc[]` to select a row
+print(df.iloc[0])
+</code></pre>
+
+<pre><code>A    1
+B    2
+C    3
+Name: 0, dtype: int64
+</code></pre>
+<pre><code class="python"># Use `loc[]` to select a column
+print(df.loc[:,'A'])
+</code></pre>
+
+<pre><code>0    1
+1    4
+2    7
+Name: A, dtype: int64
+</code></pre>
+<h3 id="add-an-index-row-or-column-to-a-pandas-dataframe">Add an Index, Row or Column to a Pandas DataFrame<a class="headerlink" href="#add-an-index-row-or-column-to-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h4 id="add-an-index-to-a-dataframe">Add an Index to a DataFrame<a class="headerlink" href="#add-an-index-to-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># Print out the DataFrame `df` to check it out
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python"># Set 'C' as the index of the DataFrame
+df.set_index('C')
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+    </tr>
+    <tr>
+      <th>C</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4 id="add-rows-to-a-dataframe">Add Rows to a DataFrame<a class="headerlink" href="#add-rows-to-a-dataframe" title="Permanent link">&para;</a></h4>
+<p>But before&hellip;</p>
+<ul>
+<li><code>loc</code> works on labels of an index. This means with <code>loc[2]</code>, we look for the values of the DataFrame that have an index labeled 2.</li>
+<li><code>iloc</code> works on the positions in the index. This means with <code>iloc[2]</code>, we look for the values of the DataFrame that are at index &lsquo;2&rsquo;.</li>
+<li><code>ix</code> is a more complex case: when the index is integer-based, we pass a label to <code>ix</code>. <code>ix[2]</code> then means that we are looking in the DataFrame for values that have an index labeled <code>2</code>. This is just like <code>loc</code>! However, if the index is not solely integer-based, <code>ix</code> will work with positions, just like <code>iloc</code>.</li>
+</ul>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), index= [2, 'A', 4], columns=[48, 49, 50])
+print(df)
+</code></pre>
+
+<pre><code>   48  49  50
+2   1   2   3
+A   4   5   6
+4   7   8   9
+</code></pre>
+<pre><code class="python"># Pass `2` to `loc`
+print(df.loc[2])
+</code></pre>
+
+<pre><code>48    1
+49    2
+50    3
+Name: 2, dtype: int64
+</code></pre>
+<pre><code class="python"># Pass `2` to `iloc`
+print(df.iloc[2])
+</code></pre>
+
+<pre><code>48    7
+49    8
+50    9
+Name: 4, dtype: int64
+</code></pre>
+<pre><code class="python"># Pass `2` to `ix`
+print(df.ix[2])
+</code></pre>
+
+<pre><code>Format Type              text
+Data Description         HTML
+Reader              read_html
+Writer                to_html
+Name: 2, dtype: object
+</code></pre>
+<p>Add a row.</p>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), index= [2.5, 12.6, 4.8], columns=[48, 49, 50])
+print(df)
+</code></pre>
+
+<pre><code>      48  49  50
+2.5    1   2   3
+12.6   4   5   6
+4.8    7   8   9
+</code></pre>
+<pre><code class="python"># There's no index labeled `2`, so change the index at position `2`
+df.ix[2] = [60, 50, 40]
+print(df)
+</code></pre>
+
+<pre><code>      48  49  50
+2.5    1   2   3
+12.6   4   5   6
+4.8   60  50  40
+</code></pre>
+<pre><code class="python"># This will make an index labeled `2` and ADD the new values
+df.loc[2] = [11, 12, 13]
+print(df)
+</code></pre>
+
+<pre><code>      48  49  50
+2.5    1   2   3
+12.6   4   5   6
+4.8   60  50  40
+2.0   11  12  13
+</code></pre>
+<h4 id="add-a-column-to-a-dataframe">Add a Column to a DataFrame<a class="headerlink" href="#add-a-column-to-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python"># Use `.index`
+df['D'] = df.index
+
+# Print `df`
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C  D
+0  1  2  3  0
+1  4  5  6  1
+2  7  8  9  2
+</code></pre>
+<p>Tell the DataFrame that it should take column A as its index.</p>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6]]), columns=[1,2,3])
+print(df)
+</code></pre>
+
+<pre><code>   1  2  3
+0  1  2  3
+1  4  5  6
+</code></pre>
+<pre><code class="python"># Append a column to `df`
+df.loc[:, 4] = pd.Series(['5', '6'], index=df.index)
+
+# Print out `df` again to see the changes
+print(df)
+</code></pre>
+
+<pre><code>   1  2  3  4
+0  1  2  3  5
+1  4  5  6  6
+</code></pre>
+<h4 id="reset-the-index-of-a-dataframe">Reset the Index of a DataFrame<a class="headerlink" href="#reset-the-index-of-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), index= [2.5, 12.6, 4.8], columns=[48, 49, 50])
+print(df)
+</code></pre>
+
+<pre><code>      48  49  50
+2.5    1   2   3
+12.6   4   5   6
+4.8    7   8   9
+</code></pre>
+<pre><code class="python"># Use `reset_index()` to reset the values
+df.reset_index(level=0, drop=True)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>48</th>
+      <th>49</th>
+      <th>50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="delete-indices-rows-or-columns-from-a-pandas-data-frame">Delete Indices, Rows or Columns From a Pandas Data Frame<a class="headerlink" href="#delete-indices-rows-or-columns-from-a-pandas-data-frame" title="Permanent link">&para;</a></h3>
+<h4 id="delete-an-index-from-a-dataframe">Delete an Index from a DataFrame<a class="headerlink" href="#delete-an-index-from-a-dataframe" title="Permanent link">&para;</a></h4>
+<p>Because DataFrames and Series always have an index.</p>
+<ul>
+<li>Reset the index of a DataFrame (go back to the previous section to see how it is done) or</li>
+<li>remove the index name, if there is any, by executing del df.index.name,</li>
+<li>remove duplicate index values by resetting the index, dropping the duplicates of the index column that has been added to a DataFrame and reinstating that duplicateless column again as the index,</li>
+<li>and lastly, remove an index, and with it a row. This is elaborated in one of the next sections.</li>
+</ul>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [40, 50, 60], [23, 35, 37]]), 
+                  index= [2.5, 12.6, 4.8, 4.8, 2.5], 
+                  columns=[48, 49, 50])
+print(df)
+</code></pre>
+
+<pre><code>      48  49  50
+2.5    1   2   3
+12.6   4   5   6
+4.8    7   8   9
+4.8   40  50  60
+2.5   23  35  37
+</code></pre>
+<pre><code class="python">df.reset_index().drop_duplicates(subset='index', keep='last').set_index('index')
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>48</th>
+      <th>49</th>
+      <th>50</th>
+    </tr>
+    <tr>
+      <th>index</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12.6</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4.8</th>
+      <td>40</td>
+      <td>50</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>2.5</th>
+      <td>23</td>
+      <td>35</td>
+      <td>37</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">
+</code></pre>
+
+<h4 id="delete-a-column-from-a-dataframe">Delete a Column from a DataFrame<a class="headerlink" href="#delete-a-column-from-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python"># Drop the column with label 'A'                  
+df.drop('A', axis=1, inplace=True)
+print(df)
+</code></pre>
+
+<pre><code>   B  C
+0  2  3
+1  5  6
+2  8  9
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+df.drop('A', axis=1, inplace=False)
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+# Drop the column at position 1
+df.drop(df.columns[[1]], axis=1)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4 id="remove-a-row-from-a-dataframe">Remove a Row from a DataFrame<a class="headerlink" href="#remove-a-row-from-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3, 4], [4, 5, 6, 5], [7, 8, 9, 6], [23, 50, 60, 7], [23, 35, 37, 23]]), 
+                  index= [2.5, 12.6, 4.8, 4.8, 2.5], 
+                  columns=[48, 49, 50, 50])
+print(df)
+</code></pre>
+
+<pre><code>      48  49  50  50
+2.5    1   2   3   4
+12.6   4   5   6   5
+4.8    7   8   9   6
+4.8   23  50  60   7
+2.5   23  35  37  23
+</code></pre>
+<pre><code class="python"># Drop the duplicates in `df`
+df.drop_duplicates([48], keep='last')
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>48</th>
+      <th>49</th>
+      <th>50</th>
+      <th>50</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2.5</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>12.6</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>4.8</th>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2.5</th>
+      <td>23</td>
+      <td>35</td>
+      <td>37</td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python"># Drop the index at position 1
+print(df.drop(df.index[1]))
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+2  7  8  9
+</code></pre>
+<pre><code class="python">df.reset_index(level=0, drop=True)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="rename-the-index-or-columns-of-a-pandas-dataframe">Rename the Index or Columns of a Pandas DataFrame<a class="headerlink" href="#rename-the-index-or-columns-of-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python"># Define the new names of columns
+newcols = {
+    'A': 'new_column_1', 
+    'B': 'new_column_2', 
+    'C': 'new_column_3'
+}
+
+# Use `rename()` to rename columns
+df.rename(columns=newcols, inplace=True)
+
+print(df)
+</code></pre>
+
+<pre><code>   new_column_1  new_column_2  new_column_3
+0             1             2             3
+1             4             5             6
+2             7             8             9
+</code></pre>
+<pre><code class="python"># Rename the index
+df.rename(index={1: 'a'})
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>new_column_1</th>
+      <th>new_column_2</th>
+      <th>new_column_3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>a</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+# Define the new names of columns
+newcols = {
+    'A': 'new_column_1', 
+    'B': 'new_column_2', 
+    'C': 'new_column_3'
+}
+
+# Use `rename()` to rename columns
+df2 = df.rename(columns=newcols, inplace=False)
+
+print(df)
+print(df2)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+   new_column_1  new_column_2  new_column_3
+0             1             2             3
+1             4             5             6
+2             7             8             9
+</code></pre>
+<h3 id="format-the-data-in-a-pandas-dataframe">Format The Data in a Pandas DataFrame<a class="headerlink" href="#format-the-data-in-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h4 id="replace-all-occurrences-of-a-string-in-a-dataframe">Replace All Occurrences of a String in a DataFrame<a class="headerlink" href="#replace-all-occurrences-of-a-string-in-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([['OK','Perfect','Acceptable'], ['Awful','Awful','Perfect'], ['Acceptable','OK','Poor']]), columns=['Student1','Student2','Student3'])
+print(df)
+</code></pre>
+
+<pre><code>     Student1 Student2    Student3
+0          OK  Perfect  Acceptable
+1       Awful    Awful     Perfect
+2  Acceptable       OK        Poor
+</code></pre>
+<pre><code class="python"># Replace the strings by numerical values (0-4)
+df.replace(['Awful', 'Poor', 'OK', 'Acceptable', 'Perfect'], [0, 1, 2, 3, 4]) 
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Student1</th>
+      <th>Student2</th>
+      <th>Student3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">df = pd.DataFrame(data=np.array([['1\n',2,'3\n'], ['4',5 ,'6\n'], ['7','8\n','9']]), columns=[0,1,2])
+print(df)
+</code></pre>
+
+<pre><code>     0    1    2
+0  1\n    2  3\n
+1    4    5  6\n
+2    7  8\n    9
+</code></pre>
+<pre><code class="python"># Replace strings by others with `regex`
+df.replace({'\n': '&lt;br&gt;'}, regex=True)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1&lt;br&gt;</td>
+      <td>2</td>
+      <td>3&lt;br&gt;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6&lt;br&gt;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>7</td>
+      <td>8&lt;br&gt;</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h4 id="remove-parts-from-strings-in-the-cells-of-a-dataframe">Remove Parts from Strings in the Cells of a DataFrame<a class="headerlink" href="#remove-parts-from-strings-in-the-cells-of-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1,2,'+3b'], [4,5,'-6B'], [7,8,'+9A']]), columns=['class','test','result'])
+print(df)
+</code></pre>
+
+<pre><code>  class test result
+0     1    2    +3b
+1     4    5    -6B
+2     7    8    +9A
+</code></pre>
+<pre><code class="python"># Delete unwanted parts from the strings in the `result` column
+df['result'] = df['result'].map(lambda x: x.lstrip('+-').rstrip('aAbBcC'))
+
+# Check out the result again
+print(df)
+</code></pre>
+
+<pre><code>  class test result
+0     1    2      3
+1     4    5      6
+2     7    8      9
+</code></pre>
+<p>Use <code>map()</code> on the column <code>result</code> to apply the lambda function over each element or element-wise of the column. The function in itself takes the string value and strips the <code>+</code> or <code>-</code> that’s located on the left, and also strips away any of the six <code>aAbBcC</code> on the right.</p>
+<h4 id="split-text-in-a-column-into-multiple-rows-in-a-dataframe">Split Text in a Column into Multiple Rows in a DataFrame<a class="headerlink" href="#split-text-in-a-column-into-multiple-rows-in-a-dataframe" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[34,0,'23:44:55'], [22,0,'66:77:88'], [19,1,'43:68:05 56:34:12']]), columns=['Age','PlusOne','Ticket'])
+print(df)                    
+</code></pre>
+
+<pre><code>  Age PlusOne             Ticket
+0  34       0           23:44:55
+1  22       0           66:77:88
+2  19       1  43:68:05 56:34:12
+</code></pre>
+<pre><code class="python"># Split out the two values in the third row
+# Make it a Series
+# Stack the values
+ticket_series = df['Ticket'].str.split(' ').apply(pd.Series, 1).stack()
+print(ticket_series)
+</code></pre>
+
+<pre><code>0  0    23:44:55
+1  0    66:77:88
+2  0    43:68:05
+   1    56:34:12
+dtype: object
+</code></pre>
+<pre><code class="python"># Get rid of the stack:
+# Drop the level to line up with the DataFrame
+ticket_series.index = ticket_series.index.droplevel(-1)
+</code></pre>
+
+<pre><code class="python"># Make a series a dataframe 
+ticketdf = pd.DataFrame(ticket_series)
+</code></pre>
+
+<pre><code class="python"># Delete the `Ticket` column from a DataFrame
+del df['Ticket']
+</code></pre>
+
+<pre><code class="python"># Check out the new `df`
+print(df)
+</code></pre>
+
+<pre><code>  Age PlusOne
+0  34       0
+1  22       0
+2  19       1
+</code></pre>
+<pre><code class="python">print(ticketdf)
+</code></pre>
+
+<pre><code>          0
+0  23:44:55
+1  66:77:88
+2  43:68:05
+2  56:34:12
+</code></pre>
+<pre><code class="python"># Join the ticket DataFrame to `df`
+df.join(ticketdf)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age</th>
+      <th>PlusOne</th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>34</td>
+      <td>0</td>
+      <td>23:44:55</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>22</td>
+      <td>0</td>
+      <td>66:77:88</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>19</td>
+      <td>1</td>
+      <td>43:68:05</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>19</td>
+      <td>1</td>
+      <td>56:34:12</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>First, inspect the DataFrame at hand. The values in the last row and in the last column are a bit too long. It appears there are two tickets because a guest has taken a plus-one to the concert.</p>
+<p>Take the <code>Ticket</code> column from the DataFrame <code>df</code> and strings on a space. This will make sure that the two tickets will end up in two separate rows in the end. Next, take these four values (the four ticket numbers) and put them into a Series object. That still doesn’t seem quite right. There are <code>NaN</code> values in there! Stack the Series to make sure they don’t have any <code>NaN</code> values in the resulting Series.</p>
+<p>Next, stack the Series.</p>
+<p>That is not ideal either. Drop the level to line up with the DataFrame.</p>
+<p>Transform a Series to a DataFrame to make sure we can join it back to the initial DataFrame. However, to avoid having any duplicates in the DataFrame, delete the original <code>Ticket</code> column.</p>
+<h4 id="apply-a-function-to-a-pandas-dataframes-columns-or-rows">Apply a Function to a Pandas DataFrame’s Columns or Rows<a class="headerlink" href="#apply-a-function-to-a-pandas-dataframes-columns-or-rows" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python"># A lambda function
+doubler = lambda x: x*2
+
+# Apply the `doubler` function to the `A` DataFrame column
+df['A'].apply(doubler)
+</code></pre>
+
+<pre><code>0     2
+1     8
+2    14
+Name: A, dtype: int64
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+df.loc[0].apply(doubler)
+</code></pre>
+
+<pre><code>A    2
+B    4
+C    6
+Name: 0, dtype: int64
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+df.iloc[0].apply(doubler)
+</code></pre>
+
+<pre><code>A    2
+B    4
+C    6
+Name: 0, dtype: int64
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+df['A'].apply(doubler)
+</code></pre>
+
+<pre><code>0     2
+1     8
+2    14
+Name: A, dtype: int64
+</code></pre>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+df.applymap(doubler)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>8</td>
+      <td>10</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>16</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+
+def doubler(x):
+    if x % 2 == 0:
+        return x
+    else:
+        return x * 2
+
+# Use `applymap()` to apply `doubler()` to a DataFrame
+df.applymap(doubler)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>14</td>
+      <td>8</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python"># Check the DataFrame
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<h3 id="create-an-empty-dataframe">Create an Empty DataFrame<a class="headerlink" href="#create-an-empty-dataframe" title="Permanent link">&para;</a></h3>
+<p><code>numpy.nan</code> has type float.</p>
+<pre><code class="python">df = pd.DataFrame(np.nan, index=[0,1,2,3], columns=['A'])
+print(df)
+</code></pre>
+
+<pre><code>    A
+0 NaN
+1 NaN
+2 NaN
+3 NaN
+</code></pre>
+<p>Add an attribute.</p>
+<pre><code class="python">df = pd.DataFrame(index=range(0,4),columns=['A'], dtype='float')
+print(df)
+</code></pre>
+
+<pre><code>    A
+0 NaN
+1 NaN
+2 NaN
+3 NaN
+</code></pre>
+<h3 id="does-pandas-recognize-dates-when-importing-data">Does Pandas Recognize Dates when Importing Data?<a class="headerlink" href="#does-pandas-recognize-dates-when-importing-data" title="Permanent link">&para;</a></h3>
+<pre><code class="python">df = pd.read_csv('date.csv', header=0, parse_dates=True)
+print(df)
+</code></pre>
+
+<pre><code>     unit      date
+0  6.1101  02/08/16
+1  5.5277  08/07/16
+2  8.5186  09/05/16
+3  7.0032  20/03/16
+</code></pre>
+<pre><code class="python"># or this option:
+df = pd.read_csv('date.csv', header=0, parse_dates=['date'])
+print(df)
+</code></pre>
+
+<pre><code>     unit       date
+0  6.1101 2016-02-08
+1  5.5277 2016-08-07
+2  8.5186 2016-09-05
+3  7.0032 2016-03-20
+</code></pre>
+<p>The second code succeeded.</p>
+<h3 id="when-why-and-how-we-should-reshape-a-dataframe">When, Why and How we should Reshape a DataFrame<a class="headerlink" href="#when-why-and-how-we-should-reshape-a-dataframe" title="Permanent link">&para;</a></h3>
+<h4 id="pivot-a-dataframe">Pivot a DataFrame<a class="headerlink" href="#pivot-a-dataframe" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Values: this argument allows to specify which values of the original DataFrame we want to see in the pivot table.</li>
+<li>Columns: whatever is passed to this argument will become a column in the resulting table.</li>
+<li>Index: whatever is passed to this argument will become an index in the resulting table.</li>
+</ul>
+<pre><code class="python">products = pd.DataFrame({'category': ['Cleaning', 'Cleaning', 'Entertainment', 'Entertainment', 'Tech', 'Tech'],
+                        'store': ['Walmart', 'Dia', 'Walmart', 'Fnac', 'Dia','Walmart'],
+                        'price':[11.42, 23.50, 19.99, 15.95, 55.75, 111.55],
+                        'testscore': [4, 3, 5, 7, 5, 8]})
+print(products)
+</code></pre>
+
+<pre><code>        category   price    store  testscore
+0       Cleaning   11.42  Walmart          4
+1       Cleaning   23.50      Dia          3
+2  Entertainment   19.99  Walmart          5
+3  Entertainment   15.95     Fnac          7
+4           Tech   55.75      Dia          5
+5           Tech  111.55  Walmart          8
+</code></pre>
+<pre><code class="python"># Use `pivot()` to pivot the DataFrame
+pivot_products = products.pivot(index='category', columns='store', values='price')
+
+# Check out the result
+print(pivot_products)
+</code></pre>
+
+<pre><code>store            Dia   Fnac  Walmart
+category                            
+Cleaning       23.50    NaN    11.42
+Entertainment    NaN  15.95    19.99
+Tech           55.75    NaN   111.55
+</code></pre>
+<p>Without specific values.</p>
+<pre><code class="python">products = pd.DataFrame({'category': ['Cleaning', 'Cleaning', 'Entertainment', 'Entertainment', 'Tech', 'Tech'],
+                        'store': ['Walmart', 'Dia', 'Walmart', 'Fnac', 'Dia','Walmart'],
+                        'price':[11.42, 23.50, 19.99, 15.95, 55.75, 111.55],
+                        'testscore': [4, 3, 5, 7, 5, 8]})
+
+# Use `pivot()` to pivot the DataFrame
+pivot_products = products.pivot(index='category', columns='store')
+
+# Check out the results
+print(pivot_products)
+</code></pre>
+
+<pre><code>               price                testscore             
+store            Dia   Fnac Walmart       Dia Fnac Walmart
+category                                                  
+Cleaning       23.50    NaN   11.42       3.0  NaN     4.0
+Entertainment    NaN  15.95   19.99       NaN  7.0     5.0
+Tech           55.75    NaN  111.55       5.0  NaN     8.0
+</code></pre>
+<p><code>pivot_table()</code> can add a function: <code>mean</code>.</p>
+<pre><code class="python"># The DataFrame
+products = pd.DataFrame({'category': ['Cleaning', 'Cleaning', 'Entertainment', 'Entertainment', 'Tech', 'Tech'],
+                        'store': ['Walmart', 'Dia', 'Walmart', 'Fnac', 'Dia','Walmart'],
+                        'price':[11.42, 23.50, 19.99, 15.95, 19.99, 111.55],
+                        'testscore': [4, 3, 5, 7, 5, 8]})
+
+# Pivot the `products` DataFrame with `pivot_table()`
+pivot_products = products.pivot_table(index='category', columns='store', values='price', aggfunc='mean')
+
+# Check out the results
+print(pivot_products)
+</code></pre>
+
+<pre><code>store            Dia   Fnac  Walmart
+category                            
+Cleaning       23.50    NaN    11.42
+Entertainment    NaN  15.95    19.99
+Tech           19.99    NaN   111.55
+</code></pre>
+<h4 id="use-stack-and-unstack-to-reshape-a-pandas-dataframe">Use <code>stack()</code> and <code>unstack()</code> to Reshape a Pandas DataFrame<a class="headerlink" href="#use-stack-and-unstack-to-reshape-a-pandas-dataframe" title="Permanent link">&para;</a></h4>
+<p>When we stack a DataFrame, we make it taller. Move the innermost column index to become the innermost row index.</p>
+<p>Much like <code>stack()</code>, use <code>unstack()</code> to move the innermost row index to become the innermost column index.</p>
+<pre><code class="python">from collections import OrderedDict
+from pandas import DataFrame
+import pandas as pd
+import numpy as np
+
+table = OrderedDict((
+    (&quot;Item&quot;, ['Item0', 'Item0', 'Item1', 'Item1']),
+    ('CType',['Gold', 'Bronze', 'Gold', 'Silver']),
+    ('USD',  ['1$', '2$', '3$', '4$']),
+    ('EU',   ['1€', '2€', '3€', '4€'])
+))
+df = DataFrame(table)
+print(df)
+</code></pre>
+
+<pre><code>    Item   CType USD  EU
+0  Item0    Gold  1$  1€
+1  Item0  Bronze  2$  2€
+2  Item1    Gold  3$  3€
+3  Item1  Silver  4$  4€
+</code></pre>
+<pre><code class="python"># Original DataFrame: Access the USD cost of Item0 for Gold customers
+print(df[(df.Item=='Item0') &amp; (df.CType=='Gold')].USD.values)
+</code></pre>
+
+<pre><code>['1$']
+</code></pre>
+<pre><code class="python"># Column pivot
+p = df.pivot(index='Item', columns='CType')
+print(p)
+</code></pre>
+
+<pre><code>         USD                 EU            
+CType Bronze Gold Silver Bronze Gold Silver
+Item                                       
+Item0     2$   1$   None     2€   1€   None
+Item1   None   3$     4$   None   3€     4€
+</code></pre>
+<pre><code class="python"># Pivoted DataFrame: p.USD gives a &quot;sub-DataFrame&quot; with the USD values only
+print(p.USD[p.USD.index=='Item0'])
+</code></pre>
+
+<pre><code>CType Bronze Gold Silver
+Item                    
+Item0     2$   1$   None
+</code></pre>
+<pre><code class="python"># more precise
+print(p.USD[p.USD.index=='Item0'].Gold.values)
+</code></pre>
+
+<pre><code>['1$']
+</code></pre>
+<pre><code class="python"># Pivoting By Multiple Columns
+p = df.pivot(index='Item', columns='CType')
+print(p)
+</code></pre>
+
+<pre><code>         USD                 EU            
+CType Bronze Gold Silver Bronze Gold Silver
+Item                                       
+Item0     2$   1$   None     2€   1€   None
+Item1   None   3$     4$   None   3€     4€
+</code></pre>
+<pre><code class="python"># Pivoted DataFrame: p.USD gives a &quot;sub-DataFrame&quot; with the USD values only
+print(p.USD[p.USD.index=='Item0'])
+</code></pre>
+
+<pre><code>CType Bronze Gold Silver
+Item                    
+Item0     2$   1$   None
+</code></pre>
+<pre><code class="python"># more precise
+print(p.USD[p.USD.index=='Item0'].Gold.values)
+</code></pre>
+
+<pre><code>['1$']
+</code></pre>
+<pre><code class="python"># Stack/Unstack
+s = df.stack()
+print(s)
+</code></pre>
+
+<pre><code>0  Item      Item0
+   CType      Gold
+   USD          1$
+   EU           1€
+1  Item      Item0
+   CType    Bronze
+   USD          2$
+   EU           2€
+2  Item      Item1
+   CType      Gold
+   USD          3$
+   EU           3€
+3  Item      Item1
+   CType    Silver
+   USD          4$
+   EU           4€
+dtype: object
+</code></pre>
+<pre><code class="python">u = s.unstack()
+print(u)
+</code></pre>
+
+<pre><code>    Item   CType USD  EU
+0  Item0    Gold  1$  1€
+1  Item0  Bronze  2$  2€
+2  Item1    Gold  3$  3€
+3  Item1  Silver  4$  4€
+</code></pre>
+<h4 id="reshape-a-dataframe-with-melt">Reshape a DataFrame with <code>melt()</code><a class="headerlink" href="#reshape-a-dataframe-with-melt" title="Permanent link">&para;</a></h4>
+<p>When we have a data that has one or more columns that are identifier variables, while all other columns are considered measured variables.</p>
+<pre><code class="python"># The `people` DataFrame
+people = pd.DataFrame({'FirstName' : ['John', 'Jane'],
+                       'LastName' : ['Doe', 'Austen'],
+                       'BloodType' : ['A-', 'B+'],
+                       'Weight' : [90, 64]})
+print(people)
+</code></pre>
+
+<pre><code>  BloodType FirstName LastName  Weight
+0        A-      John      Doe      90
+1        B+      Jane   Austen      64
+</code></pre>
+<pre><code class="python"># Use `melt()` on the `people` DataFrame
+print(pd.melt(people, id_vars=['FirstName', 'LastName'], var_name='measurements'))
+</code></pre>
+
+<pre><code>  FirstName LastName measurements value
+0      John      Doe    BloodType    A-
+1      Jane   Austen    BloodType    B+
+2      John      Doe       Weight    90
+3      Jane   Austen       Weight    64
+</code></pre>
+<h3 id="iterate-over-a-pandas-dataframe">Iterate over a Pandas DataFrame<a class="headerlink" href="#iterate-over-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<pre><code class="python">df = pd.DataFrame(data=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]), columns=['A', 'B', 'C'])
+print(df)
+</code></pre>
+
+<pre><code>   A  B  C
+0  1  2  3
+1  4  5  6
+2  7  8  9
+</code></pre>
+<pre><code class="python">for index, row in df.iterrows() :
+    print(row['A'], row['B'])
+</code></pre>
+
+<pre><code>1 2
+4 5
+7 8
+</code></pre>
+<h3 id="write-a-pandas-dataframe-to-a-file">Write a Pandas DataFrame to a File<a class="headerlink" href="#write-a-pandas-dataframe-to-a-file" title="Permanent link">&para;</a></h3>
+<h4 id="output-a-dataframe-to-csv">Output a DataFrame to CSV<a class="headerlink" href="#output-a-dataframe-to-csv" title="Permanent link">&para;</a></h4>
+<pre><code class="python">df.to_csv('myDataFrame.csv')
+</code></pre>
+
+<pre><code class="python">df.to_csv('myDataFrame2.csv', sep='\t')
+</code></pre>
+
+<pre><code class="python">df.to_csv('myDataFrame3.csv', sep='\t', encoding='utf-8')
+</code></pre>
+
+<h4 id="write-a-dataframe-to-excel">Write a DataFrame to <a href="http://pandas.pydata.org/pandas-docs/stable/io.html#io-excel-reader">Excel</a><a class="headerlink" href="#write-a-dataframe-to-excel" title="Permanent link">&para;</a></h4>
+<pre><code class="python">writer = pd.ExcelWriter('myDataFrame.xlsx')
+df.to_excel(writer, 'DataFrame')
+writer.save()
+# startcol=
+# startrow=
+</code></pre>
+
+<pre><code class="python">import xlrd
+
+xlsx = pd.ExcelFile('filetype.xlsx')
+xlsx.sheet_names
+</code></pre>
+
+<pre><code>['a']
+</code></pre>
+<pre><code class="python">df = pd.read_excel(xlsx, 'a')
+print(df)
+</code></pre>
+
+<pre><code>   Format Type      Data Description          Reader        Writer
+0         text                   CSV        read_csv        to_csv
+1         text                  JSON       read_json       to_json
+2         text                  HTML       read_html       to_html
+3         text       Local clipboard  read_clipboard  to_clipboard
+4       binary              MS Excel      read_excel      to_excel
+5       binary           HDF5 Format        read_hdf        to_hdf
+6       binary        Feather Format    read_feather    to_feather
+7       binary               Msgpack    read_msgpack    to_msgpack
+8       binary                 Stata      read_stata      to_stata
+9       binary                   SAS        read_sas              
+10      binary  Python Pickle Format     read_pickle     to_pickle
+11         SQL                   SQL        read_sql        to_sql
+12         SQL      Google Big Query        read_gbq        to_gbq
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Write Idiomatic Pandas Code/" class="btn btn-neutral float-right" title="Write Idiomatic Pandas Code">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Seaborn, Python Statistical Data Visualization Library/" class="btn btn-neutral" title="Seaborn, Python's Statistical Data Visualization Library"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Seaborn, Python Statistical Data Visualization Library/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Write Idiomatic Pandas Code/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>
