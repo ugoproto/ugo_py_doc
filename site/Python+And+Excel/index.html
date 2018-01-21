@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Python and Excel - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Python and Excel";
+    var mkdocs_page_input_path = "Python+And+Excel.md";
+    var mkdocs_page_url = "/Python+And+Excel/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'mkdocs.org');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Python and Excel</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#check-the-quality-of-the-spreadsheet">Check the Quality of the Spreadsheet</a></li>
+    
+
+    <li class="toctree-l3"><a href="#best-practices-for-spreadsheet-data">Best Practices for Spreadsheet Data</a></li>
+    
+
+    <li class="toctree-l3"><a href="#preparing-the-workspace">Preparing the Workspace</a></li>
+    
+
+    <li class="toctree-l3"><a href="#using-virtual-environments">Using Virtual Environments</a></li>
+    
+
+    <li class="toctree-l3"><a href="#check-the-loaded-dataset">Check the Loaded Dataset</a></li>
+    
+
+    <li class="toctree-l3"><a href="#install-packages-to-read-and-write-excel-files">Install Packages to Read and Write Excel Files</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#packages-to-parse-excel-files-and-write-them-back-with-python">Packages to Parse Excel Files and Write them back with Python</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#load-excel-csv-files-as-pandas-dataframes">Load Excel &amp; CSV Files as Pandas DataFrames</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#excel">Excel</a></li>
+        
+            <li><a class="toctree-l4" href="#csv">CSV</a></li>
+        
+            <li><a class="toctree-l4" href="#flat-files-tables">Flat files, tables</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#write-pandas-dataframes-to-excel-and-csv-files">Write Pandas DataFrames to Excel and CSV Files</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#excel_1">Excel</a></li>
+        
+            <li><a class="toctree-l4" href="#csv-flat-files-tables">CSV, flat files, tables</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#read-and-write-excel-files-with-openyxl">Read and Write Excel Files with openyxl</a></li>
+    
+
+    <li class="toctree-l3"><a href="#read-and-format-excel-files-with-xlrd">Read and Format Excel Files with xlrd</a></li>
+    
+
+    <li class="toctree-l3"><a href="#write-to-excel-files-with-xlwt">Write to Excel Files with xlwt</a></li>
+    
+
+    <li class="toctree-l3"><a href="#a-collection-of-utilities-xlutils">A Collection of Utilities: xlutils</a></li>
+    
+
+    <li class="toctree-l3"><a href="#read-with-pyexcel">Read with pyexcel</a></li>
+    
+
+    <li class="toctree-l3"><a href="#write-with-pyexcel">Write with pyexcel</a></li>
+    
+
+    <li class="toctree-l3"><a href="#read-and-write-csv-files">Read and Write .csv Files</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#numpy">Numpy</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Python and Excel</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#the-data-as-the-starting-point">The Data as the Starting Point</a><ul>
+<li><a href="#check-the-quality-of-the-spreadsheet">Check the Quality of the Spreadsheet</a></li>
+<li><a href="#best-practices-for-spreadsheet-data">Best Practices for Spreadsheet Data</a></li>
+</ul>
+</li>
+<li><a href="#preparing-the-workspace">Preparing the Workspace</a></li>
+<li><a href="#using-virtual-environments">Using Virtual Environments</a></li>
+<li><a href="#check-the-loaded-dataset">Check the Loaded Dataset</a></li>
+<li><a href="#install-packages-to-read-and-write-excel-files">Install Packages to Read and Write Excel Files</a><ul>
+<li><a href="#packages-to-parse-excel-files-and-write-them-back-with-python">Packages to Parse Excel Files and Write them back with Python</a></li>
+</ul>
+</li>
+<li><a href="#load-excel-csv-files-as-pandas-dataframes">Load Excel &amp; CSV Files as Pandas DataFrames</a><ul>
+<li><a href="#excel">Excel</a></li>
+<li><a href="#csv">CSV</a></li>
+<li><a href="#flat-files-tables">Flat files, tables</a></li>
+</ul>
+</li>
+<li><a href="#write-pandas-dataframes-to-excel-and-csv-files">Write Pandas DataFrames to Excel and CSV Files</a><ul>
+<li><a href="#excel_1">Excel</a></li>
+<li><a href="#csv-flat-files-tables">CSV, flat files, tables</a></li>
+</ul>
+</li>
+<li><a href="#read-and-write-excel-files-with-openyxl">Read and Write Excel Files with openyxl</a></li>
+<li><a href="#read-and-format-excel-files-with-xlrd">Read and Format Excel Files with xlrd</a></li>
+<li><a href="#write-to-excel-files-with-xlwt">Write to Excel Files with xlwt</a></li>
+<li><a href="#a-collection-of-utilities-xlutils">A Collection of Utilities: xlutils</a></li>
+<li><a href="#read-with-pyexcel">Read with pyexcel</a></li>
+<li><a href="#write-with-pyexcel">Write with pyexcel</a></li>
+<li><a href="#read-and-write-csv-files">Read and Write .csv Files</a><ul>
+<li><a href="#numpy">Numpy</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<h3 id="the-data-as-the-starting-point">The Data as the Starting Point<a class="headerlink" href="#the-data-as-the-starting-point" title="Permanent link">&para;</a></h3>
+<p>Work with packages such as <code>pandas, openpyxl, xlrd, xlutils, pyexcel</code>.</p>
+<p>Datasets from Kaggle, Quandl, Google or on repositories (GitHub, Bitbucket, GitLab, etc.).</p>
+<h4 id="check-the-quality-of-the-spreadsheet">Check the Quality of the Spreadsheet<a class="headerlink" href="#check-the-quality-of-the-spreadsheet" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Does the spreadsheet represent static data?</li>
+<li>Does the spreadsheet mix data, calculations, and reporting?</li>
+<li>Is the data in the spreadsheet complete and consistent?<ul>
+<li>Does the spreadsheet have a systematic worksheet structure?</li>
+<li>Are the live formulas in the spreadsheet valid?</li>
+</ul>
+</li>
+</ul>
+<h4 id="best-practices-for-spreadsheet-data">Best Practices for Spreadsheet Data<a class="headerlink" href="#best-practices-for-spreadsheet-data" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The first row of the spreadsheet is usually reserved for the header, while the first column is used to identify the sampling unit;</li>
+<li>Avoid names, values or fields with blank spaces. Otherwise, each word will be interpreted as a separate variable, resulting in errors that are related to the number of elements per line in the dataset. Consider using:<ul>
+<li>Underscores,</li>
+<li>Dashes,</li>
+<li>Camel case, where the first letter of each section of text is capitalized, or</li>
+<li>Concatenating words</li>
+</ul>
+</li>
+<li>Short names are preferred over longer names;</li>
+<li>Try to avoid using names that contain symbols such as <code>?, %, ^, &amp;, *, (, ), -, #, ?, &lt;, &gt;, /, |, \, [ ,] , {, }</code> and <code>,</code> and dollar sign;</li>
+<li>Delete any comments that were made in the file to avoid extra columns or NA’s to be added to the file; and</li>
+<li>Make sure that any missing values in the dataset are indicated with NA.</li>
+</ul>
+<p>Save in <code>.xls, .xlsx, .csv, .txt</code>.</p>
+<h3 id="preparing-the-workspace">Preparing the Workspace<a class="headerlink" href="#preparing-the-workspace" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import `os` 
+import os
+
+# Retrieve current working directory (`cwd`)
+cwd = os.getcwd()
+</code></pre>
+
+<p>Print it with <code>cwd</code> or <code>print(cwd)</code>.</p>
+<pre><code class="python"># Change directory 
+os.chdir(&quot;/path/to/your/folder&quot;)
+
+# List all files and directories in current directory
+os.listdir('.')
+</code></pre>
+
+<h3 id="using-virtual-environments">Using Virtual Environments<a class="headerlink" href="#using-virtual-environments" title="Permanent link">&para;</a></h3>
+<p>In a Python virtualenv: we can multiple projects running at the same time and we don’t want them to share the same Python installation or when projects have conflicting requirements.</p>
+<pre><code class="bash"># Install virtualenv
+$ pip install virtualenv
+
+# Go to the folder of the project
+$ cd my_folder
+
+# Create a virtual environment `venv`
+$ virtualenv venv
+
+# Indicate the Python interpreter to use for `venv`
+$ virtualenv -p /usr/bin/python2.7 venv
+
+# Activate `venv`
+$ source venv/bin/activate
+
+# Deactivate `venv`
+$ deactivate
+</code></pre>
+
+<h3 id="check-the-loaded-dataset">Check the Loaded Dataset<a class="headerlink" href="#check-the-loaded-dataset" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Check the first entries of the DataFrame
+df1.head()
+
+# Check the last entries of the DataFrame
+df1.tail()
+
+# Inspect the shape 
+data.shape
+
+# Inspect the number of dimensions
+data.ndim
+
+# Inspect the data type
+data.dtype
+</code></pre>
+
+<h3 id="install-packages-to-read-and-write-excel-files">Install Packages to Read and Write Excel Files<a class="headerlink" href="#install-packages-to-read-and-write-excel-files" title="Permanent link">&para;</a></h3>
+<p><code>pandas, openpyxl, xlrd, xlutils, pyexcel</code>&hellip;</p>
+<ul>
+<li><code>pip install</code>.</li>
+<li><code>conda install</code> (Anaconda includes <a href="https://docs.continuum.io/anaconda/packages/pkg-docs">100 of the most popular Python</a>, <a href="https://docs.continuum.io/anaconda/packages/r-language-pkg-docs">R</a> and Scala packages for data science and several open source development environments such as Jupyter and Spyder).</li>
+</ul>
+<h4 id="packages-to-parse-excel-files-and-write-them-back-with-python">Packages to Parse Excel Files and Write them back with Python<a class="headerlink" href="#packages-to-parse-excel-files-and-write-them-back-with-python" title="Permanent link">&para;</a></h4>
+<p>From the <a href="http://www.python-excel.org/">site</a>:</p>
+<ul>
+<li><code>openpyxl</code>, the recommended package for reading and writing Excel 2010 files (ie: .xlsx). <a href="https://openpyxl.readthedocs.io/en/default/">Documentation</a>.</li>
+<li><code>xlsxwriter</code>, an alternative package for writing data, formatting information and, in particular, charts in the Excel 2010 format (ie: .xlsx). <a href="https://xlsxwriter.readthedocs.io/">Documentation</a>.</li>
+<li><code>xlrd</code>, this package is for reading data and formatting information from older Excel files (ie: .xls). <a href="https://github.com/python-excel/xlrd">Documentation</a>.</li>
+<li><code>xlwt</code>, this package is for writing data and formatting information to older Excel files (ie: .xls). <a href="http://xlwt.readthedocs.io/en/latest/">Documentation</a>.</li>
+<li><code>xlutils</code>, this package collects utilities that require both xlrd and xlwt, including the ability to copy and modify or filter existing excel files. <a href="http://xlutils.readthedocs.io/en/latest/">Documentation</a>.</li>
+</ul>
+<h3 id="load-excel-csv-files-as-pandas-dataframes">Load Excel &amp; CSV Files as Pandas DataFrames<a class="headerlink" href="#load-excel-csv-files-as-pandas-dataframes" title="Permanent link">&para;</a></h3>
+<h4 id="excel">Excel<a class="headerlink" href="#excel" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># Import pandas
+import pandas as pd
+
+# Assign spreadsheet filename to `file`
+file = 'example.xlsx'
+
+# Load spreadsheet
+xl = pd.ExcelFile(file)
+
+# Print the sheet names
+print(xl.sheet_names)
+
+# Load a sheet into a DataFrame by name: df1
+df1 = xl.parse('Sheet1')
+</code></pre>
+
+<h4 id="csv">CSV<a class="headerlink" href="#csv" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># Import pandas
+import pandas as pd
+
+# Load csv
+df = pd.read_csv(&quot;example.csv&quot;) 
+</code></pre>
+
+<p><a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html">More options</a>.</p>
+<h4 id="flat-files-tables">Flat files, tables<a class="headerlink" href="#flat-files-tables" title="Permanent link">&para;</a></h4>
+<p>Also: <code>read_table()</code> and <code>read_fwf()</code>. <a href="http://pandas.pydata.org/pandas-docs/stable/api.html#input-output">More options</a>.</p>
+<h3 id="write-pandas-dataframes-to-excel-and-csv-files">Write Pandas DataFrames to Excel and CSV Files<a class="headerlink" href="#write-pandas-dataframes-to-excel-and-csv-files" title="Permanent link">&para;</a></h3>
+<h4 id="excel_1">Excel<a class="headerlink" href="#excel_1" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># Specify a writer
+writer = pd.ExcelWriter('example.xlsx', engine='xlsxwriter')
+
+# Write the DataFrame to a file     
+yourData.to_excel(writer, 'Sheet1')
+
+# Save the result 
+writer.save()
+</code></pre>
+
+<p>Pass the writer variable to the <code>to_excel()</code> function and specify the sheet name. Add a sheet with the data to an existing workbook: <code>ExcelWriter</code> save multiple, (slightly) different DataFrames to one workbook.</p>
+<pre><code class="python"># Specify a writer
+writer = pd.ExcelWriter('example.xlsx')
+
+# Write the DataFrame to a file     
+yourData.to_excel(writer, 'Sheet1')
+
+# Save the result 
+writer.save()
+</code></pre>
+
+<p>Save one DataFrame to a file, don’t specify the engine argument in the <code>pd.ExcelWriter()</code> function. The rest of the steps stay the same.</p>
+<h4 id="csv-flat-files-tables">CSV, flat files, tables<a class="headerlink" href="#csv-flat-files-tables" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># Write the DataFrame to csv
+df.to_csv(&quot;example.csv&quot;)
+</code></pre>
+
+<p>Tab-separated file, pass the <code>sep = '\t'</code> argument.</p>
+<h3 id="read-and-write-excel-files-with-openyxl">Read and Write Excel Files with <code>openyxl</code><a class="headerlink" href="#read-and-write-excel-files-with-openyxl" title="Permanent link">&para;</a></h3>
+<p>Read and write .xlsx, xlsm, xltx, xltm files.</p>
+<p>The general advice for installing this package is to do it in a Python virtual environment without system packages. We can use virtual environment to create isolated Python environments: it creates a folder which contains all the necessary executables to use the packages that a Python project would need.</p>
+<ul>
+<li>Go to the directory in which the project is located and re-activate the virtual environment <code>venv</code>. </li>
+<li>Then proceed to install <code>openpyxl</code> with <code>pip</code> to make sure that we can read and write files with it:</li>
+</ul>
+<pre><code class="python"># Activate virtualenv
+$ source activate venv
+
+# Install `openpyxl` in `venv`
+$ pip install openpyxl
+</code></pre>
+
+<ul>
+<li>Install <code>openpyxl</code> and start loading in the data.</li>
+<li>Make sure that we’re in the right directory where the spreadsheet is located (change the working directory with <code>os.chdir()</code>).</li>
+</ul>
+<pre><code class="python"># Import `load_workbook` module from `openpyxl`
+from openpyxl import load_workbook
+
+# Load in the workbook
+wb = load_workbook('./test.xlsx')
+type(wb)
+
+# Get sheet names
+print(wb.get_sheet_names())
+</code></pre>
+
+<ul>
+<li>Which sheet is currently active.</li>
+</ul>
+<pre><code class="python"># Get a sheet by name 
+sheet = wb.get_sheet_by_name('Sheet3')
+
+# Print the sheet title 
+sheet.title
+
+# Get currently active sheet
+anotherSheet = wb.active
+
+# Check `anotherSheet` 
+anotherSheet
+</code></pre>
+
+<ul>
+<li>Retrieve information in the workbook&rsquo;s sheet.</li>
+</ul>
+<pre><code class="python"># Retrieve the value of a certain cell
+sheet['A1'].value
+
+# Select element 'B2' of the sheet 
+c = sheet['B2']
+
+# Retrieve the row number of the element
+c.row
+
+# Retrieve the column letter of the element
+c.column
+
+# Retrieve the coordinates of the cell 
+c.coordinate
+
+# Retrieve cell value 
+sheet.cell(row=1, column=2).value
+
+# Print out values in column 2 
+for i in range(1, 4):
+     print(i, sheet.cell(row=i, column=2).value)
+
+# Import relevant modules from `openpyxl.utils`
+from openpyxl.utils import get_column_letter, column_index_from_string
+
+# Return 'A'
+get_column_letter(1)
+
+# Return '1'
+column_index_from_string('A')
+</code></pre>
+
+<p>Print the coordinate and the value that is contained within that cell.</p>
+<pre><code class="python"># Print row per row
+for cellObj in sheet['A1':'C3']:
+      for cell in cellObj:
+              print(cells.coordinate, cells.value)
+      print('--- END ---')
+</code></pre>
+
+<pre><code class="python">('A1', u'M')
+('B1', u'N')
+('C1', u'O')
+--- END ---
+('A2', 10L)
+('B2', 11L)
+('C2', 12L)
+--- END ---
+('A3', 14L)
+('B3', 15L)
+('C3', 16L)
+--- END ---
+</code></pre>
+
+<p>Check up on the result of import.</p>
+<pre><code class="python"># Retrieve the maximum amount of rows 
+sheet.max_row
+
+# Retrieve the maximum amount of columns
+sheet.max_column
+</code></pre>
+
+<p>Pandas DataFrames.</p>
+<pre><code class="python"># Import `pandas` 
+import pandas as pd
+
+# Convert Sheet to DataFrame
+df = pd.DataFrame(sheet.values)
+</code></pre>
+
+<p>Specify headers and indices.</p>
+<pre><code class="python"># Put the sheet values in `data`
+data = sheet.values
+
+# Indicate the columns in the sheet values
+cols = next(data)[1:]
+
+# Convert the data to a list
+data = list(data)
+
+# Read in the data at index 0 for the indices
+idx = [r[0] for r in data]
+
+# Slice the data at index 1 
+data = (islice(r, 1, None) for r in data)
+
+# Make the DataFrame
+df = pd.DataFrame(data, index=idx, columns=cols)
+</code></pre>
+
+<p>Write the Pandas DataFrames back to an Excel file.</p>
+<pre><code class="python"># Import `dataframe_to_rows`
+from openpyxl.utils.dataframe import dataframe_to_rows
+
+# Initialize a workbook 
+wb = Workbook()
+
+# Get the worksheet in the active workbook
+ws = wb.active
+
+# Append the rows of the DataFrame to the worksheet
+for r in dataframe_to_rows(df, index=True, header=True):
+    ws.append(r)
+</code></pre>
+
+<p>More options: change cell styles or use the write-only mode.</p>
+<h3 id="read-and-format-excel-files-with-xlrd">Read and Format Excel Files with <code>xlrd</code><a class="headerlink" href="#read-and-format-excel-files-with-xlrd" title="Permanent link">&para;</a></h3>
+<p>.xls or .xlsx extensions.</p>
+<pre><code class="python"># Import `xlrd`
+import xlrd
+
+# Open a workbook 
+workbook = xlrd.open_workbook('example.xls')
+
+# Loads only current sheets to memory
+workbook = xlrd.open_workbook('example.xls', on_demand = True)
+</code></pre>
+
+<p>Retrieve the sheets, then cells.</p>
+<pre><code class="python"># Load a specific sheet by name
+worksheet = workbook.sheet_by_name('Sheet1')
+
+# Load a specific sheet by index 
+worksheet = workbook.sheet_by_index(0)
+
+# Retrieve the value from cell at indices (0,0) 
+sheet.cell(0, 0).value
+</code></pre>
+
+<h3 id="write-to-excel-files-with-xlwt">Write to Excel Files with <code>xlwt</code><a class="headerlink" href="#write-to-excel-files-with-xlwt" title="Permanent link">&para;</a></h3>
+<p>.xls extension</p>
+<pre><code class="python"># Import `xlwt` 
+import xlwt
+
+# Initialize a workbook 
+book = xlwt.Workbook(encoding=&quot;utf-8&quot;)
+
+# Add a sheet to the workbook 
+sheet1 = book.add_sheet(&quot;Python Sheet 1&quot;) 
+
+# Write to the sheet of the workbook 
+sheet1.write(0, 0, &quot;This is the First Cell of the First Sheet&quot;) 
+
+# Save the workbook 
+book.save(&quot;spreadsheet.xls&quot;)
+</code></pre>
+
+<p>Loop: every element in the range from 0 to 4 (5 not included).</p>
+<pre><code class="python"># Initialize a workbook
+book = xlwt.Workbook()
+
+# Add a sheet to the workbook
+sheet1 = book.add_sheet(&quot;Sheet1&quot;)
+
+# The data
+cols = [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;]
+txt = [0,1,2,3,4]
+
+# Loop over the rows and columns and fill in the values
+for num in range(5):
+      row = sheet1.row(num)
+      for index, col in enumerate(cols):
+          value = txt[index] + num
+          row.write(index, value)
+
+# Save the result
+book.save(&quot;test.xls&quot;)
+</code></pre>
+
+<p><img alt="" src="../img/python_and_excel/content_xlwt.png" /></p>
+<h3 id="a-collection-of-utilities-xlutils">A Collection of Utilities: <code>xlutils</code><a class="headerlink" href="#a-collection-of-utilities-xlutils" title="Permanent link">&para;</a></h3>
+<p>Collection of utilities that require both <code>xlrd</code> and <code>xlwt</code>, which includes the ability to copy and modify or filter existing files. Generally speaking, these use cases are now covered by <code>openpyxl</code>.</p>
+<h3 id="read-with-pyexcel">Read with <code>pyexcel</code><a class="headerlink" href="#read-with-pyexcel" title="Permanent link">&para;</a></h3>
+<p>Python Wrapper that provides one API for reading, manipulating and writing data in .csv, .ods, .xls, .xlsx and .xlsm.</p>
+<p><a href="https://pyexcel.readthedocs.io/en/latest/index.html">Documentation</a>.</p>
+<p>In an array.</p>
+<pre><code class="python"># Import `pyexcel`
+import pyexcel
+
+# Get an array from the data
+my_array = pyexcel.get_array(file_name=&quot;test.xls&quot;)
+</code></pre>
+
+<p>In an ordered dictionary of lists; even obtain all the workbook sheets in a single dictionary.</p>
+<pre><code class="python"># Import `OrderedDict` module 
+from pyexcel._compact import OrderedDict
+
+# Get the data in an ordered dictionary of lists
+my_dict = pyexcel.get_dict(file_name=&quot;test.xls&quot;, name_columns_by_row=0)
+
+# Get the data in a dictionary of 2D arrays
+book_dict = pyexcel.get_book_dict(file_name=&quot;test.xls&quot;)
+</code></pre>
+
+<p>The arrays and dictionaries of the spreadsheet, allow creating DataFrames of the data with <code>pd.DataFrame()</code>.</p>
+<p>Just retrieve the records.</p>
+<pre><code class="python"># Retrieve the records of the file
+records = pyexcel.get_records(file_name=&quot;test.xls&quot;)
+</code></pre>
+
+<h3 id="write-with-pyexcel">Write with <code>pyexcel</code><a class="headerlink" href="#write-with-pyexcel" title="Permanent link">&para;</a></h3>
+<p>Arrays.</p>
+<pre><code class="python"># Get the data
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# Save the array to a file
+pyexcel.save_as(array=data, dest_file_name=&quot;array_data.xls&quot;)
+</code></pre>
+
+<p><code>dest_delimiter = ";"</code></p>
+<p>Dictionary.</p>
+<pre><code class="python"># The data
+2d_array_dictionary = {'Sheet 1': [
+                                   ['ID', 'AGE', 'SCORE']
+                                   [1, 22, 5],
+                                   [2, 15, 6],
+                                   [3, 28, 9]
+                                  ],
+                       'Sheet 2': [
+                                    ['X', 'Y', 'Z'],
+                                    [1, 2, 3],
+                                    [4, 5, 6]
+                                    [7, 8, 9]
+                                  ],
+                       'Sheet 3': [
+                                    ['M', 'N', 'O', 'P'],
+                                    [10, 11, 12, 13],
+                                    [14, 15, 16, 17]
+                                    [18, 19, 20, 21]
+                                   ]}
+
+# Save the data to a file                        
+pyexcel.save_book_as(bookdict=2d_array_dictionary, dest_file_name=&quot;2d_array_data.xls&quot;)
+</code></pre>
+
+<p>The order of the data in the dictionary will not be kept.</p>
+<h3 id="read-and-write-csv-files">Read and Write .csv Files<a class="headerlink" href="#read-and-write-csv-files" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># import `csv`
+import csv
+
+# Read in csv file 
+for row in csv.reader(open('data.csv'), delimiter=','):
+      print(row)
+
+# Write csv file
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+outfile = open('data.csv', 'w')
+writer = csv.writer(outfile, delimiter=';', quotechar='&quot;')
+writer.writerows(data)
+outfile.close()
+</code></pre>
+
+<h4 id="numpy">Numpy<a class="headerlink" href="#numpy" title="Permanent link">&para;</a></h4>
+<p><code>genfromtxt()</code> allows to load in the data that is contained within .csv files into arrays which we can then put in DataFrames.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Apprenez a programmer en Python/" class="btn btn-neutral float-right" title="Apprenez à programmer en Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Intro to data.world in Python/" class="btn btn-neutral" title="Intro to data.world in Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Intro to data.world in Python/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Apprenez a programmer en Python/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>

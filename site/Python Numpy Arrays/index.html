@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Python Numpy Arrays - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Python Numpy Arrays";
+    var mkdocs_page_input_path = "Python Numpy Arrays.md";
+    var mkdocs_page_url = "/Python Numpy Arrays/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'mkdocs.org');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Python Numpy Arrays</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#make-numpy-arrays">Make Numpy Arrays</a></li>
+    
+
+    <li class="toctree-l3"><a href="#a-python-numpy-array">A Python Numpy Array</a></li>
+    
+
+    <li class="toctree-l3"><a href="#make-an-empty-numpy-array">Make an "Empty" Numpy Array</a></li>
+    
+
+    <li class="toctree-l3"><a href="#load-numpy-arrays-from-text">Load Numpy Arrays from Text</a></li>
+    
+
+    <li class="toctree-l3"><a href="#save-numpy-arrays">Save Numpy Arrays</a></li>
+    
+
+    <li class="toctree-l3"><a href="#inspect-numpy-arrays">Inspect Numpy Arrays</a></li>
+    
+
+    <li class="toctree-l3"><a href="#numpy-broadcasting-works">Numpy Broadcasting Works</a></li>
+    
+
+    <li class="toctree-l3"><a href="#array-mathematics">Array Mathematics</a></li>
+    
+
+    <li class="toctree-l3"><a href="#subset-slice-and-index-arrays">Subset, Slice, and Index Arrays</a></li>
+    
+
+    <li class="toctree-l3"><a href="#ask-for-help">Ask for Help</a></li>
+    
+
+    <li class="toctree-l3"><a href="#manipulate-arrays">Manipulate Arrays</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#transpose-arrays">Transpose Arrays</a></li>
+        
+            <li><a class="toctree-l4" href="#reshaping-versus-resizing-arrays">Reshaping versus Resizing Arrays</a></li>
+        
+            <li><a class="toctree-l4" href="#how-to-append-arrays">How to Append Arrays</a></li>
+        
+            <li><a class="toctree-l4" href="#how-to-insert-and-delete-array-elements">How to Insert and Delete Array Elements</a></li>
+        
+            <li><a class="toctree-l4" href="#how-to-join-and-split-arrays">How to Join and Split Arrays</a></li>
+        
+            <li><a class="toctree-l4" href="#split-arrays">Split Arrays</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#how-to-visualize-numpy-arrays">How to Visualize Numpy Arrays</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python+And+Excel/">Python and Excel</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Python Numpy Arrays</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#invoke-numpy">Invoke Numpy</a></li>
+<li><a href="#make-numpy-arrays">Make Numpy Arrays</a></li>
+<li><a href="#a-python-numpy-array">A Python Numpy Array</a></li>
+<li><a href="#make-an-empty-numpy-array">Make an &ldquo;Empty&rdquo; Numpy Array</a></li>
+<li><a href="#load-numpy-arrays-from-text">Load Numpy Arrays from Text</a></li>
+<li><a href="#save-numpy-arrays">Save Numpy Arrays</a></li>
+<li><a href="#inspect-numpy-arrays">Inspect Numpy Arrays</a></li>
+<li><a href="#numpy-broadcasting-works">Numpy Broadcasting Works</a></li>
+<li><a href="#array-mathematics">Array Mathematics</a></li>
+<li><a href="#subset-slice-and-index-arrays">Subset, Slice, and Index Arrays</a></li>
+<li><a href="#ask-for-help">Ask for Help</a></li>
+<li><a href="#manipulate-arrays">Manipulate Arrays</a><ul>
+<li><a href="#transpose-arrays">Transpose Arrays</a></li>
+<li><a href="#reshaping-versus-resizing-arrays">Reshaping versus Resizing Arrays</a></li>
+<li><a href="#how-to-append-arrays">How to Append Arrays</a></li>
+<li><a href="#how-to-insert-and-delete-array-elements">How to Insert and Delete Array Elements</a></li>
+<li><a href="#how-to-join-and-split-arrays">How to Join and Split Arrays</a></li>
+<li><a href="#split-arrays">Split Arrays</a></li>
+</ul>
+</li>
+<li><a href="#how-to-visualize-numpy-arrays">How to Visualize Numpy Arrays</a></li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<h3 id="invoke-numpy">Invoke Numpy<a class="headerlink" href="#invoke-numpy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Code <code>import numpy as np</code> alone.</li>
+<li>Code <code>%pylab</code> to invoke Numpy and matplotlib or <code>%pylab inline</code> for plotting inside the notebook.</li>
+<li>Following <code>%pylab</code>, <code>import numpy as np</code> forces to use the prefix <code>np.</code> before any Numpy function.</li>
+</ul>
+<pre><code class="python">%pylab inline
+</code></pre>
+
+<pre><code>Populating the interactive namespace from numpy and matplotlib
+</code></pre>
+<pre><code class="python">import numpy as np
+</code></pre>
+
+<pre><code class="python">np.__version__
+</code></pre>
+
+<pre><code>'1.12.1'
+</code></pre>
+<ul>
+<li>Reference: https://docs.scipy.org/doc/numpy/reference/</li>
+</ul>
+<h3 id="make-numpy-arrays">Make Numpy Arrays<a class="headerlink" href="#make-numpy-arrays" title="Permanent link">&para;</a></h3>
+<p>If <code>%pylab</code> was invoked.</p>
+<pre><code class="python">array([1,2,3,4])
+</code></pre>
+
+<pre><code>array([1, 2, 3, 4])
+</code></pre>
+<p>If <code>import numpy as np</code> was invoked alone.</p>
+<pre><code class="python">np.array([1,2,3,4])
+</code></pre>
+
+<pre><code>array([1, 2, 3, 4])
+</code></pre>
+<p>Let&rsquo;s begin.</p>
+<pre><code class="python">my_array = np.array([[1, 2, 3, 4], [5, 6, 7, 8]], dtype = np.int64)
+my_2d_array = np.array([[1, 2, 3, 4], [5, 6, 7, 8]], dtype = np.int32)
+my_3d_array = np.array([[[1, 2, 3, 4], [5, 6, 7, 8]], [[1, 2, 3, 4], [9, 10, 11, 12]]])
+</code></pre>
+
+<pre><code class="python"># Print the array
+print(my_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Print the 2d array
+print(my_2d_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Print the 3d array
+print(my_3d_array)
+</code></pre>
+
+<pre><code>[[[ 1  2  3  4]
+  [ 5  6  7  8]]
+
+ [[ 1  2  3  4]
+  [ 9 10 11 12]]]
+</code></pre>
+<h3 id="a-python-numpy-array">A Python Numpy Array<a class="headerlink" href="#a-python-numpy-array" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Print out memory address
+print(my_array.data)
+print(my_2d_array.data)
+</code></pre>
+
+<pre><code>&lt;memory at 0x7f85dcedd8b8&gt;
+&lt;memory at 0x7f85dcedd8b8&gt;
+</code></pre>
+<pre><code class="python"># Print out the shape of `my_array`
+print(my_array.shape)
+print(my_2d_array.shape)
+</code></pre>
+
+<pre><code>(2, 4)
+(2, 4)
+</code></pre>
+<pre><code class="python"># Print out the data type of `my_array`
+# kind of elements that are contained within the array
+print(my_array.dtype)
+print(my_2d_array.dtype)
+</code></pre>
+
+<pre><code>int64
+int32
+</code></pre>
+<pre><code class="python"># Print out the stride of `my_array`
+# the number of bytes that should be skipped in memory to go to the next element.
+print(my_array.strides)
+print(my_2d_array.strides)
+</code></pre>
+
+<pre><code>(32, 8)
+(16, 4)
+</code></pre>
+<h3 id="make-an-empty-numpy-array">Make an &ldquo;Empty&rdquo; Numpy Array<a class="headerlink" href="#make-an-empty-numpy-array" title="Permanent link">&para;</a></h3>
+<p>Make use of initial placeholders, which can be filled up afterwards.</p>
+<pre><code class="python"># Create an array of ones
+np.ones((3,4))
+</code></pre>
+
+<pre><code>array([[ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.]])
+</code></pre>
+<pre><code class="python">np.ones(4)
+</code></pre>
+
+<pre><code>array([ 1.,  1.,  1.,  1.])
+</code></pre>
+<pre><code class="python">np.ones((1,4))
+</code></pre>
+
+<pre><code>array([[ 1.,  1.,  1.,  1.]])
+</code></pre>
+<pre><code class="python"># Create an array of zeros
+np.zeros((2,3,4), dtype=np.int16)
+</code></pre>
+
+<pre><code>array([[[0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]],
+
+       [[0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]]], dtype=int16)
+</code></pre>
+<pre><code class="python">np.zeros(4)
+</code></pre>
+
+<pre><code>array([ 0.,  0.,  0.,  0.])
+</code></pre>
+<pre><code class="python">np.zeros((1,4))
+</code></pre>
+
+<pre><code>array([[ 0.,  0.,  0.,  0.]])
+</code></pre>
+<pre><code class="python"># Create an array with random values
+np.random.random((2,2))
+</code></pre>
+
+<pre><code>array([[ 0.28103745,  0.58180454],
+       [ 0.31233242,  0.28414052]])
+</code></pre>
+<pre><code class="python"># Create an empty array
+np.empty((3,2))
+</code></pre>
+
+<pre><code>array([[ 0.,  0.],
+       [ 0.,  0.],
+       [ 0.,  0.]])
+</code></pre>
+<pre><code class="python"># Create a full array
+np.full((2,2), 7)
+</code></pre>
+
+<pre><code>array([[7, 7],
+       [7, 7]])
+</code></pre>
+<pre><code class="python"># Create an array of evenly-spaced values
+# from 10 to 25 (excluded) by 5
+np.arange(10, 25, 5)
+</code></pre>
+
+<pre><code>array([10, 15, 20])
+</code></pre>
+<pre><code class="python"># Create an array of evenly-spaced values
+# from 0 to 2 in 9 intervals
+np.linspace(0, 2, 9)
+</code></pre>
+
+<pre><code>array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ,  1.25,  1.5 ,  1.75,  2.  ])
+</code></pre>
+<pre><code class="python"># Create an identity array or matrix
+np.eye(2,2)
+</code></pre>
+
+<pre><code>array([[ 1.,  0.],
+       [ 0.,  1.]])
+</code></pre>
+<pre><code class="python">np.eye(3,3)
+</code></pre>
+
+<pre><code>array([[ 1.,  0.,  0.],
+       [ 0.,  1.,  0.],
+       [ 0.,  0.,  1.]])
+</code></pre>
+<pre><code class="python">np.eye(3)
+</code></pre>
+
+<pre><code>array([[ 1.,  0.,  0.],
+       [ 0.,  1.,  0.],
+       [ 0.,  0.,  1.]])
+</code></pre>
+<pre><code class="python"># Idem
+np.identity(3)
+</code></pre>
+
+<pre><code>array([[ 1.,  0.,  0.],
+       [ 0.,  1.,  0.],
+       [ 0.,  0.,  1.]])
+</code></pre>
+<h3 id="load-numpy-arrays-from-text">Load Numpy Arrays from Text<a class="headerlink" href="#load-numpy-arrays-from-text" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Data in the text file
+
+# Value1  Value2  Value3
+# 0.2536  0.1008  0.3857
+# 0.4839  0.4536  0.3561
+# 0.1292  0.6875  0.5929
+# 0.1781  0.3049  0.8928
+# 0.6253  0.3486  0.8791
+</code></pre>
+
+<pre><code class="python"># Set the current directory
+import os
+
+os.chdir('/home/ugo/Documents/Notebooks/DataCamp, Numpy tutorial')
+print(os.getcwd())
+</code></pre>
+
+<pre><code>/home/ugo/Documents/Notebooks/DataCamp, Numpy tutorial
+</code></pre>
+<pre><code class="python"># Import data
+x, y, z = np.loadtxt('textfile.txt',
+                    skiprows = 1,
+                    unpack = True)
+# unpack=True
+# the values in column Value1 will be put in x, and so on
+# delimiter
+# comma-delimited data 
+# specify the data type
+# dtype
+
+print(x)
+</code></pre>
+
+<pre><code>[ 0.2536  0.4839  0.1292  0.1781  0.6253]
+</code></pre>
+<pre><code class="python">print(y)
+</code></pre>
+
+<pre><code>[ 0.1008  0.4536  0.6875  0.3049  0.3486]
+</code></pre>
+<pre><code class="python">print(z)
+</code></pre>
+
+<pre><code>[ 0.3857  0.3561  0.5929  0.8928  0.8791]
+</code></pre>
+<pre><code class="python">print(x)
+print(y)
+print(z)
+</code></pre>
+
+<pre><code>[ 0.2536  0.4839  0.1292  0.1781  0.6253]
+[ 0.1008  0.4536  0.6875  0.3049  0.3486]
+[ 0.3857  0.3561  0.5929  0.8928  0.8791]
+</code></pre>
+<pre><code class="python"># Data in the text file
+
+# Value1  Value2  Value3
+# 0.4839  0.4536  0.3561
+# 0.1292  0.6875  MISSING
+# 0.1781  0.3049  0.8928
+# MISSING 0.5801  0.2038
+# 0.5993  0.4357  0.7410
+</code></pre>
+
+<pre><code class="python"># Import data
+my_array2 = np.genfromtxt('textfile2.txt',
+                      skip_header = 1,
+                      filling_values = -999)
+# filling_values
+# converts character strings in numeric columns to nan, 
+# convert these values to other ones
+# missing_values
+# argument that allows to specify what the missing values
+
+print(my_array2)
+</code></pre>
+
+<pre><code>[[  4.83900000e-01   4.53600000e-01   3.56100000e-01]
+ [  1.29200000e-01   6.87500000e-01  -9.99000000e+02]
+ [  1.78100000e-01   3.04900000e-01   8.92800000e-01]
+ [ -9.99000000e+02   5.80100000e-01   2.03800000e-01]
+ [  5.99300000e-01   4.35700000e-01   7.41000000e-01]]
+</code></pre>
+<h3 id="save-numpy-arrays">Save Numpy Arrays<a class="headerlink" href="#save-numpy-arrays" title="Permanent link">&para;</a></h3>
+<pre><code class="python">x = np.arange(0.0,5.0,1.0) # array of evenly-spaced values from 0 to 5 by 1
+
+np.savetxt('test1.txt', x, delimiter=',') # to a text file
+np.save('test2.npy', x) # to a binary file
+np.savez('test3.npz', x) # to a uncompressed archive
+np.savez_compressed('test4.npz', x) # compressed archive
+</code></pre>
+
+<h3 id="inspect-numpy-arrays">Inspect Numpy Arrays<a class="headerlink" href="#inspect-numpy-arrays" title="Permanent link">&para;</a></h3>
+<p>Almost all the attributes that an array can have.</p>
+<pre><code class="python"># Print the number of `my_array`'s dimensions
+print(my_array.ndim)
+</code></pre>
+
+<pre><code>2
+</code></pre>
+<pre><code class="python"># Print the number of `my_array`'s elements
+print(my_array.size)
+</code></pre>
+
+<pre><code>8
+</code></pre>
+<pre><code class="python"># Print information about `my_array`'s memory layout
+print(my_array.flags)
+</code></pre>
+
+<pre><code>  C_CONTIGUOUS : True
+  F_CONTIGUOUS : False
+  OWNDATA : True
+  WRITEABLE : True
+  ALIGNED : True
+  UPDATEIFCOPY : False
+</code></pre>
+<pre><code class="python"># Print the length of one array element in bytes
+print(my_array.itemsize)
+</code></pre>
+
+<pre><code>8
+</code></pre>
+<pre><code class="python"># Print the total consumed bytes by `my_array`'s elements
+print(my_array.nbytes)
+</code></pre>
+
+<pre><code>64
+</code></pre>
+<pre><code class="python"># Print the length of `my_array`
+print(len(my_array))
+</code></pre>
+
+<pre><code>2
+</code></pre>
+<pre><code class="python"># Change the data type of `my_array`
+my_array.astype(float)
+</code></pre>
+
+<pre><code>array([[ 1.,  2.,  3.,  4.],
+       [ 5.,  6.,  7.,  8.]])
+</code></pre>
+<h3 id="numpy-broadcasting-works">Numpy Broadcasting Works<a class="headerlink" href="#numpy-broadcasting-works" title="Permanent link">&para;</a></h3>
+<p>Work with arrays of different shapes when performing arithmetic operations.</p>
+<pre><code class="python"># Initialize `x`
+x = np.ones((3,4))
+
+# Check shape of `x`
+print(x.shape)
+</code></pre>
+
+<pre><code>(3, 4)
+</code></pre>
+<pre><code class="python"># Initialize `y`
+y = np.random.random((3,4))
+
+# Check shape of `y`
+print(y.shape)
+</code></pre>
+
+<pre><code>(3, 4)
+</code></pre>
+<pre><code class="python">print(x)
+print(y)
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]]
+[[ 0.44011854  0.55827517  0.8107237   0.96725064]
+ [ 0.55923674  0.7754099   0.69282818  0.27928312]
+ [ 0.03662555  0.70499711  0.59944023  0.67982408]]
+</code></pre>
+<pre><code class="python"># Add `x` and `y`
+x + y
+</code></pre>
+
+<pre><code>array([[ 1.44011854,  1.55827517,  1.8107237 ,  1.96725064],
+       [ 1.55923674,  1.7754099 ,  1.69282818,  1.27928312],
+       [ 1.03662555,  1.70499711,  1.59944023,  1.67982408]])
+</code></pre>
+<pre><code class="python"># Initialize `y`
+y2 = np.arange(4)
+
+# Check shape of `y`
+print(y2.shape)
+</code></pre>
+
+<pre><code>(4,)
+</code></pre>
+<pre><code class="python">print(x)
+print(y2)
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]]
+[0 1 2 3]
+</code></pre>
+<pre><code class="python"># Subtract `x` and `y`
+x - y2
+</code></pre>
+
+<pre><code>array([[ 1.,  0., -1., -2.],
+       [ 1.,  0., -1., -2.],
+       [ 1.,  0., -1., -2.]])
+</code></pre>
+<pre><code class="python"># Initialize `x` and `y`
+x2 = np.ones((3,4))
+y3 = np.random.random((5,1,4))
+</code></pre>
+
+<pre><code class="python">print(x2.shape)
+print(y3.shape)
+</code></pre>
+
+<pre><code>(3, 4)
+(5, 1, 4)
+</code></pre>
+<pre><code class="python">print(x2)
+print(y3)
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]]
+[[[ 0.51096464  0.17753054  0.64596468  0.77465719]]
+
+ [[ 0.51629966  0.52917705  0.76817841  0.20105093]]
+
+ [[ 0.04512461  0.64426203  0.3210533   0.88679126]]
+
+ [[ 0.93015065  0.34094049  0.01714773  0.37384124]]
+
+ [[ 0.02498021  0.73107663  0.10914001  0.89487447]]]
+</code></pre>
+<pre><code class="python"># Add `x` and `y`
+x2 + y3
+</code></pre>
+
+<pre><code>array([[[ 1.51096464,  1.17753054,  1.64596468,  1.77465719],
+        [ 1.51096464,  1.17753054,  1.64596468,  1.77465719],
+        [ 1.51096464,  1.17753054,  1.64596468,  1.77465719]],
+
+       [[ 1.51629966,  1.52917705,  1.76817841,  1.20105093],
+        [ 1.51629966,  1.52917705,  1.76817841,  1.20105093],
+        [ 1.51629966,  1.52917705,  1.76817841,  1.20105093]],
+
+       [[ 1.04512461,  1.64426203,  1.3210533 ,  1.88679126],
+        [ 1.04512461,  1.64426203,  1.3210533 ,  1.88679126],
+        [ 1.04512461,  1.64426203,  1.3210533 ,  1.88679126]],
+
+       [[ 1.93015065,  1.34094049,  1.01714773,  1.37384124],
+        [ 1.93015065,  1.34094049,  1.01714773,  1.37384124],
+        [ 1.93015065,  1.34094049,  1.01714773,  1.37384124]],
+
+       [[ 1.02498021,  1.73107663,  1.10914001,  1.89487447],
+        [ 1.02498021,  1.73107663,  1.10914001,  1.89487447],
+        [ 1.02498021,  1.73107663,  1.10914001,  1.89487447]]])
+</code></pre>
+<p>But what if the dimensions are not compatible? What if they are not equal or if one of them is not equal to 1? Fix this by manipulating the array.</p>
+<h3 id="array-mathematics">Array Mathematics<a class="headerlink" href="#array-mathematics" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>np.add(), np.subtract(), np.multiply(), np.divide() and np.remainder()</code>.</li>
+</ul>
+<pre><code class="python">x = np.array([[1, 2, 3], [3, 4, 5]])
+y = np.array([6, 7, 8])
+
+print(x)
+print(y)
+</code></pre>
+
+<pre><code>[[1 2 3]
+ [3 4 5]]
+[6 7 8]
+</code></pre>
+<pre><code class="python"># Add `x` and `y`
+np.add(x,y)
+</code></pre>
+
+<pre><code>array([[ 7,  9, 11],
+       [ 9, 11, 13]])
+</code></pre>
+<pre><code class="python"># Subtract `x` and `y`
+np.subtract(x,y)
+</code></pre>
+
+<pre><code>array([[-5, -5, -5],
+       [-3, -3, -3]])
+</code></pre>
+<pre><code class="python"># Multiply `x` and `y`
+np.multiply(x,y)
+</code></pre>
+
+<pre><code>array([[ 6, 14, 24],
+       [18, 28, 40]])
+</code></pre>
+<pre><code class="python"># Divide `x` and `y`; x/y
+np.divide(x,y)
+</code></pre>
+
+<pre><code>array([[ 0.16666667,  0.28571429,  0.375     ],
+       [ 0.5       ,  0.57142857,  0.625     ]])
+</code></pre>
+<pre><code class="python"># Calculate the remainder of `x` and `y`
+np.remainder(x,y)
+</code></pre>
+
+<pre><code>array([[1, 2, 3],
+       [3, 4, 5]])
+</code></pre>
+<ul>
+<li><code>np.exp(), np.sqrt(), np.log()</code>.</li>
+<li><code>np.dot()</code>.</li>
+<li><code>a.sum(), a.min(), a.max(axis=0), a.cumsum(axis=1), a.mean(), a.median(), a.corrcoef(), a.std(b)</code>.</li>
+</ul>
+<pre><code class="python">x = np.array([[1, 2, 3], [3, 4, 5]])
+print(x)
+</code></pre>
+
+<pre><code>[[1 2 3]
+ [3 4 5]]
+</code></pre>
+<pre><code class="python">x.sum()
+</code></pre>
+
+<pre><code>18
+</code></pre>
+<pre><code class="python">x.min()
+</code></pre>
+
+<pre><code>1
+</code></pre>
+<pre><code class="python">y = np.array([6, 7, 8])
+print(y)
+</code></pre>
+
+<pre><code>[6 7 8]
+</code></pre>
+<pre><code class="python">y.max(axis=0)
+</code></pre>
+
+<pre><code>8
+</code></pre>
+<pre><code class="python">x.max(axis=1)
+</code></pre>
+
+<pre><code>array([3, 5])
+</code></pre>
+<pre><code class="python">y.cumsum(axis=0)
+</code></pre>
+
+<pre><code>array([ 6, 13, 21])
+</code></pre>
+<pre><code class="python">x.mean()
+</code></pre>
+
+<pre><code>3.0
+</code></pre>
+<pre><code class="python">np.std(x)
+</code></pre>
+
+<pre><code>1.2909944487358056
+</code></pre>
+<ul>
+<li><code>==, &lt;, &gt;</code>.</li>
+<li><code>np.array_equal()</code></li>
+<li><code>np.logical_or(), np.logical_not(), np.logical_and()</code>.</li>
+</ul>
+<pre><code class="python">a = np.array([True, True, False, False])
+b = np.array([False, False, True, True])
+</code></pre>
+
+<pre><code class="python"># `a` AND `b` 
+np.logical_and(a, b)
+</code></pre>
+
+<pre><code>array([False, False, False, False], dtype=bool)
+</code></pre>
+<pre><code class="python"># `a` OR `b` 
+np.logical_or(a, b)
+</code></pre>
+
+<pre><code>array([ True,  True,  True,  True], dtype=bool)
+</code></pre>
+<pre><code class="python"># `a` NOT `b` 
+np.logical_not(a,b)
+</code></pre>
+
+<pre><code>array([False, False,  True,  True], dtype=bool)
+</code></pre>
+<h3 id="subset-slice-and-index-arrays">Subset, Slice, and Index Arrays<a class="headerlink" href="#subset-slice-and-index-arrays" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>a[start:end]</code>, items start through the end (but the end is not included!).</li>
+<li><code>a[start:]</code>, items start through the rest of the array.</li>
+<li><code>a[:end]</code>, items from the beginning through the end (but the end is not included!).</li>
+</ul>
+<pre><code class="python">my_array = np.array([1,2,3,4])
+print(my_array)
+</code></pre>
+
+<pre><code>[1 2 3 4]
+</code></pre>
+<pre><code class="python"># Select the element at the 1st index
+print(my_array[1])
+</code></pre>
+
+<pre><code>2
+</code></pre>
+<pre><code class="python">print(my_2d_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Select the element at row 1 column 2
+print(my_2d_array[1][2])
+</code></pre>
+
+<pre><code>7
+</code></pre>
+<pre><code class="python"># Select the element at row 1 column 2
+print(my_2d_array[1,2])
+</code></pre>
+
+<pre><code>7
+</code></pre>
+<pre><code class="python">print(my_3d_array)
+</code></pre>
+
+<pre><code>[[[ 1  2  3  4]
+  [ 5  6  7  8]]
+
+ [[ 1  2  3  4]
+  [ 9 10 11 12]]]
+</code></pre>
+<pre><code class="python"># Select the element at row 1, column 2 and 
+print(my_3d_array[1,1,2])
+</code></pre>
+
+<pre><code>11
+</code></pre>
+<pre><code class="python"># Select items at index 0 and 1
+print(my_array[0:2])
+</code></pre>
+
+<pre><code>[1 2]
+</code></pre>
+<pre><code class="python"># Select items at row 0 and 1, column 1
+print(my_2d_array[0:2,1])
+</code></pre>
+
+<pre><code>[2 6]
+</code></pre>
+<pre><code class="python"># Select items at row 1
+# This is the same as saying `my_3d_array[1,:,:]
+print(my_3d_array[1,...])
+</code></pre>
+
+<pre><code>[[ 1  2  3  4]
+ [ 9 10 11 12]]
+</code></pre>
+<pre><code class="python"># Try out a simple example
+print(my_array[my_array &lt; 3])
+</code></pre>
+
+<pre><code>[1 2]
+</code></pre>
+<pre><code class="python"># Specify a condition
+bigger_than_3 = (my_3d_array &gt;= 3)
+</code></pre>
+
+<pre><code class="python"># Use the condition to index our 3d array
+print(my_3d_array[bigger_than_3])
+</code></pre>
+
+<pre><code>[ 3  4  5  6  7  8  3  4  9 10 11 12]
+</code></pre>
+<pre><code class="python">bigger_than_3 = (my_3d_array &gt; 3) | (my_3d_array == 3)
+</code></pre>
+
+<pre><code class="python">bigger_than_3
+print(bigger_than_3)
+</code></pre>
+
+<pre><code>[[[False False  True  True]
+  [ True  True  True  True]]
+
+ [[False False  True  True]
+  [ True  True  True  True]]]
+</code></pre>
+<pre><code class="python"># Select elements at (1,0), (0,1), (1,2) and (0,0)
+# [[r], [c]]
+print(my_2d_array[[1, 0, 1, 0],[0, 1, 2, 0]])
+</code></pre>
+
+<pre><code>[5 2 7 1]
+</code></pre>
+<pre><code class="python"># Select a subset of the rows and columns
+# [[r], [c]]
+print(my_2d_array[[1, 0, 1, 0]][:,[0,1,2,0]])
+</code></pre>
+
+<pre><code>[[5 6 7 5]
+ [1 2 3 1]
+ [5 6 7 5]
+ [1 2 3 1]]
+</code></pre>
+<h3 id="ask-for-help">Ask for Help<a class="headerlink" href="#ask-for-help" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Look up info on `mean` with `np.lookfor()` 
+print(np.lookfor(&quot;median&quot;))
+</code></pre>
+
+<pre><code>Search results for 'median'
+---------------------------
+numpy.median
+    Compute the median along the specified axis.
+numpy.nanmedian
+    Compute the median along the specified axis, while ignoring NaNs.
+numpy.ma.median
+    Compute the median along the specified axis.
+numpy.pad
+    Pads an array.
+numpy.percentile
+    Compute the qth percentile of the data along the specified axis.
+numpy.nanpercentile
+    Compute the qth percentile of the data along the specified axis,
+None
+</code></pre>
+<pre><code class="python"># Get info on data types with `np.info()`
+np.info(np.ndarray.dtype)
+</code></pre>
+
+<pre><code>Data-type of the array's elements.
+
+Parameters
+----------
+None
+
+Returns
+-------
+d : numpy dtype object
+
+See Also
+--------
+numpy.dtype
+
+Examples
+--------
+&gt;&gt;&gt; x
+array([[0, 1],
+       [2, 3]])
+&gt;&gt;&gt; x.dtype
+dtype('int32')
+&gt;&gt;&gt; type(x.dtype)
+&lt;type 'numpy.dtype'&gt;
+</code></pre>
+<h3 id="manipulate-arrays">Manipulate Arrays<a class="headerlink" href="#manipulate-arrays" title="Permanent link">&para;</a></h3>
+<h4 id="transpose-arrays">Transpose Arrays<a class="headerlink" href="#transpose-arrays" title="Permanent link">&para;</a></h4>
+<p>There is no effect when transposing a 1-D array!</p>
+<pre><code class="python"># Print `my_2d_array`
+print(my_2d_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Transpose `my_2d_array`
+print(np.transpose(my_2d_array))
+</code></pre>
+
+<pre><code>[[1 5]
+ [2 6]
+ [3 7]
+ [4 8]]
+</code></pre>
+<pre><code class="python"># Or use `T` to transpose `my_2d_array` (more flexible, more arguments)
+print(my_2d_array.T)
+</code></pre>
+
+<pre><code>[[1 5]
+ [2 6]
+ [3 7]
+ [4 8]]
+</code></pre>
+<h4 id="reshaping-versus-resizing-arrays">Reshaping versus Resizing Arrays<a class="headerlink" href="#reshaping-versus-resizing-arrays" title="Permanent link">&para;</a></h4>
+<pre><code class="python">x = np.ones((3,4))
+print(x)
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]]
+</code></pre>
+<pre><code class="python"># Print the shape of `x`
+print(x.shape)
+</code></pre>
+
+<pre><code>(3, 4)
+</code></pre>
+<pre><code class="python"># Resize `x` to ((6,4))
+np.resize(x, (6,4))
+</code></pre>
+
+<pre><code>array([[ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.],
+       [ 1.,  1.,  1.,  1.]])
+</code></pre>
+<pre><code class="python"># Try out this as well
+x.resize((6,4))
+
+# Print out `x`
+print(x)
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]
+ [ 1.  1.  1.  1.]
+ [ 0.  0.  0.  0.]
+ [ 0.  0.  0.  0.]
+ [ 0.  0.  0.  0.]]
+</code></pre>
+<pre><code class="python">x = np.ones((1,12))
+print(x)
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]]
+</code></pre>
+<pre><code class="python"># Print the size of `x` to see what's possible
+print(x.size)
+</code></pre>
+
+<pre><code>12
+</code></pre>
+<pre><code class="python"># Reshape `x` to (2,6)
+print(x.reshape((2,6)))
+</code></pre>
+
+<pre><code>[[ 1.  1.  1.  1.  1.  1.]
+ [ 1.  1.  1.  1.  1.  1.]]
+</code></pre>
+<pre><code class="python"># Flatten `x`
+# n-D arrays to a 1-D array
+z = x.ravel()
+
+# Print `z`
+print(z)
+</code></pre>
+
+<pre><code>[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.  1.]
+</code></pre>
+<h4 id="how-to-append-arrays">How to Append Arrays<a class="headerlink" href="#how-to-append-arrays" title="Permanent link">&para;</a></h4>
+<pre><code class="python">my_array = np.array([1, 2, 3, 4])
+print(my_array)
+</code></pre>
+
+<pre><code>[1 2 3 4]
+</code></pre>
+<pre><code class="python"># Append a 1D array to `my_array`
+new_array = np.append(my_array, [7, 8, 9, 10])
+
+# Print `new_array`
+print(new_array)
+</code></pre>
+
+<pre><code>[ 1  2  3  4  7  8  9 10]
+</code></pre>
+<pre><code class="python">print(my_2d_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Append an extra column to `my_2d_array`
+# axis 1 indicates the columns, 
+# while axis 0 indicates the rows in 2-D arrays
+new_2d_array = np.append(my_2d_array, [[7], [8]], axis=1)
+
+# Print `new_2d_array`
+print(new_2d_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4 7]
+ [5 6 7 8 8]]
+</code></pre>
+<h4 id="how-to-insert-and-delete-array-elements">How to Insert and Delete Array Elements<a class="headerlink" href="#how-to-insert-and-delete-array-elements" title="Permanent link">&para;</a></h4>
+<pre><code class="python">print(my_array)
+</code></pre>
+
+<pre><code>[1 2 3 4]
+</code></pre>
+<pre><code class="python"># Insert `5` at index 1
+np.insert(my_array, 1, 5)
+</code></pre>
+
+<pre><code>array([1, 5, 2, 3, 4])
+</code></pre>
+<pre><code class="python">print(my_array)
+</code></pre>
+
+<pre><code>[1 2 3 4]
+</code></pre>
+<pre><code class="python"># Delete the value at index 1
+np.delete(my_array,[1])
+</code></pre>
+
+<pre><code>array([1, 3, 4])
+</code></pre>
+<h4 id="how-to-join-and-split-arrays">How to Join and Split Arrays<a class="headerlink" href="#how-to-join-and-split-arrays" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The number of dimensions needs to be the same if want to concatenate two arrays with <code>np.concatenate()</code>.</li>
+<li>With <code>np.vstack()</code>, make sure that the number of columns in both arrays is the same.</li>
+<li>The same holds also for when using <code>np.r[]</code>.</li>
+<li>For <code>np.hstack()</code>, make sure that the number of dimensions is the same and that the number of rows in both arrays is the same.</li>
+<li>Prefer <code>np.concatenate()</code> or <code>np.stack()</code>.</li>
+<li>With <code>np.column_stack()</code>, make sure that the arrays have the same first dimension.</li>
+<li><code>np.c_[]</code> is another way to concatenate. Here also, the first dimension of both arrays needs to match.</li>
+</ul>
+<pre><code class="python">x = np.array([1,1,1,1])
+x = np.ones((4))
+print(x)
+
+print(my_array)
+</code></pre>
+
+<pre><code>[ 1.  1.  1.  1.]
+[1 2 3 4]
+</code></pre>
+<pre><code class="python"># Concatentate `my_array` and `x`
+print(np.concatenate((my_array,x)))
+</code></pre>
+
+<pre><code>[ 1.  2.  3.  4.  1.  1.  1.  1.]
+</code></pre>
+<pre><code class="python">print(my_2d_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Stack arrays row-wise
+print(np.vstack((my_array, my_2d_array)))
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python">my_resized_array = np.vstack((my_array, my_array))
+print(my_resized_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [1 2 3 4]]
+</code></pre>
+<pre><code class="python"># Stack arrays row-wise
+print(np.r_[my_resized_array, my_2d_array])
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [1 2 3 4]
+ [1 2 3 4]
+ [5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Stack arrays horizontally
+print(np.hstack((my_resized_array, my_2d_array)))
+</code></pre>
+
+<pre><code>[[1 2 3 4 1 2 3 4]
+ [1 2 3 4 5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Stack arrays column-wise
+print(np.column_stack((my_resized_array, my_2d_array)))
+</code></pre>
+
+<pre><code>[[1 2 3 4 1 2 3 4]
+ [1 2 3 4 5 6 7 8]]
+</code></pre>
+<pre><code class="python"># Stack arrays column-wise
+print(np.c_[my_resized_array, my_2d_array])
+</code></pre>
+
+<pre><code>[[1 2 3 4 1 2 3 4]
+ [1 2 3 4 5 6 7 8]]
+</code></pre>
+<h4 id="split-arrays">Split Arrays<a class="headerlink" href="#split-arrays" title="Permanent link">&para;</a></h4>
+<pre><code class="python">print(my_resized_array)
+</code></pre>
+
+<pre><code>[[1 2 3 4]
+ [1 2 3 4]]
+</code></pre>
+<pre><code class="python"># Split `my_stacked_array` horizontally at the 2nd index (left-right)
+print(np.hsplit(my_resized_array, 2))
+</code></pre>
+
+<pre><code>[array([[1, 2],
+       [1, 2]]), array([[3, 4],
+       [3, 4]])]
+</code></pre>
+<pre><code class="python"># Split `my_stacked_array` vertically at the 2nd index (top-bottom)
+print(np.vsplit(my_resized_array, 2))
+</code></pre>
+
+<pre><code>[array([[1, 2, 3, 4]]), array([[1, 2, 3, 4]])]
+</code></pre>
+<h3 id="how-to-visualize-numpy-arrays">How to Visualize Numpy Arrays<a class="headerlink" href="#how-to-visualize-numpy-arrays" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Following %pylab, <code>import matplotlib.pyplot as plt</code> forces to use the prefix <code>plt.</code> before any matplotlib function.</li>
+</ul>
+<pre><code class="python"># Initialize an array
+my_3d_array = np.array([[[1,2,3,4], [5,6,7,8]], [[1,2,3,4], [9,10,11,12]]], dtype = np.int64)
+
+print(my_3d_array)
+</code></pre>
+
+<pre><code>[[[ 1  2  3  4]
+  [ 5  6  7  8]]
+
+ [[ 1  2  3  4]
+  [ 9 10 11 12]]]
+</code></pre>
+<pre><code class="python"># Pass the array to `np.histogram()`
+# compute the occurrences of the array that fall within each bin
+# the first array lists the frequencies for all the elements of the array,
+# while the second array lists the bins that would be used without specifying any bins.
+print(np.histogram(my_3d_array))
+</code></pre>
+
+<pre><code>(array([4, 2, 2, 1, 1, 1, 1, 1, 1, 2]), array([  1. ,   2.1,   3.2,   4.3,   5.4,   6.5,   7.6,   8.7,   9.8,
+        10.9,  12. ]))
+</code></pre>
+<pre><code class="python"># Specify the number of bins
+print(np.histogram(my_3d_array, bins = range(0,13)))
+</code></pre>
+
+<pre><code>(array([0, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2]), array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12]))
+</code></pre>
+<pre><code class="python">%matplotlib inline
+import matplotlib.pyplot as plt
+</code></pre>
+
+<pre><code class="python"># Construct the histogram with a flattened 3d array and a range of bins
+# plt.hist() flattens data and the bins
+plt.hist(my_3d_array.ravel(), bins = range(0,13))
+
+# Add a title to the plot
+plt.title('Frequency of My 3D Array Elements')
+plt.grid(True)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="png" src="../img/python_numpy_arrays/output_152_0.png" /></p>
+<pre><code class="python"># Create an array
+points = np.arange(-5, 5, 0.01)
+
+# Make a meshgrid
+# need 2-D arrays of x and y coordinate values 
+# create a rectangular grid out of an array of x values and an array of y values
+xs, ys = np.meshgrid(points, points)
+z = np.sqrt(xs ** 2 + ys ** 2)
+
+# Display the image on the axes
+plt.imshow(z, cmap=plt.cm.gray)
+plt.grid(True)
+
+# Draw a color bar
+plt.colorbar()
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="png" src="../img/python_numpy_arrays/output_153_0.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Vectors and Arrays (Linear Algebra)/" class="btn btn-neutral float-right" title="Vectors and Arrays (Linear Algebra)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../IPython Notebook/" class="btn btn-neutral" title="IPython Notebook, Collection"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../IPython Notebook/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Vectors and Arrays (Linear Algebra)/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Seaborn, Python's Statistical Data Visualization Library - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Seaborn, Python's Statistical Data Visualization Library";
+    var mkdocs_page_input_path = "Seaborn, Python Statistical Data Visualization Library.md";
+    var mkdocs_page_url = "/Seaborn, Python Statistical Data Visualization Library/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'mkdocs.org');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Seaborn, Python's Statistical Data Visualization Library</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#loading-a-built-in-seaborn-data-set">Loading a Built-in Seaborn Data Set</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#show-seaborn-plots">Show Seaborn Plots</a></li>
+    
+
+    <li class="toctree-l3"><a href="#use-seaborn-with-matplotlib-defaults">Use Seaborn with Matplotlib Defaults</a></li>
+    
+
+    <li class="toctree-l3"><a href="#use-seaborns-colors-as-a-colormap-in-matplotlib">Use Seaborn’s Colors as a colormap in Matplotlib?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts</a></li>
+    
+
+    <li class="toctree-l3"><a href="#temporarily-set-the-plot-style">Temporarily Set the Plot Style</a></li>
+    
+
+    <li class="toctree-l3"><a href="#set-the-figure-size-in-seaborn">Set the Figure Size in Seaborn</a></li>
+    
+
+    <li class="toctree-l3"><a href="#rotate-label-text-in-seaborn">Rotate Label Text in Seaborn</a></li>
+    
+
+    <li class="toctree-l3"><a href="#set-xlim-or-ylim-in-seaborn">Set xlim or ylim in Seaborn</a></li>
+    
+
+    <li class="toctree-l3"><a href="#set-log-scale">Set Log Scale</a></li>
+    
+
+    <li class="toctree-l3"><a href="#add-a-title">Add A Title</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python+And+Excel/">Python and Excel</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Seaborn, Python's Statistical Data Visualization Library</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#seaborn-vs-matplotlib">Seaborn vs Matplotlib</a></li>
+<li><a href="#load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots</a><ul>
+<li><a href="#loading-a-built-in-seaborn-data-set">Loading a Built-in Seaborn Data Set</a></li>
+</ul>
+</li>
+<li><a href="#show-seaborn-plots">Show Seaborn Plots</a></li>
+<li><a href="#use-seaborn-with-matplotlib-defaults">Use Seaborn with Matplotlib Defaults</a></li>
+<li><a href="#use-seaborns-colors-as-a-colormap-in-matplotlib">Use Seaborn’s Colors as a colormap in Matplotlib?</a></li>
+<li><a href="#scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts</a></li>
+<li><a href="#temporarily-set-the-plot-style">Temporarily Set the Plot Style</a></li>
+<li><a href="#set-the-figure-size-in-seaborn">Set the Figure Size in Seaborn</a></li>
+<li><a href="#rotate-label-text-in-seaborn">Rotate Label Text in Seaborn</a></li>
+<li><a href="#set-xlim-or-ylim-in-seaborn">Set xlim or ylim in Seaborn</a></li>
+<li><a href="#set-log-scale">Set Log Scale</a></li>
+<li><a href="#add-a-title">Add A Title</a></li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<h3 id="seaborn-vs-matplotlib">Seaborn vs Matplotlib<a class="headerlink" href="#seaborn-vs-matplotlib" title="Permanent link">&para;</a></h3>
+<p>Seaborn a complement to Matplotlib and it specifically targets statistical data visualization.</p>
+<p>With Seaborn, the plotting functions operate on DataFrames and arrays that contain a whole dataset: colors, the tick marks on the upper and right axes, the style, etc.</p>
+<pre><code class="python">%pylab inline
+</code></pre>
+
+<pre><code>Populating the interactive namespace from numpy and matplotlib
+</code></pre>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Initialize Figure and Axes object
+fig, ax = plt.subplots()
+
+# Load in data
+tips = pd.read_csv(&quot;https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv&quot;)
+
+# Create violinplot
+ax.violinplot(tips[&quot;total_bill&quot;], vert=False)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_3_0.png" /></p>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the data
+tips = sns.load_dataset(&quot;tips&quot;)
+
+# Create violinplot
+sns.violinplot(x = &quot;total_bill&quot;, data=tips)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_4_0.png" /></p>
+<h3 id="load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots<a class="headerlink" href="#load-data-to-construct-seaborn-plots" title="Permanent link">&para;</a></h3>
+<h4 id="loading-a-built-in-seaborn-data-set">Loading a Built-in Seaborn Data Set<a class="headerlink" href="#loading-a-built-in-seaborn-data-set" title="Permanent link">&para;</a></h4>
+<p>The Seaborn data are a GitHun <a href="https://github.com/mwaskom/seaborn-data">repo</a>.</p>
+<pre><code class="python"># Import necessary libraries
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load iris data
+iris = sns.load_dataset(&quot;iris&quot;)
+
+# Construct iris plot
+sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_6_0.png" /></p>
+<p>Seaborn works best with Pandas DataFrames and arrays that contain a whole data set.</p>
+<h3 id="show-seaborn-plots">Show Seaborn Plots<a class="headerlink" href="#show-seaborn-plots" title="Permanent link">&para;</a></h3>
+<p><code>plt.show()</code></p>
+<pre><code class="python"># Import necessarily libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load data
+# built-in Seaborn dataset
+titanic = sns.load_dataset(&quot;titanic&quot;)
+
+# Set up a factorplot
+g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
+                   data=titanic,
+                   kind=&quot;bar&quot;,
+                   palette=&quot;muted&quot;,
+                   legend=False)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_8_0.png" /></p>
+<h3 id="use-seaborn-with-matplotlib-defaults">Use Seaborn with Matplotlib Defaults<a class="headerlink" href="#use-seaborn-with-matplotlib-defaults" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import Matplotlib
+import matplotlib.pyplot as plt
+
+# Check the available styles
+plt.style.available
+</code></pre>
+
+<pre><code>['seaborn-dark-palette',
+ 'seaborn-ticks',
+ 'seaborn-darkgrid',
+ 'seaborn-muted',
+ 'seaborn-white',
+ 'seaborn-pastel',
+ 'grayscale',
+ 'seaborn-bright',
+ '_classic_test',
+ 'seaborn-poster',
+ 'seaborn-whitegrid',
+ 'classic',
+ 'seaborn-dark',
+ 'seaborn-talk',
+ 'bmh',
+ 'seaborn-notebook',
+ 'ggplot',
+ 'seaborn-colorblind',
+ 'seaborn-deep',
+ 'seaborn',
+ 'fivethirtyeight',
+ 'dark_background',
+ 'seaborn-paper']
+</code></pre>
+<pre><code class="python"># Use Matplotlib defaults
+plt.style.use(&quot;classic&quot;)
+
+# Set up a factorplot
+g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
+                   data=titanic,
+                   kind=&quot;bar&quot;,
+                   legend=False)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_11_0.png" /></p>
+<pre><code class="python">plt.style.use(&quot;ggplot&quot;)
+
+# Set up a factorplot
+g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
+                   data=titanic,
+                   kind=&quot;bar&quot;,
+                   legend=False)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_12_0.png" /></p>
+<h3 id="use-seaborns-colors-as-a-colormap-in-matplotlib">Use Seaborn’s Colors as a colormap in Matplotlib?<a class="headerlink" href="#use-seaborns-colors-as-a-colormap-in-matplotlib" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import the necessary libraries
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.colors import ListedColormap
+
+# Define a variable N
+N = 500
+
+# Construct the colormap
+current_palette = sns.color_palette(&quot;muted&quot;, n_colors=5)
+cmap = ListedColormap(sns.color_palette(current_palette).as_hex())
+
+
+# Initialize the data
+data1 = np.random.randn(N)
+data2 = np.random.randn(N)
+# Assume that there are 5 possible labels
+colors = np.random.randint(0,5,N)
+
+
+# Create a scatter plot
+plt.scatter(data1, data2, c=colors, cmap=cmap)
+
+# Add a color bar
+plt.colorbar()
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_14_0.png" /></p>
+<h3 id="scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts<a class="headerlink" href="#scale-seaborn-plots-for-other-contexts" title="Permanent link">&para;</a></h3>
+<p>Larger or smaller plots.</p>
+<ul>
+<li>&ldquo;paper&rdquo;,</li>
+<li>&ldquo;notebook&rdquo;,</li>
+<li>&ldquo;talk&rdquo; and</li>
+<li>&ldquo;poster&rdquo;</li>
+</ul>
+<pre><code class="python"># Import necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Reset default params
+sns.set()
+
+# Set context to `&quot;paper&quot;`
+sns.set_context(&quot;paper&quot;)
+
+# Load iris data
+iris = sns.load_dataset(&quot;iris&quot;)
+
+# Construct iris plot
+sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_16_0.png" /></p>
+<p>More parameters.</p>
+<p>Use the higher-level <code>set()</code> function instead of <code>set_context()</code> to adjust other plot elements.</p>
+<pre><code class="python"># Import necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Set context to `&quot;paper&quot;`
+sns.set_context(&quot;paper&quot;, 
+                font_scale=3, 
+                rc={&quot;font.size&quot;:8,
+                    &quot;axes.labelsize&quot;:5})
+
+# Load iris data
+iris = sns.load_dataset(&quot;iris&quot;)
+
+# Construct iris plot
+sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_18_0.png" /></p>
+<pre><code class="python"># Import necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Reset default params
+sns.set(rc={&quot;font.size&quot;:8,
+            &quot;axes.labelsize&quot;:5})
+
+# Load iris data
+iris = sns.load_dataset(&quot;iris&quot;)
+
+# Construct iris plot
+sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_19_0.png" /></p>
+<p>Axes-level functions and figure-level functions. </p>
+<ul>
+<li>The ones that operate on the Axes level are, for example, <code>regplot()</code>, <code>boxplot()</code>, <code>kdeplot()</code>, …, </li>
+<li>while the functions that operate on the Figure level are <code>lmplot()</code>, <code>factorplot()</code>, <code>jointplot()</code>, &hellip;</li>
+</ul>
+<p>The first group is identified by taking an explicit <code>ax</code> argument and returning an Axes object, while the second group of functions creates plots that potentially include Axes. </p>
+<pre><code class="python">tips.head()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total_bill</th>
+      <th>tip</th>
+      <th>sex</th>
+      <th>smoker</th>
+      <th>day</th>
+      <th>time</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>16.99</td>
+      <td>1.01</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10.34</td>
+      <td>1.66</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>21.01</td>
+      <td>3.50</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>23.68</td>
+      <td>3.31</td>
+      <td>Male</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>24.59</td>
+      <td>3.61</td>
+      <td>Female</td>
+      <td>No</td>
+      <td>Sun</td>
+      <td>Dinner</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python"># Set context to `&quot;paper&quot;`
+sns.set_context(&quot;notebook&quot;, 
+                font_scale=1,
+                rc={&quot;font.size&quot;:16,
+                    &quot;axes.labelsize&quot;:16})
+</code></pre>
+
+<pre><code class="python">sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f6dc1c721d0&gt;
+</code></pre>
+<p><img alt="" src="../img/seaborn_python/output_23_1.png" /></p>
+<pre><code class="python">sns.lmplot(x=&quot;size&quot;, y=&quot;total_bill&quot;,
+           data=tips,
+           size=7,
+           truncate=True,
+           scatter_kws={&quot;s&quot;: 100})
+</code></pre>
+
+<pre><code>&lt;seaborn.axisgrid.FacetGrid at 0x7f6dc1b9a9b0&gt;
+</code></pre>
+<p><img alt="" src="../img/seaborn_python/output_24_1.png" /></p>
+<p><code>lmplot()</code> returns an object of the type <code>FacetGrid</code> with underlying figure and array of axes at the <code>FacetGrid.fig</code> and <code>FacetGrid.axes</code> arguments.</p>
+<p>Make customizations to a regression plot constructed with <code>regplot()</code> on the <code>Axes</code> level (see below) and make customizations with <code>lmplot()</code> at the Figure level (see further down).</p>
+<h3 id="temporarily-set-the-plot-style">Temporarily Set the Plot Style<a class="headerlink" href="#temporarily-set-the-plot-style" title="Permanent link">&para;</a></h3>
+<p><code>axes_style()</code> in a <code>with</code> statement to temporarily set the plot style.</p>
+<pre><code class="python"># Import necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load data
+iris = sns.load_dataset(&quot;iris&quot;)
+tips = sns.load_dataset(&quot;tips&quot;)
+
+# Set axes style to white for first subplot
+with sns.axes_style(&quot;white&quot;):
+    plt.subplot(211)
+    sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+
+# Initialize the second subplot
+plt.subplot(212)
+
+# Plot violinplot
+sns.violinplot(x = &quot;total_bill&quot;, data=tips)
+
+# Show the plot                   
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_26_0.png" /></p>
+<h3 id="set-the-figure-size-in-seaborn">Set the Figure Size in Seaborn<a class="headerlink" href="#set-the-figure-size-in-seaborn" title="Permanent link">&para;</a></h3>
+<p>Axes-level functions: <code>plt.subplots()</code> function to which we pass the <code>figsize</code> argument.</p>
+<pre><code class="python"># Import necessary libraries
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Initialize Figure and Axes object
+fig, ax = plt.subplots(figsize=(10,4))
+
+# Load in the data
+iris = sns.load_dataset(&quot;iris&quot;)
+
+# Create swarmplot
+sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris, ax=ax)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_28_0.png" /></p>
+<p>Figure-level functions: rely on two parameters to set the Figure size, namely, <code>size</code> and <code>aspect</code>.</p>
+<pre><code class="python"># Import the libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+# Load data
+titanic = sns.load_dataset(&quot;titanic&quot;)
+
+# Set up a factorplot
+g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;, 
+                   data=titanic, 
+                   kind=&quot;bar&quot;, 
+                   size=6, 
+                   aspect=2, 
+                   palette=&quot;muted&quot;, 
+                   legend=False)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_30_0.png" /></p>
+<h3 id="rotate-label-text-in-seaborn">Rotate Label Text in Seaborn<a class="headerlink" href="#rotate-label-text-in-seaborn" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import numpy as np
+import pandas as pd
+
+# Initialize the data
+x = 10 ** np.arange(1, 10)
+y = x * 2
+data = pd.DataFrame(data={'x': x, 'y': y})
+
+# Create an lmplot
+grid = sns.lmplot('x', 'y',
+                  data,
+                  size=7,
+                  truncate=True,
+                  scatter_kws={&quot;s&quot;: 100})
+
+# Rotate the labels on x-axis
+grid.set_xticklabels(rotation=30)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_32_0.png" /></p>
+<h3 id="set-xlim-or-ylim-in-seaborn">Set <code>xlim</code> or <code>ylim</code> in Seaborn<a class="headerlink" href="#set-xlim-or-ylim-in-seaborn" title="Permanent link">&para;</a></h3>
+<p>Assign boxplot to a variable <code>ax</code>, which will be a <code>matplotlib.axes._subplots.AxesSubplot</code> object.</p>
+<pre><code class="python"># Import necessary libraries
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the data
+tips = sns.load_dataset(&quot;tips&quot;)
+
+# Create the boxplot
+ax = sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+
+# Set the `xlim`
+ax.set(xlim=(0, 100))
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_34_0.png" /></p>
+<pre><code class="python"># Import necessary libraries
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load the data
+tips = sns.load_dataset(&quot;tips&quot;)
+
+# Create the boxplot
+ax = sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+
+# Set the `xlim`
+ax.set(xlim=(0, 60))
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_35_0.png" /></p>
+<p>Figure-level: access the <code>Axes</code> object with the help of the <code>axes</code> argument.</p>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import numpy as np
+import pandas as pd
+
+# Initialize the data
+x = 10 ** np.arange(1, 10)
+y = x * 2
+data = pd.DataFrame(data={'x': x, 'y': y})
+
+# Create lmplot
+lm = sns.lmplot('x', 'y',
+                data,
+                size=7,
+                truncate=True,
+                scatter_kws={&quot;s&quot;: 100})
+
+# Get hold of the `Axes` objects
+axes = lm.ax
+
+# Tweak the `Axes` properties
+axes.set_ylim(-1000000000,)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_37_0.png" /></p>
+<p>Figure-level: <code>FacetGrid</code> exposes the underlying figure with the help of the <code>fig</code> argument.</p>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import numpy as np
+import pandas as pd
+
+# Initialize the data
+x = 10 ** np.arange(1, 10)
+y = x * 2
+data = pd.DataFrame(data={'x': x, 'y': y})
+
+# Create lmplot
+lm = sns.lmplot('x', 'y',
+                data,
+                size=7,
+                truncate=True,
+                scatter_kws={&quot;s&quot;: 100})
+
+# Access the Figure
+fig = lm.fig 
+
+# Add a title to the Figure
+fig.suptitle('this is the figure title', fontsize=12)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_39_0.png" /></p>
+<h3 id="set-log-scale">Set Log Scale<a class="headerlink" href="#set-log-scale" title="Permanent link">&para;</a></h3>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import numpy as np
+import pandas as pd
+
+# Create the data
+x = 10 ** np.arange(1, 10)
+y = x * 2
+data = pd.DataFrame(data={'x': x, 'y': y})
+
+# Initialize figure and ax
+fig, ax = plt.subplots()
+
+# Set the scale of the x-and y-axes
+ax.set(xscale=&quot;log&quot;, yscale=&quot;log&quot;)
+
+# Create a regplot
+sns.regplot(&quot;x&quot;, &quot;y&quot;,
+            data,
+            ax=ax,
+            scatter_kws={&quot;s&quot;: 100})
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_41_0.png" /></p>
+<p>Figure-level: set the <code>xscale</code> and <code>yscale</code> properties with the help of the <code>set()</code> method of the <code>FacetGrid</code> object.</p>
+<pre><code class="python"># Import the libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+# Load data
+titanic = sns.load_dataset(&quot;titanic&quot;)
+
+# Set up a factorplot
+g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
+                   data=titanic,
+                   kind=&quot;bar&quot;,
+                   size=6,
+                   palette=&quot;muted&quot;,
+                   legend=False)
+
+# Set the `yscale`
+g.set(yscale=&quot;log&quot;)
+
+# Show plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_43_0.png" /></p>
+<h3 id="add-a-title">Add A Title<a class="headerlink" href="#add-a-title" title="Permanent link">&para;</a></h3>
+<p>Axes-level: <code>set_title()</code>.</p>
+<pre><code class="python"># Import the libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+tips = sns.load_dataset(&quot;tips&quot;)
+
+# Create the boxplot
+ax = sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+
+# Set title
+ax.set_title(&quot;boxplot&quot;)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_45_0.png" /></p>
+<p>Figure-level: <code>fig</code>.</p>
+<pre><code class="python"># Import the necessary libraries
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import numpy as np
+import pandas as pd
+
+# Load the data
+tips = sns.load_dataset(&quot;tips&quot;)
+
+# Create scatter plots
+g = sns.FacetGrid(tips, col=&quot;sex&quot;, row=&quot;smoker&quot;, margin_titles=True)
+g.map(sns.plt.scatter, &quot;total_bill&quot;, &quot;tip&quot;)
+
+# Add a title to the figure
+g.fig.suptitle(&quot;this is a title&quot;)
+
+# Show the plot
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/seaborn_python/output_47_0.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Pandas+DataFrames/" class="btn btn-neutral float-right" title="Pandas DataFrames">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" class="btn btn-neutral" title="Viewing 3D Volumetric Data With Matplotlib"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Pandas+DataFrames/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>
