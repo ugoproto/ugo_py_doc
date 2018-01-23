@@ -10,6 +10,14 @@ Cheat sheets.
 
 ---
 
+## Importing Data
+
+- [Importing Data](Importing_Data.pdf). PDF. Files: text, falt, spreadsheet, SAS, Stata, RDB, Pickled, HDF5, Matlab, with numpy, pandas, accessing, exploring, and navigating.
+
+<center>
+![](img/scipy_cs/Importing_data.png)
+</center>
+
 ## Data Mining
 
 - [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.

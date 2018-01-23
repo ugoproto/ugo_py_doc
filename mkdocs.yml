@@ -21,6 +21,7 @@ pages:
         - Regular Expressions (REGEX): 'Regex.md'
         - Databases: 'Databases.md'
         - Datetime: 'Datetime.md'
+        - Execute Highlighted Python Code in gedit: 'Execute_Highlighted_Python_Code_in_gedit.md'
     - SciPy Stack: 
         - Scipy Stack Cheat Sheets: 'Scipy_CS.md'
         - Jupyter Notebook Cheat Sheets: 'JN_CS.md'        
