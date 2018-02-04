@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Overview of scikit-learn - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Overview of scikit-learn";
+    var mkdocs_page_input_path = "Overview_of_scikit-learn.md";
+    var mkdocs_page_url = "/Overview_of_scikit-learn/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'auto');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Execute_Highlighted_Python_Code_in_gedit/">Execute Highlighted Python Code in gedit</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python+And+Excel/">Python and Excel</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Overview of scikit-learn</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#basic-level">Basic level</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#hard-coded-dataset">Hard-coded dataset</a></li>
+        
+            <li><a class="toctree-l4" href="#decision-tree">Decision tree</a></li>
+        
+            <li><a class="toctree-l4" href="#random-forests">Random Forests</a></li>
+        
+            <li><a class="toctree-l4" href="#k-nearest-neighbours">k-Nearest Neighbours</a></li>
+        
+            <li><a class="toctree-l4" href="#logistic-regression">Logistic regression</a></li>
+        
+            <li><a class="toctree-l4" href="#naive-bayes">Naïve Bayes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#intermediate-level">Intermediate level</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#imported-dataset">Imported dataset</a></li>
+        
+            <li><a class="toctree-l4" href="#decision-tree_1">Decision tree</a></li>
+        
+            <li><a class="toctree-l4" href="#random-forests_1">Random Forests</a></li>
+        
+            <li><a class="toctree-l4" href="#random-forests-with-the-iris-dataset">Random Forests (with the Iris dataset)</a></li>
+        
+            <li><a class="toctree-l4" href="#k-nearest-neighbours_1">k-Nearest Neighbours</a></li>
+        
+            <li><a class="toctree-l4" href="#logistic-regression_1">Logistic regression</a></li>
+        
+            <li><a class="toctree-l4" href="#naive-bayes_1">Naïve Bayes</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#intermediate-level-additional">Intermediate level (Additional)</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#principal-component-analysis">Principal Component Analysis</a></li>
+        
+            <li><a class="toctree-l4" href="#support-vector-machines">Support Vector Machines</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#a-little-application">A little application</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/">k-NN, Linear regression, Logit, Scaling, Centering, Noise</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Time_Series_Analysis/">Time Series Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Sentiment_Analysis_with_Twitter/">Sentiment Analysis with Twitter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/">EDA, Machine Learning, Feature Engineering, and Kaggle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Overview of scikit-learn</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#the-scikit-learn-module">The scikit-learn module</a></li>
+<li><a href="#basic-level">Basic level</a><ul>
+<li><a href="#hard-coded-dataset">Hard-coded dataset</a></li>
+<li><a href="#decision-tree">Decision tree</a></li>
+<li><a href="#random-forests">Random Forests</a></li>
+<li><a href="#k-nearest-neighbours">k-Nearest Neighbours</a></li>
+<li><a href="#logistic-regression">Logistic regression</a></li>
+<li><a href="#naive-bayes">Naïve Bayes</a></li>
+</ul>
+</li>
+<li><a href="#intermediate-level">Intermediate level</a><ul>
+<li><a href="#imported-dataset">Imported dataset</a></li>
+<li><a href="#decision-tree_1">Decision tree</a></li>
+<li><a href="#random-forests_1">Random Forests</a></li>
+<li><a href="#random-forests-with-the-iris-dataset">Random Forests (with the Iris dataset)</a></li>
+<li><a href="#k-nearest-neighbours_1">k-Nearest Neighbours</a></li>
+<li><a href="#logistic-regression_1">Logistic regression</a></li>
+<li><a href="#naive-bayes_1">Naïve Bayes</a></li>
+</ul>
+</li>
+<li><a href="#intermediate-level-additional">Intermediate level (Additional)</a><ul>
+<li><a href="#principal-component-analysis">Principal Component Analysis</a></li>
+<li><a href="#support-vector-machines">Support Vector Machines</a></li>
+</ul>
+</li>
+<li><a href="#a-little-application">A little application</a></li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<pre><code class="python"># Set the current directory
+import os
+
+os.chdir('/home/ugo/Documents/Notebooks/DataCamp, Overview of scikit-learn/')
+print(os.getcwd())
+</code></pre>
+
+<pre><code>/home/ugo/Documents/Notebooks/DataCamp, Overview of scikit-learn
+</code></pre>
+<h3 id="the-scikit-learn-module">The scikit-learn module<a class="headerlink" href="#the-scikit-learn-module" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../img/overview_of_scikit/scikit-learn.png" /></p>
+<p>We use different algorithms from the <code>sciki-learn</code> module as classifiers (on a binary dependent variable). Most models come from this <a href="https://www.youtube.com/watch?v=T5pRlIbr6gg">link</a>.</p>
+<p>Unused algorithms:</p>
+<ul>
+<li>Regressions,<ul>
+<li>Ridge regression (for dealing with heteroscedasticity),</li>
+<li>ElasticNet, Lasso (for dealing with heteroscedasticity),</li>
+<li>Support Vector Regression (SVR), ensemble models,</li>
+</ul>
+</li>
+<li>Classfication,<ul>
+<li>Linear SVC, ensemble SVC, kernel approximation,</li>
+</ul>
+</li>
+<li>Clustering,<ul>
+<li>k-means, spectral clustering GMM,</li>
+<li>Other k-means,</li>
+</ul>
+</li>
+<li>Dimensionality reduction,<ul>
+<li>Principal Component Analysis (PCA),</li>
+<li>Others.</li>
+</ul>
+</li>
+</ul>
+<h3 id="basic-level">Basic level<a class="headerlink" href="#basic-level" title="Permanent link">&para;</a></h3>
+<h4 id="hard-coded-dataset">Hard-coded dataset<a class="headerlink" href="#hard-coded-dataset" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># [height, weight, shoe_size]
+X = [[181, 80, 44], [177, 70, 43], [160, 60, 38], [154, 54, 37], [166, 65, 40],
+     [190, 90, 47], [175, 64, 39],
+     [177, 70, 40], [159, 55, 37], [171, 75, 42], [181, 85, 43]]
+
+Y = ['male', 'male', 'female', 'female', 'male', 'male', 'female', 'female',
+     'female', 'male', 'male']
+</code></pre>
+
+<h4 id="decision-tree">Decision tree<a class="headerlink" href="#decision-tree" title="Permanent link">&para;</a></h4>
+<pre><code class="python"># import decision tree
+from sklearn import tree
+
+# train on the train set
+clf = tree.DecisionTreeClassifier()
+
+clf = clf.fit(X,Y)
+</code></pre>
+
+<pre><code class="python"># test
+prediction = clf.predict([[190, 70, 43]])
+print(prediction)
+</code></pre>
+
+<pre><code>['male']
+</code></pre>
+<h4 id="random-forests">Random Forests<a class="headerlink" href="#random-forests" title="Permanent link">&para;</a></h4>
+<pre><code class="python">from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# set the training parameters
+clf = RandomForestClassifier(n_estimators=1000)
+
+# train on the same train set
+clf = clf.fit(X,Y)
+
+# validate the classifier
+accuracy = clf.score(X, Y)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code>Accuracy: 1.0
+</code></pre>
+<pre><code class="python"># test
+prediction = clf.predict([[190, 70, 43]])
+print(prediction)
+</code></pre>
+
+<pre><code>['male']
+</code></pre>
+<h4 id="k-nearest-neighbours">k-Nearest Neighbours<a class="headerlink" href="#k-nearest-neighbours" title="Permanent link">&para;</a></h4>
+<pre><code class="python">from sklearn.neighbors import KNeighborsClassifier
+
+# set the training parameters
+neigh = KNeighborsClassifier(n_neighbors=3)
+
+# train on the same train set
+neigh.fit(X,Y)
+</code></pre>
+
+<pre><code>KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=3, p=2,
+           weights='uniform')
+</code></pre>
+<pre><code class="python"># test
+prediction = neigh.predict([[190, 70, 43]])
+print(prediction)
+</code></pre>
+
+<pre><code>['male']
+</code></pre>
+<h4 id="logistic-regression">Logistic regression<a class="headerlink" href="#logistic-regression" title="Permanent link">&para;</a></h4>
+<pre><code class="python">from sklearn.linear_model import LogisticRegression
+
+# set the training parameters
+neigh = LogisticRegression()
+
+# train on the same train set
+neigh.fit(X, Y)
+</code></pre>
+
+<pre><code>LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l2', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)
+</code></pre>
+<pre><code class="python"># test
+prediction = neigh.predict([[190, 70, 43]])
+print(prediction)
+</code></pre>
+
+<pre><code>['female']
+</code></pre>
+<h4 id="naive-bayes">Naïve Bayes<a class="headerlink" href="#naive-bayes" title="Permanent link">&para;</a></h4>
+<pre><code class="python">from sklearn.naive_bayes import GaussianNB
+
+# set the training parameters
+gnb = GaussianNB()
+
+# train on the same train set
+gnb = gnb.fit(X, Y)
+</code></pre>
+
+<pre><code class="python"># test
+prediction = gnb.predict([[190, 70, 43]])
+print(prediction)
+</code></pre>
+
+<pre><code>['male']
+</code></pre>
+<h3 id="intermediate-level">Intermediate level<a class="headerlink" href="#intermediate-level" title="Permanent link">&para;</a></h3>
+<h4 id="imported-dataset">Imported dataset<a class="headerlink" href="#imported-dataset" title="Permanent link">&para;</a></h4>
+<h4 id="decision-tree_1">Decision tree<a class="headerlink" href="#decision-tree_1" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn import tree
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python">len(data)
+</code></pre>
+
+<pre><code>32561
+</code></pre>
+<pre><code class="python">data.shape
+</code></pre>
+
+<pre><code>(32561, 15)
+</code></pre>
+<pre><code class="python">data.info()
+</code></pre>
+
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 32561 entries, 0 to 32560
+Data columns (total 15 columns):
+age               32561 non-null int64
+workclass         32561 non-null object
+final_weight      32561 non-null int64
+education         32561 non-null object
+education_num     32561 non-null int64
+marital_status    32561 non-null object
+occupation        32561 non-null object
+relationship      32561 non-null object
+race              32561 non-null object
+sex               32561 non-null object
+capital_gain      32561 non-null int64
+capital_loss      32561 non-null int64
+hours_per_week    32561 non-null int64
+native_country    32561 non-null object
+salary            32561 non-null object
+dtypes: int64(6), object(9)
+memory usage: 3.7+ MB
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race   sex  capital_gain  \
+0       Never-married           1  Not-in-family     4  Male          2174   
+1  Married-civ-spouse           4        Husband     4  Male             0   
+2            Divorced           6  Not-in-family     4  Male             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['race', 'hours_per_week', 'occupation']]
+
+# make sure to provide the corresponding truth value
+Y = data['sex'].values.tolist()
+</code></pre>
+
+<pre><code class="python"># split the data into a test (30%) and train set (70%)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+# set the training parameters, instantiate the classifier
+clf = tree.DecisionTreeClassifier()
+
+# train on the train set
+clf = clf.fit(X_train, Y_train)
+</code></pre>
+
+<pre><code class="python"># validate the classifier
+accuracy = clf.score(X_test, Y_test)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code>Accuracy: 0.727198280274
+</code></pre>
+<pre><code class="python"># test
+prediction = clf.predict(X_test)
+print(prediction)
+</code></pre>
+
+<pre><code>['Female' 'Female' 'Male' ..., 'Male' 'Male' 'Male']
+</code></pre>
+<pre><code class="python"># create a confusion matrix
+cm = confusion_matrix(prediction, Y_test)
+print(cm)
+</code></pre>
+
+<pre><code>[[1613 1037]
+ [1628 5491]]
+</code></pre>
+<h4 id="random-forests_1">Random Forests<a class="headerlink" href="#random-forests_1" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race   sex  capital_gain  \
+0       Never-married           1  Not-in-family     4  Male          2174   
+1  Married-civ-spouse           4        Husband     4  Male             0   
+2            Divorced           6  Not-in-family     4  Male             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['race', 'hours_per_week', 'occupation']]
+
+# make sure to provide the corresponding truth value
+Y = data['sex'].values.tolist()
+</code></pre>
+
+<pre><code class="python"># split the data into a test (30%) and train set (70%)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+# set the training parameters
+clf = RandomForestClassifier(n_estimators=1000)
+
+# train on the train set
+clf = clf.fit(X_train, Y_train)
+</code></pre>
+
+<pre><code class="python"># validate the classifier
+accuracy = clf.score(X_test, Y_test)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code>Accuracy: 0.738765482649
+</code></pre>
+<pre><code class="python"># test
+prediction = clf.predict(X_test)
+print(prediction)
+</code></pre>
+
+<pre><code>['Male' 'Female' 'Male' ..., 'Female' 'Male' 'Female']
+</code></pre>
+<pre><code class="python"># create a confusion matrix
+cm = confusion_matrix(prediction, Y_test)
+print(cm)
+</code></pre>
+
+<pre><code>[[1568  970]
+ [1582 5649]]
+</code></pre>
+<h4 id="random-forests-with-the-iris-dataset">Random Forests (with the Iris dataset)<a class="headerlink" href="#random-forests-with-the-iris-dataset" title="Permanent link">&para;</a></h4>
+<p>Iris dataset.</p>
+<pre><code class="python">from sklearn.cross_validation import cross_val_score, train_test_split
+import numpy as np
+from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import preprocessing
+
+iris = datasets.load_iris()
+</code></pre>
+
+<pre><code class="python"># feature scaling
+min_max_scaler = preprocessing.MinMaxScaler()
+X = min_max_scaler.fit_transform(iris.data)
+
+# train on the train set
+clf = RandomForestClassifier(n_estimators=200)   
+</code></pre>
+
+<pre><code class="python"># test our classifier
+scores = cross_val_score(clf, X, iris.target, cv=5)
+
+print(&quot;Accuracy: %0.2f (+/- %0.2f)&quot; % (scores.mean(), scores.std() * 2))
+</code></pre>
+
+<pre><code>Accuracy: 0.97 (+/- 0.04)
+</code></pre>
+<h4 id="k-nearest-neighbours_1">k-Nearest Neighbours<a class="headerlink" href="#k-nearest-neighbours_1" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# Import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race   sex  capital_gain  \
+0       Never-married           1  Not-in-family     4  Male          2174   
+1  Married-civ-spouse           4        Husband     4  Male             0   
+2            Divorced           6  Not-in-family     4  Male             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['race', 'hours_per_week', 'occupation']]
+
+# make sure to provide the corresponding truth value
+Y = data['sex'].values.tolist()
+</code></pre>
+
+<pre><code class="python"># split the data into a test (30%) and train set (70%)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+# set the training parameters, instantiate the classifier
+clf = KNeighborsClassifier(n_neighbors=3)
+
+# train on the train set
+clf = clf.fit(X_train, Y_train)
+</code></pre>
+
+<pre><code class="python"># validate the classifier
+accuracy = clf.score(X_test, Y_test)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code>Accuracy: 0.68113420002
+</code></pre>
+<pre><code class="python"># create a confusion matrix
+prediction = clf.predict(X_test)
+</code></pre>
+
+<pre><code class="python"># test
+cm = confusion_matrix(prediction, Y_test)
+print(cm)
+</code></pre>
+
+<pre><code>[[1694 1591]
+ [1524 4960]]
+</code></pre>
+<h4 id="logistic-regression_1">Logistic regression<a class="headerlink" href="#logistic-regression_1" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race   sex  capital_gain  \
+0       Never-married           1  Not-in-family     4  Male          2174   
+1  Married-civ-spouse           4        Husband     4  Male             0   
+2            Divorced           6  Not-in-family     4  Male             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['race', 'hours_per_week', 'occupation']]
+
+# make sure to provide the corresponding truth value
+Y = data['sex'].values.tolist()
+</code></pre>
+
+<pre><code class="python"># split the data into a test (30%) and train set (70%)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+# set the training parameters, instantiate the classifier
+clf = LogisticRegression()
+
+# train on the train set
+clf = clf.fit(X_train, Y_train)
+</code></pre>
+
+<pre><code class="python"># validate the classifier
+accuracy = clf.score(X_test, Y_test)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code>Accuracy: 0.669259903777
+</code></pre>
+<pre><code class="python"># create a confusion matrix
+prediction = clf.predict(X_test)
+print(prediction)
+</code></pre>
+
+<pre><code>['Male' 'Male' 'Male' ..., 'Female' 'Female' 'Male']
+</code></pre>
+<pre><code class="python"># test
+cm = confusion_matrix(prediction, Y_test)
+print(cm)
+</code></pre>
+
+<pre><code>[[ 459  419]
+ [2812 6079]]
+</code></pre>
+<h4 id="naive-bayes_1">Naïve Bayes<a class="headerlink" href="#naive-bayes_1" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race   sex  capital_gain  \
+0       Never-married           1  Not-in-family     4  Male          2174   
+1  Married-civ-spouse           4        Husband     4  Male             0   
+2            Divorced           6  Not-in-family     4  Male             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['race', 'hours_per_week', 'occupation']]
+
+# make sure to provide the corresponding truth value
+Y = data['sex'].values.tolist()
+</code></pre>
+
+<pre><code class="python"># split the data into a test (30%) and train set (70%)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+# set the training parameters, instantiate the classifier
+clf = GaussianNB()
+
+# train on the train set
+clf = clf.fit(X_train, Y_train)
+</code></pre>
+
+<pre><code class="python"># validate the classifier
+accuracy = clf.score(X_test, Y_test)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code>Accuracy: 0.6612754632
+</code></pre>
+<pre><code class="python"># create a confusion matrix
+prediction = clf.predict(X_test)
+print(prediction)
+</code></pre>
+
+<pre><code>['Male' 'Male' 'Male' ..., 'Male' 'Male' 'Female']
+</code></pre>
+<pre><code class="python"># test
+cm = confusion_matrix(prediction, Y_test)
+print(cm)
+</code></pre>
+
+<pre><code>[[ 674  721]
+ [2588 5786]]
+</code></pre>
+<h3 id="intermediate-level-additional">Intermediate level (Additional)<a class="headerlink" href="#intermediate-level-additional" title="Permanent link">&para;</a></h3>
+<h4 id="principal-component-analysis">Principal Component Analysis<a class="headerlink" href="#principal-component-analysis" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import LabelEncoder
+
+# import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation', 'sex']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race  sex  capital_gain  \
+0       Never-married           1  Not-in-family     4    1          2174   
+1  Married-civ-spouse           4        Husband     4    1             0   
+2            Divorced           6  Not-in-family     4    1             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python">print(data.shape)
+</code></pre>
+
+<pre><code>(32561, 15)
+</code></pre>
+<pre><code class="python"># print one variable
+print(data.sex.head(3))
+</code></pre>
+
+<pre><code>0    1
+1    1
+2    1
+Name: sex, dtype: int64
+</code></pre>
+<pre><code class="python"># % Male
+sum(data.sex)/len(data)
+</code></pre>
+
+<pre><code>0.66920549123184181
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['age', 'final_weight', 'education_num', 'occupation', 'race', 'capital_gain', 'hours_per_week']]
+</code></pre>
+
+<pre><code class="python"># create a regular PCA model 
+# tell the model to only keep two components.
+pca = PCA(n_components=2)
+
+# Fit and transform the data to the model
+reduced_data_pca = pca.fit_transform(X)
+
+# Inspect the shape
+print(reduced_data_pca.shape)
+</code></pre>
+
+<pre><code>(32561, 2)
+</code></pre>
+<pre><code class="python"># Print out the data (array)
+print(reduced_data_pca[0:3])
+</code></pre>
+
+<pre><code>[[-112262.33316766   -1099.76011639]
+ [-106467.39923916    1074.41772634]
+ [  25867.60075685    1078.43450794]]
+</code></pre>
+<pre><code class="python">%pylab inline
+import matplotlib.pyplot as plt
+
+x = reduced_data_pca[:, 0]
+y = reduced_data_pca[:, 1]
+
+plt.scatter(x, y)
+
+plt.xlabel('First Principal Component')
+plt.ylabel('Second Principal Component')
+plt.title(&quot;PCA Scatter Plot&quot;)
+
+plt.show()
+</code></pre>
+
+<pre><code>Populating the interactive namespace from numpy and matplotlib
+</code></pre>
+<p><img alt="" src="../img/overview_of_scikit/output_78_1.png" /></p>
+<pre><code class="python">male = [data.sex == 1][0:3]
+type(male)
+</code></pre>
+
+<pre><code>list
+</code></pre>
+<pre><code class="python"># Is Male?
+male[0][0:3]
+</code></pre>
+
+<pre><code>0    True
+1    True
+2    True
+Name: sex, dtype: bool
+</code></pre>
+<pre><code class="python">female = [data.sex == 0][0:3]
+
+# Is Female?
+female[0][0:3]
+</code></pre>
+
+<pre><code>0    False
+1    False
+2    False
+Name: sex, dtype: bool
+</code></pre>
+<pre><code class="python">for i in range(len(colors)):
+    print(i)
+</code></pre>
+
+<pre><code>0
+1
+</code></pre>
+<pre><code class="python">data.sex = data.sex.astype(int)
+data.head(3)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>workclass</th>
+      <th>final_weight</th>
+      <th>education</th>
+      <th>education_num</th>
+      <th>marital_status</th>
+      <th>occupation</th>
+      <th>relationship</th>
+      <th>race</th>
+      <th>sex</th>
+      <th>capital_gain</th>
+      <th>capital_loss</th>
+      <th>hours_per_week</th>
+      <th>native_country</th>
+      <th>salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>39</td>
+      <td>State-gov</td>
+      <td>77516</td>
+      <td>Bachelors</td>
+      <td>13</td>
+      <td>Never-married</td>
+      <td>1</td>
+      <td>Not-in-family</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2174</td>
+      <td>0</td>
+      <td>40</td>
+      <td>United-States</td>
+      <td>&lt;=50K</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>50</td>
+      <td>Self-emp-not-inc</td>
+      <td>83311</td>
+      <td>Bachelors</td>
+      <td>13</td>
+      <td>Married-civ-spouse</td>
+      <td>4</td>
+      <td>Husband</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>13</td>
+      <td>United-States</td>
+      <td>&lt;=50K</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>38</td>
+      <td>Private</td>
+      <td>215646</td>
+      <td>HS-grad</td>
+      <td>9</td>
+      <td>Divorced</td>
+      <td>6</td>
+      <td>Not-in-family</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40</td>
+      <td>United-States</td>
+      <td>&lt;=50K</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">colors = ['blue', 
+          'red']
+
+# colors = ['black','blue','purple','yellow','white','red','lime','cyan','orange','gray']
+
+# 0 Female, blue
+# 1 Male, red
+for i in range(len(colors)):
+    x = reduced_data_pca[:, 0]*[data.sex == i]
+    y = reduced_data_pca[:, 1]*[data.sex == i]
+    plt.scatter(x, y, c=colors[i]) 
+
+# 0 Female, 1 Male
+plt.legend(['Female','Male'], 
+           bbox_to_anchor=(1.05, 1), 
+           loc=2, 
+           borderaxespad=0.)
+
+plt.xlabel('First Principal Component')
+plt.ylabel('Second Principal Component')
+plt.title(&quot;PCA Scatter Plot&quot;)
+
+plt.show()
+</code></pre>
+
+<p><img alt="" src="../img/overview_of_scikit/output_84_0.png" /></p>
+<h4 id="support-vector-machines">Support Vector Machines<a class="headerlink" href="#support-vector-machines" title="Permanent link">&para;</a></h4>
+<pre><code class="python">import pandas as pd
+from sklearn import svm
+from sklearn.preprocessing import LabelEncoder
+from sklearn.cross_validation import train_test_split
+from sklearn.metrics import confusion_matrix
+
+# import the adult.txt file into Python
+data = pd.read_csv('data/adults.txt', sep=',')
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status         occupation   relationship   race   sex  \
+0       Never-married       Adm-clerical  Not-in-family  White  Male   
+1  Married-civ-spouse    Exec-managerial        Husband  White  Male   
+2            Divorced  Handlers-cleaners  Not-in-family  White  Male
+
+   capital_gain  capital_loss  hours_per_week native_country salary  
+0          2174             0              40  United-States  &lt;=50K  
+1             0             0              13  United-States  &lt;=50K  
+2             0             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># convert the string labels to numeric labels
+for label in ['race', 'occupation']:
+    data[label] = LabelEncoder().fit_transform(data[label])
+print(data.head(3))
+</code></pre>
+
+<pre><code>   age         workclass  final_weight  education  education_num  \
+0   39         State-gov         77516  Bachelors             13   
+1   50  Self-emp-not-inc         83311  Bachelors             13   
+2   38           Private        215646    HS-grad              9
+
+       marital_status  occupation   relationship  race   sex  capital_gain  \
+0       Never-married           1  Not-in-family     4  Male          2174   
+1  Married-civ-spouse           4        Husband     4  Male             0   
+2            Divorced           6  Not-in-family     4  Male             0
+
+   capital_loss  hours_per_week native_country salary  
+0             0              40  United-States  &lt;=50K  
+1             0              13  United-States  &lt;=50K  
+2             0              40  United-States  &lt;=50K
+</code></pre>
+<pre><code class="python"># take the fields of interest and plug them into variable X
+X = data[['race', 'hours_per_week', 'occupation']]
+
+# make sure to provide the corresponding truth value
+Y = data['sex'].values.tolist()
+</code></pre>
+
+<pre><code class="python"># split the data into a test (30%) and train set (70%)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+# Create the SVC model
+clf = svm.SVC(gamma=0.001, C=100., kernel='linear')
+
+# Fit the data to the SVC model
+clf = clf.fit(X_train, Y_train)
+</code></pre>
+
+<pre><code class="python"># validate the classifier
+accuracy = clf.score(X_test, Y_test)
+print('Accuracy: ' + str(accuracy))
+</code></pre>
+
+<pre><code class="python"># create a confusion matrix
+prediction = clf.predict(X_test)
+print(prediction)
+</code></pre>
+
+<pre><code class="python"># test
+cm = confusion_matrix(prediction, Y_test)
+print(cm)
+</code></pre>
+
+<h3 id="a-little-application">A little application<a class="headerlink" href="#a-little-application" title="Permanent link">&para;</a></h3>
+<p><strong>Append each result in a dictionary</strong></p>
+<pre><code class="python">index = np.argmax([acc_model1, acc_model2])
+classifiers = {0: 'model1', 1: 'model2}
+print('Best classifier is {}'.format(classifiers[index]))
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" class="btn btn-neutral float-right" title="k-NN, Linear regression, Logit, Scaling, Centering, Noise">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Python+And+Excel/" class="btn btn-neutral" title="Python and Excel"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Python+And+Excel/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>

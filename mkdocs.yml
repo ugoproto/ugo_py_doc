@@ -5,7 +5,9 @@ site_description: A Python documentation website.
 site_author: Ugo Sparks
 #site_favicon: favicon.ico
 copyright: © Ugo Sparks
-google_analytics: ['UA-93008985-2', 'mkdocs.org']
+google_analytics: 
+    - 'UA-93008985-2'
+    - 'auto'
 #remote_branch: master
 #remote_name: ugo_py_doc
 
@@ -41,6 +43,11 @@ pages:
         - Exploratory Data Analysis: 'Exploratory Data Analysis.md'
         - Intro to data.world in Python: 'Intro to data.world in Python.md'
         - Python and Excel: 'Python+And+Excel.md'
+        - Overview of scikit-learn: 'Overview_of_scikit-learn.md'
+        - k-NN, Linear regression, Logit, Scaling, Centering, Noise: 'k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md'
+        - Time Series Analysis: 'Time_Series_Analysis.md'
+        - Sentiment Analysis with Twitter: 'Sentiment_Analysis_with_Twitter.md'
+        - EDA, Machine Learning, Feature Engineering, and Kaggle: 'EDA_Machine_Learning_Feature_Engineering_and_Kaggle.md'
     - Courses:
         - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
         - Codecademy Python: 'Codecademy Python.md'

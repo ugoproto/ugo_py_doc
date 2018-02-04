@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ugo Sparks">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Time Series Analysis - ugo_py_doc</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Time Series Analysis";
+    var mkdocs_page_input_path = "Time_Series_Analysis.md";
+    var mkdocs_page_url = "/Time_Series_Analysis/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93008985-2', 'auto');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ugo_py_doc</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Basics & More</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Decorators/">Decorators</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Databases/">Databases</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Datetime/">Datetime</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Execute_Highlighted_Python_Code_in_gedit/">Execute Highlighted Python Code in gedit</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">SciPy Stack</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Data Science/">Python for Data Science</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Lists/">Lists</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python+And+Excel/">Python and Excel</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Overview_of_scikit-learn/">Overview of scikit-learn</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/">k-NN, Linear regression, Logit, Scaling, Centering, Noise</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Time Series Analysis</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#wrangle-the-data">Wrangle the Data</a></li>
+    
+
+    <li class="toctree-l3"><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#trends-and-seasonality-in-time-series">Trends and Seasonality in Time Series</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#identifying-trends-in-time-series">Identifying Trends in Time Series</a></li>
+        
+            <li><a class="toctree-l4" href="#seasonal-patterns-in-time-series">Seasonal Patterns in Time Series</a></li>
+        
+            <li><a class="toctree-l4" href="#periodicity-and-autocorrelation">Periodicity and Autocorrelation</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#forecasts-arima">Forecasts, ARIMA...</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Sentiment_Analysis_with_Twitter/">Sentiment Analysis with Twitter</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/">EDA, Machine Learning, Feature Engineering, and Kaggle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Courses</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Codecademy Python/">Codecademy Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Introduction to Python/">Introduction to Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Manuals</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Real_Python/">Real Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Python for Education/">Python for Education</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ugo_py_doc</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SciPy Stack &raquo;</li>
+        
+      
+    
+    <li>Time Series Analysis</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <div class="toc"><span class="toctitle">CONTENT</span><ul>
+<li><a href="#importing-packages-and-the-data">Importing Packages and the Data</a></li>
+<li><a href="#wrangle-the-data">Wrangle the Data</a></li>
+<li><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+<li><a href="#trends-and-seasonality-in-time-series">Trends and Seasonality in Time Series</a><ul>
+<li><a href="#identifying-trends-in-time-series">Identifying Trends in Time Series</a></li>
+<li><a href="#seasonal-patterns-in-time-series">Seasonal Patterns in Time Series</a><ul>
+<li><a href="#first-order-differencing">First-order differencing</a></li>
+</ul>
+</li>
+<li><a href="#periodicity-and-autocorrelation">Periodicity and Autocorrelation</a><ul>
+<li><a href="#a-word-about-correlation">A Word about Correlation</a></li>
+<li><a href="#periodicity-and-autocorrelation-continued">Periodicity and Autocorrelation (continued)</a></li>
+<li><a href="#autocorrelation">Autocorrelation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#forecasts-arima">Forecasts, ARIMA&hellip;</a></li>
+</ul>
+</div>
+<hr />
+<p><strong>Foreword</strong></p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<hr />
+<p>Get Google Trends data of keywords such as &lsquo;diet&rsquo; and &lsquo;gym&rsquo; and see how they vary over time while learning about trends and seasonality in time series data.</p>
+<ul>
+<li>Source the data</li>
+<li>Wrangle the data</li>
+<li>Exploratory Data Analysis</li>
+<li>Trends and seasonality in time series data<ul>
+<li>Identifying Trends</li>
+<li>Seasonal patterns<ul>
+<li>First Order Differencing</li>
+<li>Periodicity and Autocorrelation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="importing-packages-and-the-data">Importing Packages and the Data<a class="headerlink" href="#importing-packages-and-the-data" title="Permanent link">&para;</a></h3>
+<p>The data are from <a href="https://trends.google.com/trends/explore?date=all&amp;q=diet,gym,finance">Google Trends</a>.</p>
+<pre><code class="python"># Import the packages
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+# Switch to the Seaborn defaults
+sns.set()
+</code></pre>
+
+<pre><code class="python"># Import the data
+# Check out the first rows
+df = pd.read_csv('multiTimeline.csv', skiprows=1)
+df.head(3)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Month</th>
+      <th>diet: (Worldwide)</th>
+      <th>gym: (Worldwide)</th>
+      <th>finance: (Worldwide)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2004-01</td>
+      <td>100</td>
+      <td>31</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2004-02</td>
+      <td>75</td>
+      <td>26</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2004-03</td>
+      <td>67</td>
+      <td>24</td>
+      <td>47</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python"># Check out the data types, number of rows and more
+df.info()
+</code></pre>
+
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 168 entries, 0 to 167
+Data columns (total 4 columns):
+Month                   168 non-null object
+diet: (Worldwide)       168 non-null int64
+gym: (Worldwide)        168 non-null int64
+finance: (Worldwide)    168 non-null int64
+dtypes: int64(3), object(1)
+memory usage: 5.3+ KB
+</code></pre>
+<h3 id="wrangle-the-data">Wrangle the Data<a class="headerlink" href="#wrangle-the-data" title="Permanent link">&para;</a></h3>
+<p>Rename the columns of the DataFrame <code>df</code> so that they have no whitespaces in them.</p>
+<pre><code class="python">df.columns = ['month', 'diet', 'gym', 'finance']
+df.head()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>month</th>
+      <th>diet</th>
+      <th>gym</th>
+      <th>finance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2004-01</td>
+      <td>100</td>
+      <td>31</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2004-02</td>
+      <td>75</td>
+      <td>26</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2004-03</td>
+      <td>67</td>
+      <td>24</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2004-04</td>
+      <td>70</td>
+      <td>22</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2004-05</td>
+      <td>72</td>
+      <td>22</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Turn the <code>month</code> column into a <code>DateTime</code> data type (vs. <code>object</code>).</p>
+<pre><code class="python">df.month = pd.to_datetime(df.month)
+</code></pre>
+
+<p>Make it the index of the DataFrame. Include the <code>inplace</code> argument when setting the index of the DataFrame <code>df</code> so that we alter the original index and set it to the <code>month</code> column.</p>
+<pre><code class="python">df.set_index('month', inplace=True)
+df.head()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>diet</th>
+      <th>gym</th>
+      <th>finance</th>
+    </tr>
+    <tr>
+      <th>month</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2004-01-01</th>
+      <td>100</td>
+      <td>31</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>2004-02-01</th>
+      <td>75</td>
+      <td>26</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>2004-03-01</th>
+      <td>67</td>
+      <td>24</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>2004-04-01</th>
+      <td>70</td>
+      <td>22</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>2004-05-01</th>
+      <td>72</td>
+      <td>22</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)<a class="headerlink" href="#exploratory-data-analysis-eda" title="Permanent link">&para;</a></h3>
+<p>Use a built-in <code>pandas</code> visualization method <code>.plot()</code> to plot the data. Specify the label on the x-axis.</p>
+<pre><code class="python">df.plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20);
+</code></pre>
+
+<p><img alt="" src="../img/time_series_analysis/output_12_0.png" /></p>
+<p>A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. Likewise a score of 0 means the term was less than 1% as popular as the peak.</p>
+<p>Plot one column.</p>
+<pre><code class="python">df[['diet']].plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20);
+</code></pre>
+
+<p><img alt="" src="../img/time_series_analysis/output_14_0.png" /></p>
+<h3 id="trends-and-seasonality-in-time-series">Trends and Seasonality in Time Series<a class="headerlink" href="#trends-and-seasonality-in-time-series" title="Permanent link">&para;</a></h3>
+<h4 id="identifying-trends-in-time-series">Identifying Trends in Time Series<a class="headerlink" href="#identifying-trends-in-time-series" title="Permanent link">&para;</a></h4>
+<p>Take a rolling average to remove the seasonality and see the trend. 12 months for example (before and after each point).</p>
+<pre><code class="python"># Extract one column, 
+# but do not create a Series with df['diet']
+diet = df[['diet']]
+
+# Chain: rolling, avg, plot
+diet.rolling(12).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+
+# Plot
+plt.xlabel('Year', fontsize=20)
+</code></pre>
+
+<pre><code>&lt;matplotlib.text.Text at 0x7f3c0630c240&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_16_1.png" /></p>
+<pre><code class="python"># Another column
+gym = df[['gym']]
+
+# Chain
+gym.rolling(12).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+
+# Plot
+plt.xlabel('Year', fontsize=20)
+</code></pre>
+
+<pre><code>&lt;matplotlib.text.Text at 0x7f3c0da837f0&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_17_1.png" /></p>
+<pre><code class="python"># Create a new df with both
+df_rm = pd.concat([diet.rolling(12).mean(), gym.rolling(12).mean()], axis=1)
+
+# Chain
+df_rm.plot(figsize=(20,10), linewidth=5, fontsize=20)
+
+# Plot
+plt.xlabel('Year', fontsize=20)
+</code></pre>
+
+<pre><code>&lt;matplotlib.text.Text at 0x7f3c0621c7f0&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_18_1.png" /></p>
+<h4 id="seasonal-patterns-in-time-series">Seasonal Patterns in Time Series<a class="headerlink" href="#seasonal-patterns-in-time-series" title="Permanent link">&para;</a></h4>
+<p>We can remove the trend from the time series by subtracting the rolling mean from the original signal, leaving the seasonality only and turning the data into a stationary time series (such as mean and variance don&rsquo;t change over time). Many time series forecasting methods are based on the assumption that the time series is approximately stationary.</p>
+<p>Another way to remove the trend is called &ldquo;differencing&rdquo;.</p>
+<h5 id="first-order-differencing">First-order differencing<a class="headerlink" href="#first-order-differencing" title="Permanent link">&para;</a></h5>
+<p>Difference between one data point and the one before it.</p>
+<p><strong>Second-order differencing</strong> means that we would be looking at the difference between one data point and the two that precede it.</p>
+<p><a href="https://www.otexts.org/fpp/8/1">More on differencing</a>.</p>
+<pre><code class="python"># Differencing
+diet.diff().plot(figsize=(20,10), linewidth=5, fontsize=20)
+
+# Plot
+plt.xlabel('Year', fontsize=20);
+</code></pre>
+
+<p><img alt="" src="../img/time_series_analysis/output_20_0.png" /></p>
+<h4 id="periodicity-and-autocorrelation">Periodicity and Autocorrelation<a class="headerlink" href="#periodicity-and-autocorrelation" title="Permanent link">&para;</a></h4>
+<p>A time series is periodic if it repeats itself at equally spaced intervals, say, every 12 months.</p>
+<p>Yet another way of thinking about this is that the time series is correlated with itself shifted by 12 months. That means that, if we took the time series and moved it 12 months backwards or forwards, it would map onto itself in some way: autocorrelation.</p>
+<h5 id="a-word-about-correlation">A Word about Correlation<a class="headerlink" href="#a-word-about-correlation" title="Permanent link">&para;</a></h5>
+<pre><code class="python">from sklearn import datasets
+
+iris = datasets.load_iris()
+
+df_iris = pd.DataFrame(data = np.c_[iris['data'], iris['target']],
+                       columns = iris['feature_names'] + ['target'])
+df_iris.head(3)
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal length (cm)</th>
+      <th>sepal width (cm)</th>
+      <th>petal length (cm)</th>
+      <th>petal width (cm)</th>
+      <th>target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5.1</td>
+      <td>3.5</td>
+      <td>1.4</td>
+      <td>0.2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.9</td>
+      <td>3.0</td>
+      <td>1.4</td>
+      <td>0.2</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4.7</td>
+      <td>3.2</td>
+      <td>1.3</td>
+      <td>0.2</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">sns.lmplot(x='sepal length (cm)', y='sepal width (cm)',
+           fit_reg=False, data=df_iris)
+</code></pre>
+
+<pre><code>&lt;seaborn.axisgrid.FacetGrid at 0x7f3c060fb5f8&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_23_1.png" /></p>
+<pre><code class="python">sns.lmplot(x='sepal length (cm)', y='sepal width (cm)',
+           fit_reg=True, data=df_iris);
+</code></pre>
+
+<p><img alt="" src="../img/time_series_analysis/output_24_0.png" /></p>
+<pre><code class="python">sns.lmplot(x='sepal length (cm)', y='sepal width (cm)',
+           fit_reg=False, data=df_iris, hue='target')
+</code></pre>
+
+<pre><code>&lt;seaborn.axisgrid.FacetGrid at 0x7f3c060b7438&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_25_1.png" /></p>
+<pre><code class="python">df_iris.corr()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sepal length (cm)</th>
+      <th>sepal width (cm)</th>
+      <th>petal length (cm)</th>
+      <th>petal width (cm)</th>
+      <th>target</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>sepal length (cm)</th>
+      <td>1.000000</td>
+      <td>-0.109369</td>
+      <td>0.871754</td>
+      <td>0.817954</td>
+      <td>0.782561</td>
+    </tr>
+    <tr>
+      <th>sepal width (cm)</th>
+      <td>-0.109369</td>
+      <td>1.000000</td>
+      <td>-0.420516</td>
+      <td>-0.356544</td>
+      <td>-0.419446</td>
+    </tr>
+    <tr>
+      <th>petal length (cm)</th>
+      <td>0.871754</td>
+      <td>-0.420516</td>
+      <td>1.000000</td>
+      <td>0.962757</td>
+      <td>0.949043</td>
+    </tr>
+    <tr>
+      <th>petal width (cm)</th>
+      <td>0.817954</td>
+      <td>-0.356544</td>
+      <td>0.962757</td>
+      <td>1.000000</td>
+      <td>0.956464</td>
+    </tr>
+    <tr>
+      <th>target</th>
+      <td>0.782561</td>
+      <td>-0.419446</td>
+      <td>0.949043</td>
+      <td>0.956464</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<pre><code class="python">df_iris.groupby(['target']).corr()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>petal length (cm)</th>
+      <th>petal width (cm)</th>
+      <th>sepal length (cm)</th>
+      <th>sepal width (cm)</th>
+    </tr>
+    <tr>
+      <th>target</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="4" valign="top">0.0</th>
+      <th>petal length (cm)</th>
+      <td>1.000000</td>
+      <td>0.306308</td>
+      <td>0.263874</td>
+      <td>0.176695</td>
+    </tr>
+    <tr>
+      <th>petal width (cm)</th>
+      <td>0.306308</td>
+      <td>1.000000</td>
+      <td>0.279092</td>
+      <td>0.279973</td>
+    </tr>
+    <tr>
+      <th>sepal length (cm)</th>
+      <td>0.263874</td>
+      <td>0.279092</td>
+      <td>1.000000</td>
+      <td>0.746780</td>
+    </tr>
+    <tr>
+      <th>sepal width (cm)</th>
+      <td>0.176695</td>
+      <td>0.279973</td>
+      <td>0.746780</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">1.0</th>
+      <th>petal length (cm)</th>
+      <td>1.000000</td>
+      <td>0.786668</td>
+      <td>0.754049</td>
+      <td>0.560522</td>
+    </tr>
+    <tr>
+      <th>petal width (cm)</th>
+      <td>0.786668</td>
+      <td>1.000000</td>
+      <td>0.546461</td>
+      <td>0.663999</td>
+    </tr>
+    <tr>
+      <th>sepal length (cm)</th>
+      <td>0.754049</td>
+      <td>0.546461</td>
+      <td>1.000000</td>
+      <td>0.525911</td>
+    </tr>
+    <tr>
+      <th>sepal width (cm)</th>
+      <td>0.560522</td>
+      <td>0.663999</td>
+      <td>0.525911</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="top">2.0</th>
+      <th>petal length (cm)</th>
+      <td>1.000000</td>
+      <td>0.322108</td>
+      <td>0.864225</td>
+      <td>0.401045</td>
+    </tr>
+    <tr>
+      <th>petal width (cm)</th>
+      <td>0.322108</td>
+      <td>1.000000</td>
+      <td>0.281108</td>
+      <td>0.537728</td>
+    </tr>
+    <tr>
+      <th>sepal length (cm)</th>
+      <td>0.864225</td>
+      <td>0.281108</td>
+      <td>1.000000</td>
+      <td>0.457228</td>
+    </tr>
+    <tr>
+      <th>sepal width (cm)</th>
+      <td>0.401045</td>
+      <td>0.537728</td>
+      <td>0.457228</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h5 id="periodicity-and-autocorrelation-continued">Periodicity and Autocorrelation (continued)<a class="headerlink" href="#periodicity-and-autocorrelation-continued" title="Permanent link">&para;</a></h5>
+<p>The time series again.</p>
+<pre><code class="python">df.plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20)
+</code></pre>
+
+<pre><code>&lt;matplotlib.text.Text at 0x7f3c062fd390&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_29_1.png" /></p>
+<pre><code class="python">df.corr()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>diet</th>
+      <th>gym</th>
+      <th>finance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>diet</th>
+      <td>1.000000</td>
+      <td>-0.100764</td>
+      <td>-0.034639</td>
+    </tr>
+    <tr>
+      <th>gym</th>
+      <td>-0.100764</td>
+      <td>1.000000</td>
+      <td>-0.284279</td>
+    </tr>
+    <tr>
+      <th>finance</th>
+      <td>-0.034639</td>
+      <td>-0.284279</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><code>diet</code> and <code>gym</code> are negatively correlated. However, from looking at the times series, it looks as though their seasonal components would be positively correlated and their trends negatively correlated. The actual correlation coefficient is actually capturing both of those.</p>
+<pre><code class="python"># first-order differences
+df.diff().plot(figsize=(20,10), linewidth=5, fontsize=20)
+plt.xlabel('Year', fontsize=20)
+</code></pre>
+
+<pre><code>&lt;matplotlib.text.Text at 0x7f3c05fcfac8&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_32_1.png" /></p>
+<p><code>diet</code> and <code>gym</code> are incredibly correlated once we remove the trend.</p>
+<pre><code class="python">df.diff().corr()
+</code></pre>
+
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>diet</th>
+      <th>gym</th>
+      <th>finance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>diet</th>
+      <td>1.000000</td>
+      <td>0.758707</td>
+      <td>0.373828</td>
+    </tr>
+    <tr>
+      <th>gym</th>
+      <td>0.758707</td>
+      <td>1.000000</td>
+      <td>0.301111</td>
+    </tr>
+    <tr>
+      <th>finance</th>
+      <td>0.373828</td>
+      <td>0.301111</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h5 id="autocorrelation">Autocorrelation<a class="headerlink" href="#autocorrelation" title="Permanent link">&para;</a></h5>
+<p>Autocorrelation of the &lsquo;diet&rsquo; series: on the x-axis, we have the lag and on the y-axis, we have how correlated the time series is with itself at that lag.</p>
+<p>So, this means that if the original time series repeats itself every two days, we would expect to see a spike in the autocorrelation function at 2 days.</p>
+<pre><code class="python">pd.plotting.autocorrelation_plot(diet)
+</code></pre>
+
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3c05f587b8&gt;
+</code></pre>
+<p><img alt="" src="../img/time_series_analysis/output_36_1.png" /></p>
+<p>This is 12 months at which we have this huge peak in correlation. We have another peak at a 24 month interval, where it&rsquo;s also correlated with itself. We have another peak at 36, but as we move further away, there&rsquo;s less and less of a correlation.</p>
+<p>The dotted lines in the above plot actually tell us about the statistical significance of the correlation.</p>
+<h3 id="forecasts-arima">Forecasts, ARIMA&hellip;<a class="headerlink" href="#forecasts-arima" title="Permanent link">&para;</a></h3>
+<p>Use ARIMA modeling to make some time series forecasts as to what these search trends will look like over the coming years.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Sentiment_Analysis_with_Twitter/" class="btn btn-neutral float-right" title="Sentiment Analysis with Twitter">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" class="btn btn-neutral" title="k-NN, Linear regression, Logit, Scaling, Centering, Noise"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>© Ugo Sparks</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Sentiment_Analysis_with_Twitter/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      <script src="../mathjaxhelper.js"></script>
+
+</body>
+</html>
