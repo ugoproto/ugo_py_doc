@@ -6,7 +6,7 @@
 
 **Foreword**
 
-Notes. Python 2.7. Real Python -- An introduction to Python through pactical examples, c2.4, 2013. Creative Commons. Excerpt at [realpython.com/](https://realpython.com/).
+Notes. Python 2. Real Python -- An introduction to Python through pactical examples, c2.4, 2013. Creative Commons. Excerpt at [realpython.com/](https://realpython.com/).
 
 ---
 

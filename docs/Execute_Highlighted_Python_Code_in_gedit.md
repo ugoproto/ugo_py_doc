@@ -6,7 +6,7 @@
 
 **Foreword**
 
-Notes. Python and gedit.
+Notes. Python 3 and gedit.
 
 ---
 
