@@ -38,7 +38,6 @@ Cheat sheets.
 
 ---
 
-- [Python Numpy Array](Python+Numpy+Array.html). HTML only.
 - [Numpy](Numpy_Python_Cheat_Sheet.pdf). PDF.
 
 <center>
@@ -56,20 +55,19 @@ Cheat sheets.
 
 ---
 
+- [Pandas DataFrame Notes](Pandas-DataFrame-Notes.pdf). PDF only.
 - [Pandas](PandasPythonForDataScience.pdf). PDF.
+
+<center>
+![](img/scipy_cs/PandasPythonForDataScience.png)
+</center>
+
+- [Data Wrangling with Pandas](Pandas_Cheat_Sheet.pdf). PDF.
 
 <center>
 ![](img/scipy_cs/Pandas_Cheat_Sheeta.png)
 
 ![](img/scipy_cs/Pandas_Cheat_Sheetb.png)
-</center>
-
----
-
-- [Pandas DataFrame Notes](Pandas-DataFrame-Notes.pdf). PDF.
-
-<center>
-![](img/scipy_cs/PandasPythonForDataScience.png)
 </center>
 
 ## Machine Learning
@@ -111,9 +109,9 @@ Cheat sheets.
 </center>
 
 ## Visualization
-
-- [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
 - [Matplotlib Notes](Matplotlib-Notes.pdf). PDF only.
+- [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
+
 
 <center>
 ![](img/scipy_cs/Python_Matplotlib_Cheat_Sheet.png)
