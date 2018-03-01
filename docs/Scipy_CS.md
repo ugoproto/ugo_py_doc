@@ -55,7 +55,7 @@ Cheat sheets.
 
 ---
 
-- [Pandas DataFrame Notes](Pandas-DataFrame-Notes.pdf). PDF only.
+- [Pandas DataFrame Notes](Pandas_DataFrame_Notes.pdf). PDF only.
 - [Pandas](PandasPythonForDataScience.pdf). PDF.
 
 <center>
@@ -109,7 +109,8 @@ Cheat sheets.
 </center>
 
 ## Visualization
-- [Matplotlib Notes](Matplotlib-Notes.pdf). PDF only.
+
+- [Matplotlib Notes](Matplotlib_Notes.pdf). PDF only.
 - [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
 
 
@@ -136,3 +137,11 @@ Cheat sheets.
 ---
 
 - [plotly](plotly_python_cheat_sheet.pdf). PDF only.
+
+---
+
+- [Folium](Folium.pdf). PDF.
+
+<center>
+![](img/scipy_cs/Folium.png)
+</center>

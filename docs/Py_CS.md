@@ -81,3 +81,11 @@ Cheat sheets.
 <center>
 ![](img/py_cs/Python-Decorators.png)
 </center>
+
+---
+
+- [Pip Cheat Sheet](Pip-Cheatsheet.pdf). PDF.
+
+<center>
+![](img/py_cs/Pip-Cheatsheet.png)
+</center>

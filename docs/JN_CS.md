@@ -10,6 +10,17 @@ Cheat sheets and snippets.
 
 ---
 
+## Anaconda
+
+- [Anaconda Cheat Sheet](Anaconda_CheatSheet.pdf). PDF only.
+- [Conda Cheat Sheet](conda-cheatsheet.pdf). PDF.
+
+<center>
+![](img/scipy_cs/conda-cheatsheeta.png)
+
+![](img/scipy_cs/conda-cheatsheetb.png)
+</center>
+
 ## Jupyter Notebook commands
 
 - [Jupyter Notebook](Jupyter_Notebook_Cheat_Sheet.pdf). PDF.
