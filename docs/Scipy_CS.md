@@ -18,7 +18,7 @@ Cheat sheets.
 ![](img/scipy_cs/Importing_data.png)
 </center>
 
-## Data Mining
+## Data Mining, Wrangling (Numpy, Pandas)
 
 - [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
 
@@ -70,7 +70,7 @@ Cheat sheets.
 ![](img/scipy_cs/Pandas_Cheat_Sheetb.png)
 </center>
 
-## Machine Learning
+## Machine Learning, Spark, NN
 
 <center>
 ![](img/scipy_cs/drop_shadows_background.png).
@@ -108,7 +108,7 @@ Cheat sheets.
 ![](img/scipy_cs/Keras_Cheat_Sheet_Python.png)
 </center>
 
-## Visualization
+## Visualization (Matplotlib, Seaborn, Bokeh, Plotly, Folium)
 
 - [Matplotlib Notes](Matplotlib_Notes.pdf). PDF only.
 - [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.
@@ -136,7 +136,7 @@ Cheat sheets.
 
 ---
 
-- [plotly](plotly_python_cheat_sheet.pdf). PDF only.
+- [Plotly](plotly_python_cheat_sheet.pdf). PDF only.
 
 ---
 

@@ -21,7 +21,7 @@ Cheat sheets and snippets.
 ![](img/scipy_cs/conda-cheatsheetb.png)
 </center>
 
-## Jupyter Notebook commands
+## Jupyter Notebook
 
 - [Jupyter Notebook](Jupyter_Notebook_Cheat_Sheet.pdf). PDF.
 

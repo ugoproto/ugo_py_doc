@@ -13,7 +13,6 @@ Cheat sheets.
 ## Python 2
 
 - [Python 2](Python-Cheatsheet-1.pdf). PDF
-    - *`sys` variables & argv, `os` variables, class methods, list methods, string methods, file methods, slice, datatime methods & formatting*
 
 <center>
 ![](img/py_cs/Python-Cheatsheet-1a.png)
@@ -25,8 +24,7 @@ Cheat sheets.
 
   
 - [Python Quick Reference](Python-Quick-Reference'Sheet.pdf). PDF
-    - *help, operators, import, data types, syntax structure, built-in functions, math module functions, string methods & formatting, list methods, tuple methods, dictionary methods, file methods, ASCII.
-    
+
 <center>
 ![](img/py_cs/Python-Quick-Reference-Sheeta.png)
 ../img/
@@ -36,8 +34,7 @@ Cheat sheets.
 ---
 
 - [Python 2](Python-Cheatsheet-2.pdf). PDF
-    - *logic, strings, tuples, dictionaries, list, class & function, files*
-    
+   
 <center>
 ![](img/py_cs/Python-Cheatsheet-2a.png)
 
@@ -49,7 +46,6 @@ Cheat sheets.
 ---
 
 - [Python 2](PythonCheatsheet-3.pdf). PDF
-    - *variables, data types, functions, classes, imports, lists, comparisons, arithmetics, comments, control flow, exceptions & errors, files*
 
 <center>
 ![](img/py_cs/PythonCheatsheet-3.png)
@@ -58,7 +54,6 @@ Cheat sheets.
 ## Python 3
 
 - [Python 3](Python-3-Cheatsheet.pdf). PDF
-    - *data types, identifiers, variables, sequences, conversions, indexing, boolean, maths, imports, conditional statements, exceptions & errors, conditional loop, iterative loops, display, inputs, operations, lists, dictionaries, sets, files, integers, functions, strings, formatting*
 
 <center>
 ![](img/py_cs/Python-3-Cheatsheeta.png)
@@ -66,7 +61,7 @@ Cheat sheets.
 ![](img/py_cs/Python-3-Cheatsheetb.png)
 </center>
 
-## Libraries
+## Libraries (Debugger, Decorators, Pip)
 
 - [Python Debugger](Python-Debugger-Cheatsheet.pdf). PDF
 
