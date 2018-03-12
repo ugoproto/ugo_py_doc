@@ -1,341 +1,1101 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Ugo Sparks">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Seaborn, Python's Statistical Data Visualization Library - ugo_py_doc</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Seaborn, Python's Statistical Data Visualization Library";
-    var mkdocs_page_input_path = "Seaborn, Python Statistical Data Visualization Library.md";
-    var mkdocs_page_url = "/Seaborn, Python Statistical Data Visualization Library/";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
-  
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-93008985-2', 'auto');
-      ga('send', 'pageview');
-  </script>
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> ugo_py_doc</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Python documentation website.">
+      
+      
+        <link rel="canonical" href="https://ugoproto.github.io/ugo_py_doc/Seaborn, Python Statistical Data Visualization Library/">
+      
+      
+        <meta name="author" content="Ugo Sparks">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>Seaborn, Python's Statistical Data Visualization Library - ugo_py_doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#load-data-to-construct-seaborn-plots" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://ugoproto.github.io/ugo_py_doc/" title="ugo_py_doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">layers</i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Basics & More</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Decorators/">Decorators</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Databases/">Databases</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Datetime/">Datetime</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Execute_Highlighted_Python_Code_in_gedit/">Execute Highlighted Python Code in gedit</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">SciPy Stack</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python for Data Science/">Python for Data Science</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Lists/">Lists</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Seaborn, Python's Statistical Data Visualization Library</a>
-    <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#loading-a-built-in-seaborn-data-set">Loading a Built-in Seaborn Data Set</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#show-seaborn-plots">Show Seaborn Plots</a></li>
-    
-
-    <li class="toctree-l3"><a href="#use-seaborn-with-matplotlib-defaults">Use Seaborn with Matplotlib Defaults</a></li>
-    
-
-    <li class="toctree-l3"><a href="#use-seaborns-colors-as-a-colormap-in-matplotlib">Use Seaborn’s Colors as a colormap in Matplotlib?</a></li>
-    
-
-    <li class="toctree-l3"><a href="#scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts</a></li>
-    
-
-    <li class="toctree-l3"><a href="#temporarily-set-the-plot-style">Temporarily Set the Plot Style</a></li>
-    
-
-    <li class="toctree-l3"><a href="#set-the-figure-size-in-seaborn">Set the Figure Size in Seaborn</a></li>
-    
-
-    <li class="toctree-l3"><a href="#rotate-label-text-in-seaborn">Rotate Label Text in Seaborn</a></li>
-    
-
-    <li class="toctree-l3"><a href="#set-xlim-or-ylim-in-seaborn">Set xlim or ylim in Seaborn</a></li>
-    
-
-    <li class="toctree-l3"><a href="#set-log-scale">Set Log Scale</a></li>
-    
-
-    <li class="toctree-l3"><a href="#add-a-title">Add A Title</a></li>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python+And+Excel/">Python and Excel</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Overview_of_scikit-learn/">Overview of scikit-learn</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/">k-NN, Linear regression, Logit, Scaling, Centering, Noise</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Time_Series_Analysis/">Time Series Analysis</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Sentiment_Analysis_with_Twitter/">Sentiment Analysis with Twitter</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/">EDA, Machine Learning, Feature Engineering, and Kaggle</a>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                ugo_py_doc
+              </span>
+              <span class="md-header-nav__topic">
+                Seaborn, Python's Statistical Data Visualization Library
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Courses</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Codecademy Python/">Codecademy Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Introduction to Python/">Introduction to Python</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Manuals</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Real_Python/">Real Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python for Education/">Python for Education</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">ugo_py_doc</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
+      <div class="md-flex__cell md-flex__cell--shrink">
         
-          <li>SciPy Stack &raquo;</li>
-        
-      
-    
-    <li>Seaborn, Python's Statistical Data Visualization Library</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-          <div role="main">
-            <div class="section">
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">layers</i>
+      
+    </span>
+    ugo_py_doc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Py_CS/" title="Python Cheat Sheets" class="md-nav__link">
+      Python Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Preliminaries/" title="Python Preliminaries" class="md-nav__link">
+      Python Preliminaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Nice_to_Have/" title="Python Nice to Have" class="md-nav__link">
+      Python Nice to Have
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Freeze_the_Code/" title="Freeze the Code" class="md-nav__link">
+      Freeze the Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Write_Better_Python/" title="Write Better Python with PEP" class="md-nav__link">
+      Write Better Python with PEP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Regex/" title="Regular Expressions (regex)" class="md-nav__link">
+      Regular Expressions (regex)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Databases/" title="Databases" class="md-nav__link">
+      Databases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Datetime/" title="Datetime" class="md-nav__link">
+      Datetime
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Gedit_Execute_Highlighted_Python_Code/" title="Gedit, Execute Highlighted Python Code" class="md-nav__link">
+      Gedit, Execute Highlighted Python Code
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Scipy Stack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Scipy Stack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scipy_CS/" title="Scipy Stack Cheat Sheets" class="md-nav__link">
+      Scipy Stack Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../JN_CS/" title="Jupyter Notebook Cheat Sheets" class="md-nav__link">
+      Jupyter Notebook Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scientific Python/" title="Scientific Python" class="md-nav__link">
+      Scientific Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Importing Data into Python/" title="Importing Data into Python" class="md-nav__link">
+      Importing Data into Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python for Data Science/" title="Python for Data Science" class="md-nav__link">
+      Python for Data Science
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tidy_Data_in_Python/" title="Tidy Data in Python" class="md-nav__link">
+      Tidy Data in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../IPython Notebook/" title="IPython Notebook, Collection" class="md-nav__link">
+      IPython Notebook, Collection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python Numpy Arrays/" title="Python Numpy Arrays" class="md-nav__link">
+      Python Numpy Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Vectors and Arrays (Linear Algebra)/" title="Vectors and Arrays (Linear Algebra)" class="md-nav__link">
+      Vectors and Arrays (Linear Algebra)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Matplotlib, Python Plotting/" title="Matplotlib, Python Plotting" class="md-nav__link">
+      Matplotlib, Python Plotting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" title="Viewing 3D Volumetric Data with Matplotlib" class="md-nav__link">
+      Viewing 3D Volumetric Data with Matplotlib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Seaborn, Python's Statistical Data Visualization Library
+      </label>
+    
+    <a href="./" title="Seaborn, Python's Statistical Data Visualization Library" class="md-nav__link md-nav__link--active">
+      Seaborn, Python's Statistical Data Visualization Library
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#load-data-to-construct-seaborn-plots" title="Load Data to Construct Seaborn Plots" class="md-nav__link">
+    Load Data to Construct Seaborn Plots
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-a-built-in-seaborn-data-set" title="Loading a Built-in Seaborn Data Set" class="md-nav__link">
+    Loading a Built-in Seaborn Data Set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-seaborn-plots" title="Show Seaborn Plots" class="md-nav__link">
+    Show Seaborn Plots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-seaborn-with-matplotlib-defaults" title="Use Seaborn with Matplotlib Defaults" class="md-nav__link">
+    Use Seaborn with Matplotlib Defaults
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-seaborns-colors-as-a-colormap-in-matplotlib" title="Use Seaborn’s Colors as a colormap in Matplotlib?" class="md-nav__link">
+    Use Seaborn’s Colors as a colormap in Matplotlib?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-seaborn-plots-for-other-contexts" title="Scale Seaborn Plots for other Contexts" class="md-nav__link">
+    Scale Seaborn Plots for other Contexts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temporarily-set-the-plot-style" title="Temporarily Set the Plot Style" class="md-nav__link">
+    Temporarily Set the Plot Style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-the-figure-size-in-seaborn" title="Set the Figure Size in Seaborn" class="md-nav__link">
+    Set the Figure Size in Seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotate-label-text-in-seaborn" title="Rotate Label Text in Seaborn" class="md-nav__link">
+    Rotate Label Text in Seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-xlim-or-ylim-in-seaborn" title="Set xlim or ylim in Seaborn" class="md-nav__link">
+    Set xlim or ylim in Seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-log-scale" title="Set Log Scale" class="md-nav__link">
+    Set Log Scale
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-title" title="Add A Title" class="md-nav__link">
+    Add A Title
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Pandas+DataFrames/" title="Pandas DataFrames" class="md-nav__link">
+      Pandas DataFrames
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Write Idiomatic Pandas Code/" title="Write Idiomatic Pandas Code" class="md-nav__link">
+      Write Idiomatic Pandas Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Exploratory Data Analysis/" title="Exploratory Data Analysis (EDA)" class="md-nav__link">
+      Exploratory Data Analysis (EDA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
+      Intro to data.world in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python+And+Excel/" title="Python and Excel" class="md-nav__link">
+      Python and Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Overview_of_scikit-learn/" title="Overview of scikit-learn" class="md-nav__link">
+      Overview of scikit-learn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" title="k-NN, Linear regression, Logit, Scaling, Centering, Noise" class="md-nav__link">
+      k-NN, Linear regression, Logit, Scaling, Centering, Noise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Time_Series_Analysis/" title="Time Series Analysis" class="md-nav__link">
+      Time Series Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sentiment_Analysis_with_Twitter/" title="Sentiment Analysis with Twitter" class="md-nav__link">
+      Sentiment Analysis with Twitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/" title="EDA, Machine Learning, Feature Engineering, and Kaggle" class="md-nav__link">
+      EDA, Machine Learning, Feature Engineering, and Kaggle
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Apprenez a programmer en Python/" title="Apprenez à programmer en Python" class="md-nav__link">
+      Apprenez à programmer en Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codecademy Python/" title="Codecademy Python" class="md-nav__link">
+      Codecademy Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Learn Python the Hard Way/" title="Learn Python the Hard Way" class="md-nav__link">
+      Learn Python the Hard Way
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LPTHW, Python Code Snippets/" title="LPTHW, Python Code Snippets" class="md-nav__link">
+      LPTHW, Python Code Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction to Python/" title="Introduction to Python" class="md-nav__link">
+      Introduction to Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Manuals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Manuals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Automate the Boring Stuff with Python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
+      Automate the Boring Stuff with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
+      Real Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
+      Managing Your Biological Data with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python for Education/" title="Python for Education" class="md-nav__link">
+      Python for Education
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#load-data-to-construct-seaborn-plots" title="Load Data to Construct Seaborn Plots" class="md-nav__link">
+    Load Data to Construct Seaborn Plots
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-a-built-in-seaborn-data-set" title="Loading a Built-in Seaborn Data Set" class="md-nav__link">
+    Loading a Built-in Seaborn Data Set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-seaborn-plots" title="Show Seaborn Plots" class="md-nav__link">
+    Show Seaborn Plots
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-seaborn-with-matplotlib-defaults" title="Use Seaborn with Matplotlib Defaults" class="md-nav__link">
+    Use Seaborn with Matplotlib Defaults
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-seaborns-colors-as-a-colormap-in-matplotlib" title="Use Seaborn’s Colors as a colormap in Matplotlib?" class="md-nav__link">
+    Use Seaborn’s Colors as a colormap in Matplotlib?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scale-seaborn-plots-for-other-contexts" title="Scale Seaborn Plots for other Contexts" class="md-nav__link">
+    Scale Seaborn Plots for other Contexts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temporarily-set-the-plot-style" title="Temporarily Set the Plot Style" class="md-nav__link">
+    Temporarily Set the Plot Style
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-the-figure-size-in-seaborn" title="Set the Figure Size in Seaborn" class="md-nav__link">
+    Set the Figure Size in Seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rotate-label-text-in-seaborn" title="Rotate Label Text in Seaborn" class="md-nav__link">
+    Rotate Label Text in Seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-xlim-or-ylim-in-seaborn" title="Set xlim or ylim in Seaborn" class="md-nav__link">
+    Set xlim or ylim in Seaborn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-log-scale" title="Set Log Scale" class="md-nav__link">
+    Set Log Scale
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-title" title="Add A Title" class="md-nav__link">
+    Add A Title
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
+                
+                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Seaborn, Python Statistical Data Visualization Library.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Seaborn, Python's Statistical Data Visualization Library</h1>
+                
                 <div class="toc"><span class="toctitle">CONTENT</span><ul>
 <li><a href="#seaborn-vs-matplotlib">Seaborn vs Matplotlib</a></li>
 <li><a href="#load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots</a><ul>
@@ -361,175 +1121,313 @@
 <h3 id="seaborn-vs-matplotlib">Seaborn vs Matplotlib<a class="headerlink" href="#seaborn-vs-matplotlib" title="Permanent link">&para;</a></h3>
 <p>Seaborn a complement to Matplotlib and it specifically targets statistical data visualization.</p>
 <p>With Seaborn, the plotting functions operate on DataFrames and arrays that contain a whole dataset: colors, the tick marks on the upper and right axes, the style, etc.</p>
-<pre><code class="python">%pylab inline
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>Populating the interactive namespace from numpy and matplotlib
-</code></pre>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import pandas as pd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+</pre></div>
+</td></tr></table>
 
-# Initialize Figure and Axes object
-fig, ax = plt.subplots()
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-# Load in data
-tips = pd.read_csv(&quot;https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv&quot;)
+<span class="c1"># Initialize Figure and Axes object</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
-# Create violinplot
-ax.violinplot(tips[&quot;total_bill&quot;], vert=False)
+<span class="c1"># Load in data</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv&quot;</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Create violinplot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">tips</span><span class="p">[</span><span class="s2">&quot;total_bill&quot;</span><span class="p">],</span> <span class="n">vert</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_3_0.png" /></p>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-# Load the data
-tips = sns.load_dataset(&quot;tips&quot;)
+<span class="c1"># Load the data</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 
-# Create violinplot
-sns.violinplot(x = &quot;total_bill&quot;, data=tips)
+<span class="c1"># Create violinplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_4_0.png" /></p>
 <h3 id="load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots<a class="headerlink" href="#load-data-to-construct-seaborn-plots" title="Permanent link">&para;</a></h3>
 <h4 id="loading-a-built-in-seaborn-data-set">Loading a Built-in Seaborn Data Set<a class="headerlink" href="#loading-a-built-in-seaborn-data-set" title="Permanent link">&para;</a></h4>
 <p>The Seaborn data are a GitHun <a href="https://github.com/mwaskom/seaborn-data">repo</a>.</p>
-<pre><code class="python"># Import necessary libraries
-import seaborn as sns
-import matplotlib.pyplot as plt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-# Load iris data
-iris = sns.load_dataset(&quot;iris&quot;)
+<span class="c1"># Load iris data</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
 
-# Construct iris plot
-sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+<span class="c1"># Construct iris plot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_6_0.png" /></p>
 <p>Seaborn works best with Pandas DataFrames and arrays that contain a whole data set.</p>
 <h3 id="show-seaborn-plots">Show Seaborn Plots<a class="headerlink" href="#show-seaborn-plots" title="Permanent link">&para;</a></h3>
-<p><code>plt.show()</code></p>
-<pre><code class="python"># Import necessarily libraries
-import matplotlib.pyplot as plt
-import seaborn as sns
+<p><code class="codehilite">plt.show()</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessarily libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-# Load data
-# built-in Seaborn dataset
-titanic = sns.load_dataset(&quot;titanic&quot;)
+<span class="c1"># Load data</span>
+<span class="c1"># built-in Seaborn dataset</span>
+<span class="n">titanic</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;titanic&quot;</span><span class="p">)</span>
 
-# Set up a factorplot
-g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
-                   data=titanic,
-                   kind=&quot;bar&quot;,
-                   palette=&quot;muted&quot;,
-                   legend=False)
+<span class="c1"># Set up a factorplot</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">factorplot</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span><span class="p">,</span>
+                   <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">,</span>
+                   <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+                   <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;muted&quot;</span><span class="p">,</span>
+                   <span class="n">legend</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_8_0.png" /></p>
 <h3 id="use-seaborn-with-matplotlib-defaults">Use Seaborn with Matplotlib Defaults<a class="headerlink" href="#use-seaborn-with-matplotlib-defaults" title="Permanent link">&para;</a></h3>
-<pre><code class="python"># Import Matplotlib
-import matplotlib.pyplot as plt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import Matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-# Check the available styles
-plt.style.available
-</code></pre>
+<span class="c1"># Check the available styles</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">available</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>['seaborn-dark-palette',
- 'seaborn-ticks',
- 'seaborn-darkgrid',
- 'seaborn-muted',
- 'seaborn-white',
- 'seaborn-pastel',
- 'grayscale',
- 'seaborn-bright',
- '_classic_test',
- 'seaborn-poster',
- 'seaborn-whitegrid',
- 'classic',
- 'seaborn-dark',
- 'seaborn-talk',
- 'bmh',
- 'seaborn-notebook',
- 'ggplot',
- 'seaborn-colorblind',
- 'seaborn-deep',
- 'seaborn',
- 'fivethirtyeight',
- 'dark_background',
- 'seaborn-paper']
-</code></pre>
-<pre><code class="python"># Use Matplotlib defaults
-plt.style.use(&quot;classic&quot;)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[&#39;seaborn-dark-palette&#39;,
+ &#39;seaborn-ticks&#39;,
+ &#39;seaborn-darkgrid&#39;,
+ &#39;seaborn-muted&#39;,
+ &#39;seaborn-white&#39;,
+ &#39;seaborn-pastel&#39;,
+ &#39;grayscale&#39;,
+ &#39;seaborn-bright&#39;,
+ &#39;_classic_test&#39;,
+ &#39;seaborn-poster&#39;,
+ &#39;seaborn-whitegrid&#39;,
+ &#39;classic&#39;,
+ &#39;seaborn-dark&#39;,
+ &#39;seaborn-talk&#39;,
+ &#39;bmh&#39;,
+ &#39;seaborn-notebook&#39;,
+ &#39;ggplot&#39;,
+ &#39;seaborn-colorblind&#39;,
+ &#39;seaborn-deep&#39;,
+ &#39;seaborn&#39;,
+ &#39;fivethirtyeight&#39;,
+ &#39;dark_background&#39;,
+ &#39;seaborn-paper&#39;]
+</pre></div>
+</td></tr></table>
 
-# Set up a factorplot
-g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
-                   data=titanic,
-                   kind=&quot;bar&quot;,
-                   legend=False)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Use Matplotlib defaults</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;classic&quot;</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Set up a factorplot</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">factorplot</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span><span class="p">,</span>
+                   <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">,</span>
+                   <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+                   <span class="n">legend</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_11_0.png" /></p>
-<pre><code class="python">plt.style.use(&quot;ggplot&quot;)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s2">&quot;ggplot&quot;</span><span class="p">)</span>
 
-# Set up a factorplot
-g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
-                   data=titanic,
-                   kind=&quot;bar&quot;,
-                   legend=False)
+<span class="c1"># Set up a factorplot</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">factorplot</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span><span class="p">,</span>
+                   <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">,</span>
+                   <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+                   <span class="n">legend</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_12_0.png" /></p>
 <h3 id="use-seaborns-colors-as-a-colormap-in-matplotlib">Use Seaborn’s Colors as a colormap in Matplotlib?<a class="headerlink" href="#use-seaborns-colors-as-a-colormap-in-matplotlib" title="Permanent link">&para;</a></h3>
-<pre><code class="python"># Import the necessary libraries
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.colors import ListedColormap
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="kn">import</span> <span class="n">ListedColormap</span>
 
-# Define a variable N
-N = 500
+<span class="c1"># Define a variable N</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">500</span>
 
-# Construct the colormap
-current_palette = sns.color_palette(&quot;muted&quot;, n_colors=5)
-cmap = ListedColormap(sns.color_palette(current_palette).as_hex())
-
-
-# Initialize the data
-data1 = np.random.randn(N)
-data2 = np.random.randn(N)
-# Assume that there are 5 possible labels
-colors = np.random.randint(0,5,N)
+<span class="c1"># Construct the colormap</span>
+<span class="n">current_palette</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;muted&quot;</span><span class="p">,</span> <span class="n">n_colors</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">ListedColormap</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="n">current_palette</span><span class="p">)</span><span class="o">.</span><span class="n">as_hex</span><span class="p">())</span>
 
 
-# Create a scatter plot
-plt.scatter(data1, data2, c=colors, cmap=cmap)
+<span class="c1"># Initialize the data</span>
+<span class="n">data1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">data2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="c1"># Assume that there are 5 possible labels</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">N</span><span class="p">)</span>
 
-# Add a color bar
-plt.colorbar()
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Create a scatter plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+
+<span class="c1"># Add a color bar</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_14_0.png" /></p>
 <h3 id="scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts<a class="headerlink" href="#scale-seaborn-plots-for-other-contexts" title="Permanent link">&para;</a></h3>
@@ -540,77 +1438,130 @@ plt.show()
 <li>&ldquo;talk&rdquo; and</li>
 <li>&ldquo;poster&rdquo;</li>
 </ul>
-<pre><code class="python"># Import necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-# Reset default params
-sns.set()
+<span class="c1"># Reset default params</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
 
-# Set context to `&quot;paper&quot;`
-sns.set_context(&quot;paper&quot;)
+<span class="c1"># Set context to `&quot;paper&quot;`</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;paper&quot;</span><span class="p">)</span>
 
-# Load iris data
-iris = sns.load_dataset(&quot;iris&quot;)
+<span class="c1"># Load iris data</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
 
-# Construct iris plot
-sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+<span class="c1"># Construct iris plot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_16_0.png" /></p>
 <p>More parameters.</p>
-<p>Use the higher-level <code>set()</code> function instead of <code>set_context()</code> to adjust other plot elements.</p>
-<pre><code class="python"># Import necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns
+<p>Use the higher-level <code class="codehilite">set()</code> function instead of <code class="codehilite">set_context()</code> to adjust other plot elements.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-# Set context to `&quot;paper&quot;`
-sns.set_context(&quot;paper&quot;, 
-                font_scale=3, 
-                rc={&quot;font.size&quot;:8,
-                    &quot;axes.labelsize&quot;:5})
+<span class="c1"># Set context to `&quot;paper&quot;`</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;paper&quot;</span><span class="p">,</span> 
+                <span class="n">font_scale</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> 
+                <span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;font.size&quot;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
+                    <span class="s2">&quot;axes.labelsize&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">})</span>
 
-# Load iris data
-iris = sns.load_dataset(&quot;iris&quot;)
+<span class="c1"># Load iris data</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
 
-# Construct iris plot
-sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+<span class="c1"># Construct iris plot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_18_0.png" /></p>
-<pre><code class="python"># Import necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-# Reset default params
-sns.set(rc={&quot;font.size&quot;:8,
-            &quot;axes.labelsize&quot;:5})
+<span class="c1"># Reset default params</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;font.size&quot;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
+            <span class="s2">&quot;axes.labelsize&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">})</span>
 
-# Load iris data
-iris = sns.load_dataset(&quot;iris&quot;)
+<span class="c1"># Load iris data</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
 
-# Construct iris plot
-sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+<span class="c1"># Construct iris plot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_19_0.png" /></p>
 <p>Axes-level functions and figure-level functions. </p>
 <ul>
-<li>The ones that operate on the Axes level are, for example, <code>regplot()</code>, <code>boxplot()</code>, <code>kdeplot()</code>, …, </li>
-<li>while the functions that operate on the Figure level are <code>lmplot()</code>, <code>factorplot()</code>, <code>jointplot()</code>, &hellip;</li>
+<li>The ones that operate on the Axes level are, for example, <code class="codehilite">regplot()</code>, <code class="codehilite">boxplot()</code>, <code class="codehilite">kdeplot()</code>, …, </li>
+<li>while the functions that operate on the Figure level are <code class="codehilite">lmplot()</code>, <code class="codehilite">factorplot()</code>, <code class="codehilite">jointplot()</code>, &hellip;</li>
 </ul>
-<p>The first group is identified by taking an explicit <code>ax</code> argument and returning an Axes object, while the second group of functions creates plots that potentially include Axes. </p>
-<pre><code class="python">tips.head()
-</code></pre>
+<p>The first group is identified by taking an explicit <code class="codehilite">ax</code> argument and returning an Axes object, while the second group of functions creates plots that potentially include Axes. </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">tips</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -694,366 +1645,653 @@ plt.show()
 </table>
 </div>
 
-<pre><code class="python"># Set context to `&quot;paper&quot;`
-sns.set_context(&quot;notebook&quot;, 
-                font_scale=1,
-                rc={&quot;font.size&quot;:16,
-                    &quot;axes.labelsize&quot;:16})
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Set context to `&quot;paper&quot;`</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;notebook&quot;</span><span class="p">,</span> 
+                <span class="n">font_scale</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">rc</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;font.size&quot;</span><span class="p">:</span><span class="mi">16</span><span class="p">,</span>
+                    <span class="s2">&quot;axes.labelsize&quot;</span><span class="p">:</span><span class="mi">16</span><span class="p">})</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="python">sns.boxplot(x=&quot;total_bill&quot;, data=tips)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f6dc1c721d0&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f6dc1c721d0&gt;
+</pre></div>
+</td></tr></table>
+
 <p><img alt="" src="../img/seaborn_python/output_23_1.png" /></p>
-<pre><code class="python">sns.lmplot(x=&quot;size&quot;, y=&quot;total_bill&quot;,
-           data=tips,
-           size=7,
-           truncate=True,
-           scatter_kws={&quot;s&quot;: 100})
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;size&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span>
+           <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">,</span>
+           <span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+           <span class="n">truncate</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+           <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>&lt;seaborn.axisgrid.FacetGrid at 0x7f6dc1b9a9b0&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f6dc1b9a9b0&gt;
+</pre></div>
+</td></tr></table>
+
 <p><img alt="" src="../img/seaborn_python/output_24_1.png" /></p>
-<p><code>lmplot()</code> returns an object of the type <code>FacetGrid</code> with underlying figure and array of axes at the <code>FacetGrid.fig</code> and <code>FacetGrid.axes</code> arguments.</p>
-<p>Make customizations to a regression plot constructed with <code>regplot()</code> on the <code>Axes</code> level (see below) and make customizations with <code>lmplot()</code> at the Figure level (see further down).</p>
+<p><code class="codehilite">lmplot()</code> returns an object of the type <code class="codehilite">FacetGrid</code> with underlying figure and array of axes at the <code class="codehilite">FacetGrid.fig</code> and <code class="codehilite">FacetGrid.axes</code> arguments.</p>
+<p>Make customizations to a regression plot constructed with <code class="codehilite">regplot()</code> on the <code class="codehilite">Axes</code> level (see below) and make customizations with <code class="codehilite">lmplot()</code> at the Figure level (see further down).</p>
 <h3 id="temporarily-set-the-plot-style">Temporarily Set the Plot Style<a class="headerlink" href="#temporarily-set-the-plot-style" title="Permanent link">&para;</a></h3>
-<p><code>axes_style()</code> in a <code>with</code> statement to temporarily set the plot style.</p>
-<pre><code class="python"># Import necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns
+<p><code class="codehilite">axes_style()</code> in a <code class="codehilite">with</code> statement to temporarily set the plot style.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
 
-# Load data
-iris = sns.load_dataset(&quot;iris&quot;)
-tips = sns.load_dataset(&quot;tips&quot;)
+<span class="c1"># Load data</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 
-# Set axes style to white for first subplot
-with sns.axes_style(&quot;white&quot;):
-    plt.subplot(211)
-    sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris)
+<span class="c1"># Set axes style to white for first subplot</span>
+<span class="k">with</span> <span class="n">sns</span><span class="o">.</span><span class="n">axes_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">)</span>
 
-# Initialize the second subplot
-plt.subplot(212)
+<span class="c1"># Initialize the second subplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
 
-# Plot violinplot
-sns.violinplot(x = &quot;total_bill&quot;, data=tips)
+<span class="c1"># Plot violinplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
 
-# Show the plot                   
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot                   </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_26_0.png" /></p>
 <h3 id="set-the-figure-size-in-seaborn">Set the Figure Size in Seaborn<a class="headerlink" href="#set-the-figure-size-in-seaborn" title="Permanent link">&para;</a></h3>
-<p>Axes-level functions: <code>plt.subplots()</code> function to which we pass the <code>figsize</code> argument.</p>
-<pre><code class="python"># Import necessary libraries
-import seaborn as sns
-import matplotlib.pyplot as plt
+<p>Axes-level functions: <code class="codehilite">plt.subplots()</code> function to which we pass the <code class="codehilite">figsize</code> argument.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-# Initialize Figure and Axes object
-fig, ax = plt.subplots(figsize=(10,4))
+<span class="c1"># Initialize Figure and Axes object</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
 
-# Load in the data
-iris = sns.load_dataset(&quot;iris&quot;)
+<span class="c1"># Load in the data</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;iris&quot;</span><span class="p">)</span>
 
-# Create swarmplot
-sns.swarmplot(x=&quot;species&quot;, y=&quot;petal_length&quot;, data=iris, ax=ax)
+<span class="c1"># Create swarmplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">swarmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;petal_length&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_28_0.png" /></p>
-<p>Figure-level functions: rely on two parameters to set the Figure size, namely, <code>size</code> and <code>aspect</code>.</p>
-<pre><code class="python"># Import the libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
+<p>Figure-level functions: rely on two parameters to set the Figure size, namely, <code class="codehilite">size</code> and <code class="codehilite">aspect</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
 
-# Load data
-titanic = sns.load_dataset(&quot;titanic&quot;)
+<span class="c1"># Load data</span>
+<span class="n">titanic</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;titanic&quot;</span><span class="p">)</span>
 
-# Set up a factorplot
-g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;, 
-                   data=titanic, 
-                   kind=&quot;bar&quot;, 
-                   size=6, 
-                   aspect=2, 
-                   palette=&quot;muted&quot;, 
-                   legend=False)
+<span class="c1"># Set up a factorplot</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">factorplot</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span><span class="p">,</span> 
+                   <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">,</span> 
+                   <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> 
+                   <span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> 
+                   <span class="n">aspect</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> 
+                   <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;muted&quot;</span><span class="p">,</span> 
+                   <span class="n">legend</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_30_0.png" /></p>
 <h3 id="rotate-label-text-in-seaborn">Rotate Label Text in Seaborn<a class="headerlink" href="#rotate-label-text-in-seaborn" title="Permanent link">&para;</a></h3>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
-import numpy as np
-import pandas as pd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-# Initialize the data
-x = 10 ** np.arange(1, 10)
-y = x * 2
-data = pd.DataFrame(data={'x': x, 'y': y})
+<span class="c1"># Initialize the data</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">})</span>
 
-# Create an lmplot
-grid = sns.lmplot('x', 'y',
-                  data,
-                  size=7,
-                  truncate=True,
-                  scatter_kws={&quot;s&quot;: 100})
+<span class="c1"># Create an lmplot</span>
+<span class="n">grid</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span>
+                  <span class="n">data</span><span class="p">,</span>
+                  <span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+                  <span class="n">truncate</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                  <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
 
-# Rotate the labels on x-axis
-grid.set_xticklabels(rotation=30)
+<span class="c1"># Rotate the labels on x-axis</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_32_0.png" /></p>
-<h3 id="set-xlim-or-ylim-in-seaborn">Set <code>xlim</code> or <code>ylim</code> in Seaborn<a class="headerlink" href="#set-xlim-or-ylim-in-seaborn" title="Permanent link">&para;</a></h3>
-<p>Assign boxplot to a variable <code>ax</code>, which will be a <code>matplotlib.axes._subplots.AxesSubplot</code> object.</p>
-<pre><code class="python"># Import necessary libraries
-import seaborn as sns
-import matplotlib.pyplot as plt
+<h3 id="set-xlim-or-ylim-in-seaborn">Set <code class="codehilite">xlim</code> or <code class="codehilite">ylim</code> in Seaborn<a class="headerlink" href="#set-xlim-or-ylim-in-seaborn" title="Permanent link">&para;</a></h3>
+<p>Assign boxplot to a variable <code class="codehilite">ax</code>, which will be a <code class="codehilite">matplotlib.axes._subplots.AxesSubplot</code> object.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-# Load the data
-tips = sns.load_dataset(&quot;tips&quot;)
+<span class="c1"># Load the data</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 
-# Create the boxplot
-ax = sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+<span class="c1"># Create the boxplot</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
 
-# Set the `xlim`
-ax.set(xlim=(0, 100))
+<span class="c1"># Set the `xlim`</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_34_0.png" /></p>
-<pre><code class="python"># Import necessary libraries
-import seaborn as sns
-import matplotlib.pyplot as plt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-# Load the data
-tips = sns.load_dataset(&quot;tips&quot;)
+<span class="c1"># Load the data</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 
-# Create the boxplot
-ax = sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+<span class="c1"># Create the boxplot</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
 
-# Set the `xlim`
-ax.set(xlim=(0, 60))
+<span class="c1"># Set the `xlim`</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">))</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_35_0.png" /></p>
-<p>Figure-level: access the <code>Axes</code> object with the help of the <code>axes</code> argument.</p>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
-import numpy as np
-import pandas as pd
+<p>Figure-level: access the <code class="codehilite">Axes</code> object with the help of the <code class="codehilite">axes</code> argument.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-# Initialize the data
-x = 10 ** np.arange(1, 10)
-y = x * 2
-data = pd.DataFrame(data={'x': x, 'y': y})
+<span class="c1"># Initialize the data</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">})</span>
 
-# Create lmplot
-lm = sns.lmplot('x', 'y',
-                data,
-                size=7,
-                truncate=True,
-                scatter_kws={&quot;s&quot;: 100})
+<span class="c1"># Create lmplot</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span>
+                <span class="n">data</span><span class="p">,</span>
+                <span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+                <span class="n">truncate</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
 
-# Get hold of the `Axes` objects
-axes = lm.ax
+<span class="c1"># Get hold of the `Axes` objects</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">ax</span>
 
-# Tweak the `Axes` properties
-axes.set_ylim(-1000000000,)
+<span class="c1"># Tweak the `Axes` properties</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1000000000</span><span class="p">,)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_37_0.png" /></p>
-<p>Figure-level: <code>FacetGrid</code> exposes the underlying figure with the help of the <code>fig</code> argument.</p>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
-import numpy as np
-import pandas as pd
+<p>Figure-level: <code class="codehilite">FacetGrid</code> exposes the underlying figure with the help of the <code class="codehilite">fig</code> argument.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-# Initialize the data
-x = 10 ** np.arange(1, 10)
-y = x * 2
-data = pd.DataFrame(data={'x': x, 'y': y})
+<span class="c1"># Initialize the data</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">})</span>
 
-# Create lmplot
-lm = sns.lmplot('x', 'y',
-                data,
-                size=7,
-                truncate=True,
-                scatter_kws={&quot;s&quot;: 100})
+<span class="c1"># Create lmplot</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span>
+                <span class="n">data</span><span class="p">,</span>
+                <span class="n">size</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+                <span class="n">truncate</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
 
-# Access the Figure
-fig = lm.fig 
+<span class="c1"># Access the Figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">lm</span><span class="o">.</span><span class="n">fig</span> 
 
-# Add a title to the Figure
-fig.suptitle('this is the figure title', fontsize=12)
+<span class="c1"># Add a title to the Figure</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;this is the figure title&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_39_0.png" /></p>
 <h3 id="set-log-scale">Set Log Scale<a class="headerlink" href="#set-log-scale" title="Permanent link">&para;</a></h3>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
-import numpy as np
-import pandas as pd
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-# Create the data
-x = 10 ** np.arange(1, 10)
-y = x * 2
-data = pd.DataFrame(data={'x': x, 'y': y})
+<span class="c1"># Create the data</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">**</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">y</span><span class="p">})</span>
 
-# Initialize figure and ax
-fig, ax = plt.subplots()
+<span class="c1"># Initialize figure and ax</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
-# Set the scale of the x-and y-axes
-ax.set(xscale=&quot;log&quot;, yscale=&quot;log&quot;)
+<span class="c1"># Set the scale of the x-and y-axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xscale</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">,</span> <span class="n">yscale</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
 
-# Create a regplot
-sns.regplot(&quot;x&quot;, &quot;y&quot;,
-            data,
-            ax=ax,
-            scatter_kws={&quot;s&quot;: 100})
+<span class="c1"># Create a regplot</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">regplot</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">,</span>
+            <span class="n">data</span><span class="p">,</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+            <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_41_0.png" /></p>
-<p>Figure-level: set the <code>xscale</code> and <code>yscale</code> properties with the help of the <code>set()</code> method of the <code>FacetGrid</code> object.</p>
-<pre><code class="python"># Import the libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
+<p>Figure-level: set the <code class="codehilite">xscale</code> and <code class="codehilite">yscale</code> properties with the help of the <code class="codehilite">set()</code> method of the <code class="codehilite">FacetGrid</code> object.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
 
-# Load data
-titanic = sns.load_dataset(&quot;titanic&quot;)
+<span class="c1"># Load data</span>
+<span class="n">titanic</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;titanic&quot;</span><span class="p">)</span>
 
-# Set up a factorplot
-g = sns.factorplot(&quot;class&quot;, &quot;survived&quot;, &quot;sex&quot;,
-                   data=titanic,
-                   kind=&quot;bar&quot;,
-                   size=6,
-                   palette=&quot;muted&quot;,
-                   legend=False)
+<span class="c1"># Set up a factorplot</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">factorplot</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span> <span class="s2">&quot;survived&quot;</span><span class="p">,</span> <span class="s2">&quot;sex&quot;</span><span class="p">,</span>
+                   <span class="n">data</span><span class="o">=</span><span class="n">titanic</span><span class="p">,</span>
+                   <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+                   <span class="n">size</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+                   <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;muted&quot;</span><span class="p">,</span>
+                   <span class="n">legend</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 
-# Set the `yscale`
-g.set(yscale=&quot;log&quot;)
+<span class="c1"># Set the `yscale`</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">yscale</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
 
-# Show plot
-plt.show()
-</code></pre>
+<span class="c1"># Show plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_43_0.png" /></p>
 <h3 id="add-a-title">Add A Title<a class="headerlink" href="#add-a-title" title="Permanent link">&para;</a></h3>
-<p>Axes-level: <code>set_title()</code>.</p>
-<pre><code class="python"># Import the libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
+<p>Axes-level: <code class="codehilite">set_title()</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
 
-tips = sns.load_dataset(&quot;tips&quot;)
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 
-# Create the boxplot
-ax = sns.boxplot(x=&quot;total_bill&quot;, data=tips)
+<span class="c1"># Create the boxplot</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">tips</span><span class="p">)</span>
 
-# Set title
-ax.set_title(&quot;boxplot&quot;)
+<span class="c1"># Set title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;boxplot&quot;</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_45_0.png" /></p>
-<p>Figure-level: <code>fig</code>.</p>
-<pre><code class="python"># Import the necessary libraries
-import matplotlib.pyplot as plt
-import seaborn as sns 
-import numpy as np
-import pandas as pd
+<p>Figure-level: <code class="codehilite">fig</code>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import the necessary libraries</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
-# Load the data
-tips = sns.load_dataset(&quot;tips&quot;)
+<span class="c1"># Load the data</span>
+<span class="n">tips</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;tips&quot;</span><span class="p">)</span>
 
-# Create scatter plots
-g = sns.FacetGrid(tips, col=&quot;sex&quot;, row=&quot;smoker&quot;, margin_titles=True)
-g.map(sns.plt.scatter, &quot;total_bill&quot;, &quot;tip&quot;)
+<span class="c1"># Create scatter plots</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">tips</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="s2">&quot;smoker&quot;</span><span class="p">,</span> <span class="n">margin_titles</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">,</span> <span class="s2">&quot;total_bill&quot;</span><span class="p">,</span> <span class="s2">&quot;tip&quot;</span><span class="p">)</span>
 
-# Add a title to the figure
-g.fig.suptitle(&quot;this is a title&quot;)
+<span class="c1"># Add a title to the figure</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;this is a title&quot;</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/seaborn_python/output_47_0.png" /></p>
+                
+                  
+                
               
-            </div>
+              
+                
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Pandas+DataFrames/" class="btn btn-neutral float-right" title="Pandas DataFrames">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" class="btn btn-neutral" title="Viewing 3D Volumetric Data With Matplotlib"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" title="Viewing 3D Volumetric Data with Matplotlib" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Viewing 3D Volumetric Data with Matplotlib
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Pandas+DataFrames/" title="Pandas DataFrames" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Pandas DataFrames
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>© Ugo Sparks</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Ugo Sparks
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
       </div>
-
-    </section>
-    
+      
+        
+      
+    </div>
   </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+</footer>
       
+    </div>
+    
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
       
-        <span><a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
-        <span style="margin-left: 15px"><a href="../Pandas+DataFrames/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+    
       
-    </span>
-</div>
-    <script src="../js/theme.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-      <script src="../mathjaxhelper.js"></script>
-
-</body>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
 </html>
