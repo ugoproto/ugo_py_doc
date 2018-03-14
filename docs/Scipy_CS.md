@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Cheat sheets.
 
 ---
 
-## Importing Data
+# Importing Data
 
 - [Importing Data](Importing_Data.pdf). PDF. Files: text, falt, spreadsheet, SAS, Stata, RDB, Pickled, HDF5, Matlab, with numpy, pandas, accessing, exploring, and navigating.
 
@@ -18,7 +19,7 @@ Cheat sheets.
 ![](img/scipy_cs/Importing_data.png)
 </center>
 
-## Data Mining, Wrangling (Numpy, Pandas)
+# Data Mining, Wrangling (Numpy, Pandas)
 
 - [Data Mining](4127-rc183-010d-data-mining_2.pdf). PDF only.
 
@@ -70,7 +71,7 @@ Cheat sheets.
 ![](img/scipy_cs/Pandas_Cheat_Sheetb.png)
 </center>
 
-## Machine Learning, Spark, NN
+# Machine Learning, Spark, NN
 
 <center>
 ![](img/scipy_cs/drop_shadows_background.png).
@@ -108,7 +109,7 @@ Cheat sheets.
 ![](img/scipy_cs/Keras_Cheat_Sheet_Python.png)
 </center>
 
-## Visualization (Matplotlib, Seaborn, Bokeh, Plotly, Folium)
+# Visualization (Matplotlib, Seaborn, Bokeh, Plotly, Folium)
 
 - [Matplotlib Notes](Matplotlib_Notes.pdf). PDF only.
 - [Matplotlib](Python_Matplotlib_Cheat_Sheet.pdf). PDF.

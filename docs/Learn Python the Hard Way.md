@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -12,9 +13,9 @@ Notes, code snippets, and excerpts from the course. Python 2. From the book and 
 
 ---
 
-## Exercise 1, A Good First Program
+# Exercise 1, A Good First Program
 
-~ shebang, begin, script~
+<sub>shebang, begin, script</sub>
 
 - This is a shebang (language): `# -*- coding: utf-8 -*-`.
 - `#` is an octothorpe or pound or hash or mesh.
@@ -43,14 +44,14 @@ print "testing2"
 	I said do not touch this.
 	testing2
 
-### Shorcuts, Good to Know
+## Shorcuts, Good to Know
 
 - In the terminal, type `pydoc <python item>` to invoke the documentation on a python item (built-in functions, methods, objects, etc.).
-- `ctrl+c` and/or `ctrl+d` break a loop.
+- ++ctrl+c++ and/or ++ctrl+d++ break a loop.
 
-## Exercise 3, Numbers and Math
+# Exercise 3, Numbers and Math
 
-~ print, format, calculate~
+<sub>print, format, calculate</sub>
 
 ```python
 print "I will now count my chickens:"
@@ -120,7 +121,7 @@ print (1.0 + 1) # float
 
     2.0
 
-## Exercise 4, Variables and Names
+# Exercise 4, Variables and Names
 
 ```python
 cars = 100
@@ -149,7 +150,7 @@ print "We need to put about", average_passengers_per_car, "in each cars."
 
 - A constant variable, a variable that should never be altered, should be set in capital as `PI = 3.1416`.
 
-## Exercise 5, More Variables and Printing
+# Exercise 5, More Variables and Printing
 
 - Call a variable with:
 	- `%r`; raw variable.
@@ -207,9 +208,9 @@ print "If I add %d, %d, and %d I get %d." % (
     If I add 35, 74, and 180 I get 289.
     
 
-## Exercise 6, Strings and Text
+# Exercise 6, Strings and Text
 
-~ concatenate~
+<sub>concatenate</sub>
 
 - `%s` and `%r` help when concatenating strings.
 - `%r` does not coerce the variable into a format (`%s` string or `%d` digit).
@@ -258,7 +259,7 @@ print w + e
     This is the left side of... a string with a right side.
     
 
-## Exercise 15, Reading Files
+# Exercise 15, Reading Files
 
 - Before running this script, create a text file.
 - Type `"Test file thing" > test.txt`.
@@ -365,9 +366,9 @@ text_again = open(file_again)
 print text_again.read()
 ```
 
-## Exercise 16, Reading and Writing Files
+# Exercise 16, Reading and Writing Files
 
-~ open, close, readlines, truncate~
+<sub>open, close, readlines, truncate</sub>
 
 - `'w'`, write, `'r'`, read, `'a'`, append.
 - `'w+'`, read-write, `'r+'`, read-write, `'a+'`, read-append.
@@ -469,9 +470,9 @@ Truncating the file!
     
 ```
 
-## Exercise 17, More Files
+# Exercise 17, More Files
 
-~ length, len()~
+<sub>length, len()</sub>
 
 - `target.read()`; read the whole file (EOF).
 - `target.read(10)`; read the amount of bytes between the parentheses (1 byte = 1 character).
@@ -610,9 +611,9 @@ checkfile3.close()
     I wish you a good day.
     
 
-## Exercise 18, Names, Variables, Code, Functions
+# Exercise 18, Names, Variables, Code, Functions
 
-~ argument, flexible, indefinite~
+<sub>argument, flexible, indefinite</sub>
 
 - A function can have no, one or several arguments.
     - `def function():`.
@@ -698,7 +699,7 @@ print_two_again_3("Zed", "Shaw", "C")
     arg1: 'Joe', arg2: 'Frank'
     
 
-## Exercise 19, Functions and Variables
+# Exercise 19, Functions and Variables
 
 - Give different names to functions and arguments not to get confuse.
 
@@ -773,9 +774,9 @@ cheese_and_crackers(amount_of_cheese, amount_of_crackers)
     Man that's enough for a party!
     Get a blanket. 
 
-## Exercise 20, Functions and Files
+# Exercise 20, Functions and Files
 
-~ seek, move, file~
+<sub>seek, move, file</sub>
 
 ```python
 # %load ex20.py
@@ -848,9 +849,9 @@ print_a_line(current_line, current_file)
     3 I wish you a good day.
     
 
-## Exercise 21, Functions Can Return Something or not...
+# Exercise 21, Functions Can Return Something or not...
 
-~ integer, float, int, coerce, digit, string, raw~
+<sub>integer, float, int, coerce, digit, string, raw</sub>
 
 - `%r` for raw.
 - `%d` for digit.
@@ -1116,7 +1117,7 @@ print "That becomes: ", what, "Can you do it by hand?"
     ADDING 3.2 + -4426
     That becomes:  -4422.8 Can you do it by hand?
 
-## Exercise 23, Read Some Code
+# Exercise 23, Read Some Code
 
 - Go to [GitHub](http://github.com/zedshaw/lamson):
 - In the 'lamson' directory, take a script.
@@ -1128,7 +1129,7 @@ print "That becomes: ", what, "Can you do it by hand?"
     - [launchpad.net](launchpad.net).
     - [sourceforge.net](sourceforge.net).
 
-## Exercise 24, More Practice
+# Exercise 24, More Practice
 
 - `\'` for an aposthrophy.
 - `\t` for a tab.
@@ -1220,9 +1221,9 @@ print "We's have %d beans, %d jars, and %d crates." % secret_formula(start_point
     We's have 500000 beans, 500 jars, and 5 crates.
     
 
-## Exercise 25, Even More Practice
+# Exercise 25, Even More Practice
 
-~ import, module, package, script, library~
+<sub>import, module, package, script, library</sub>
 
 - For this exercice, consult the manual.
 - First, run python ex25.py to find out any errors.
@@ -1339,9 +1340,9 @@ ex25.print_first_and_last_sorted(sentence)
     All
     who
 
-## Exercise 32, Loops and Lists
+# Exercise 32, Loops and Lists
 
-~ for, loop, list~
+<sub>for, loop, list</sub>
 
 ```python
 the_count = [1,2,3,4,5]
@@ -1436,7 +1437,7 @@ print "range(0, 10, 2):", range(0, 10, 2)
 
 - Two-dimentional lists (above 2 dimension, it can become memory-intensive to compute!).
 
-~ 2d, tabular, lists in list, list of lists~
+<sub>2d, tabular, lists in list, list of lists</sub>
 
 ```python
 the_count_two = [[1,2,3],[4,5,6]]
@@ -1450,9 +1451,9 @@ for number in the_count_two:
 	This is count [1, 2, 3]
  	This is count [4, 5, 6]
 
-## Exercise 33, While Loops
+# Exercise 33, While Loops
 
-~ while, loop~
+<sub>while, loop</sub>
 
 ```python
 i = 0
@@ -1591,9 +1592,9 @@ breaking_list2(max_integer2, increment2)
     3
     6
 
-## Exercise 34, Accessing Elements of Lists
+# Exercise 34, Accessing Elements of Lists
 
-~ list, list of lists, lists in list, exit, program~
+<sub>list, list of lists, lists in list, exit, program</sub>
 
 - Let's build a scenario; functions leading to other functions.
 - `def gold_room():`
@@ -1707,9 +1708,9 @@ start() # launch the chain reaction
 
 - There are multiple scenarios to try...
 
-## Exercise 38, Doing Things to Lists
+# Exercise 38, Doing Things to Lists
 
-~ list, index, add, remove, delete, extract~
+<sub>list, index, add, remove, delete, extract</sub>
 
 ```python
 ten_things = "Apples Oranges Crows Telephones Light Sugar"
@@ -1797,9 +1798,9 @@ print '#'.join(stuff[3:5]) # add a character at position 3 and 4 (4th, 5th, excl
     Sugar#Boy
     
 
-## Exercise 39, Dictionaries, Oh Lovely Dictionaries
+# Exercise 39, Dictionaries, Oh Lovely Dictionaries
 
-~ dictionary~
+<sub>dictionary</sub>
 
 ```python
 things = ['a','b','c','d'] # list
@@ -2072,7 +2073,7 @@ print "The city for the state 'TX' is: %s" % city
 - The module would begin by importing module `hashmap.py` to use its methods and perform operations.
 - Consult the manual.
 
-## Exercise 40, Modules, Classes, and Objects
+# Exercise 40, Modules, Classes, and Objects
 
 ```python
 mystuff = {'apple': 'I AM APPLES'}
@@ -2253,7 +2254,7 @@ Song.sing_me_a_song(frere)
     Ding-din-don (bis)
     
 
-## Exercise 41, Learning to Speak Object-Oriented
+# Exercise 41, Learning to Speak Object-Oriented
 
 - Object-oriented programming (oop).
 - The script below (`ex41.py`) imports a word list from a text file (`ex41_words.txt`).
@@ -2461,7 +2462,7 @@ except EOFError:
     print "\nBye"
 ```
 
-## Exercise 42, Is-A, Has-A, Objects, and Classes
+# Exercise 42, Is-A, Has-A, Objects, and Classes
 
 - This exercise explains Exercise 41.
 - Inheritance:
@@ -2647,7 +2648,7 @@ object
 
 - The concept of inheritance, and those of implicit inheritance, overridden inheritance, multiple inheritance, composition, alteration, super objects (or 'reinheritance') are explained in Exercise 44.
 
-## Exercise 43, Gothons from Planet Percal #25
+# Exercise 43, Gothons from Planet Percal #25
 
 This Exercise is the first to prepare the final project (Exercise 52, the last chapter). Let's create a game, from A to Z. First, start by planning. This methodology is valuable for planning any kind of project or program.
 
@@ -3445,7 +3446,7 @@ a_hero = Hero('Joe')
 a_game = Engine(a_map)
 a_game.play()
 ```
-### Wrap up
+## Wrap up
 
 1. Draw a mindmap.
 2. Draw a flowchart.
@@ -3454,11 +3455,11 @@ a_game.play()
 5. Refine.
 6. Use a visualizing software.
 
-## Exercise 44, Inheritance vs Composition
+# Exercise 44, Inheritance vs Composition
 
 From the manual.
 
-### When to Use Inheritance or Composition
+## When to Use Inheritance or Composition
 
 The question of 'inheritance versus composition' comes down to an attempt to solve the problem of reusable code. 
 
@@ -3475,9 +3476,9 @@ If both solutions solve the problem of reuse, then which one is appropriate in w
 
 The thing to remember about object-oriented programming is that it is entirely a social convention programmers have created to package and share code. In that case, find out how they use things and then just adapt to the situation.
 
-### Function Style
+## Function Style
 
-~ pep~
+<sub>pep</sub>
 
 Function = Method.
 
@@ -3509,7 +3510,7 @@ Good Comments
 - Avoid clutering the code though. Short sentences, to the point.
 - Review your comments.
 
-### Composition
+## Composition
 
 In this code I'm not using the name Parent, since there is not a parent-child is-a relationship. This is a has-a relationship, where Child has-a Other that it uses to get its work done. 
 
@@ -3557,7 +3558,7 @@ son.override()
 son.altered()
 ```
 
-### Implicit Inheritance
+## Implicit Inheritance
 
 Actions on the child imply an action on the parent.
 
@@ -3582,7 +3583,7 @@ dad = Parent()
 son = Child()
 ```
 
-### Inherit from both Classes
+## Inherit from both Classes
 
 Python has to look-up the possible function in the class hierarchy for both `Child` and `BadStuff`, but it needs to do this in a consistent order. To do this Python uses "method resolution order" (MRO) and an algorithm called C3 to get it straight.
 
@@ -3594,7 +3595,7 @@ class SuperFun(Child, BadStuff):
     pass
 ```
 
-### Override Explicitly
+## Override Explicitly
 
 Actions on the child override the action on the parent.
 
@@ -3621,7 +3622,7 @@ dad.override()
 son.override()
 ```
 
-### Alter Before or After
+## Alter Before or After
 
 Actions on the child alter the action on the parent.
 
@@ -3650,7 +3651,7 @@ dad.altered()
 son.altered()
 ```
 
-### Super
+## Super
 
 With `super`, `Child` reinherit from the `Parent`.
 
@@ -3665,7 +3666,7 @@ class Child(Parent):
         super(Child, self).__init__()
 ```
 
-### All Three Combined
+## All Three Combined
 
 ```python
 class Parent(object):
@@ -3709,7 +3710,7 @@ dad.altered()
 son.altered()
 ```
 
-## Exercise 45, You Make a Game
+# Exercise 45, You Make a Game
 
 Use an existing project, Exercise 43 for example, and adapt it. This is a first draft for a project...
 
@@ -3792,7 +3793,7 @@ class Graph(object):
 
 And so on. Consult the manual to find out more
 
-## Exercise 46, A Project Skeleton
+# Exercise 46, A Project Skeleton
 
 - The 'skeleton' directory (see below) or the directory framework will have all the basics you need to get a new project up and running. 
 - It will have your project layout, automated tests, modules, and install scripts.
@@ -3859,9 +3860,9 @@ sys.path.append('.') # to set
 
 - Consult the manual to find out more.
 
-## Exercise 47, Automated Testing
+# Exercise 47, Automated Testing
 
-### Miscellaneous notes
+## Miscellaneous notes
 
 - The project directory is 'ex47'.
 - Test if you migrated the files correctly. In the bash:
@@ -3890,9 +3891,9 @@ from bin import Room
 
 - Consult the manual to find out more.
 
-## Exercise 50, Your First Website
+# Exercise 50, Your First Website
 
-### An overview
+## An overview
 
 - Web framework for web projects.
 - Django (the real deal, but complicated), Flask (modest), Pyramid (scalable), etc.

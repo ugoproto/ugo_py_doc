@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,11 +11,11 @@ Notes. Python 2 & 3. Consult the [Hitchicker's Guide to Python](http://docs.pyth
 
 ---
 
-## The `datatime` library
+# The `datatime` library
 
 When building an application incorporating a time triggers, events, records log entries, and much more, we need to deal with dates and times; and time zones. Whether it is a simple script that starts every morning to scrape web data, build a report, and send emails or a comprehensive web framework script that records data entries.
 
-### `now` or any date-time
+## `now` or any date-time
 
 The `datatime` library has handy built-in functions: `date`, `time`, `datetime`, `timedelta`, and `tzinfo`. The following script demonstrates some of the functionalities.
 
@@ -59,7 +60,7 @@ Replace the attributes: new formatting.
 =========================
 ```
 
-### Date-time difference
+## Date-time difference
 
 Create a date-time and compute the time difference.
 
@@ -96,7 +97,7 @@ minutes (round(seconds/60)) =  144.0
 =========================
 ```
 
-### Measure duration with `timedelta`
+## Measure duration with `timedelta`
 
 Create a delta.
 
@@ -221,7 +222,7 @@ Appointment:
 =========================
 ```
 
-### `now` vs. `today`
+## `now` vs. `today`
 
 The difference between `now` and `today` is...
 
@@ -270,7 +271,7 @@ Results.
 =========================
 ```
 
-### Formatting date-time
+## Formatting date-time
 
 Format date and time.
 
@@ -338,7 +339,7 @@ bithday_party:
 =========================
 ```
 
-### A little printing app
+## A little printing app
 
 Build an application that prints out a date in a sentence.
 
@@ -369,9 +370,9 @@ while True:
 
 Run it; it creates an output file. Open output.txt. Copy the link and paste it into a web browser.
 
-## Build a Quiz application
+# Build a Quiz application
 
-### Build the skeleton
+## Build the skeleton
 
 Build an application (questions.py) that add and multiply numbers.
 
@@ -475,7 +476,7 @@ Multiply:
 4
 ```
 
-### Generate questions
+## Generate questions
 
 Complete some functions and test the script.
 
@@ -568,7 +569,7 @@ Multiply:
 4
 ```
 
-### Finalize the application
+## Finalize the application
 
 Complete the script and test it.
 
@@ -689,11 +690,11 @@ You got 9 out of 10 rights.
 It took you 21 seconds total.
 ```
 
-## Time zones
+# Time zones
 
 Timezones are major challenges for websites and web frameworks. The following is coded in Python 3 since the most common Python frameworks (Flask, Django, Pyramid) at the time this documentation is written work under Python 3. One of the reason is the multi-language ability.
 
-### Time zones with `datatime` only
+## Time zones with `datatime` only
 
 We build two timezone-aware variables.
 
@@ -780,7 +781,7 @@ UTC+05:30
 2014-04-21 22:30:00+05:30
 ```
 
-### Time zones with `datatime` and `pytz`
+## Time zones with `datatime` and `pytz`
 
 `pytz` simplify things (a lot!).
 
@@ -889,7 +890,7 @@ convert it, change location:
 
 ```
 
-### Find out more about `pytz`
+## Find out more about `pytz`
 
 Find out about timezones: `print(pytz.all_timezones)`. Or focus on a country's timezones. The US.
 
@@ -927,7 +928,7 @@ Results.
 ['Europe/Kaliningrad', 'Europe/Moscow', 'Europe/Simferopol', 'Europe/Volgograd', 'Europe/Kirov', 'Europe/Astrakhan', 'Europe/Saratov', 'Europe/Ulyanovsk', 'Europe/Samara', 'Asia/Yekaterinburg', 'Asia/Omsk', 'Asia/Novosibirsk', 'Asia/Barnaul', 'Asia/Tomsk', 'Asia/Novokuznetsk', 'Asia/Krasnoyarsk', 'Asia/Irkutsk', 'Asia/Chita', 'Asia/Yakutsk', 'Asia/Khandyga', 'Asia/Vladivostok', 'Asia/Ust-Nera', 'Asia/Magadan', 'Asia/Sakhalin', 'Asia/Srednekolymsk', 'Asia/Kamchatka', 'Asia/Anadyr']
 ```
 
-### Build a script to convert time zones
+## Build a script to convert time zones
 
 Build a script that takes a datetime and give it back in 6 other timezones. For any given datetime, an appointment for example, we can know the equivalent elsewhere in the world.
 

@@ -1,1282 +1,1976 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Ugo Sparks">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>IPython Notebook, Collection - ugo_py_doc</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "IPython Notebook, Collection";
-    var mkdocs_page_input_path = "IPython Notebook.md";
-    var mkdocs_page_url = "/IPython Notebook/";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
-  
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-93008985-2', 'auto');
-      ga('send', 'pageview');
-  </script>
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> ugo_py_doc</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Python documentation website.">
+      
+      
+        <link rel="canonical" href="https://ugoproto.github.io/ugo_py_doc/IPython Notebook/">
+      
+      
+        <meta name="author" content="Ugo Sparks">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>IPython Notebook, Collection - ugo_py_doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#ipython-notebook-essentials" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://ugoproto.github.io/ugo_py_doc/" title="ugo_py_doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">layers</i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Basics & More</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Decorators/">Decorators</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Databases/">Databases</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Datetime/">Datetime</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Execute_Highlighted_Python_Code_in_gedit/">Execute Highlighted Python Code in gedit</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">SciPy Stack</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python for Data Science/">Python for Data Science</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Lists/">Lists</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">IPython Notebook, Collection</a>
-    <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#ipython-notebook-essentials">Ipython Notebook Essentials</a></li>
-    
-
-    <li class="toctree-l3"><a href="#learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization</a></li>
-    
-
-    <li class="toctree-l3"><a href="#ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook</a></li>
-    
-
-    <li class="toctree-l3"><a href="#introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis</a></li>
-    
-
-    <li class="toctree-l3"><a href="#building-machine-learning-systems-with-python">Building Machine Learning Systems with Python</a></li>
-    
-
-    <li class="toctree-l3"><a href="#scipy-lecture-notes">Scipy Lecture Notes</a></li>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Exploratory Data Analysis/">Exploratory Data Analysis</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python+And+Excel/">Python and Excel</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Overview_of_scikit-learn/">Overview of scikit-learn</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/">k-NN, Linear regression, Logit, Scaling, Centering, Noise</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Time_Series_Analysis/">Time Series Analysis</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Sentiment_Analysis_with_Twitter/">Sentiment Analysis with Twitter</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/">EDA, Machine Learning, Feature Engineering, and Kaggle</a>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                ugo_py_doc
+              </span>
+              <span class="md-header-nav__topic">
+                IPython Notebook, Collection
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Courses</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Codecademy Python/">Codecademy Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Introduction to Python/">Introduction to Python</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Manuals</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Real_Python/">Real Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python for Education/">Python for Education</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">layers</i>
+      
+    </span>
+    ugo_py_doc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Py_CS/" title="Python Cheat Sheets" class="md-nav__link">
+      Python Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Preliminaries/" title="Python Preliminaries" class="md-nav__link">
+      Python Preliminaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Nice_to_Have/" title="Python Nice to Have" class="md-nav__link">
+      Python Nice to Have
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Freeze_the_Code/" title="Freeze the Code" class="md-nav__link">
+      Freeze the Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Write_Better_Python/" title="Write Better Python with PEP" class="md-nav__link">
+      Write Better Python with PEP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Regex/" title="Regular Expressions (regex)" class="md-nav__link">
+      Regular Expressions (regex)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Databases/" title="Databases" class="md-nav__link">
+      Databases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Datetime/" title="Datetime" class="md-nav__link">
+      Datetime
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Gedit_Execute_Highlighted_Python_Code/" title="Gedit, Execute Highlighted Python Code" class="md-nav__link">
+      Gedit, Execute Highlighted Python Code
+    </a>
+  </li>
+
+        
+      </ul>
     </nav>
+  </li>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">ugo_py_doc</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>SciPy Stack &raquo;</li>
-        
       
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <li>IPython Notebook, Collection</li>
-    <li class="wy-breadcrumbs-aside">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Scipy Stack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Scipy Stack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scipy_CS/" title="Scipy Stack Cheat Sheets" class="md-nav__link">
+      Scipy Stack Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../JN_CS/" title="Jupyter Notebook Cheat Sheets" class="md-nav__link">
+      Jupyter Notebook Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scientific Python/" title="Scientific Python" class="md-nav__link">
+      Scientific Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Importing Data into Python/" title="Importing Data into Python" class="md-nav__link">
+      Importing Data into Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python for Data Science/" title="Python for Data Science" class="md-nav__link">
+      Python for Data Science
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tidy_Data_in_Python/" title="Tidy Data in Python" class="md-nav__link">
+      Tidy Data in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        IPython Notebook, Collection
+      </label>
+    
+    <a href="./" title="IPython Notebook, Collection" class="md-nav__link md-nav__link--active">
+      IPython Notebook, Collection
+    </a>
+    
       
-    </li>
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ipython-notebook-essentials" title="Ipython Notebook Essentials" class="md-nav__link">
+    Ipython Notebook Essentials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-ipython-for-interactive-computing-and-data-visualization" title="Learning IPython for Interactive Computing and Data Visualization" class="md-nav__link">
+    Learning IPython for Interactive Computing and Data Visualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipython-interactive-computing-and-visualization-cookbook" title="IPython Interactive Computing and Visualization Cookbook" class="md-nav__link">
+    IPython Interactive Computing and Visualization Cookbook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-python-for-econometrics-statistics-and-data-analysis" title="Introduction to Python for Econometrics, Statistics and Data Analysis" class="md-nav__link">
+    Introduction to Python for Econometrics, Statistics and Data Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-machine-learning-systems-with-python" title="Building Machine Learning Systems with Python" class="md-nav__link">
+    Building Machine Learning Systems with Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scipy-lecture-notes" title="Scipy Lecture Notes" class="md-nav__link">
+    Scipy Lecture Notes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python Numpy Arrays/" title="Python Numpy Arrays" class="md-nav__link">
+      Python Numpy Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Vectors and Arrays (Linear Algebra)/" title="Vectors and Arrays (Linear Algebra)" class="md-nav__link">
+      Vectors and Arrays (Linear Algebra)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Matplotlib, Python Plotting/" title="Matplotlib, Python Plotting" class="md-nav__link">
+      Matplotlib, Python Plotting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" title="Viewing 3D Volumetric Data with Matplotlib" class="md-nav__link">
+      Viewing 3D Volumetric Data with Matplotlib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seaborn, Python Statistical Data Visualization Library/" title="Seaborn, Python's Statistical Data Visualization Library" class="md-nav__link">
+      Seaborn, Python's Statistical Data Visualization Library
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Pandas+DataFrames/" title="Pandas DataFrames" class="md-nav__link">
+      Pandas DataFrames
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Write Idiomatic Pandas Code/" title="Write Idiomatic Pandas Code" class="md-nav__link">
+      Write Idiomatic Pandas Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Exploratory Data Analysis/" title="Exploratory Data Analysis (EDA)" class="md-nav__link">
+      Exploratory Data Analysis (EDA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python+And+Excel/" title="Python and Excel" class="md-nav__link">
+      Python and Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Overview_of_scikit-learn/" title="Overview of scikit-learn" class="md-nav__link">
+      Overview of scikit-learn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" title="k-NN, Linear regression, Logit, Scaling, Centering, Noise" class="md-nav__link">
+      k-NN, Linear regression, Logit, Scaling, Centering, Noise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Time_Series_Analysis/" title="Time Series Analysis" class="md-nav__link">
+      Time Series Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sentiment_Analysis_with_Twitter/" title="Sentiment Analysis with Twitter" class="md-nav__link">
+      Sentiment Analysis with Twitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/" title="EDA, Machine Learning, Feature Engineering, and Kaggle" class="md-nav__link">
+      EDA, Machine Learning, Feature Engineering, and Kaggle
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Apprenez a programmer en Python/" title="Apprenez à programmer en Python" class="md-nav__link">
+      Apprenez à programmer en Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codecademy Python/" title="Codecademy Python" class="md-nav__link">
+      Codecademy Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Learn Python the Hard Way/" title="Learn Python the Hard Way" class="md-nav__link">
+      Learn Python the Hard Way
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LPTHW, Python Code Snippets/" title="LPTHW, Python Code Snippets" class="md-nav__link">
+      LPTHW, Python Code Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction to Python/" title="Introduction to Python" class="md-nav__link">
+      Introduction to Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Manuals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Manuals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Automate the Boring Stuff with Python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
+      Automate the Boring Stuff with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
+      Managing Your Biological Data with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python for Education/" title="Python for Education" class="md-nav__link">
+      Python for Education
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ipython-notebook-essentials" title="Ipython Notebook Essentials" class="md-nav__link">
+    Ipython Notebook Essentials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-ipython-for-interactive-computing-and-data-visualization" title="Learning IPython for Interactive Computing and Data Visualization" class="md-nav__link">
+    Learning IPython for Interactive Computing and Data Visualization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipython-interactive-computing-and-visualization-cookbook" title="IPython Interactive Computing and Visualization Cookbook" class="md-nav__link">
+    IPython Interactive Computing and Visualization Cookbook
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-python-for-econometrics-statistics-and-data-analysis" title="Introduction to Python for Econometrics, Statistics and Data Analysis" class="md-nav__link">
+    Introduction to Python for Econometrics, Statistics and Data Analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-machine-learning-systems-with-python" title="Building Machine Learning Systems with Python" class="md-nav__link">
+    Building Machine Learning Systems with Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scipy-lecture-notes" title="Scipy Lecture Notes" class="md-nav__link">
+    Scipy Lecture Notes
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#websites">Websites</a></li>
-<li><a href="#ipython-notebook-essentials">Ipython Notebook Essentials</a></li>
-<li><a href="#learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization</a></li>
-<li><a href="#ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook</a></li>
-<li><a href="#introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis</a></li>
-<li><a href="#building-machine-learning-systems-with-python">Building Machine Learning Systems with Python</a></li>
-<li><a href="#scipy-lecture-notes">Scipy Lecture Notes</a></li>
-</ul>
-</div>
+                
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/IPython Notebook.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>IPython Notebook, Collection</h1>
+                
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Notes and books&rsquo; tables of contents.</p>
+<p>Notes and tables of contents.</p>
 <hr />
-<h4 id="websites">Websites<a class="headerlink" href="#websites" title="Permanent link">&para;</a></h4>
+<h3 id="websites">Websites<a class="headerlink" href="#websites" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks">A gallery of interesting IPython Notebooks</a></li>
 <li><a href="https://docs.continuum.io/anaconda/excel">Excel plug-ins for Anaconda</a></li>
 </ul>
-<h4 id="ipython-notebook-essentials">Ipython Notebook Essentials<a class="headerlink" href="#ipython-notebook-essentials" title="Permanent link">&para;</a></h4>
-<pre><code>Chapter 1: A Tour of the IPython Notebook 7
-Getting started with Anaconda or Wakari 8
-Installing Anaconda 8
-Running the notebook 8
-Creating a Wakari account 10
-Creating your frst notebook 11
-Example – the coffee cooling problem 12
-Exercises 22
-Summary 22
-Chapter 2: The Notebook Interface 23
-Editing and navigating a notebook 23
-Getting help and interrupting computations 25
-The Edit mode 25
-The Command mode 28
-Cell types 29
-IPython magics 33
-Interacting with the operating system 37
-Saving the notebook 37
-Converting the notebook to other formats 38
-Running shell commands 39
-Running scripts, loading data, and saving data 41
-Running Python scripts 41
-Running scripts in other languages 43
-Loading and saving data 45
-The rich display system 47
-Images and YouTube videos 47
-HTML 49
-Summary 52
-Chapter 3: Graphics with matplotlib 53
-The plot function 54
-Adding a title, labels, and a legend 59
-Text and annotations 62
-Three-dimensional plots 66
-Animations 71
-Summary 77
-Chapter 4: Handling Data with pandas 79
-The Series class 79
-The DataFrame class 88
-Computational and graphics tools 95
-An example with a realistic dataset 101
-Summary 108
-Chapter 5: Advanced Computing with SciPy, Numba, and NumbaPro 109
-Overview of SciPy 109
-Advanced mathematical algorithms with SciPy 111
-Solving equations and fnding optimal values 111
-Calculus and differential equations 117
-Accelerating computations with Numba and NumbaPro 128
-Summary 138
-Appendix A: IPython Notebook Reference Card 139
-Starting the notebook 139
-Keyboard shortcuts 139
-Shortcuts in the Edit mode 139
-Shortcuts in the Command mode 140
-Importing modules 141
-Getting help 141
-Appendix B: A Brief Review of Python 143
-Introduction 143
-Basic types, expressions, and variables and their assignment 143
-Sequence types 147
-Lists 147
-Tuples 150
-Strings 151
-Dictionaries 152
-Control structures 152
-Functions, objects, and methods 156
-Functions 156
-Objects and methods 158
-Summary 159
-Appendix C: NumPy Arrays 161
-Introduction 161
-Array creation and member access 161
-Indexing and Slicing 164
-Index 167
-</code></pre>
-
-<h4 id="learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization<a class="headerlink" href="#learning-ipython-for-interactive-computing-and-data-visualization" title="Permanent link">&para;</a></h4>
-<pre><code>Chapter 1: Getting Started with IPython 5
-Installing IPython and the recommended packages 6
-Prerequisites for IPython 6
-Installing an all-in-one distribution 7
-Installing the packages one by one 7
-Packages websites 8
-Getting binary installers 9
-Using the Python packaging system 11
-Installing the development versions 12
-Ten IPython essentials 13
-Running the IPython console 13
-Using IPython as a system shell 14
-Using the history 15
-Tab completion 15
-Executing a script with the %run command 16
-Quick benchmarking with the %timeit command 17
-Quick debugging with the %debug command 17
-Interactive computing with Pylab 18
-Using the IPython Notebook 19
-Customizing IPython 19
-Summary 20
-Chapter 2: Interactive Work with IPython 21
-The extended shell 21
-Navigating through the flesystem 22
-Accessing the system shell from IPython 24
-The extended Python console 25
-Exploring the history 26
-Import/export of Python code 27
-Importing code in IPython 27
-Exporting code to a fle 29
-Dynamic introspection 29
-Tab completion 29
-Source code introspection 31
-Using the interactive debugger 32
-Interactive benchmarking and profling 33
-Controlling the execution time of a command 33
-Profling a script 34
-Using the IPython notebook 35
-Installation 36
-The notebook dashboard 36
-Working with cells 37
-Cell magics 38
-Managing notebooks 39
-Multimedia and rich text editing 39
-Graph plotting 40
-Summary 41
-Chapter 3: Numerical Computing with IPython 43
-A primer to vector computing 44
-An example of computation with Python loops 44
-What an array is 45
-Reimplementing the example with arrays 48
-Creating and loading arrays 50
-Creating arrays 50
-From scratch, element by element 50
-From scratch, using predefned templates 51
-From random values 52
-Loading arrays 53
-From a native Python object 53
-From a buffer or an external fle 53
-Using Pandas 54
-Working with arrays 56
-Selection 56
-Using Pandas 57
-Using NumPy 58
-More indexing possibilities 59
-Manipulation 60
-Reshaping 60
-Repeating and concatenating 61
-Broadcasting 62
-Permuting 63
-Computation 63
-Advanced mathematical processing 65
-Summary 66
-Chapter 4: Interactive Plotting and Graphical Interfaces 67
-Figures with Matplotlib 68
-Setting up IPython for interactive visualization 68
-Using Matplotlib 68
-Interactive navigation 69
-Matplotlib in the IPython notebook 69
-Standard plots 69
-Curves 69
-Scatter plots 71
-Bar graphs 72
-Plot customization 72
-Styles and colors 73
-Grid, axes, and legends 74
-Interaction from IPython 75
-Drawing multiple plots 76
-Advanced fgures and graphics 76
-Image processing 77
-Loading images 77
-Showing images 78
-Using PIL 79
-Advanced image processing – color quantization 79
-Maps 81
-3D plots 83
-Animations 84
-Other visualization packages 84
-Graphical User Interfaces (GUI) 84
-Setting up IPython for interactive GUIs 85
-A &quot;Hello World&quot; example 85
-Summary 87
-Chapter 5: High-Performance and Parallel Computing 89
-Interactive task parallelization 90
-Parallel computing in Python 90
-Distributing tasks on multiple cores 91
-Starting the engines 91
-Creating a Client instance 92
-Using the parallel magic 92
-Parallel map 93
-A practical example – Monte Carlo simulations 95
-Using MPI with IPython 96
-Advanced parallel computing features of IPython 98
-Using C in IPython with Cython 99
-Installing and confguring Cython 99
-Using Cython from IPython 100
-Accelerating a pure Python algorithm with Cython 101
-Pure Python version 101
-Naïve Cython conversion 102
-Adding C types 102
-Using NumPy and Cython 103
-Python version 103
-Cython version 104
-More advanced options for accelerating Python code 106
-Summary 107
-Chapter 6: Customizing IPython 109
-IPython profles 109
-Profle locations 110
-The IPython confguration fles 110
-Loading scripts when IPython starts 111
-IPython extensions 111
-Example – line-by-line profling 111
-Creating new extensions 113
-Example – executing C++ code in IPython 113
-Rich representations in the frontend 115
-Embedding IPython 117
-Final words 117
-Summary 118
-Index 119
-</code></pre>
-
-<h4 id="ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook<a class="headerlink" href="#ipython-interactive-computing-and-visualization-cookbook" title="Permanent link">&para;</a></h4>
-<pre><code>Chapter 1: A Tour of Interactive Computing with IPython 9
-Introduction 9
-Introducing the IPython notebook 13
-Getting started with exploratory data analysis in IPython 22
-Introducing the multidimensional array in NumPy for fast array computations 28
-Creating an IPython extension with custom magic commands 32
-Mastering IPython configuration system 36
-Creating a simple kernel for IPython 39
-Chapter 2: Best Practices in Interactive Computing 45
-Introduction 45
-Choosing (or not) between Python 2 and Python 3 46
-Effcient interactive computing workﬂows with IPython 50
-Learning the basics of the distributed version control system Git 53
-A typical workﬂow with Git branching 56
-Ten tips for conducting reproducible interactive computing experiments 59
-Writing high-quality Python code 63
-Writing unit tests with nose 67
-Debugging your code with IPython 74
-Chapter 3: Mastering the Notebook 79
-Introduction 79
-Teaching programming in the notebook with IPython blocks 84
-Converting an IPython notebook to other formats with nbconvert 89
-Adding custom controls in the notebook toolbar 94
-Customizing the CSS style in the notebook 96
-Using interactive widgets – a piano in the notebook 99
-Creating a custom JavaScript widget in the notebook – a spreadsheet editor for pandas 103
-Processing webcam images in real time from the notebook 108
-Chapter 4: Profling and Optimization 115
-Introduction 115
-Evaluating the time taken by a statement in IPython 116
-Profling your code easily with cProfle and IPython 117
-Profling your code line-by-line with line_profler 121
-Profling the memory usage of your code with memory_profler 124
-Understanding the internals of NumPy to avoid unnecessary array copying 127
-Using stride tricks with NumPy 133
-Implementing an effcient rolling average algorithm with stride tricks 135
-Making effcient array selections in NumPy 138
-Processing huge NumPy arrays with memory mapping 140
-Manipulating large arrays with HDF5 and PyTables 142
-Manipulating large heterogeneous tables with HDF5 and PyTables 146
-Chapter 5: High-performance Computing 149
-Introduction 149
-Accelerating pure Python code with Numba and Just-In-Time compilation 154
-Accelerating array computations with Numexpr 158
-Wrapping a C library in Python with ctypes 159
-Accelerating Python code with Cython 163
-Optimizing Cython code by writing less Python and more C 167
-Releasing the GIL to take advantage of multi-core processors with Cython and OpenMP 174
-Writing massively parallel code for NVIDIA graphics cards (GPUs) with CUDA 175
-Writing massively parallel code for heterogeneous platforms with OpenCL 181
-Distributing Python code across multiple cores with IPython 185
-Interacting with asynchronous parallel tasks in IPython 189
-Parallelizing code with MPI in IPython 192
-Trying the Julia language in the notebook 195
-Chapter 6: Advanced Visualization 201
-Introduction 201
-Making nicer matplotlib fgures with prettyplotlib 202
-Creating beautiful statistical plots with seaborn 205
-Creating interactive web visualizations with Bokeh 208
-Visualizing a NetworkX graph in the IPython notebook with D3.js 211
-Converting matplotlib fgures to D3.js visualizations with mpld3 215
-Getting started with Vispy for high-performance interactive data visualizations 218
-Chapter 7: Statistical Data Analysis 225
-Introduction 225
-Exploring a dataset with pandas and matplotlib 229
-Getting started with statistical hypothesis testing – a simple z-test 233
-Getting started with Bayesian methods 236
-Estimating the correlation between two variables with a contingency table and a chi-squared test 241
-Fitting a probability distribution to data with the maximum likelihood method 245
-Estimating a probability distribution nonparametrically with a kernel density estimation 251
-Fitting a Bayesian model by sampling from a posterior distribution with a Markov chain Monte Carlo method 255
-Analyzing data with the R programming language in the IPython notebook 261
-Chapter 8: Machine Learning 267
-Introduction 267
-Getting started with scikit-learn 273
-Predicting who will survive on the Titanic with logistic regression 281
-Learning to recognize handwritten digits with a K-nearest neighbors classifer 285
-Learning from text – Naive Bayes for Natural Language Processing 289
-Using support vector machines for classifcation tasks 293
-Using a random forest to select important features for regression 298
-Reducing the dimensionality of a dataset with a principal component analysis 302
-Detecting hidden structures in a dataset with clustering 306
-Chapter 9: Numerical Optimization 311
-Introduction 311
-Finding the root of a mathematical function 314
-Minimizing a mathematical function 317
-Fitting a function to data with nonlinear least squares 323
-Finding the equilibrium state of a physical system by minimizing its potential energy 326
-Chapter 10: Signal Processing 333
-Introduction 333
-Analyzing the frequency components of a signal with a Fast Fourier Transform 337
-Applying a linear flter to a digital signal 343
-Computing the autocorrelation of a time series 349
-Chapter 11: Image and Audio Processing 353
-Introduction 353
-Manipulating the exposure of an image 355
-Applying flters on an image 358
-Segmenting an image 362
-Finding points of interest in an image 367
-Detecting faces in an image with OpenCV 370
-Applying digital flters to speech sounds 373
-Creating a sound synthesizer in the notebook 377
-Chapter 12: Deterministic Dynamical Systems 381
-Introduction 381
-Plotting the bifurcation diagram of a chaotic dynamical system 383
-Simulating an elementary cellular automaton 387
-Simulating an ordinary differential equation with SciPy 390
-Simulating a partial differential equation – reaction-diffusion systems and Turing patterns 394
-Chapter 13: Stochastic Dynamical Systems 401
-Introduction 401
-Simulating a discrete-time Markov chain 402
-Simulating a Poisson process 406
-Simulating a Brownian motion 410
-Simulating a stochastic differential equation 412
-Chapter 14: Graphs, Geometry, and Geographic Information Systems 417
-Introduction 417
-Manipulating and visualizing graphs with NetworkX 421
-Analyzing a social network with NetworkX 425
-Resolving dependencies in a directed acyclic graph with a topological sort 430
-Computing connected components in an image 434
-Computing the Voronoi diagram of a set of points 438
-Manipulating geospatial data with Shapely and basemap 442
-Creating a route planner for a road network 446
-Chapter 15: Symbolic and Numerical Mathematics 453
-Introduction 453
-Diving into symbolic computing with SymPy 454
-Solving equations and inequalities 457
-Analyzing real-valued functions 458
-Computing exact probabilities and manipulating random variables 460
-A bit of number theory with SymPy 462
-Finding a Boolean propositional formula from a truth table 465
-Analyzing a nonlinear differential system – Lotka-Volterra (predator-prey) equations 467
-Getting started with Sage 470
-Index 473
-</code></pre>
-
-<h4 id="introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis<a class="headerlink" href="#introduction-to-python-for-econometrics-statistics-and-data-analysis" title="Permanent link">&para;</a></h4>
-<pre><code>1 Introduction 1
-1.1 Background 1
-1.2 Conventions 2
-1.3 Important Components of the Python Scientific Stack 3
-1.4 Setup 4
-1.5 Using Python 6
-1.6 Exercises 17
-1.A Frequently Encountered Problems 17
-1.B register_python.py 18
-1.C Advanced Setup 19
-2 Python 2.7 vs. 3 (and the rest) 27
-2.1 Python 2.7 vs. 3 27
-2.2 Intel Math Kernel Library and AMD Core Math Library 27
-2.3 Other Variants 28
-2.A Relevant Differences between Python 2.7 and 3 29
-3 Built-in Data Types 31
-3.1 Variable Names 31
-3.2 Core Native Data Types 32
-3.3 Python and Memory Management 42
-3.4 Exercises 44
-4 Arrays and Matrices 47
-4.1 Array 47
-4.2 Matrix 49
-4.3 1-dimensional Arrays 50
-4.4 2-dimensional Arrays 51
-4.5 Multidimensional Arrays 51
-4.6 Concatenation 51
-4.7 Accessing Elements of an Array 52
-4.8 Slicing and Memory Management 57
-4.9 import and Modules 59
-4.10 Calling Functions 59
-4.11 Exercises 61
-5 Basic Math 63
-5.1 Operators 63
-5.2 Broadcasting 64
-5.3 Array and Matrix Addition (+) and Subtraction (-) 65
-5.4 Array Multiplication (x) 66
-5.5 Matrix Multiplication (x) 66
-5.6 Array and Matrix Division (=) 66
-5.7 Array Exponentiation (xx) 66
-5.8 Matrix Exponentiation (xx) 67
-5.9 Parentheses 67
-5.10 Transpose 67
-5.11 Operator Precedence 67
-5.12 Exercises 68
-6 Basic Functions and Numerical Indexing 71
-6.1 Generating Arrays and Matrices 71
-6.2 Rounding 74
-6.3 Mathematics 75
-6.4 Complex Values 77
-6.5 Set Functions 77
-6.6 Sorting and Extreme Values 78
-6.7 Nan Functions 80
-6.8 Functions and Methods/Properties 81
-6.9 Exercises 82
-7 Special Arrays 83
-7.1 Exercises 84
-8 Array and Matrix Functions 85
-8.1 Views 85
-8.2 Shape Information and Transformation 86
-8.3 Linear Algebra Functions 93
-8.4 Exercises 96
-9 Importing and Exporting Data 99
-9.1 Importing Data using pandas 99
-9.2 Importing Data without pandas 100
-9.3 Saving or Exporting Data using pandas 106
-9.4 Saving or Exporting Data without pandas 106
-9.5 Exercises 107
-10 Inf, NaN and Numeric Limits 109
-10.1 inf and NaN 109
-10.2 Floating point precision 109
-10.3 Exercises 110
-11 Logical Operators and Find 113
-11.1 &gt;, &gt;=, &lt;, &lt;=, ==, != 113
-11.2 and, or, not and xor 114
-11.3 Multiple tests 115
-11.4 is* 116
-11.5 Exercises 117
-12 Advanced Selection and Assignment 119
-12.1 Numerical Indexing 119
-12.2 Logical Indexing 124
-12.3 Performance Considerations and Memory Management 128
-12.4 Assignment with Broadcasting 128
-12.5 Exercises 130
-13 Flow Control, Loops and Exception Handling 133
-13.1 Whitespace and Flow Control 133
-13.2 if . . . elif . . . else  133
-13.3 for 134
-13.4 while 137
-13.5 try . . . except 139
-13.6 List Comprehensions 139
-13.7 Tuple, Dictionary and Set Comprehensions 141
-13.8 Exercises 141
-14 Dates and Times 143
-14.1 Creating Dates and Times 143
-14.2 Dates Mathematics 143
-14.3 Numpy datetime64 144
-15 Graphics 147
-15.1 seaborn 147
-15.2 2D Plotting 147
-15.3 Advanced 2D Plotting 153
-15.4 3D Plotting 162
-15.5 General Plotting Functions 165
-15.6 Exporting Plots 165
-15.7 Exercises 166
-16 Structured Arrays 167
-16.1 Mixed Arrays with Column Names 167
-16.2 Record Arrays 170
-17 pandas 171
-17.1 Data Structures 171
-17.2 Statistical Function 191
-17.3 Time-series Data 192
-17.4 Importing and Exporting Data 196
-17.5 Graphics 200
-17.6 Examples 201
-18 Custom Function and Modules 207
-18.1 Functions 207
-18.2 Variable Scope 214
-18.3 Example: Least Squares with Newey-West Covariance 215
-18.4 Anonymous Functions 216
-18.5 Modules 216
-18.6 Packages 217
-18.7 PYTHONPATH 219
-18.8 Python Coding Conventions 219
-18.9 Exercises 220
-18.A Listing of econometrics.py 221
-19 Probability and Statistics Functions 225
-19.1 Simulating Random Variables 225
-19.2 Simulation and Random Number Generation 229
-19.3 Statistics Functions 231
-19.4 Continuous Random Variables 234
-19.5 Select Statistics Functions 237
-19.6 Select Statistical Tests 240
-19.7 Exercises 241
-20 Non-linear Function Optimization 243
-20.1 Unconstrained Optimization 244
-20.2 Derivative-free Optimization 247
-20.3 Constrained Optimization 248
-20.4 Scalar Function Minimization 252
-20.5 Nonlinear Least Squares 253
-20.6 Exercises 254
-21 String Manipulation 255
-21.1 String Building 255
-21.2 String Functions 256
-21.3 Formatting Numbers 260
-21.4 Regular Expressions 264
-21.5 Safe Conversion of Strings 265
-22 File System Operations 267
-22.1 Changing the Working Directory 267
-22.2 Creating and Deleting Directories 267
-22.3 Listing the Contents of a Directory 268
-22.4 Copying, Moving and Deleting Files 268
-22.5 Executing Other Programs 269
-22.6 Creating and Opening Archives 269
-22.7 Reading and Writing Files 270
-22.8 Exercises 272
-23 Performance and Code Optimization 273
-23.1 Getting Started 273
-23.2 Timing Code 273
-23.3 Vectorize to Avoid Unnecessary Loops 274
-23.4 Alter the loop dimensions 275
-23.5 Utilize Broadcasting 276
-23.6 Use In-place Assignment 276
-23.7 Avoid Allocating Memory 276
-23.8 Inline Frequent Function Calls 276
-23.9 Consider Data Locality in Arrays 276
-23.10 Profile Long Running Functions 277
-23.11 Numba 282
-23.12 Cython 288
-23.13 External Code 297
-23.14 Exercises 302
-24 Executing Code in Parallel 303
-24.1 map and related functions 303
-24.2 multiprocessing 304
-24.3 joblib 306
-24.4 IPython’s Parallel Cluster 308
-24.5 Converting a Serial Program to Parallel 314
-24.6 Other Concerns when executing in Parallel 316
-25 Object Oriented Programming (OOP) 319
-25.1 Introduction 319
-25.2 Class basics 320
-25.3 Building a class for Autoregressions 322
-25.4 Exercises 329
-26 Other Interesting Python Packages 331
-26.1 statsmodels 331
-26.2 pytz and babel 331
-26.3 rpy2 331
-26.4 PyTables and h5py 331
-27 Examples 333
-27.1 Estimating the Parameters of a GARCH Model 333
-27.2 Estimating the Risk Premia using Fama-MacBeth Regressions 338
-27.3 Estimating the Risk Premia using GMM 341
-27.4 Outputting L ATEX 344
-28 Quick Reference 347
-28.1 Built-ins 347
-28.2 NumPy (numpy) 354
-28.3 SciPy 369
-28.4 Matplotlib 372
-28.5 Pandas 374
-28.6 IPython 378
-</code></pre>
-
-<h4 id="building-machine-learning-systems-with-python">Building Machine Learning Systems with Python<a class="headerlink" href="#building-machine-learning-systems-with-python" title="Permanent link">&para;</a></h4>
-<pre><code>Chapter 1: Getting Started with Python Machine Learning 7
-Machine learning and Python – the dream team 8
-What the book will teach you (and what it will not) 9
-What to do when you are stuck 10
-Getting started 11
-Introduction to NumPy, SciPy, and Matplotlib 12
-Installing Python 12
-Chewing data effciently with NumPy and intelligently with SciPy 12
-Learning NumPy 13
-Indexing 15
-Handling non-existing values 15
-Comparing runtime behaviors 16
-Learning SciPy 17
-Our frst (tiny) machine learning application 19
-Reading in the data 19
-Preprocessing and cleaning the data 20
-Choosing the right model and learning algorithm 22
-Before building our frst model 22
-Starting with a simple straight line 22
-Towards some advanced stuff 24
-Stepping back to go forward – another look at our data 26
-Training and testing 28
-Answering our initial question 30
-Summary 31
-Chapter 2: Learning How to Classify with Real-world Examples 33
-The Iris dataset 33
-The frst step is visualization 34
-Building our frst classifcation model 35
-Evaluation – holding out data and cross-validation 38
-Building more complex classifers 40
-A more complex dataset and a more complex classifer 41
-Learning about the Seeds dataset 42
-Features and feature engineering 43
-Nearest neighbor classifcation 44
-Binary and multiclass classifcation 47
-Summary 48
-Chapter 3: Clustering – Finding Related Posts 49
-Measuring the relatedness of posts 50
-How not to do it 50
-How to do it 51
-Preprocessing – similarity measured as similar number of common words 51
-Converting raw text into a bag-of-words 52
-Counting words 53
-Normalizing the word count vectors 56
-Removing less important words 56
-Stemming 57
-Installing and using NLTK 58
-Extending the vectorizer with NLTK's stemmer 59
-Stop words on steroids 60
-Our achievements and goals 61
-Clustering 62
-KMeans 63
-Getting test data to evaluate our ideas on 65
-Clustering posts 67
-Solving our initial challenge 68
-Another look at noise 71
-Tweaking the parameters 72
-Summary 73
-Chapter 4: Topic Modeling 75
-Latent Dirichlet allocation (LDA) 75
-Building a topic model 76
-Comparing similarity in topic space 80
-Modeling the whole of Wikipedia 83
-Choosing the number of topics 86
-Summary 87
-Chapter 5: Classifcation – Detecting Poor Answers 89
-Sketching our roadmap 90
-Learning to classify classy answers 90
-Tuning the instance 90
-Tuning the classifer 90
-Fetching the data 91
-Slimming the data down to chewable chunks 92
-Preselection and processing of attributes 93
-Defning what is a good answer 94
-Creating our frst classifer 95
-Starting with the k-nearest neighbor (kNN) algorithm 95
-Engineering the features 96
-Training the classifer 97
-Measuring the classifer's performance 97
-Designing more features 98
-Deciding how to improve 101
-Bias-variance and its trade-off 102
-Fixing high bias 102
-Fixing high variance 103
-High bias or low bias 103
-Using logistic regression 105
-A bit of math with a small example 106
-Applying logistic regression to our postclassifcation problem 108
-Looking behind accuracy – precision and recall 110
-Slimming the classifer 114
-Ship it! 115
-Summary 115
-Chapter 6: Classifcation II – Sentiment Analysis 117
-Sketching our roadmap 117
-Fetching the Twitter data 118
-Introducing the Naive Bayes classifer 118
-Getting to know the Bayes theorem 119
-Being naive 120
-Using Naive Bayes to classify 121
-Accounting for unseen words and other oddities 124
-Accounting for arithmetic underﬂows 125
-Creating our frst classifer and tuning it 127
-Solving an easy problem frst 128
-Using all the classes 130
-Tuning the classifer's parameters 132
-Cleaning tweets 136
-Taking the word types into account 138
-Determining the word types 139
-Successfully cheating using SentiWordNet 141
-Our frst estimator 143
-Putting everything together 145
-Summary 146
-Chapter 7: Regression – Recommendations 147
-Predicting house prices with regression 147
-Multidimensional regression 151
-Cross-validation for regression 151
-Penalized regression 153
-L1 and L2 penalties 153
-Using Lasso or Elastic nets in scikit-learn 154
-P greater than N scenarios 155
-An example based on text 156
-Setting hyperparameters in a smart way 158
-Rating prediction and recommendations 159
-Summary 163
-Chapter 8: Regression – Recommendations Improved 165
-Improved recommendations 165
-Using the binary matrix of recommendations 166
-Looking at the movie neighbors 168
-Combining multiple methods 169
-Basket analysis 172
-Obtaining useful predictions 173
-Analyzing supermarket shopping baskets 173
-Association rule mining 176
-More advanced basket analysis 178
-Summary 179
-Chapter 9: Classifcation III – Music Genre Classifcation 181
-Sketching our roadmap 181
-Fetching the music data 182
-Converting into a wave format 182
-Looking at music 182
-Decomposing music into sine wave components 184
-Using FFT to build our frst classifer 186
-Increasing experimentation agility 186
-Training the classifer 187
-Using the confusion matrix to measure accuracy in multiclass problems 188
-An alternate way to measure classifer performance using receiver operator characteristic (ROC) 190
-Improving classifcation performance with Mel Frequency Cepstral Coeffcients 193
-Summary 197
-Chapter 10: Computer Vision – Pattern Recognition 199
-Introducing image processing 199
-Loading and displaying images 200
-Basic image processing 201
-Thresholding 202
-Gaussian blurring 205
-Filtering for different effects 207
-Adding salt and pepper noise 207
-Putting the center in focus 208
-Pattern recognition 210
-Computing features from images 211
-Writing your own features 212
-Classifying a harder dataset 215
-Local feature representations 216
-Summary 219
-Chapter 11: Dimensionality Reduction 221
-Sketching our roadmap 222
-Selecting features 222
-Detecting redundant features using flters 223
-Correlation 223
-Mutual information 225
-Asking the model about the features using wrappers 230
-Other feature selection methods 232
-Feature extraction 233
-About principal component analysis (PCA) 233
-Sketching PCA 234
-Applying PCA 234
-Limitations of PCA and how LDA can help 236
-Multidimensional scaling (MDS) 237
-Summary 240
-Chapter 12: Big(ger) Data 241
-Learning about big data 241
-Using jug to break up your pipeline into tasks 242
-About tasks 242
-Reusing partial results 245
-Looking under the hood 246
-Using jug for data analysis 246
-Using Amazon Web Services (AWS) 248
-Creating your frst machines 250
-Installing Python packages on Amazon Linux 253
-Running jug on our cloud machine 254
-Automating the generation of clusters with starcluster 255
-Summary 259
-Appendix: Where to Learn More about Machine Learning 261
-Online courses 261
-Books 261
-Q&amp;A sites 262
-Blogs 262
-Data sources 263
-Getting competitive 263
-What was left out 264
-Summary 264
-Index 265
-</code></pre>
-
-<h4 id="scipy-lecture-notes">Scipy Lecture Notes<a class="headerlink" href="#scipy-lecture-notes" title="Permanent link">&para;</a></h4>
-<pre><code>I Getting started with Python for science 2
-1 Scientific computing with tools and workflow 4
-1.1 Why Python? 4
-1.2 Scientific Python building blocks 5
-1.3 The interactive workflow: IPython and a text editor 6
-2 The Python language 10
-2.1 First steps 10
-2.2 Basic types 11
-2.3 Control Flow 18
-2.4 Defining functions 22
-2.5 Reusing code: scripts and modules 27
-2.6 Input and Output 34
-2.7 Standard Library 35
-2.8 Exception handling in Python 39
-2.9 Object-oriented programming (OOP) 42
-3 NumPy: creating and manipulating numerical data 43
-3.1 The Numpy array object 43
-3.2 Numerical operations on arrays 55
-3.3 More elaborate arrays 68
-3.4 Advanced operations 72
-3.5 Some exercises 77
-4 Matplotlib: plotting 82
-4.1 Introduction 82
-4.2 Simple plot 83
-4.3 Figures, Subplots, Axes and Ticks 89
-4.4 Other Types of Plots: examples and exercises 90
-4.5 Beyond this tutorial 96
-4.6 Quick references 98
-5 Scipy : high-level scientific computing 101
-5.1 File input/output: scipy.io 102
-5.2 Special functions: scipy.special 103
-5.3 Linear algebra operations: scipy.linalg 103
-5.4 Fast Fourier transforms: scipy.fftpack 104
-5.5 Optimization and fit: scipy.optimize 109
-5.6 Statistics and random numbers: scipy.stats 113
-5.7 Interpolation: scipy.interpolate 115
-5.8 Numerical integration: scipy.integrate 116
-5.9 Signal processing: scipy.signal 118
-5.10 Image processing: scipy.ndimage 120
-5.11 Summary exercises on scientific computing 124
-6 Getting help and finding documentation 137
-II Advanced topics 140
-7 Advanced Python Constructs 142
-7.1 Iterators, generator expressions and generators 142
-7.2 Decorators 147
-7.3 Context managers 155
-8 Advanced Numpy 159
-8.1 Life of ndarray 160
-8.2 Universal functions 173
-8.3 Interoperability features 182
-8.4 Array siblings: chararray, maskedarray, matrix 185
-8.5 Summary 188
-8.6 Contributing to Numpy/Scipy 188
-9 Debugging code 192
-9.1 Avoiding bugs 192
-9.2 Debugging workflow 195
-9.3 Using the Python debugger 195
-9.4 Debugging segmentation faults using gdb 200
-10 Optimizing code 203
-10.1 Optimization workflow 203
-10.2 Profiling Python code 203
-10.3 Making code go faster 206
-10.4 Writing faster numerical code 207
-11 Sparse Matrices in SciPy 210
-11.1 Introduction 210
-11.2 Storage Schemes 212
-11.3 Linear System Solvers 224
-11.4 Other Interesting Packages 229
-12 Image manipulation and processing using Numpy and Scipy 230
-12.1 Opening and writing to image files 231
-12.2 Displaying images 232
-12.3 Basic manipulations 233
-12.4 Image filtering 235
-12.5 Feature extraction 240
-12.6 Measuring objects properties: ndimage.measurements 243
-13 Mathematical optimization: finding minima of functions 248
-13.1 Knowing your problem 249
-13.2 A review of the different optimizers 251
-13.3 Practical guide to optimization with scipy 258
-13.4 Special case: non-linear least-squares 260
-13.5 Optimization with constraints 261
-14 Interfacing with C 263
-14.1 Introduction 263
-14.2 Python-C-Api 264
-14.3 Ctypes 268
-14.4 SWIG 272
-14.5 Cython 276
-14.6 Summary 279
-14.7 Further Reading and References 280
-14.8 Exercises 280
-III Packages and applications 282
-15 Statistics in Python 284
-15.1 Data representation and interaction 285
-15.2 Hypothesis testing: comparing two groups 289
-15.3 Linear models, multiple factors, and analysis of variance 292
-15.4 More visualization: seaborn for statistical exploration 297
-15.5 Testing for interactions 299
-16 Sympy : Symbolic Mathematics in Python 301
-16.1 First Steps with SymPy 302
-16.2 Algebraic manipulations 303
-16.3 Calculus 304
-16.4 Equation solving 305
-16.5 Linear Algebra 306
-17 Scikit-image: image processing 308
-17.1 Introduction and concepts 308
-17.2 Input/output, data types and colorspaces 310
-17.3 Image preprocessing / enhancement 312
-17.4 Image segmentation 315
-17.5 Measuring regions’ properties 318
-17.6 Data visualization and interaction 318
-17.7 Feature extraction for computer vision 320
-18 Traits: building interactive dialogs 322
-18.1 Introduction 323
-18.2 Example 323
-18.3 What are Traits 324
-19 3D plotting with Mayavi 340
-19.1 Mlab: the scripting interface 340
-19.2 Interactive work 346
-19.3 Slicing and dicing data: sources, modules and filters 347
-19.4 Animating the data 349
-19.5 Making interactive dialogs 350
-19.6 Putting it together 351
-20 scikit-learn: machine learning in Python 353
-20.1 Loading an example dataset 354
-20.2 Classification 355
-20.3 Clustering: grouping observations together 357
-20.4 Dimension Reduction with Principal Component Analysis 359
-20.5 Putting it all together: face recognition 360
-20.6 Linear model: from regression to sparsity 361
-20.7 Model selection: choosing estimators and their parameters 362
-Index 363
-</code></pre>
+<h3 id="ipython-notebook-essentials">Ipython Notebook Essentials<a class="headerlink" href="#ipython-notebook-essentials" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: A Tour of the IPython Notebook 7<br />
+Getting started with Anaconda or Wakari 8<br />
+Installing Anaconda 8<br />
+Running the notebook 8<br />
+Creating a Wakari account 10<br />
+Creating your frst notebook 11<br />
+Example – the coffee cooling problem 12<br />
+Exercises 22<br />
+Summary 22<br />
+Chapter 2: The Notebook Interface 23<br />
+Editing and navigating a notebook 23<br />
+Getting help and interrupting computations 25<br />
+The Edit mode 25<br />
+The Command mode 28<br />
+Cell types 29<br />
+IPython magics 33<br />
+Interacting with the operating system 37<br />
+Saving the notebook 37<br />
+Converting the notebook to other formats 38<br />
+Running shell commands 39<br />
+Running scripts, loading data, and saving data 41<br />
+Running Python scripts 41<br />
+Running scripts in other languages 43<br />
+Loading and saving data 45<br />
+The rich display system 47<br />
+Images and YouTube videos 47<br />
+HTML 49<br />
+Summary 52<br />
+Chapter 3: Graphics with matplotlib 53<br />
+The plot function 54<br />
+Adding a title, labels, and a legend 59<br />
+Text and annotations 62<br />
+Three-dimensional plots 66<br />
+Animations 71<br />
+Summary 77<br />
+Chapter 4: Handling Data with pandas 79<br />
+The Series class 79<br />
+The DataFrame class 88<br />
+Computational and graphics tools 95<br />
+An example with a realistic dataset 101<br />
+Summary 108<br />
+Chapter 5: Advanced Computing with SciPy, Numba, and NumbaPro 109<br />
+Overview of SciPy 109<br />
+Advanced mathematical algorithms with SciPy 111<br />
+Solving equations and fnding optimal values 111<br />
+Calculus and differential equations 117<br />
+Accelerating computations with Numba and NumbaPro 128<br />
+Summary 138<br />
+Appendix A: IPython Notebook Reference Card 139<br />
+Starting the notebook 139<br />
+Keyboard shortcuts 139<br />
+Shortcuts in the Edit mode 139<br />
+Shortcuts in the Command mode 140<br />
+Importing modules 141<br />
+Getting help 141<br />
+Appendix B: A Brief Review of Python 143<br />
+Introduction 143<br />
+Basic types, expressions, and variables and their assignment 143<br />
+Sequence types 147<br />
+Lists 147<br />
+Tuples 150<br />
+Strings 151<br />
+Dictionaries 152<br />
+Control structures 152<br />
+Functions, objects, and methods 156<br />
+Functions 156<br />
+Objects and methods 158<br />
+Summary 159<br />
+Appendix C: NumPy Arrays 161<br />
+Introduction 161<br />
+Array creation and member access 161<br />
+Indexing and Slicing 164<br />
+Index 167</p>
+<h3 id="learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization<a class="headerlink" href="#learning-ipython-for-interactive-computing-and-data-visualization" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: Getting Started with IPython 5<br />
+Installing IPython and the recommended packages 6<br />
+Prerequisites for IPython 6<br />
+Installing an all-in-one distribution 7<br />
+Installing the packages one by one 7<br />
+Packages websites 8<br />
+Getting binary installers 9<br />
+Using the Python packaging system 11<br />
+Installing the development versions 12<br />
+Ten IPython essentials 13<br />
+Running the IPython console 13<br />
+Using IPython as a system shell 14<br />
+Using the history 15<br />
+Tab completion 15<br />
+Executing a script with the %run command 16<br />
+Quick benchmarking with the %timeit command 17<br />
+Quick debugging with the %debug command 17<br />
+Interactive computing with Pylab 18<br />
+Using the IPython Notebook 19<br />
+Customizing IPython 19<br />
+Summary 20<br />
+Chapter 2: Interactive Work with IPython 21<br />
+The extended shell 21<br />
+Navigating through the flesystem 22<br />
+Accessing the system shell from IPython 24<br />
+The extended Python console 25<br />
+Exploring the history 26<br />
+Import/export of Python code 27<br />
+Importing code in IPython 27<br />
+Exporting code to a fle 29<br />
+Dynamic introspection 29<br />
+Tab completion 29<br />
+Source code introspection 31<br />
+Using the interactive debugger 32<br />
+Interactive benchmarking and profling 33<br />
+Controlling the execution time of a command 33<br />
+Profling a script 34<br />
+Using the IPython notebook 35<br />
+Installation 36<br />
+The notebook dashboard 36<br />
+Working with cells 37<br />
+Cell magics 38<br />
+Managing notebooks 39<br />
+Multimedia and rich text editing 39<br />
+Graph plotting 40<br />
+Summary 41<br />
+Chapter 3: Numerical Computing with IPython 43<br />
+A primer to vector computing 44<br />
+An example of computation with Python loops 44<br />
+What an array is 45<br />
+Reimplementing the example with arrays 48<br />
+Creating and loading arrays 50<br />
+Creating arrays 50<br />
+From scratch, element by element 50<br />
+From scratch, using predefned templates 51<br />
+From random values 52<br />
+Loading arrays 53<br />
+From a native Python object 53<br />
+From a buffer or an external fle 53<br />
+Using Pandas 54<br />
+Working with arrays 56<br />
+Selection 56<br />
+Using Pandas 57<br />
+Using NumPy 58<br />
+More indexing possibilities 59<br />
+Manipulation 60<br />
+Reshaping 60<br />
+Repeating and concatenating 61<br />
+Broadcasting 62<br />
+Permuting 63<br />
+Computation 63<br />
+Advanced mathematical processing 65<br />
+Summary 66<br />
+Chapter 4: Interactive Plotting and Graphical Interfaces 67<br />
+Figures with Matplotlib 68<br />
+Setting up IPython for interactive visualization 68<br />
+Using Matplotlib 68<br />
+Interactive navigation 69<br />
+Matplotlib in the IPython notebook 69<br />
+Standard plots 69<br />
+Curves 69<br />
+Scatter plots 71<br />
+Bar graphs 72<br />
+Plot customization 72<br />
+Styles and colors 73<br />
+Grid, axes, and legends 74<br />
+Interaction from IPython 75<br />
+Drawing multiple plots 76<br />
+Advanced fgures and graphics 76<br />
+Image processing 77<br />
+Loading images 77<br />
+Showing images 78<br />
+Using PIL 79<br />
+Advanced image processing – color quantization 79<br />
+Maps 81<br />
+3D plots 83<br />
+Animations 84<br />
+Other visualization packages 84<br />
+Graphical User Interfaces (GUI) 84<br />
+Setting up IPython for interactive GUIs 85<br />
+A &ldquo;Hello World&rdquo; example 85<br />
+Summary 87<br />
+Chapter 5: High-Performance and Parallel Computing 89<br />
+Interactive task parallelization 90<br />
+Parallel computing in Python 90<br />
+Distributing tasks on multiple cores 91<br />
+Starting the engines 91<br />
+Creating a Client instance 92<br />
+Using the parallel magic 92<br />
+Parallel map 93<br />
+A practical example – Monte Carlo simulations 95<br />
+Using MPI with IPython 96<br />
+Advanced parallel computing features of IPython 98<br />
+Using C in IPython with Cython 99<br />
+Installing and confguring Cython 99<br />
+Using Cython from IPython 100<br />
+Accelerating a pure Python algorithm with Cython 101<br />
+Pure Python version 101<br />
+Naïve Cython conversion 102<br />
+Adding C types 102<br />
+Using NumPy and Cython 103<br />
+Python version 103<br />
+Cython version 104<br />
+More advanced options for accelerating Python code 106<br />
+Summary 107<br />
+Chapter 6: Customizing IPython 109<br />
+IPython profles 109<br />
+Profle locations 110<br />
+The IPython confguration fles 110<br />
+Loading scripts when IPython starts 111<br />
+IPython extensions 111<br />
+Example – line-by-line profling 111<br />
+Creating new extensions 113<br />
+Example – executing C++ code in IPython 113<br />
+Rich representations in the frontend 115<br />
+Embedding IPython 117<br />
+Final words 117<br />
+Summary 118<br />
+Index 119</p>
+<h3 id="ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook<a class="headerlink" href="#ipython-interactive-computing-and-visualization-cookbook" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: A Tour of Interactive Computing with IPython 9<br />
+Introduction 9<br />
+Introducing the IPython notebook 13<br />
+Getting started with exploratory data analysis in IPython 22<br />
+Introducing the multidimensional array in NumPy for fast array computations 28<br />
+Creating an IPython extension with custom magic commands 32<br />
+Mastering IPython configuration system 36<br />
+Creating a simple kernel for IPython 39<br />
+Chapter 2: Best Practices in Interactive Computing 45<br />
+Introduction 45<br />
+Choosing (or not) between Python 2 and Python 3 46<br />
+Effcient interactive computing workﬂows with IPython 50<br />
+Learning the basics of the distributed version control system Git 53<br />
+A typical workﬂow with Git branching 56<br />
+Ten tips for conducting reproducible interactive computing experiments 59<br />
+Writing high-quality Python code 63<br />
+Writing unit tests with nose 67<br />
+Debugging your code with IPython 74<br />
+Chapter 3: Mastering the Notebook 79<br />
+Introduction 79<br />
+Teaching programming in the notebook with IPython blocks 84<br />
+Converting an IPython notebook to other formats with nbconvert 89<br />
+Adding custom controls in the notebook toolbar 94<br />
+Customizing the CSS style in the notebook 96<br />
+Using interactive widgets – a piano in the notebook 99<br />
+Creating a custom JavaScript widget in the notebook – a spreadsheet editor for pandas 103<br />
+Processing webcam images in real time from the notebook 108<br />
+Chapter 4: Profling and Optimization 115<br />
+Introduction 115<br />
+Evaluating the time taken by a statement in IPython 116<br />
+Profling your code easily with cProfle and IPython 117<br />
+Profling your code line-by-line with line_profler 121<br />
+Profling the memory usage of your code with memory_profler 124<br />
+Understanding the internals of NumPy to avoid unnecessary array copying 127<br />
+Using stride tricks with NumPy 133<br />
+Implementing an effcient rolling average algorithm with stride tricks 135<br />
+Making effcient array selections in NumPy 138<br />
+Processing huge NumPy arrays with memory mapping 140<br />
+Manipulating large arrays with HDF5 and PyTables 142<br />
+Manipulating large heterogeneous tables with HDF5 and PyTables 146<br />
+Chapter 5: High-performance Computing 149<br />
+Introduction 149<br />
+Accelerating pure Python code with Numba and Just-In-Time compilation 154<br />
+Accelerating array computations with Numexpr 158<br />
+Wrapping a C library in Python with ctypes 159<br />
+Accelerating Python code with Cython 163<br />
+Optimizing Cython code by writing less Python and more C 167<br />
+Releasing the GIL to take advantage of multi-core processors with Cython and OpenMP 174<br />
+Writing massively parallel code for NVIDIA graphics cards (GPUs) with CUDA 175<br />
+Writing massively parallel code for heterogeneous platforms with OpenCL 181<br />
+Distributing Python code across multiple cores with IPython 185<br />
+Interacting with asynchronous parallel tasks in IPython 189<br />
+Parallelizing code with MPI in IPython 192<br />
+Trying the Julia language in the notebook 195<br />
+Chapter 6: Advanced Visualization 201<br />
+Introduction 201<br />
+Making nicer matplotlib fgures with prettyplotlib 202<br />
+Creating beautiful statistical plots with seaborn 205<br />
+Creating interactive web visualizations with Bokeh 208<br />
+Visualizing a NetworkX graph in the IPython notebook with D3.js 211<br />
+Converting matplotlib fgures to D3.js visualizations with mpld3 215<br />
+Getting started with Vispy for high-performance interactive data visualizations 218<br />
+Chapter 7: Statistical Data Analysis 225<br />
+Introduction 225<br />
+Exploring a dataset with pandas and matplotlib 229<br />
+Getting started with statistical hypothesis testing – a simple z-test 233<br />
+Getting started with Bayesian methods 236<br />
+Estimating the correlation between two variables with a contingency table and a chi-squared test 241<br />
+Fitting a probability distribution to data with the maximum likelihood method 245<br />
+Estimating a probability distribution nonparametrically with a kernel density estimation 251<br />
+Fitting a Bayesian model by sampling from a posterior distribution with a Markov chain Monte Carlo method 255<br />
+Analyzing data with the R programming language in the IPython notebook 261<br />
+Chapter 8: Machine Learning 267<br />
+Introduction 267<br />
+Getting started with scikit-learn 273<br />
+Predicting who will survive on the Titanic with logistic regression 281<br />
+Learning to recognize handwritten digits with a K-nearest neighbors classifer 285<br />
+Learning from text – Naive Bayes for Natural Language Processing 289<br />
+Using support vector machines for classifcation tasks 293<br />
+Using a random forest to select important features for regression 298<br />
+Reducing the dimensionality of a dataset with a principal component analysis 302<br />
+Detecting hidden structures in a dataset with clustering 306<br />
+Chapter 9: Numerical Optimization 311<br />
+Introduction 311<br />
+Finding the root of a mathematical function 314<br />
+Minimizing a mathematical function 317<br />
+Fitting a function to data with nonlinear least squares 323<br />
+Finding the equilibrium state of a physical system by minimizing its potential energy 326<br />
+Chapter 10: Signal Processing 333<br />
+Introduction 333<br />
+Analyzing the frequency components of a signal with a Fast Fourier Transform 337<br />
+Applying a linear flter to a digital signal 343<br />
+Computing the autocorrelation of a time series 349<br />
+Chapter 11: Image and Audio Processing 353<br />
+Introduction 353<br />
+Manipulating the exposure of an image 355<br />
+Applying flters on an image 358<br />
+Segmenting an image 362<br />
+Finding points of interest in an image 367<br />
+Detecting faces in an image with OpenCV 370<br />
+Applying digital flters to speech sounds 373<br />
+Creating a sound synthesizer in the notebook 377<br />
+Chapter 12: Deterministic Dynamical Systems 381<br />
+Introduction 381<br />
+Plotting the bifurcation diagram of a chaotic dynamical system 383<br />
+Simulating an elementary cellular automaton 387<br />
+Simulating an ordinary differential equation with SciPy 390<br />
+Simulating a partial differential equation – reaction-diffusion systems and Turing patterns 394<br />
+Chapter 13: Stochastic Dynamical Systems 401<br />
+Introduction 401<br />
+Simulating a discrete-time Markov chain 402<br />
+Simulating a Poisson process 406<br />
+Simulating a Brownian motion 410<br />
+Simulating a stochastic differential equation 412<br />
+Chapter 14: Graphs, Geometry, and Geographic Information Systems 417<br />
+Introduction 417<br />
+Manipulating and visualizing graphs with NetworkX 421<br />
+Analyzing a social network with NetworkX 425<br />
+Resolving dependencies in a directed acyclic graph with a topological sort 430<br />
+Computing connected components in an image 434<br />
+Computing the Voronoi diagram of a set of points 438<br />
+Manipulating geospatial data with Shapely and basemap 442<br />
+Creating a route planner for a road network 446<br />
+Chapter 15: Symbolic and Numerical Mathematics 453<br />
+Introduction 453<br />
+Diving into symbolic computing with SymPy 454<br />
+Solving equations and inequalities 457<br />
+Analyzing real-valued functions 458<br />
+Computing exact probabilities and manipulating random variables 460<br />
+A bit of number theory with SymPy 462<br />
+Finding a Boolean propositional formula from a truth table 465<br />
+Analyzing a nonlinear differential system – Lotka-Volterra (predator-prey) equations 467<br />
+Getting started with Sage 470<br />
+Index 473</p>
+<h3 id="introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis<a class="headerlink" href="#introduction-to-python-for-econometrics-statistics-and-data-analysis" title="Permanent link">&para;</a></h3>
+<p>1 Introduction 1<br />
+1.1 Background 1<br />
+1.2 Conventions 2<br />
+1.3 Important Components of the Python Scientific Stack 3<br />
+1.4 Setup 4<br />
+1.5 Using Python 6<br />
+1.6 Exercises 17<br />
+1.A Frequently Encountered Problems 17<br />
+1.B register_python.py 18<br />
+1.C Advanced Setup 19<br />
+2 Python 2.7 vs. 3 (and the rest) 27<br />
+2.1 Python 2.7 vs. 3 27<br />
+2.2 Intel Math Kernel Library and AMD Core Math Library 27<br />
+2.3 Other Variants 28<br />
+2.A Relevant Differences between Python 2.7 and 3 29<br />
+3 Built-in Data Types 31<br />
+3.1 Variable Names 31<br />
+3.2 Core Native Data Types 32<br />
+3.3 Python and Memory Management 42<br />
+3.4 Exercises 44<br />
+4 Arrays and Matrices 47<br />
+4.1 Array 47<br />
+4.2 Matrix 49<br />
+4.3 1-dimensional Arrays 50<br />
+4.4 2-dimensional Arrays 51<br />
+4.5 Multidimensional Arrays 51<br />
+4.6 Concatenation 51<br />
+4.7 Accessing Elements of an Array 52<br />
+4.8 Slicing and Memory Management 57<br />
+4.9 import and Modules 59<br />
+4.10 Calling Functions 59<br />
+4.11 Exercises 61<br />
+5 Basic Math 63<br />
+5.1 Operators 63<br />
+5.2 Broadcasting 64<br />
+5.3 Array and Matrix Addition (+) and Subtraction (-) 65<br />
+5.4 Array Multiplication (x) 66<br />
+5.5 Matrix Multiplication (x) 66<br />
+5.6 Array and Matrix Division (=) 66<br />
+5.7 Array Exponentiation (xx) 66<br />
+5.8 Matrix Exponentiation (xx) 67<br />
+5.9 Parentheses 67<br />
+5.10 Transpose 67<br />
+5.11 Operator Precedence 67<br />
+5.12 Exercises 68<br />
+6 Basic Functions and Numerical Indexing 71<br />
+6.1 Generating Arrays and Matrices 71<br />
+6.2 Rounding 74<br />
+6.3 Mathematics 75<br />
+6.4 Complex Values 77<br />
+6.5 Set Functions 77<br />
+6.6 Sorting and Extreme Values 78<br />
+6.7 Nan Functions 80<br />
+6.8 Functions and Methods/Properties 81<br />
+6.9 Exercises 82<br />
+7 Special Arrays 83<br />
+7.1 Exercises 84<br />
+8 Array and Matrix Functions 85<br />
+8.1 Views 85<br />
+8.2 Shape Information and Transformation 86<br />
+8.3 Linear Algebra Functions 93<br />
+8.4 Exercises 96<br />
+9 Importing and Exporting Data 99<br />
+9.1 Importing Data using pandas 99<br />
+9.2 Importing Data without pandas 100<br />
+9.3 Saving or Exporting Data using pandas 106<br />
+9.4 Saving or Exporting Data without pandas 106<br />
+9.5 Exercises 107<br />
+10 Inf, NaN and Numeric Limits 109<br />
+10.1 inf and NaN 109<br />
+10.2 Floating point precision 109<br />
+10.3 Exercises 110<br />
+11 Logical Operators and Find 113<br />
+11.1 &gt;, &gt;=, &lt;, &lt;=, ==, != 113<br />
+11.2 and, or, not and xor 114<br />
+11.3 Multiple tests 115<br />
+11.4 is* 116<br />
+11.5 Exercises 117<br />
+12 Advanced Selection and Assignment 119<br />
+12.1 Numerical Indexing 119<br />
+12.2 Logical Indexing 124<br />
+12.3 Performance Considerations and Memory Management 128<br />
+12.4 Assignment with Broadcasting 128<br />
+12.5 Exercises 130<br />
+13 Flow Control, Loops and Exception Handling 133<br />
+13.1 Whitespace and Flow Control 133<br />
+13.2 if . . . elif . . . else  133<br />
+13.3 for 134<br />
+13.4 while 137<br />
+13.5 try . . . except 139<br />
+13.6 List Comprehensions 139<br />
+13.7 Tuple, Dictionary and Set Comprehensions 141<br />
+13.8 Exercises 141<br />
+14 Dates and Times 143<br />
+14.1 Creating Dates and Times 143<br />
+14.2 Dates Mathematics 143<br />
+14.3 Numpy datetime64 144<br />
+15 Graphics 147<br />
+15.1 seaborn 147<br />
+15.2 2D Plotting 147<br />
+15.3 Advanced 2D Plotting 153<br />
+15.4 3D Plotting 162<br />
+15.5 General Plotting Functions 165<br />
+15.6 Exporting Plots 165<br />
+15.7 Exercises 166<br />
+16 Structured Arrays 167<br />
+16.1 Mixed Arrays with Column Names 167<br />
+16.2 Record Arrays 170<br />
+17 pandas 171<br />
+17.1 Data Structures 171<br />
+17.2 Statistical Function 191<br />
+17.3 Time-series Data 192<br />
+17.4 Importing and Exporting Data 196<br />
+17.5 Graphics 200<br />
+17.6 Examples 201<br />
+18 Custom Function and Modules 207<br />
+18.1 Functions 207<br />
+18.2 Variable Scope 214<br />
+18.3 Example: Least Squares with Newey-West Covariance 215<br />
+18.4 Anonymous Functions 216<br />
+18.5 Modules 216<br />
+18.6 Packages 217<br />
+18.7 PYTHONPATH 219<br />
+18.8 Python Coding Conventions 219<br />
+18.9 Exercises 220<br />
+18.A Listing of econometrics.py 221<br />
+19 Probability and Statistics Functions 225<br />
+19.1 Simulating Random Variables 225<br />
+19.2 Simulation and Random Number Generation 229<br />
+19.3 Statistics Functions 231<br />
+19.4 Continuous Random Variables 234<br />
+19.5 Select Statistics Functions 237<br />
+19.6 Select Statistical Tests 240<br />
+19.7 Exercises 241<br />
+20 Non-linear Function Optimization 243<br />
+20.1 Unconstrained Optimization 244<br />
+20.2 Derivative-free Optimization 247<br />
+20.3 Constrained Optimization 248<br />
+20.4 Scalar Function Minimization 252<br />
+20.5 Nonlinear Least Squares 253<br />
+20.6 Exercises 254<br />
+21 String Manipulation 255<br />
+21.1 String Building 255<br />
+21.2 String Functions 256<br />
+21.3 Formatting Numbers 260<br />
+21.4 Regular Expressions 264<br />
+21.5 Safe Conversion of Strings 265<br />
+22 File System Operations 267<br />
+22.1 Changing the Working Directory 267<br />
+22.2 Creating and Deleting Directories 267<br />
+22.3 Listing the Contents of a Directory 268<br />
+22.4 Copying, Moving and Deleting Files 268<br />
+22.5 Executing Other Programs 269<br />
+22.6 Creating and Opening Archives 269<br />
+22.7 Reading and Writing Files 270<br />
+22.8 Exercises 272<br />
+23 Performance and Code Optimization 273<br />
+23.1 Getting Started 273<br />
+23.2 Timing Code 273<br />
+23.3 Vectorize to Avoid Unnecessary Loops 274<br />
+23.4 Alter the loop dimensions 275<br />
+23.5 Utilize Broadcasting 276<br />
+23.6 Use In-place Assignment 276<br />
+23.7 Avoid Allocating Memory 276<br />
+23.8 Inline Frequent Function Calls 276<br />
+23.9 Consider Data Locality in Arrays 276<br />
+23.10 Profile Long Running Functions 277<br />
+23.11 Numba 282<br />
+23.12 Cython 288<br />
+23.13 External Code 297<br />
+23.14 Exercises 302<br />
+24 Executing Code in Parallel 303<br />
+24.1 map and related functions 303<br />
+24.2 multiprocessing 304<br />
+24.3 joblib 306<br />
+24.4 IPython’s Parallel Cluster 308<br />
+24.5 Converting a Serial Program to Parallel 314<br />
+24.6 Other Concerns when executing in Parallel 316<br />
+25 Object Oriented Programming (OOP) 319<br />
+25.1 Introduction 319<br />
+25.2 Class basics 320<br />
+25.3 Building a class for Autoregressions 322<br />
+25.4 Exercises 329<br />
+26 Other Interesting Python Packages 331<br />
+26.1 statsmodels 331<br />
+26.2 pytz and babel 331<br />
+26.3 rpy2 331<br />
+26.4 PyTables and h5py 331<br />
+27 Examples 333<br />
+27.1 Estimating the Parameters of a GARCH Model 333<br />
+27.2 Estimating the Risk Premia using Fama-MacBeth Regressions 338<br />
+27.3 Estimating the Risk Premia using GMM 341<br />
+27.4 Outputting L ATEX 344<br />
+28 Quick Reference 347<br />
+28.1 Built-ins 347<br />
+28.2 NumPy (numpy) 354<br />
+28.3 SciPy 369<br />
+28.4 Matplotlib 372<br />
+28.5 Pandas 374<br />
+28.6 IPython 378</p>
+<h3 id="building-machine-learning-systems-with-python">Building Machine Learning Systems with Python<a class="headerlink" href="#building-machine-learning-systems-with-python" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: Getting Started with Python Machine Learning 7<br />
+Machine learning and Python – the dream team 8<br />
+What the book will teach you (and what it will not) 9<br />
+What to do when you are stuck 10<br />
+Getting started 11<br />
+Introduction to NumPy, SciPy, and Matplotlib 12<br />
+Installing Python 12<br />
+Chewing data effciently with NumPy and intelligently with SciPy 12<br />
+Learning NumPy 13<br />
+Indexing 15<br />
+Handling non-existing values 15<br />
+Comparing runtime behaviors 16<br />
+Learning SciPy 17<br />
+Our frst (tiny) machine learning application 19<br />
+Reading in the data 19<br />
+Preprocessing and cleaning the data 20<br />
+Choosing the right model and learning algorithm 22<br />
+Before building our frst model 22<br />
+Starting with a simple straight line 22<br />
+Towards some advanced stuff 24<br />
+Stepping back to go forward – another look at our data 26<br />
+Training and testing 28<br />
+Answering our initial question 30<br />
+Summary 31<br />
+Chapter 2: Learning How to Classify with Real-world Examples 33<br />
+The Iris dataset 33<br />
+The frst step is visualization 34<br />
+Building our frst classifcation model 35<br />
+Evaluation – holding out data and cross-validation 38<br />
+Building more complex classifers 40<br />
+A more complex dataset and a more complex classifer 41<br />
+Learning about the Seeds dataset 42<br />
+Features and feature engineering 43<br />
+Nearest neighbor classifcation 44<br />
+Binary and multiclass classifcation 47<br />
+Summary 48<br />
+Chapter 3: Clustering – Finding Related Posts 49<br />
+Measuring the relatedness of posts 50<br />
+How not to do it 50<br />
+How to do it 51<br />
+Preprocessing – similarity measured as similar number of common words 51<br />
+Converting raw text into a bag-of-words 52<br />
+Counting words 53<br />
+Normalizing the word count vectors 56<br />
+Removing less important words 56<br />
+Stemming 57<br />
+Installing and using NLTK 58<br />
+Extending the vectorizer with NLTK&rsquo;s stemmer 59<br />
+Stop words on steroids 60<br />
+Our achievements and goals 61<br />
+Clustering 62<br />
+KMeans 63<br />
+Getting test data to evaluate our ideas on 65<br />
+Clustering posts 67<br />
+Solving our initial challenge 68<br />
+Another look at noise 71<br />
+Tweaking the parameters 72<br />
+Summary 73<br />
+Chapter 4: Topic Modeling 75<br />
+Latent Dirichlet allocation (LDA) 75<br />
+Building a topic model 76<br />
+Comparing similarity in topic space 80<br />
+Modeling the whole of Wikipedia 83<br />
+Choosing the number of topics 86<br />
+Summary 87<br />
+Chapter 5: Classifcation – Detecting Poor Answers 89<br />
+Sketching our roadmap 90<br />
+Learning to classify classy answers 90<br />
+Tuning the instance 90<br />
+Tuning the classifer 90<br />
+Fetching the data 91<br />
+Slimming the data down to chewable chunks 92<br />
+Preselection and processing of attributes 93<br />
+Defning what is a good answer 94<br />
+Creating our frst classifer 95<br />
+Starting with the k-nearest neighbor (kNN) algorithm 95<br />
+Engineering the features 96<br />
+Training the classifer 97<br />
+Measuring the classifer&rsquo;s performance 97<br />
+Designing more features 98<br />
+Deciding how to improve 101<br />
+Bias-variance and its trade-off 102<br />
+Fixing high bias 102<br />
+Fixing high variance 103<br />
+High bias or low bias 103<br />
+Using logistic regression 105<br />
+A bit of math with a small example 106<br />
+Applying logistic regression to our postclassifcation problem 108<br />
+Looking behind accuracy – precision and recall 110<br />
+Slimming the classifer 114<br />
+Ship it! 115<br />
+Summary 115<br />
+Chapter 6: Classifcation II – Sentiment Analysis 117<br />
+Sketching our roadmap 117<br />
+Fetching the Twitter data 118<br />
+Introducing the Naive Bayes classifer 118<br />
+Getting to know the Bayes theorem 119<br />
+Being naive 120<br />
+Using Naive Bayes to classify 121<br />
+Accounting for unseen words and other oddities 124<br />
+Accounting for arithmetic underﬂows 125<br />
+Creating our frst classifer and tuning it 127<br />
+Solving an easy problem frst 128<br />
+Using all the classes 130<br />
+Tuning the classifer&rsquo;s parameters 132<br />
+Cleaning tweets 136<br />
+Taking the word types into account 138<br />
+Determining the word types 139<br />
+Successfully cheating using SentiWordNet 141<br />
+Our frst estimator 143<br />
+Putting everything together 145<br />
+Summary 146<br />
+Chapter 7: Regression – Recommendations 147<br />
+Predicting house prices with regression 147<br />
+Multidimensional regression 151<br />
+Cross-validation for regression 151<br />
+Penalized regression 153<br />
+L1 and L2 penalties 153<br />
+Using Lasso or Elastic nets in scikit-learn 154<br />
+P greater than N scenarios 155<br />
+An example based on text 156<br />
+Setting hyperparameters in a smart way 158<br />
+Rating prediction and recommendations 159<br />
+Summary 163<br />
+Chapter 8: Regression – Recommendations Improved 165<br />
+Improved recommendations 165<br />
+Using the binary matrix of recommendations 166<br />
+Looking at the movie neighbors 168<br />
+Combining multiple methods 169<br />
+Basket analysis 172<br />
+Obtaining useful predictions 173<br />
+Analyzing supermarket shopping baskets 173<br />
+Association rule mining 176<br />
+More advanced basket analysis 178<br />
+Summary 179<br />
+Chapter 9: Classifcation III – Music Genre Classifcation 181<br />
+Sketching our roadmap 181<br />
+Fetching the music data 182<br />
+Converting into a wave format 182<br />
+Looking at music 182<br />
+Decomposing music into sine wave components 184<br />
+Using FFT to build our frst classifer 186<br />
+Increasing experimentation agility 186<br />
+Training the classifer 187<br />
+Using the confusion matrix to measure accuracy in multiclass problems 188<br />
+An alternate way to measure classifer performance using receiver operator characteristic (ROC) 190<br />
+Improving classifcation performance with Mel Frequency Cepstral Coeffcients 193<br />
+Summary 197<br />
+Chapter 10: Computer Vision – Pattern Recognition 199<br />
+Introducing image processing 199<br />
+Loading and displaying images 200<br />
+Basic image processing 201<br />
+Thresholding 202<br />
+Gaussian blurring 205<br />
+Filtering for different effects 207<br />
+Adding salt and pepper noise 207<br />
+Putting the center in focus 208<br />
+Pattern recognition 210<br />
+Computing features from images 211<br />
+Writing your own features 212<br />
+Classifying a harder dataset 215<br />
+Local feature representations 216<br />
+Summary 219<br />
+Chapter 11: Dimensionality Reduction 221<br />
+Sketching our roadmap 222<br />
+Selecting features 222<br />
+Detecting redundant features using flters 223<br />
+Correlation 223<br />
+Mutual information 225<br />
+Asking the model about the features using wrappers 230<br />
+Other feature selection methods 232<br />
+Feature extraction 233<br />
+About principal component analysis (PCA) 233<br />
+Sketching PCA 234<br />
+Applying PCA 234<br />
+Limitations of PCA and how LDA can help 236<br />
+Multidimensional scaling (MDS) 237<br />
+Summary 240<br />
+Chapter 12: Big(ger) Data 241<br />
+Learning about big data 241<br />
+Using jug to break up your pipeline into tasks 242<br />
+About tasks 242<br />
+Reusing partial results 245<br />
+Looking under the hood 246<br />
+Using jug for data analysis 246<br />
+Using Amazon Web Services (AWS) 248<br />
+Creating your frst machines 250<br />
+Installing Python packages on Amazon Linux 253<br />
+Running jug on our cloud machine 254<br />
+Automating the generation of clusters with starcluster 255<br />
+Summary 259<br />
+Appendix: Where to Learn More about Machine Learning 261<br />
+Online courses 261<br />
+Books 261<br />
+Q&amp;A sites 262<br />
+Blogs 262<br />
+Data sources 263<br />
+Getting competitive 263<br />
+What was left out 264<br />
+Summary 264<br />
+Index 265</p>
+<h3 id="scipy-lecture-notes">Scipy Lecture Notes<a class="headerlink" href="#scipy-lecture-notes" title="Permanent link">&para;</a></h3>
+<p>I Getting started with Python for science 2<br />
+1 Scientific computing with tools and workflow 4<br />
+1.1 Why Python? 4<br />
+1.2 Scientific Python building blocks 5<br />
+1.3 The interactive workflow: IPython and a text editor 6<br />
+2 The Python language 10<br />
+2.1 First steps 10<br />
+2.2 Basic types 11<br />
+2.3 Control Flow 18<br />
+2.4 Defining functions 22<br />
+2.5 Reusing code: scripts and modules 27<br />
+2.6 Input and Output 34<br />
+2.7 Standard Library 35<br />
+2.8 Exception handling in Python 39<br />
+2.9 Object-oriented programming (OOP) 42<br />
+3 NumPy: creating and manipulating numerical data 43<br />
+3.1 The Numpy array object 43<br />
+3.2 Numerical operations on arrays 55<br />
+3.3 More elaborate arrays 68<br />
+3.4 Advanced operations 72<br />
+3.5 Some exercises 77<br />
+4 Matplotlib: plotting 82<br />
+4.1 Introduction 82<br />
+4.2 Simple plot 83<br />
+4.3 Figures, Subplots, Axes and Ticks 89<br />
+4.4 Other Types of Plots: examples and exercises 90<br />
+4.5 Beyond this tutorial 96<br />
+4.6 Quick references 98<br />
+5 Scipy : high-level scientific computing 101<br />
+5.1 File input/output: scipy.io 102<br />
+5.2 Special functions: scipy.special 103<br />
+5.3 Linear algebra operations: scipy.linalg 103<br />
+5.4 Fast Fourier transforms: scipy.fftpack 104<br />
+5.5 Optimization and fit: scipy.optimize 109<br />
+5.6 Statistics and random numbers: scipy.stats 113<br />
+5.7 Interpolation: scipy.interpolate 115<br />
+5.8 Numerical integration: scipy.integrate 116<br />
+5.9 Signal processing: scipy.signal 118<br />
+5.10 Image processing: scipy.ndimage 120<br />
+5.11 Summary exercises on scientific computing 124<br />
+6 Getting help and finding documentation 137<br />
+II Advanced topics 140<br />
+7 Advanced Python Constructs 142<br />
+7.1 Iterators, generator expressions and generators 142<br />
+7.2 Decorators 147<br />
+7.3 Context managers 155<br />
+8 Advanced Numpy 159<br />
+8.1 Life of ndarray 160<br />
+8.2 Universal functions 173<br />
+8.3 Interoperability features 182<br />
+8.4 Array siblings: chararray, maskedarray, matrix 185<br />
+8.5 Summary 188<br />
+8.6 Contributing to Numpy/Scipy 188<br />
+9 Debugging code 192<br />
+9.1 Avoiding bugs 192<br />
+9.2 Debugging workflow 195<br />
+9.3 Using the Python debugger 195<br />
+9.4 Debugging segmentation faults using gdb 200<br />
+10 Optimizing code 203<br />
+10.1 Optimization workflow 203<br />
+10.2 Profiling Python code 203<br />
+10.3 Making code go faster 206<br />
+10.4 Writing faster numerical code 207<br />
+11 Sparse Matrices in SciPy 210<br />
+11.1 Introduction 210<br />
+11.2 Storage Schemes 212<br />
+11.3 Linear System Solvers 224<br />
+11.4 Other Interesting Packages 229<br />
+12 Image manipulation and processing using Numpy and Scipy 230<br />
+12.1 Opening and writing to image files 231<br />
+12.2 Displaying images 232<br />
+12.3 Basic manipulations 233<br />
+12.4 Image filtering 235<br />
+12.5 Feature extraction 240<br />
+12.6 Measuring objects properties: ndimage.measurements 243<br />
+13 Mathematical optimization: finding minima of functions 248<br />
+13.1 Knowing your problem 249<br />
+13.2 A review of the different optimizers 251<br />
+13.3 Practical guide to optimization with scipy 258<br />
+13.4 Special case: non-linear least-squares 260<br />
+13.5 Optimization with constraints 261<br />
+14 Interfacing with C 263<br />
+14.1 Introduction 263<br />
+14.2 Python-C-Api 264<br />
+14.3 Ctypes 268<br />
+14.4 SWIG 272<br />
+14.5 Cython 276<br />
+14.6 Summary 279<br />
+14.7 Further Reading and References 280<br />
+14.8 Exercises 280<br />
+III Packages and applications 282<br />
+15 Statistics in Python 284<br />
+15.1 Data representation and interaction 285<br />
+15.2 Hypothesis testing: comparing two groups 289<br />
+15.3 Linear models, multiple factors, and analysis of variance 292<br />
+15.4 More visualization: seaborn for statistical exploration 297<br />
+15.5 Testing for interactions 299<br />
+16 Sympy : Symbolic Mathematics in Python 301<br />
+16.1 First Steps with SymPy 302<br />
+16.2 Algebraic manipulations 303<br />
+16.3 Calculus 304<br />
+16.4 Equation solving 305<br />
+16.5 Linear Algebra 306<br />
+17 Scikit-image: image processing 308<br />
+17.1 Introduction and concepts 308<br />
+17.2 Input/output, data types and colorspaces 310<br />
+17.3 Image preprocessing / enhancement 312<br />
+17.4 Image segmentation 315<br />
+17.5 Measuring regions’ properties 318<br />
+17.6 Data visualization and interaction 318<br />
+17.7 Feature extraction for computer vision 320<br />
+18 Traits: building interactive dialogs 322<br />
+18.1 Introduction 323<br />
+18.2 Example 323<br />
+18.3 What are Traits 324<br />
+19 3D plotting with Mayavi 340<br />
+19.1 Mlab: the scripting interface 340<br />
+19.2 Interactive work 346<br />
+19.3 Slicing and dicing data: sources, modules and filters 347<br />
+19.4 Animating the data 349<br />
+19.5 Making interactive dialogs 350<br />
+19.6 Putting it together 351<br />
+20 scikit-learn: machine learning in Python 353<br />
+20.1 Loading an example dataset 354<br />
+20.2 Classification 355<br />
+20.3 Clustering: grouping observations together 357<br />
+20.4 Dimension Reduction with Principal Component Analysis 359<br />
+20.5 Putting it all together: face recognition 360<br />
+20.6 Linear model: from regression to sparsity 361<br />
+20.7 Model selection: choosing estimators and their parameters 362<br />
+Index 363</p>
+                
+                  
+                
               
-            </div>
+              
+                
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Python Numpy Arrays/" class="btn btn-neutral float-right" title="Python Numpy Arrays">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Lists/" class="btn btn-neutral" title="Lists"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Lists/" title="Lists" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Lists
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Python Numpy Arrays/" title="Python Numpy Arrays" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Python Numpy Arrays
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>© Ugo Sparks</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Ugo Sparks
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
       </div>
-
-    </section>
-    
+      
+        
+      
+    </div>
   </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+</footer>
       
+    </div>
+    
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
       
-        <span><a href="../Lists/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
-        <span style="margin-left: 15px"><a href="../Python Numpy Arrays/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+    
       
-    </span>
-</div>
-    <script src="../js/theme.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-      <script src="../mathjaxhelper.js"></script>
-
-</body>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
 </html>

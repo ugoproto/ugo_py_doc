@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -23,25 +25,18 @@ Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
 
     Populating the interactive namespace from numpy and matplotlib
 
-
-
 ```python
 import numpy as np
 ```
-
 
 ```python
 np.__version__
 ```
 
-
-
-
     '1.12.1'
 
 
-
-- Reference: https://docs.scipy.org/doc/numpy/reference/
+- [Reference](https://docs.scipy.org/doc/numpy/reference/).
 
 # Make Numpy Arrays
 
@@ -52,11 +47,7 @@ If `%pylab` was invoked.
 array([1,2,3,4])
 ```
 
-
-
-
     array([1, 2, 3, 4])
-
 
 
 If `import numpy as np` was invoked alone.
@@ -66,11 +57,7 @@ If `import numpy as np` was invoked alone.
 np.array([1,2,3,4])
 ```
 
-
-
-
     array([1, 2, 3, 4])
-
 
 
 Let's begin.
@@ -1571,7 +1558,7 @@ print(np.vsplit(my_resized_array, 2))
 
 # How to Visualize Numpy Arrays
 
-- Following %pylab, `import matplotlib.pyplot as plt` forces to use the prefix `plt.` before any matplotlib function.
+- Following `%pylab`, `import matplotlib.pyplot as plt` forces to use the prefix `plt` before any `matplotlib` function.
 
 
 ```python

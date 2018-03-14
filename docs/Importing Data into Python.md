@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Code snippets and excerpts from the courses. Python 3. From DataCamp.
 
 ---
 
-## 1, Importing from Flat Files
+# Importing from Flat Files
 
 - Load the script and run it.
 
@@ -104,9 +105,9 @@ import this
     
 - BDFL: Benevolent Dictator For Life, a.k.a. Guido van Rossum, Python’s creator.
 
-### Numpy
+## Numpy
 
-- NumPy arrays are a standard for storing numerical data.
+- Numpy arrays are a standard for storing numerical data.
 - Arrays are essential to other packages such as the `scikit-learn`, for machine learning.
 - Import `numpy` and `matplotlib` (or invoke them with the `%pylab` magic command).
 
@@ -284,7 +285,7 @@ print(data2[:3])
      (2, 1, 1, b" b'female'", 38.0, 1, 0, b" b'PC 17599'", 71.2833, b" b'C85'", b" b'C'")
      (3, 1, 3, b" b'female'", 26.0, 0, 0, b" b'STON/O2. 3101282'", 7.925, b" b''", b" b'S'")]
 
-### Pandas
+## Pandas
 
 - Two-dimensional labeled data structure(s) or  data frame (DataFrame).
 - Pythonic analog of R's dataframes.
@@ -298,7 +299,7 @@ print(data2[:3])
     - Data preprocessing.
     - Building models.
     - Visualization.
-- There exists standards and best practices to use pandas.
+- There exists standards and best practices to use Pandas.
 
 ```python
 # Import pandas
@@ -394,7 +395,7 @@ plt.show()
 
 ![png](img/importing_data_into_python/output_38_0.png)
 
-## 2, Importing from Other Files
+# Importing from Other Files
 
 - With Pandas... and a bit of Numpy.
 - Excel spreadsheets.
@@ -404,7 +405,7 @@ plt.show()
 - HDF5 files (large datasets, scientific, legal, etc.).
 - Feather.
 - Julia.
-- Pickled files (binary).
+- Pickle files (binary).
 
 ```python
 import os
@@ -517,19 +518,19 @@ df1 = xl.parse('bdonly')
 df2 = xl.parse(0)
 ```
 
-- Options: parse the first sheet by index, skip the first row of data, then name the columns 'Country' and 'AAM due to War (2002)'
+- Options: parse the first sheet by index, skip the first row of data, then name the columns `Country` and `AAM due to War (2002)`.
 
 ```python
 df2 = xl.parse(0, parse_cols = [0], skiprows = [0], names = ['Country', 'AAM due to War (2002)'])
 ```
 
-- Options: parse the second sheet, parse only the first column, skip the first row and rename the column 'Country'.
+- Options: parse the second sheet, parse only the first column, skip the first row and rename the column `Country`.
 
 ```python
 df2 = xl.parse(1, parse_cols = [0], skiprows = [0], names = ['Country'])
 ```
 
-- Print the head of the DataFrame.
+- Print the head of the `DataFrame`.
 
 ```python
 print(df1.head())
@@ -596,7 +597,7 @@ plt.ylabel('count')
 plt.show()
 ```
 
-- The data are adapted from the website of the undergraduate text book Principles of Economics by Hill, Griffiths and Lim (http://www.principlesofeconometrics.com/sas/).
+- The data are adapted from the website of the undergraduate text book [Principles of Economics](http://www.principlesofeconometrics.com/sas/) by Hill, Griffiths and Lim.
 - The chart would be:
 
 ```python
@@ -607,7 +608,7 @@ Image('p.png')
 
 **Stata files**
 
-- The data consist of disease extent for several diseases in various countries (more information can be found at http://www.cid.harvard.edu/ciddata/geog/readme_disarea.html).
+- The data consist of disease extent for several diseases in various countries (more information can be [found](http://www.cid.harvard.edu/ciddata/geog/readme_disarea.html).
 
 ```python
 # Import pandas
@@ -643,7 +644,7 @@ print(df.head())
     
     [5 rows x 27 columns]
     
-- Plot histogram of one column of the DataFrame.
+- Plot histogram of one column of the `DataFrame`.
 
 ```python
 pd.DataFrame.hist(df[['disa10']])
@@ -703,7 +704,7 @@ plt.ylabel('strain')
 plt.show()
 ```
 
-- You can find the LIGO data plus loads of documentation and tutorials (https://losc.ligo.org/events/GW150914/) and (https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html) is a great tutorial on Signal Processing with the data.
+- You can find the LIGO data plus loads of [documentation](https://losc.ligo.org/events/GW150914/) and [tutorials](https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html) on Signal Processing with the data.
 
 ```python
 Image('strain.png')
@@ -745,7 +746,7 @@ plt.ylabel('normalized fluorescence (measure of expression)')
 plt.show()
 ```
 
-- This file contains gene expression data from the Albeck Lab at UC Davis (https://www.mcb.ucdavis.edu/faculty-labs/albeck/workshop.htm). You can find the data and some great documentation.
+- This file contains gene expression data from the [Albeck Lab](https://www.mcb.ucdavis.edu/faculty-labs/albeck/workshop.htm) at UC Davis. You can find the data and some great documentation.
 
 ```python
 Image('CYratioCyt.png')
@@ -754,7 +755,7 @@ Image('CYratioCyt.png')
 ![png](img/importing_data_into_python/output_65_0.png)
 
 
-## 3, Working with Relational Databases
+# Working with Relational Databases
 
 **Relational Database Management System**
 
@@ -773,7 +774,7 @@ engine = create_engine('sqlite:///Chinook.sqlite')
 
 `'sqlite:///Northwind.sqlite'` is called the connection string to the SQLite database.
 
-- The Chinook database (http://chinookdatabase.codeplex.com/) contains information about a semi-fictional digital media store in which media data is real and customer, employee and sales data has been manually created.
+- The [Chinook database](http://chinookdatabase.codeplex.com/) contains information about a semi-fictional digital media store in which media data is real and customer, employee and sales data has been manually created.
 - Code (instead of importing the package):
 
 ```python
@@ -912,7 +913,7 @@ df = pd.read_sql_query("SELECT * FROM Employee WHERE EmployeeId >= 6 ORDER BY Bi
 print(df.head())
 ```
 
-**INNER JOIN**
+**`INNER JOIN`**
 
 - Code (instead of importing the package):
 
@@ -952,12 +953,10 @@ df = pd.read_sql_query("SELECT * FROM PlaylistTrack INNER JOIN Track on Playlist
 print(df.head())
 ```
 
-## 4, Importing Flat Files from the Web (Web Scraping)
-
-~ scrape, wrangle, munge, wrangling, munging~ 
+# Importing Flat Files from the Web (Web Scraping)
 
 - Import and locally save datasets from the web.
-- Load datasets into pandas DataFrames.
+- Load datasets into Pandas `DataFrame`.
 - Make HTTP requests (GET requests).
 - Scrape web data such as HTML.
 - Parse HTML into useful data (BeautifulSoup).
@@ -1165,10 +1164,8 @@ print(head[3])
 
 **Scraping the web**
 
-~ scrape, wrangle, munge~
-
 - Scrape unstructured data.
-- Scrape structured data, parse it and extract the data from HTML using the `BeautifulSoup` package.
+- Scrape structured data, parse it and extract the data from HTML using the BeautifulSoup package.
 - Import the packages.
 
 ```python
@@ -1223,7 +1220,7 @@ print(head[0])
     I Am
        </a>
  
-- Other operations with `BeautifulSoup`.
+- Other operations with BeautifulSoup.
 
 ```python
 import requests
@@ -1382,7 +1379,7 @@ for link in a_tags:
     http://sox.sourceforge.net/
     images/internetdog.gif
 
-## 5, Introduction to APIs and JSONs
+# Introduction to APIs and JSONs
 
 - API or Application Programming Interface are protocols and routines providing access to websites and web apps like OMDb, Wikipedia, Uber, Uber Developers, BGG, ImDB, Facebook, Instagram, and Twitter.
 - Most of data coming from APIS are JSON files.
@@ -1545,7 +1542,7 @@ for k in nyc_loc.keys():
     frequency:  Three times a week
 
 - The Wikipedia API.
-- Documentation: https://www.mediawiki.org/wiki/API:Main_page
+- [Documentation](https://www.mediawiki.org/wiki/API:Main_page).
 - Dictionary of dictionary of dictionary.
 
 ```python
@@ -1571,7 +1568,7 @@ print(pizza_extract)
 **The Twitter API and Authentification**
 
 - Twitter has many APIs: the main API, the REST API, Streaming APIs (private, public), Firehouse (expensive), etc.
-- Field Guide: https://dev.twitter.com/overview/api/tweets
+- [Field Guide](https://dev.twitter.com/overview/api/tweets).
 - Consult the documentation to set an authentification key (available online).
 
 **`tweepy` package**
@@ -1668,7 +1665,7 @@ tweets_file.close()
 print(tweets_data[0].keys())
 ```
 
-**Send the Twitter data to DataFrame**
+**Send the Twitter data to a `DataFrame`**
 
 - Twitter data in a list of dictionaries `tweets_data`, where each dictionary corresponds to a single tweet. 
 - The text in a tweet `t1` is stored as the value `t1['text']`; similarly, the language is stored in `t1['lang']`. 
@@ -1688,7 +1685,7 @@ print(df.head())
 **Analyze the tweets (NLP, regex)**
 
 - A little bit of Twitter text analysis and plotting. 
-- Use the statistical data visualization library seaborn: https://stanford.edu/%7Emwaskom/software/seaborn/
+- Use the statistical data visualization library [seaborn](https://stanford.edu/%7Emwaskom/software/seaborn/).
 - Code:
 
 ```python
@@ -1742,5 +1739,4 @@ Image('tweets_figure.png')
 ```
 
 ![png](img/importing_data_into_python/output_99_0.png)
-
 

@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -244,10 +246,10 @@ plt.show()
 
 Larger or smaller plots.
 
-- "paper",
-- "notebook",
-- "talk" and
-- "poster"
+- `"paper"`,
+- `"notebook"`,
+- `"talk"` and
+- `"poster"`
 
 
 ```python
@@ -331,7 +333,7 @@ plt.show()
 
 Axes-level functions and figure-level functions. 
 
-- The ones that operate on the Axes level are, for example, `regplot()`, `boxplot()`, `kdeplot()`, …, 
+- The ones that operate on the Axes level are, for example, `regplot()`, `boxplot()`, `kdeplot()`, … 
 - while the functions that operate on the Figure level are `lmplot()`, `factorplot()`, `jointplot()`, ...
 
 The first group is identified by taking an explicit `ax` argument and returning an Axes object, while the second group of functions creates plots that potentially include Axes. 

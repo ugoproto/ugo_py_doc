@@ -1,25 +1,29 @@
+<!--
+
+---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
-# What are Pandas Data Frames?
+# What are Pandas `DataFrame`?
 
 - a Pandas `DataFrame`.
-- a Pandas `Series`: a one-dimensional labeled array capable of holding any data type with axis labels or index. An example of a Series object is one column from a DataFrame.
+- a Pandas `Series`: a one-dimensional labeled array capable of holding any data type with axis labels or index. An example of a Series object is one column from a `DataFrame`.
 - a Numpy `ndarray`, which can be a record or structured
 - a two-dimensional `ndarray `
 - dictionaries of one-dimensional `ndarrays`, lists, dictionaries or Series.
 
 `np.ndarray` is the actual data type, while `np.array()` is a function.
 
-Besides the data that a DataFrame needs to contain, we can also specify the index and column names. The index, on the one hand, indicates the difference in rows, while the column names indicate the difference in columns.
+Besides the data that a `DataFrame` needs to contain, we can also specify the index and column names. The index, on the one hand, indicates the difference in rows, while the column names indicate the difference in columns.
 
 
 ```python
@@ -65,7 +69,7 @@ print(my_array2.foo)
     [1 1 1]
 
 
-# Create a Pandas DataFrame
+# Create a Pandas `DataFrame`
 
 First, select the values that are contained in the lists that start with `Row1` and `Row2`, then select the index or row numbers `Row1` and `Row2`, and then the column names `Col1` and `Col2`.
 
@@ -96,7 +100,7 @@ print(pd.DataFrame(data=data[1:,1:],
 
 
 ```python
-# Take a 2D array as input to a DataFrame 
+# Take a 2D array as input to a DataFrame
 my_2darray = np.array([[1, 2, 3], [4, 5, 6]])
 print(pd.DataFrame(my_2darray))
 ```
@@ -202,9 +206,9 @@ df[0].count()
 
 
 
-# Fundamental DataFrame Operations
+# Fundamental `DataFrame` Operations
 
-## Select an Index or Column from a Pandas DataFrame
+## Select an Index or Column from a Pandas `DataFrame`
 
 
 ```python
@@ -291,9 +295,9 @@ print(df.loc[:,'A'])
     Name: A, dtype: int64
 
 
-# Add an Index, Row or Column to a Pandas DataFrame
+# Add an Index, Row or Column to a Pandas `DataFrame`
 
-## Add an Index to a DataFrame
+## Add an Index to a `DataFrame`
 
 
 ```python
@@ -365,13 +369,13 @@ df.set_index('C')
 
 
 
-## Add Rows to a DataFrame
+## Add Rows to a `DataFrame`
 
 But before...
 
-- `loc` works on labels of an index. This means with `loc[2]`, we look for the values of the DataFrame that have an index labeled 2.
-- `iloc` works on the positions in the index. This means with `iloc[2]`, we look for the values of the DataFrame that are at index '2'.
-- `ix` is a more complex case: when the index is integer-based, we pass a label to `ix`. `ix[2]` then means that we are looking in the DataFrame for values that have an index labeled `2`. This is just like `loc`! However, if the index is not solely integer-based, `ix` will work with positions, just like `iloc`.
+- `loc` works on labels of an index. This means with `loc[2]`, we look for the values of the `DataFrame` that have an index labeled 2.
+- `iloc` works on the positions in the index. This means with `iloc[2]`, we look for the values of the `DataFrame` that are at index '2'.
+- `ix` is a more complex case: when the index is integer-based, we pass a label to `ix`. `ix[2]` then means that we are looking in the `DataFrame` for values that have an index labeled `2`. This is just like `loc`! However, if the index is not solely integer-based, `ix` will work with positions, just like `iloc`.
 
 
 ```python
@@ -463,7 +467,7 @@ print(df)
     2.0   11  12  13
 
 
-## Add a Column to a DataFrame
+## Add a Column to a `DataFrame`
 
 
 ```python
@@ -492,7 +496,7 @@ print(df)
     2  7  8  9  2
 
 
-Tell the DataFrame that it should take column A as its index.
+Tell the `DataFrame` that it should take column A as its index.
 
 
 ```python
@@ -519,7 +523,7 @@ print(df)
     1  4  5  6  6
 
 
-## Reset the Index of a DataFrame
+## Reset the Index of a `DataFrame`
 
 
 ```python
@@ -592,13 +596,13 @@ df.reset_index(level=0, drop=True)
 
 # Delete Indices, Rows or Columns From a Pandas Data Frame
 
-## Delete an Index from a DataFrame
+## Delete an Index from a `DataFrame`
 
-Because DataFrames and Series always have an index.
+Because `DataFrame`s and Series always have an index.
 
-- Reset the index of a DataFrame (go back to the previous section to see how it is done) or
+- Reset the index of a `DataFrame` (go back to the previous section to see how it is done) or
 - remove the index name, if there is any, by executing del df.index.name,
-- remove duplicate index values by resetting the index, dropping the duplicates of the index column that has been added to a DataFrame and reinstating that duplicateless column again as the index,
+- remove duplicate index values by resetting the index, dropping the duplicates of the index column that has been added to a `DataFrame` and reinstating that duplicateless column again as the index,
 - and lastly, remove an index, and with it a row. This is elaborated in one of the next sections.
 
 
@@ -684,7 +688,7 @@ df.reset_index().drop_duplicates(subset='index', keep='last').set_index('index')
 
 ```
 
-## Delete a Column from a DataFrame
+## Delete a Column from a `DataFrame`
 
 
 ```python
@@ -778,7 +782,7 @@ df.drop(df.columns[[1]], axis=1)
 
 
 
-## Remove a Row from a DataFrame 
+## Remove a Row from a `DataFrame` 
 
 
 ```python
@@ -943,7 +947,7 @@ df.reset_index(level=0, drop=True)
 
 
 
-# Rename the Index or Columns of a Pandas DataFrame
+# Rename the Index or Columns of a Pandas `DataFrame`
 
 
 ```python
@@ -1062,9 +1066,9 @@ print(df2)
     2             7             8             9
 
 
-# Format The Data in a Pandas DataFrame
+# Format The Data in a Pandas `DataFrame`
 
-## Replace All Occurrences of a String in a DataFrame
+## Replace All Occurrences of a String in a `DataFrame`
 
 
 ```python
@@ -1204,7 +1208,7 @@ df.replace({'\n': '<br>'}, regex=True)
 
 
 
-## Remove Parts from Strings in the Cells of a DataFrame
+## Remove Parts from Strings in the Cells of a `DataFrame`
 
 
 ```python
@@ -1235,7 +1239,7 @@ print(df)
 
 Use `map()` on the column `result` to apply the lambda function over each element or element-wise of the column. The function in itself takes the string value and strips the `+` or `-` that’s located on the left, and also strips away any of the six `aAbBcC` on the right.
 
-## Split Text in a Column into Multiple Rows in a DataFrame
+## Split Text in a Column into Multiple Rows in a `DataFrame`
 
 
 ```python
@@ -1280,7 +1284,7 @@ ticketdf = pd.DataFrame(ticket_series)
 
 
 ```python
-# Delete the `Ticket` column from a DataFrame
+# Delete the `Ticket` column from a `DataFrame`
 del df['Ticket']
 ```
 
@@ -1371,17 +1375,17 @@ df.join(ticketdf)
 
 
 
-First, inspect the DataFrame at hand. The values in the last row and in the last column are a bit too long. It appears there are two tickets because a guest has taken a plus-one to the concert.
+First, inspect the `DataFrame` at hand. The values in the last row and in the last column are a bit too long. It appears there are two tickets because a guest has taken a plus-one to the concert.
 
-Take the `Ticket` column from the DataFrame `df` and strings on a space. This will make sure that the two tickets will end up in two separate rows in the end. Next, take these four values (the four ticket numbers) and put them into a Series object. That still doesn’t seem quite right. There are `NaN` values in there! Stack the Series to make sure they don’t have any `NaN` values in the resulting Series.
+Take the `Ticket` column from the `DataFrame` `df` and strings on a space. This will make sure that the two tickets will end up in two separate rows in the end. Next, take these four values (the four ticket numbers) and put them into a Series object. That still doesn’t seem quite right. There are `NaN` values in there! Stack the Series to make sure they don’t have any `NaN` values in the resulting Series.
 
-Next, stack the Series.
+Next, stack the series.
 
-That is not ideal either. Drop the level to line up with the DataFrame.
+That is not ideal either. Drop the level to line up with the `DataFrame`.
 
-Transform a Series to a DataFrame to make sure we can join it back to the initial DataFrame. However, to avoid having any duplicates in the DataFrame, delete the original `Ticket` column.
+Transform a Series to a `DataFrame` to make sure we can join it back to the initial `DataFrame`. However, to avoid having any duplicates in the `DataFrame`, delete the original `Ticket` column.
 
-## Apply a Function to a Pandas DataFrame’s Columns or Rows
+## Apply a Function to a Pandas `DataFrame`’s Columns or Rows
 
 
 ```python
@@ -1596,7 +1600,7 @@ print(df)
     2  7  8  9
 
 
-# Create an Empty DataFrame
+# Create an Empty `DataFrame`
 
 `numpy.nan` has type float.
 
@@ -1659,11 +1663,11 @@ print(df)
 
 The second code succeeded.
 
-# When, Why and How we should Reshape a DataFrame
+# When, Why and How we should Reshape a `DataFrame`
 
-## Pivot a DataFrame
+## Pivot a `DataFrame`
 
-- Values: this argument allows to specify which values of the original DataFrame we want to see in the pivot table.
+- Values: this argument allows to specify which values of the original `DataFrame` we want to see in the pivot table.
 - Columns: whatever is passed to this argument will become a column in the resulting table.
 - Index: whatever is passed to this argument will become an index in the resulting table.
 
@@ -1749,9 +1753,9 @@ print(pivot_products)
     Tech           19.99    NaN   111.55
 
 
-## Use `stack()` and `unstack()` to Reshape a Pandas DataFrame
+## Use `stack()` and `unstack()` to Reshape a Pandas `DataFrame`
 
-When we stack a DataFrame, we make it taller. Move the innermost column index to become the innermost row index.
+When we stack a `DataFrame`, we make it taller. Move the innermost column index to become the innermost row index.
 
 Much like `stack()`, use `unstack()` to move the innermost row index to become the innermost column index.
 
@@ -1895,7 +1899,7 @@ print(u)
     3  Item1  Silver  4$  4€
 
 
-## Reshape a DataFrame with `melt()`
+## Reshape a `DataFrame` with `melt()`
 
 When we have a data that has one or more columns that are identifier variables, while all other columns are considered measured variables.
 
@@ -1927,7 +1931,7 @@ print(pd.melt(people, id_vars=['FirstName', 'LastName'], var_name='measurements'
     3      Jane   Austen       Weight    64
 
 
-# Iterate over a Pandas DataFrame
+# Iterate over a Pandas `DataFrame`
 
 
 ```python
@@ -1952,9 +1956,9 @@ for index, row in df.iterrows() :
     7 8
 
 
-# Write a Pandas DataFrame to a File
+# Write a Pandas `DataFrame` to a File
 
-## Output a DataFrame to CSV
+## Output a `DataFrame` to CSV
 
 
 ```python

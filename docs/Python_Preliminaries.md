@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Notes. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/e
 
 ---
 
-## 1, Installing (Complementary Details)
+# Installing (Complementary Details)
 
 **Python**
 
@@ -23,31 +24,31 @@ Notes. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/e
     - `set PATH=%PATH%;C:\PythonXX`.
     - `set PATH=%PATH%;C:\PythonXX\Scripts`.
 - Setting the path in Linux (example):
-    - `export PYTHONPATH=$PYTHONPATH:`.
-    - ...
+    - `export PYTHONPATH=/home/...:$PYTHONPATH`.
 
-## 2, pip
+# Pip
 
 <sub>pypi</sub>
 
-PyPY directory of libraries.
+PyPI directory of libraries.
 
 Important commands:
 
-- `pip help` ou `pip --help`.
-- `pip install <module>`.
+- `pip help` or `pip --help`.
+- `pip install <module>` or `sudo pip install <module>`.
+- `pip install --user <module>`: circumvent the `sudo` command.
 - `pip --version`.
 - `pip install --upgrade pip`
-- `sudo pip install <module>`.
-- `pip uninstall <module>`.
-- `pip install --user <module>`: circumvent the `sudo` command.
+- `pip uninstall <module>` or `sudo pip uninstall <module>`.
+- `pip purge <module>` or `sudo pip purge <module>`.
+- ...
 
-## 3, Git
+# Git
 
 After installing Git, to execute Python module in the Git Bash, (re)set the path in the Git Bash (example): `export PATH="$PATH:/c/Python27"`, 
-`export PATH="$PATH:/c/Python27/Scripts"`, ... The Git Bash simulates a UNIX-type environment.
+`export PATH="$PATH:/c/Python27/Scripts"` or whatever Python version.
 
-## 4, Virtual Environment
+# Virtual Environment
 
 <sub>virtual, environment, separate, project</sub>
 
@@ -57,38 +58,38 @@ It brings out a problem if "Project A depends on version 1.x but, Project B need
 
 A virtual environment solves this problem by building a sandbox for a project.
 
-## 5, Launching
+# Launching
 
 Windows vs. UNIX (Linux or Mac OS X).
 
 **At the top of scripts**
 
 - In Windows, Python 2:
-    - `#! python`
+    - `#! python`.
 - Windows, Python 3:
-    - `#! python 3`
+    - `#! python 3`.
 - UNIX, Python 2:
-    - `#!/usr/bin/env python`
+    - `#!/usr/bin/env python`.
 - UNIX, Python 3:
-    - `#!/usr/bin/env python 3`
+    - `#!/usr/bin/env python 3`.
 - Add:
-    - `# -*coding: utf-8 -*-`
-    - `# -*coding: latin-1 -*-`
+    - `# -*coding: utf-8 -*-`.
+    - `# -*coding: latin-1 -*-`.
     
 **Launch a script**
 
 - In Windows, Python 2:
-    - `python <script.py>`
-    - `py <script.py>`
-    - `py -2 <script.py>`
-    - `py -2.7 <script.py>`
+    - `python <script.py>`.
+    - `py <script.py>`.
+    - `py -2 <script.py>`.
+    - `py -2.7 <script.py>`.
 - In UNIX, Python 2:
-    - `python <script.py>`
+    - `python <script.py>`.
 - In Windows, Python 3:
-    - `py -3 <script.py>`
-    - `py -3.5 <script.py>`
+    - `py -3 <script.py>`.
+    - `py -3.5 <script.py>`.
 - In UNIX, Python 3:
-    - `python3 <script.py>`
+    - `python3 <script.py>`.
 
 In UNIX-based OS, with a shebang, once the script is created, we can go in the folder and enter `chmod +x <script.py>` to change the properties. Now, we can launch a script with `./<script.py>`.
 
@@ -98,19 +99,19 @@ In UNIX-based OS, with a shebang, once the script is created, we can go in the f
 - In Windows (examples):
     - `py -2 -m pip install <script>` if `pip install <script>` does not work.
     - `py -2 -m pip install flake8`.
-    - `py -2 -m pip install pylint`.    
+    - `py -2 -m pip install pylint`.
     
 **Launch the shell/bash**
 
 - The shell, Python 2:
-    - `python`
-    - `py -2`
-    - `py -2.7`
+    - `python`.
+    - `py -2`.
+    - `py -2.7`.
 - The bash, Python 2:
-    - `python`
-    - `python2`
+    - `python`.
+    - `python2`.
 - The shell, Python 3:
-    - `py -3`
-    - `py -3.5`
+    - `py -3`.
+    - `py -3.5`.
 - The bash, Python 3:
-    - `python3`
+    - `python3`.

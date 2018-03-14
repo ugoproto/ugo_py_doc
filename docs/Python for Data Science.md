@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,9 +11,7 @@ Code snippets and excerpts from the courses (Introduction and Intermediate). Pyt
 
 ---
 
-## 1, Introduction
-
-### Basic operations
+# Basic operations
 
 **Print is a function**
 
@@ -134,7 +133,7 @@ print(result)
 
     194.87171000000012
 
-### Concatenating, help, printing, listing
+# Concatenating, help, printing, listing
 
 **Concatenation**
 
@@ -180,7 +179,7 @@ help(max)
 
 **Contiguous printing**
 
-~ horizontal, print~
+<sub>horizontal, print</sub>
 
 ```python
 # Print out room and room_up
@@ -213,7 +212,7 @@ print(baseball[1]); print(baseball[-1])
     215
     200
 
-### NumPy: arrays
+# Numpy: arrays
 
 - An overview with an simple array.
 - Import the `numpy` package as `np`.
@@ -276,7 +275,7 @@ print(np_height[1:2])
 
 - A list in an array is a 2D array or a tabular array.
 
-~ 2 dimension, 2d, 2-d~
+<sub>2 dimension, 2d, 2-d</sub>
 
 ```python
 # Create baseball, a list of lists
@@ -385,9 +384,7 @@ print(np.logical_and(my_house < 11, your_house < 11))
     [False  True False  True]
     [False False False  True]
 
-## 2, Intermediate
-
-### Plotting basics
+# Plotting basics
 
 - In this section, we use the `matplolib` package for plotting and charting.
 - In IPython, the package is 'stacked' with the `numpy` packages and other scientific packages under the magic command `%pylab`. 
@@ -421,7 +418,7 @@ plt.plot(year, pop)
 plt.show()
 ```
 
-![png](img/python/output_50_0.png)
+![](img/python/output_50_0.png)
 
 **Scatter plot**
 
@@ -445,7 +442,7 @@ plt.xscale('log')
 plt.show()
 ```
 
-![png](img/python/output_53_0.png)
+![](img/python/output_53_0.png)
 
 ```python
 # Build Scatter plot
@@ -456,7 +453,7 @@ plt.show()
 
 # There's no clear relationship between population and life expectancy, which makes perfect sense.
 ```
-![png](img/python/output_54_0.png)
+![](img/python/output_54_0.png)
 
 **Histograms**
 
@@ -468,7 +465,7 @@ plt.hist(life_exp)
 plt.show()
 ```
 
-![png](img/python/output_56_0.png)
+![](img/python/output_56_0.png)
 
 ```python
 # Build histogram with 5 bins
@@ -486,15 +483,15 @@ plt.show()
 plt.clf()
 ```
 
-![png](img/python/output_57_0.png)
+![](img/python/output_57_0.png)
 
-![png](img/python/output_57_1.png)
+![](img/python/output_57_1.png)
 
     <matplotlib.figure.Figure at 0x7578cf8>
 
 **Label**
 
-~ x, y, label~
+<sub>x, y, label</sub>
 
 ```python
 # Basic scatter plot, log scale
@@ -517,7 +514,7 @@ plt.title(title)
 plt.show()
 ```
 
-![png](img/python/output_59_0.png)
+![](img/python/output_59_0.png)
 
 ```python
 # Scatter plot
@@ -540,9 +537,9 @@ plt.xticks(tick_val, tick_lab)
 plt.show()
 ```
 
-![png](img/python/output_60_0.png)
+![](img/python/output_60_0.png)
 
-### A plotting project: Gapminder
+# A plotting project: Gapminder
 
 **Size, the 3rd dimension**
 
@@ -570,7 +567,7 @@ plt.xticks([1000, 10000, 100000],['1k', '10k', '100k'])
 plt.show()
 ```
 
-![png](img/python/output_62_0.png)
+![](img/python/output_62_0.png)
 
 **Colors**
 
@@ -607,7 +604,7 @@ plt.xticks([1000,10000,100000], ['1k','10k','100k'])
 plt.show()
 ```
 
-![png](img/python/output_65_0.png)
+![](img/python/output_65_0.png)
 
 **Additional Customizations**
 
@@ -633,7 +630,7 @@ plt.grid(True)
 plt.show()
 ```
 
-![png](img/python/output_67_0.png)
+![](img/python/output_67_0.png)
 
 **List**
 
@@ -734,7 +731,7 @@ print(europe)
     paris
     {'france': {'capital': 'paris', 'population': 66.03}, 'italy': {'capital': 'rome', 'population': 59.83}, 'norway': {'capital': 'oslo', 'population': 5.084}, 'spain': {'capital': 'madrid', 'population': 46.77}, 'germany': {'capital': 'berlin', 'population': 80.62}}
 
-### Pandas: data frame
+# Pandas: `DataFrame`
 
 - An Overview.
 - Tabular data are rectangular or 2D. Numpy can handle that.
@@ -763,9 +760,9 @@ my_dict = {
 }
 ```
 
-- Build DataFrame `cars` from `my_dict`: `cars`.
+- Build `DataFrame` `cars` from `my_dict`: `cars`.
 
-~ convert, dictionary, data frame~
+<sub>convert, dictionary, data frame</sub>
 
 ```python
 cars = pd.DataFrame(my_dict)
@@ -803,7 +800,7 @@ print(cars)
     MOR            70        Morocco         True
     EG             45          Egypt         True
     
-- Import data: 'cars.csv' to create DataFrame `cars`.
+- Import data: 'cars.csv' to create `DataFrame` `cars`.
 
 ```python
 cars2 = pd.read_csv('cars.csv', sep = ';')
@@ -1025,7 +1022,7 @@ print(medium)
         cars_per_cap country drives_right
     RU           200  Russia         True
     
-### Looping
+# Looping
 
 **Loops**
 
@@ -1036,7 +1033,7 @@ areas = [11.25, 18.0, 20.0, 10.75, 9.50]
 
 - Change for-loop to use `enumerate()`.
 
-~ enumerate~
+<sub>enumerate</sub>
 
 ```python
 for index, a in enumerate(areas) :
@@ -1094,7 +1091,7 @@ for country, capital in europe.items():
     the capital of spain is madrid
     the capital of germany is bonn
     
-**Loop over a NumPy array**
+**Loop over a Numpy array**
 
 - If you're dealing with a 1D Numpy array, looping over all elements can be as simple as: `for x in my_array : ...`
 
@@ -1104,9 +1101,9 @@ for country, capital in europe.items():
 
 - Two Numpy arrays that you might recognize from the intro course are available in your Python session: np_height, a Numpy array containing the heights of Major League Baseball players, and np_baseball, a 2D Numpy array that contains both the heights (first column) and weights (second column) of those players.
 
-**Loop over a Pandas data frame**
+**Loop over a Pandas `DataFrame`**
 
-- Iterating over a Pandas DataFrame is typically done with the iterrows() method. 
+- Iterating over a Pandas `DataFrame` is typically done with the `iterrows()` method. 
 - Used in a for loop, every observation is iterated over and on every iteration the row label and actual row contents are available: `for lab, row in brics.iterrows() : ...`
 - In this and the following exercises you will be working on the cars DataFrame. 
 - It contains information on the cars per capita and whether people drive right or left for seven countries in the world.
@@ -1196,7 +1193,7 @@ print(cars)
     MOR            70        Morocco         True        MOROCCO
     EG             45          Egypt         True          EGYPT
 
-### A NumPy project: random walk & Monte Carlo simulation
+# A Numpy project: random walk & Monte Carlo simulation
 
 ```python
 # Set the seed
@@ -1325,7 +1322,7 @@ plt.plot(range(101), random_walk)
 plt.show()
 ```
 
-![png](img/python/output_128_0.png)
+![](img/python/output_128_0.png)
 
 - Build a Monte Carlo as an alternative.
 
@@ -1385,7 +1382,7 @@ plt.plot(np_aw)
 plt.show()
 ```
 
-![png](img/python/output_131_0.png)
+![](img/python/output_131_0.png)
 
 - Now every row in `np_all_walks` represents the position after 1 throw (of dice) for the 10 random walks.
 
@@ -1401,7 +1398,7 @@ plt.plot(np_aw_t)
 plt.show()
 ```
 
-![png](output_133_0.png)
+![](img/python/output_133_0.png)
 
 - 10 randoms walks from 0 to 100 (the dice only had 6 possibilities).
 
@@ -1440,7 +1437,7 @@ plt.plot(np_aw_t)
 plt.show()
 ```
 
-![png](img/python/output_135_0.png)
+![](img/python/output_135_0.png)
 
 - What are the odds that you'll reach 60 steps high on the Empire State Building? 
 - Basically, you want to know about the end points of all the random walks you've simulated. 
@@ -1480,7 +1477,7 @@ plt.hist(ends)
 plt.show()
 ```
 
-![png](img/python/output_137_0.png)
+![](img/python/output_137_0.png)
 
 - The histogram of the previous exercise was created from a Numpy array `ends`, that contains 1,000 integers. 
 - Each integer represents the end point of a random walk. 

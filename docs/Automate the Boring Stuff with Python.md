@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -17,7 +18,7 @@ Notes. Python 3. From No Starch Press, 2015. Creative Commons. More at:
 
 ---
 
-## Chapter 2, Flow Control
+# Chapter 2, Flow Control
 
 <sub>boolean, comparison, operator, flow control, condition, conditional, loop</sub>
 
@@ -32,13 +33,13 @@ Notes. Python 3. From No Starch Press, 2015. Creative Commons. More at:
 - `from random import *`.
 - `sys.exit()`.
 
-## Chapter 3, Functions
+# Chapter 3, Functions
 
 <sub>global, local, variable, scope</sub>
 
 Exception handling with `try:` and `except`.
 
-## Chapter 4, Lists (and Tuples)
+# Chapter 4, Lists (and Tuples)
 
 <sub>data type, index, sublist, subset, slice,  change, concatenate, concatenation, tuple, convert, tuple to list</sub>
 
@@ -53,7 +54,7 @@ Exception handling with `try:` and `except`.
 - `copy` module and `copy()` method.
 - `deepcopy()` method; for inner list or a list of lists (ensure the key exists).
 
-## Chapter 5, Dictionaries and Structuring Data
+# Chapter 5, Dictionaries and Structuring Data
 
 <sub>loop</sub>
 
@@ -70,7 +71,7 @@ Pretty print with the `pprint()` and `pformat()` functions.
 
 Nested dictionaries and lists.
 
-## Chapter 6, Manipulating Strings
+# Chapter 6, Manipulating Strings
 
 Escape character: `\`: `\'`, `\"`, `\t`, `\n`, `\\`.
 
@@ -128,7 +129,7 @@ pyperclip.copy('Hello world!')
 pyperclip.paste()
 ```
 
-## Chapter 7, Pattern Matching and Regular Expressions
+# Chapter 7, Pattern Matching and Regular Expressions
 
 <sub>patterns of text, with, without regular expression, regex, object, match, matching, group, grouping, pipe, question mark, star, ?, *, plus, +, curly bracket, {, }, character class, digit, numeric, letter, underscore, space, tab, newline, caret, ^, dollar sign, $, wildcard, dot, ., dotstar, newline, symbols, case-sensitive, case-insensitive</sub>
 
@@ -141,7 +142,7 @@ pyperclip.paste()
 - `re.DOTALL`; ignore dots with the `re.compile()` method.
 - `re.VERBOSE`; write comment with the `re.compile()` method.
 
-## Chapter 8, Reading and Writing Files
+# Chapter 8, Reading and Writing Files
 
 <sub>file, file path, filename</sub>
 
@@ -201,7 +202,7 @@ Pretty printing:
 - `pprint.pprint()`.
 - `pprint.pformat()`.
 
-## Chapter 9, Organizing Files
+# Chapter 9, Organizing Files
 
 <sub>pdf, every sub-folder, folder, foldername, subfolder, filename, file, remove, zero, change titles, compress, decompress, zip, unzip</sub>
 
@@ -224,7 +225,7 @@ Compress and uncompress. Read the content of compressed and zipped files.
 - `zipfile.extracall()`; method  extracts all the files and folders from a zip file.
 - `write()` method; create a zip file.
 
-## Chapter 10, Debugging
+# Chapter 10, Debugging
 
 Handle errors with `try` and `except`.
 
@@ -242,7 +243,7 @@ Display log messages as the program runs. Log to a file. Debug a code. Enable an
 
 Set a `breakpoint` to check out potential bugs.
 
-## Chapter 11, Web Scraping
+# Chapter 11, Web Scraping
 
 <sub>html</sub>
 
@@ -299,7 +300,7 @@ Combining modules :
 - Image site downloader.
 - Link verification.
 
-## Chapter 12, Excel Spreadsheets
+# Chapter 12, Excel Spreadsheets
 
 `openpyxl` module.
 
@@ -328,7 +329,7 @@ Use:
 - Insert blank rows.
 - Convert text files to spreadsheets, vice-versa.
 
-## Chapter 13, PDF and Word Documents
+# Chapter 13, PDF and Word Documents
 
 `PyPDF2` module.
 
@@ -351,7 +352,7 @@ Use:
 - Custom invitations in Word.
 - Brute-force PDF password breaker.
 
-## Chapter 14, CSV Files and JSON Data
+# Chapter 14, CSV Files and JSON Data
 
 `csv` module.
 
@@ -376,7 +377,7 @@ Use:
 - Schedule a program to regularly check weather and send your a frost alert.
 - Pull weather data from multiple sites to show all at once, or calculate and show the average of multiple weather predictions.
 
-## Chapter 15, Time, Scheduling Tasks, and Launching Programs
+# Chapter 15, Time, Scheduling Tasks, and Launching Programs
 
 `time` module.
 
@@ -406,7 +407,7 @@ Use:
 - Create a countdown program.
 - Schedule downloader (time event).
 
-## Chapter 16, Sending Email and Text Messages
+# Chapter 16, Sending Email and Text Messages
 
 <sub>http, smtp, mail, imap</sub>
 
@@ -430,7 +431,7 @@ Use:
 
 Send text messages, SMS.
 
-## Chapter 17, Manipulating Images
+# Chapter 17, Manipulating Images
 
 Color and RGBA crash course!
 
@@ -446,7 +447,7 @@ Use:
 - Identify the photo folders.
 - Create custom cards with custom invitations in Word (see chapter 13).
 
-## Chapter 18, Controlling the Keyboard and Mouse with GUI Automation 
+# Chapter 18, Controlling the Keyboard and Mouse with GUI Automation 
 
 <sub>virtual keystrokes, mouse clicks</sub>
 
@@ -462,23 +463,23 @@ Use:
 - Instant messenger bot.
 - Game-playing bot tutorial.
 
-## Appendix A
+# Appendix A
 
 - PIP.
 - Installing modules.
 
-## Appendix B
+# Appendix B
 
 - Running programs.
 - Shebang line.
 - On Windows.
 - On UNIX.
 
-## Appendix C
+# Appendix C
 
 Answers from questions: chapter 2 to 18.
 
-## Additional Content
+# Additional Content
 
 - Download files used in the book.
 - List of JSON API:

@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 
 ---
 
-## 1, PEP20
+# PEP20
 
 PEP : Python Enhancement Proposals. In the Python shell, type `import this`. We get the following 'easter egg'.
 
@@ -45,7 +46,7 @@ The 'easter egg' is a poem. A poem of best practices.
 - Special cases aren't special enough to break the rules. The`len` function for all. A function applies to all. A method applied to some. Find the built-in function before coding new functions.
 - The code should be pleasant and easy to read.
 
-## 2, PEP8
+# PEP8
 
 PEP : Python Enhancement Proposals. Improves the look of the code. Here are a few principles:
 
@@ -102,13 +103,13 @@ print fourteen
 print Submarine().two() # class.method
 ```
 
-## 3, PEP Diagnoses with `flake8` & `pylint`
+# PEP Diagnoses with `flake8` & `pylint`
 
 The modules can be integrated with IDE and text editors (VIM, Emacs, gedit, Notepad++, etc.).
 
 **`flake8`**
 
-- Install `flake8` with pip.
+- Install `flake8` with Pip.
 - Run a script with `flake8`: `python flake8 <script.py>`. 
 - Instead of running the code, `flake8` runs a diagnosis and returns the results. 
 - The results suggest improvement to the look of the script. 
@@ -116,14 +117,14 @@ The modules can be integrated with IDE and text editors (VIM, Emacs, gedit, Note
 
 **`pylint`**
 
-- Install `pylint` with pip.
+- Install `pylint` with Pip.
 - Run a script with `flake8`: `python pylint script.py`. 
 
 `pylint` runs a diagnosis and returns a report about the script.
 
-## 4, Help & Docstrings
+# Help & Docstrings
 
-- In the shell, for any command '<cmd>', type `help(<cmd>)` to get a definition.
+- In the shell, for any command, type `help(<cmd>)` to get a definition.
 - Type `dir(<cmd>)` to get the attributes from the Python glossary.
 - A docstrings is an enhancement to the `help` glossary.
 
@@ -140,7 +141,7 @@ def does_something(arg):
 ```
 
 - We should never read a code to figure out what it does! 
-- Add docstrings: """   """ on 1 line
+- Add docstrings: """   """ on 1 line.
 - Add docstrings: several lines (see below).
 
 ```python
@@ -159,7 +160,7 @@ def does_better(arg):
 
 - In the shell, type `help(docstrings.does_better)` to print the function's docstring.
 
-## 5, `pdb` Debugs Scripts
+# `pdb` Debugs Scripts
 
 Go inside the code.
 

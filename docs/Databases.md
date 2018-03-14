@@ -1,18 +1,18 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Notes. Python 3. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
-
 Although we work with SQLite, most concepts are applicable to MySQL and PostgreSQL.
 
 ---
 
-## 1, SQLite3
+# SQLite3
 
 Follow the tutorial on [TutorialPoint](https://www.tutorialspoint.com). Especially the [Quick Guide](https://www.tutorialspoint.com/sqlite/sqlite_quick_guide.htm) for installation, basic commands, syntax, comments, SQL statement, data type, affinity type, boolean, date & time, creating a database, a table, dropping a table, querying, operators, expressions, and clauses. Each topic has also a dedicated section such as unions, joins, truncated table, etc.
 
@@ -22,7 +22,7 @@ Follow the tutorial on [TutorialPoint](https://www.tutorialspoint.com). Especial
     - On Windows, databases are located on C:\sqlite.
     - On Linux, SQLite is in the root directory(/usr/lib/...), but databases can be stored in the Personal folder (or in a directory of choice; for example, in a new subdirectory under Documents).
 
-## 2, SQLite3 CLI
+# SQLite3 CLI
 
 **Basics**
 
@@ -81,7 +81,7 @@ There are plenty of resources about SQLite: books, online documents, online tuto
 - Joins and Triggers.
 - And more.
 
-## 3, SQL Database GUI, Administration, and Management Tools
+# SQL Database GUI, Administration, and Management Tools
 
 With database managers, we can create scripts to automate operations.
 
@@ -102,7 +102,7 @@ With database managers, we can create scripts to automate operations.
     - HeidiSQL is free, for Windows.
     - There are web-based managers.
 
-## 4, Spreadsheet Data and SQLite
+# Spreadsheet Data and SQLite
 
 **Import from the spreadsheet**
 
@@ -121,13 +121,13 @@ With database managers, we can create scripts to automate operations.
 - Or connect the spreadsheet with SQLite with built-in functionalities or add-ons to pull data into the database.
 - There are add-ons that can execute SQL queries in a cell and dump the results in other cells: Excellic, Microsoft SQL Server Data Mining, SaveToDB, Database Connection Wizard, Publish Wizard, etc.
 
-## 5, R and Python with SQL
+# R and Python with SQL
 
 - R can import data from / export data to relational databases using specialized packages such as `DBI`, `RSQLite`, `RMySQL`, `RPostgreSQL`, etc.
 - Python libraries are: `python-sql`, `sqlalchemy`, `records`, `peewee`, etc.
     - `pip install <library>`.    
     
-## 6, The Chinook SQLite Sample Database
+# The Chinook SQLite Sample Database
 
 Learn, practice, and test commands with a fake database. 
 
@@ -136,9 +136,9 @@ Learn, practice, and test commands with a fake database.
 http://www.sqlitetutorial.net/sqlite-sample-database/).
     - We can also download the database and diagrams.
     
-## 7, Using a Python ORM: `peewee`
+# Using a Python ORM: `peewee`
 
-### Install `peewee`
+## Install `peewee`
 
 We can run queries with SQL or use a Python wrapper: `peewee`. It is a lightweight Object Relational Mapper (ORM). `peewee` works with SQLite, MySQL, and PostgreSQL.
 
@@ -146,7 +146,7 @@ Install it with pip.
 
 We can manage our databases with Python scripts.
 
-### Create a database with a script
+## Create a database with a script
 
 In `peewee`, models are Python classes. Everything in the database is an object: tables, rows, columns, entries, etc.
 
@@ -186,7 +186,7 @@ Or.
 # -*- coding: utf-8 -*-
 ```
 
-### Create, read, update, and delete (CRUD)
+## Create, read, update, and delete (CRUD)
 
 Create, read, update, and delete is knows as CRUD; the backbone of ORM. Five useful methods:
 
@@ -224,7 +224,7 @@ students = [
 	'points': 4079},
 	{'username': 'adammcfarland',
 	'points': 14717}
-]    
+]
 
 
 def add_students(): # ADD a function
@@ -268,7 +268,7 @@ students = [
 	'points': 4079},
 	{'username': 'adammcfarland',
 	'points': 14717}
-]    
+]
 
 
 def add_students(): # CHANGE the function
@@ -317,7 +317,7 @@ students = [
 	'points': 4079},
 	{'username': 'adammcfarland',
 	'points': 14717}
-]    
+]
 
 
 def add_students():
@@ -333,7 +333,7 @@ def add_students():
             
 def	top_student():
 	student = Student.select().order_by(Student.points.desc()).get() # ADD
-	return student            
+	return student
    
 if __name__ == '__main__':
     db.connect()
@@ -375,7 +375,7 @@ students = [
 	'points': 4079},
 	{'username': 'adammcfarland',
 	'points': 14717}
-]    
+]
 
 
 def add_students():
@@ -391,7 +391,7 @@ def add_students():
             
 def	top_student():
 	student = Student.select().order_by(Student.points.desc()).get()
-	return student            
+	return student
    
 if __name__ == '__main__':
     db.connect()
@@ -412,7 +412,9 @@ Our top student right now is: kennethliff.
 - `.select()`, pick rows out of the table.
 - `.get()`, fetch a single record from a table.
 
-### A diary app -- The skeleton (empty classes and functions)
+# A diary app -- A Case
+
+## A diary app -- The skeleton (empty classes and functions)
 
 Now, let's build a diary application using an SQLite database. Such an application can be integrated into a web framework (like Flask) or frozen as an executive file (embedding SQLite). 
 
@@ -456,7 +458,7 @@ if __name__ == '__main__': # for running the script directly, not import it
     menu_loop()
 ```
 
-### A diary app -- Initialize
+## A diary app -- Initialize
 
 Let's add some flesh to the skeleton. Add the the `datetime` library and a new function to initialize the diary.
 
@@ -504,7 +506,7 @@ if __name__ == '__main__': # for running the script directly, not import it
 
 We get no result in the terminal: a good sign. We can check out the results in the db.
 
-### A diary app -- Create a menu
+## A diary app -- Create a menu
 
 We add a menu using a dictionary (we need the `OrderedDict` library).
 
@@ -577,7 +579,7 @@ v) View previous entries.
 Actions:
 ```
 
-### A diary app -- Data entry
+## A diary app -- Data entry
 
 Add the `sys` library. We want to enter data and load the database.
 
@@ -654,7 +656,7 @@ To the question `Enter your entry. Press ctrl+d when finished.`, write `Working 
 
 `raw_input` in Python 2 vs. `input` in Python 3. In Python 2, we can print with `print " "` or `print(" ")`. The later is only possible in Python 3.
 
-### A diary app -- Search and view entries
+## A diary app -- Search and view entries
 
 We now want to read the data (query the database). We also want to search throught the entries. In SQL, we would code: `SELECT * FROM entry WHERE content LIKE '%search_query$' ORDER BY timestamp DESC;`.
 
@@ -748,7 +750,7 @@ if __name__ == '__main__':
 
 The result is dynamic. Try entering stuff, save it. Back to the menu, read the entry. We should get a date, a line of `=` and the entry. Quit and go back to the menu. Try search for a word. It should find a single word among all the entry and pull out the entry where the word appears.
 
-### A diary app -- Delete entries
+## A diary app -- Delete entries
 
 Complete the last function: `def delete_entry(entry):`.
 
@@ -849,7 +851,7 @@ if __name__ == '__main__':
 
 The result is dynamic. Enter something. Save it. View it. Delete it (the last entry). Confirm it. Go back to the main menu. View the previous entries. The last entry was deleted and we see the previous entry.
 
-### A diary app -- Finalize and polish up
+## A diary app -- Finalize and polish up
 
 We can polish up the final result. We need to ventilate the onscreen printouts by cleaning the screen here and there. On Windows, we clear the screen with `cls`; on UNIX-based OS, with `clear`.
 

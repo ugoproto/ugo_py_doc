@@ -1,16 +1,18 @@
-# Python Decorators
+<!--
+---
+
+[TOC]
+
+-->
+---
 
 **Foreword**
 
 Notes and code snippets. Python 3. Consult the [Hitchicker's Guide to Python](http://docs.python-guide.org/en/latest/).
 
------
+---
 
-[TOC]
-
------
-
-## The Goal of Decorators
+# The Goal of Decorators
 
 **Decorators vs the Decorator Pattern**
 
@@ -28,7 +30,7 @@ Python decorators are best equated to macros.
 	- modifying the behavior of the function;
 	- in Django, Flask or other web frameworks.
 
-## First Thing First
+# First Thing First
 
 **First dive**
 
@@ -164,7 +166,7 @@ def myFunction(in_function):
    return out_function
 ```
 
-## Invoking a Decorator
+# Invoking a Decorator
 
 Put a simple_function into the decorator (`myFunction`) as an argument, and get a `enhanced_function` as a return value from the decorator.
 
@@ -296,7 +298,7 @@ def aFunction():
 
 The compiler passes over the code. The `aFunction()` is compiled. The resulting function object is passed to the `myDecorator` code. It produces a function-like object that is then substituted for the original `aFunction()`.
 
-## Using Decorators
+# Using Decorators
 
 What should the decorator do? Anything!
 
@@ -448,7 +450,7 @@ def entryExit(f):
     return new_f
 ```
 
-## Cases
+# Cases
 
 **1 - Adding `$` to the return value from `price()` function**
 
@@ -545,7 +547,7 @@ Output:
 timer = 5.96046447754e-06
 ```
 
-## More Cases and Examples
+# More Cases and Examples
 
 [learnpython.org (tutorial, snippets)](http://www.learnpython.org/en/Decorators)
 

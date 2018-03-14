@@ -1,437 +1,1353 @@
+
+
+
+
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Ugo Sparks">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Exploratory Data Analysis - ugo_py_doc</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../css/highlight.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Exploratory Data Analysis";
-    var mkdocs_page_input_path = "Exploratory Data Analysis.md";
-    var mkdocs_page_url = "/Exploratory Data Analysis/";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js"></script>
-  <script src="../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
-  
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-93008985-2', 'auto');
-      ga('send', 'pageview');
-  </script>
-  
-</head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> ugo_py_doc</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Python documentation website.">
+      
+      
+        <link rel="canonical" href="https://ugoproto.github.io/ugo_py_doc/Exploratory Data Analysis/">
+      
+      
+        <meta name="author" content="Ugo Sparks">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.0">
+    
+    
+      
+        <title>Exploratory Data Analysis (EDA) - ugo_py_doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.78aab2dc.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#digits" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://ugoproto.github.io/ugo_py_doc/" title="ugo_py_doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">layers</i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Basics & More</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Py_CS/">Python Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python_Preliminaries/">Python Preliminaries</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python_Nice_to_Have/">Python Nice to Have</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Freeze_the_Code/">Freeze the Code</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Decorators/">Decorators</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Write_Better_Python/">Write Better Python with PEP</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Regex/">Regular Expressions (REGEX)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Databases/">Databases</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Datetime/">Datetime</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Execute_Highlighted_Python_Code_in_gedit/">Execute Highlighted Python Code in gedit</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">SciPy Stack</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Scipy_CS/">Scipy Stack Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../JN_CS/">Jupyter Notebook Cheat Sheets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Scientific Python (the SciPy Stack)/">Scientific Python (the SciPy Stack)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Importing Data into Python/">Importing Data into Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python for Data Science/">Python for Data Science</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Tidy_Data_in_Python/">Tidy Data in Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Lists/">Lists</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../IPython Notebook/">IPython Notebook, Collection</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python Numpy Arrays/">Python Numpy Arrays</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Vectors and Arrays (Linear Algebra)/">Vectors and Arrays (Linear Algebra)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Matplotlib, Python Plotting/">Matplotlib, Python Plotting</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Viewing+3D+Volumetric+Data+With+Matplotlib/">Viewing 3D Volumetric Data With Matplotlib</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Seaborn, Python Statistical Data Visualization Library/">Seaborn, Python's Statistical Data Visualization Library</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Pandas+DataFrames/">Pandas DataFrames</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Write Idiomatic Pandas Code/">Write Idiomatic Pandas Code</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Exploratory Data Analysis</a>
-    <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#digits">digits</a></li>
-    
-
-    <li class="toctree-l3"><a href="#iris">iris</a></li>
-    
-
-    <li class="toctree-l3"><a href="#basic-description-of-the-data">Basic Description of the Data</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#describing-the-data">Describing The Data</a></li>
-        
-            <li><a class="toctree-l4" href="#first-and-last-dataframe-rows">First and Last DataFrame Rows</a></li>
-        
-            <li><a class="toctree-l4" href="#sample-the-data">Sample the Data</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#queries">Queries</a></li>
-    
-
-    <li class="toctree-l3"><a href="#the-challenges-of-data">The Challenges of Data</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#missing-values">Missing Values</a></li>
-        
-            <li><a class="toctree-l4" href="#delete">Delete</a></li>
-        
-            <li><a class="toctree-l4" href="#impute">Impute</a></li>
-        
-            <li><a class="toctree-l4" href="#outliers">Outliers</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#the-datas-features">The Data’s Features</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#feature-engineering">Feature Engineering</a></li>
-        
-            <li><a class="toctree-l4" href="#feature-selection">Feature Selection</a></li>
-        
-        </ul>
-    
-
-    <li class="toctree-l3"><a href="#patterns-in-the-data">Patterns In the Data</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#correlation-identification-with-pca-from-scikit-learn">Correlation Identification with PCA from scikit-learn</a></li>
-        
-            <li><a class="toctree-l4" href="#correlation-identification-with-pandas">Correlation Identification with Pandas</a></li>
-        
-        </ul>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Intro to data.world in Python/">Intro to data.world in Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python+And+Excel/">Python and Excel</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Overview_of_scikit-learn/">Overview of scikit-learn</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/">k-NN, Linear regression, Logit, Scaling, Centering, Noise</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Time_Series_Analysis/">Time Series Analysis</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Sentiment_Analysis_with_Twitter/">Sentiment Analysis with Twitter</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/">EDA, Machine Learning, Feature Engineering, and Kaggle</a>
-                </li>
-    </ul>
-	    </li>
+              <span class="md-header-nav__topic">
+                ugo_py_doc
+              </span>
+              <span class="md-header-nav__topic">
+                Exploratory Data Analysis (EDA)
+              </span>
+            
           
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Courses</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Apprenez a programmer en Python/">Apprenez à programmer en Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Codecademy Python/">Codecademy Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Learn Python the Hard Way/">Learn Python the Hard Way</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python Code Snippets/">Python Code Snippets</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Introduction to Python/">Introduction to Python</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Manuals</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../Automate the Boring Stuff with Python/">Automate the Boring Stuff with Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Real_Python/">Real Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Managing Your Biological Data with Python/">Managing Your Biological Data with Python</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../Python for Education/">Python for Education</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+        </div>
       </div>
-      &nbsp;
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon">layers</i>
+      
+    </span>
+    ugo_py_doc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Py_CS/" title="Python Cheat Sheets" class="md-nav__link">
+      Python Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Preliminaries/" title="Python Preliminaries" class="md-nav__link">
+      Python Preliminaries
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python_Nice_to_Have/" title="Python Nice to Have" class="md-nav__link">
+      Python Nice to Have
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Freeze_the_Code/" title="Freeze the Code" class="md-nav__link">
+      Freeze the Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Write_Better_Python/" title="Write Better Python with PEP" class="md-nav__link">
+      Write Better Python with PEP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Regex/" title="Regular Expressions (regex)" class="md-nav__link">
+      Regular Expressions (regex)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Databases/" title="Databases" class="md-nav__link">
+      Databases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Datetime/" title="Datetime" class="md-nav__link">
+      Datetime
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Gedit_Execute_Highlighted_Python_Code/" title="Gedit, Execute Highlighted Python Code" class="md-nav__link">
+      Gedit, Execute Highlighted Python Code
+    </a>
+  </li>
+
+        
+      </ul>
     </nav>
+  </li>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">ugo_py_doc</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>SciPy Stack &raquo;</li>
-        
       
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <li>Exploratory Data Analysis</li>
-    <li class="wy-breadcrumbs-aside">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Scipy Stack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Scipy Stack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scipy_CS/" title="Scipy Stack Cheat Sheets" class="md-nav__link">
+      Scipy Stack Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../JN_CS/" title="Jupyter Notebook Cheat Sheets" class="md-nav__link">
+      Jupyter Notebook Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Scientific Python/" title="Scientific Python" class="md-nav__link">
+      Scientific Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Importing Data into Python/" title="Importing Data into Python" class="md-nav__link">
+      Importing Data into Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python for Data Science/" title="Python for Data Science" class="md-nav__link">
+      Python for Data Science
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tidy_Data_in_Python/" title="Tidy Data in Python" class="md-nav__link">
+      Tidy Data in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lists/" title="Lists" class="md-nav__link">
+      Lists
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../IPython Notebook/" title="IPython Notebook, Collection" class="md-nav__link">
+      IPython Notebook, Collection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python Numpy Arrays/" title="Python Numpy Arrays" class="md-nav__link">
+      Python Numpy Arrays
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Vectors and Arrays (Linear Algebra)/" title="Vectors and Arrays (Linear Algebra)" class="md-nav__link">
+      Vectors and Arrays (Linear Algebra)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Matplotlib, Python Plotting/" title="Matplotlib, Python Plotting" class="md-nav__link">
+      Matplotlib, Python Plotting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Viewing+3D+Volumetric+Data+With+Matplotlib/" title="Viewing 3D Volumetric Data with Matplotlib" class="md-nav__link">
+      Viewing 3D Volumetric Data with Matplotlib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Seaborn, Python Statistical Data Visualization Library/" title="Seaborn, Python's Statistical Data Visualization Library" class="md-nav__link">
+      Seaborn, Python's Statistical Data Visualization Library
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Pandas+DataFrames/" title="Pandas DataFrames" class="md-nav__link">
+      Pandas DataFrames
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Write Idiomatic Pandas Code/" title="Write Idiomatic Pandas Code" class="md-nav__link">
+      Write Idiomatic Pandas Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Exploratory Data Analysis (EDA)
+      </label>
+    
+    <a href="./" title="Exploratory Data Analysis (EDA)" class="md-nav__link md-nav__link--active">
+      Exploratory Data Analysis (EDA)
+    </a>
+    
       
-    </li>
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#digits" title="digits" class="md-nav__link">
+    digits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iris" title="iris" class="md-nav__link">
+    iris
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-description-of-the-data" title="Basic Description of the Data" class="md-nav__link">
+    Basic Description of the Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#describing-the-data" title="Describing The Data" class="md-nav__link">
+    Describing The Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-and-last-dataframe-rows" title="First and Last DataFrame Rows" class="md-nav__link">
+    First and Last DataFrame Rows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-the-data" title="Sample the Data" class="md-nav__link">
+    Sample the Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queries" title="Queries" class="md-nav__link">
+    Queries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-challenges-of-data" title="The Challenges of Data" class="md-nav__link">
+    The Challenges of Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missing-values" title="Missing Values" class="md-nav__link">
+    Missing Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" title="Delete" class="md-nav__link">
+    Delete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impute" title="Impute" class="md-nav__link">
+    Impute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliers" title="Outliers" class="md-nav__link">
+    Outliers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-datas-features" title="The Data’s Features" class="md-nav__link">
+    The Data’s Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-engineering" title="Feature Engineering" class="md-nav__link">
+    Feature Engineering
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encode-categorical-variables-into-numerical-ones" title="Encode categorical variables into numerical ones" class="md-nav__link">
+    Encode categorical variables into numerical ones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bin-continuous-variables-in-groups" title="Bin continuous variables in groups" class="md-nav__link">
+    Bin continuous variables in groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-features" title="Scale features" class="md-nav__link">
+    Scale features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-selection" title="Feature Selection" class="md-nav__link">
+    Feature Selection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-in-the-data" title="Patterns In the Data" class="md-nav__link">
+    Patterns In the Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correlation-identification-with-pca-from-scikit-learn" title="Correlation Identification with PCA from scikit-learn" class="md-nav__link">
+    Correlation Identification with PCA from scikit-learn
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matplotlib" title="Matplotlib" class="md-nav__link">
+    Matplotlib
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bokeh" title="Bokeh" class="md-nav__link">
+    Bokeh
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correlation-identification-with-pandas" title="Correlation Identification with Pandas" class="md-nav__link">
+    Correlation Identification with Pandas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python+And+Excel/" title="Python and Excel" class="md-nav__link">
+      Python and Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Overview_of_scikit-learn/" title="Overview of scikit-learn" class="md-nav__link">
+      Overview of scikit-learn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../k-NN_Linear_regression_Logit_Scaling_Centering_Noise/" title="k-NN, Linear regression, Logit, Scaling, Centering, Noise" class="md-nav__link">
+      k-NN, Linear regression, Logit, Scaling, Centering, Noise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Time_Series_Analysis/" title="Time Series Analysis" class="md-nav__link">
+      Time Series Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sentiment_Analysis_with_Twitter/" title="Sentiment Analysis with Twitter" class="md-nav__link">
+      Sentiment Analysis with Twitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../EDA_Machine_Learning_Feature_Engineering_and_Kaggle/" title="EDA, Machine Learning, Feature Engineering, and Kaggle" class="md-nav__link">
+      EDA, Machine Learning, Feature Engineering, and Kaggle
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Apprenez a programmer en Python/" title="Apprenez à programmer en Python" class="md-nav__link">
+      Apprenez à programmer en Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Codecademy Python/" title="Codecademy Python" class="md-nav__link">
+      Codecademy Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Learn Python the Hard Way/" title="Learn Python the Hard Way" class="md-nav__link">
+      Learn Python the Hard Way
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../LPTHW, Python Code Snippets/" title="LPTHW, Python Code Snippets" class="md-nav__link">
+      LPTHW, Python Code Snippets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Introduction to Python/" title="Introduction to Python" class="md-nav__link">
+      Introduction to Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Manuals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Manuals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Automate the Boring Stuff with Python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
+      Automate the Boring Stuff with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
+      Managing Your Biological Data with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python for Education/" title="Python for Education" class="md-nav__link">
+      Python for Education
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#digits" title="digits" class="md-nav__link">
+    digits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iris" title="iris" class="md-nav__link">
+    iris
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-description-of-the-data" title="Basic Description of the Data" class="md-nav__link">
+    Basic Description of the Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#describing-the-data" title="Describing The Data" class="md-nav__link">
+    Describing The Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-and-last-dataframe-rows" title="First and Last DataFrame Rows" class="md-nav__link">
+    First and Last DataFrame Rows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-the-data" title="Sample the Data" class="md-nav__link">
+    Sample the Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queries" title="Queries" class="md-nav__link">
+    Queries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-challenges-of-data" title="The Challenges of Data" class="md-nav__link">
+    The Challenges of Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#missing-values" title="Missing Values" class="md-nav__link">
+    Missing Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" title="Delete" class="md-nav__link">
+    Delete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impute" title="Impute" class="md-nav__link">
+    Impute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outliers" title="Outliers" class="md-nav__link">
+    Outliers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-datas-features" title="The Data’s Features" class="md-nav__link">
+    The Data’s Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-engineering" title="Feature Engineering" class="md-nav__link">
+    Feature Engineering
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encode-categorical-variables-into-numerical-ones" title="Encode categorical variables into numerical ones" class="md-nav__link">
+    Encode categorical variables into numerical ones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bin-continuous-variables-in-groups" title="Bin continuous variables in groups" class="md-nav__link">
+    Bin continuous variables in groups
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-features" title="Scale features" class="md-nav__link">
+    Scale features
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-selection" title="Feature Selection" class="md-nav__link">
+    Feature Selection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-in-the-data" title="Patterns In the Data" class="md-nav__link">
+    Patterns In the Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correlation-identification-with-pca-from-scikit-learn" title="Correlation Identification with PCA from scikit-learn" class="md-nav__link">
+    Correlation Identification with PCA from scikit-learn
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matplotlib" title="Matplotlib" class="md-nav__link">
+    Matplotlib
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bokeh" title="Bokeh" class="md-nav__link">
+    Bokeh
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#correlation-identification-with-pandas" title="Correlation Identification with Pandas" class="md-nav__link">
+    Correlation Identification with Pandas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
               
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#import-the-data">Import the Data</a><ul>
-<li><a href="#digits">digits</a></li>
-<li><a href="#iris">iris</a></li>
-</ul>
-</li>
-<li><a href="#basic-description-of-the-data">Basic Description of the Data</a><ul>
-<li><a href="#describing-the-data">Describing The Data</a></li>
-<li><a href="#first-and-last-dataframe-rows">First and Last DataFrame Rows</a></li>
-<li><a href="#sample-the-data">Sample the Data</a></li>
-</ul>
-</li>
-<li><a href="#queries">Queries</a></li>
-<li><a href="#the-challenges-of-data">The Challenges of Data</a><ul>
-<li><a href="#missing-values">Missing Values</a></li>
-<li><a href="#delete">Delete</a></li>
-<li><a href="#impute">Impute</a></li>
-<li><a href="#outliers">Outliers</a></li>
-</ul>
-</li>
-<li><a href="#the-datas-features">The Data’s Features</a><ul>
-<li><a href="#feature-engineering">Feature Engineering</a><ul>
-<li><a href="#encode-categorical-variables-into-numerical-ones">Encode categorical variables into numerical ones</a></li>
-<li><a href="#bin-continuous-variables-in-groups">Bin continuous variables in groups</a></li>
-<li><a href="#scale-features">Scale features</a></li>
-</ul>
-</li>
-<li><a href="#feature-selection">Feature Selection</a></li>
-</ul>
-</li>
-<li><a href="#patterns-in-the-data">Patterns In the Data</a><ul>
-<li><a href="#correlation-identification-with-pca-from-scikit-learn">Correlation Identification with PCA from scikit-learn</a><ul>
-<li><a href="#matplotlib">Matplotlib</a></li>
-<li><a href="#bokeh">Bokeh</a></li>
-</ul>
-</li>
-<li><a href="#correlation-identification-with-pandas">Correlation Identification with Pandas</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Exploratory Data Analysis.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="import-the-data">Import the Data<a class="headerlink" href="#import-the-data" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>sep</code>, delimiter.</li>
-<li><code>delimiter</code>, delimiter.</li>
-<li><code>names</code>, column names to use.</li>
+<li><code class="codehilite">sep</code>, delimiter.</li>
+<li><code class="codehilite">delimiter</code>, delimiter.</li>
+<li><code class="codehilite">names</code>, column names to use.</li>
 <li>
-<p><code>index_col</code>, column to use as the row labels.</p>
+<p><code class="codehilite">index_col</code>, column to use as the row labels.</p>
 </li>
 <li>
-<p><code>read_table()</code>, general delimited files.</p>
+<p><code class="codehilite">read_table()</code>, general delimited files.</p>
 </li>
-<li><code>read_excel()</code>, Excel files.</li>
-<li><code>read_fwf()</code>, Fixed-Width Formatted data.</li>
-<li><code>read_clipboard</code>, data copied to the clipboard.</li>
-<li><code>read_sql()</code>, SQL query.</li>
+<li><code class="codehilite">read_excel()</code>, Excel files.</li>
+<li><code class="codehilite">read_fwf()</code>, Fixed-Width Formatted data.</li>
+<li><code class="codehilite">read_clipboard</code>, data copied to the clipboard.</li>
+<li><code class="codehilite">read_sql()</code>, SQL query.</li>
 </ul>
-<p>http://pandas.pydata.org/pandas-docs/version/0.18.1/api.html#input-output</p>
-<pre><code class="python">%pylab inline
-import numpy as np
-import pandas as pd
-</code></pre>
+<p><a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/api.html#input-output">Input-output documentation</a>.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>Populating the interactive namespace from numpy and matplotlib
-</code></pre>
-<h4 id="digits"><code>digits</code><a class="headerlink" href="#digits" title="Permanent link">&para;</a></h4>
-<pre><code class="python"># Load in the data with `read_csv()`
-digits = pd.read_csv(&quot;http://archive.ics.uci.edu/ml/machine-learning-databases/optdigits/optdigits.tra&quot;,
-                     header=None)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+</pre></div>
+</td></tr></table>
 
-digits.head()
-</code></pre>
+<h4 id="digits"><code class="codehilite">digits</code><a class="headerlink" href="#digits" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Load in the data with `read_csv()`</span>
+<span class="n">digits</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http://archive.ics.uci.edu/ml/machine-learning-databases/optdigits/optdigits.tra&quot;</span><span class="p">,</span>
+                     <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+
+<span class="n">digits</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -601,14 +1517,19 @@ digits.head()
 </div>
 
 <p>Find out about the <a href="https://archive.ics.uci.edu/ml/machine-learning-databases/optdigits/optdigits.names">dataset</a>.</p>
-<h4 id="iris"><code>iris</code><a class="headerlink" href="#iris" title="Permanent link">&para;</a></h4>
+<h4 id="iris"><code class="codehilite">iris</code><a class="headerlink" href="#iris" title="Permanent link">&para;</a></h4>
 <p>Another classical dataset.</p>
-<pre><code class="python">iris = pd.read_csv(&quot;http://mlr.cs.umass.edu/ml/machine-learning-databases/iris/iris.data&quot;)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http://mlr.cs.umass.edu/ml/machine-learning-databases/iris/iris.data&quot;</span><span class="p">)</span>
 
-iris.columns = ['Sepal_Length', 'Sepal_Width', 'Petal_Length', 'Petal_Width', 'Class']
+<span class="n">iris</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sepal_Length&#39;</span><span class="p">,</span> <span class="s1">&#39;Sepal_Width&#39;</span><span class="p">,</span> <span class="s1">&#39;Petal_Length&#39;</span><span class="p">,</span> <span class="s1">&#39;Petal_Width&#39;</span><span class="p">,</span> <span class="s1">&#39;Class&#39;</span><span class="p">]</span>
 
-iris.head()
-</code></pre>
+<span class="n">iris</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -682,44 +1603,75 @@ iris.head()
 
 <h3 id="basic-description-of-the-data">Basic Description of the Data<a class="headerlink" href="#basic-description-of-the-data" title="Permanent link">&para;</a></h3>
 <h4 id="describing-the-data">Describing The Data<a class="headerlink" href="#describing-the-data" title="Permanent link">&para;</a></h4>
-<pre><code class="python">iris.dtypes
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">dtypes</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>Sepal_Length    float64
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Sepal_Length    float64
 Sepal_Width     float64
 Petal_Length    float64
 Petal_Width     float64
 Class            object
 dtype: object
-</code></pre>
-<pre><code class="python">def get_var_category(series):
-    unique_count = series.nunique(dropna=False)
-    total_count = len(series)
-    if pd.api.types.is_numeric_dtype(series):
-        return 'Numerical'
-    elif pd.api.types.is_datetime64_dtype(series):
-        return 'Date'
-    elif unique_count==total_count:
-        return 'Text (Unique)'
-    else:
-        return 'Categorical'
+</pre></div>
+</td></tr></table>
 
-def print_categories(df):
-    for column_name in df.columns:
-        print(column_name, &quot;: &quot;, get_var_category(df[column_name]))
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">get_var_category</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
+    <span class="n">unique_count</span> <span class="o">=</span> <span class="n">series</span><span class="o">.</span><span class="n">nunique</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+    <span class="n">total_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">series</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_numeric_dtype</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;Numerical&#39;</span>
+    <span class="k">elif</span> <span class="n">pd</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_datetime64_dtype</span><span class="p">(</span><span class="n">series</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;Date&#39;</span>
+    <span class="k">elif</span> <span class="n">unique_count</span><span class="o">==</span><span class="n">total_count</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Text (Unique)&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Categorical&#39;</span>
 
-<pre><code class="python">print_categories(iris)
-</code></pre>
+<span class="k">def</span> <span class="nf">print_categories</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">column_name</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">column_name</span><span class="p">,</span> <span class="s2">&quot;: &quot;</span><span class="p">,</span> <span class="n">get_var_category</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">column_name</span><span class="p">]))</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>Sepal_Length :  Numerical
-Sepal_Width :  Numerical
-Petal_Length :  Numerical
-Petal_Width :  Numerical
-Class :  Categorical
-</code></pre>
-<pre><code class="python">digits.describe()
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">print_categories</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Sepal_Length</span> <span class="o">:</span>  <span class="n">Numerical</span>
+<span class="n">Sepal_Width</span> <span class="o">:</span>  <span class="n">Numerical</span>
+<span class="n">Petal_Length</span> <span class="o">:</span>  <span class="n">Numerical</span>
+<span class="n">Petal_Width</span> <span class="o">:</span>  <span class="n">Numerical</span>
+<span class="n">Class</span> <span class="o">:</span>  <span class="n">Categorical</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">digits</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -960,8 +1912,9 @@ Class :  Categorical
 <p>8 rows × 65 columns</p>
 </div>
 
-<pre><code class="python">iris.describe()
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -1048,8 +2001,9 @@ Class :  Categorical
 </table>
 </div>
 
-<pre><code class="python">iris[[&quot;Sepal_Length&quot;, &quot;Sepal_Width&quot;]].describe()
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris</span><span class="p">[[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">,</span> <span class="s2">&quot;Sepal_Width&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -1118,75 +2072,122 @@ Class :  Categorical
 </table>
 </div>
 
-<pre><code class="python">length = len(digits)
-print(length)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>3823
-</code></pre>
-<pre><code class="python">count = digits[2].count()
-print(count)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>3823
+</pre></div>
+</td></tr></table>
 
-<pre><code>3823
-</code></pre>
-<pre><code class="python">number_of_missing_values = length - count
-pct_of_missing_values = float(number_of_missing_values / length)
-pct_of_missing_values = &quot;{0:.1f}%&quot;.format(pct_of_missing_values*100)
-print(pct_of_missing_values)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">count</span> <span class="o">=</span> <span class="n">digits</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>0.0%
-</code></pre>
-<pre><code class="python">print(&quot;Minimum value: &quot;, iris[&quot;Sepal_Length&quot;].min())
-print(&quot;Maximum value: &quot;, iris[&quot;Sepal_Length&quot;].max())
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>3823
+</pre></div>
+</td></tr></table>
 
-<pre><code>Minimum value:  4.3
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">number_of_missing_values</span> <span class="o">=</span> <span class="n">length</span> <span class="o">-</span> <span class="n">count</span>
+<span class="n">pct_of_missing_values</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">number_of_missing_values</span> <span class="o">/</span> <span class="n">length</span><span class="p">)</span>
+<span class="n">pct_of_missing_values</span> <span class="o">=</span> <span class="s2">&quot;{0:.1f}%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pct_of_missing_values</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pct_of_missing_values</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.0%
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Minimum value: &quot;</span><span class="p">,</span> <span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Maximum value: &quot;</span><span class="p">,</span> <span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Minimum value:  4.3
 Maximum value:  7.9
-</code></pre>
-<pre><code class="python">print(iris[&quot;Sepal_Length&quot;].mode())
-</code></pre>
+</pre></div>
+</td></tr></table>
 
-<pre><code>0    5.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0    5.0
 dtype: float64
-</code></pre>
-<pre><code class="python">print(iris[&quot;Sepal_Length&quot;].mean())
-</code></pre>
+</pre></div>
+</td></tr></table>
 
-<pre><code>5.848322147651008
-</code></pre>
-<pre><code class="python">print(iris[&quot;Sepal_Length&quot;].median())
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>5.8
-</code></pre>
-<pre><code class="python">print(iris[&quot;Sepal_Length&quot;].std())
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>5.848322147651008
+</pre></div>
+</td></tr></table>
 
-<pre><code>0.8285940572656172
-</code></pre>
-<pre><code class="python">print(iris[&quot;Sepal_Length&quot;].quantile([.25, .5, .75]))
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>0.25    5.1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>5.8
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.8285940572656172
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">([</span><span class="o">.</span><span class="mi">25</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="o">.</span><span class="mi">75</span><span class="p">]))</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.25    5.1
 0.50    5.8
 0.75    6.4
 Name: Sepal_Length, dtype: float64
-</code></pre>
-<pre><code class="python">import seaborn as sns
-sns.set(color_codes=True)
+</pre></div>
+</td></tr></table>
 
-sns.set_palette(sns.color_palette(&quot;muted&quot;))
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">color_codes</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 
-sns.distplot(iris[&quot;Sepal_Length&quot;].dropna())
-</code></pre>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">&quot;muted&quot;</span><span class="p">))</span>
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f87b39b0320&gt;
-</code></pre>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f87b39b0320&gt;
+</pre></div>
+</td></tr></table>
+
 <p><img alt="" src="../img/exploratory_data_analysis/output_23_1.png" /></p>
-<pre><code class="python">iris[[&quot;Sepal_Length&quot;, &quot;Sepal_Width&quot;]].corr()
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris</span><span class="p">[[</span><span class="s2">&quot;Sepal_Length&quot;</span><span class="p">,</span> <span class="s2">&quot;Sepal_Width&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -1225,11 +2226,15 @@ sns.distplot(iris[&quot;Sepal_Length&quot;].dropna())
 </table>
 </div>
 
-<pre><code class="python">import pandas_profiling 
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas_profiling</span> 
 
-# Print a full report
-pandas_profiling.ProfileReport(iris)
-</code></pre>
+<span class="c1"># Print a full report</span>
+<span class="n">pandas_profiling</span><span class="o">.</span><span class="n">ProfileReport</span><span class="p">(</span><span class="n">iris</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><meta charset="UTF-8"></p>
 <style>
@@ -2771,23 +3776,45 @@ pandas_profiling.ProfileReport(iris)
 </div>
 </div>
 
-<pre><code class="python"># Print a full report
-pandas_profiling.ProfileReport(digits)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Print a full report</span>
+<span class="n">pandas_profiling</span><span class="o">.</span><span class="n">ProfileReport</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p><strong>&gt;&gt;&gt; Full (lengthy) report here!!! &lt;&lt;&lt;</strong></p>
 <h4 id="first-and-last-dataframe-rows">First and Last DataFrame Rows<a class="headerlink" href="#first-and-last-dataframe-rows" title="Permanent link">&para;</a></h4>
-<pre><code class="python"># Inspect the first 5 rows of `digits`
-first = digits.head(5)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Inspect the first 5 rows of `digits`</span>
+<span class="n">first</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 
-# Inspect the last 3 rows
-last = digits.tail(3)
-</code></pre>
+<span class="c1"># Inspect the last 3 rows</span>
+<span class="n">last</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="python">print(first)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">first</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>   0   1   2   3   4   5   6   7   8   9  ...  55  56  57  58  59  60  61  62  \
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>   0   1   2   3   4   5   6   7   8   9  ...  55  56  57  58  59  60  61  62  \
 0   0   1   6  15  12   1   0   0   0   7 ...   0   0   0   6  14   7   1   0   
 1   0   0  10  16   6   0   0   0   0   7 ...   0   0   0  10  16  15   3   0   
 2   0   0   8  15  16  13   0   0   0   1 ...   0   0   0   9  14   0   0   0   
@@ -2802,11 +3829,24 @@ last = digits.tail(3)
 4   0   6
 
 [5 rows x 65 columns]
-</code></pre>
-<pre><code class="python">print(last)
-</code></pre>
+</pre></div>
+</td></tr></table>
 
-<pre><code>      0   1   2   3   4   5   6   7   8   9  ...  55  56  57  58  59  60  61  \
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>      0   1   2   3   4   5   6   7   8   9  ...  55  56  57  58  59  60  61  \
 3820   0   0   3  15   0   0   0   0   0   0 ...   0   0   0   4  14  16   9   
 3821   0   0   6  16   2   0   0   0   0   0 ...   0   0   0   5  16  16  16   
 3822   0   0   2  15  16  13   1   0   0   0 ...   0   0   0   4  14   1   0
@@ -2817,11 +3857,15 @@ last = digits.tail(3)
 3822   0   0   7
 
 [3 rows x 65 columns]
-</code></pre>
+</pre></div>
+</td></tr></table>
+
 <h4 id="sample-the-data">Sample the Data<a class="headerlink" href="#sample-the-data" title="Permanent link">&para;</a></h4>
-<pre><code class="python"># Take a sample of 5
-digits.sample(5)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Take a sample of 5</span>
+<span class="n">digits</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -2990,25 +4034,53 @@ digits.sample(5)
 <p>5 rows × 65 columns</p>
 </div>
 
-<pre><code class="python"># import `sample` from `random`
-from random import sample
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># import `sample` from `random`</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span>
 
-# Create a random index
-randomIndex = np.array(sample(range(len(digits)), 5))
+<span class="c1"># Create a random index</span>
+<span class="n">randomIndex</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">digits</span><span class="p">)),</span> <span class="mi">5</span><span class="p">))</span>
 
-print(randomIndex)
-</code></pre>
+<span class="k">print</span><span class="p">(</span><span class="n">randomIndex</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>[ 846  569  315 2932 2328]
-</code></pre>
-<pre><code class="python"># Get 5 random rows
-digitsSample = digits.ix[randomIndex]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[ 846  569  315 2932 2328]
+</pre></div>
+</td></tr></table>
 
-# Print the sample
-print(digitsSample)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Get 5 random rows</span>
+<span class="n">digitsSample</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">randomIndex</span><span class="p">]</span>
 
-<pre><code>      0   1   2   3   4   5   6   7   8   9  ...  55  56  57  58  59  60  61  \
+<span class="c1"># Print the sample</span>
+<span class="k">print</span><span class="p">(</span><span class="n">digitsSample</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>      0   1   2   3   4   5   6   7   8   9  ...  55  56  57  58  59  60  61  \
 846    0   5  14  15   9   1   0   0   0   7 ...   0   0   4  12  16  12  10   
 569    0   1   7  12  12   0   0   0   0   3 ...   0   0   0  10  16  13   7   
 315    0   1   6  13  13   4   0   0   0   9 ...   0   0   0   4  14  16   9   
@@ -3023,10 +4095,13 @@ print(digitsSample)
 2328   0   0   7
 
 [5 rows x 65 columns]
-</code></pre>
+</pre></div>
+</td></tr></table>
+
 <h3 id="queries">Queries<a class="headerlink" href="#queries" title="Permanent link">&para;</a></h3>
-<pre><code class="python">iris.head(2)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -3074,9 +4149,11 @@ print(digitsSample)
 </table>
 </div>
 
-<pre><code class="python"># Petal length greater than sepal length?
-iris.query('Petal_Length &gt; Sepal_Length')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Petal length greater than sepal length?</span>
+<span class="n">iris</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;Petal_Length &gt; Sepal_Length&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -3108,9 +4185,11 @@ iris.query('Petal_Length &gt; Sepal_Length')
 </table>
 </div>
 
-<pre><code class="python"># reverse
-iris.query('Sepal_Length &gt; Petal_Length')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># reverse</span>
+<span class="n">iris</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;Sepal_Length &gt; Petal_Length&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -3631,9 +4710,11 @@ iris.query('Sepal_Length &gt; Petal_Length')
 <p>149 rows × 5 columns</p>
 </div>
 
-<pre><code class="python"># alternatively
-iris[iris.Sepal_Length &gt; iris.Petal_Length]
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># alternatively</span>
+<span class="n">iris</span><span class="p">[</span><span class="n">iris</span><span class="o">.</span><span class="n">Sepal_Length</span> <span class="o">&gt;</span> <span class="n">iris</span><span class="o">.</span><span class="n">Petal_Length</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -4156,9 +5237,11 @@ iris[iris.Sepal_Length &gt; iris.Petal_Length]
 
 <h3 id="the-challenges-of-data">The Challenges of Data<a class="headerlink" href="#the-challenges-of-data" title="Permanent link">&para;</a></h3>
 <h4 id="missing-values">Missing Values<a class="headerlink" href="#missing-values" title="Permanent link">&para;</a></h4>
-<pre><code class="python"># Identifiy missing values
-pd.isnull(digits)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Identifiy missing values</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -5672,41 +6755,62 @@ pd.isnull(digits)
 </div>
 
 <h4 id="delete">Delete<a class="headerlink" href="#delete" title="Permanent link">&para;</a></h4>
-<pre><code class="python"># Drop rows with missing values
-df.dropna(axis=0)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Drop rows with missing values</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-# Drop columns with missing values 
-df.dropna(axis=1)
-</code></pre>
+<span class="c1"># Drop columns with missing values </span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="impute">Impute<a class="headerlink" href="#impute" title="Permanent link">&para;</a></h4>
 <p>Imputation: mean, median, another variable, estimate with regression ANOVA, logit, k-NN.</p>
-<pre><code class="python"># Import NumPy
-import numpy as np
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import NumPy</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
-# Calculate the mean of the DataFrame variable Salary
-mean = np.mean(df.Salary)
+<span class="c1"># Calculate the mean of the DataFrame variable Salary</span>
+<span class="n">mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Salary</span><span class="p">)</span>
 
-# Replace missing values with the mean
-df = df.Salary.fillna(mean)
+<span class="c1"># Replace missing values with the mean</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Salary</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">mean</span><span class="p">)</span>
 
-df = df.Salary.fillna(mean, method=ffill)
-</code></pre>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">Salary</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="n">ffill</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <ul>
-<li><code>ffill</code> and <code>bfill</code> for forward and backward fill.</li>
+<li><code class="codehilite">ffill</code> and <code class="codehilite">bfill</code> for forward and backward fill.</li>
 </ul>
-<pre><code class="python">from scipy import interpolate
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">interpolate</span>
 
-# Fill the DataFrame
-df.interpolate()
+<span class="c1"># Fill the DataFrame</span>
+<span class="n">df</span><span class="o">.</span><span class="n">interpolate</span><span class="p">()</span>
 
-df.interpolate(method=cubic)
-</code></pre>
+<span class="n">df</span><span class="o">.</span><span class="n">interpolate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">cubic</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <ul>
-<li><code>cubic</code>, <code>polynomial</code>.</li>
-<li><code>limit</code> and <code>limit_direction</code>.</li>
+<li><code class="codehilite">cubic</code>, <code class="codehilite">polynomial</code>.</li>
+<li><code class="codehilite">limit</code> and <code class="codehilite">limit_direction</code>.</li>
 </ul>
 <h4 id="outliers">Outliers<a class="headerlink" href="#outliers" title="Permanent link">&para;</a></h4>
 <p>Delete (data entry, processing errors), transform (assign weights, natural log to reduce variation) or impute them (replace extreme values with median, mean or mode values).</p>
@@ -5714,91 +6818,158 @@ df.interpolate(method=cubic)
 <h4 id="feature-engineering">Feature Engineering<a class="headerlink" href="#feature-engineering" title="Permanent link">&para;</a></h4>
 <p>Increase the predictive power of learning algorithms by creating features from raw data that will help the learning process.</p>
 <h5 id="encode-categorical-variables-into-numerical-ones">Encode categorical variables into numerical ones<a class="headerlink" href="#encode-categorical-variables-into-numerical-ones" title="Permanent link">&para;</a></h5>
-<pre><code class="python"># Factorize the values 
-labels,levels = pd.factorize(iris.Class)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Factorize the values </span>
+<span class="n">labels</span><span class="p">,</span><span class="n">levels</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">factorize</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">Class</span><span class="p">)</span>
 
-# Save the encoded variables in `iris.Class`
-iris.Class = labels
+<span class="c1"># Save the encoded variables in `iris.Class`</span>
+<span class="n">iris</span><span class="o">.</span><span class="n">Class</span> <span class="o">=</span> <span class="n">labels</span>
 
-# Print out the first rows
-iris.Class.head()
-</code></pre>
+<span class="c1"># Print out the first rows</span>
+<span class="n">iris</span><span class="o">.</span><span class="n">Class</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>0    0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0    0
 1    0
 2    0
 3    0
 4    0
 Name: Class, dtype: int64
-</code></pre>
+</pre></div>
+</td></tr></table>
+
 <h5 id="bin-continuous-variables-in-groups">Bin continuous variables in groups<a class="headerlink" href="#bin-continuous-variables-in-groups" title="Permanent link">&para;</a></h5>
-<pre><code class="python"># Define the bins
-mybins = range(0, df.age.max(), 10)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Define the bins</span>
+<span class="n">mybins</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">age</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="mi">10</span><span class="p">)</span>
 
-# Cut the data from the DataFrame with the help of the bins
-df['age_bucket'] = pd.cut(df.age, bins=mybins)
+<span class="c1"># Cut the data from the DataFrame with the help of the bins</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;age_bucket&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">mybins</span><span class="p">)</span>
 
-# Count the number of values per bucket
-df['age_bucket'].value_counts()
-</code></pre>
+<span class="c1"># Count the number of values per bucket</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;age_bucket&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <h5 id="scale-features">Scale features<a class="headerlink" href="#scale-features" title="Permanent link">&para;</a></h5>
 <p>Center the data around 0.</p>
-<pre><code class="python">from sklearn.preprocessing import StandardScaler
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 
-scaler = StandardScaler().fit(X)
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-rescaledX = scaler.transform(X)
-</code></pre>
+<span class="n">rescaledX</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <h4 id="feature-selection">Feature Selection<a class="headerlink" href="#feature-selection" title="Permanent link">&para;</a></h4>
 <p>Select the key subset of original data features in an attempt to reduce the dimensionality of the training problem.</p>
 <p>PCA combines similar (correlated) attributes and creates new ones that are considered superior to the original attributes of the dataset. </p>
 <p>Feature selection doesn’t combine attributes: it evaluates the quality and predictive power and selects the best set.</p>
 <p>To find important features, calculate how much better or worse a model does when we leave one variable out of the equation.</p>
-<pre><code class="python"># Import `RandomForestClassifier`
-from sklearn.ensemble import RandomForestClassifier
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import `RandomForestClassifier`</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
 
-# Isolate Data, class labels and column values
-X = iris.iloc[:,0:4]
-Y = iris.iloc[:,-1]
-names = iris.columns.values
+<span class="c1"># Isolate Data, class labels and column values</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span>
 
-# Build the model
-rfc = RandomForestClassifier()
+<span class="c1"># Build the model</span>
+<span class="n">rfc</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
 
-# Fit the model
-rfc.fit(X, Y)
+<span class="c1"># Fit the model</span>
+<span class="n">rfc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
 
-# Print the results
-print(&quot;Features sorted by their score:&quot;)
-print(sorted(zip(map(lambda x: round(x, 4), rfc.feature_importances_), names), reverse=True))
-</code></pre>
+<span class="c1"># Print the results</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Features sorted by their score:&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">rfc</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">),</span> <span class="n">names</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>Features sorted by their score:
-[(0.4899, 'Petal_Length'), (0.2752, 'Petal_Width'), (0.2185, 'Sepal_Length'), (0.016400000000000001, 'Sepal_Width')]
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Features sorted by their score:
+[(0.4899, &#39;Petal_Length&#39;), (0.2752, &#39;Petal_Width&#39;), (0.2185, &#39;Sepal_Length&#39;), (0.016400000000000001, &#39;Sepal_Width&#39;)]
+</pre></div>
+</td></tr></table>
+
 <p>The best feature set is one that includes the petal length and petal width data.</p>
-<pre><code class="python"># Isolate feature importances 
-importance = rfc.feature_importances_
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Isolate feature importances </span>
+<span class="n">importance</span> <span class="o">=</span> <span class="n">rfc</span><span class="o">.</span><span class="n">feature_importances_</span>
 
-# Sort the feature importances 
-sorted_importances = np.argsort(importance)
+<span class="c1"># Sort the feature importances </span>
+<span class="n">sorted_importances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">importance</span><span class="p">)</span>
 
-# Insert padding
-padding = np.arange(len(names)-1) + 0.5
+<span class="c1"># Insert padding</span>
+<span class="n">padding</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span>
 
-# Plot the data
-plt.barh(padding, importance[sorted_importances], align='center')
+<span class="c1"># Plot the data</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">padding</span><span class="p">,</span> <span class="n">importance</span><span class="p">[</span><span class="n">sorted_importances</span><span class="p">],</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 
-# Customize the plot
-plt.yticks(padding, names[sorted_importances])
-plt.xlabel(&quot;Relative Importance&quot;)
-plt.title(&quot;Variable Importance&quot;)
+<span class="c1"># Customize the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">padding</span><span class="p">,</span> <span class="n">names</span><span class="p">[</span><span class="n">sorted_importances</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Relative Importance&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Variable Importance&quot;</span><span class="p">)</span>
 
-# Show the plot
-plt.show()
-</code></pre>
+<span class="c1"># Show the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/exploratory_data_analysis/output_48_0.png" /></p>
 <h3 id="patterns-in-the-data">Patterns In the Data<a class="headerlink" href="#patterns-in-the-data" title="Permanent link">&para;</a></h3>
@@ -5806,68 +6977,109 @@ plt.show()
 <h4 id="correlation-identification-with-pca-from-scikit-learn">Correlation Identification with PCA from scikit-learn<a class="headerlink" href="#correlation-identification-with-pca-from-scikit-learn" title="Permanent link">&para;</a></h4>
 <h5 id="matplotlib">Matplotlib<a class="headerlink" href="#matplotlib" title="Permanent link">&para;</a></h5>
 <p>Dimensionality Reduction techniques, such as Principal Component Analysis (PCA). From &lsquo;many&rsquo; to two &lsquo;principal components&rsquo;.</p>
-<pre><code class="python"># Import `PCA` from `sklearn.decomposition`
-from sklearn.decomposition import PCA
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Import `PCA` from `sklearn.decomposition`</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
 
-# Build the model
-pca = PCA(n_components=2)
+<span class="c1"># Build the model</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-# Reduce the data, output is ndarray
-reduced_data = pca.fit_transform(digits)
+<span class="c1"># Reduce the data, output is ndarray</span>
+<span class="n">reduced_data</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">digits</span><span class="p">)</span>
 
-# Inspect shape of the `reduced_data`
-reduced_data.shape
+<span class="c1"># Inspect shape of the `reduced_data`</span>
+<span class="n">reduced_data</span><span class="o">.</span><span class="n">shape</span>
 
-# print out the reduced data
-print(reduced_data)
-</code></pre>
+<span class="c1"># print out the reduced data</span>
+<span class="k">print</span><span class="p">(</span><span class="n">reduced_data</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code>[[ 12.65674168  -4.63610357]
- [ 16.82906354 -12.96575346]
- [-19.08072301  10.58293767]
- ..., 
- [ 23.90693984   6.06265415]
- [ 29.1798759   -3.06847144]
- [-25.23132536  11.60863909]]
-</code></pre>
-<pre><code class="python">reduced_data = pd.DataFrame(reduced_data)
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">[[ 12.65674168  -4.63610357]</span>
+ <span class="k">[ 16.82906354 -12.96575346]</span>
+ <span class="k">[-19.08072301  10.58293767]</span>
+ <span class="na">..., </span>
+ <span class="k">[ 23.90693984   6.06265415]</span>
+ <span class="k">[ 29.1798759   -3.06847144]</span>
+ <span class="k">[-25.23132536  11.60863909]]</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="python">import matplotlib.pyplot as plt
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">reduced_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">reduced_data</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-plt.scatter(reduced_data[0], reduced_data[1])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-plt.show()
-</code></pre>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">reduced_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reduced_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <p><img alt="" src="../img/exploratory_data_analysis/output_52_0.png" /></p>
 <h5 id="bokeh">Bokeh<a class="headerlink" href="#bokeh" title="Permanent link">&para;</a></h5>
 <p>To be implemented in a webpage for example.</p>
-<pre><code class="python">from bokeh.charts import Scatter, output_file, show
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">bokeh.charts</span> <span class="kn">import</span> <span class="n">Scatter</span><span class="p">,</span> <span class="n">output_file</span><span class="p">,</span> <span class="n">show</span>
 
-# Construct the scatter plot
-p = Scatter(iris, x='Petal_Length', y='Petal_Width', color=&quot;Class&quot;, title=&quot;Petal Length vs Petal Width&quot;,
-            xlabel=&quot;Sepal Length&quot;, ylabel=&quot;Sepal Width&quot;)
+<span class="c1"># Construct the scatter plot</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">Scatter</span><span class="p">(</span><span class="n">iris</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Petal_Length&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Petal_Width&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;Class&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Petal Length vs Petal Width&quot;</span><span class="p">,</span>
+            <span class="n">xlabel</span><span class="o">=</span><span class="s2">&quot;Sepal Length&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Sepal Width&quot;</span><span class="p">)</span>
 
-# Output the file 
-output_file('scatter.html')
+<span class="c1"># Output the file </span>
+<span class="n">output_file</span><span class="p">(</span><span class="s1">&#39;scatter.html&#39;</span><span class="p">)</span>
 
-# Show the scatter plot
-show(p)
-</code></pre>
+<span class="c1"># Show the scatter plot</span>
+<span class="n">show</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p>The GIF output:</p>
 <p><img alt="" src="../img/exploratory_data_analysis/desktop-animation.gif" /></p>
 <hr />
 <h4 id="correlation-identification-with-pandas">Correlation Identification with Pandas<a class="headerlink" href="#correlation-identification-with-pandas" title="Permanent link">&para;</a></h4>
 <p>The Pearson correlation assumes that the variables are normally distributed, that there is a straight line relationship between each of the variables and that the data is normally distributed about the regression line. </p>
-<p>The Spearman correlation, on the other hand, assumes that we have two ordinal variables or two variables that are related in some way, but not linearly. The Spearman coefficient is the sum of deviation squared by <code>n</code> times <code>n</code> minus 1.</p>
+<p>The Spearman correlation, on the other hand, assumes that we have two ordinal variables or two variables that are related in some way, but not linearly. The Spearman coefficient is the sum of deviation squared by <code class="codehilite">n</code> times <code class="codehilite">n</code> minus 1.</p>
 <p>The Kendall Tau correlation is a coefficient that represents the degree of concordance between two columns of ranked data. We can use the Spearman correlation to measure the degree of association between two variables. The Kendal Tau coefficient is calculated by the number of concordant pairs minus the number of discordant pairs divided by the total number of pairs.</p>
 <p>Spearman’s coefficient will usually be larger than the Kendall’s Tau coefficient, but this is not always the case: we’ll get a smaller Spearman’s coefficient when the deviations are huge among the observations of the data. The Spearman correlation is very sensitive to this and this might come in handy in some cases!</p>
 <p>The two last correlation measures require ranking the data.</p>
-<pre><code class="python"># Pearson correlation
-iris.corr()
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Pearson correlation</span>
+<span class="n">iris</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -5939,10 +7151,13 @@ iris.corr()
 </table>
 </div>
 
-<pre><code class="python">iris2 = iris.rank()
-# Kendall Tau correlation
-iris2.corr('kendall')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">iris2</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">rank</span><span class="p">()</span>
+<span class="c1"># Kendall Tau correlation</span>
+<span class="n">iris2</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="s1">&#39;kendall&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -6014,9 +7229,11 @@ iris2.corr('kendall')
 </table>
 </div>
 
-<pre><code class="python"># Spearman Rank correlation
-iris2.corr('spearman')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Spearman Rank correlation</span>
+<span class="n">iris2</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="s1">&#39;spearman&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <div>
 <style>
@@ -6087,54 +7304,90 @@ iris2.corr('spearman')
   </tbody>
 </table>
 </div>
+                
+                  
+                
               
-            </div>
+              
+                
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Intro to data.world in Python/" class="btn btn-neutral float-right" title="Intro to data.world in Python">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Write Idiomatic Pandas Code/" class="btn btn-neutral" title="Write Idiomatic Pandas Code"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Write Idiomatic Pandas Code/" title="Write Idiomatic Pandas Code" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Write Idiomatic Pandas Code
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction to data.world in Python
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-      <p>© Ugo Sparks</p>
-    
-  </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-	  
-        </div>
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            © Ugo Sparks
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
       </div>
-
-    </section>
-    
+      
+        
+      
+    </div>
   </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+</footer>
       
+    </div>
+    
+      <script src="../assets/javascripts/application.8eb9be28.js"></script>
       
-        <span><a href="../Write Idiomatic Pandas Code/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
-        <span style="margin-left: 15px"><a href="../Intro to data.world in Python/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+    
       
-    </span>
-</div>
-    <script src="../js/theme.js"></script>
-      <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
-      <script src="../mathjaxhelper.js"></script>
-
-</body>
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
 </html>

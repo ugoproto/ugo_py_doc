@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Notes. Python 3. From Le Livre du Zéro, Simple IT, 2011.
 
 ---
 
-## Shebang Line
+# Shebang Line
 
 <sub>shebang, top, file, environment, language, kernel, python2, python 2, python3, python 3, utf, utf8, utf-8</sub>
 
@@ -19,48 +20,48 @@ Other names: sha-bang, hashbang, pound-bang, hash-pling.
 **At the top of scripts**
 
 - In Windows, Python 2:
-    - `#! python`
+    - `#! python`.
 - Windows, Python 3:
-    - `#! python 3`
+    - `#! python 3`.
 - UNIX, Python 2:
-    - `#!/usr/bin/env python`
+    - `#!/usr/bin/env python`.
 - UNIX, Python 3:
-    - `#!/usr/bin/env python 3`
+    - `#!/usr/bin/env python 3`.
 - Add:
-    - `# -*coding: utf-8 -*-`
-    - `# -*coding: latin-1 -*-`
+    - `# -*coding: utf-8 -*-`.
+    - `# -*coding: latin-1 -*-`.
 
 **Launch a script**
 
 - In Windows, Python 2:
-    - `python script.py`
-    - `py script.py`
-    - `py -2 script.py`
-    - `py -2.7 script.py`
+    - `python script.py`.
+    - `py script.py`.
+    - `py -2 script.py`.
+    - `py -2.7 script.py`.
 - In UNIX, Python 2:
-    - `python script.py`
+    - `python script.py`.
 - In Windows, Python 3:
-    - `py -3 script.py`
-    - `py -3.5 script.py`
+    - `py -3 script.py`.
+    - `py -3.5 script.py`.
 - In UNIX, Python 3:
-    - `python3 script.py`
+    - `python3 script.py`.
     
 **Launch the shell/bash**
 
 - The shell, Python 2:
-    - `python`
-    - `py -2`
-    - `py -2.7`
+    - `python`.
+    - `py -2`.
+    - `py -2.7`.
 - The bash, Python 2:
-    - `python`
-    - `python2`
+    - `python`.
+    - `python2`.
 - The shell, Python 3:
-    - `py -3`
-    - `py -3.5`
+    - `py -3`.
+    - `py -3.5`.
 - The bash, Python 3:
-    - `python3`
+    - `python3`.
 
-## Chapter 8, Exceptions
+# Chapter 8, Exceptions
 
 Basic.
 
@@ -71,7 +72,7 @@ Basic.
 - `assert` tests and conditions.
 - `raise` an exception.
 
-## Chapter 10, Strings
+# Chapter 10, Strings
 
 Basic.
 
@@ -81,7 +82,7 @@ A `"string"`.
 - `upper()` and `lower()` methods; upper/lower characters.
 - `capitalize()` method; first-letter upper character.
 - `left()`, `right()`, `center()` methods.
-- `strip()`, `lstrip()`, `rstrip()` methods; remove white space
+- `strip()`, `lstrip()`, `rstrip()` methods; remove white space.
 - `format()` method.
 - `count()` method.
 - `find()` method.
@@ -89,7 +90,7 @@ A `"string"`.
 - `[:]` to subset a string.
 - `while` loop on a string.
 
-## Chapter 11, Lists and Tuples 1
+# Chapter 11, Lists and Tuples 1
 
 Basic.
 
@@ -112,7 +113,7 @@ Tuples are immutable; cannot be modified.
 
 `(tuple)`.
 
-## Chapter 12, Lists and Tuples 2
+# Chapter 12, Lists and Tuples 2
 
 Basic.
 
@@ -131,7 +132,7 @@ Strings and lists. Create, split, loop through a sequence. Even in a list of lis
 
 Find the `type()` of a variable (integer, float, boolean, etc.)
 
-## Chapter 13, Dictionaries
+# Chapter 13, Dictionaries
 
 Basic.
 
@@ -158,7 +159,7 @@ Combine lists and dictionaries in a function with an undetermined number of para
 - `in dict.values()` method; extract the values from dictionary `dict`.
 - `in dict.items()` method to extract the keys and values from dictionary `dict`.
 
-## Chapter 14, Files
+# Chapter 14, Files
 
 Basic.
 
@@ -175,7 +176,7 @@ Basic.
 
 - `Pickler()` method.
 
-## Chapter 17, Classes and docstrings
+# Chapter 17, Classes and docstrings
 
 Basic.
 
@@ -195,7 +196,7 @@ Basic.
 
 `object.__dict__["att_a"] = "att_b"` changes an object's attribute.
 
-## Chapter 18, (Class) Properties
+# Chapter 18, (Class) Properties
 
 Basic.
 
@@ -203,7 +204,7 @@ Basic.
 
 More about the `def __init__():` constructor.
 
-## Chapter 19, Special Methods
+# Chapter 19, Special Methods
 
 Basic.
 
@@ -244,7 +245,7 @@ Basic.
 - `__getstate__` method.
 - `__setstate__` method.
 
-## Chapter 20, Heritage
+# Chapter 20, Heritage
 
 Basic.
 
@@ -261,7 +262,7 @@ More exceptions in a `try` block, `except`, heritage, `AttributeError`, `Excepti
 
 Exceptions are classes with hierarchy.
 
-## Chapter 21, The for Loop Again
+# Chapter 21, The for Loop Again
 
 Basic.
 
@@ -269,7 +270,7 @@ Related to the `for` loop and how to dig deeper into the iterator with `__iter__
 
 Iterator can also skip items in a list: iterate from 1 to 5, them jump to 10 and go on. A sort of conditional `break`. For that, we must generate intervals with `yield`.
 
-## Chapter 23, Decorators
+# Chapter 23, Decorators
 
 Advanced!
 
@@ -298,7 +299,7 @@ Use:
 1. Limit a class instance to only one instance  or one object (a `singleton`).
 2. Add more control on the type of data going into functions. 
 
-## Chapter 24, Metaclasses
+# Chapter 24, Metaclasses
 
 Advanced!
 
@@ -308,7 +309,7 @@ It is done by coding a new instance or with `__new__`. The method is useful to c
 
 Create dynamic classes with `type`.
 
-## Chapter 25, Regular Expressions
+# Chapter 25, Regular Expressions
 
 Basic.
 
@@ -316,7 +317,7 @@ Basic.
 
 `re` module.
 
-## Chapter 26, Time
+# Chapter 26, Time
 
 Basic.
 
@@ -324,7 +325,7 @@ Basic.
 
 `time` module and `datetime` module.
 
-## Chapter 27, System Programming
+# Chapter 27, System Programming
 
 Basic.
 
@@ -352,7 +353,7 @@ cmd
 cmd.read()
 ```
 
-## Chapter 28, Maths
+# Chapter 28, Maths
 
 Basic.
 
@@ -368,7 +369,7 @@ Enables new methods in arithmetics, trigonometry, rounding: `pow()`, `sqrt()`, `
 
 `random()`, `randrange()`, `randint()`, `choice()`, etc.
 
-## Chapter 29, Password Management
+# Chapter 29, Password Management
 
 Web framework.
 
@@ -376,7 +377,7 @@ Web framework.
 
 Receive a password, cypher a password, etc.
 
-## Chapter 30, Network
+# Chapter 30, Network
 
 Web framework.
 
@@ -384,7 +385,7 @@ Web framework.
 
 `socket` module and `select` module.
 
-## Chapter 31, Tkinter
+# Chapter 31, Tkinter
 
 Software, application.
 
@@ -392,7 +393,7 @@ Software, application.
 
 `Tkinter` module.
 
-## Chapter 33, Distribute Scripts and Programs
+# Chapter 33, Distribute Scripts and Programs
 
 Basic.
 
@@ -409,7 +410,7 @@ Method 2: Setup File
 The traditional way of distributing a code and a more powerful approach.
 
 
-## Chapter 34, PEP
+# Chapter 34, PEP
 
 Basic.
 
@@ -418,7 +419,7 @@ Basic.
 	- identation, tabulation, line length, line spacing, encoding, importing, spacing, commenting, naming, coding comparisons.
 - PEP 257: documentation and docstrings.
 
-## Chapter 35, More...
+# Chapter 35, More...
 
 Basic.
 

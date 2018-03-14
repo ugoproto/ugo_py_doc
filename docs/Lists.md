@@ -1,27 +1,31 @@
+<!--
 ---
 
 [TOC]
 
+-->
 ---
 
 **Foreword**
 
 Notes and snippets. Python 3.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
-## 1, Notes
+  
+# Notes
 
 `list_zoo = ['bear', 'lion', 'panda', 'zebra']`
 
 - Lists in Python store ordered collections of items or objects, we can say that they are sequence types.
 
-### Iterable
+## Iterable
 
 - The program can iterate over them.
 - Lists, strings, tuples, and sets are called “iterables”.
 
-### Lists Versus tuples
+# Lists Versus tuples
 
 `tup_course = ('physics', 'chemistry', 1997, 2000)`
 
@@ -31,7 +35,7 @@ Notes and snippets. Python 3.
 - You can also use the in operator to check if an element exists in the tuple.
 - If you’re defining a constant set of values, use a tuple instead of a list. It will be faster and safer.
 
-### Lists Versus sets
+## Lists Versus sets
 
 `set_code = set{"Perl", "Python", "Java"}`
 
@@ -40,13 +44,13 @@ Notes and snippets. Python 3.
 - Sets require your items to be unique and immutable. Duplicates are not allowed in sets, while lists allow for duplicates and are mutable.
 - Use sets when you have an unordered set of UNIQUE, immutable values that are hashable.
 
-#### Frozensets
+### Frozensets
 
 `set_cities = frozenset{"Frankfurt", "Basel","Freiburg"}`
 
 - Frozensets are like sets except that they cannot be changed, i.e. they are immutable.
 
-### Lists Versus dictionaries
+## Lists Versus dictionaries
 
 `dict_kid = {'Name': 'Zara', 'Age': 7, 'Class': 'First'`
 
@@ -54,14 +58,14 @@ Notes and snippets. Python 3.
 - Dictionaries are known to associate each key with a value, while lists just contain values.
 - Use a dictionary when you have an unordered set of unique keys that map to values.
 
-### Hashable or Not
+## Hashable or Not
 
 - Hashable: float, integer, tuple, string.
 - Not: dictionary, set, list.
 
-## 2, Snippets
+# Snippets
 
-### Select an element from a list
+## Select an element from a list
 
 
 ```python
@@ -97,7 +101,7 @@ print(biggerZoo[0])
     bear
 
 
-### Select the last element
+## Select the last element
 
 
 ```python
@@ -114,7 +118,7 @@ print(zebra)
     zebra
 
 
-### Out of range error
+## Out of range error
 
 
 ```python
@@ -125,7 +129,7 @@ print("print(biggerZoo[6])")
     print(biggerZoo[6])
 
 
-### Slice
+## Slice
 
 
 ```python
@@ -162,7 +166,7 @@ print(biggerZoo[2::1])
     ['panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
 
 
-### Random
+## Random
 
 
 ```python
@@ -194,7 +198,7 @@ print(randomLetters[randomIndex])
     g
 
 
-### Convert a list to a string with `join()`
+## Convert a list to a string with `join()`
 
 
 ```python
@@ -213,7 +217,7 @@ print(strOfNumbers)
     123
 
 
-### Convert a list to a tuple with `tuple()`
+## Convert a list to a tuple with `tuple()`
 
 
 ```python
@@ -225,7 +229,7 @@ print(tupOfStrings)
     ('One', 'Two', 'Three')
 
 
-### Convert a list to a set with `set()`
+## Convert a list to a set with `set()`
 
 
 ```python
@@ -237,7 +241,7 @@ print(setOfStrings)
     {'One', 'Three', 'Two'}
 
 
-### Convert a list to a dictionary with `zip()`
+## Convert a list to a dictionary with `zip()`
 
 
 ```python
@@ -263,7 +267,7 @@ print(dict(zip(i, i)))
     {1: 2, 3: 4}
 
 
-### Size of your list with `len()`
+## Size of your list with `len()`
 
 
 ```python
@@ -276,8 +280,7 @@ print(len(biggerZoo))
     ['bear', 'lion', 'panda', 'zebra', ['chimpanzees', 'gorillas', 'orangutans', 'gibbons']]
     5
 
-
-### `append()` and `extend()`
+## `append()` and `extend()`
 
 
 ```python
@@ -315,7 +318,7 @@ print(longerList)
     [5, 6, 7, 8, 9, 4, 5]
 
 
-### Concatenate lists
+## Concatenate lists
 
 
 ```python
@@ -329,7 +332,7 @@ plusList = shortList + [4,5]
     [5, 6, 7, 8, 9]
 
 
-### Sort a list
+## Sort a list
 
 
 ```python
@@ -353,7 +356,7 @@ print(sorted(zoo)) # lists, strings, sets, dictionaries
     ['bear', 'lion', 'panda', 'zebra']
 
 
-### Copy a List (3 ways):
+## Copy a List (3 ways):
 
 
 ```python
@@ -437,7 +440,7 @@ print("Both lists are different.")
     Both lists are different.
 
 
-### List comprehension
+## List comprehension
 
 
 ```python
@@ -472,10 +475,10 @@ print([f(x) for x in range(10)])
     [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 
-### Dictionary comprehension also...
+## Dictionary comprehension also...
 
 
-### Counting the occurrences of one item in a list
+## Counting the occurrences of one item in a list
 
 
 ```python
@@ -495,16 +498,9 @@ list1.count("a")
     2
     Count the occurrences of the letter 'a' in the list
     <class 'list'>
-
-
-
-
-
     3
 
-
-
-### Counting all items in a list with `count()`
+## Counting all items in a list with `count()`
 
 
 ```python
@@ -520,7 +516,7 @@ print([[x,list2.count(x)] for x in list(list2)])
     [['a', 1], ['b', 2], ['b', 2]]
 
 
-### Counting all items in a list with `Counter()` from the `collections` library
+## Counting all items in a list with `Counter()` from the `collections` library
 
 
 ```python
@@ -540,7 +536,7 @@ print(Counter(list2))
     Counter({'b': 2, 'a': 1})
 
 
-### Split A Python List Into Evenly Sized Chunks
+## Split A Python List Into Evenly Sized Chunks
 
 
 ```python
@@ -557,7 +553,7 @@ y = zip(*[iter(x)]*3)
 
 `[1,2,3,4,5,6,7,8,9], [1,2,3,4,5,6,7,8,9], [1,2,3,4,5,6,7,8,9]`
 
-- The first time, zip() will take one element of the list sequentially, which leaves you with:
+- The first time, `zip()` will take one element of the list sequentially, which leaves you with:
 
 `[1][2][3]`
 
@@ -583,22 +579,13 @@ type(y)
     method continues until the shortest iterable in the argument sequence
     is exhausted and then it raises StopIteration.
 
-
-
-
-
     zip
-
-
-
 
 ```python
 print(list(y))
 ```
 
     []
-
-
 
 ```python
 # Method to split up your lists into chunks
@@ -637,7 +624,7 @@ print([list1[i:i + chunk] for i in range(0, len(list1), chunk)])
     [range(0, 5), range(5, 10), range(10, 15), range(15, 20), range(20, 25), range(25, 30), range(30, 35), range(35, 40), range(40, 45), range(45, 50)]
 
 
-### Loop over a list
+## Loop over a list
 
 
 ```python
@@ -683,7 +670,7 @@ for i, val in enumerate(myList): # return an index and a value
     3 6
 
 
-### Create flat lists out of lists
+## Create flat lists out of lists
 
 
 ```python
@@ -752,7 +739,7 @@ print([item for sublist in listOfLists for item in sublist])
     [1, 2, 3, 4, 5, 6]
 
 
-### Get an intersection of two Python lists
+## Get an intersection of two Python lists
 
 
 ```python
@@ -786,7 +773,7 @@ print(intersection)
     [[13, 32], [7, 13, 28], [1, 6]]
 
 
-### Remove duplicates from a list
+## Remove duplicates from a list
 
 Check whether a variable is an iterable by applying the method `.__iter__`.
 
@@ -813,27 +800,27 @@ list(set(duplicates) - set(smallNumbers))
 
 
 
-### Create Empty NumPy Arrays
+## Create Empty Numpy Arrays
 
-Prefer NumPy arrays over lists in Python:
+Prefer Numpy arrays over lists in Python:
 
-- Because NumPy arrays are more compact than lists.
-- Because access in reading and writing items is faster with NumPy.
-- Because NumPy can be more convenient to work with, thanks to the fact that you get a lot of vector and matrix operations for free
-- Because NumPy can be more efficient to work with because they are implemented more efficiently.
+- Because Numpy arrays are more compact than lists.
+- Because access in reading and writing items is faster with Numpy.
+- Because Numpy can be more convenient to work with, thanks to the fact that you get a lot of vector and matrix operations for free
+- Because Numpy can be more efficient to work with because they are implemented more efficiently.
 
 
 ```python
 import numpy
 print(numpy.array([]))
 
-# Make a NumPy array of four rows and two columns and filled with 0
+# Make a Numpy array of four rows and two columns and filled with 0
 print(numpy.zeros(shape=(4,2)))
 
-# Make a NumPy array of 1 values of three columns
+# Make a Numpy array of 1 values of three columns
 print(numpy.ones(3))
 
-# Make an empty NumPy array
+# Make an empty Numpy array
 print(numpy.empty(shape=(0,0)))
 ```
 
@@ -912,17 +899,17 @@ print(sum([x * y for x, y in zip(cost, cases)]) / sum(cases))
     0.41609999999999997
 
 
-### Do math with lists (quantiles)
+## Do math with lists (quantiles)
 
 
 ```python
 # Import numpy as np
 import numpy as np
 
-# Make a NumPy array
+# Make a Numpy array
 a = np.array([1,2,3,4,5])
 
-# Return the 50th percentile of our NumPy array
+# Return the 50th percentile of our Numpy array
 p50 = np.percentile(a, 50)
 
 #Print the result
@@ -935,7 +922,7 @@ print(np.percentile(a, (25, 75)))
     [ 2.  4.]
 
 
-### Do math with lists (`sum`)
+## Do math with lists (`sum`)
 
 
 ```python
@@ -970,7 +957,7 @@ list(map(add, list1, list2))
 # Import numpy as np
 import numpy as np
 
-# Make your lists into NumPy arrays
+# Make your lists into Numpy arrays
 vector1 = np.array([1, 2, 3])
 vector2 = np.array([4, 5, 6])
 

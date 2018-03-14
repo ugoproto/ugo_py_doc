@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -363,7 +365,7 @@ Contour plots are used to explore the potential relationship between three varia
 
 # Customize `pyplot`
 
-See the online plot [Gallery](https://matplotlib.org/gallery.html)
+See the online plot [Gallery](https://matplotlib.org/gallery.html).
 
 ## Delete an Axis
 

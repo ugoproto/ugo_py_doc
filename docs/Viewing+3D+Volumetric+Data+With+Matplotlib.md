@@ -1,18 +1,19 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
-
-**Some images can only be simulated with Jupyter since the images are interactive.**
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
+Some images can only be simulated with Jupyter since they are are interactive.
 
 ---
 
-# Content
+# Overview
 
 Image data can be taken with ordinary cameras (these are often called “natural images” in the scientific literature) or with specialized instruments, such as microscopes or telescopes.
 
@@ -319,14 +320,11 @@ def next_slice(ax):
     ax.images[0].set_array(volume[ax.index])
 ```
 
-We should be able to view all the slices in our MRI volume without pesky interference from the default keymap! 
-One nice feature about this method is that it works on any matplotlib backend!
+We should be able to view all the slices in our MRI volume without pesky interference from the default keymap! One nice feature about this method is that it works on any matplotlib backend!
 
-So, in the IPython terminal console, we will still get the same interaction as we did in the browser! 
-And the same is true for a Qt or Tkinter app embedding a matplotlib plot.
+So, in the IPython terminal console, we will still get the same interaction as we did in the browser! And the same is true for a Qt or Tkinter app embedding a matplotlib plot.
 
-This simple tool therefore lets us build ever more complex applications 
-around matplotlib’s visualization capabilities.
+This simple tool therefore lets us build ever more complex applications around matplotlib’s visualization capabilities.
 
 
 ```python

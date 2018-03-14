@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -15,7 +16,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 - It is done on Windows in the following examples.
 - It can be executed on all OS: Windows, Linux and Max OS X (using Wine for all UNIX OS).
 
-## 1, Distutils (an Overview)
+# Distutils (an Overview)
 
 - Building with distutils works well on all OS.
 - The package provides support for building and installing additional modules (libraries or packages) into a Python installation.
@@ -27,7 +28,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 - https://wiki.python.org/moin/Distutils/Tutorial
 - https://docs.python.org/2/distutils/
 
-## 2, cx-Freeze (with Snippets)
+# cx-Freeze (with Snippets)
 
 - `cx_Freeze` freezes Python scripts into executables.
 - Alike `py2exe` for Windows only and `py2app` for Mac OS X only.
@@ -40,8 +41,7 @@ Notes. Python 2. Consult the [Hitchicker's Guide to Python](http://docs.python-g
 - http://cx-freeze.readthedocs.io
 - https://anthony-tuininga.github.io/cx_Freeze/
 - Install `cx_Freeze` (works on Pyhon 2 & 3).
-    - The easiest way is with `pip install cx_Freeze`.
-    - `pip3 install cx_Freeze`.
+    - The easiest way is with `pip install cx_Freeze` or `pip3 install cx_Freeze`.
 
 **Procedure with a single script**
 
@@ -103,9 +103,9 @@ executables = [exe]
 )
 ```
 
-- Place the files in C:\PythonXX\, where pip and Python are installed.
+- Place the files in C:\PythonXX\, where Pip and Python are installed.
 - Make sure the path is in the environment variables or exported (we assume this is understood and done).
-- Open the shell (cmd), go to the C:\PythonXX\ directory.
+- Open the shell, go to the C:\PythonXX\ directory.
 - Build the executable by calling the `setup.py` script with the Python version of our choice.
 
 ```python
@@ -114,14 +114,14 @@ python setup.py build
 
 - The created files are located in C:\PythonXX\build...
 - Go in the subfolder, find the .exe file and launch it.
-- On Linux and Mac OS X, the .exe file must to be run with Wine (executing Windows apps)
+- On Linux and Mac OS X, the .exe file must to be run with Wine (executing Windows apps).
 - Build an installer for Windows containing all the files.
 
 ```python
 python setup.py bdist_msi
 ```
 
-- The installer is located in C:\PythonXX\dist\
+- The installer is located in C:\PythonXX\dist\ .
 - It can be distributed and installed/repaired/removed as a Windows program.
 - The installation creates what the build command does in a directory of our choice.
 - Build an installer on Mac OS X.
@@ -141,7 +141,7 @@ python setup.py bdist_dmg
 ```
 
 - Under the project folder, the bin folder contains the main .py file to be launched; this file relies on other files in its own folders or in the other folders.
-- The setup.py and project folders (bin, map, ...) are located in C:\PythonXX\
+- The setup.py and project folders (bin, map, ...) are located in C:\PythonXX\ .
 - Create a `setup.py`.
     - Find out more in the doc.
 - Simple setup (or a more elaborate setup).
@@ -167,7 +167,7 @@ executables = [Executable("bin/FileName.py", base = None)]
 - Easy to deploy (download, open, execute).
 - It does not generate a single file, except with the `bdist_` commands. However, a distribution requires additional steps to deploy.
 
-## 3, pyInstaller (with Snippets)
+# pyInstaller (with Snippets)
 
 - `pyinstaller` is a simpler alternative to cx-Freeze.
 - Libraries like `PyQt`, `Django` or `matplotlib` are fully supported, without having to handle plugins or external data files manually.
@@ -177,8 +177,7 @@ executables = [Executable("bin/FileName.py", base = None)]
 - http://www.pyinstaller.org/
 - https://github.com/pyinstaller/pyinstaller
 - Install pyinstaller (works on Pyhon 2 & 3).
-    - The easiest way is with `pip install pyinstaller`.
-    - `pip3 install pyinstaller`.
+    - The easiest way is with `pip install pyinstaller` or `pip3 install pyinstaller`.
 
 **Procedure with a single script**
 
@@ -193,9 +192,9 @@ if __name__ == "__main__":
 main()
 ```
 
-- Place the files in C:\PythonXX\, where pip and Python are installed.
+- Place the files in C:\PythonXX\, where Pip and Python are installed.
 - Make sure the path is in the environment variables or exported (we assume this is understood and done).
-- Open the shell (cmd), go to the C:\PythonXX\ directory.
+- Open the shell, go to the C:\PythonXX\ directory.
 - Build the executable.
 
 ```python
@@ -221,15 +220,14 @@ pyinstaller -F hello.py
 
 - Find the single .exe file and launch it.
 
-- Build with an icon (.ico file)
+- Build with an icon (.ico file).
 - The .ico and .py files are located in the same folder, otherwise we have to specify the path with filename.ico.
 
 ```python
 pyinstaller -F -i "favicon.ico" hello.py
 ```
 
-- Procedure with a set of scripts (with folders)
-
+- Procedure with a set of scripts (with folders).
 - The project might look like this.
 
 ```text
@@ -240,7 +238,7 @@ pyinstaller -F -i "favicon.ico" hello.py
 
 - Under the project folder, the bin folder contains the main .py file to be launched; this file relies on other files in its own folders or in the other folders.
 
-- The setup.py and project folders (bin, map, ...) are located in C:\PythonXX\
+- The setup.py and project folders (bin, map, ...) are located in C:\PythonXX\ .
 
 - Build the single executable file.
 
@@ -255,7 +253,7 @@ pyinstaller -F -i "favicon.ico" bin/hello.py
 - Easy to deploy (download, open, execute). Easier than with cx-Freeze, but without the flexibility a `setup.py` file can allow.
 - However, it can generate a single file: dowload, then launch in a single click.
 
-## 4, Nuitka (an Overview)
+# Nuitka (an Overview)
 
 - Python compiler compatible with CPython.
 - Works on all OS.
@@ -267,7 +265,7 @@ pyinstaller -F -i "favicon.ico" bin/hello.py
 - Check out the requirements.
     - Need for a C++ compiler.
 
-## 5, PyPy (an Overview)
+# PyPy (an Overview)
 
 - Alternative to CPython: RPython (restricted Python).
 - Works on all OS, best on Linux.

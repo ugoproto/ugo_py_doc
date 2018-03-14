@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,9 +11,9 @@ Code snippets and excerpts from the course. Python 2. From Codecademy.
 
 ---
 
-## UNIT 1, Python Syntax
+# UNIT 1, Python Syntax
 
-### Python Syntax
+## Python Syntax
 
 Python is an easy to learn programming language. You can use it to create web apps, games, even a search engine!
 
@@ -182,7 +183,7 @@ print spam
     1
     
 
-### Tip Calculator
+## Tip Calculator
 
 Now let's apply the concepts from the previous section to a real world example. You've finished eating at a restaurant, and received this bill:
 
@@ -205,13 +206,13 @@ print("%.2f") % total
     54.63
     
 
-### Quiz 1
+## Quiz 1
 
 OK
 
-## UNIT 2, Strings and Console Output
+# UNIT 2, Strings and Console Output
 
-### Strings & Console Output
+## Strings & Console Output
 
 Another useful data type is the string. A string can contain letters, numbers, and symbols.
 
@@ -389,7 +390,7 @@ print "Ah, so your name is %s, your quest is %s, " \
     Ah, so your name is Al, your quest is Graal, and your favorite color is red.
     
 
-### Date and Time
+## Date and Time
 
 A lot of times you want to keep track of when something happened. We can do so in Python using `datetime`. Here we'll use datetime to print the date and time in a nice format.
 
@@ -419,7 +420,7 @@ print '%s/%s/%s %s:%s:%s' % (now.month, now.day, now.year, now.hour, now.minute,
     10/18/2016 14:2:3
     
 
-### Quiz 2
+## Quiz 2
 
 
 ```python
@@ -441,7 +442,7 @@ day = 04
     18/10/2016 14:2:11
     
 
-### Project Python Mad Libs
+## Project Python Mad Libs
 
 <sub>concatenate, variable</sub>
 
@@ -526,9 +527,9 @@ print STORY % (adj_one, name, verb_one, adj_two, noun_one, noun_two, animal, foo
     This morning I woke up and felt small because Al was going to finally dig over the big great spoon. On the other side of the lamp were many dogs protesting to keep pasta in stores. The crowd began to walk to the rythym of the table, which made all of the apples very yellow. Al tried to eat into the sewers and found 10 rats. Needing help, Al quickly called spiderman. spiderman appeared and saved Al by flying to mexico and dropping Al into a puddle of apple pie. Al then fell asleep and woke up in the year 2016, in a world where pens ruled the world.
     
 
-## UNIT 3, Conditionals and Control Flow
+# UNIT 3, Conditionals and Control Flow
 
-### Conditionals & Control Flow
+## Conditionals & Control Flow
 
 Control flow gives us this ability to choose among outcomes based off what else is happening in the program.
 
@@ -688,7 +689,7 @@ print the_flying_circus()
     True
     
 
-### PygLatin
+## PygLatin
 
 Now let's take what we've learned so far and write a Pig Latin translator. Pig Latin is a language game, where you move the first letter of the word to the end and add "ay." So "Python" becomes "ythonpay." 
 
@@ -724,11 +725,11 @@ else:
     adiatorray
     
 
-### Quiz 3
+## Quiz 3
 
 Takeaway: there no limits to the number of `elif`.
 
-### Project Area Calculator
+## Project Area Calculator
 
 Python is especially useful for doing math and can be used to automate many calculations. In this project, you'll create a calculator than can compute the area of a given shape, as selected by the user. The calculator will be able to determine the area of the following shapes:
 
@@ -804,9 +805,9 @@ question()
     25.00
     
 
-## UNIT 4, Functions
+# UNIT 4, Functions
 
-### Functions
+## Functions
 
 You might have considered the situation where you would like to reuse a piece of code, just with a few different values. Instead of rewriting the whole code, it's much cleaner to define a function, which can then be used repeatedly.
 
@@ -1019,7 +1020,7 @@ print type('spam') # <type 'str'>
     <type 'str'>
     
 
-### Taking a Vacation
+## Taking a Vacation
 
 
 ```python
@@ -1059,11 +1060,11 @@ print trip_cost("Los Angeles", 5, 600)
     1955
     
 
-### Quiz 4
+## Quiz 4
 
 OK
 
-### Project Number Guess
+## Project Number Guess
 
 Wanna play a game? In this project, we'll build a program that rolls a pair of dice and asks the user to guess a number. Based on the user's guess, the program should determine a winner. If the user's guess is greater than the total value of the dice roll, they win! Otherwise, the computer wins.
 
@@ -1125,9 +1126,9 @@ roll_dice(6)
     You win since your guess, 5, is greater than the total roll, 3
     
 
-## UNIT 5, Lists & Dictionaries
+# UNIT 5, Lists & Dictionaries
 
-### Lists and Dictionaries
+## Lists and Dictionaries
 
 Lists are a datatype you can use to store a collection of different pieces of information as a sequence under a single variable name. (Datatypes you've already learned about include strings, numbers, and booleans.)
 
@@ -1453,7 +1454,7 @@ print inventory
     {'pocket': ['seashell', 'strange berry', 'lint'], 'backpack': ['bedroll', 'bread loaf', 'xylophone'], 'pouch': ['flint', 'gemstone', 'twine'], 'burlap bag': ['apple', 'small ruby', 'three-toed sloth'], 'gold': 550}
     
 
-### A Day at the Supermarket
+## A Day at the Supermarket
 
 `for` loops allow us to iterate through all of the elements in a list from the left-most (or zeroth element) to the right-most element.
 
@@ -1649,11 +1650,11 @@ print compute_bill(shopping_list)
     ['banana', 'orange', 'apple']
     
 
-### Quiz 5
+## Quiz 5
 
 OK
 
-### Project Rock, Paper, Scissors
+## Project Rock, Paper, Scissors
 
 In this project, we'll build Rock-Paper-Scissors!
 
@@ -1727,9 +1728,9 @@ play_RPS()
     You win!
     
 
-## UNIT 6, Student Becomes the Teacher
+# UNIT 6, Student Becomes the Teacher
 
-### Student Becomes the Teacher
+## Student Becomes the Teacher
 
 Make a gradebook for all of your students.
 
@@ -1960,9 +1961,9 @@ print get_class_average(all_average)
     83.8
     
 
-## UNIT 7, Lists and Functions
+# UNIT 7, Lists and Functions
 
-### Lists and Functions
+## Lists and Functions
 
 What you can do with a list: extract, add, append, remove, pop out, delete.
 
@@ -2286,7 +2287,7 @@ print range(6) # => [0,1,2,3,4,5]
     [0, 1, 2, 3, 4, 5]
     
 
-### Battleship!
+## Battleship!
 
 This first script is incomplete (work in progress).
 The next script is functional.
@@ -2370,7 +2371,7 @@ print print_board(board)
     NameError: name 'ship_col' is not defined
 
 
-### Battleship FINAL!
+## Battleship FINAL!
 
 
 ```python
@@ -2528,7 +2529,7 @@ coin = randint(0, 1) # randint(low, high)
 dice = randint(1, 6)
 ```
 
-### Quiz 7
+## Quiz 7
 
 Takeaway.
 
@@ -2550,9 +2551,9 @@ range(0, len(my_list), 2) # every other list item
 
 
 
-## UNIT 8, Loops
+# UNIT 8, Loops
 
-### Loops
+## Loops
 
 A `while` loop is a sort of `if`.
 
@@ -2962,7 +2963,7 @@ else:
     , a banana , a apple , a orange , a tomata , a pear , a grape ; A fine selection of fruits!
     
 
-### Practice Makes Perfect
+## Practice Makes Perfect
 
 Is it even?
 
@@ -3394,7 +3395,7 @@ print median(case2)
     6.5
     
 
-### Quiz 8
+## Quiz 8
 
 Takeaway: built-in functions.
 
@@ -3437,7 +3438,7 @@ list(enumerate(seasons, start=1))
 
 
 
-### Project Command Line Calendar
+## Project Command Line Calendar
 
 In this project, we'll build a basic calendar that the user will be able to interact with from the command line. The user should be able to choose to:
 
@@ -3580,9 +3581,9 @@ start_calendar()
     Choose between: 'A' to Add, 'U' to Update, 'V' to View, 'D' to Delete or 'X' to Exit? x
     
 
-## UNIT 9, Exam Statistics
+# UNIT 9, Exam Statistics
 
-### Exam Statistics
+## Exam Statistics
 
 
 ```python
@@ -3647,9 +3648,9 @@ print grades_std_deviation(variance)
     18.2776094147
     
 
-## UNIT 10, Advanced Topics in Python
+# UNIT 10, Advanced Topics in Python
 
-### Advanced Topics in Python
+## Advanced Topics in Python
 
 Iterate through a dictionary.
 
@@ -3877,7 +3878,7 @@ print message
     I am another secret message!
     
 
-### Introduction to Bitwise Operators
+## Introduction to Bitwise Operators
 
 Operators.
 
@@ -4195,7 +4196,7 @@ print flip_bit(0b111, 2)
     0b101
     
 
-### Project RGB-HEX Converter
+## Project RGB-HEX Converter
 
 In this project, we'll use Bitwise operators to build a calculator that can convert RGB values to Hexadecimal (`hex`) values, and vice-versa.
 
@@ -4268,9 +4269,9 @@ convert()
     Enter '1' to convert RGB to HEX. Enter '2' to convert HEX to RGB. Enter 'X' to Exit:. x
     
 
-## UNIT 11, Introduction to Classes
+# UNIT 11, Introduction to Classes
 
-### Introduction to Classes
+## Introduction to Classes
 
 You can think of an object as a single data structure that contains data as well as functions; functions of objects are called methods. `Class Fruit`, `lemon instance`.
 
@@ -4755,7 +4756,7 @@ print milton.full_time_wage(10)
     200.0
     
 
-### More on Classes
+## More on Classes
 
 
 ```python
@@ -5086,11 +5087,11 @@ print my_point
     (1, 2, 3)
     
 
-### Quiz 11
+## Quiz 11
 
 Python writes data to a file when you close the file!
 
-### Project Bank Account
+## Project Bank Account
 
 In this project, we'll create a Python class that can be used to create and manipulate a personal bank account.
 
@@ -5161,9 +5162,9 @@ print my_account
     Ugo's account; Balance: $1000.00
     
 
-## UNIT 12, File Input and Output
+# UNIT 12, File Input and Output
 
-### File Input/Output
+## File Input/Output
 
 Read information from a file on your computer, and/or write that information to another file? This process is called file I/O.
 
@@ -5408,11 +5409,11 @@ print my_file.closed # true
     True
     
 
-### Quiz 12
+## Quiz 12
 
 OK
 
-### Project DNA Analysis
+## Project DNA Analysis
 
 In this project, we'll use many of the concepts you've learned throughout the Python course in order to do some DNA analysis for a crime investigation.
 

@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -13,7 +14,7 @@ Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Co
 
 ---
 
-## 1, Additional Commands (unused)
+# Additional Commands (unused)
 
 - `span`, return a tuple containing the start, end positions of the match.
 - `start`, return the starting position of the match.
@@ -25,7 +26,7 @@ Notes. Python 2 in Windows. UNIX-based OS generate slighly different results. Co
 - `subn(r, s)`, do the same thing, but return the new string and the number of replacements
 - `IGNORECASE`, `I`, case-insensitive matches.
 
-## 2, `match` & `search` -- One Expression, One Search
+# `match` & `search` -- One Expression, One Search
 
 First, we have a text file called names.txt.
 
@@ -119,12 +120,12 @@ print re.search(last_name, data).group() # CHANGE
 print re.search(first_name, data).group() # CHANGE
 ```
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.
 
-## 3, Escape Characters -- Comprenhensive Search
+# Escape Characters -- Comprenhensive Search
 
 - `\w`, match any Unicode word character.
 - `\W`, match anything that isn't a Unicode word character.
@@ -200,13 +201,13 @@ Results.
 (555) 555-5555
 ```
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.
 - Escape characters (see above).
 
-## 4, Repetitions -- Power Search
+# Repetitions -- Power Search
 
 - `{3}`, repeat 3 times.
 - `{,3}`, repeat 0 to 3 times.
@@ -305,7 +306,7 @@ Results.
 ['Liff, Kenneth', 'Teacher, Submarine', 'McFarland, Arthur', 'Teacher, Submarine', 'Arthur, King', 'King, Camelot', 'sterberg, Gustav', 'Governor, Norrbotten', ', Tim', 'Enchanter, Killer', 'Carson, Ryan', 'CEO, Submarine', 'Lord, Gallifrey', 'Exampleson, Exampleme', 'Obama, Barack', 'President, United', 'Chalks, Andrew', 'Teacher, Submarine', 'Vader, Darth', 'lord, Galactic']
 ```
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.
@@ -313,7 +314,7 @@ Results.
 - Repetitions (see above).
 - `findall`.
 
-## 5, Sets -- Target Search
+# Sets -- Target Search
 
 Catch patterns. We only need unique characters even when a word contains repetitive characters.
 
@@ -391,7 +392,7 @@ Results.
 ['submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine', 'submarine', 'Submarine']
 ```
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.
@@ -400,7 +401,7 @@ Results.
 - `findall`.
     - `re.IGNORECASE`.
 
-## 6, Boundaries -- Smart Search
+# Boundaries -- Smart Search
 
 - `'''`, add a multiline string.
 - `\b@`, word boundary `@`.
@@ -466,7 +467,7 @@ Results.
 
 The only problem: it did not catch `Ö` and `, Tim`. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.
@@ -477,7 +478,7 @@ The only problem: it did not catch `Ö` and `, Tim`. This is the problem with Wi
     - `re.VERBOSE|re.I`, more readable, introduce whitespaces or comments.
     - `re.X`.
 
-## 7, Groups -- Subdivided Search
+# Groups -- Subdivided Search
 
 - last and first names.
 - emails.
@@ -590,7 +591,7 @@ print line.groupdict()...
 {'phone': '(555) 555-5555', 'job': 'Teacher, Submarine', 'name': 'McFarland, Arthur', 'twitter': None, 'email': 'arty@submarine.com'}
 ```
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.
@@ -602,7 +603,7 @@ print line.groupdict()...
     - `re.X`.
     - `re.X|re.MULTILINE` or `re.X|re.M`.
 
-## 8, Compile & Build Dictionaries -- Operationalized Search
+# Compile & Build Dictionaries -- Operationalized Search
 
 Compile a pattern into an object. Replace `findall` or `search` with `compile`. Remove `data` to make a generic function to process any data.
 
@@ -738,7 +739,7 @@ Darth Vader <darth-vader@empire.gov>
 
 The only problem: it did not catch `Ö` and `, Tim`. This is the problem with Windows: it is picky with some characters and requires extra coding to work around these problems. UNIX-based OS do not have these problems.
 
-### Recap:
+## Recap
 
 - `match`.
 - `search`.

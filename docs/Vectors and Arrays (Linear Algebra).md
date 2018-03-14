@@ -1,20 +1,18 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
-# SciPy versus Numpy
-
-Efficiently compute arrays and matrices: SciPy is Numpy.
-
-# The Essentials of Numpy `ndarray` Objects
+# The Essentials of Numpy: `ndarray`
 
 
 ```python
@@ -139,17 +137,17 @@ np.cast['q'](myArray)
 
 
 
-- 'b' for int8.
-- 'c' for |S21; character or string.
-- 'e' for float16
-- 'f' for float32.
-- 'g' for float128
-- 'h' for int16, integer.
-- 'd' for digits.
-- 'i' for int32, integer.
-- 'l' for long.
-- 'm' for timedelta64.
-- 'q' for int64, integer.
+- `'b'` for int8.
+- `'c'` for |S21; character or string.
+- `'e'` for float16
+- `'f'` for float32.
+- `'g'` for float128
+- `'h'` for int16, integer.
+- `'d'` for digits.
+- `'i'` for int32, integer.
+- `'l'` for long.
+- `'m'` for timedelta64.
+- `'q'` for int64, integer.
 
 # Array Creation
 
@@ -686,7 +684,7 @@ vectorizedFunc(myArray, 2)
 
 `np.angle()` provides the angle of the elements of complex array elements, but also basic trigonometric, exponential or logarithmic functions.
 
-# Linear Algebra With SciPy
+# Linear Algebra With Scipy
 
 
 ```python
@@ -1459,7 +1457,7 @@ eigvals(myMatrix)
 
 
 
-With sparse matricesL `la, v = sparse.linalg.eigs(myMatrix,1)`; the number of eigenvalues and eigenvectors that has to be retrieved = 1.
+With sparse matrices, `la, v = sparse.linalg.eigs(myMatrix,1)`; the number of eigenvalues and eigenvectors that has to be retrieved = 1.
 
 # Singular Value Decomposition (SVD)
 

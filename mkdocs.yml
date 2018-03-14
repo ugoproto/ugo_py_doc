@@ -1,103 +1,189 @@
-site_name: ugo_py_doc
-site_url: https://ugoproto.github.io/ugo_py_doc/
-#repo_url: https://github.com/ugoproto/ugo_py_doc
-site_description: A Python documentation website.
-site_author: Ugo Sparks
-#site_favicon: favicon.ico
-copyright: © Ugo Sparks
+site_name: 'ugo_py_doc'
+site_url: 'https://ugoproto.github.io/ugo_py_doc/'
+repo_name: 'ugo_py_doc' # see doc, for bitbucket, gitlab
+repo_url: 'https://github.com/ugoproto/ugo_py_doc.git'
+# include a link to the repository of your project 
+# repository is hosted in a private environment, the service logo can be set explicitly by setting
+# extra.repo_icon to github, gitlab or bitbucket
+site_description: 'A Python documentation website.'
+site_author: 'Ugo Sparks'
+copyright: '© Ugo Sparks'
 google_analytics: 
-    - 'UA-93008985-2'
-    - 'auto'
-#remote_branch: master
-#remote_name: ugo_py_doc
+  - 'UA-93008985-2'
+  - 'auto'
+
+theme: 
+  name: 'material' # 'readthedocs'
+  language: 'en'
+  search:
+    language: 'en, fr' 
+## 'Volkorn' 'Libre Baskerville' 'Merriweather'
+## https://fonts.google.com
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+## https://fonts.google.com
+  palette:
+    primary: 'amber'
+    accent: 'indigo'
+## red, pink, purple, deep purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange, brown, grey and blue-grey
+  logo:
+    icon: 'layers'
+## https://material.io/icons/
+  favicon: 'img/favicon.ico' 
+## default, assets/images/favicon.png
+  feature:
+    tabs: false 
+## another layer on top of the main navigation for larger screens in the form of tabs.           
+#    social:
+#      - type: 'gitlab'
+#        link: ''
+#        type: 'twitter'
+#        link: ''
+#      - type: 'linkedin'
+#        link: ''
+#  disqus: 'your-shortname'
+## https://disqus.com/
+## repo_icon: 'github' # gitlab, bitbucket
+
+#extra_css: 
+#    - 'extra.css'
+## in the docs
 
 pages:
-    - Home: 'index.md'
-    - Basics & More:
-        - Python Cheat Sheets: 'Py_CS.md'
-        - Python Preliminaries: 'Python_Preliminaries.md'
-        - Python Nice to Have: 'Python_Nice_to_Have.md'
-        - Freeze the Code: 'Freeze_the_Code.md'
-        - Decorators: 'Decorators.md'
-        - Write Better Python with PEP: 'Write_Better_Python.md'
-        - Regular Expressions (REGEX): 'Regex.md'
-        - Databases: 'Databases.md'
-        - Datetime: 'Datetime.md'
-        - Execute Highlighted Python Code in gedit: 'Execute_Highlighted_Python_Code_in_gedit.md'
-    - SciPy Stack: 
-        - Scipy Stack Cheat Sheets: 'Scipy_CS.md'
-        - Jupyter Notebook Cheat Sheets: 'JN_CS.md'        
-        - Scientific Python (the SciPy Stack): 'Scientific Python (the SciPy Stack).md'
-        - Importing Data into Python: 'Importing Data into Python.md'
-        - Python for Data Science: 'Python for Data Science.md'
-        - Tidy Data in Python: 'Tidy_Data_in_Python.md'
-        - Lists: 'Lists.md'
-        - IPython Notebook, Collection: 'IPython Notebook.md'
-        - Python Numpy Arrays: 'Python Numpy Arrays.md'
-        - Vectors and Arrays (Linear Algebra): 'Vectors and Arrays (Linear Algebra).md'
-        - Matplotlib, Python Plotting: 'Matplotlib, Python Plotting.md'
-        - Viewing 3D Volumetric Data With Matplotlib: 'Viewing+3D+Volumetric+Data+With+Matplotlib.md'
-        - Seaborn, Python's Statistical Data Visualization Library: 'Seaborn, Python Statistical Data Visualization Library.md'
-        - Pandas DataFrames: 'Pandas+DataFrames.md'
-        - Write Idiomatic Pandas Code: 'Write Idiomatic Pandas Code.md'
-        - Exploratory Data Analysis: 'Exploratory Data Analysis.md'
-        - Intro to data.world in Python: 'Intro to data.world in Python.md'
-        - Python and Excel: 'Python+And+Excel.md'
-        - Overview of scikit-learn: 'Overview_of_scikit-learn.md'
-        - k-NN, Linear regression, Logit, Scaling, Centering, Noise: 'k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md'
-        - Time Series Analysis: 'Time_Series_Analysis.md'
-        - Sentiment Analysis with Twitter: 'Sentiment_Analysis_with_Twitter.md'
-        - EDA, Machine Learning, Feature Engineering, and Kaggle: 'EDA_Machine_Learning_Feature_Engineering_and_Kaggle.md'
-    - Courses:
-        - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
-        - Codecademy Python: 'Codecademy Python.md'
-        - Learn Python the Hard Way: 'Learn Python the Hard Way.md'
-        - Python Code Snippets: 'Python Code Snippets.md'
-        - Introduction to Python: 'Introduction to Python.md'
-    - Manuals:
-        - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
-        - Real Python: 'Real_Python.md'
-        - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
-        - Python for Education: 'Python for Education.md'
- 
-theme: readthedocs
-# Other themes:
-    # readthedocs
-    # mkdocs
+  - Home: 'index.md'
+  - Basics:
+    - Python Cheat Sheets: 'Py_CS.md'
+    - Python Preliminaries: 'Python_Preliminaries.md'
+    - Python Nice to Have: 'Python_Nice_to_Have.md'
+    - Freeze the Code: 'Freeze_the_Code.md'
+    - Decorators: 'Decorators.md'
+    - Write Better Python with PEP: 'Write_Better_Python.md'
+    - Regular Expressions (regex): 'Regex.md'
+    - Databases: 'Databases.md'
+    - Datetime: 'Datetime.md'
+    - Gedit, Execute Highlighted Python Code: 'Gedit_Execute_Highlighted_Python_Code.md'
+  - Scipy Stack: 
+    - Scipy Stack Cheat Sheets: 'Scipy_CS.md'
+    - Jupyter Notebook Cheat Sheets: 'JN_CS.md'        
+    - Scientific Python: 'Scientific Python.md'
+    - Importing Data into Python: 'Importing Data into Python.md'
+    - Python for Data Science: 'Python for Data Science.md'
+    - Tidy Data in Python: 'Tidy_Data_in_Python.md'
+    - Lists: 'Lists.md'
+    - IPython Notebook, Collection: 'IPython Notebook.md'
+    - Python Numpy Arrays: 'Python Numpy Arrays.md'
+    - Vectors and Arrays (Linear Algebra): 'Vectors and Arrays (Linear Algebra).md'
+    - Matplotlib, Python Plotting: 'Matplotlib, Python Plotting.md'
+    - Viewing 3D Volumetric Data with Matplotlib: 'Viewing+3D+Volumetric+Data+With+Matplotlib.md'
+    - Seaborn, Python's Statistical Data Visualization Library: 'Seaborn, Python Statistical Data Visualization Library.md'
+    - Pandas DataFrames: 'Pandas+DataFrames.md'
+    - Write Idiomatic Pandas Code: 'Write Idiomatic Pandas Code.md'
+    - Exploratory Data Analysis (EDA): 'Exploratory Data Analysis.md'
+    - Introduction to data.world in Python: 'Intro to data.world in Python.md'
+    - Python and Excel: 'Python+And+Excel.md'
+    - Overview of scikit-learn: 'Overview_of_scikit-learn.md'
+    - k-NN, Linear regression, Logit, Scaling, Centering, Noise: 'k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md'
+    - Time Series Analysis: 'Time_Series_Analysis.md'
+    - Sentiment Analysis with Twitter: 'Sentiment_Analysis_with_Twitter.md'
+    - EDA, Machine Learning, Feature Engineering, and Kaggle: 'EDA_Machine_Learning_Feature_Engineering_and_Kaggle.md'
+  - Courses:
+    - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
+    - Codecademy Python: 'Codecademy Python.md'
+    - Learn Python the Hard Way: 'Learn Python the Hard Way.md'
+    - LPTHW, Python Code Snippets: 'LPTHW, Python Code Snippets.md'
+    - Introduction to Python: 'Introduction to Python.md'
+  - Manuals:
+    - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
+    - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
+    - Python for Education: 'Python for Education.md'
 
-# Build PDF & ePub (only on Readthedocs)
-#formats: 
-#    - pdf
-
-# Interlinks
-# [link](to_other_page.md)
-# [link](../relative/page.md)
-    
-# Python
-python:
-    version: 2 # for unicode
-    setup_py_install: True
-
-# Math equations:
-# extra JS (see below)
-# extra Python (see below)
-# new extension (see below)
-# Required to load the MathJax javascript for the mdx_math.py
-# https://github.com/mkdocs/mkdocs/issues/253
+#extra_css: 
+#    - 'extra.css'
+## in the docs
 
 markdown_extensions:
-    - mdx_math:
-        enable_dollar_delimiter: True # for use of inline $..$
-    - wikilinks # internal links with [[bracketed]]
-    - smarty # additional characters
-    - subscript
-    - superscript
-    - nl2br # need a new line to break
-    - toc:
-        title: CONTENT
-        permalink: True
-        baselevel: 3
-    - footnotes
+  - def_list
+## to make glossaries
+  - fenced_code
+## ```python, ~~~~python, ~~~{.python}
+  - footnotes
+## [^1]: Lorem ipsum
+## [^2]:
+##     Lorem ipsum 1 (multiline)
+##
+##     Lorem ipsum 2
+  - tables
+## |First Header  | Second Header|
+## |------------- | -------------|
+## |Content Cell  | Content Cell |
+## |Content Cell  | Content Cell |
+  - admonition 
+## https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+  - codehilite(linenums=true)
+## ```python hl_lines="1 2"
+## a=1
+## ```
+## https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - meta
+## https://python-markdown.github.io/extensions/meta_data/
+## https://squidfunk.github.io/mkdocs-material/extensions/metadata/
+  - nl2br
+## break the line with a new line or return
+  - sane_lists
+## numbers vs. bullets
+## https://python-markdown.github.io/extensions/sane_lists/
+  - smarty
+## additional characters: ' "  «  ... -- ---
+## watch when copy-pasted
+  - toc(title=CONTENT, permalink=true, anchorlink=false, baselevel=3)
+## permalink link to a subpart of the document
+## anchorlink causes all headers to link to themselves.
+## https://python-markdown.github.io/extensions/toc/
+## https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
+##
+## Third Party Extensions: https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
+##
+  - pymdownx.arithmatex
+## extra_javascript, see below
+  - pymdownx.betterem
+## bold, italic, both
+## https://facelessuser.github.io/pymdown-extensions/extensions/betterem/
+  - pymdownx.caret
+## ^^ ^^ underline
+  - pymdownx.critic
+## markup for commenting, correcting
+  - pymdownx.details
+## alike admonition, can be nested!
+## https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - pymdownx.emoji
+## https://facelessuser.github.io/pymdown-extensions/extensions/emoji/
+## https://www.emojicopy.com/
+## :smile: :heart: :thumbsup:
+  - pymdownx.inlinehilite
+## https://facelessuser.github.io/pymdown-extensions/extensions/inlinehilite/
+## `#!python `
+#  - pymdownx.magiclink
+## detects links in Markdown and auto-generates the necessary markup
+  - pymdownx.mark
+## == == highlight
+  - pymdownx.smartsymbols
+## https://facelessuser.github.io/pymdown-extensions/extensions/smartsymbols/
+## +/-  -->  <--  <-->  =/=  1/4  1st 2nd
+  - pymdownx.superfences
+## nest code blocks under blockquotes
+  - pymdownx.tasklist(clickable_checkbox=true)
+## https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
+## - [ ]  - [x]
+  - pymdownx.tilde
+## https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+## ~~ ~~ crossover
+  - pymdownx.keys
+## https://facelessuser.github.io/pymdown-extensions/extensions/keys/
+## ++ctrl+alt+delete++
+## MORE
+  - pyembed.markdown
+  
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
-# Required to load the MathJax javascript for the mdx_math.py        
-extra_javascript: ['https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML','mathjaxhelper.js']

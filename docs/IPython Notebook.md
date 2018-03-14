@@ -1,23 +1,23 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
-Notes and books' tables of contents.
+Notes and tables of contents.
 
 ---
 
-## Websites
+# Websites
 
 - [A gallery of interesting IPython Notebooks](https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks)
 - [Excel plug-ins for Anaconda](https://docs.continuum.io/anaconda/excel)
 
-## Ipython Notebook Essentials
+# Ipython Notebook Essentials
 
-```
 Chapter 1: A Tour of the IPython Notebook 7
 Getting started with Anaconda or Wakari 8
 Installing Anaconda 8
@@ -91,11 +91,9 @@ Introduction 161
 Array creation and member access 161
 Indexing and Slicing 164
 Index 167
-```
 
-## Learning IPython for Interactive Computing and Data Visualization
+# Learning IPython for Interactive Computing and Data Visualization
 
-```
 Chapter 1: Getting Started with IPython 5
 Installing IPython and the recommended packages 6
 Prerequisites for IPython 6
@@ -235,11 +233,9 @@ Embedding IPython 117
 Final words 117
 Summary 118
 Index 119
-```
 
-## IPython Interactive Computing and Visualization Cookbook
+# IPython Interactive Computing and Visualization Cookbook
 
-```
 Chapter 1: A Tour of Interactive Computing with IPython 9
 Introduction 9
 Introducing the IPython notebook 13
@@ -374,11 +370,9 @@ Finding a Boolean propositional formula from a truth table 465
 Analyzing a nonlinear differential system – Lotka-Volterra (predator-prey) equations 467
 Getting started with Sage 470
 Index 473
-```
 
-## Introduction to Python for Econometrics, Statistics and Data Analysis
+# Introduction to Python for Econometrics, Statistics and Data Analysis
 
-```
 1 Introduction 1
 1.1 Background 1
 1.2 Conventions 2
@@ -579,11 +573,9 @@ Index 473
 28.4 Matplotlib 372
 28.5 Pandas 374
 28.6 IPython 378
-```
 
-## Building Machine Learning Systems with Python
+# Building Machine Learning Systems with Python
 
-```
 Chapter 1: Getting Started with Python Machine Learning 7
 Machine learning and Python – the dream team 8
 What the book will teach you (and what it will not) 9
@@ -785,11 +777,9 @@ Getting competitive 263
 What was left out 264
 Summary 264
 Index 265
-```
 
-## Scipy Lecture Notes
+# Scipy Lecture Notes
 
-```
 I Getting started with Python for science 2
 1 Scientific computing with tools and workflow 4
 1.1 Why Python? 4
@@ -921,4 +911,3 @@ III Packages and applications 282
 20.6 Linear model: from regression to sparsity 361
 20.7 Model selection: choosing estimators and their parameters 362
 Index 363
-```

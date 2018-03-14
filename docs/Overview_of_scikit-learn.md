@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -18,7 +20,7 @@ os.chdir('/home/ugo/Documents/Notebooks/DataCamp, Overview of scikit-learn/')
 print(os.getcwd())
 ```
 
-    /home/ugo/Documents/Notebooks/DataCamp, Overview of scikit-learn
+    /home/...
 
 
 # The scikit-learn module

@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Cheat sheets.
 
 ---
 
-## Python 2
+# Python 2
 
 - [Python 2](Python-Cheatsheet-1.pdf). PDF
 
@@ -51,7 +52,7 @@ Cheat sheets.
 ![](img/py_cs/PythonCheatsheet-3.png)
 </center>
 
-## Python 3
+# Python 3
 
 - [Python 3](Python-3-Cheatsheet.pdf). PDF
 
@@ -61,7 +62,7 @@ Cheat sheets.
 ![](img/py_cs/Python-3-Cheatsheetb.png)
 </center>
 
-## Libraries (Debugger, Decorators, Pip)
+# Libraries (Debugger, Decorators, Pip)
 
 - [Python Debugger](Python-Debugger-Cheatsheet.pdf). PDF
 

@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -23,7 +25,7 @@ Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
 - `read_clipboard`, data copied to the clipboard.
 - `read_sql()`, SQL query.
 
-http://pandas.pydata.org/pandas-docs/version/0.18.1/api.html#input-output
+[Input-output documentation](http://pandas.pydata.org/pandas-docs/version/0.18.1/api.html#input-output).
 
 
 ```python

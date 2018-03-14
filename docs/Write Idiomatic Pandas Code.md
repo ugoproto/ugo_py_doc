@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -1993,7 +1995,7 @@ From 803.1 KB!
 
 We have a well-formed data set (i.e. it is in a tidy state) with an optimized memory footprint, data analysis can start.
 
-# Replace, Rank, Subset, `Groupby`
+# Replace, Rank, Subset, `groupby`
 
 ## Replace
 
@@ -2036,7 +2038,7 @@ ranking_df.university_name.head()
 
 
 
-## Rank, Subset, `Groupby` 
+## Rank, Subset, `groupby` 
 
 To find the 5 (more generally `n`) top universities over the years, for each ranking system, here is how to do it in pseudo-code:
 
@@ -2595,4 +2597,4 @@ plt.show()
 
 # To go beyond
 
-with [Group-by](http://jakevdp.github.io/blog/2017/03/22/group-by-from-scratch/).
+with [groupby](http://jakevdp.github.io/blog/2017/03/22/group-by-from-scratch/).

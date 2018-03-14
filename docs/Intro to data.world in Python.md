@@ -1,12 +1,14 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
 
 Code snippets and excerpts from the course. Python 3. From DataCamp.
+With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -16,11 +18,11 @@ Open data is at the heart of [data.world](https://data.world/integrations/python
 
 Open an account, log in, find a dataset, download it or copy URL or integrate data.world with Python/R/Tableau by installing dw in the terminal. In Python for example.
 
-`pip install datadotworld[pandas]` or `conda install datadotworld-py`
+`pip install datadotworld[pandas]` or `conda install datadotworld-py`.
 
 then,
 
-`dw configure`
+`dw configure`.
 
 Pull the API token from the account and enter it.
 
@@ -486,9 +488,9 @@ for r in resources:
 
 The data.world Python SDK includes a variety of API wrappers, available via the `ApiClient` class, to create, replace, update, and delete a dataset. In this section, we walk through a few common tasks:
 
-- Use `api_client()` to get an instance of the `ApiClient`
-- Create a dataset
-- Add a file from a dataframe: we write to a local csv and the upload the file
+- Use `api_client()` to get an instance of the `ApiClient`.
+- Create a dataset.
+- Add a file from a data frame: we write to a local csv and the upload the file.
 - Add a file from a source URL: this is an easy way to add external data to the dataset and keep it up to date. We use a file from GitHub as an example, but we can use any URL source that points to a file.
 - Sync the dataset: this simple call reloads any files with a source URL, to ensure the latest version.
 - Update the dataset: after creating a dataset, use `update_dataset` to change attiributes like description, summary or tags.
@@ -789,9 +791,9 @@ help(api_client)
     
 
 
-## Create a dataset using create_dataset method
+## Create a dataset using `create_dataset` method
 
-`api_client.create_dataset(owner_id="<YOUR_USERNAME>", title="<DATASET_TITLE>", visibility='PRIVATE')`
+`api_client.create_dataset(owner_id="<YOUR_USERNAME>", title="<DATASET_TITLE>", visibility='PRIVATE')`.
 
 
 ```python
@@ -809,11 +811,11 @@ api_client.create_dataset(owner_id="ugo", title="intermediate-data-world", visib
 
 
 
-## Write a dataframe to a local file and upload to dataset
+## Write a data frame to a local file and upload to dataset
 
-Add file to the dataset using upload_files(). Replace the < > items with the dataset values.
+Add file to the dataset using `upload_files()`. Replace the `< >` items with the dataset values.
 
-`api_client.upload_files('<YOUR_USERNAME>/<DATASET_TITLE>',['police_shootings.csv'])`
+`api_client.upload_files('<YOUR_USERNAME>/<DATASET_TITLE>',['police_shootings.csv'])`.
 
 
 ```python
@@ -842,12 +844,12 @@ Check the current working directory.
 Add a file from an external source URL. In this example we use GitHub. 
 Replace the < > items with the dataset values
 
-`api_client.add_files_via_url('<YOUR_USERNAME>/<DATASET_TITLE>',{'shootings_of_police.csv': 'https://github.com/fivethirtyeight/data/blob/master/police-deaths/all_data.csv’})`
+`api_client.add_files_via_url('<YOUR_USERNAME>/<DATASET_TITLE>',{'shootings_of_police.csv': 'https://github.com/fivethirtyeight/data/blob/master/police-deaths/all_data.csv’})`.
 
 For files added with `add_files_via_url`, fetch the latest version using the `sync()` method:
 
-`api_client.sync_files('<YOUR_USERNAME>/<DATASET_TITLE>')`
+`api_client.sync_files('<YOUR_USERNAME>/<DATASET_TITLE>')`.
                                                                 
 Use the `update_dataset()` method to update the metadata after dataset creation:
 
-`api_client.update_dataset('<YOUR_USERNAME>/<DATASET_TITLE>', description='Dataset created to test out the python SDK functionality.', tags=['test', 'datacamp'])`
+`api_client.update_dataset('<YOUR_USERNAME>/<DATASET_TITLE>', description='Dataset created to test out the python SDK functionality.', tags=['test', 'datacamp'])`.

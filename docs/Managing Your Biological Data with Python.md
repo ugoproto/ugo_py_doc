@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Notes and code snippets. Python 2. The book comes with files and cases. Python 2
 
 ---
 
-## Part 1, Getting Started
+# Part 1, Getting Started
 
 ## Chapter 1, The Python Shell and Basics
 
@@ -170,7 +171,7 @@ for i in range(10):
 print sequence
 ```
 
-## Part 2, Data management
+# Part 2, Data management
 
 ## Chapter 3, Analyzing a Data Column
 
@@ -2336,7 +2337,7 @@ Output:
 
 ![Regex](img/managing_your_biological/regex.png)
 
-## Part 3, Modular Programming
+# Part 3, Modular Programming
 
 ## Chapter 10, Divide a Program into Functions
 
@@ -2787,7 +2788,7 @@ __main__
 	- `__setattr__`.
 	- `__delattr__`.
 
-## Chapter 12 Debugging
+## Chapter 12, Debugging
 
 <sub>bug</sub>
 
@@ -3451,7 +3452,7 @@ if __name == '__main__':
 - The Agile Manifesto.
 - Methodologies: Scrum, eXtreme Programming, etc.
 
-## Part 4, Data Visualization
+# Part 4, Data Visualization
 
 ## Chapter 16, Creating Scientific Diagrams
 
@@ -3878,7 +3879,7 @@ Result:
 
 ![Plasmid](img/managing_your_biological/plasmid_pBR322.png)
 
-## Part 6, Cookbook
+# Part 6, Cookbook
 
 ## Recipe 2, Reversing and Randomizing a Sequence
 

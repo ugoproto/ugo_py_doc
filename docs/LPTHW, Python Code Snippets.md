@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Code snippets. Python 2.
 
 ---
 
-## A Battleship Game
+# A Battleship Game
 
 <sub>build, board, grid, row, column, list, assign, random, value, loop, conditional, if, else, elif</sub>
 
@@ -82,7 +83,7 @@ for turn in range(5):
 
 ```
 
-## An Interactive Calendar
+# An Interactive Calendar
 
 <sub>add, delete, update, exit, dictionary, loop, conditional, if, else, elif</sub>
 
@@ -172,7 +173,7 @@ def start_calendar():
 start_calendar()
 ```
 
-## A Gradebook for Students
+# A Gradebook for Students
 
 <sub>students, marks, grades, compute, average, weighted</sub>
 
@@ -315,7 +316,7 @@ print("Finally, The class average is:").upper()
 print get_class_average(all_average)
 ```
 
-## Guess Games
+# Guess Games
 
 <sub>random, generate, number, conditional, if, else, ifel, loop</sub>
 
@@ -462,7 +463,7 @@ def play_RPS():
 play_RPS()
 ```
 
-## Regex Tools
+# Regex Tools
 
 Remove vowels
 
@@ -557,7 +558,7 @@ print scrabble_score("coding")
 print scrabble_score("yak")
 ```
 
-## RGB-HEX Converter
+# RGB-HEX Converter
 
 <sub>convert, bitwise, hexadecimal, hex, rgb, color</sub>
 
@@ -620,7 +621,7 @@ def convert():
 convert()
 ```
 
-## Project DNA Analysis
+# Project DNA Analysis
 
 Given the three suspects' DNA and the sample DNA retrieved from the keyboard, figure out who the spy is!
 

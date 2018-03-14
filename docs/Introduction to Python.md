@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,12 +11,12 @@ Notes. Python 2 & 3.
 
 ---
 
-## 1, A Good Way to Start (Crash Courses).
+# A Good Way to Start (Crash Courses).
 
 - [A Python Course](http://www.upriss.org.uk/python/PythonCourse.html)
 - [Instant Python](http://hetland.org/writing/instant-python.html)
 
-## 2, More Comprehensive Courses
+# More Comprehensive Courses
 
 - [Think Python](http://www.greenteapress.com/thinkpython/html/index.html)
 	- Think Python starts with basic concepts of programming, and is carefully designed to define all terms when they are first used and to develop each new concept in a logical progression. Larger pieces, like recursion and object-oriented programming are divided into a sequence of smaller steps and introduced over the course of several chapters.
@@ -51,11 +52,11 @@ Notes. Python 2 & 3.
 - [Introduction au langage Python](http://www.jchr.be/python/manuel.htm)
 - [Treehouse (focused on web frameworks and specific packages)](https://teamtreehouse.com/)
 
-## 3, A Comprehensive List of Courses
+# A Comprehensive List of Courses
 
 From [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/intro/learning/)
 
-## 4, Dive Right into a First Project
+# Dive Right into a First Project
 
 [Programming Fundamentals in Python](https://www.thinkful.com/learn/intro-to-python-tutorial/)
 

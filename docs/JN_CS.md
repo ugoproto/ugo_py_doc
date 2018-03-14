@@ -1,7 +1,8 @@
+<!--
 ---
 
 [TOC]
-
+-->
 ---
 
 **Foreword**
@@ -10,7 +11,7 @@ Cheat sheets and snippets.
 
 ---
 
-## Anaconda
+# Anaconda
 
 - [Anaconda Cheat Sheet](Anaconda_CheatSheet.pdf). PDF only.
 - [Conda Cheat Sheet](conda-cheatsheet.pdf). PDF.
@@ -21,7 +22,7 @@ Cheat sheets and snippets.
 ![](img/scipy_cs/conda-cheatsheetb.png)
 </center>
 
-## Jupyter Notebook
+# Jupyter Notebook
 
 - [Jupyter Notebook](Jupyter_Notebook_Cheat_Sheet.pdf). PDF.
 
@@ -37,7 +38,7 @@ Cheat sheets and snippets.
 ![](img/scipy_cs/weidadeyue_jupyter-notebook.png)
 </center>
 
-## Objects
+# Objects
 
 Find, list, search, reset.
 
@@ -92,7 +93,7 @@ who
 
 -----
 
-## Logging
+# Logging
 
 Start, state, on, off.
 
@@ -168,7 +169,7 @@ logstate
 
 -----
 
-## Magic & Help
+# Magic & Help
 
 List, help.
 
@@ -203,7 +204,7 @@ Open a window about the command (minimum, maximum help).
 
 -----
 
-## Function
+# Function
 
 docstrings, info, source.
 
@@ -246,7 +247,7 @@ pinfo print_number
 
 -----
 
-## Navigation
+# Navigation
 
 Bookmark, history.
 
@@ -299,7 +300,7 @@ dhist
 
 -----
 
-## External
+# External
 
 Bash, script.
 
