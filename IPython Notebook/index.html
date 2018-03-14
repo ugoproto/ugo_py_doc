@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -680,8 +680,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -884,18 +884,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -995,1803 +983,910 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/IPython Notebook.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/IPython Notebook.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>IPython Notebook, Collection</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#websites">Websites</a></li>
-<li><a href="#ipython-notebook-essentials">Ipython Notebook Essentials</a></li>
-<li><a href="#learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization</a></li>
-<li><a href="#ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook</a></li>
-<li><a href="#introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis</a></li>
-<li><a href="#building-machine-learning-systems-with-python">Building Machine Learning Systems with Python</a></li>
-<li><a href="#scipy-lecture-notes">Scipy Lecture Notes</a></li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Notes and tables of contents.</p>
 <hr />
-<h4 id="websites">Websites<a class="headerlink" href="#websites" title="Permanent link">&para;</a></h4>
+<h3 id="websites">Websites<a class="headerlink" href="#websites" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks">A gallery of interesting IPython Notebooks</a></li>
 <li><a href="https://docs.continuum.io/anaconda/excel">Excel plug-ins for Anaconda</a></li>
 </ul>
-<h4 id="ipython-notebook-essentials">Ipython Notebook Essentials<a class="headerlink" href="#ipython-notebook-essentials" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Chapter 1: A Tour of the IPython Notebook 7
-Getting started with Anaconda or Wakari 8
-Installing Anaconda 8
-Running the notebook 8
-Creating a Wakari account 10
-Creating your frst notebook 11
-Example – the coffee cooling problem 12
-Exercises 22
-Summary 22
-Chapter 2: The Notebook Interface 23
-Editing and navigating a notebook 23
-Getting help and interrupting computations 25
-The Edit mode 25
-The Command mode 28
-Cell types 29
-IPython magics 33
-Interacting with the operating system 37
-Saving the notebook 37
-Converting the notebook to other formats 38
-Running shell commands 39
-Running scripts, loading data, and saving data 41
-Running Python scripts 41
-Running scripts in other languages 43
-Loading and saving data 45
-The rich display system 47
-Images and YouTube videos 47
-HTML 49
-Summary 52
-Chapter 3: Graphics with matplotlib 53
-The plot function 54
-Adding a title, labels, and a legend 59
-Text and annotations 62
-Three-dimensional plots 66
-Animations 71
-Summary 77
-Chapter 4: Handling Data with pandas 79
-The Series class 79
-The DataFrame class 88
-Computational and graphics tools 95
-An example with a realistic dataset 101
-Summary 108
-Chapter 5: Advanced Computing with SciPy, Numba, and NumbaPro 109
-Overview of SciPy 109
-Advanced mathematical algorithms with SciPy 111
-Solving equations and fnding optimal values 111
-Calculus and differential equations 117
-Accelerating computations with Numba and NumbaPro 128
-Summary 138
-Appendix A: IPython Notebook Reference Card 139
-Starting the notebook 139
-Keyboard shortcuts 139
-Shortcuts in the Edit mode 139
-Shortcuts in the Command mode 140
-Importing modules 141
-Getting help 141
-Appendix B: A Brief Review of Python 143
-Introduction 143
-Basic types, expressions, and variables and their assignment 143
-Sequence types 147
-Lists 147
-Tuples 150
-Strings 151
-Dictionaries 152
-Control structures 152
-Functions, objects, and methods 156
-Functions 156
-Objects and methods 158
-Summary 159
-Appendix C: NumPy Arrays 161
-Introduction 161
-Array creation and member access 161
-Indexing and Slicing 164
-Index 167
-</pre></div>
-</td></tr></table>
-
-<h4 id="learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization<a class="headerlink" href="#learning-ipython-for-interactive-computing-and-data-visualization" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Chapter 1: Getting Started with IPython 5
-Installing IPython and the recommended packages 6
-Prerequisites for IPython 6
-Installing an all-in-one distribution 7
-Installing the packages one by one 7
-Packages websites 8
-Getting binary installers 9
-Using the Python packaging system 11
-Installing the development versions 12
-Ten IPython essentials 13
-Running the IPython console 13
-Using IPython as a system shell 14
-Using the history 15
-Tab completion 15
-Executing a script with the %run command 16
-Quick benchmarking with the %timeit command 17
-Quick debugging with the %debug command 17
-Interactive computing with Pylab 18
-Using the IPython Notebook 19
-Customizing IPython 19
-Summary 20
-Chapter 2: Interactive Work with IPython 21
-The extended shell 21
-Navigating through the flesystem 22
-Accessing the system shell from IPython 24
-The extended Python console 25
-Exploring the history 26
-Import/export of Python code 27
-Importing code in IPython 27
-Exporting code to a fle 29
-Dynamic introspection 29
-Tab completion 29
-Source code introspection 31
-Using the interactive debugger 32
-Interactive benchmarking and profling 33
-Controlling the execution time of a command 33
-Profling a script 34
-Using the IPython notebook 35
-Installation 36
-The notebook dashboard 36
-Working with cells 37
-Cell magics 38
-Managing notebooks 39
-Multimedia and rich text editing 39
-Graph plotting 40
-Summary 41
-Chapter 3: Numerical Computing with IPython 43
-A primer to vector computing 44
-An example of computation with Python loops 44
-What an array is 45
-Reimplementing the example with arrays 48
-Creating and loading arrays 50
-Creating arrays 50
-From scratch, element by element 50
-From scratch, using predefned templates 51
-From random values 52
-Loading arrays 53
-From a native Python object 53
-From a buffer or an external fle 53
-Using Pandas 54
-Working with arrays 56
-Selection 56
-Using Pandas 57
-Using NumPy 58
-More indexing possibilities 59
-Manipulation 60
-Reshaping 60
-Repeating and concatenating 61
-Broadcasting 62
-Permuting 63
-Computation 63
-Advanced mathematical processing 65
-Summary 66
-Chapter 4: Interactive Plotting and Graphical Interfaces 67
-Figures with Matplotlib 68
-Setting up IPython for interactive visualization 68
-Using Matplotlib 68
-Interactive navigation 69
-Matplotlib in the IPython notebook 69
-Standard plots 69
-Curves 69
-Scatter plots 71
-Bar graphs 72
-Plot customization 72
-Styles and colors 73
-Grid, axes, and legends 74
-Interaction from IPython 75
-Drawing multiple plots 76
-Advanced fgures and graphics 76
-Image processing 77
-Loading images 77
-Showing images 78
-Using PIL 79
-Advanced image processing – color quantization 79
-Maps 81
-3D plots 83
-Animations 84
-Other visualization packages 84
-Graphical User Interfaces (GUI) 84
-Setting up IPython for interactive GUIs 85
-A &quot;Hello World&quot; example 85
-Summary 87
-Chapter 5: High-Performance and Parallel Computing 89
-Interactive task parallelization 90
-Parallel computing in Python 90
-Distributing tasks on multiple cores 91
-Starting the engines 91
-Creating a Client instance 92
-Using the parallel magic 92
-Parallel map 93
-A practical example – Monte Carlo simulations 95
-Using MPI with IPython 96
-Advanced parallel computing features of IPython 98
-Using C in IPython with Cython 99
-Installing and confguring Cython 99
-Using Cython from IPython 100
-Accelerating a pure Python algorithm with Cython 101
-Pure Python version 101
-Naïve Cython conversion 102
-Adding C types 102
-Using NumPy and Cython 103
-Python version 103
-Cython version 104
-More advanced options for accelerating Python code 106
-Summary 107
-Chapter 6: Customizing IPython 109
-IPython profles 109
-Profle locations 110
-The IPython confguration fles 110
-Loading scripts when IPython starts 111
-IPython extensions 111
-Example – line-by-line profling 111
-Creating new extensions 113
-Example – executing C++ code in IPython 113
-Rich representations in the frontend 115
-Embedding IPython 117
-Final words 117
-Summary 118
-Index 119
-</pre></div>
-</td></tr></table>
-
-<h4 id="ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook<a class="headerlink" href="#ipython-interactive-computing-and-visualization-cookbook" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Chapter 1: A Tour of Interactive Computing with IPython 9
-Introduction 9
-Introducing the IPython notebook 13
-Getting started with exploratory data analysis in IPython 22
-Introducing the multidimensional array in NumPy for fast array computations 28
-Creating an IPython extension with custom magic commands 32
-Mastering IPython configuration system 36
-Creating a simple kernel for IPython 39
-Chapter 2: Best Practices in Interactive Computing 45
-Introduction 45
-Choosing (or not) between Python 2 and Python 3 46
-Effcient interactive computing workﬂows with IPython 50
-Learning the basics of the distributed version control system Git 53
-A typical workﬂow with Git branching 56
-Ten tips for conducting reproducible interactive computing experiments 59
-Writing high-quality Python code 63
-Writing unit tests with nose 67
-Debugging your code with IPython 74
-Chapter 3: Mastering the Notebook 79
-Introduction 79
-Teaching programming in the notebook with IPython blocks 84
-Converting an IPython notebook to other formats with nbconvert 89
-Adding custom controls in the notebook toolbar 94
-Customizing the CSS style in the notebook 96
-Using interactive widgets – a piano in the notebook 99
-Creating a custom JavaScript widget in the notebook – a spreadsheet editor for pandas 103
-Processing webcam images in real time from the notebook 108
-Chapter 4: Profling and Optimization 115
-Introduction 115
-Evaluating the time taken by a statement in IPython 116
-Profling your code easily with cProfle and IPython 117
-Profling your code line-by-line with line_profler 121
-Profling the memory usage of your code with memory_profler 124
-Understanding the internals of NumPy to avoid unnecessary array copying 127
-Using stride tricks with NumPy 133
-Implementing an effcient rolling average algorithm with stride tricks 135
-Making effcient array selections in NumPy 138
-Processing huge NumPy arrays with memory mapping 140
-Manipulating large arrays with HDF5 and PyTables 142
-Manipulating large heterogeneous tables with HDF5 and PyTables 146
-Chapter 5: High-performance Computing 149
-Introduction 149
-Accelerating pure Python code with Numba and Just-In-Time compilation 154
-Accelerating array computations with Numexpr 158
-Wrapping a C library in Python with ctypes 159
-Accelerating Python code with Cython 163
-Optimizing Cython code by writing less Python and more C 167
-Releasing the GIL to take advantage of multi-core processors with Cython and OpenMP 174
-Writing massively parallel code for NVIDIA graphics cards (GPUs) with CUDA 175
-Writing massively parallel code for heterogeneous platforms with OpenCL 181
-Distributing Python code across multiple cores with IPython 185
-Interacting with asynchronous parallel tasks in IPython 189
-Parallelizing code with MPI in IPython 192
-Trying the Julia language in the notebook 195
-Chapter 6: Advanced Visualization 201
-Introduction 201
-Making nicer matplotlib fgures with prettyplotlib 202
-Creating beautiful statistical plots with seaborn 205
-Creating interactive web visualizations with Bokeh 208
-Visualizing a NetworkX graph in the IPython notebook with D3.js 211
-Converting matplotlib fgures to D3.js visualizations with mpld3 215
-Getting started with Vispy for high-performance interactive data visualizations 218
-Chapter 7: Statistical Data Analysis 225
-Introduction 225
-Exploring a dataset with pandas and matplotlib 229
-Getting started with statistical hypothesis testing – a simple z-test 233
-Getting started with Bayesian methods 236
-Estimating the correlation between two variables with a contingency table and a chi-squared test 241
-Fitting a probability distribution to data with the maximum likelihood method 245
-Estimating a probability distribution nonparametrically with a kernel density estimation 251
-Fitting a Bayesian model by sampling from a posterior distribution with a Markov chain Monte Carlo method 255
-Analyzing data with the R programming language in the IPython notebook 261
-Chapter 8: Machine Learning 267
-Introduction 267
-Getting started with scikit-learn 273
-Predicting who will survive on the Titanic with logistic regression 281
-Learning to recognize handwritten digits with a K-nearest neighbors classifer 285
-Learning from text – Naive Bayes for Natural Language Processing 289
-Using support vector machines for classifcation tasks 293
-Using a random forest to select important features for regression 298
-Reducing the dimensionality of a dataset with a principal component analysis 302
-Detecting hidden structures in a dataset with clustering 306
-Chapter 9: Numerical Optimization 311
-Introduction 311
-Finding the root of a mathematical function 314
-Minimizing a mathematical function 317
-Fitting a function to data with nonlinear least squares 323
-Finding the equilibrium state of a physical system by minimizing its potential energy 326
-Chapter 10: Signal Processing 333
-Introduction 333
-Analyzing the frequency components of a signal with a Fast Fourier Transform 337
-Applying a linear flter to a digital signal 343
-Computing the autocorrelation of a time series 349
-Chapter 11: Image and Audio Processing 353
-Introduction 353
-Manipulating the exposure of an image 355
-Applying flters on an image 358
-Segmenting an image 362
-Finding points of interest in an image 367
-Detecting faces in an image with OpenCV 370
-Applying digital flters to speech sounds 373
-Creating a sound synthesizer in the notebook 377
-Chapter 12: Deterministic Dynamical Systems 381
-Introduction 381
-Plotting the bifurcation diagram of a chaotic dynamical system 383
-Simulating an elementary cellular automaton 387
-Simulating an ordinary differential equation with SciPy 390
-Simulating a partial differential equation – reaction-diffusion systems and Turing patterns 394
-Chapter 13: Stochastic Dynamical Systems 401
-Introduction 401
-Simulating a discrete-time Markov chain 402
-Simulating a Poisson process 406
-Simulating a Brownian motion 410
-Simulating a stochastic differential equation 412
-Chapter 14: Graphs, Geometry, and Geographic Information Systems 417
-Introduction 417
-Manipulating and visualizing graphs with NetworkX 421
-Analyzing a social network with NetworkX 425
-Resolving dependencies in a directed acyclic graph with a topological sort 430
-Computing connected components in an image 434
-Computing the Voronoi diagram of a set of points 438
-Manipulating geospatial data with Shapely and basemap 442
-Creating a route planner for a road network 446
-Chapter 15: Symbolic and Numerical Mathematics 453
-Introduction 453
-Diving into symbolic computing with SymPy 454
-Solving equations and inequalities 457
-Analyzing real-valued functions 458
-Computing exact probabilities and manipulating random variables 460
-A bit of number theory with SymPy 462
-Finding a Boolean propositional formula from a truth table 465
-Analyzing a nonlinear differential system – Lotka-Volterra (predator-prey) equations 467
-Getting started with Sage 470
-Index 473
-</pre></div>
-</td></tr></table>
-
-<h4 id="introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis<a class="headerlink" href="#introduction-to-python-for-econometrics-statistics-and-data-analysis" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span> <span class="n">Introduction</span> <span class="mi">1</span>
-<span class="mf">1.1</span> <span class="n">Background</span> <span class="mi">1</span>
-<span class="mf">1.2</span> <span class="n">Conventions</span> <span class="mi">2</span>
-<span class="mf">1.3</span> <span class="n">Important</span> <span class="n">Components</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Python</span> <span class="n">Scientific</span> <span class="n">Stack</span> <span class="mi">3</span>
-<span class="mf">1.4</span> <span class="n">Setup</span> <span class="mi">4</span>
-<span class="mf">1.5</span> <span class="n">Using</span> <span class="n">Python</span> <span class="mi">6</span>
-<span class="mf">1.6</span> <span class="n">Exercises</span> <span class="mi">17</span>
-<span class="mf">1.</span><span class="n">A</span> <span class="n">Frequently</span> <span class="n">Encountered</span> <span class="n">Problems</span> <span class="mi">17</span>
-<span class="mf">1.</span><span class="n">B</span> <span class="n">register_python</span><span class="o">.</span><span class="n">py</span> <span class="mi">18</span>
-<span class="mf">1.</span><span class="n">C</span> <span class="n">Advanced</span> <span class="n">Setup</span> <span class="mi">19</span>
-<span class="mi">2</span> <span class="n">Python</span> <span class="mf">2.7</span> <span class="n">vs</span><span class="o">.</span> <span class="mi">3</span> <span class="p">(</span><span class="ow">and</span> <span class="n">the</span> <span class="n">rest</span><span class="p">)</span> <span class="mi">27</span>
-<span class="mf">2.1</span> <span class="n">Python</span> <span class="mf">2.7</span> <span class="n">vs</span><span class="o">.</span> <span class="mi">3</span> <span class="mi">27</span>
-<span class="mf">2.2</span> <span class="n">Intel</span> <span class="n">Math</span> <span class="n">Kernel</span> <span class="n">Library</span> <span class="ow">and</span> <span class="n">AMD</span> <span class="n">Core</span> <span class="n">Math</span> <span class="n">Library</span> <span class="mi">27</span>
-<span class="mf">2.3</span> <span class="n">Other</span> <span class="n">Variants</span> <span class="mi">28</span>
-<span class="mf">2.</span><span class="n">A</span> <span class="n">Relevant</span> <span class="n">Differences</span> <span class="n">between</span> <span class="n">Python</span> <span class="mf">2.7</span> <span class="ow">and</span> <span class="mi">3</span> <span class="mi">29</span>
-<span class="mi">3</span> <span class="n">Built</span><span class="o">-</span><span class="ow">in</span> <span class="n">Data</span> <span class="n">Types</span> <span class="mi">31</span>
-<span class="mf">3.1</span> <span class="n">Variable</span> <span class="n">Names</span> <span class="mi">31</span>
-<span class="mf">3.2</span> <span class="n">Core</span> <span class="n">Native</span> <span class="n">Data</span> <span class="n">Types</span> <span class="mi">32</span>
-<span class="mf">3.3</span> <span class="n">Python</span> <span class="ow">and</span> <span class="n">Memory</span> <span class="n">Management</span> <span class="mi">42</span>
-<span class="mf">3.4</span> <span class="n">Exercises</span> <span class="mi">44</span>
-<span class="mi">4</span> <span class="n">Arrays</span> <span class="ow">and</span> <span class="n">Matrices</span> <span class="mi">47</span>
-<span class="mf">4.1</span> <span class="n">Array</span> <span class="mi">47</span>
-<span class="mf">4.2</span> <span class="n">Matrix</span> <span class="mi">49</span>
-<span class="mf">4.3</span> <span class="mi">1</span><span class="o">-</span><span class="n">dimensional</span> <span class="n">Arrays</span> <span class="mi">50</span>
-<span class="mf">4.4</span> <span class="mi">2</span><span class="o">-</span><span class="n">dimensional</span> <span class="n">Arrays</span> <span class="mi">51</span>
-<span class="mf">4.5</span> <span class="n">Multidimensional</span> <span class="n">Arrays</span> <span class="mi">51</span>
-<span class="mf">4.6</span> <span class="n">Concatenation</span> <span class="mi">51</span>
-<span class="mf">4.7</span> <span class="n">Accessing</span> <span class="n">Elements</span> <span class="n">of</span> <span class="n">an</span> <span class="n">Array</span> <span class="mi">52</span>
-<span class="mf">4.8</span> <span class="n">Slicing</span> <span class="ow">and</span> <span class="n">Memory</span> <span class="n">Management</span> <span class="mi">57</span>
-<span class="mf">4.9</span> <span class="kn">import</span> <span class="nn">and</span> <span class="nn">Modules</span> <span class="mi">59</span>
-<span class="mf">4.10</span> <span class="n">Calling</span> <span class="n">Functions</span> <span class="mi">59</span>
-<span class="mf">4.11</span> <span class="n">Exercises</span> <span class="mi">61</span>
-<span class="mi">5</span> <span class="n">Basic</span> <span class="n">Math</span> <span class="mi">63</span>
-<span class="mf">5.1</span> <span class="n">Operators</span> <span class="mi">63</span>
-<span class="mf">5.2</span> <span class="n">Broadcasting</span> <span class="mi">64</span>
-<span class="mf">5.3</span> <span class="n">Array</span> <span class="ow">and</span> <span class="n">Matrix</span> <span class="n">Addition</span> <span class="p">(</span><span class="o">+</span><span class="p">)</span> <span class="ow">and</span> <span class="n">Subtraction</span> <span class="p">(</span><span class="o">-</span><span class="p">)</span> <span class="mi">65</span>
-<span class="mf">5.4</span> <span class="n">Array</span> <span class="n">Multiplication</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="mi">66</span>
-<span class="mf">5.5</span> <span class="n">Matrix</span> <span class="n">Multiplication</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="mi">66</span>
-<span class="mf">5.6</span> <span class="n">Array</span> <span class="ow">and</span> <span class="n">Matrix</span> <span class="n">Division</span> <span class="p">(</span><span class="o">=</span><span class="p">)</span> <span class="mi">66</span>
-<span class="mf">5.7</span> <span class="n">Array</span> <span class="n">Exponentiation</span> <span class="p">(</span><span class="n">xx</span><span class="p">)</span> <span class="mi">66</span>
-<span class="mf">5.8</span> <span class="n">Matrix</span> <span class="n">Exponentiation</span> <span class="p">(</span><span class="n">xx</span><span class="p">)</span> <span class="mi">67</span>
-<span class="mf">5.9</span> <span class="n">Parentheses</span> <span class="mi">67</span>
-<span class="mf">5.10</span> <span class="n">Transpose</span> <span class="mi">67</span>
-<span class="mf">5.11</span> <span class="n">Operator</span> <span class="n">Precedence</span> <span class="mi">67</span>
-<span class="mf">5.12</span> <span class="n">Exercises</span> <span class="mi">68</span>
-<span class="mi">6</span> <span class="n">Basic</span> <span class="n">Functions</span> <span class="ow">and</span> <span class="n">Numerical</span> <span class="n">Indexing</span> <span class="mi">71</span>
-<span class="mf">6.1</span> <span class="n">Generating</span> <span class="n">Arrays</span> <span class="ow">and</span> <span class="n">Matrices</span> <span class="mi">71</span>
-<span class="mf">6.2</span> <span class="n">Rounding</span> <span class="mi">74</span>
-<span class="mf">6.3</span> <span class="n">Mathematics</span> <span class="mi">75</span>
-<span class="mf">6.4</span> <span class="n">Complex</span> <span class="n">Values</span> <span class="mi">77</span>
-<span class="mf">6.5</span> <span class="n">Set</span> <span class="n">Functions</span> <span class="mi">77</span>
-<span class="mf">6.6</span> <span class="n">Sorting</span> <span class="ow">and</span> <span class="n">Extreme</span> <span class="n">Values</span> <span class="mi">78</span>
-<span class="mf">6.7</span> <span class="n">Nan</span> <span class="n">Functions</span> <span class="mi">80</span>
-<span class="mf">6.8</span> <span class="n">Functions</span> <span class="ow">and</span> <span class="n">Methods</span><span class="o">/</span><span class="n">Properties</span> <span class="mi">81</span>
-<span class="mf">6.9</span> <span class="n">Exercises</span> <span class="mi">82</span>
-<span class="mi">7</span> <span class="n">Special</span> <span class="n">Arrays</span> <span class="mi">83</span>
-<span class="mf">7.1</span> <span class="n">Exercises</span> <span class="mi">84</span>
-<span class="mi">8</span> <span class="n">Array</span> <span class="ow">and</span> <span class="n">Matrix</span> <span class="n">Functions</span> <span class="mi">85</span>
-<span class="mf">8.1</span> <span class="n">Views</span> <span class="mi">85</span>
-<span class="mf">8.2</span> <span class="n">Shape</span> <span class="n">Information</span> <span class="ow">and</span> <span class="n">Transformation</span> <span class="mi">86</span>
-<span class="mf">8.3</span> <span class="n">Linear</span> <span class="n">Algebra</span> <span class="n">Functions</span> <span class="mi">93</span>
-<span class="mf">8.4</span> <span class="n">Exercises</span> <span class="mi">96</span>
-<span class="mi">9</span> <span class="n">Importing</span> <span class="ow">and</span> <span class="n">Exporting</span> <span class="n">Data</span> <span class="mi">99</span>
-<span class="mf">9.1</span> <span class="n">Importing</span> <span class="n">Data</span> <span class="n">using</span> <span class="n">pandas</span> <span class="mi">99</span>
-<span class="mf">9.2</span> <span class="n">Importing</span> <span class="n">Data</span> <span class="n">without</span> <span class="n">pandas</span> <span class="mi">100</span>
-<span class="mf">9.3</span> <span class="n">Saving</span> <span class="ow">or</span> <span class="n">Exporting</span> <span class="n">Data</span> <span class="n">using</span> <span class="n">pandas</span> <span class="mi">106</span>
-<span class="mf">9.4</span> <span class="n">Saving</span> <span class="ow">or</span> <span class="n">Exporting</span> <span class="n">Data</span> <span class="n">without</span> <span class="n">pandas</span> <span class="mi">106</span>
-<span class="mf">9.5</span> <span class="n">Exercises</span> <span class="mi">107</span>
-<span class="mi">10</span> <span class="n">Inf</span><span class="p">,</span> <span class="n">NaN</span> <span class="ow">and</span> <span class="n">Numeric</span> <span class="n">Limits</span> <span class="mi">109</span>
-<span class="mf">10.1</span> <span class="n">inf</span> <span class="ow">and</span> <span class="n">NaN</span> <span class="mi">109</span>
-<span class="mf">10.2</span> <span class="n">Floating</span> <span class="n">point</span> <span class="n">precision</span> <span class="mi">109</span>
-<span class="mf">10.3</span> <span class="n">Exercises</span> <span class="mi">110</span>
-<span class="mi">11</span> <span class="n">Logical</span> <span class="n">Operators</span> <span class="ow">and</span> <span class="n">Find</span> <span class="mi">113</span>
-<span class="mf">11.1</span> <span class="o">&gt;</span><span class="p">,</span> <span class="o">&gt;=</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">,</span> <span class="o">&lt;=</span><span class="p">,</span> <span class="o">==</span><span class="p">,</span> <span class="o">!=</span> <span class="mi">113</span>
-<span class="mf">11.2</span> <span class="ow">and</span><span class="p">,</span> <span class="ow">or</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">and</span> <span class="n">xor</span> <span class="mi">114</span>
-<span class="mf">11.3</span> <span class="n">Multiple</span> <span class="n">tests</span> <span class="mi">115</span>
-<span class="mf">11.4</span> <span class="ow">is</span><span class="o">*</span> <span class="mi">116</span>
-<span class="mf">11.5</span> <span class="n">Exercises</span> <span class="mi">117</span>
-<span class="mi">12</span> <span class="n">Advanced</span> <span class="n">Selection</span> <span class="ow">and</span> <span class="n">Assignment</span> <span class="mi">119</span>
-<span class="mf">12.1</span> <span class="n">Numerical</span> <span class="n">Indexing</span> <span class="mi">119</span>
-<span class="mf">12.2</span> <span class="n">Logical</span> <span class="n">Indexing</span> <span class="mi">124</span>
-<span class="mf">12.3</span> <span class="n">Performance</span> <span class="n">Considerations</span> <span class="ow">and</span> <span class="n">Memory</span> <span class="n">Management</span> <span class="mi">128</span>
-<span class="mf">12.4</span> <span class="n">Assignment</span> <span class="k">with</span> <span class="n">Broadcasting</span> <span class="mi">128</span>
-<span class="mf">12.5</span> <span class="n">Exercises</span> <span class="mi">130</span>
-<span class="mi">13</span> <span class="n">Flow</span> <span class="n">Control</span><span class="p">,</span> <span class="n">Loops</span> <span class="ow">and</span> <span class="ne">Exception</span> <span class="n">Handling</span> <span class="mi">133</span>
-<span class="mf">13.1</span> <span class="n">Whitespace</span> <span class="ow">and</span> <span class="n">Flow</span> <span class="n">Control</span> <span class="mi">133</span>
-<span class="mf">13.2</span> <span class="k">if</span> <span class="o">.</span> <span class="o">.</span> <span class="o">.</span> <span class="k">elif</span> <span class="o">.</span> <span class="o">.</span> <span class="o">.</span> <span class="k">else</span>  <span class="mi">133</span>
-<span class="mf">13.3</span> <span class="k">for</span> <span class="mi">134</span>
-<span class="mf">13.4</span> <span class="k">while</span> <span class="mi">137</span>
-<span class="mf">13.5</span> <span class="k">try</span> <span class="o">.</span> <span class="o">.</span> <span class="o">.</span> <span class="k">except</span> <span class="mi">139</span>
-<span class="mf">13.6</span> <span class="n">List</span> <span class="n">Comprehensions</span> <span class="mi">139</span>
-<span class="mf">13.7</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Dictionary</span> <span class="ow">and</span> <span class="n">Set</span> <span class="n">Comprehensions</span> <span class="mi">141</span>
-<span class="mf">13.8</span> <span class="n">Exercises</span> <span class="mi">141</span>
-<span class="mi">14</span> <span class="n">Dates</span> <span class="ow">and</span> <span class="n">Times</span> <span class="mi">143</span>
-<span class="mf">14.1</span> <span class="n">Creating</span> <span class="n">Dates</span> <span class="ow">and</span> <span class="n">Times</span> <span class="mi">143</span>
-<span class="mf">14.2</span> <span class="n">Dates</span> <span class="n">Mathematics</span> <span class="mi">143</span>
-<span class="mf">14.3</span> <span class="n">Numpy</span> <span class="n">datetime64</span> <span class="mi">144</span>
-<span class="mi">15</span> <span class="n">Graphics</span> <span class="mi">147</span>
-<span class="mf">15.1</span> <span class="n">seaborn</span> <span class="mi">147</span>
-<span class="mf">15.2</span> <span class="mi">2</span><span class="n">D</span> <span class="n">Plotting</span> <span class="mi">147</span>
-<span class="mf">15.3</span> <span class="n">Advanced</span> <span class="mi">2</span><span class="n">D</span> <span class="n">Plotting</span> <span class="mi">153</span>
-<span class="mf">15.4</span> <span class="mi">3</span><span class="n">D</span> <span class="n">Plotting</span> <span class="mi">162</span>
-<span class="mf">15.5</span> <span class="n">General</span> <span class="n">Plotting</span> <span class="n">Functions</span> <span class="mi">165</span>
-<span class="mf">15.6</span> <span class="n">Exporting</span> <span class="n">Plots</span> <span class="mi">165</span>
-<span class="mf">15.7</span> <span class="n">Exercises</span> <span class="mi">166</span>
-<span class="mi">16</span> <span class="n">Structured</span> <span class="n">Arrays</span> <span class="mi">167</span>
-<span class="mf">16.1</span> <span class="n">Mixed</span> <span class="n">Arrays</span> <span class="k">with</span> <span class="n">Column</span> <span class="n">Names</span> <span class="mi">167</span>
-<span class="mf">16.2</span> <span class="n">Record</span> <span class="n">Arrays</span> <span class="mi">170</span>
-<span class="mi">17</span> <span class="n">pandas</span> <span class="mi">171</span>
-<span class="mf">17.1</span> <span class="n">Data</span> <span class="n">Structures</span> <span class="mi">171</span>
-<span class="mf">17.2</span> <span class="n">Statistical</span> <span class="n">Function</span> <span class="mi">191</span>
-<span class="mf">17.3</span> <span class="n">Time</span><span class="o">-</span><span class="n">series</span> <span class="n">Data</span> <span class="mi">192</span>
-<span class="mf">17.4</span> <span class="n">Importing</span> <span class="ow">and</span> <span class="n">Exporting</span> <span class="n">Data</span> <span class="mi">196</span>
-<span class="mf">17.5</span> <span class="n">Graphics</span> <span class="mi">200</span>
-<span class="mf">17.6</span> <span class="n">Examples</span> <span class="mi">201</span>
-<span class="mi">18</span> <span class="n">Custom</span> <span class="n">Function</span> <span class="ow">and</span> <span class="n">Modules</span> <span class="mi">207</span>
-<span class="mf">18.1</span> <span class="n">Functions</span> <span class="mi">207</span>
-<span class="mf">18.2</span> <span class="n">Variable</span> <span class="n">Scope</span> <span class="mi">214</span>
-<span class="mf">18.3</span> <span class="n">Example</span><span class="p">:</span> <span class="n">Least</span> <span class="n">Squares</span> <span class="k">with</span> <span class="n">Newey</span><span class="o">-</span><span class="n">West</span> <span class="n">Covariance</span> <span class="mi">215</span>
-<span class="mf">18.4</span> <span class="n">Anonymous</span> <span class="n">Functions</span> <span class="mi">216</span>
-<span class="mf">18.5</span> <span class="n">Modules</span> <span class="mi">216</span>
-<span class="mf">18.6</span> <span class="n">Packages</span> <span class="mi">217</span>
-<span class="mf">18.7</span> <span class="n">PYTHONPATH</span> <span class="mi">219</span>
-<span class="mf">18.8</span> <span class="n">Python</span> <span class="n">Coding</span> <span class="n">Conventions</span> <span class="mi">219</span>
-<span class="mf">18.9</span> <span class="n">Exercises</span> <span class="mi">220</span>
-<span class="mf">18.</span><span class="n">A</span> <span class="n">Listing</span> <span class="n">of</span> <span class="n">econometrics</span><span class="o">.</span><span class="n">py</span> <span class="mi">221</span>
-<span class="mi">19</span> <span class="n">Probability</span> <span class="ow">and</span> <span class="n">Statistics</span> <span class="n">Functions</span> <span class="mi">225</span>
-<span class="mf">19.1</span> <span class="n">Simulating</span> <span class="n">Random</span> <span class="n">Variables</span> <span class="mi">225</span>
-<span class="mf">19.2</span> <span class="n">Simulation</span> <span class="ow">and</span> <span class="n">Random</span> <span class="n">Number</span> <span class="n">Generation</span> <span class="mi">229</span>
-<span class="mf">19.3</span> <span class="n">Statistics</span> <span class="n">Functions</span> <span class="mi">231</span>
-<span class="mf">19.4</span> <span class="n">Continuous</span> <span class="n">Random</span> <span class="n">Variables</span> <span class="mi">234</span>
-<span class="mf">19.5</span> <span class="n">Select</span> <span class="n">Statistics</span> <span class="n">Functions</span> <span class="mi">237</span>
-<span class="mf">19.6</span> <span class="n">Select</span> <span class="n">Statistical</span> <span class="n">Tests</span> <span class="mi">240</span>
-<span class="mf">19.7</span> <span class="n">Exercises</span> <span class="mi">241</span>
-<span class="mi">20</span> <span class="n">Non</span><span class="o">-</span><span class="n">linear</span> <span class="n">Function</span> <span class="n">Optimization</span> <span class="mi">243</span>
-<span class="mf">20.1</span> <span class="n">Unconstrained</span> <span class="n">Optimization</span> <span class="mi">244</span>
-<span class="mf">20.2</span> <span class="n">Derivative</span><span class="o">-</span><span class="n">free</span> <span class="n">Optimization</span> <span class="mi">247</span>
-<span class="mf">20.3</span> <span class="n">Constrained</span> <span class="n">Optimization</span> <span class="mi">248</span>
-<span class="mf">20.4</span> <span class="n">Scalar</span> <span class="n">Function</span> <span class="n">Minimization</span> <span class="mi">252</span>
-<span class="mf">20.5</span> <span class="n">Nonlinear</span> <span class="n">Least</span> <span class="n">Squares</span> <span class="mi">253</span>
-<span class="mf">20.6</span> <span class="n">Exercises</span> <span class="mi">254</span>
-<span class="mi">21</span> <span class="n">String</span> <span class="n">Manipulation</span> <span class="mi">255</span>
-<span class="mf">21.1</span> <span class="n">String</span> <span class="n">Building</span> <span class="mi">255</span>
-<span class="mf">21.2</span> <span class="n">String</span> <span class="n">Functions</span> <span class="mi">256</span>
-<span class="mf">21.3</span> <span class="n">Formatting</span> <span class="n">Numbers</span> <span class="mi">260</span>
-<span class="mf">21.4</span> <span class="n">Regular</span> <span class="n">Expressions</span> <span class="mi">264</span>
-<span class="mf">21.5</span> <span class="n">Safe</span> <span class="n">Conversion</span> <span class="n">of</span> <span class="n">Strings</span> <span class="mi">265</span>
-<span class="mi">22</span> <span class="n">File</span> <span class="n">System</span> <span class="n">Operations</span> <span class="mi">267</span>
-<span class="mf">22.1</span> <span class="n">Changing</span> <span class="n">the</span> <span class="n">Working</span> <span class="n">Directory</span> <span class="mi">267</span>
-<span class="mf">22.2</span> <span class="n">Creating</span> <span class="ow">and</span> <span class="n">Deleting</span> <span class="n">Directories</span> <span class="mi">267</span>
-<span class="mf">22.3</span> <span class="n">Listing</span> <span class="n">the</span> <span class="n">Contents</span> <span class="n">of</span> <span class="n">a</span> <span class="n">Directory</span> <span class="mi">268</span>
-<span class="mf">22.4</span> <span class="n">Copying</span><span class="p">,</span> <span class="n">Moving</span> <span class="ow">and</span> <span class="n">Deleting</span> <span class="n">Files</span> <span class="mi">268</span>
-<span class="mf">22.5</span> <span class="n">Executing</span> <span class="n">Other</span> <span class="n">Programs</span> <span class="mi">269</span>
-<span class="mf">22.6</span> <span class="n">Creating</span> <span class="ow">and</span> <span class="n">Opening</span> <span class="n">Archives</span> <span class="mi">269</span>
-<span class="mf">22.7</span> <span class="n">Reading</span> <span class="ow">and</span> <span class="n">Writing</span> <span class="n">Files</span> <span class="mi">270</span>
-<span class="mf">22.8</span> <span class="n">Exercises</span> <span class="mi">272</span>
-<span class="mi">23</span> <span class="n">Performance</span> <span class="ow">and</span> <span class="n">Code</span> <span class="n">Optimization</span> <span class="mi">273</span>
-<span class="mf">23.1</span> <span class="n">Getting</span> <span class="n">Started</span> <span class="mi">273</span>
-<span class="mf">23.2</span> <span class="n">Timing</span> <span class="n">Code</span> <span class="mi">273</span>
-<span class="mf">23.3</span> <span class="n">Vectorize</span> <span class="n">to</span> <span class="n">Avoid</span> <span class="n">Unnecessary</span> <span class="n">Loops</span> <span class="mi">274</span>
-<span class="mf">23.4</span> <span class="n">Alter</span> <span class="n">the</span> <span class="n">loop</span> <span class="n">dimensions</span> <span class="mi">275</span>
-<span class="mf">23.5</span> <span class="n">Utilize</span> <span class="n">Broadcasting</span> <span class="mi">276</span>
-<span class="mf">23.6</span> <span class="n">Use</span> <span class="n">In</span><span class="o">-</span><span class="n">place</span> <span class="n">Assignment</span> <span class="mi">276</span>
-<span class="mf">23.7</span> <span class="n">Avoid</span> <span class="n">Allocating</span> <span class="n">Memory</span> <span class="mi">276</span>
-<span class="mf">23.8</span> <span class="n">Inline</span> <span class="n">Frequent</span> <span class="n">Function</span> <span class="n">Calls</span> <span class="mi">276</span>
-<span class="mf">23.9</span> <span class="n">Consider</span> <span class="n">Data</span> <span class="n">Locality</span> <span class="ow">in</span> <span class="n">Arrays</span> <span class="mi">276</span>
-<span class="mf">23.10</span> <span class="n">Profile</span> <span class="n">Long</span> <span class="n">Running</span> <span class="n">Functions</span> <span class="mi">277</span>
-<span class="mf">23.11</span> <span class="n">Numba</span> <span class="mi">282</span>
-<span class="mf">23.12</span> <span class="n">Cython</span> <span class="mi">288</span>
-<span class="mf">23.13</span> <span class="n">External</span> <span class="n">Code</span> <span class="mi">297</span>
-<span class="mf">23.14</span> <span class="n">Exercises</span> <span class="mi">302</span>
-<span class="mi">24</span> <span class="n">Executing</span> <span class="n">Code</span> <span class="ow">in</span> <span class="n">Parallel</span> <span class="mi">303</span>
-<span class="mf">24.1</span> <span class="nb">map</span> <span class="ow">and</span> <span class="n">related</span> <span class="n">functions</span> <span class="mi">303</span>
-<span class="mf">24.2</span> <span class="n">multiprocessing</span> <span class="mi">304</span>
-<span class="mf">24.3</span> <span class="n">joblib</span> <span class="mi">306</span>
-<span class="mf">24.4</span> <span class="n">IPython</span><span class="err">’</span><span class="n">s</span> <span class="n">Parallel</span> <span class="n">Cluster</span> <span class="mi">308</span>
-<span class="mf">24.5</span> <span class="n">Converting</span> <span class="n">a</span> <span class="n">Serial</span> <span class="n">Program</span> <span class="n">to</span> <span class="n">Parallel</span> <span class="mi">314</span>
-<span class="mf">24.6</span> <span class="n">Other</span> <span class="n">Concerns</span> <span class="n">when</span> <span class="n">executing</span> <span class="ow">in</span> <span class="n">Parallel</span> <span class="mi">316</span>
-<span class="mi">25</span> <span class="n">Object</span> <span class="n">Oriented</span> <span class="n">Programming</span> <span class="p">(</span><span class="n">OOP</span><span class="p">)</span> <span class="mi">319</span>
-<span class="mf">25.1</span> <span class="n">Introduction</span> <span class="mi">319</span>
-<span class="mf">25.2</span> <span class="n">Class</span> <span class="n">basics</span> <span class="mi">320</span>
-<span class="mf">25.3</span> <span class="n">Building</span> <span class="n">a</span> <span class="k">class</span> <span class="nc">for</span> <span class="n">Autoregressions</span> <span class="mi">322</span>
-<span class="mf">25.4</span> <span class="n">Exercises</span> <span class="mi">329</span>
-<span class="mi">26</span> <span class="n">Other</span> <span class="n">Interesting</span> <span class="n">Python</span> <span class="n">Packages</span> <span class="mi">331</span>
-<span class="mf">26.1</span> <span class="n">statsmodels</span> <span class="mi">331</span>
-<span class="mf">26.2</span> <span class="n">pytz</span> <span class="ow">and</span> <span class="n">babel</span> <span class="mi">331</span>
-<span class="mf">26.3</span> <span class="n">rpy2</span> <span class="mi">331</span>
-<span class="mf">26.4</span> <span class="n">PyTables</span> <span class="ow">and</span> <span class="n">h5py</span> <span class="mi">331</span>
-<span class="mi">27</span> <span class="n">Examples</span> <span class="mi">333</span>
-<span class="mf">27.1</span> <span class="n">Estimating</span> <span class="n">the</span> <span class="n">Parameters</span> <span class="n">of</span> <span class="n">a</span> <span class="n">GARCH</span> <span class="n">Model</span> <span class="mi">333</span>
-<span class="mf">27.2</span> <span class="n">Estimating</span> <span class="n">the</span> <span class="n">Risk</span> <span class="n">Premia</span> <span class="n">using</span> <span class="n">Fama</span><span class="o">-</span><span class="n">MacBeth</span> <span class="n">Regressions</span> <span class="mi">338</span>
-<span class="mf">27.3</span> <span class="n">Estimating</span> <span class="n">the</span> <span class="n">Risk</span> <span class="n">Premia</span> <span class="n">using</span> <span class="n">GMM</span> <span class="mi">341</span>
-<span class="mf">27.4</span> <span class="n">Outputting</span> <span class="n">L</span> <span class="n">ATEX</span> <span class="mi">344</span>
-<span class="mi">28</span> <span class="n">Quick</span> <span class="n">Reference</span> <span class="mi">347</span>
-<span class="mf">28.1</span> <span class="n">Built</span><span class="o">-</span><span class="n">ins</span> <span class="mi">347</span>
-<span class="mf">28.2</span> <span class="n">NumPy</span> <span class="p">(</span><span class="n">numpy</span><span class="p">)</span> <span class="mi">354</span>
-<span class="mf">28.3</span> <span class="n">SciPy</span> <span class="mi">369</span>
-<span class="mf">28.4</span> <span class="n">Matplotlib</span> <span class="mi">372</span>
-<span class="mf">28.5</span> <span class="n">Pandas</span> <span class="mi">374</span>
-<span class="mf">28.6</span> <span class="n">IPython</span> <span class="mi">378</span>
-</pre></div>
-</td></tr></table>
-
-<h4 id="building-machine-learning-systems-with-python">Building Machine Learning Systems with Python<a class="headerlink" href="#building-machine-learning-systems-with-python" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Chapter 1: Getting Started with Python Machine Learning 7
-Machine learning and Python – the dream team 8
-What the book will teach you (and what it will not) 9
-What to do when you are stuck 10
-Getting started 11
-Introduction to NumPy, SciPy, and Matplotlib 12
-Installing Python 12
-Chewing data effciently with NumPy and intelligently with SciPy 12
-Learning NumPy 13
-Indexing 15
-Handling non-existing values 15
-Comparing runtime behaviors 16
-Learning SciPy 17
-Our frst (tiny) machine learning application 19
-Reading in the data 19
-Preprocessing and cleaning the data 20
-Choosing the right model and learning algorithm 22
-Before building our frst model 22
-Starting with a simple straight line 22
-Towards some advanced stuff 24
-Stepping back to go forward – another look at our data 26
-Training and testing 28
-Answering our initial question 30
-Summary 31
-Chapter 2: Learning How to Classify with Real-world Examples 33
-The Iris dataset 33
-The frst step is visualization 34
-Building our frst classifcation model 35
-Evaluation – holding out data and cross-validation 38
-Building more complex classifers 40
-A more complex dataset and a more complex classifer 41
-Learning about the Seeds dataset 42
-Features and feature engineering 43
-Nearest neighbor classifcation 44
-Binary and multiclass classifcation 47
-Summary 48
-Chapter 3: Clustering – Finding Related Posts 49
-Measuring the relatedness of posts 50
-How not to do it 50
-How to do it 51
-Preprocessing – similarity measured as similar number of common words 51
-Converting raw text into a bag-of-words 52
-Counting words 53
-Normalizing the word count vectors 56
-Removing less important words 56
-Stemming 57
-Installing and using NLTK 58
-Extending the vectorizer with NLTK&#39;s stemmer 59
-Stop words on steroids 60
-Our achievements and goals 61
-Clustering 62
-KMeans 63
-Getting test data to evaluate our ideas on 65
-Clustering posts 67
-Solving our initial challenge 68
-Another look at noise 71
-Tweaking the parameters 72
-Summary 73
-Chapter 4: Topic Modeling 75
-Latent Dirichlet allocation (LDA) 75
-Building a topic model 76
-Comparing similarity in topic space 80
-Modeling the whole of Wikipedia 83
-Choosing the number of topics 86
-Summary 87
-Chapter 5: Classifcation – Detecting Poor Answers 89
-Sketching our roadmap 90
-Learning to classify classy answers 90
-Tuning the instance 90
-Tuning the classifer 90
-Fetching the data 91
-Slimming the data down to chewable chunks 92
-Preselection and processing of attributes 93
-Defning what is a good answer 94
-Creating our frst classifer 95
-Starting with the k-nearest neighbor (kNN) algorithm 95
-Engineering the features 96
-Training the classifer 97
-Measuring the classifer&#39;s performance 97
-Designing more features 98
-Deciding how to improve 101
-Bias-variance and its trade-off 102
-Fixing high bias 102
-Fixing high variance 103
-High bias or low bias 103
-Using logistic regression 105
-A bit of math with a small example 106
-Applying logistic regression to our postclassifcation problem 108
-Looking behind accuracy – precision and recall 110
-Slimming the classifer 114
-Ship it! 115
-Summary 115
-Chapter 6: Classifcation II – Sentiment Analysis 117
-Sketching our roadmap 117
-Fetching the Twitter data 118
-Introducing the Naive Bayes classifer 118
-Getting to know the Bayes theorem 119
-Being naive 120
-Using Naive Bayes to classify 121
-Accounting for unseen words and other oddities 124
-Accounting for arithmetic underﬂows 125
-Creating our frst classifer and tuning it 127
-Solving an easy problem frst 128
-Using all the classes 130
-Tuning the classifer&#39;s parameters 132
-Cleaning tweets 136
-Taking the word types into account 138
-Determining the word types 139
-Successfully cheating using SentiWordNet 141
-Our frst estimator 143
-Putting everything together 145
-Summary 146
-Chapter 7: Regression – Recommendations 147
-Predicting house prices with regression 147
-Multidimensional regression 151
-Cross-validation for regression 151
-Penalized regression 153
-L1 and L2 penalties 153
-Using Lasso or Elastic nets in scikit-learn 154
-P greater than N scenarios 155
-An example based on text 156
-Setting hyperparameters in a smart way 158
-Rating prediction and recommendations 159
-Summary 163
-Chapter 8: Regression – Recommendations Improved 165
-Improved recommendations 165
-Using the binary matrix of recommendations 166
-Looking at the movie neighbors 168
-Combining multiple methods 169
-Basket analysis 172
-Obtaining useful predictions 173
-Analyzing supermarket shopping baskets 173
-Association rule mining 176
-More advanced basket analysis 178
-Summary 179
-Chapter 9: Classifcation III – Music Genre Classifcation 181
-Sketching our roadmap 181
-Fetching the music data 182
-Converting into a wave format 182
-Looking at music 182
-Decomposing music into sine wave components 184
-Using FFT to build our frst classifer 186
-Increasing experimentation agility 186
-Training the classifer 187
-Using the confusion matrix to measure accuracy in multiclass problems 188
-An alternate way to measure classifer performance using receiver operator characteristic (ROC) 190
-Improving classifcation performance with Mel Frequency Cepstral Coeffcients 193
-Summary 197
-Chapter 10: Computer Vision – Pattern Recognition 199
-Introducing image processing 199
-Loading and displaying images 200
-Basic image processing 201
-Thresholding 202
-Gaussian blurring 205
-Filtering for different effects 207
-Adding salt and pepper noise 207
-Putting the center in focus 208
-Pattern recognition 210
-Computing features from images 211
-Writing your own features 212
-Classifying a harder dataset 215
-Local feature representations 216
-Summary 219
-Chapter 11: Dimensionality Reduction 221
-Sketching our roadmap 222
-Selecting features 222
-Detecting redundant features using flters 223
-Correlation 223
-Mutual information 225
-Asking the model about the features using wrappers 230
-Other feature selection methods 232
-Feature extraction 233
-About principal component analysis (PCA) 233
-Sketching PCA 234
-Applying PCA 234
-Limitations of PCA and how LDA can help 236
-Multidimensional scaling (MDS) 237
-Summary 240
-Chapter 12: Big(ger) Data 241
-Learning about big data 241
-Using jug to break up your pipeline into tasks 242
-About tasks 242
-Reusing partial results 245
-Looking under the hood 246
-Using jug for data analysis 246
-Using Amazon Web Services (AWS) 248
-Creating your frst machines 250
-Installing Python packages on Amazon Linux 253
-Running jug on our cloud machine 254
-Automating the generation of clusters with starcluster 255
-Summary 259
-Appendix: Where to Learn More about Machine Learning 261
-Online courses 261
-Books 261
-Q&amp;A sites 262
-Blogs 262
-Data sources 263
-Getting competitive 263
-What was left out 264
-Summary 264
-Index 265
-</pre></div>
-</td></tr></table>
-
-<h4 id="scipy-lecture-notes">Scipy Lecture Notes<a class="headerlink" href="#scipy-lecture-notes" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>I Getting started with Python for science 2
-1 Scientific computing with tools and workflow 4
-1.1 Why Python? 4
-1.2 Scientific Python building blocks 5
-1.3 The interactive workflow: IPython and a text editor 6
-2 The Python language 10
-2.1 First steps 10
-2.2 Basic types 11
-2.3 Control Flow 18
-2.4 Defining functions 22
-2.5 Reusing code: scripts and modules 27
-2.6 Input and Output 34
-2.7 Standard Library 35
-2.8 Exception handling in Python 39
-2.9 Object-oriented programming (OOP) 42
-3 NumPy: creating and manipulating numerical data 43
-3.1 The Numpy array object 43
-3.2 Numerical operations on arrays 55
-3.3 More elaborate arrays 68
-3.4 Advanced operations 72
-3.5 Some exercises 77
-4 Matplotlib: plotting 82
-4.1 Introduction 82
-4.2 Simple plot 83
-4.3 Figures, Subplots, Axes and Ticks 89
-4.4 Other Types of Plots: examples and exercises 90
-4.5 Beyond this tutorial 96
-4.6 Quick references 98
-5 Scipy : high-level scientific computing 101
-5.1 File input/output: scipy.io 102
-5.2 Special functions: scipy.special 103
-5.3 Linear algebra operations: scipy.linalg 103
-5.4 Fast Fourier transforms: scipy.fftpack 104
-5.5 Optimization and fit: scipy.optimize 109
-5.6 Statistics and random numbers: scipy.stats 113
-5.7 Interpolation: scipy.interpolate 115
-5.8 Numerical integration: scipy.integrate 116
-5.9 Signal processing: scipy.signal 118
-5.10 Image processing: scipy.ndimage 120
-5.11 Summary exercises on scientific computing 124
-6 Getting help and finding documentation 137
-II Advanced topics 140
-7 Advanced Python Constructs 142
-7.1 Iterators, generator expressions and generators 142
-7.2 Decorators 147
-7.3 Context managers 155
-8 Advanced Numpy 159
-8.1 Life of ndarray 160
-8.2 Universal functions 173
-8.3 Interoperability features 182
-8.4 Array siblings: chararray, maskedarray, matrix 185
-8.5 Summary 188
-8.6 Contributing to Numpy/Scipy 188
-9 Debugging code 192
-9.1 Avoiding bugs 192
-9.2 Debugging workflow 195
-9.3 Using the Python debugger 195
-9.4 Debugging segmentation faults using gdb 200
-10 Optimizing code 203
-10.1 Optimization workflow 203
-10.2 Profiling Python code 203
-10.3 Making code go faster 206
-10.4 Writing faster numerical code 207
-11 Sparse Matrices in SciPy 210
-11.1 Introduction 210
-11.2 Storage Schemes 212
-11.3 Linear System Solvers 224
-11.4 Other Interesting Packages 229
-12 Image manipulation and processing using Numpy and Scipy 230
-12.1 Opening and writing to image files 231
-12.2 Displaying images 232
-12.3 Basic manipulations 233
-12.4 Image filtering 235
-12.5 Feature extraction 240
-12.6 Measuring objects properties: ndimage.measurements 243
-13 Mathematical optimization: finding minima of functions 248
-13.1 Knowing your problem 249
-13.2 A review of the different optimizers 251
-13.3 Practical guide to optimization with scipy 258
-13.4 Special case: non-linear least-squares 260
-13.5 Optimization with constraints 261
-14 Interfacing with C 263
-14.1 Introduction 263
-14.2 Python-C-Api 264
-14.3 Ctypes 268
-14.4 SWIG 272
-14.5 Cython 276
-14.6 Summary 279
-14.7 Further Reading and References 280
-14.8 Exercises 280
-III Packages and applications 282
-15 Statistics in Python 284
-15.1 Data representation and interaction 285
-15.2 Hypothesis testing: comparing two groups 289
-15.3 Linear models, multiple factors, and analysis of variance 292
-15.4 More visualization: seaborn for statistical exploration 297
-15.5 Testing for interactions 299
-16 Sympy : Symbolic Mathematics in Python 301
-16.1 First Steps with SymPy 302
-16.2 Algebraic manipulations 303
-16.3 Calculus 304
-16.4 Equation solving 305
-16.5 Linear Algebra 306
-17 Scikit-image: image processing 308
-17.1 Introduction and concepts 308
-17.2 Input/output, data types and colorspaces 310
-17.3 Image preprocessing / enhancement 312
-17.4 Image segmentation 315
-17.5 Measuring regions’ properties 318
-17.6 Data visualization and interaction 318
-17.7 Feature extraction for computer vision 320
-18 Traits: building interactive dialogs 322
-18.1 Introduction 323
-18.2 Example 323
-18.3 What are Traits 324
-19 3D plotting with Mayavi 340
-19.1 Mlab: the scripting interface 340
-19.2 Interactive work 346
-19.3 Slicing and dicing data: sources, modules and filters 347
-19.4 Animating the data 349
-19.5 Making interactive dialogs 350
-19.6 Putting it together 351
-20 scikit-learn: machine learning in Python 353
-20.1 Loading an example dataset 354
-20.2 Classification 355
-20.3 Clustering: grouping observations together 357
-20.4 Dimension Reduction with Principal Component Analysis 359
-20.5 Putting it all together: face recognition 360
-20.6 Linear model: from regression to sparsity 361
-20.7 Model selection: choosing estimators and their parameters 362
-Index 363
-</pre></div>
-</td></tr></table>
+<h3 id="ipython-notebook-essentials">Ipython Notebook Essentials<a class="headerlink" href="#ipython-notebook-essentials" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: A Tour of the IPython Notebook 7<br />
+Getting started with Anaconda or Wakari 8<br />
+Installing Anaconda 8<br />
+Running the notebook 8<br />
+Creating a Wakari account 10<br />
+Creating your frst notebook 11<br />
+Example – the coffee cooling problem 12<br />
+Exercises 22<br />
+Summary 22<br />
+Chapter 2: The Notebook Interface 23<br />
+Editing and navigating a notebook 23<br />
+Getting help and interrupting computations 25<br />
+The Edit mode 25<br />
+The Command mode 28<br />
+Cell types 29<br />
+IPython magics 33<br />
+Interacting with the operating system 37<br />
+Saving the notebook 37<br />
+Converting the notebook to other formats 38<br />
+Running shell commands 39<br />
+Running scripts, loading data, and saving data 41<br />
+Running Python scripts 41<br />
+Running scripts in other languages 43<br />
+Loading and saving data 45<br />
+The rich display system 47<br />
+Images and YouTube videos 47<br />
+HTML 49<br />
+Summary 52<br />
+Chapter 3: Graphics with matplotlib 53<br />
+The plot function 54<br />
+Adding a title, labels, and a legend 59<br />
+Text and annotations 62<br />
+Three-dimensional plots 66<br />
+Animations 71<br />
+Summary 77<br />
+Chapter 4: Handling Data with pandas 79<br />
+The Series class 79<br />
+The DataFrame class 88<br />
+Computational and graphics tools 95<br />
+An example with a realistic dataset 101<br />
+Summary 108<br />
+Chapter 5: Advanced Computing with SciPy, Numba, and NumbaPro 109<br />
+Overview of SciPy 109<br />
+Advanced mathematical algorithms with SciPy 111<br />
+Solving equations and fnding optimal values 111<br />
+Calculus and differential equations 117<br />
+Accelerating computations with Numba and NumbaPro 128<br />
+Summary 138<br />
+Appendix A: IPython Notebook Reference Card 139<br />
+Starting the notebook 139<br />
+Keyboard shortcuts 139<br />
+Shortcuts in the Edit mode 139<br />
+Shortcuts in the Command mode 140<br />
+Importing modules 141<br />
+Getting help 141<br />
+Appendix B: A Brief Review of Python 143<br />
+Introduction 143<br />
+Basic types, expressions, and variables and their assignment 143<br />
+Sequence types 147<br />
+Lists 147<br />
+Tuples 150<br />
+Strings 151<br />
+Dictionaries 152<br />
+Control structures 152<br />
+Functions, objects, and methods 156<br />
+Functions 156<br />
+Objects and methods 158<br />
+Summary 159<br />
+Appendix C: NumPy Arrays 161<br />
+Introduction 161<br />
+Array creation and member access 161<br />
+Indexing and Slicing 164<br />
+Index 167</p>
+<h3 id="learning-ipython-for-interactive-computing-and-data-visualization">Learning IPython for Interactive Computing and Data Visualization<a class="headerlink" href="#learning-ipython-for-interactive-computing-and-data-visualization" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: Getting Started with IPython 5<br />
+Installing IPython and the recommended packages 6<br />
+Prerequisites for IPython 6<br />
+Installing an all-in-one distribution 7<br />
+Installing the packages one by one 7<br />
+Packages websites 8<br />
+Getting binary installers 9<br />
+Using the Python packaging system 11<br />
+Installing the development versions 12<br />
+Ten IPython essentials 13<br />
+Running the IPython console 13<br />
+Using IPython as a system shell 14<br />
+Using the history 15<br />
+Tab completion 15<br />
+Executing a script with the %run command 16<br />
+Quick benchmarking with the %timeit command 17<br />
+Quick debugging with the %debug command 17<br />
+Interactive computing with Pylab 18<br />
+Using the IPython Notebook 19<br />
+Customizing IPython 19<br />
+Summary 20<br />
+Chapter 2: Interactive Work with IPython 21<br />
+The extended shell 21<br />
+Navigating through the flesystem 22<br />
+Accessing the system shell from IPython 24<br />
+The extended Python console 25<br />
+Exploring the history 26<br />
+Import/export of Python code 27<br />
+Importing code in IPython 27<br />
+Exporting code to a fle 29<br />
+Dynamic introspection 29<br />
+Tab completion 29<br />
+Source code introspection 31<br />
+Using the interactive debugger 32<br />
+Interactive benchmarking and profling 33<br />
+Controlling the execution time of a command 33<br />
+Profling a script 34<br />
+Using the IPython notebook 35<br />
+Installation 36<br />
+The notebook dashboard 36<br />
+Working with cells 37<br />
+Cell magics 38<br />
+Managing notebooks 39<br />
+Multimedia and rich text editing 39<br />
+Graph plotting 40<br />
+Summary 41<br />
+Chapter 3: Numerical Computing with IPython 43<br />
+A primer to vector computing 44<br />
+An example of computation with Python loops 44<br />
+What an array is 45<br />
+Reimplementing the example with arrays 48<br />
+Creating and loading arrays 50<br />
+Creating arrays 50<br />
+From scratch, element by element 50<br />
+From scratch, using predefned templates 51<br />
+From random values 52<br />
+Loading arrays 53<br />
+From a native Python object 53<br />
+From a buffer or an external fle 53<br />
+Using Pandas 54<br />
+Working with arrays 56<br />
+Selection 56<br />
+Using Pandas 57<br />
+Using NumPy 58<br />
+More indexing possibilities 59<br />
+Manipulation 60<br />
+Reshaping 60<br />
+Repeating and concatenating 61<br />
+Broadcasting 62<br />
+Permuting 63<br />
+Computation 63<br />
+Advanced mathematical processing 65<br />
+Summary 66<br />
+Chapter 4: Interactive Plotting and Graphical Interfaces 67<br />
+Figures with Matplotlib 68<br />
+Setting up IPython for interactive visualization 68<br />
+Using Matplotlib 68<br />
+Interactive navigation 69<br />
+Matplotlib in the IPython notebook 69<br />
+Standard plots 69<br />
+Curves 69<br />
+Scatter plots 71<br />
+Bar graphs 72<br />
+Plot customization 72<br />
+Styles and colors 73<br />
+Grid, axes, and legends 74<br />
+Interaction from IPython 75<br />
+Drawing multiple plots 76<br />
+Advanced fgures and graphics 76<br />
+Image processing 77<br />
+Loading images 77<br />
+Showing images 78<br />
+Using PIL 79<br />
+Advanced image processing – color quantization 79<br />
+Maps 81<br />
+3D plots 83<br />
+Animations 84<br />
+Other visualization packages 84<br />
+Graphical User Interfaces (GUI) 84<br />
+Setting up IPython for interactive GUIs 85<br />
+A &ldquo;Hello World&rdquo; example 85<br />
+Summary 87<br />
+Chapter 5: High-Performance and Parallel Computing 89<br />
+Interactive task parallelization 90<br />
+Parallel computing in Python 90<br />
+Distributing tasks on multiple cores 91<br />
+Starting the engines 91<br />
+Creating a Client instance 92<br />
+Using the parallel magic 92<br />
+Parallel map 93<br />
+A practical example – Monte Carlo simulations 95<br />
+Using MPI with IPython 96<br />
+Advanced parallel computing features of IPython 98<br />
+Using C in IPython with Cython 99<br />
+Installing and confguring Cython 99<br />
+Using Cython from IPython 100<br />
+Accelerating a pure Python algorithm with Cython 101<br />
+Pure Python version 101<br />
+Naïve Cython conversion 102<br />
+Adding C types 102<br />
+Using NumPy and Cython 103<br />
+Python version 103<br />
+Cython version 104<br />
+More advanced options for accelerating Python code 106<br />
+Summary 107<br />
+Chapter 6: Customizing IPython 109<br />
+IPython profles 109<br />
+Profle locations 110<br />
+The IPython confguration fles 110<br />
+Loading scripts when IPython starts 111<br />
+IPython extensions 111<br />
+Example – line-by-line profling 111<br />
+Creating new extensions 113<br />
+Example – executing C++ code in IPython 113<br />
+Rich representations in the frontend 115<br />
+Embedding IPython 117<br />
+Final words 117<br />
+Summary 118<br />
+Index 119</p>
+<h3 id="ipython-interactive-computing-and-visualization-cookbook">IPython Interactive Computing and Visualization Cookbook<a class="headerlink" href="#ipython-interactive-computing-and-visualization-cookbook" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: A Tour of Interactive Computing with IPython 9<br />
+Introduction 9<br />
+Introducing the IPython notebook 13<br />
+Getting started with exploratory data analysis in IPython 22<br />
+Introducing the multidimensional array in NumPy for fast array computations 28<br />
+Creating an IPython extension with custom magic commands 32<br />
+Mastering IPython configuration system 36<br />
+Creating a simple kernel for IPython 39<br />
+Chapter 2: Best Practices in Interactive Computing 45<br />
+Introduction 45<br />
+Choosing (or not) between Python 2 and Python 3 46<br />
+Effcient interactive computing workﬂows with IPython 50<br />
+Learning the basics of the distributed version control system Git 53<br />
+A typical workﬂow with Git branching 56<br />
+Ten tips for conducting reproducible interactive computing experiments 59<br />
+Writing high-quality Python code 63<br />
+Writing unit tests with nose 67<br />
+Debugging your code with IPython 74<br />
+Chapter 3: Mastering the Notebook 79<br />
+Introduction 79<br />
+Teaching programming in the notebook with IPython blocks 84<br />
+Converting an IPython notebook to other formats with nbconvert 89<br />
+Adding custom controls in the notebook toolbar 94<br />
+Customizing the CSS style in the notebook 96<br />
+Using interactive widgets – a piano in the notebook 99<br />
+Creating a custom JavaScript widget in the notebook – a spreadsheet editor for pandas 103<br />
+Processing webcam images in real time from the notebook 108<br />
+Chapter 4: Profling and Optimization 115<br />
+Introduction 115<br />
+Evaluating the time taken by a statement in IPython 116<br />
+Profling your code easily with cProfle and IPython 117<br />
+Profling your code line-by-line with line_profler 121<br />
+Profling the memory usage of your code with memory_profler 124<br />
+Understanding the internals of NumPy to avoid unnecessary array copying 127<br />
+Using stride tricks with NumPy 133<br />
+Implementing an effcient rolling average algorithm with stride tricks 135<br />
+Making effcient array selections in NumPy 138<br />
+Processing huge NumPy arrays with memory mapping 140<br />
+Manipulating large arrays with HDF5 and PyTables 142<br />
+Manipulating large heterogeneous tables with HDF5 and PyTables 146<br />
+Chapter 5: High-performance Computing 149<br />
+Introduction 149<br />
+Accelerating pure Python code with Numba and Just-In-Time compilation 154<br />
+Accelerating array computations with Numexpr 158<br />
+Wrapping a C library in Python with ctypes 159<br />
+Accelerating Python code with Cython 163<br />
+Optimizing Cython code by writing less Python and more C 167<br />
+Releasing the GIL to take advantage of multi-core processors with Cython and OpenMP 174<br />
+Writing massively parallel code for NVIDIA graphics cards (GPUs) with CUDA 175<br />
+Writing massively parallel code for heterogeneous platforms with OpenCL 181<br />
+Distributing Python code across multiple cores with IPython 185<br />
+Interacting with asynchronous parallel tasks in IPython 189<br />
+Parallelizing code with MPI in IPython 192<br />
+Trying the Julia language in the notebook 195<br />
+Chapter 6: Advanced Visualization 201<br />
+Introduction 201<br />
+Making nicer matplotlib fgures with prettyplotlib 202<br />
+Creating beautiful statistical plots with seaborn 205<br />
+Creating interactive web visualizations with Bokeh 208<br />
+Visualizing a NetworkX graph in the IPython notebook with D3.js 211<br />
+Converting matplotlib fgures to D3.js visualizations with mpld3 215<br />
+Getting started with Vispy for high-performance interactive data visualizations 218<br />
+Chapter 7: Statistical Data Analysis 225<br />
+Introduction 225<br />
+Exploring a dataset with pandas and matplotlib 229<br />
+Getting started with statistical hypothesis testing – a simple z-test 233<br />
+Getting started with Bayesian methods 236<br />
+Estimating the correlation between two variables with a contingency table and a chi-squared test 241<br />
+Fitting a probability distribution to data with the maximum likelihood method 245<br />
+Estimating a probability distribution nonparametrically with a kernel density estimation 251<br />
+Fitting a Bayesian model by sampling from a posterior distribution with a Markov chain Monte Carlo method 255<br />
+Analyzing data with the R programming language in the IPython notebook 261<br />
+Chapter 8: Machine Learning 267<br />
+Introduction 267<br />
+Getting started with scikit-learn 273<br />
+Predicting who will survive on the Titanic with logistic regression 281<br />
+Learning to recognize handwritten digits with a K-nearest neighbors classifer 285<br />
+Learning from text – Naive Bayes for Natural Language Processing 289<br />
+Using support vector machines for classifcation tasks 293<br />
+Using a random forest to select important features for regression 298<br />
+Reducing the dimensionality of a dataset with a principal component analysis 302<br />
+Detecting hidden structures in a dataset with clustering 306<br />
+Chapter 9: Numerical Optimization 311<br />
+Introduction 311<br />
+Finding the root of a mathematical function 314<br />
+Minimizing a mathematical function 317<br />
+Fitting a function to data with nonlinear least squares 323<br />
+Finding the equilibrium state of a physical system by minimizing its potential energy 326<br />
+Chapter 10: Signal Processing 333<br />
+Introduction 333<br />
+Analyzing the frequency components of a signal with a Fast Fourier Transform 337<br />
+Applying a linear flter to a digital signal 343<br />
+Computing the autocorrelation of a time series 349<br />
+Chapter 11: Image and Audio Processing 353<br />
+Introduction 353<br />
+Manipulating the exposure of an image 355<br />
+Applying flters on an image 358<br />
+Segmenting an image 362<br />
+Finding points of interest in an image 367<br />
+Detecting faces in an image with OpenCV 370<br />
+Applying digital flters to speech sounds 373<br />
+Creating a sound synthesizer in the notebook 377<br />
+Chapter 12: Deterministic Dynamical Systems 381<br />
+Introduction 381<br />
+Plotting the bifurcation diagram of a chaotic dynamical system 383<br />
+Simulating an elementary cellular automaton 387<br />
+Simulating an ordinary differential equation with SciPy 390<br />
+Simulating a partial differential equation – reaction-diffusion systems and Turing patterns 394<br />
+Chapter 13: Stochastic Dynamical Systems 401<br />
+Introduction 401<br />
+Simulating a discrete-time Markov chain 402<br />
+Simulating a Poisson process 406<br />
+Simulating a Brownian motion 410<br />
+Simulating a stochastic differential equation 412<br />
+Chapter 14: Graphs, Geometry, and Geographic Information Systems 417<br />
+Introduction 417<br />
+Manipulating and visualizing graphs with NetworkX 421<br />
+Analyzing a social network with NetworkX 425<br />
+Resolving dependencies in a directed acyclic graph with a topological sort 430<br />
+Computing connected components in an image 434<br />
+Computing the Voronoi diagram of a set of points 438<br />
+Manipulating geospatial data with Shapely and basemap 442<br />
+Creating a route planner for a road network 446<br />
+Chapter 15: Symbolic and Numerical Mathematics 453<br />
+Introduction 453<br />
+Diving into symbolic computing with SymPy 454<br />
+Solving equations and inequalities 457<br />
+Analyzing real-valued functions 458<br />
+Computing exact probabilities and manipulating random variables 460<br />
+A bit of number theory with SymPy 462<br />
+Finding a Boolean propositional formula from a truth table 465<br />
+Analyzing a nonlinear differential system – Lotka-Volterra (predator-prey) equations 467<br />
+Getting started with Sage 470<br />
+Index 473</p>
+<h3 id="introduction-to-python-for-econometrics-statistics-and-data-analysis">Introduction to Python for Econometrics, Statistics and Data Analysis<a class="headerlink" href="#introduction-to-python-for-econometrics-statistics-and-data-analysis" title="Permanent link">&para;</a></h3>
+<p>1 Introduction 1<br />
+1.1 Background 1<br />
+1.2 Conventions 2<br />
+1.3 Important Components of the Python Scientific Stack 3<br />
+1.4 Setup 4<br />
+1.5 Using Python 6<br />
+1.6 Exercises 17<br />
+1.A Frequently Encountered Problems 17<br />
+1.B register_python.py 18<br />
+1.C Advanced Setup 19<br />
+2 Python 2.7 vs. 3 (and the rest) 27<br />
+2.1 Python 2.7 vs. 3 27<br />
+2.2 Intel Math Kernel Library and AMD Core Math Library 27<br />
+2.3 Other Variants 28<br />
+2.A Relevant Differences between Python 2.7 and 3 29<br />
+3 Built-in Data Types 31<br />
+3.1 Variable Names 31<br />
+3.2 Core Native Data Types 32<br />
+3.3 Python and Memory Management 42<br />
+3.4 Exercises 44<br />
+4 Arrays and Matrices 47<br />
+4.1 Array 47<br />
+4.2 Matrix 49<br />
+4.3 1-dimensional Arrays 50<br />
+4.4 2-dimensional Arrays 51<br />
+4.5 Multidimensional Arrays 51<br />
+4.6 Concatenation 51<br />
+4.7 Accessing Elements of an Array 52<br />
+4.8 Slicing and Memory Management 57<br />
+4.9 import and Modules 59<br />
+4.10 Calling Functions 59<br />
+4.11 Exercises 61<br />
+5 Basic Math 63<br />
+5.1 Operators 63<br />
+5.2 Broadcasting 64<br />
+5.3 Array and Matrix Addition (+) and Subtraction (-) 65<br />
+5.4 Array Multiplication (x) 66<br />
+5.5 Matrix Multiplication (x) 66<br />
+5.6 Array and Matrix Division (=) 66<br />
+5.7 Array Exponentiation (xx) 66<br />
+5.8 Matrix Exponentiation (xx) 67<br />
+5.9 Parentheses 67<br />
+5.10 Transpose 67<br />
+5.11 Operator Precedence 67<br />
+5.12 Exercises 68<br />
+6 Basic Functions and Numerical Indexing 71<br />
+6.1 Generating Arrays and Matrices 71<br />
+6.2 Rounding 74<br />
+6.3 Mathematics 75<br />
+6.4 Complex Values 77<br />
+6.5 Set Functions 77<br />
+6.6 Sorting and Extreme Values 78<br />
+6.7 Nan Functions 80<br />
+6.8 Functions and Methods/Properties 81<br />
+6.9 Exercises 82<br />
+7 Special Arrays 83<br />
+7.1 Exercises 84<br />
+8 Array and Matrix Functions 85<br />
+8.1 Views 85<br />
+8.2 Shape Information and Transformation 86<br />
+8.3 Linear Algebra Functions 93<br />
+8.4 Exercises 96<br />
+9 Importing and Exporting Data 99<br />
+9.1 Importing Data using pandas 99<br />
+9.2 Importing Data without pandas 100<br />
+9.3 Saving or Exporting Data using pandas 106<br />
+9.4 Saving or Exporting Data without pandas 106<br />
+9.5 Exercises 107<br />
+10 Inf, NaN and Numeric Limits 109<br />
+10.1 inf and NaN 109<br />
+10.2 Floating point precision 109<br />
+10.3 Exercises 110<br />
+11 Logical Operators and Find 113<br />
+11.1 &gt;, &gt;=, &lt;, &lt;=, ==, != 113<br />
+11.2 and, or, not and xor 114<br />
+11.3 Multiple tests 115<br />
+11.4 is* 116<br />
+11.5 Exercises 117<br />
+12 Advanced Selection and Assignment 119<br />
+12.1 Numerical Indexing 119<br />
+12.2 Logical Indexing 124<br />
+12.3 Performance Considerations and Memory Management 128<br />
+12.4 Assignment with Broadcasting 128<br />
+12.5 Exercises 130<br />
+13 Flow Control, Loops and Exception Handling 133<br />
+13.1 Whitespace and Flow Control 133<br />
+13.2 if . . . elif . . . else  133<br />
+13.3 for 134<br />
+13.4 while 137<br />
+13.5 try . . . except 139<br />
+13.6 List Comprehensions 139<br />
+13.7 Tuple, Dictionary and Set Comprehensions 141<br />
+13.8 Exercises 141<br />
+14 Dates and Times 143<br />
+14.1 Creating Dates and Times 143<br />
+14.2 Dates Mathematics 143<br />
+14.3 Numpy datetime64 144<br />
+15 Graphics 147<br />
+15.1 seaborn 147<br />
+15.2 2D Plotting 147<br />
+15.3 Advanced 2D Plotting 153<br />
+15.4 3D Plotting 162<br />
+15.5 General Plotting Functions 165<br />
+15.6 Exporting Plots 165<br />
+15.7 Exercises 166<br />
+16 Structured Arrays 167<br />
+16.1 Mixed Arrays with Column Names 167<br />
+16.2 Record Arrays 170<br />
+17 pandas 171<br />
+17.1 Data Structures 171<br />
+17.2 Statistical Function 191<br />
+17.3 Time-series Data 192<br />
+17.4 Importing and Exporting Data 196<br />
+17.5 Graphics 200<br />
+17.6 Examples 201<br />
+18 Custom Function and Modules 207<br />
+18.1 Functions 207<br />
+18.2 Variable Scope 214<br />
+18.3 Example: Least Squares with Newey-West Covariance 215<br />
+18.4 Anonymous Functions 216<br />
+18.5 Modules 216<br />
+18.6 Packages 217<br />
+18.7 PYTHONPATH 219<br />
+18.8 Python Coding Conventions 219<br />
+18.9 Exercises 220<br />
+18.A Listing of econometrics.py 221<br />
+19 Probability and Statistics Functions 225<br />
+19.1 Simulating Random Variables 225<br />
+19.2 Simulation and Random Number Generation 229<br />
+19.3 Statistics Functions 231<br />
+19.4 Continuous Random Variables 234<br />
+19.5 Select Statistics Functions 237<br />
+19.6 Select Statistical Tests 240<br />
+19.7 Exercises 241<br />
+20 Non-linear Function Optimization 243<br />
+20.1 Unconstrained Optimization 244<br />
+20.2 Derivative-free Optimization 247<br />
+20.3 Constrained Optimization 248<br />
+20.4 Scalar Function Minimization 252<br />
+20.5 Nonlinear Least Squares 253<br />
+20.6 Exercises 254<br />
+21 String Manipulation 255<br />
+21.1 String Building 255<br />
+21.2 String Functions 256<br />
+21.3 Formatting Numbers 260<br />
+21.4 Regular Expressions 264<br />
+21.5 Safe Conversion of Strings 265<br />
+22 File System Operations 267<br />
+22.1 Changing the Working Directory 267<br />
+22.2 Creating and Deleting Directories 267<br />
+22.3 Listing the Contents of a Directory 268<br />
+22.4 Copying, Moving and Deleting Files 268<br />
+22.5 Executing Other Programs 269<br />
+22.6 Creating and Opening Archives 269<br />
+22.7 Reading and Writing Files 270<br />
+22.8 Exercises 272<br />
+23 Performance and Code Optimization 273<br />
+23.1 Getting Started 273<br />
+23.2 Timing Code 273<br />
+23.3 Vectorize to Avoid Unnecessary Loops 274<br />
+23.4 Alter the loop dimensions 275<br />
+23.5 Utilize Broadcasting 276<br />
+23.6 Use In-place Assignment 276<br />
+23.7 Avoid Allocating Memory 276<br />
+23.8 Inline Frequent Function Calls 276<br />
+23.9 Consider Data Locality in Arrays 276<br />
+23.10 Profile Long Running Functions 277<br />
+23.11 Numba 282<br />
+23.12 Cython 288<br />
+23.13 External Code 297<br />
+23.14 Exercises 302<br />
+24 Executing Code in Parallel 303<br />
+24.1 map and related functions 303<br />
+24.2 multiprocessing 304<br />
+24.3 joblib 306<br />
+24.4 IPython’s Parallel Cluster 308<br />
+24.5 Converting a Serial Program to Parallel 314<br />
+24.6 Other Concerns when executing in Parallel 316<br />
+25 Object Oriented Programming (OOP) 319<br />
+25.1 Introduction 319<br />
+25.2 Class basics 320<br />
+25.3 Building a class for Autoregressions 322<br />
+25.4 Exercises 329<br />
+26 Other Interesting Python Packages 331<br />
+26.1 statsmodels 331<br />
+26.2 pytz and babel 331<br />
+26.3 rpy2 331<br />
+26.4 PyTables and h5py 331<br />
+27 Examples 333<br />
+27.1 Estimating the Parameters of a GARCH Model 333<br />
+27.2 Estimating the Risk Premia using Fama-MacBeth Regressions 338<br />
+27.3 Estimating the Risk Premia using GMM 341<br />
+27.4 Outputting L ATEX 344<br />
+28 Quick Reference 347<br />
+28.1 Built-ins 347<br />
+28.2 NumPy (numpy) 354<br />
+28.3 SciPy 369<br />
+28.4 Matplotlib 372<br />
+28.5 Pandas 374<br />
+28.6 IPython 378</p>
+<h3 id="building-machine-learning-systems-with-python">Building Machine Learning Systems with Python<a class="headerlink" href="#building-machine-learning-systems-with-python" title="Permanent link">&para;</a></h3>
+<p>Chapter 1: Getting Started with Python Machine Learning 7<br />
+Machine learning and Python – the dream team 8<br />
+What the book will teach you (and what it will not) 9<br />
+What to do when you are stuck 10<br />
+Getting started 11<br />
+Introduction to NumPy, SciPy, and Matplotlib 12<br />
+Installing Python 12<br />
+Chewing data effciently with NumPy and intelligently with SciPy 12<br />
+Learning NumPy 13<br />
+Indexing 15<br />
+Handling non-existing values 15<br />
+Comparing runtime behaviors 16<br />
+Learning SciPy 17<br />
+Our frst (tiny) machine learning application 19<br />
+Reading in the data 19<br />
+Preprocessing and cleaning the data 20<br />
+Choosing the right model and learning algorithm 22<br />
+Before building our frst model 22<br />
+Starting with a simple straight line 22<br />
+Towards some advanced stuff 24<br />
+Stepping back to go forward – another look at our data 26<br />
+Training and testing 28<br />
+Answering our initial question 30<br />
+Summary 31<br />
+Chapter 2: Learning How to Classify with Real-world Examples 33<br />
+The Iris dataset 33<br />
+The frst step is visualization 34<br />
+Building our frst classifcation model 35<br />
+Evaluation – holding out data and cross-validation 38<br />
+Building more complex classifers 40<br />
+A more complex dataset and a more complex classifer 41<br />
+Learning about the Seeds dataset 42<br />
+Features and feature engineering 43<br />
+Nearest neighbor classifcation 44<br />
+Binary and multiclass classifcation 47<br />
+Summary 48<br />
+Chapter 3: Clustering – Finding Related Posts 49<br />
+Measuring the relatedness of posts 50<br />
+How not to do it 50<br />
+How to do it 51<br />
+Preprocessing – similarity measured as similar number of common words 51<br />
+Converting raw text into a bag-of-words 52<br />
+Counting words 53<br />
+Normalizing the word count vectors 56<br />
+Removing less important words 56<br />
+Stemming 57<br />
+Installing and using NLTK 58<br />
+Extending the vectorizer with NLTK&rsquo;s stemmer 59<br />
+Stop words on steroids 60<br />
+Our achievements and goals 61<br />
+Clustering 62<br />
+KMeans 63<br />
+Getting test data to evaluate our ideas on 65<br />
+Clustering posts 67<br />
+Solving our initial challenge 68<br />
+Another look at noise 71<br />
+Tweaking the parameters 72<br />
+Summary 73<br />
+Chapter 4: Topic Modeling 75<br />
+Latent Dirichlet allocation (LDA) 75<br />
+Building a topic model 76<br />
+Comparing similarity in topic space 80<br />
+Modeling the whole of Wikipedia 83<br />
+Choosing the number of topics 86<br />
+Summary 87<br />
+Chapter 5: Classifcation – Detecting Poor Answers 89<br />
+Sketching our roadmap 90<br />
+Learning to classify classy answers 90<br />
+Tuning the instance 90<br />
+Tuning the classifer 90<br />
+Fetching the data 91<br />
+Slimming the data down to chewable chunks 92<br />
+Preselection and processing of attributes 93<br />
+Defning what is a good answer 94<br />
+Creating our frst classifer 95<br />
+Starting with the k-nearest neighbor (kNN) algorithm 95<br />
+Engineering the features 96<br />
+Training the classifer 97<br />
+Measuring the classifer&rsquo;s performance 97<br />
+Designing more features 98<br />
+Deciding how to improve 101<br />
+Bias-variance and its trade-off 102<br />
+Fixing high bias 102<br />
+Fixing high variance 103<br />
+High bias or low bias 103<br />
+Using logistic regression 105<br />
+A bit of math with a small example 106<br />
+Applying logistic regression to our postclassifcation problem 108<br />
+Looking behind accuracy – precision and recall 110<br />
+Slimming the classifer 114<br />
+Ship it! 115<br />
+Summary 115<br />
+Chapter 6: Classifcation II – Sentiment Analysis 117<br />
+Sketching our roadmap 117<br />
+Fetching the Twitter data 118<br />
+Introducing the Naive Bayes classifer 118<br />
+Getting to know the Bayes theorem 119<br />
+Being naive 120<br />
+Using Naive Bayes to classify 121<br />
+Accounting for unseen words and other oddities 124<br />
+Accounting for arithmetic underﬂows 125<br />
+Creating our frst classifer and tuning it 127<br />
+Solving an easy problem frst 128<br />
+Using all the classes 130<br />
+Tuning the classifer&rsquo;s parameters 132<br />
+Cleaning tweets 136<br />
+Taking the word types into account 138<br />
+Determining the word types 139<br />
+Successfully cheating using SentiWordNet 141<br />
+Our frst estimator 143<br />
+Putting everything together 145<br />
+Summary 146<br />
+Chapter 7: Regression – Recommendations 147<br />
+Predicting house prices with regression 147<br />
+Multidimensional regression 151<br />
+Cross-validation for regression 151<br />
+Penalized regression 153<br />
+L1 and L2 penalties 153<br />
+Using Lasso or Elastic nets in scikit-learn 154<br />
+P greater than N scenarios 155<br />
+An example based on text 156<br />
+Setting hyperparameters in a smart way 158<br />
+Rating prediction and recommendations 159<br />
+Summary 163<br />
+Chapter 8: Regression – Recommendations Improved 165<br />
+Improved recommendations 165<br />
+Using the binary matrix of recommendations 166<br />
+Looking at the movie neighbors 168<br />
+Combining multiple methods 169<br />
+Basket analysis 172<br />
+Obtaining useful predictions 173<br />
+Analyzing supermarket shopping baskets 173<br />
+Association rule mining 176<br />
+More advanced basket analysis 178<br />
+Summary 179<br />
+Chapter 9: Classifcation III – Music Genre Classifcation 181<br />
+Sketching our roadmap 181<br />
+Fetching the music data 182<br />
+Converting into a wave format 182<br />
+Looking at music 182<br />
+Decomposing music into sine wave components 184<br />
+Using FFT to build our frst classifer 186<br />
+Increasing experimentation agility 186<br />
+Training the classifer 187<br />
+Using the confusion matrix to measure accuracy in multiclass problems 188<br />
+An alternate way to measure classifer performance using receiver operator characteristic (ROC) 190<br />
+Improving classifcation performance with Mel Frequency Cepstral Coeffcients 193<br />
+Summary 197<br />
+Chapter 10: Computer Vision – Pattern Recognition 199<br />
+Introducing image processing 199<br />
+Loading and displaying images 200<br />
+Basic image processing 201<br />
+Thresholding 202<br />
+Gaussian blurring 205<br />
+Filtering for different effects 207<br />
+Adding salt and pepper noise 207<br />
+Putting the center in focus 208<br />
+Pattern recognition 210<br />
+Computing features from images 211<br />
+Writing your own features 212<br />
+Classifying a harder dataset 215<br />
+Local feature representations 216<br />
+Summary 219<br />
+Chapter 11: Dimensionality Reduction 221<br />
+Sketching our roadmap 222<br />
+Selecting features 222<br />
+Detecting redundant features using flters 223<br />
+Correlation 223<br />
+Mutual information 225<br />
+Asking the model about the features using wrappers 230<br />
+Other feature selection methods 232<br />
+Feature extraction 233<br />
+About principal component analysis (PCA) 233<br />
+Sketching PCA 234<br />
+Applying PCA 234<br />
+Limitations of PCA and how LDA can help 236<br />
+Multidimensional scaling (MDS) 237<br />
+Summary 240<br />
+Chapter 12: Big(ger) Data 241<br />
+Learning about big data 241<br />
+Using jug to break up your pipeline into tasks 242<br />
+About tasks 242<br />
+Reusing partial results 245<br />
+Looking under the hood 246<br />
+Using jug for data analysis 246<br />
+Using Amazon Web Services (AWS) 248<br />
+Creating your frst machines 250<br />
+Installing Python packages on Amazon Linux 253<br />
+Running jug on our cloud machine 254<br />
+Automating the generation of clusters with starcluster 255<br />
+Summary 259<br />
+Appendix: Where to Learn More about Machine Learning 261<br />
+Online courses 261<br />
+Books 261<br />
+Q&amp;A sites 262<br />
+Blogs 262<br />
+Data sources 263<br />
+Getting competitive 263<br />
+What was left out 264<br />
+Summary 264<br />
+Index 265</p>
+<h3 id="scipy-lecture-notes">Scipy Lecture Notes<a class="headerlink" href="#scipy-lecture-notes" title="Permanent link">&para;</a></h3>
+<p>I Getting started with Python for science 2<br />
+1 Scientific computing with tools and workflow 4<br />
+1.1 Why Python? 4<br />
+1.2 Scientific Python building blocks 5<br />
+1.3 The interactive workflow: IPython and a text editor 6<br />
+2 The Python language 10<br />
+2.1 First steps 10<br />
+2.2 Basic types 11<br />
+2.3 Control Flow 18<br />
+2.4 Defining functions 22<br />
+2.5 Reusing code: scripts and modules 27<br />
+2.6 Input and Output 34<br />
+2.7 Standard Library 35<br />
+2.8 Exception handling in Python 39<br />
+2.9 Object-oriented programming (OOP) 42<br />
+3 NumPy: creating and manipulating numerical data 43<br />
+3.1 The Numpy array object 43<br />
+3.2 Numerical operations on arrays 55<br />
+3.3 More elaborate arrays 68<br />
+3.4 Advanced operations 72<br />
+3.5 Some exercises 77<br />
+4 Matplotlib: plotting 82<br />
+4.1 Introduction 82<br />
+4.2 Simple plot 83<br />
+4.3 Figures, Subplots, Axes and Ticks 89<br />
+4.4 Other Types of Plots: examples and exercises 90<br />
+4.5 Beyond this tutorial 96<br />
+4.6 Quick references 98<br />
+5 Scipy : high-level scientific computing 101<br />
+5.1 File input/output: scipy.io 102<br />
+5.2 Special functions: scipy.special 103<br />
+5.3 Linear algebra operations: scipy.linalg 103<br />
+5.4 Fast Fourier transforms: scipy.fftpack 104<br />
+5.5 Optimization and fit: scipy.optimize 109<br />
+5.6 Statistics and random numbers: scipy.stats 113<br />
+5.7 Interpolation: scipy.interpolate 115<br />
+5.8 Numerical integration: scipy.integrate 116<br />
+5.9 Signal processing: scipy.signal 118<br />
+5.10 Image processing: scipy.ndimage 120<br />
+5.11 Summary exercises on scientific computing 124<br />
+6 Getting help and finding documentation 137<br />
+II Advanced topics 140<br />
+7 Advanced Python Constructs 142<br />
+7.1 Iterators, generator expressions and generators 142<br />
+7.2 Decorators 147<br />
+7.3 Context managers 155<br />
+8 Advanced Numpy 159<br />
+8.1 Life of ndarray 160<br />
+8.2 Universal functions 173<br />
+8.3 Interoperability features 182<br />
+8.4 Array siblings: chararray, maskedarray, matrix 185<br />
+8.5 Summary 188<br />
+8.6 Contributing to Numpy/Scipy 188<br />
+9 Debugging code 192<br />
+9.1 Avoiding bugs 192<br />
+9.2 Debugging workflow 195<br />
+9.3 Using the Python debugger 195<br />
+9.4 Debugging segmentation faults using gdb 200<br />
+10 Optimizing code 203<br />
+10.1 Optimization workflow 203<br />
+10.2 Profiling Python code 203<br />
+10.3 Making code go faster 206<br />
+10.4 Writing faster numerical code 207<br />
+11 Sparse Matrices in SciPy 210<br />
+11.1 Introduction 210<br />
+11.2 Storage Schemes 212<br />
+11.3 Linear System Solvers 224<br />
+11.4 Other Interesting Packages 229<br />
+12 Image manipulation and processing using Numpy and Scipy 230<br />
+12.1 Opening and writing to image files 231<br />
+12.2 Displaying images 232<br />
+12.3 Basic manipulations 233<br />
+12.4 Image filtering 235<br />
+12.5 Feature extraction 240<br />
+12.6 Measuring objects properties: ndimage.measurements 243<br />
+13 Mathematical optimization: finding minima of functions 248<br />
+13.1 Knowing your problem 249<br />
+13.2 A review of the different optimizers 251<br />
+13.3 Practical guide to optimization with scipy 258<br />
+13.4 Special case: non-linear least-squares 260<br />
+13.5 Optimization with constraints 261<br />
+14 Interfacing with C 263<br />
+14.1 Introduction 263<br />
+14.2 Python-C-Api 264<br />
+14.3 Ctypes 268<br />
+14.4 SWIG 272<br />
+14.5 Cython 276<br />
+14.6 Summary 279<br />
+14.7 Further Reading and References 280<br />
+14.8 Exercises 280<br />
+III Packages and applications 282<br />
+15 Statistics in Python 284<br />
+15.1 Data representation and interaction 285<br />
+15.2 Hypothesis testing: comparing two groups 289<br />
+15.3 Linear models, multiple factors, and analysis of variance 292<br />
+15.4 More visualization: seaborn for statistical exploration 297<br />
+15.5 Testing for interactions 299<br />
+16 Sympy : Symbolic Mathematics in Python 301<br />
+16.1 First Steps with SymPy 302<br />
+16.2 Algebraic manipulations 303<br />
+16.3 Calculus 304<br />
+16.4 Equation solving 305<br />
+16.5 Linear Algebra 306<br />
+17 Scikit-image: image processing 308<br />
+17.1 Introduction and concepts 308<br />
+17.2 Input/output, data types and colorspaces 310<br />
+17.3 Image preprocessing / enhancement 312<br />
+17.4 Image segmentation 315<br />
+17.5 Measuring regions’ properties 318<br />
+17.6 Data visualization and interaction 318<br />
+17.7 Feature extraction for computer vision 320<br />
+18 Traits: building interactive dialogs 322<br />
+18.1 Introduction 323<br />
+18.2 Example 323<br />
+18.3 What are Traits 324<br />
+19 3D plotting with Mayavi 340<br />
+19.1 Mlab: the scripting interface 340<br />
+19.2 Interactive work 346<br />
+19.3 Slicing and dicing data: sources, modules and filters 347<br />
+19.4 Animating the data 349<br />
+19.5 Making interactive dialogs 350<br />
+19.6 Putting it together 351<br />
+20 scikit-learn: machine learning in Python 353<br />
+20.1 Loading an example dataset 354<br />
+20.2 Classification 355<br />
+20.3 Clustering: grouping observations together 357<br />
+20.4 Dimension Reduction with Principal Component Analysis 359<br />
+20.5 Putting it all together: face recognition 360<br />
+20.6 Linear model: from regression to sparsity 361<br />
+20.7 Model selection: choosing estimators and their parameters 362<br />
+Index 363</p>
                 
                   
                 

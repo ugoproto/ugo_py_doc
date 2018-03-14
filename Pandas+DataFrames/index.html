@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -890,8 +890,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -1084,18 +1084,6 @@
   <li class="md-nav__item">
     <a href="../Automate the Boring Stuff with Python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
       Automate the Boring Stuff with Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
     </a>
   </li>
 
@@ -1415,73 +1403,33 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Pandas+DataFrames.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Pandas+DataFrames.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Pandas DataFrames</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#what-are-pandas-data-frames">What are Pandas Data Frames?</a></li>
-<li><a href="#create-a-pandas-dataframe">Create a Pandas DataFrame</a></li>
-<li><a href="#fundamental-dataframe-operations">Fundamental DataFrame Operations</a><ul>
-<li><a href="#select-an-index-or-column-from-a-pandas-dataframe">Select an Index or Column from a Pandas DataFrame</a><ul>
-<li><a href="#element">Element</a></li>
-<li><a href="#row-column">Row, Column</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#add-an-index-row-or-column-to-a-pandas-dataframe">Add an Index, Row or Column to a Pandas DataFrame</a><ul>
-<li><a href="#add-an-index-to-a-dataframe">Add an Index to a DataFrame</a></li>
-<li><a href="#add-rows-to-a-dataframe">Add Rows to a DataFrame</a></li>
-<li><a href="#add-a-column-to-a-dataframe">Add a Column to a DataFrame</a></li>
-<li><a href="#reset-the-index-of-a-dataframe">Reset the Index of a DataFrame</a></li>
-</ul>
-</li>
-<li><a href="#delete-indices-rows-or-columns-from-a-pandas-data-frame">Delete Indices, Rows or Columns From a Pandas Data Frame</a><ul>
-<li><a href="#delete-an-index-from-a-dataframe">Delete an Index from a DataFrame</a></li>
-<li><a href="#delete-a-column-from-a-dataframe">Delete a Column from a DataFrame</a></li>
-<li><a href="#remove-a-row-from-a-dataframe">Remove a Row from a DataFrame</a></li>
-</ul>
-</li>
-<li><a href="#rename-the-index-or-columns-of-a-pandas-dataframe">Rename the Index or Columns of a Pandas DataFrame</a></li>
-<li><a href="#format-the-data-in-a-pandas-dataframe">Format The Data in a Pandas DataFrame</a><ul>
-<li><a href="#replace-all-occurrences-of-a-string-in-a-dataframe">Replace All Occurrences of a String in a DataFrame</a></li>
-<li><a href="#remove-parts-from-strings-in-the-cells-of-a-dataframe">Remove Parts from Strings in the Cells of a DataFrame</a></li>
-<li><a href="#split-text-in-a-column-into-multiple-rows-in-a-dataframe">Split Text in a Column into Multiple Rows in a DataFrame</a></li>
-<li><a href="#apply-a-function-to-a-pandas-dataframes-columns-or-rows">Apply a Function to a Pandas DataFrame’s Columns or Rows</a></li>
-</ul>
-</li>
-<li><a href="#create-an-empty-dataframe">Create an Empty DataFrame</a></li>
-<li><a href="#does-pandas-recognize-dates-when-importing-data">Does Pandas Recognize Dates when Importing Data?</a></li>
-<li><a href="#when-why-and-how-we-should-reshape-a-dataframe">When, Why and How we should Reshape a DataFrame</a><ul>
-<li><a href="#pivot-a-dataframe">Pivot a DataFrame</a></li>
-<li><a href="#use-stack-and-unstack-to-reshape-a-pandas-dataframe">Use stack() and unstack() to Reshape a Pandas DataFrame</a></li>
-<li><a href="#reshape-a-dataframe-with-melt">Reshape a DataFrame with melt()</a></li>
-</ul>
-</li>
-<li><a href="#iterate-over-a-pandas-dataframe">Iterate over a Pandas DataFrame</a></li>
-<li><a href="#write-a-pandas-dataframe-to-a-file">Write a Pandas DataFrame to a File</a><ul>
-<li><a href="#output-a-dataframe-to-csv">Output a DataFrame to CSV</a></li>
-<li><a href="#write-a-dataframe-to-excel">Write a DataFrame to Excel</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
-<h3 id="what-are-pandas-data-frames">What are Pandas Data Frames?<a class="headerlink" href="#what-are-pandas-data-frames" title="Permanent link">&para;</a></h3>
+<h3 id="what-are-pandas-dataframe">What are Pandas <code class="codehilite">DataFrame</code>?<a class="headerlink" href="#what-are-pandas-dataframe" title="Permanent link">&para;</a></h3>
 <ul>
 <li>a Pandas <code class="codehilite">DataFrame</code>.</li>
-<li>a Pandas <code class="codehilite">Series</code>: a one-dimensional labeled array capable of holding any data type with axis labels or index. An example of a Series object is one column from a DataFrame.</li>
+<li>a Pandas <code class="codehilite">Series</code>: a one-dimensional labeled array capable of holding any data type with axis labels or index. An example of a Series object is one column from a <code class="codehilite">DataFrame</code>.</li>
 <li>a Numpy <code class="codehilite">ndarray</code>, which can be a record or structured</li>
 <li>a two-dimensional <code class="codehilite">ndarray</code></li>
 <li>dictionaries of one-dimensional <code class="codehilite">ndarrays</code>, lists, dictionaries or Series.</li>
 </ul>
 <p><code class="codehilite">np.ndarray</code> is the actual data type, while <code class="codehilite">np.array()</code> is a function.</p>
-<p>Besides the data that a DataFrame needs to contain, we can also specify the index and column names. The index, on the one hand, indicates the difference in rows, while the column names indicate the difference in columns.</p>
+<p>Besides the data that a <code class="codehilite">DataFrame</code> needs to contain, we can also specify the index and column names. The index, on the one hand, indicates the difference in rows, while the column names indicate the difference in columns.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
@@ -1538,7 +1486,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="create-a-pandas-dataframe">Create a Pandas DataFrame<a class="headerlink" href="#create-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h3 id="create-a-pandas-dataframe">Create a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#create-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
 <p>First, select the values that are contained in the lists that start with <code class="codehilite">Row1</code> and <code class="codehilite">Row2</code>, then select the index or row numbers <code class="codehilite">Row1</code> and <code class="codehilite">Row2</code>, and then the column names <code class="codehilite">Col1</code> and <code class="codehilite">Col2</code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -1576,7 +1524,7 @@ Row2    3    4
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Take a 2D array as input to a DataFrame </span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Take a 2D array as input to a DataFrame</span>
 <span class="n">my_2darray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">my_2darray</span><span class="p">))</span>
 </pre></div>
@@ -1702,8 +1650,8 @@ United States   Washington
 </pre></div>
 </td></tr></table>
 
-<h3 id="fundamental-dataframe-operations">Fundamental DataFrame Operations<a class="headerlink" href="#fundamental-dataframe-operations" title="Permanent link">&para;</a></h3>
-<h4 id="select-an-index-or-column-from-a-pandas-dataframe">Select an Index or Column from a Pandas DataFrame<a class="headerlink" href="#select-an-index-or-column-from-a-pandas-dataframe" title="Permanent link">&para;</a></h4>
+<h3 id="fundamental-dataframe-operations">Fundamental <code class="codehilite">DataFrame</code> Operations<a class="headerlink" href="#fundamental-dataframe-operations" title="Permanent link">&para;</a></h3>
+<h4 id="select-an-index-or-column-from-a-pandas-dataframe">Select an Index or Column from a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#select-an-index-or-column-from-a-pandas-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -1804,8 +1752,8 @@ Name: A, dtype: int64
 </pre></div>
 </td></tr></table>
 
-<h3 id="add-an-index-row-or-column-to-a-pandas-dataframe">Add an Index, Row or Column to a Pandas DataFrame<a class="headerlink" href="#add-an-index-row-or-column-to-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
-<h4 id="add-an-index-to-a-dataframe">Add an Index to a DataFrame<a class="headerlink" href="#add-an-index-to-a-dataframe" title="Permanent link">&para;</a></h4>
+<h3 id="add-an-index-row-or-column-to-a-pandas-dataframe">Add an Index, Row or Column to a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#add-an-index-row-or-column-to-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h4 id="add-an-index-to-a-dataframe">Add an Index to a <code class="codehilite">DataFrame</code><a class="headerlink" href="#add-an-index-to-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Print out the DataFrame `df` to check it out</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -1875,12 +1823,12 @@ Name: A, dtype: int64
 </table>
 </div>
 
-<h4 id="add-rows-to-a-dataframe">Add Rows to a DataFrame<a class="headerlink" href="#add-rows-to-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="add-rows-to-a-dataframe">Add Rows to a <code class="codehilite">DataFrame</code><a class="headerlink" href="#add-rows-to-a-dataframe" title="Permanent link">&para;</a></h4>
 <p>But before&hellip;</p>
 <ul>
-<li><code class="codehilite">loc</code> works on labels of an index. This means with <code class="codehilite">loc[2]</code>, we look for the values of the DataFrame that have an index labeled 2.</li>
-<li><code class="codehilite">iloc</code> works on the positions in the index. This means with <code class="codehilite">iloc[2]</code>, we look for the values of the DataFrame that are at index &lsquo;2&rsquo;.</li>
-<li><code class="codehilite">ix</code> is a more complex case: when the index is integer-based, we pass a label to <code class="codehilite">ix</code>. <code class="codehilite">ix[2]</code> then means that we are looking in the DataFrame for values that have an index labeled <code class="codehilite">2</code>. This is just like <code class="codehilite">loc</code>! However, if the index is not solely integer-based, <code class="codehilite">ix</code> will work with positions, just like <code class="codehilite">iloc</code>.</li>
+<li><code class="codehilite">loc</code> works on labels of an index. This means with <code class="codehilite">loc[2]</code>, we look for the values of the <code class="codehilite">DataFrame</code> that have an index labeled 2.</li>
+<li><code class="codehilite">iloc</code> works on the positions in the index. This means with <code class="codehilite">iloc[2]</code>, we look for the values of the <code class="codehilite">DataFrame</code> that are at index &lsquo;2&rsquo;.</li>
+<li><code class="codehilite">ix</code> is a more complex case: when the index is integer-based, we pass a label to <code class="codehilite">ix</code>. <code class="codehilite">ix[2]</code> then means that we are looking in the <code class="codehilite">DataFrame</code> for values that have an index labeled <code class="codehilite">2</code>. This is just like <code class="codehilite">loc</code>! However, if the index is not solely integer-based, <code class="codehilite">ix</code> will work with positions, just like <code class="codehilite">iloc</code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">index</span><span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="mi">48</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">50</span><span class="p">])</span>
@@ -2003,7 +1951,7 @@ Name: 2, dtype: object
 </pre></div>
 </td></tr></table>
 
-<h4 id="add-a-column-to-a-dataframe">Add a Column to a DataFrame<a class="headerlink" href="#add-a-column-to-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="add-a-column-to-a-dataframe">Add a Column to a <code class="codehilite">DataFrame</code><a class="headerlink" href="#add-a-column-to-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2042,7 +1990,7 @@ Name: 2, dtype: object
 </pre></div>
 </td></tr></table>
 
-<p>Tell the DataFrame that it should take column A as its index.</p>
+<p>Tell the <code class="codehilite">DataFrame</code> that it should take column A as its index.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2077,7 +2025,7 @@ Name: 2, dtype: object
 </pre></div>
 </td></tr></table>
 
-<h4 id="reset-the-index-of-a-dataframe">Reset the Index of a DataFrame<a class="headerlink" href="#reset-the-index-of-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="reset-the-index-of-a-dataframe">Reset the Index of a <code class="codehilite">DataFrame</code><a class="headerlink" href="#reset-the-index-of-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">index</span><span class="o">=</span> <span class="p">[</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">12.6</span><span class="p">,</span> <span class="mf">4.8</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="mi">48</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">50</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2147,12 +2095,12 @@ Name: 2, dtype: object
 </div>
 
 <h3 id="delete-indices-rows-or-columns-from-a-pandas-data-frame">Delete Indices, Rows or Columns From a Pandas Data Frame<a class="headerlink" href="#delete-indices-rows-or-columns-from-a-pandas-data-frame" title="Permanent link">&para;</a></h3>
-<h4 id="delete-an-index-from-a-dataframe">Delete an Index from a DataFrame<a class="headerlink" href="#delete-an-index-from-a-dataframe" title="Permanent link">&para;</a></h4>
-<p>Because DataFrames and Series always have an index.</p>
+<h4 id="delete-an-index-from-a-dataframe">Delete an Index from a <code class="codehilite">DataFrame</code><a class="headerlink" href="#delete-an-index-from-a-dataframe" title="Permanent link">&para;</a></h4>
+<p>Because <code class="codehilite">DataFrame</code>s and Series always have an index.</p>
 <ul>
-<li>Reset the index of a DataFrame (go back to the previous section to see how it is done) or</li>
+<li>Reset the index of a <code class="codehilite">DataFrame</code> (go back to the previous section to see how it is done) or</li>
 <li>remove the index name, if there is any, by executing del df.index.name,</li>
-<li>remove duplicate index values by resetting the index, dropping the duplicates of the index column that has been added to a DataFrame and reinstating that duplicateless column again as the index,</li>
+<li>remove duplicate index values by resetting the index, dropping the duplicates of the index column that has been added to a <code class="codehilite">DataFrame</code> and reinstating that duplicateless column again as the index,</li>
 <li>and lastly, remove an index, and with it a row. This is elaborated in one of the next sections.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -2239,7 +2187,7 @@ Name: 2, dtype: object
 </pre></div>
 </td></tr></table>
 
-<h4 id="delete-a-column-from-a-dataframe">Delete a Column from a DataFrame<a class="headerlink" href="#delete-a-column-from-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="delete-a-column-from-a-dataframe">Delete a Column from a <code class="codehilite">DataFrame</code><a class="headerlink" href="#delete-a-column-from-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2342,7 +2290,7 @@ Name: 2, dtype: object
 </table>
 </div>
 
-<h4 id="remove-a-row-from-a-dataframe">Remove a Row from a DataFrame<a class="headerlink" href="#remove-a-row-from-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="remove-a-row-from-a-dataframe">Remove a Row from a <code class="codehilite">DataFrame</code><a class="headerlink" href="#remove-a-row-from-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -2510,7 +2458,7 @@ Name: 2, dtype: object
 </table>
 </div>
 
-<h3 id="rename-the-index-or-columns-of-a-pandas-dataframe">Rename the Index or Columns of a Pandas DataFrame<a class="headerlink" href="#rename-the-index-or-columns-of-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h3 id="rename-the-index-or-columns-of-a-pandas-dataframe">Rename the Index or Columns of a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#rename-the-index-or-columns-of-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2659,8 +2607,8 @@ Name: 2, dtype: object
 </pre></div>
 </td></tr></table>
 
-<h3 id="format-the-data-in-a-pandas-dataframe">Format The Data in a Pandas DataFrame<a class="headerlink" href="#format-the-data-in-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
-<h4 id="replace-all-occurrences-of-a-string-in-a-dataframe">Replace All Occurrences of a String in a DataFrame<a class="headerlink" href="#replace-all-occurrences-of-a-string-in-a-dataframe" title="Permanent link">&para;</a></h4>
+<h3 id="format-the-data-in-a-pandas-dataframe">Format The Data in a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#format-the-data-in-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h4 id="replace-all-occurrences-of-a-string-in-a-dataframe">Replace All Occurrences of a String in a <code class="codehilite">DataFrame</code><a class="headerlink" href="#replace-all-occurrences-of-a-string-in-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="s1">&#39;OK&#39;</span><span class="p">,</span><span class="s1">&#39;Perfect&#39;</span><span class="p">,</span><span class="s1">&#39;Acceptable&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Awful&#39;</span><span class="p">,</span><span class="s1">&#39;Awful&#39;</span><span class="p">,</span><span class="s1">&#39;Perfect&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Acceptable&#39;</span><span class="p">,</span><span class="s1">&#39;OK&#39;</span><span class="p">,</span><span class="s1">&#39;Poor&#39;</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Student1&#39;</span><span class="p">,</span><span class="s1">&#39;Student2&#39;</span><span class="p">,</span><span class="s1">&#39;Student3&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2797,7 +2745,7 @@ Name: 2, dtype: object
 </table>
 </div>
 
-<h4 id="remove-parts-from-strings-in-the-cells-of-a-dataframe">Remove Parts from Strings in the Cells of a DataFrame<a class="headerlink" href="#remove-parts-from-strings-in-the-cells-of-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="remove-parts-from-strings-in-the-cells-of-a-dataframe">Remove Parts from Strings in the Cells of a <code class="codehilite">DataFrame</code><a class="headerlink" href="#remove-parts-from-strings-in-the-cells-of-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;+3b&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s1">&#39;-6B&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="s1">&#39;+9A&#39;</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">,</span><span class="s1">&#39;test&#39;</span><span class="p">,</span><span class="s1">&#39;result&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -2837,7 +2785,7 @@ Name: 2, dtype: object
 </td></tr></table>
 
 <p>Use <code class="codehilite">map()</code> on the column <code class="codehilite">result</code> to apply the lambda function over each element or element-wise of the column. The function in itself takes the string value and strips the <code class="codehilite">+</code> or <code class="codehilite">-</code> that’s located on the left, and also strips away any of the six <code class="codehilite">aAbBcC</code> on the right.</p>
-<h4 id="split-text-in-a-column-into-multiple-rows-in-a-dataframe">Split Text in a Column into Multiple Rows in a DataFrame<a class="headerlink" href="#split-text-in-a-column-into-multiple-rows-in-a-dataframe" title="Permanent link">&para;</a></h4>
+<h4 id="split-text-in-a-column-into-multiple-rows-in-a-dataframe">Split Text in a Column into Multiple Rows in a <code class="codehilite">DataFrame</code><a class="headerlink" href="#split-text-in-a-column-into-multiple-rows-in-a-dataframe" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">34</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;23:44:55&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;66:77:88&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;43:68:05 56:34:12&#39;</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span><span class="s1">&#39;PlusOne&#39;</span><span class="p">,</span><span class="s1">&#39;Ticket&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>                    
@@ -2893,7 +2841,7 @@ dtype: object
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Delete the `Ticket` column from a DataFrame</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Delete the `Ticket` column from a `DataFrame`</span>
 <span class="k">del</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Ticket&#39;</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
@@ -2988,12 +2936,12 @@ dtype: object
 </table>
 </div>
 
-<p>First, inspect the DataFrame at hand. The values in the last row and in the last column are a bit too long. It appears there are two tickets because a guest has taken a plus-one to the concert.</p>
-<p>Take the <code class="codehilite">Ticket</code> column from the DataFrame <code class="codehilite">df</code> and strings on a space. This will make sure that the two tickets will end up in two separate rows in the end. Next, take these four values (the four ticket numbers) and put them into a Series object. That still doesn’t seem quite right. There are <code class="codehilite">NaN</code> values in there! Stack the Series to make sure they don’t have any <code class="codehilite">NaN</code> values in the resulting Series.</p>
-<p>Next, stack the Series.</p>
-<p>That is not ideal either. Drop the level to line up with the DataFrame.</p>
-<p>Transform a Series to a DataFrame to make sure we can join it back to the initial DataFrame. However, to avoid having any duplicates in the DataFrame, delete the original <code class="codehilite">Ticket</code> column.</p>
-<h4 id="apply-a-function-to-a-pandas-dataframes-columns-or-rows">Apply a Function to a Pandas DataFrame’s Columns or Rows<a class="headerlink" href="#apply-a-function-to-a-pandas-dataframes-columns-or-rows" title="Permanent link">&para;</a></h4>
+<p>First, inspect the <code class="codehilite">DataFrame</code> at hand. The values in the last row and in the last column are a bit too long. It appears there are two tickets because a guest has taken a plus-one to the concert.</p>
+<p>Take the <code class="codehilite">Ticket</code> column from the <code class="codehilite">DataFrame</code> <code class="codehilite">df</code> and strings on a space. This will make sure that the two tickets will end up in two separate rows in the end. Next, take these four values (the four ticket numbers) and put them into a Series object. That still doesn’t seem quite right. There are <code class="codehilite">NaN</code> values in there! Stack the Series to make sure they don’t have any <code class="codehilite">NaN</code> values in the resulting Series.</p>
+<p>Next, stack the series.</p>
+<p>That is not ideal either. Drop the level to line up with the <code class="codehilite">DataFrame</code>.</p>
+<p>Transform a Series to a <code class="codehilite">DataFrame</code> to make sure we can join it back to the initial <code class="codehilite">DataFrame</code>. However, to avoid having any duplicates in the <code class="codehilite">DataFrame</code>, delete the original <code class="codehilite">Ticket</code> column.</p>
+<h4 id="apply-a-function-to-a-pandas-dataframes-columns-or-rows">Apply a Function to a Pandas <code class="codehilite">DataFrame</code>’s Columns or Rows<a class="headerlink" href="#apply-a-function-to-a-pandas-dataframes-columns-or-rows" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -3216,7 +3164,7 @@ Name: A, dtype: int64
 </pre></div>
 </td></tr></table>
 
-<h3 id="create-an-empty-dataframe">Create an Empty DataFrame<a class="headerlink" href="#create-an-empty-dataframe" title="Permanent link">&para;</a></h3>
+<h3 id="create-an-empty-dataframe">Create an Empty <code class="codehilite">DataFrame</code><a class="headerlink" href="#create-an-empty-dataframe" title="Permanent link">&para;</a></h3>
 <p><code class="codehilite">numpy.nan</code> has type float.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">])</span>
@@ -3295,10 +3243,10 @@ Name: A, dtype: int64
 </td></tr></table>
 
 <p>The second code succeeded.</p>
-<h3 id="when-why-and-how-we-should-reshape-a-dataframe">When, Why and How we should Reshape a DataFrame<a class="headerlink" href="#when-why-and-how-we-should-reshape-a-dataframe" title="Permanent link">&para;</a></h3>
-<h4 id="pivot-a-dataframe">Pivot a DataFrame<a class="headerlink" href="#pivot-a-dataframe" title="Permanent link">&para;</a></h4>
+<h3 id="when-why-and-how-we-should-reshape-a-dataframe">When, Why and How we should Reshape a <code class="codehilite">DataFrame</code><a class="headerlink" href="#when-why-and-how-we-should-reshape-a-dataframe" title="Permanent link">&para;</a></h3>
+<h4 id="pivot-a-dataframe">Pivot a <code class="codehilite">DataFrame</code><a class="headerlink" href="#pivot-a-dataframe" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Values: this argument allows to specify which values of the original DataFrame we want to see in the pivot table.</li>
+<li>Values: this argument allows to specify which values of the original <code class="codehilite">DataFrame</code> we want to see in the pivot table.</li>
 <li>Columns: whatever is passed to this argument will become a column in the resulting table.</li>
 <li>Index: whatever is passed to this argument will become an index in the resulting table.</li>
 </ul>
@@ -3428,8 +3376,8 @@ Tech           19.99    NaN   111.55
 </pre></div>
 </td></tr></table>
 
-<h4 id="use-stack-and-unstack-to-reshape-a-pandas-dataframe">Use <code class="codehilite">stack()</code> and <code class="codehilite">unstack()</code> to Reshape a Pandas DataFrame<a class="headerlink" href="#use-stack-and-unstack-to-reshape-a-pandas-dataframe" title="Permanent link">&para;</a></h4>
-<p>When we stack a DataFrame, we make it taller. Move the innermost column index to become the innermost row index.</p>
+<h4 id="use-stack-and-unstack-to-reshape-a-pandas-dataframe">Use <code class="codehilite">stack()</code> and <code class="codehilite">unstack()</code> to Reshape a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#use-stack-and-unstack-to-reshape-a-pandas-dataframe" title="Permanent link">&para;</a></h4>
+<p>When we stack a <code class="codehilite">DataFrame</code>, we make it taller. Move the innermost column index to become the innermost row index.</p>
 <p>Much like <code class="codehilite">stack()</code>, use <code class="codehilite">unstack()</code> to move the innermost row index to become the innermost column index.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -3631,7 +3579,7 @@ dtype: object
 </pre></div>
 </td></tr></table>
 
-<h4 id="reshape-a-dataframe-with-melt">Reshape a DataFrame with <code class="codehilite">melt()</code><a class="headerlink" href="#reshape-a-dataframe-with-melt" title="Permanent link">&para;</a></h4>
+<h4 id="reshape-a-dataframe-with-melt">Reshape a <code class="codehilite">DataFrame</code> with <code class="codehilite">melt()</code><a class="headerlink" href="#reshape-a-dataframe-with-melt" title="Permanent link">&para;</a></h4>
 <p>When we have a data that has one or more columns that are identifier variables, while all other columns are considered measured variables.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -3673,7 +3621,7 @@ dtype: object
 </pre></div>
 </td></tr></table>
 
-<h3 id="iterate-over-a-pandas-dataframe">Iterate over a Pandas DataFrame<a class="headerlink" href="#iterate-over-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
+<h3 id="iterate-over-a-pandas-dataframe">Iterate over a Pandas <code class="codehilite">DataFrame</code><a class="headerlink" href="#iterate-over-a-pandas-dataframe" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]]),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])</span>
 <span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -3704,8 +3652,8 @@ dtype: object
 </pre></div>
 </td></tr></table>
 
-<h3 id="write-a-pandas-dataframe-to-a-file">Write a Pandas DataFrame to a File<a class="headerlink" href="#write-a-pandas-dataframe-to-a-file" title="Permanent link">&para;</a></h3>
-<h4 id="output-a-dataframe-to-csv">Output a DataFrame to CSV<a class="headerlink" href="#output-a-dataframe-to-csv" title="Permanent link">&para;</a></h4>
+<h3 id="write-a-pandas-dataframe-to-a-file">Write a Pandas <code class="codehilite">DataFrame</code> to a File<a class="headerlink" href="#write-a-pandas-dataframe-to-a-file" title="Permanent link">&para;</a></h3>
+<h4 id="output-a-dataframe-to-csv">Output a <code class="codehilite">DataFrame</code> to CSV<a class="headerlink" href="#output-a-dataframe-to-csv" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;myDataFrame.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>

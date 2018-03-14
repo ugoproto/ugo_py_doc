@@ -42,7 +42,7 @@
     
     
       
-        <title>Intro to data.world in Python - ugo_py_doc</title>
+        <title>Introduction to data.world in Python - ugo_py_doc</title>
       
     
     
@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -125,7 +125,7 @@
                 ugo_py_doc
               </span>
               <span class="md-header-nav__topic">
-                Intro to data.world in Python
+                Introduction to data.world in Python
               </span>
             
           
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -618,11 +618,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Intro to data.world in Python
+        Introduction to data.world in Python
       </label>
     
-    <a href="./" title="Intro to data.world in Python" class="md-nav__link md-nav__link--active">
-      Intro to data.world in Python
+    <a href="./" title="Introduction to data.world in Python" class="md-nav__link md-nav__link--active">
+      Introduction to data.world in Python
     </a>
     
       
@@ -745,8 +745,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#write-a-dataframe-to-a-local-file-and-upload-to-dataset" title="Write a dataframe to a local file and upload to dataset" class="md-nav__link">
-    Write a dataframe to a local file and upload to dataset
+  <a href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" title="Write a data frame to a local file and upload to dataset" class="md-nav__link">
+    Write a data frame to a local file and upload to dataset
   </a>
   
 </li>
@@ -972,18 +972,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1137,8 +1125,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#write-a-dataframe-to-a-local-file-and-upload-to-dataset" title="Write a dataframe to a local file and upload to dataset" class="md-nav__link">
-    Write a dataframe to a local file and upload to dataset
+  <a href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" title="Write a data frame to a local file and upload to dataset" class="md-nav__link">
+    Write a data frame to a local file and upload to dataset
   </a>
   
 </li>
@@ -1171,47 +1159,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Intro to data.world in Python.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Intro to data.world in Python.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Intro to data.world in Python</h1>
+                  <h1>Introduction to data.world in Python</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#working-with-datasets">Working with Datasets</a><ul>
-<li><a href="#import-a-dataset">Import a Dataset</a></li>
-<li><a href="#working-with-datasets_1">Working with Datasets</a></li>
-<li><a href="#reading-the-metadata">Reading the metadata</a></li>
-<li><a href="#accessing-the-data">Accessing the data</a></li>
-</ul>
-</li>
-<li><a href="#working-with-multiple-datasets">Working with multiple datasets</a></li>
-<li><a href="#querying-with-dataworld">Querying with data.world</a><ul>
-<li><a href="#sql-querying-a-table">SQL: Querying a table</a></li>
-<li><a href="#sql-query-multiple-tables-join">SQL: Query multiple tables (join)</a></li>
-<li><a href="#sparql-querying-linked-data">SPARQL: Querying linked data</a></li>
-</ul>
-</li>
-<li><a href="#wrap-up">Wrap up</a></li>
-<li><a href="#advanced-sdk-functionality">Advanced SDK Functionality</a><ul>
-<li><a href="#open-the-api">Open the API</a></li>
-<li><a href="#create-a-dataset-using-create_dataset-method">Create a dataset using create_dataset method</a></li>
-<li><a href="#write-a-dataframe-to-a-local-file-and-upload-to-dataset">Write a dataframe to a local file and upload to dataset</a></li>
-<li><a href="#update-dataset">Update dataset</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the course. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the course. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h3>
 <p>Open data is at the heart of <a href="https://data.world/integrations/python">data.world</a>. </p>
 <p>Open an account, log in, find a dataset, download it or copy URL or integrate data.world with Python/R/Tableau by installing dw in the terminal. In Python for example.</p>
-<p><code class="codehilite">pip install datadotworld[pandas]</code> or <code class="codehilite">conda install datadotworld-py</code></p>
+<p><code class="codehilite">pip install datadotworld[pandas]</code> or <code class="codehilite">conda install datadotworld-py</code>.</p>
 <p>then,</p>
-<p><code class="codehilite">dw configure</code></p>
+<p><code class="codehilite">dw configure</code>.</p>
 <p>Pull the API token from the account and enter it.</p>
 <p>There are similar procedures for R and Tableau. Everything is documented on the website (when trying to download any dataset, more options appear for Python/R/Tableau).</p>
 <p>Option 1: use the data.world Jupyter Notebook template as a way to jump-start a project with Python.</p>
@@ -1928,9 +1897,9 @@
 <h3 id="advanced-sdk-functionality">Advanced SDK Functionality<a class="headerlink" href="#advanced-sdk-functionality" title="Permanent link">&para;</a></h3>
 <p>The data.world Python SDK includes a variety of API wrappers, available via the <code class="codehilite">ApiClient</code> class, to create, replace, update, and delete a dataset. In this section, we walk through a few common tasks:</p>
 <ul>
-<li>Use <code class="codehilite">api_client()</code> to get an instance of the <code class="codehilite">ApiClient</code></li>
-<li>Create a dataset</li>
-<li>Add a file from a dataframe: we write to a local csv and the upload the file</li>
+<li>Use <code class="codehilite">api_client()</code> to get an instance of the <code class="codehilite">ApiClient</code>.</li>
+<li>Create a dataset.</li>
+<li>Add a file from a data frame: we write to a local csv and the upload the file.</li>
 <li>Add a file from a source URL: this is an easy way to add external data to the dataset and keep it up to date. We use a file from GitHub as an example, but we can use any URL source that points to a file.</li>
 <li>Sync the dataset: this simple call reloads any files with a source URL, to ensure the latest version.</li>
 <li>Update the dataset: after creating a dataset, use <code class="codehilite">update_dataset</code> to change attiributes like description, summary or tags.</li>
@@ -2511,8 +2480,8 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="create-a-dataset-using-create_dataset-method">Create a dataset using create_dataset method<a class="headerlink" href="#create-a-dataset-using-create_dataset-method" title="Permanent link">&para;</a></h4>
-<p><code class="codehilite">api_client.create_dataset(owner_id=&quot;&lt;YOUR_USERNAME&gt;&quot;, title=&quot;&lt;DATASET_TITLE&gt;&quot;, visibility=&#39;PRIVATE&#39;)</code></p>
+<h4 id="create-a-dataset-using-create_dataset-method">Create a dataset using <code class="codehilite">create_dataset</code> method<a class="headerlink" href="#create-a-dataset-using-create_dataset-method" title="Permanent link">&para;</a></h4>
+<p><code class="codehilite">api_client.create_dataset(owner_id=&quot;&lt;YOUR_USERNAME&gt;&quot;, title=&quot;&lt;DATASET_TITLE&gt;&quot;, visibility=&#39;PRIVATE&#39;)</code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -2529,9 +2498,9 @@
 </pre></div>
 </td></tr></table>
 
-<h4 id="write-a-dataframe-to-a-local-file-and-upload-to-dataset">Write a dataframe to a local file and upload to dataset<a class="headerlink" href="#write-a-dataframe-to-a-local-file-and-upload-to-dataset" title="Permanent link">&para;</a></h4>
-<p>Add file to the dataset using upload_files(). Replace the &lt; &gt; items with the dataset values.</p>
-<p><code class="codehilite">api_client.upload_files(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;,[&#39;police_shootings.csv&#39;])</code></p>
+<h4 id="write-a-data-frame-to-a-local-file-and-upload-to-dataset">Write a data frame to a local file and upload to dataset<a class="headerlink" href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" title="Permanent link">&para;</a></h4>
+<p>Add file to the dataset using <code class="codehilite">upload_files()</code>. Replace the <code class="codehilite">&lt; &gt;</code> items with the dataset values.</p>
+<p><code class="codehilite">api_client.upload_files(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;,[&#39;police_shootings.csv&#39;])</code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -2564,11 +2533,11 @@
 <h4 id="update-dataset">Update dataset<a class="headerlink" href="#update-dataset" title="Permanent link">&para;</a></h4>
 <p>Add a file from an external source URL. In this example we use GitHub. <br />
 Replace the &lt; &gt; items with the dataset values</p>
-<p><code class="codehilite">api_client.add_files_via_url(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;,{&#39;shootings_of_police.csv&#39;: &#39;https://github.com/fivethirtyeight/data/blob/master/police-deaths/all_data.csv’})</code></p>
+<p><code class="codehilite">api_client.add_files_via_url(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;,{&#39;shootings_of_police.csv&#39;: &#39;https://github.com/fivethirtyeight/data/blob/master/police-deaths/all_data.csv’})</code>.</p>
 <p>For files added with <code class="codehilite">add_files_via_url</code>, fetch the latest version using the <code class="codehilite">sync()</code> method:</p>
-<p><code class="codehilite">api_client.sync_files(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;)</code></p>
+<p><code class="codehilite">api_client.sync_files(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;)</code>.</p>
 <p>Use the <code class="codehilite">update_dataset()</code> method to update the metadata after dataset creation:</p>
-<p><code class="codehilite">api_client.update_dataset(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;, description=&#39;Dataset created to test out the python SDK functionality.&#39;, tags=[&#39;test&#39;, &#39;datacamp&#39;])</code></p>
+<p><code class="codehilite">api_client.update_dataset(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;, description=&#39;Dataset created to test out the python SDK functionality.&#39;, tags=[&#39;test&#39;, &#39;datacamp&#39;])</code>.</p>
                 
                   
                 

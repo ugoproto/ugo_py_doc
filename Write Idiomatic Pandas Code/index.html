@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -678,8 +678,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#replace-rank-subset-groupby" title="Replace, Rank, Subset, Groupby" class="md-nav__link">
-    Replace, Rank, Subset, Groupby
+  <a href="#replace-rank-subset-groupby" title="Replace, Rank, Subset, groupby" class="md-nav__link">
+    Replace, Rank, Subset, groupby
   </a>
   
     <nav class="md-nav">
@@ -693,8 +693,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rank-subset-groupby" title="Rank, Subset, Groupby" class="md-nav__link">
-    Rank, Subset, Groupby
+  <a href="#rank-subset-groupby" title="Rank, Subset, groupby" class="md-nav__link">
+    Rank, Subset, groupby
   </a>
   
 </li>
@@ -788,8 +788,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -992,18 +992,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1114,8 +1102,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#replace-rank-subset-groupby" title="Replace, Rank, Subset, Groupby" class="md-nav__link">
-    Replace, Rank, Subset, Groupby
+  <a href="#replace-rank-subset-groupby" title="Replace, Rank, Subset, groupby" class="md-nav__link">
+    Replace, Rank, Subset, groupby
   </a>
   
     <nav class="md-nav">
@@ -1129,8 +1117,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rank-subset-groupby" title="Rank, Subset, Groupby" class="md-nav__link">
-    Rank, Subset, Groupby
+  <a href="#rank-subset-groupby" title="Rank, Subset, groupby" class="md-nav__link">
+    Rank, Subset, groupby
   </a>
   
 </li>
@@ -1211,46 +1199,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Write Idiomatic Pandas Code.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Write Idiomatic Pandas Code.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Write Idiomatic Pandas Code</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#load-and-explore-the-data">Load and Explore the Data</a><ul>
-<li><a href="#the-data">The Data</a></li>
-<li><a href="#quickly-inspecting-the-data">Quickly Inspecting the Data</a></li>
-</ul>
-</li>
-<li><a href="#index-and-pull-values">Index and Pull Values</a></li>
-<li><a href="#method-chaining">Method Chaining</a><ul>
-<li><a href="#clean-the-data">Clean the Data</a></li>
-<li><a href="#concatenate-into-a-single-dataframe">Concatenate into a single DataFrame</a></li>
-</ul>
-</li>
-<li><a href="#memory-optimization">Memory Optimization</a><ul>
-<li><a href="#cast-object-types">Cast Object Types</a></li>
-</ul>
-</li>
-<li><a href="#replace-rank-subset-groupby">Replace, Rank, Subset, Groupby</a><ul>
-<li><a href="#replace">Replace</a></li>
-<li><a href="#rank-subset-groupby">Rank, Subset, Groupby</a></li>
-</ul>
-</li>
-<li><a href="#visualization">Visualization</a><ul>
-<li><a href="#matplotlib">Matplotlib</a></li>
-<li><a href="#remove-values">Remove values</a></li>
-<li><a href="#seaborn">Seaborn</a></li>
-<li><a href="#filter-rows">Filter rows</a></li>
-<li><a href="#correlation">Correlation</a></li>
-</ul>
-</li>
-<li><a href="#to-go-beyond">To go beyond</a></li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="load-and-explore-the-data">Load and Explore the Data<a class="headerlink" href="#load-and-explore-the-data" title="Permanent link">&para;</a></h3>
 <h4 id="the-data">The Data<a class="headerlink" href="#the-data" title="Permanent link">&para;</a></h4>
@@ -3494,7 +3457,7 @@ memory usage: 161.2 KB
 
 <p>From 803.1 KB!</p>
 <p>We have a well-formed data set (i.e. it is in a tidy state) with an optimized memory footprint, data analysis can start.</p>
-<h3 id="replace-rank-subset-groupby">Replace, Rank, Subset, <code class="codehilite">Groupby</code><a class="headerlink" href="#replace-rank-subset-groupby" title="Permanent link">&para;</a></h3>
+<h3 id="replace-rank-subset-groupby">Replace, Rank, Subset, <code class="codehilite">groupby</code><a class="headerlink" href="#replace-rank-subset-groupby" title="Permanent link">&para;</a></h3>
 <h4 id="replace">Replace<a class="headerlink" href="#replace" title="Permanent link">&para;</a></h4>
 <p>‘Massachusetts Institute of Technology (MIT)’ and ‘Massachusetts Institute of Technology’ are two different records of the same university. Thus, change the first name to the latter.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -3541,7 +3504,7 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
 </pre></div>
 </td></tr></table>
 
-<h4 id="rank-subset-groupby">Rank, Subset, <code class="codehilite">Groupby</code><a class="headerlink" href="#rank-subset-groupby" title="Permanent link">&para;</a></h4>
+<h4 id="rank-subset-groupby">Rank, Subset, <code class="codehilite">groupby</code><a class="headerlink" href="#rank-subset-groupby" title="Permanent link">&para;</a></h4>
 <p>To find the 5 (more generally <code class="codehilite">n</code>) top universities over the years, for each ranking system, here is how to do it in pseudo-code:</p>
 <ul>
 <li>For each year (in the <code class="codehilite">year</code> column) and for each ranking system (in the <code class="codehilite">name</code> column):<ul>
@@ -4140,7 +4103,7 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
 
 <p><img alt="" src="../img/write_idiomatic/output_73_0.png" /></p>
 <h3 id="to-go-beyond">To go beyond<a class="headerlink" href="#to-go-beyond" title="Permanent link">&para;</a></h3>
-<p>with <a href="http://jakevdp.github.io/blog/2017/03/22/group-by-from-scratch/">Group-by</a>.</p>
+<p>with <a href="http://jakevdp.github.io/blog/2017/03/22/group-by-from-scratch/">groupby</a>.</p>
                 
                   
                 

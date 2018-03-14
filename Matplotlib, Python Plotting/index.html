@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -788,8 +788,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -982,18 +982,6 @@
   <li class="md-nav__item">
     <a href="../Automate the Boring Stuff with Python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
       Automate the Boring Stuff with Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
     </a>
   </li>
 
@@ -1211,44 +1199,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Matplotlib, Python Plotting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Matplotlib, Python Plotting.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Matplotlib, Python Plotting</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#a-matplotlib-python-plot">A Matplotlib Python Plot</a></li>
-<li><a href="#matplotlib-pyplot-and-pylab-how-are-they-related">matplotlib, pyplot and pylab: how are they related?</a></li>
-<li><a href="#create-a-plot">Create a Plot</a><ul>
-<li><a href="#a-subplot">A Subplot</a></li>
-<li><a href="#the-difference-between-add_axes-and-add_subplot">The Difference Between add_axes() and add_subplot()</a></li>
-</ul>
-</li>
-<li><a href="#change-the-size-of-figures">Change the Size of Figures</a></li>
-<li><a href="#working-with-pyplot-plotting-routines">Working With Pyplot: Plotting Routines</a></li>
-<li><a href="#customize-pyplot">Customize pyplot</a><ul>
-<li><a href="#delete-an-axis">Delete an Axis</a></li>
-<li><a href="#put-the-legend-out-of-the-plot">Put the Legend out of the Plot</a></li>
-<li><a href="#set-plot-title-and-axes-labels">Set Plot Title and Axes Labels</a></li>
-<li><a href="#set-the-plot-layout">Set the Plot Layout</a></li>
-</ul>
-</li>
-<li><a href="#show-save-and-close-the-plot">Show, Save, and Close the Plot</a><ul>
-<li><a href="#save-a-plot-to-an-image-file">Save a Plot to an Image File</a></li>
-<li><a href="#save-a-plot-to-a-pdf-file">Save a Plot to a Pdf File</a></li>
-<li><a href="#use-cla-clf-or-close">Use cla(), clf() or close()</a></li>
-</ul>
-</li>
-<li><a href="#customizing-matplotlib">Customizing Matplotlib</a><ul>
-<li><a href="#use-a-ggplot2-style">Use a ggplot2 Style</a></li>
-<li><a href="#rc-settings">rc Settings</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="a-matplotlib-python-plot">A Matplotlib Python Plot<a class="headerlink" href="#a-matplotlib-python-plot" title="Permanent link">&para;</a></h3>
 <p>Imports, prepare some data, and start plotting.</p>
@@ -1705,7 +1670,7 @@
 </ul>
 <p>Contour plots are used to explore the potential relationship between three variables. Pseudocolor plots can be used for this purpose since they are surface plot seen from above. </p>
 <h3 id="customize-pyplot">Customize <code class="codehilite">pyplot</code><a class="headerlink" href="#customize-pyplot" title="Permanent link">&para;</a></h3>
-<p>See the online plot <a href="https://matplotlib.org/gallery.html">Gallery</a></p>
+<p>See the online plot <a href="https://matplotlib.org/gallery.html">Gallery</a>.</p>
 <h4 id="delete-an-axis">Delete an Axis<a class="headerlink" href="#delete-an-axis" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2

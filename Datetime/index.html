@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -755,8 +755,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -959,18 +959,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1145,43 +1133,24 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Datetime.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Datetime.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Datetime</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#the-datatime-library">The datatime library</a><ul>
-<li><a href="#now-or-any-date-time">now or any date-time</a></li>
-<li><a href="#date-time-difference">Date-time difference</a></li>
-<li><a href="#measure-duration-with-timedelta">Measure duration with timedelta</a></li>
-<li><a href="#now-vs-today">now vs. today</a></li>
-<li><a href="#formatting-date-time">Formatting date-time</a></li>
-<li><a href="#a-little-printing-app">A little printing app</a></li>
-</ul>
-</li>
-<li><a href="#build-a-quiz-application">Build a Quiz application</a><ul>
-<li><a href="#build-the-skeleton">Build the skeleton</a></li>
-<li><a href="#generate-questions">Generate questions</a></li>
-<li><a href="#finalize-the-application">Finalize the application</a></li>
-</ul>
-</li>
-<li><a href="#time-zones">Time zones</a><ul>
-<li><a href="#time-zones-with-datatime-only">Time zones with datatime only</a></li>
-<li><a href="#time-zones-with-datatime-and-pytz">Time zones with datatime and pytz</a></li>
-<li><a href="#find-out-more-about-pytz">Find out more about pytz</a></li>
-<li><a href="#build-a-script-to-convert-time-zones">Build a script to convert time zones</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Notes. Python 2 &amp; 3. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
 <hr />
-<h4 id="the-datatime-library">The <code class="codehilite">datatime</code> library<a class="headerlink" href="#the-datatime-library" title="Permanent link">&para;</a></h4>
+<h3 id="the-datatime-library">The <code class="codehilite">datatime</code> library<a class="headerlink" href="#the-datatime-library" title="Permanent link">&para;</a></h3>
 <p>When building an application incorporating a time triggers, events, records log entries, and much more, we need to deal with dates and times; and time zones. Whether it is a simple script that starts every morning to scrape web data, build a report, and send emails or a comprehensive web framework script that records data entries.</p>
-<h5 id="now-or-any-date-time"><code class="codehilite">now</code> or any date-time<a class="headerlink" href="#now-or-any-date-time" title="Permanent link">&para;</a></h5>
+<h4 id="now-or-any-date-time"><code class="codehilite">now</code> or any date-time<a class="headerlink" href="#now-or-any-date-time" title="Permanent link">&para;</a></h4>
 <p>The <code class="codehilite">datatime</code> library has handy built-in functions: <code class="codehilite">date</code>, <code class="codehilite">time</code>, <code class="codehilite">datetime</code>, <code class="codehilite">timedelta</code>, and <code class="codehilite">tzinfo</code>. The following script demonstrates some of the functionalities.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1254,7 +1223,7 @@
 </pre></div>
 </td></tr></table>
 
-<h5 id="date-time-difference">Date-time difference<a class="headerlink" href="#date-time-difference" title="Permanent link">&para;</a></h5>
+<h4 id="date-time-difference">Date-time difference<a class="headerlink" href="#date-time-difference" title="Permanent link">&para;</a></h4>
 <p>Create a date-time and compute the time difference.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1311,7 +1280,7 @@ minutes (round(seconds/60)) =  144.0
 </pre></div>
 </td></tr></table>
 
-<h5 id="measure-duration-with-timedelta">Measure duration with <code class="codehilite">timedelta</code><a class="headerlink" href="#measure-duration-with-timedelta" title="Permanent link">&para;</a></h5>
+<h4 id="measure-duration-with-timedelta">Measure duration with <code class="codehilite">timedelta</code><a class="headerlink" href="#measure-duration-with-timedelta" title="Permanent link">&para;</a></h4>
 <p>Create a delta.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1530,7 +1499,7 @@ Appointment:
 </pre></div>
 </td></tr></table>
 
-<h5 id="now-vs-today"><code class="codehilite">now</code> vs. <code class="codehilite">today</code><a class="headerlink" href="#now-vs-today" title="Permanent link">&para;</a></h5>
+<h4 id="now-vs-today"><code class="codehilite">now</code> vs. <code class="codehilite">today</code><a class="headerlink" href="#now-vs-today" title="Permanent link">&para;</a></h4>
 <p>The difference between <code class="codehilite">now</code> and <code class="codehilite">today</code> is&hellip;</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -1597,7 +1566,7 @@ Appointment:
 </pre></div>
 </td></tr></table>
 
-<h5 id="formatting-date-time">Formatting date-time<a class="headerlink" href="#formatting-date-time" title="Permanent link">&para;</a></h5>
+<h4 id="formatting-date-time">Formatting date-time<a class="headerlink" href="#formatting-date-time" title="Permanent link">&para;</a></h4>
 <p>Format date and time.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1702,7 +1671,7 @@ bithday_party:
 </pre></div>
 </td></tr></table>
 
-<h5 id="a-little-printing-app">A little printing app<a class="headerlink" href="#a-little-printing-app" title="Permanent link">&para;</a></h5>
+<h4 id="a-little-printing-app">A little printing app<a class="headerlink" href="#a-little-printing-app" title="Permanent link">&para;</a></h4>
 <p>Build an application that prints out a date in a sentence.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1751,8 +1720,8 @@ bithday_party:
 </td></tr></table>
 
 <p>Run it; it creates an output file. Open output.txt. Copy the link and paste it into a web browser.</p>
-<h4 id="build-a-quiz-application">Build a Quiz application<a class="headerlink" href="#build-a-quiz-application" title="Permanent link">&para;</a></h4>
-<h5 id="build-the-skeleton">Build the skeleton<a class="headerlink" href="#build-the-skeleton" title="Permanent link">&para;</a></h5>
+<h3 id="build-a-quiz-application">Build a Quiz application<a class="headerlink" href="#build-a-quiz-application" title="Permanent link">&para;</a></h3>
+<h4 id="build-the-skeleton">Build the skeleton<a class="headerlink" href="#build-the-skeleton" title="Permanent link">&para;</a></h4>
 <p>Build an application (questions.py) that add and multiply numbers.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1929,7 +1898,7 @@ Multiply:
 </pre></div>
 </td></tr></table>
 
-<h5 id="generate-questions">Generate questions<a class="headerlink" href="#generate-questions" title="Permanent link">&para;</a></h5>
+<h4 id="generate-questions">Generate questions<a class="headerlink" href="#generate-questions" title="Permanent link">&para;</a></h4>
 <p>Complete some functions and test the script.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -2098,7 +2067,7 @@ Multiply:
 </pre></div>
 </td></tr></table>
 
-<h5 id="finalize-the-application">Finalize the application<a class="headerlink" href="#finalize-the-application" title="Permanent link">&para;</a></h5>
+<h4 id="finalize-the-application">Finalize the application<a class="headerlink" href="#finalize-the-application" title="Permanent link">&para;</a></h4>
 <p>Complete the script and test it.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -2323,9 +2292,9 @@ It took you 21 seconds total.
 </pre></div>
 </td></tr></table>
 
-<h4 id="time-zones">Time zones<a class="headerlink" href="#time-zones" title="Permanent link">&para;</a></h4>
+<h3 id="time-zones">Time zones<a class="headerlink" href="#time-zones" title="Permanent link">&para;</a></h3>
 <p>Timezones are major challenges for websites and web frameworks. The following is coded in Python 3 since the most common Python frameworks (Flask, Django, Pyramid) at the time this documentation is written work under Python 3. One of the reason is the multi-language ability.</p>
-<h5 id="time-zones-with-datatime-only">Time zones with <code class="codehilite">datatime</code> only<a class="headerlink" href="#time-zones-with-datatime-only" title="Permanent link">&para;</a></h5>
+<h4 id="time-zones-with-datatime-only">Time zones with <code class="codehilite">datatime</code> only<a class="headerlink" href="#time-zones-with-datatime-only" title="Permanent link">&para;</a></h4>
 <p>We build two timezone-aware variables.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -2433,7 +2402,7 @@ UTC+05:30
 </pre></div>
 </td></tr></table>
 
-<h5 id="time-zones-with-datatime-and-pytz">Time zones with <code class="codehilite">datatime</code> and <code class="codehilite">pytz</code><a class="headerlink" href="#time-zones-with-datatime-and-pytz" title="Permanent link">&para;</a></h5>
+<h4 id="time-zones-with-datatime-and-pytz">Time zones with <code class="codehilite">datatime</code> and <code class="codehilite">pytz</code><a class="headerlink" href="#time-zones-with-datatime-and-pytz" title="Permanent link">&para;</a></h4>
 <p><code class="codehilite">pytz</code> simplify things (a lot!).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -2604,7 +2573,7 @@ convert it, change location:
 </pre></div>
 </td></tr></table>
 
-<h5 id="find-out-more-about-pytz">Find out more about <code class="codehilite">pytz</code><a class="headerlink" href="#find-out-more-about-pytz" title="Permanent link">&para;</a></h5>
+<h4 id="find-out-more-about-pytz">Find out more about <code class="codehilite">pytz</code><a class="headerlink" href="#find-out-more-about-pytz" title="Permanent link">&para;</a></h4>
 <p>Find out about timezones: <code class="codehilite">print(pytz.all_timezones)</code>. Or focus on a country&rsquo;s timezones. The US.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">pytz</span><span class="o">.</span><span class="n">country_timezones</span><span class="p">[</span><span class="s1">&#39;us&#39;</span><span class="p">])</span>
 </pre></div>
@@ -2635,7 +2604,7 @@ convert it, change location:
 </pre></div>
 </td></tr></table>
 
-<h5 id="build-a-script-to-convert-time-zones">Build a script to convert time zones<a class="headerlink" href="#build-a-script-to-convert-time-zones" title="Permanent link">&para;</a></h5>
+<h4 id="build-a-script-to-convert-time-zones">Build a script to convert time zones<a class="headerlink" href="#build-a-script-to-convert-time-zones" title="Permanent link">&para;</a></h4>
 <p>Build a script that takes a datetime and give it back in 6 other timezones. For any given datetime, an appointment for example, we can know the equivalent elsewhere in the world.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2

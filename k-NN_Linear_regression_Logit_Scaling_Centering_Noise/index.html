@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -611,8 +611,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -1080,18 +1080,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1387,60 +1375,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>k-NN, Linear regression, Logit, Scaling, Centering, Noise</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#load-and-explore-the-wine-dataset">Load and explore the Wine dataset</a></li>
-<li><a href="#k-nearest-neighbours">k-Nearest Neighbours</a><ul>
-<li><a href="#measure-performance">Measure performance</a></li>
-<li><a href="#train-test-split-and-performance-in-practice">Train-test split and performance in practice</a></li>
-</ul>
-</li>
-<li><a href="#preprocessing-scaling-and-centering-the-data">Preprocessing: scaling and centering the data</a></li>
-<li><a href="#k-nn-scaling-in-practice">k-NN: scaling in practice</a><ul>
-<li><a href="#scale-the-data">Scale the data</a></li>
-<li><a href="#run-the-k-nn">Run the k-NN</a></li>
-<li><a href="#measure-the-performance">Measure the performance</a></li>
-</ul>
-</li>
-<li><a href="#k-nn-recap">k-NN Recap</a><ul>
-<li><a href="#without-scaling">Without scaling</a></li>
-<li><a href="#with-scaling">With scaling</a></li>
-</ul>
-</li>
-<li><a href="#linear-regression">Linear regression</a></li>
-<li><a href="#logistic-regression-logit">Logistic regression (Logit)</a><ul>
-<li><a href="#with-random-numbers">With random numbers</a></li>
-<li><a href="#with-the-wine-dataset">With the Wine dataset</a></li>
-<li><a href="#scale-the-data_1">Scale the data</a></li>
-<li><a href="#run-the-logit-and-measure-the-performance">Run the Logit and measure the performance</a></li>
-</ul>
-</li>
-<li><a href="#logit-recap">Logit Recap</a><ul>
-<li><a href="#without-scaling_1">Without scaling</a></li>
-</ul>
-</li>
-<li><a href="#noise-and-scaling">Noise and scaling</a><ul>
-<li><a href="#plotting-the-synthesized-data">Plotting the synthesized data</a></li>
-<li><a href="#k-nearest-neighbours_1">k-Nearest Neighbours</a><ul>
-<li><a href="#scale-the-data-run-the-k-nn-and-measure-the-performance">Scale the data, run the k-NN, and measure the performance</a></li>
-<li><a href="#add-noise-to-the-signal">Add noise to the signal</a></li>
-<li><a href="#run-the-k-nn-and-measure-the-performance">Run the k-NN and measure the performance</a></li>
-<li><a href="#scale-the-data-add-noise-run-the-k-nn-and-measure-the-performance">Scale the data, add noise, run the k-NN, and measure the performance</a></li>
-</ul>
-</li>
-<li><a href="#noise-strength-vs-accuracy-and-the-need-for-scaling">Noise strength vs. accuracy (and the need for scaling)</a></li>
-<li><a href="#logit-repeat-the-k-nn-procedure">Logit (Repeat the k-NN procedure)</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="load-and-explore-the-wine-dataset">Load and explore the Wine dataset<a class="headerlink" href="#load-and-explore-the-wine-dataset" title="Permanent link">&para;</a></h3>
 <p>We use the <a href="http://archive.ics.uci.edu/ml/datasets/Wine+Quality">wine quality dataset</a> related to red and white vinho verde wine samples, from the north of Portugal.</p>

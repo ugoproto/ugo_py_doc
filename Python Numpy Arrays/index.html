@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -770,8 +770,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -974,18 +974,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1175,38 +1163,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Python Numpy Arrays.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Python Numpy Arrays.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Python Numpy Arrays</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#invoke-numpy">Invoke Numpy</a></li>
-<li><a href="#make-numpy-arrays">Make Numpy Arrays</a></li>
-<li><a href="#a-python-numpy-array">A Python Numpy Array</a></li>
-<li><a href="#make-an-empty-numpy-array">Make an &ldquo;Empty&rdquo; Numpy Array</a></li>
-<li><a href="#load-numpy-arrays-from-text">Load Numpy Arrays from Text</a></li>
-<li><a href="#save-numpy-arrays">Save Numpy Arrays</a></li>
-<li><a href="#inspect-numpy-arrays">Inspect Numpy Arrays</a></li>
-<li><a href="#numpy-broadcasting-works">Numpy Broadcasting Works</a></li>
-<li><a href="#array-mathematics">Array Mathematics</a></li>
-<li><a href="#subset-slice-and-index-arrays">Subset, Slice, and Index Arrays</a></li>
-<li><a href="#ask-for-help">Ask for Help</a></li>
-<li><a href="#manipulate-arrays">Manipulate Arrays</a><ul>
-<li><a href="#transpose-arrays">Transpose Arrays</a></li>
-<li><a href="#reshaping-versus-resizing-arrays">Reshaping versus Resizing Arrays</a></li>
-<li><a href="#how-to-append-arrays">How to Append Arrays</a></li>
-<li><a href="#how-to-insert-and-delete-array-elements">How to Insert and Delete Array Elements</a></li>
-<li><a href="#how-to-join-and-split-arrays">How to Join and Split Arrays</a></li>
-<li><a href="#split-arrays">Split Arrays</a></li>
-</ul>
-</li>
-<li><a href="#how-to-visualize-numpy-arrays">How to Visualize Numpy Arrays</a></li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="invoke-numpy">Invoke Numpy<a class="headerlink" href="#invoke-numpy" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1235,7 +1206,7 @@
 </td></tr></table>
 
 <ul>
-<li>Reference: https://docs.scipy.org/doc/numpy/reference/</li>
+<li><a href="https://docs.scipy.org/doc/numpy/reference/">Reference</a>.</li>
 </ul>
 <h3 id="make-numpy-arrays">Make Numpy Arrays<a class="headerlink" href="#make-numpy-arrays" title="Permanent link">&para;</a></h3>
 <p>If <code class="codehilite"><span class="nf">%pylab</span></code> was invoked.</p>
@@ -2935,7 +2906,7 @@ dtype(&#39;int32&#39;)
 
 <h3 id="how-to-visualize-numpy-arrays">How to Visualize Numpy Arrays<a class="headerlink" href="#how-to-visualize-numpy-arrays" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Following %pylab, <code class="codehilite"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span></code> forces to use the prefix <code class="codehilite">plt.</code> before any matplotlib function.</li>
+<li>Following <code class="codehilite"><span class="nf">%pylab</span></code>, <code class="codehilite"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span></code> forces to use the prefix <code class="codehilite">plt</code> before any <code class="codehilite">matplotlib</code> function.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2

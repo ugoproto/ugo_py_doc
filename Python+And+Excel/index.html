@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -611,8 +611,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -1020,18 +1020,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1267,47 +1255,17 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Python+And+Excel.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Python+And+Excel.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Python and Excel</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#the-data-as-the-starting-point">The Data as the Starting Point</a><ul>
-<li><a href="#check-the-quality-of-the-spreadsheet">Check the Quality of the Spreadsheet</a></li>
-<li><a href="#best-practices-for-spreadsheet-data">Best Practices for Spreadsheet Data</a></li>
-</ul>
-</li>
-<li><a href="#preparing-the-workspace">Preparing the Workspace</a></li>
-<li><a href="#using-virtual-environments">Using Virtual Environments</a></li>
-<li><a href="#check-the-loaded-dataset">Check the Loaded Dataset</a></li>
-<li><a href="#install-packages-to-read-and-write-excel-files">Install Packages to Read and Write Excel Files</a><ul>
-<li><a href="#packages-to-parse-excel-files-and-write-them-back-with-python">Packages to Parse Excel Files and Write them back with Python</a></li>
-</ul>
-</li>
-<li><a href="#load-excel-csv-files-as-pandas-dataframes">Load Excel &amp; CSV Files as Pandas DataFrames</a><ul>
-<li><a href="#excel">Excel</a></li>
-<li><a href="#csv">CSV</a></li>
-<li><a href="#flat-files-tables">Flat files, tables</a></li>
-</ul>
-</li>
-<li><a href="#write-pandas-dataframes-to-excel-and-csv-files">Write Pandas DataFrames to Excel and CSV Files</a><ul>
-<li><a href="#excel_1">Excel</a></li>
-<li><a href="#csv-flat-files-tables">CSV, flat files, tables</a></li>
-</ul>
-</li>
-<li><a href="#read-and-write-excel-files-with-openyxl">Read and Write Excel Files with openyxl</a></li>
-<li><a href="#read-and-format-excel-files-with-xlrd">Read and Format Excel Files with xlrd</a></li>
-<li><a href="#write-to-excel-files-with-xlwt">Write to Excel Files with xlwt</a></li>
-<li><a href="#a-collection-of-utilities-xlutils">A Collection of Utilities: xlutils</a></li>
-<li><a href="#read-with-pyexcel">Read with pyexcel</a></li>
-<li><a href="#write-with-pyexcel">Write with pyexcel</a></li>
-<li><a href="#read-and-write-csv-files">Read and Write .csv Files</a><ul>
-<li><a href="#numpy">Numpy</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
 <p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
@@ -2082,7 +2040,7 @@ $ deactivate
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2091,7 +2049,7 @@ $ deactivate
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Intro to data.world in Python
+                Introduction to data.world in Python
               </span>
             </div>
           </a>

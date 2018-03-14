@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -728,8 +728,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -932,18 +932,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Managing Your Biological Data with Python/" title="Managing Your Biological Data with Python" class="md-nav__link">
       Managing Your Biological Data with Python
     </a>
@@ -1091,32 +1079,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Seaborn, Python Statistical Data Visualization Library.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Seaborn, Python Statistical Data Visualization Library.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Seaborn, Python's Statistical Data Visualization Library</h1>
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#seaborn-vs-matplotlib">Seaborn vs Matplotlib</a></li>
-<li><a href="#load-data-to-construct-seaborn-plots">Load Data to Construct Seaborn Plots</a><ul>
-<li><a href="#loading-a-built-in-seaborn-data-set">Loading a Built-in Seaborn Data Set</a></li>
-</ul>
-</li>
-<li><a href="#show-seaborn-plots">Show Seaborn Plots</a></li>
-<li><a href="#use-seaborn-with-matplotlib-defaults">Use Seaborn with Matplotlib Defaults</a></li>
-<li><a href="#use-seaborns-colors-as-a-colormap-in-matplotlib">Use Seaborn’s Colors as a colormap in Matplotlib?</a></li>
-<li><a href="#scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts</a></li>
-<li><a href="#temporarily-set-the-plot-style">Temporarily Set the Plot Style</a></li>
-<li><a href="#set-the-figure-size-in-seaborn">Set the Figure Size in Seaborn</a></li>
-<li><a href="#rotate-label-text-in-seaborn">Rotate Label Text in Seaborn</a></li>
-<li><a href="#set-xlim-or-ylim-in-seaborn">Set xlim or ylim in Seaborn</a></li>
-<li><a href="#set-log-scale">Set Log Scale</a></li>
-<li><a href="#add-a-title">Add A Title</a></li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="seaborn-vs-matplotlib">Seaborn vs Matplotlib<a class="headerlink" href="#seaborn-vs-matplotlib" title="Permanent link">&para;</a></h3>
 <p>Seaborn a complement to Matplotlib and it specifically targets statistical data visualization.</p>
@@ -1433,10 +1410,10 @@
 <h3 id="scale-seaborn-plots-for-other-contexts">Scale Seaborn Plots for other Contexts<a class="headerlink" href="#scale-seaborn-plots-for-other-contexts" title="Permanent link">&para;</a></h3>
 <p>Larger or smaller plots.</p>
 <ul>
-<li>&ldquo;paper&rdquo;,</li>
-<li>&ldquo;notebook&rdquo;,</li>
-<li>&ldquo;talk&rdquo; and</li>
-<li>&ldquo;poster&rdquo;</li>
+<li><code class="codehilite">&quot;paper&quot;</code>,</li>
+<li><code class="codehilite">&quot;notebook&quot;</code>,</li>
+<li><code class="codehilite">&quot;talk&quot;</code> and</li>
+<li><code class="codehilite">&quot;poster&quot;</code></li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1555,7 +1532,7 @@
 <p><img alt="" src="../img/seaborn_python/output_19_0.png" /></p>
 <p>Axes-level functions and figure-level functions. </p>
 <ul>
-<li>The ones that operate on the Axes level are, for example, <code class="codehilite">regplot()</code>, <code class="codehilite">boxplot()</code>, <code class="codehilite">kdeplot()</code>, …, </li>
+<li>The ones that operate on the Axes level are, for example, <code class="codehilite">regplot()</code>, <code class="codehilite">boxplot()</code>, <code class="codehilite">kdeplot()</code>, … </li>
 <li>while the functions that operate on the Figure level are <code class="codehilite">lmplot()</code>, <code class="codehilite">factorplot()</code>, <code class="codehilite">jointplot()</code>, &hellip;</li>
 </ul>
 <p>The first group is identified by taking an explicit <code class="codehilite">ax</code> argument and returning an Axes object, while the second group of functions creates plots that potentially include Axes. </p>

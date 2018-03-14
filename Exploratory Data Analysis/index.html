@@ -57,8 +57,8 @@
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
-        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="yellow" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     <svg class="md-svg">
       <defs>
@@ -170,7 +170,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -219,7 +219,7 @@
   
 
 
-  <a href="https://github.com/ugoproto/ugo_r_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -835,8 +835,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-nav__link">
-      Intro to data.world in Python
+    <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-nav__link">
+      Introduction to data.world in Python
     </a>
   </li>
 
@@ -1029,18 +1029,6 @@
   <li class="md-nav__item">
     <a href="../Automate the Boring Stuff with Python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
       Automate the Boring Stuff with Python
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Real_Python/" title="Real Python" class="md-nav__link">
-      Real Python
     </a>
   </li>
 
@@ -1305,53 +1293,19 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_r_doc.git/edit/master/docs/Exploratory Data Analysis.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Exploratory Data Analysis.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <div class="toc"><span class="toctitle">CONTENT</span><ul>
-<li><a href="#import-the-data">Import the Data</a><ul>
-<li><a href="#digits">digits</a></li>
-<li><a href="#iris">iris</a></li>
-</ul>
-</li>
-<li><a href="#basic-description-of-the-data">Basic Description of the Data</a><ul>
-<li><a href="#describing-the-data">Describing The Data</a></li>
-<li><a href="#first-and-last-dataframe-rows">First and Last DataFrame Rows</a></li>
-<li><a href="#sample-the-data">Sample the Data</a></li>
-</ul>
-</li>
-<li><a href="#queries">Queries</a></li>
-<li><a href="#the-challenges-of-data">The Challenges of Data</a><ul>
-<li><a href="#missing-values">Missing Values</a></li>
-<li><a href="#delete">Delete</a></li>
-<li><a href="#impute">Impute</a></li>
-<li><a href="#outliers">Outliers</a></li>
-</ul>
-</li>
-<li><a href="#the-datas-features">The Data’s Features</a><ul>
-<li><a href="#feature-engineering">Feature Engineering</a><ul>
-<li><a href="#encode-categorical-variables-into-numerical-ones">Encode categorical variables into numerical ones</a></li>
-<li><a href="#bin-continuous-variables-in-groups">Bin continuous variables in groups</a></li>
-<li><a href="#scale-features">Scale features</a></li>
-</ul>
-</li>
-<li><a href="#feature-selection">Feature Selection</a></li>
-</ul>
-</li>
-<li><a href="#patterns-in-the-data">Patterns In the Data</a><ul>
-<li><a href="#correlation-identification-with-pca-from-scikit-learn">Correlation Identification with PCA from scikit-learn</a><ul>
-<li><a href="#matplotlib">Matplotlib</a></li>
-<li><a href="#bokeh">Bokeh</a></li>
-</ul>
-</li>
-<li><a href="#correlation-identification-with-pandas">Correlation Identification with Pandas</a></li>
-</ul>
-</li>
-</ul>
-</div>
+                <!--
+---
+
+[TOC]
+-->
+
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
+With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
 <hr />
 <h3 id="import-the-data">Import the Data<a class="headerlink" href="#import-the-data" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1369,7 +1323,7 @@
 <li><code class="codehilite">read_clipboard</code>, data copied to the clipboard.</li>
 <li><code class="codehilite">read_sql()</code>, SQL query.</li>
 </ul>
-<p>http://pandas.pydata.org/pandas-docs/version/0.18.1/api.html#input-output</p>
+<p><a href="http://pandas.pydata.org/pandas-docs/version/0.18.1/api.html#input-output">Input-output documentation</a>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">%</span><span class="n">pylab</span> <span class="n">inline</span>
@@ -7383,13 +7337,13 @@ Name: Class, dtype: int64
           </a>
         
         
-          <a href="../Intro to data.world in Python/" title="Intro to data.world in Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Intro to data.world in Python/" title="Introduction to data.world in Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Intro to data.world in Python
+                Introduction to data.world in Python
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
