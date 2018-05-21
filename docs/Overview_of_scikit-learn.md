@@ -87,9 +87,6 @@ print(prediction)
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import LabelEncoder
-from sklearn.cross_validation import train_test_split
-from sklearn.metrics import confusion_matrix
 
 # set the training parameters
 clf = RandomForestClassifier(n_estimators=1000)

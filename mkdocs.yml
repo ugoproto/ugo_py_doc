@@ -101,6 +101,8 @@ pages:
 #extra_css: 
 #    - 'extra.css'
 ## in the docs
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 markdown_extensions:
   - def_list
@@ -182,8 +184,5 @@ markdown_extensions:
 ## https://facelessuser.github.io/pymdown-extensions/extensions/keys/
 ## ++ctrl+alt+delete++
 ## MORE
-  - pyembed.markdown
-  
-extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-
+#  - pyembed.markdown
+## videos
