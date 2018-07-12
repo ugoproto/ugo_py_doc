@@ -13,7 +13,7 @@ Cheat sheets.
 
 # Importing Data
 
-- [Importing Data](Importing_Data.pdf). PDF. Files: text, falt, spreadsheet, SAS, Stata, RDB, Pickled, HDF5, Matlab, with numpy, pandas, accessing, exploring, and navigating.
+- [Importing Data](Importing_Data.pdf). PDF.
 
 <center>
 ![](img/scipy_cs/Importing_data.png)
