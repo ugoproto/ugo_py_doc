@@ -7,18 +7,18 @@
         },
         {
             "location": "/Py_CS/",
-            "text": "Foreword\n\n\nCheat sheets.\n\n\n\n\nPython 2\n\u00b6\n\n\n\n\nPython 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython Quick Reference\n. PDF.\n\n\n\n\n\n\n\n../img/\n\n\n\n\n\n\n\n\n\n\nPython 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\nPython 3\n\u00b6\n\n\n\n\nPython 3\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython 3\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nPython, Intermediate\n. PDF.\n\n\n\n\n\n\n\n\n\n\nLibraries (Debugger, Decorators, Pip)\n\u00b6\n\n\n\n\nPython Debugger\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython Decorators\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPip Cheat Sheet\n. PDF.",
+            "text": "Foreword\n\n\nCheat sheets.\n\n\n\n\nPython 3\n\u00b6\n\n\n\n\nPython 3 Notes\n. PDF only.\n\n\n\n\n\n\n\n\nPython 3\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython, Intermediate\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython 3\n. PDF.\n\n\n\n\n\n\n\n\n\n\nLibraries (Debugger, Decorators, Pip)\n\u00b6\n\n\n\n\nPython Debugger\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython Decorators\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPip Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\nPython 2\n\u00b6\n\n\n\n\nPython 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython 2\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPython 2 Quick Reference\n. PDF.\n\n\n\n\n\n\n\n../img/\n\n\n\n\n\n\n\n\n\n\nPython 2\n. PDF.",
             "title": "Python Cheat Sheets"
-        },
-        {
-            "location": "/Py_CS/#python-3",
-            "text": "Python 3 . PDF.        Python 3 . PDF.       Python, Intermediate . PDF.",
-            "title": "Python 3"
         },
         {
             "location": "/Py_CS/#libraries-debugger-decorators-pip",
             "text": "Python Debugger . PDF.        Python Decorators . PDF.        Pip Cheat Sheet . PDF.",
             "title": "Libraries (Debugger, Decorators, Pip)"
+        },
+        {
+            "location": "/Py_CS/#python-2",
+            "text": "Python 2 . PDF.         Python 2 . PDF.          Python 2 Quick Reference . PDF.    \n../img/      Python 2 . PDF.",
+            "title": "Python 2"
         },
         {
             "location": "/Python_Preliminaries/",
@@ -392,7 +392,7 @@
         },
         {
             "location": "/Scipy_CS/",
-            "text": "Foreword\n\n\nCheat sheets.\n\n\n\n\nImporting Data\n\u00b6\n\n\n\n\nImporting Data\n. PDF. Files: text, falt, spreadsheet, SAS, Stata, RDB, Pickled, HDF5, Matlab, with numpy, pandas, accessing, exploring, and navigating.\n\n\n\n\n\n\n\n\n\n\nData Mining, Wrangling (Numpy, Pandas)\n\u00b6\n\n\n\n\nData Mining\n. PDF only.\n\n\n\n\n\n\n\n\nNumPy/SciPy/Pandas Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumpy\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Algebra\n. PDF only.\n\n\nSciPy Linear Algebra\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas DataFrame Notes\n. PDF only.\n\n\nPandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nPandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nData Wrangling with Pandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning, Spark, NN\n\u00b6\n\n\n\n\n.\n\n\n\n\n\n\n\n\nscikit-learn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark SQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeras\n. PDF.\n\n\n\n\n\n\n\n\n\n\nVisualization (Matplotlib, Seaborn, Bokeh, Plotly, Folium)\n\u00b6\n\n\n\n\nMatplotlib Notes\n. PDF only.\n\n\nMatplotlib\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeaborn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBokeh\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlotly\n. PDF only.\n\n\n\n\n\n\n\n\nFolium\n. PDF.",
+            "text": "Foreword\n\n\nCheat sheets.\n\n\n\n\nImporting Data\n\u00b6\n\n\n\n\nImporting Data\n. PDF.\n\n\n\n\n\n\n\n\n\n\nData Mining, Wrangling (Numpy, Pandas)\n\u00b6\n\n\n\n\nData Mining\n. PDF only.\n\n\n\n\n\n\n\n\nNumPy/SciPy/Pandas Cheat Sheet\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNumpy\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinear Algebra\n. PDF only.\n\n\nSciPy Linear Algebra\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPandas DataFrame Notes\n. PDF only.\n\n\nPandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nPandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nData Wrangling with Pandas\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\nMachine Learning, Spark, NN\n\u00b6\n\n\n\n\n.\n\n\n\n\n\n\n\n\nscikit-learn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPySpark SQL\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeras\n. PDF.\n\n\n\n\n\n\n\n\n\n\nVisualization (Matplotlib, Seaborn, Bokeh, Plotly, Folium)\n\u00b6\n\n\n\n\nMatplotlib Notes\n. PDF only.\n\n\nMatplotlib\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeaborn\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBokeh\n. PDF.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlotly\n. PDF only.\n\n\n\n\n\n\n\n\nFolium\n. PDF.",
             "title": "Scipy Stack Cheat Sheets"
         },
         {
