@@ -420,7 +420,7 @@ df_test[['PassengerId', 'Survived']].to_csv('results/no_survivors.csv', index=Fa
 - Kaggle returns a ranking.
 - At the time of the first submission: score 0.63679, rank 9387.
 
-![](results/no_survivors.png)
+![](img/EDA_machine_learning/no_survivors.png)
 
 ## EDA on Feature Variables
 
@@ -662,7 +662,7 @@ df_test[['PassengerId', 'Survived']].to_csv('results/women_survived.csv', index=
 - Kaggle returns a ranking.
 - At the time of the first submission: score 0.76555 (from 0.62679), rank 7274 (a jump of 2122 places).
 
-![](results/women_survived.png)
+![](img/EDA_machine_learning/women_survived.png)
 
 ## Explore the Data More!
 
@@ -1270,7 +1270,7 @@ All the entries are non-null now.
 
 "Was `Sex_male`" less than 0.5? In other words, was the data point a female. If the answer to this question is `True`, we can go down to the left and we get `Survived`. If `False`, we go down the right and we get `Dead`.
 
-![](img/decision_tree_titanic_1.png)
+![](img/EDA_machine_learning/decision_tree_titanic_1.png)
 
 That the first branch is on `Male` or not and that `Male` results in a prediction of `Dead`. The gini coefficient is used to make these decisions.
 
@@ -1356,7 +1356,7 @@ df_test[['PassengerId', 'Survived']].to_csv('results/1st_dec_tree.csv',
 - Kaggle returns a ranking.
 - At the time of the first submission: score 0.77990 (from 0.76555), rank 4828 (a jump of 2434 places).
 
-![](results/1st_dec_tree.png)
+![](img/EDA_machine_learning/1st_dec_tree.png)
 
 
 ```python
@@ -1376,7 +1376,7 @@ train_accuracy
 
 The Decision Tree Classifier we just built had a max_depth=3 and it looks like this:
 
-![](img/decision_tree_titanic_3.png)
+![](img/EDA_machine_learning/decision_tree_titanic_3.png)
 
 The maximal distance between the first decision and the last is 3, so that's `max_depth=3`.
 
@@ -1430,13 +1430,13 @@ graph
 
 
 
-![svg](output_72_0.svg)
+IN THE NOTEBOOK ONLY!
 
 
 
 In building this model, what we are essentially doing is creating a [decision boundary](http://scikit-learn.org/stable/auto_examples/ensemble/plot_voting_decision_regions.html) in the space of feature variables.
 
-![](img/dec_bound.png)
+![](img/EDA_machine_learning/dec_bound.png)
 
 ## Why Choose `max_depth=3`?
 
@@ -2527,7 +2527,7 @@ y = survived_train.values
 
 Build a decision tree on a brand new feature-engineered dataset. To choose the hyperparameter `max_depth`, we will use a variation on test train split called "cross validation".
 
-![](img/cv_raxrt7.png)
+![](img/EDA_machine_learning/cv_raxrt7.png)
 
 Split the dataset into 5 groups or folds. Then we hold out the first fold as a test set, fit the model on the remaining four folds, predict on the test set and compute the metric of interest. Next, we hold out the second fold as the test set, fit on the remaining data, predict on the test set and compute the metric of interest. Then similarly with the third, fourth and fifth.
 
@@ -2580,4 +2580,4 @@ df_test[['PassengerId', 'Survived']].to_csv('results/dec_tree_feat_eng.csv', ind
 - Kaggle returns a ranking.
 - At the time of the first submission: score 0.78468 (from 0.77980), rank 4009 (a jump of 819 places).
 
-![](results/dec_tree_feat_enge.png)
+![](img/EDA_machine_learning/dec_tree_feat_enge.png)

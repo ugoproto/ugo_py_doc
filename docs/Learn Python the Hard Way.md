@@ -1123,11 +1123,10 @@ print "That becomes: ", what, "Can you do it by hand?"
 - In the 'lamson' directory, take a script.
 - Go through the script.
 - Find projects on collaborative sites or depositories:
-    - [bitbucket.org](bitbucket.org).
-    - [github.com](github.com).
-    - [gitorious.org](gitorious.org).
-    - [launchpad.net](launchpad.net).
-    - [sourceforge.net](sourceforge.net).
+    - [bitbucket.org](https://bitbucket.org/).
+    - [github.com](https://github.com/).
+    - [launchpad.net](https://launchpad.net/).
+    - [sourceforge.net](https://sourceforge.net/).
 
 # Exercise 24, More Practice
 

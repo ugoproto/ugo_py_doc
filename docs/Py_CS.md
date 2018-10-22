@@ -41,7 +41,9 @@ Cheat sheets.
 ![](img/py_cs/Python-Cheat-Sheet-by-CodeConquestDOTcom.jpg)
 </center>
 
-# Libraries (Debugger, Decorators, Pip)
+# Libraries
+
+## Debugger
 
 - [Python Debugger](Python-Debugger-Cheatsheet.pdf). PDF.
 
@@ -49,7 +51,7 @@ Cheat sheets.
 ![](img/py_cs/Python-Debugger-Cheatsheet.png)
 </center>
 
----
+## Decorators
 
 - [Python Decorators](Python-Decorators.pdf). PDF.
 
@@ -57,7 +59,7 @@ Cheat sheets.
 ![](img/py_cs/Python-Decorators.png)
 </center>
 
----
+## Pip
 
 - [Pip Cheat Sheet](Pip-Cheatsheet.pdf). PDF.
 

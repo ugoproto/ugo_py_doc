@@ -50,7 +50,7 @@ theme:
 #    - 'extra.css'
 ## in the docs
 
-pages:
+nav:
   - Home: 'index.md'
   - Basics:
     - Python Cheat Sheets: 'Py_CS.md'
@@ -66,18 +66,9 @@ pages:
   - Scipy Stack: 
     - Scipy Stack Cheat Sheets: 'Scipy_CS.md'
     - Jupyter Notebook Cheat Sheets: 'JN_CS.md'        
-    - Scientific Python: 'Scientific Python.md'
     - Importing Data into Python: 'Importing Data into Python.md'
-    - Python for Data Science: 'Python for Data Science.md'
-    - Tidy Data in Python: 'Tidy_Data_in_Python.md'
-    - Lists: 'Lists.md'
-    - IPython Notebook, Collection: 'IPython Notebook.md'
-    - Python Numpy Arrays: 'Python Numpy Arrays.md'
     - Vectors and Arrays (Linear Algebra): 'Vectors and Arrays (Linear Algebra).md'
-    - Matplotlib, Python Plotting: 'Matplotlib, Python Plotting.md'
     - Viewing 3D Volumetric Data with Matplotlib: 'Viewing+3D+Volumetric+Data+With+Matplotlib.md'
-    - Seaborn, Python's Statistical Data Visualization Library: 'Seaborn, Python Statistical Data Visualization Library.md'
-    - Pandas DataFrames: 'Pandas+DataFrames.md'
     - Write Idiomatic Pandas Code: 'Write Idiomatic Pandas Code.md'
     - Exploratory Data Analysis (EDA): 'Exploratory Data Analysis.md'
     - Introduction to data.world in Python: 'Intro to data.world in Python.md'
@@ -92,7 +83,6 @@ pages:
     - Codecademy Python: 'Codecademy Python.md'
     - Learn Python the Hard Way: 'Learn Python the Hard Way.md'
     - LPTHW, Python Code Snippets: 'LPTHW, Python Code Snippets.md'
-    - Introduction to Python: 'Introduction to Python.md'
   - Manuals:
     - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
     - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
