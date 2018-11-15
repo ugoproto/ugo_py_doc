@@ -54,37 +54,41 @@ nav:
   - Home: 'index.md'
   - Basics:
     - Python Cheat Sheets: 'Py_CS.md'
-    - Python Preliminaries: 'Python_Preliminaries.md'
-    - Python Nice to Have: 'Python_Nice_to_Have.md'
-    - Freeze the Code: 'Freeze_the_Code.md'
-    - Decorators: 'Decorators.md'
-    - Write Better Python with PEP: 'Write_Better_Python.md'
-    - Regular Expressions (regex): 'Regex.md'
     - Databases: 'Databases.md'
     - Datetime: 'Datetime.md'
-    - Gedit, Execute Highlighted Python Code: 'Gedit_Execute_Highlighted_Python_Code.md'
+    - Decorators: 'Decorators.md'
+    - Exceptions: 'exceptions.md'
+    - Freeze the Code: 'Freeze_the_Code.md'
+    - Gedit, Execute Highlighted Code: 'Gedit_Execute_Highlighted_Python_Code.md'
+    - Regular Expressions (regex): 'Regex.md'
+    - Python Preliminaries: 'Python_Preliminaries.md'
+    - Python Nice to Have: 'Python_Nice_to_Have.md'
+    - Write Better Python with PEP: 'Write_Better_Python.md'
   - Scipy Stack: 
+    - Jupyter Notebook Cheat Sheets: 'JN_CS.md'
     - Scipy Stack Cheat Sheets: 'Scipy_CS.md'
-    - Jupyter Notebook Cheat Sheets: 'JN_CS.md'        
-    - Importing Data into Python: 'Importing Data into Python.md'
+    - EDA, Machine Learning, Feature Engineering, and Kaggle: 'EDA_Machine_Learning_Feature_Engineering_and_Kaggle.md'
+    - Exploratory Data Analysis (EDA): 'Exploratory Data Analysis.md'
+    - Feature Selection: 'Feature_Selection_in_Python.md'
+    - Geospatial Data : 'Geospatial_Data_in_Python.md'
+    - Importing Data: 'Importing Data into Python.md'
+    - Introduction to Customer Segmentation: 'Introduction_to_Customer_Segmentation_in_Python.md'
+    - Introduction to data.world: 'Intro to data.world in Python.md'
+    - k-NN, Linear regression, Logit, Scaling, Centering, Noise: 'k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md'
+    - Overview of scikit-learn: 'Overview_of_scikit-learn.md'
+    - Python and Excel: 'Python+And+Excel.md'
+    - Sentiment Analysis with Twitter: 'Sentiment_Analysis_with_Twitter.md'
+    - Time Series Analysis: 'Time_Series_Analysis.md'
     - Vectors and Arrays (Linear Algebra): 'Vectors and Arrays (Linear Algebra).md'
     - Viewing 3D Volumetric Data with Matplotlib: 'Viewing+3D+Volumetric+Data+With+Matplotlib.md'
     - Write Idiomatic Pandas Code: 'Write Idiomatic Pandas Code.md'
-    - Exploratory Data Analysis (EDA): 'Exploratory Data Analysis.md'
-    - Introduction to data.world in Python: 'Intro to data.world in Python.md'
-    - Python and Excel: 'Python+And+Excel.md'
-    - Overview of scikit-learn: 'Overview_of_scikit-learn.md'
-    - k-NN, Linear regression, Logit, Scaling, Centering, Noise: 'k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md'
-    - Time Series Analysis: 'Time_Series_Analysis.md'
-    - Sentiment Analysis with Twitter: 'Sentiment_Analysis_with_Twitter.md'
-    - EDA, Machine Learning, Feature Engineering, and Kaggle: 'EDA_Machine_Learning_Feature_Engineering_and_Kaggle.md'
   - Courses:
     - Apprenez à programmer en Python: 'Apprenez a programmer en Python.md'
+    - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
     - Codecademy Python: 'Codecademy Python.md'
     - Learn Python the Hard Way: 'Learn Python the Hard Way.md'
     - LPTHW, Python Code Snippets: 'LPTHW, Python Code Snippets.md'
   - Manuals:
-    - Automate the Boring Stuff with Python: 'Automate the Boring Stuff with Python.md'
     - Managing Your Biological Data with Python: 'Managing Your Biological Data with Python.md'
     - Python for Education: 'Python for Education.md'
 
@@ -112,7 +116,8 @@ markdown_extensions:
 ## |Content Cell  | Content Cell |
   - admonition 
 ## https://squidfunk.github.io/mkdocs-material/extensions/admonition/
-  - codehilite(linenums=true)
+  - codehilite:
+      linenums: true
 ## ```python hl_lines="1 2"
 ## a=1
 ## ```
@@ -128,7 +133,11 @@ markdown_extensions:
   - smarty
 ## additional characters: ' "  «  ... -- ---
 ## watch when copy-pasted
-  - toc(title=CONTENT, permalink=true, anchorlink=false, baselevel=3)
+  - toc:
+      title: CONTENT
+      permalink: true
+      anchorlink: false
+      baselevel: 3
 ## permalink link to a subpart of the document
 ## anchorlink causes all headers to link to themselves.
 ## https://python-markdown.github.io/extensions/toc/
@@ -164,7 +173,8 @@ markdown_extensions:
 ## +/-  -->  <--  <-->  =/=  1/4  1st 2nd
   - pymdownx.superfences
 ## nest code blocks under blockquotes
-  - pymdownx.tasklist(clickable_checkbox=true)
+  - pymdownx.tasklist:
+      clickable_checkbox: true
 ## https://facelessuser.github.io/pymdown-extensions/extensions/tasklist/
 ## - [ ]  - [x]
   - pymdownx.tilde
