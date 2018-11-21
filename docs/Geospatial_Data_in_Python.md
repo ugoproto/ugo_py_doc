@@ -7,7 +7,7 @@
 
 **Foreword**
 
-Notes.
+Notes and code snippets. Python 3. From DataCamp.
 
 ---
 

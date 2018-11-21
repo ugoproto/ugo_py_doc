@@ -8,8 +8,6 @@
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
-With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
-
 ---
 
 # The Essentials of Numpy: `ndarray`

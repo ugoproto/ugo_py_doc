@@ -8,7 +8,6 @@
 **Foreword**
 
 Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
-With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
 
 ---
 
@@ -179,7 +178,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_8_0.png)
+![](img/Scaling_Centering_Noise/output_8_0.png)
 
 
 Notice the range of each variable; some are wider.
@@ -229,7 +228,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_13_0.png)
+![](img/Scaling_Centering_Noise/output_13_0.png)
 
 
 Again, on the right histogram, `True` = 1 and `False` = 0.
@@ -639,7 +638,7 @@ plt.xlabel('number of rooms')
 
 
 
-![](img/k-NN_linear_regression/output_40_1.png)
+![](img/Scaling_Centering_Noise/output_40_1.png)
 
 
 
@@ -668,7 +667,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_42_0.png)
+![](img/Scaling_Centering_Noise/output_42_0.png)
 
 
 # Logistic regression (Logit)
@@ -758,7 +757,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_48_0.png)
+![](img/Scaling_Centering_Noise/output_48_0.png)
 
 
 ## With the Wine dataset
@@ -910,7 +909,7 @@ plt.show() # facultative in Jypyter
 ```
 
 
-![](img/k-NN_linear_regression/output_55_0.png)
+![](img/Scaling_Centering_Noise/output_55_0.png)
 
 
 Let us turn it into a two-category variable consisting of 'good' (rating > 5) & 'bad' (rating <= 5) qualities.
@@ -1230,7 +1229,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_81_0.png)
+![](img/Scaling_Centering_Noise/output_81_0.png)
 
 
 Plot histograms of the features.
@@ -1255,7 +1254,7 @@ pd.DataFrame.hist(df, figsize=(20,5))
 
 
 
-![](img/k-NN_linear_regression/output_83_1.png)
+![](img/Scaling_Centering_Noise/output_83_1.png)
 
 
 Split into test & train sets, and plot both sets (train set > test set; 80/20).
@@ -1284,7 +1283,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_86_0.png)
+![](img/Scaling_Centering_Noise/output_86_0.png)
 
 
 ## k-Nearest Neighbours
@@ -1430,7 +1429,7 @@ plt.show()
 ```
 
 
-![](img/k-NN_linear_regression/output_101_0.png)
+![](img/Scaling_Centering_Noise/output_101_0.png)
 
 
 
@@ -1491,7 +1490,7 @@ ax.scatter(Xn[:,0], Xn[:,1], Xn[:,2], c = y)
 
 
 
-![](img/k-NN_linear_regression/output_106_1.png)
+![](img/Scaling_Centering_Noise/output_106_1.png)
 
 
 ### Run the k-NN and measure the performance
@@ -1639,7 +1638,7 @@ plt.legend(loc=3);
 ```
 
 
-![](img/k-NN_linear_regression/output_120_0.png)
+![](img/Scaling_Centering_Noise/output_120_0.png)
 
 
 

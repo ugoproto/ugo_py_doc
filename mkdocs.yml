@@ -74,7 +74,7 @@ nav:
     - Importing Data: 'Importing Data into Python.md'
     - Introduction to Customer Segmentation: 'Introduction_to_Customer_Segmentation_in_Python.md'
     - Introduction to data.world: 'Intro to data.world in Python.md'
-    - k-NN, Linear regression, Logit, Scaling, Centering, Noise: 'k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md'
+    - Scaling, Centering, Noise with kNN, Linear Regression, Logit: 'Scaling_Centering_Noise_with_kNN_Linear_Regression_Logit.md'
     - Overview of scikit-learn: 'Overview_of_scikit-learn.md'
     - Python and Excel: 'Python+And+Excel.md'
     - Sentiment Analysis with Twitter: 'Sentiment_Analysis_with_Twitter.md'

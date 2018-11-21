@@ -7,9 +7,7 @@
 
 **Foreword**
 
-Code snippets and excerpts from the tutorial. Python 3. From DataCamp.
-With Jupyter Notebook and the `In [ ]` `Out [ ]` format.
-Some images can only be simulated with Jupyter since they are are interactive.
+Code snippets and excerpts from the tutorial. Python 3. From DataCamp. Some images can only be simulated with Jupyter since they are are interactive.
 
 ---
 
