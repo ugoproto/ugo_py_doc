@@ -13,7 +13,7 @@
         <meta name="description" content="A Python documentation website.">
       
       
-        <link rel="canonical" href="https://ugoproto.github.io/ugo_py_doc/k-NN_Linear_regression_Logit_Scaling_Centering_Noise/">
+        <link rel="canonical" href="https://ugoproto.github.io/ugo_py_doc/Scaling_Centering_Noise_with_kNN_Linear_Regression_Logit/">
       
       
         <meta name="author" content="Ugo Sparks">
@@ -42,7 +42,7 @@
     
     
       
-        <title>k-NN, Linear regression, Logit, Scaling, Centering, Noise - ugo_py_doc</title>
+        <title>Scaling, Centering, Noise with kNN, Linear Regression, Logit - ugo_py_doc</title>
       
     
     
@@ -130,7 +130,7 @@
                 ugo_py_doc
               </span>
               <span class="md-header-nav__topic">
-                k-NN, Linear regression, Logit, Scaling, Centering, Noise
+                Scaling, Centering, Noise with kNN, Linear Regression, Logit
               </span>
             
           
@@ -551,11 +551,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        k-NN, Linear regression, Logit, Scaling, Centering, Noise
+        Scaling, Centering, Noise with kNN, Linear Regression, Logit
       </label>
     
-    <a href="./" title="k-NN, Linear regression, Logit, Scaling, Centering, Noise" class="md-nav__link md-nav__link--active">
-      k-NN, Linear regression, Logit, Scaling, Centering, Noise
+    <a href="./" title="Scaling, Centering, Noise with kNN, Linear Regression, Logit" class="md-nav__link md-nav__link--active">
+      Scaling, Centering, Noise with kNN, Linear Regression, Logit
     </a>
     
       
@@ -1308,10 +1308,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/k-NN_Linear_regression_Logit_Scaling_Centering_Noise.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/Scaling_Centering_Noise_with_kNN_Linear_Regression_Logit.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>k-NN, Linear regression, Logit, Scaling, Centering, Noise</h1>
+                  <h1>Scaling, Centering, Noise with kNN, Linear Regression, Logit</h1>
                 
                 <!--
 ---
@@ -1321,8 +1321,7 @@
 
 <hr />
 <p><strong>Foreword</strong></p>
-<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.<br />
-With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class="codehilite">Out [ ]</code> format.</p>
+<p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
 <hr />
 <h3 id="load-and-explore-the-wine-dataset">Load and explore the Wine dataset<a class="headerlink" href="#load-and-explore-the-wine-dataset" title="Permanent link">&para;</a></h3>
 <p>We use the <a href="http://archive.ics.uci.edu/ml/datasets/Wine+Quality">wine quality dataset</a> related to red and white vinho verde wine samples, from the north of Portugal.</p>
@@ -1503,7 +1502,7 @@ With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_8_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_8_0.png" /></p>
 <p>Notice the range of each variable; some are wider.</p>
 <p>Any algorithm, such as k-NN, which cares about the distance between data points. This motivates scaling our data.</p>
 <p>Let us turn it into a two-category variable consisting of &lsquo;good&rsquo; (rating &gt; 5) &amp; &lsquo;bad&rsquo; (rating &lt;= 5) qualities.</p>
@@ -1562,7 +1561,7 @@ With Jupyter Notebook and the <code class="codehilite">In [ ]</code> <code class
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_13_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_13_0.png" /></p>
 <p>Again, on the right histogram, <code class="codehilite">True</code> = 1 and <code class="codehilite">False</code> = 0.</p>
 <h3 id="k-nearest-neighbours">k-Nearest Neighbours<a class="headerlink" href="#k-nearest-neighbours" title="Permanent link">&para;</a></h3>
 <h4 id="measure-performance">Measure performance<a class="headerlink" href="#measure-performance" title="Permanent link">&para;</a></h4>
@@ -2125,7 +2124,7 @@ avg / total       0.71      0.71      0.71       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_40_1.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_40_1.png" /></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -2154,7 +2153,7 @@ avg / total       0.71      0.71      0.71       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_42_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_42_0.png" /></p>
 <h3 id="logistic-regression-logit">Logistic regression (Logit)<a class="headerlink" href="#logistic-regression-logit" title="Permanent link">&para;</a></h3>
 <h4 id="with-random-numbers">With random numbers<a class="headerlink" href="#with-random-numbers" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -2261,7 +2260,7 @@ avg / total       0.71      0.71      0.71       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_48_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_48_0.png" /></p>
 <h4 id="with-the-wine-dataset">With the Wine dataset<a class="headerlink" href="#with-the-wine-dataset" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2416,7 +2415,7 @@ avg / total       0.71      0.71      0.71       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_55_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_55_0.png" /></p>
 <p>Let us turn it into a two-category variable consisting of &lsquo;good&rsquo; (rating &gt; 5) &amp; &lsquo;bad&rsquo; (rating &lt;= 5) qualities.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2844,7 +2843,7 @@ avg / total       0.74      0.74      0.74       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_81_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_81_0.png" /></p>
 <p>Plot histograms of the features.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2868,7 +2867,7 @@ avg / total       0.74      0.74      0.74       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_83_1.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_83_1.png" /></p>
 <p>Split into test &amp; train sets, and plot both sets (train set &gt; test set; 80/20).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2904,7 +2903,7 @@ avg / total       0.74      0.74      0.74       320
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_86_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_86_0.png" /></p>
 <h4 id="k-nearest-neighbours_1">k-Nearest Neighbours<a class="headerlink" href="#k-nearest-neighbours_1" title="Permanent link">&para;</a></h4>
 <p>Let’s instantiate a k-Nearest Neighbours classifier and train it on our train set.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -3085,7 +3084,7 @@ avg / total       0.94      0.94      0.94      1600
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_101_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_101_0.png" /></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">knn_model_s</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">Xs_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
@@ -3153,7 +3152,7 @@ avg / total       0.94      0.94      0.94      1600
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_106_1.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_106_1.png" /></p>
 <h5 id="run-the-k-nn-and-measure-the-performance">Run the k-NN and measure the performance<a class="headerlink" href="#run-the-k-nn-and-measure-the-performance" title="Permanent link">&para;</a></h5>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -3342,7 +3341,7 @@ avg / total       0.94      0.94      0.94      1600
 </pre></div>
 </td></tr></table>
 
-<p><img alt="" src="../img/k-NN_linear_regression/output_120_0.png" /></p>
+<p><img alt="" src="../img/Scaling_Centering_Noise/output_120_0.png" /></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">A1</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">A2</span><span class="p">)</span>
