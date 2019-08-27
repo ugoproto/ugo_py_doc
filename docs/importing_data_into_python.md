@@ -220,7 +220,7 @@ show()
     [ 0.     0.357]
 
 
-![png](../img/importing_data_into_python/output_18_1.png)
+![png](img/importing_data_into_python/output_18_1.png)
 
 - Import a csv file. Format the data.
 
@@ -388,7 +388,7 @@ plt.ylabel('count')
 plt.show()
 ```
 
-![png](../img/importing_data_into_python/output_38_0.png)
+![png](img/importing_data_into_python/output_38_0.png)
 
 # Importing from Other Files
 
@@ -599,7 +599,7 @@ plt.show()
 Image('p.png')
 ```
 
-![png](../img/importing_data_into_python/output_57_0.png)
+![png](img/importing_data_into_python/output_57_0.png)
 
 **Stata files**
 
@@ -649,7 +649,7 @@ plt.ylabel('Number of coutries')
 plt.show()
 ```
 
-![png](../img/importing_data_into_python/output_61_0.png)
+![png](img/importing_data_into_python/output_61_0.png)
 
 **HDF5 files**
 
@@ -705,7 +705,7 @@ plt.show()
 Image('strain.png')
 ```
 
-![png](../img/importing_data_into_python/output_63_0.png)
+![png](img/importing_data_into_python/output_63_0.png)
 
 **MATLAB**
 
@@ -747,7 +747,7 @@ plt.show()
 Image('CYratioCyt.png')
 ```
 
-![png](../img/importing_data_into_python/output_65_0.png)
+![png](img/importing_data_into_python/output_65_0.png)
 
 
 # Working with Relational Databases
@@ -1039,7 +1039,7 @@ plt.show()
     3      9.8        6  
     4      9.4        5  
  
-![png](../img/importing_data_into_python/output_73_1.png)
+![png](img/importing_data_into_python/output_73_1.png)
 
 **Using the `urllib` package on Excel files**
 
@@ -1733,5 +1733,5 @@ from IPython.display import Image
 Image('tweets_figure.png')
 ```
 
-![png](../img/importing_data_into_python/output_99_0.png)
+![png](img/importing_data_into_python/output_99_0.png)
 
