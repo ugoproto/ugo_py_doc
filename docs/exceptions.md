@@ -1,16 +1,3 @@
-<!--
----
-
-[TOC]
--->
----
-
-**Foreword**
-
-Notes.
-
----
-
 # Understanding Python Exception
 
 [Python built-in exceptions](https://docs.python.org/3/library/exceptions.html)
