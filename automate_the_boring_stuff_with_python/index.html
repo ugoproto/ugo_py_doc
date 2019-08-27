@@ -1,0 +1,1599 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Python documentation website.">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Automate the Boring Stuff with Python - ugo_py_doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffa000">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#chapter-2-flow-control" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="ugo_py_doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">layers</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                ugo_py_doc
+              </span>
+              <span class="md-header-nav__topic">
+                Automate the Boring Stuff with Python
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="ugo_py_doc" class="md-nav__button md-logo">
+      
+        <i class="md-icon">layers</i>
+      
+    </a>
+    ugo_py_doc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../py_cs/" title="Python Cheat Sheets" class="md-nav__link">
+      Python Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../databases/" title="Databases" class="md-nav__link">
+      Databases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../datetime/" title="Datetime" class="md-nav__link">
+      Datetime
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exceptions/" title="Exceptions" class="md-nav__link">
+      Exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../freeze_the_code/" title="Freeze the Code" class="md-nav__link">
+      Freeze the Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gedit_execute_highlighted_python_code/" title="Gedit, Execute Highlighted Code" class="md-nav__link">
+      Gedit, Execute Highlighted Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_nice_to_have/" title="Python Nice to Have" class="md-nav__link">
+      Python Nice to Have
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Scipy Stack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Scipy Stack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jn_cs/" title="Jupyter Notebook Cheat Sheets" class="md-nav__link">
+      Jupyter Notebook Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scipy_cs/" title="Scipy Stack Cheat Sheets" class="md-nav__link">
+      Scipy Stack Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eda_machine_learning_feature_engineering_and_kaggle/" title="EDA, Machine Learning, Feature Engineering, and Kaggle" class="md-nav__link">
+      EDA, Machine Learning, Feature Engineering, and Kaggle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exploratory_data_analysis/" title="Exploratory Data Analysis (EDA)" class="md-nav__link">
+      Exploratory Data Analysis (EDA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature_selection_in_python/" title="Feature Selection" class="md-nav__link">
+      Feature Selection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geospatial_data_in_python/" title="Geospatial Data" class="md-nav__link">
+      Geospatial Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../importing_data_into_python/" title="Importing Data" class="md-nav__link">
+      Importing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction_to_customer_segmentation_in_python/" title="Introduction to Customer Segmentation" class="md-nav__link">
+      Introduction to Customer Segmentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../intro_to_data_world_in_python/" title="Introduction to data.world" class="md-nav__link">
+      Introduction to data.world
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview_of_scikit_learn/" title="Overview of scikit-learn" class="md-nav__link">
+      Overview of scikit-learn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_and_excel/" title="Python and Excel" class="md-nav__link">
+      Python and Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scaling_centering_noise_with_knn_linear_regression_logit/" title="Scaling, Centering, Noise with kNN, Linear Regression, Logit" class="md-nav__link">
+      Scaling, Centering, Noise with kNN, Linear Regression, Logit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sentiment_analysis_with_twitter/" title="Sentiment Analysis with Twitter" class="md-nav__link">
+      Sentiment Analysis with Twitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../time_series_analysis/" title="Time Series Analysis" class="md-nav__link">
+      Time Series Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vectors_and_arrays_linear_algebra/" title="Vectors and Arrays (Linear Algebra)" class="md-nav__link">
+      Vectors and Arrays (Linear Algebra)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../viewing_3d_volumetric_data_with_matplotlib/" title="Viewing 3D Volumetric Data with Matplotlib" class="md-nav__link">
+      Viewing 3D Volumetric Data with Matplotlib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../write_idiomatic_pandas_code/" title="Write Idiomatic Pandas Code" class="md-nav__link">
+      Write Idiomatic Pandas Code
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apprenez_a_programmer_en_python/" title="Apprenez à programmer en Python" class="md-nav__link">
+      Apprenez à programmer en Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Automate the Boring Stuff with Python
+      </label>
+    
+    <a href="./" title="Automate the Boring Stuff with Python" class="md-nav__link md-nav__link--active">
+      Automate the Boring Stuff with Python
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-flow-control" title="Chapter 2, Flow Control" class="md-nav__link">
+    Chapter 2, Flow Control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-functions" title="Chapter 3, Functions" class="md-nav__link">
+    Chapter 3, Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-lists-and-tuples" title="Chapter 4, Lists (and Tuples)" class="md-nav__link">
+    Chapter 4, Lists (and Tuples)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-dictionaries-and-structuring-data" title="Chapter 5, Dictionaries and Structuring Data" class="md-nav__link">
+    Chapter 5, Dictionaries and Structuring Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-manipulating-strings" title="Chapter 6, Manipulating Strings" class="md-nav__link">
+    Chapter 6, Manipulating Strings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-pattern-matching-and-regular-expressions" title="Chapter 7, Pattern Matching and Regular Expressions" class="md-nav__link">
+    Chapter 7, Pattern Matching and Regular Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-8-reading-and-writing-files" title="Chapter 8, Reading and Writing Files" class="md-nav__link">
+    Chapter 8, Reading and Writing Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-9-organizing-files" title="Chapter 9, Organizing Files" class="md-nav__link">
+    Chapter 9, Organizing Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-10-debugging" title="Chapter 10, Debugging" class="md-nav__link">
+    Chapter 10, Debugging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-11-web-scraping" title="Chapter 11, Web Scraping" class="md-nav__link">
+    Chapter 11, Web Scraping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-12-excel-spreadsheets" title="Chapter 12, Excel Spreadsheets" class="md-nav__link">
+    Chapter 12, Excel Spreadsheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-pdf-and-word-documents" title="Chapter 13, PDF and Word Documents" class="md-nav__link">
+    Chapter 13, PDF and Word Documents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-csv-files-and-json-data" title="Chapter 14, CSV Files and JSON Data" class="md-nav__link">
+    Chapter 14, CSV Files and JSON Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Chapter 15, Time, Scheduling Tasks, and Launching Programs" class="md-nav__link">
+    Chapter 15, Time, Scheduling Tasks, and Launching Programs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-16-sending-email-and-text-messages" title="Chapter 16, Sending Email and Text Messages" class="md-nav__link">
+    Chapter 16, Sending Email and Text Messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-17-manipulating-images" title="Chapter 17, Manipulating Images" class="md-nav__link">
+    Chapter 17, Manipulating Images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Chapter 18, Controlling the Keyboard and Mouse with GUI Automation" class="md-nav__link">
+    Chapter 18, Controlling the Keyboard and Mouse with GUI Automation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-a" title="Appendix A" class="md-nav__link">
+    Appendix A
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-b" title="Appendix B" class="md-nav__link">
+    Appendix B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-c" title="Appendix C" class="md-nav__link">
+    Appendix C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-content" title="Additional Content" class="md-nav__link">
+    Additional Content
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../codecademy_python/" title="Codecademy Python" class="md-nav__link">
+      Codecademy Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learn_python_the_hard_way/" title="Learn Python the Hard Way" class="md-nav__link">
+      Learn Python the Hard Way
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lpthw_python_code_snippets/" title="LPTHW, Python Code Snippets" class="md-nav__link">
+      LPTHW, Python Code Snippets
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Manuals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Manuals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../managing_your_biological_data_with_python/" title="Managing Your Biological Data with Python" class="md-nav__link">
+      Managing Your Biological Data with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_for_education/" title="Python for Education" class="md-nav__link">
+      Python for Education
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-2-flow-control" title="Chapter 2, Flow Control" class="md-nav__link">
+    Chapter 2, Flow Control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-3-functions" title="Chapter 3, Functions" class="md-nav__link">
+    Chapter 3, Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-4-lists-and-tuples" title="Chapter 4, Lists (and Tuples)" class="md-nav__link">
+    Chapter 4, Lists (and Tuples)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-5-dictionaries-and-structuring-data" title="Chapter 5, Dictionaries and Structuring Data" class="md-nav__link">
+    Chapter 5, Dictionaries and Structuring Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-6-manipulating-strings" title="Chapter 6, Manipulating Strings" class="md-nav__link">
+    Chapter 6, Manipulating Strings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-7-pattern-matching-and-regular-expressions" title="Chapter 7, Pattern Matching and Regular Expressions" class="md-nav__link">
+    Chapter 7, Pattern Matching and Regular Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-8-reading-and-writing-files" title="Chapter 8, Reading and Writing Files" class="md-nav__link">
+    Chapter 8, Reading and Writing Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-9-organizing-files" title="Chapter 9, Organizing Files" class="md-nav__link">
+    Chapter 9, Organizing Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-10-debugging" title="Chapter 10, Debugging" class="md-nav__link">
+    Chapter 10, Debugging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-11-web-scraping" title="Chapter 11, Web Scraping" class="md-nav__link">
+    Chapter 11, Web Scraping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-12-excel-spreadsheets" title="Chapter 12, Excel Spreadsheets" class="md-nav__link">
+    Chapter 12, Excel Spreadsheets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-13-pdf-and-word-documents" title="Chapter 13, PDF and Word Documents" class="md-nav__link">
+    Chapter 13, PDF and Word Documents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-14-csv-files-and-json-data" title="Chapter 14, CSV Files and JSON Data" class="md-nav__link">
+    Chapter 14, CSV Files and JSON Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Chapter 15, Time, Scheduling Tasks, and Launching Programs" class="md-nav__link">
+    Chapter 15, Time, Scheduling Tasks, and Launching Programs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-16-sending-email-and-text-messages" title="Chapter 16, Sending Email and Text Messages" class="md-nav__link">
+    Chapter 16, Sending Email and Text Messages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-17-manipulating-images" title="Chapter 17, Manipulating Images" class="md-nav__link">
+    Chapter 17, Manipulating Images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Chapter 18, Controlling the Keyboard and Mouse with GUI Automation" class="md-nav__link">
+    Chapter 18, Controlling the Keyboard and Mouse with GUI Automation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-a" title="Appendix A" class="md-nav__link">
+    Appendix A
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-b" title="Appendix B" class="md-nav__link">
+    Appendix B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-c" title="Appendix C" class="md-nav__link">
+    Appendix C
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-content" title="Additional Content" class="md-nav__link">
+    Additional Content
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/automate_the_boring_stuff_with_python.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Automate the Boring Stuff with Python</h1>
+                
+                <p><strong>Foreword</strong></p>
+<p>Notes. Python 3. From No Starch Press, 2015. Creative Commons. More at:</p>
+<ul>
+<li>Online at <a href="https://automatetheboringstuff.com/">automatetheboringstuff.com</a></li>
+<li>More at <a href="http://inventwithpython.com/hacking/chapters/">Invent with Python.com</a><ul>
+<li><a href="http://inventwithpython.com/index.html">Books</a>:<ul>
+<li>Develop video games!</li>
+<li>Make games with graphics!</li>
+<li>Encrypt messages and hack ciphers!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="chapter-2-flow-control">Chapter 2, Flow Control<a class="headerlink" href="#chapter-2-flow-control" title="Permanent link">&para;</a></h2>
+<p><sub>boolean, comparison, operator, flow control, condition, conditional, loop</sub></p>
+<ul>
+<li><code class="codehilite">True</code>, <code class="codehilite">False</code>.</li>
+<li><code class="codehilite">and</code>, <code class="codehilite">or</code>, <code class="codehilite">not</code>.</li>
+<li><code class="codehilite">==</code>, <code class="codehilite">!=</code>, <code class="codehilite">&lt;</code>, <code class="codehilite">&gt;</code>, etc.</li>
+<li><code class="codehilite">if</code>, <code class="codehilite">else</code>, <code class="codehilite">elif</code></li>
+<li>Loops: <code class="codehilite">while</code>, <code class="codehilite">for</code> with <code class="codehilite">in</code>, <code class="codehilite">range</code>.</li>
+<li><code class="codehilite">break</code>, <code class="codehilite">continue</code>.</li>
+<li><code class="codehilite"><span class="kn">import</span> <span class="nn">random</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">math</span></code>.</li>
+<li><code class="codehilite">random.randint</code>.</li>
+<li><code class="codehilite"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span></code>.</li>
+<li><code class="codehilite">sys.exit()</code>.</li>
+</ul>
+<h2 id="chapter-3-functions">Chapter 3, Functions<a class="headerlink" href="#chapter-3-functions" title="Permanent link">&para;</a></h2>
+<p><sub>global, local, variable, scope</sub></p>
+<p>Exception handling with <code class="codehilite">try:</code> and <code class="codehilite">except</code>.</p>
+<h2 id="chapter-4-lists-and-tuples">Chapter 4, Lists (and Tuples)<a class="headerlink" href="#chapter-4-lists-and-tuples" title="Permanent link">&para;</a></h2>
+<p><sub>data type, index, sublist, subset, slice,  change, concatenate, concatenation, tuple, convert, tuple to list</sub></p>
+<ul>
+<li><code class="codehilite">len()</code> function; length.</li>
+<li><code class="codehilite">in</code> and <code class="codehilite">not in</code> operators.</li>
+<li><code class="codehilite">+=</code>, <code class="codehilite">-=</code>, <code class="codehilite">*=</code>, <code class="codehilite">/=</code>, <code class="codehilite"><span class="c">%=</span></code> augmented assignments.</li>
+<li><code class="codehilite">index()</code> method; extract the position of an element.</li>
+<li><code class="codehilite">append()</code> method.</li>
+<li><code class="codehilite">insert()</code> method.</li>
+<li><code class="codehilite">remove()</code> method.</li>
+<li><code class="codehilite">sort()</code> method.</li>
+<li><code class="codehilite">copy</code> module and <code class="codehilite">copy()</code> method.</li>
+<li><code class="codehilite">deepcopy()</code> method; for inner list or a list of lists (ensure the key exists).</li>
+</ul>
+<h2 id="chapter-5-dictionaries-and-structuring-data">Chapter 5, Dictionaries and Structuring Data<a class="headerlink" href="#chapter-5-dictionaries-and-structuring-data" title="Permanent link">&para;</a></h2>
+<p><sub>loop</sub></p>
+<p>Dictionaries are not indexed and ordered like lists.</p>
+<ul>
+<li><code class="codehilite">keys()</code> method; extract keys.</li>
+<li><code class="codehilite">values()</code> method; extract values.</li>
+<li><code class="codehilite">items()</code> method; extract both.</li>
+<li><code class="codehilite">get()</code> method; check out both.</li>
+<li><code class="codehilite">in</code> and <code class="codehilite">not in</code> operators. </li>
+<li><code class="codehilite">setdefault()</code> method, check out a key and set value to a key.</li>
+</ul>
+<p>Pretty print with the <code class="codehilite">pprint()</code> and <code class="codehilite">pformat()</code> functions.</p>
+<p>Nested dictionaries and lists.</p>
+<h2 id="chapter-6-manipulating-strings">Chapter 6, Manipulating Strings<a class="headerlink" href="#chapter-6-manipulating-strings" title="Permanent link">&para;</a></h2>
+<p>Escape character: <code class="codehilite">\</code>: <code class="codehilite">\&#39;</code>, <code class="codehilite">\&quot;</code>, <code class="codehilite">\t</code>, <code class="codehilite">\n</code>, <code class="codehilite">\\</code>.</p>
+<p>Raw strings: <code class="codehilite">print(r&#39;That is Carol&#39;)</code>.</p>
+<p>Triple quotes:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;Dear Alice,</span>
+<span class="s1">bla-bla-bla</span>
+<span class="s1">cheers&#39;&#39;&#39;</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;Dear Alice,</span>
+<span class="s2">bla-bla-bla</span>
+<span class="s2">cheers&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<p>Comment: <code class="codehilite">#</code>.<br />
+Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quot;</code>.</p>
+<ul>
+<li>Slice, subset with <code class="codehilite">[:]</code>.</li>
+<li><code class="codehilite">in</code> and <code class="codehilite">not in</code> operators.</li>
+<li><code class="codehilite">lower()</code> method.</li>
+<li><code class="codehilite">upper()</code> method.</li>
+<li><code class="codehilite">capitalize()</code> method.</li>
+<li><code class="codehilite">is</code> method; check if x is part of y.</li>
+<li><code class="codehilite">islower()</code> method.</li>
+<li><code class="codehilite">isupper()</code> method.</li>
+<li><code class="codehilite">isalpha()</code> method; check letters, not blank.</li>
+<li><code class="codehilite">isalnum()</code> method; check letters and numbers, and not blank.</li>
+<li><code class="codehilite">isdecimal()</code> method; check numeric characters and not blank.</li>
+<li><code class="codehilite">isspace()</code> method; check spaces, tabs and new lines and not blank.</li>
+<li><code class="codehilite">istitle()</code> method; check if it begins with an uppercase letter followed with lowercase letters.</li>
+<li><code class="codehilite">startwith()</code> method; check if a string begins with a string of characters.</li>
+<li><code class="codehilite">endwith()</code> method; idem.</li>
+<li><code class="codehilite">join()</code> method; concatenate.</li>
+<li><code class="codehilite">split()</code> method.</li>
+<li><code class="codehilite">rjust()</code> method; justify.</li>
+<li><code class="codehilite">ljust()</code> method justify.</li>
+<li><code class="codehilite">center()</code> method.</li>
+<li><code class="codehilite">strip()</code> method; remove white space.</li>
+<li><code class="codehilite">rstrip()</code> method; ; remove white space to the right.</li>
+<li><code class="codehilite">lstrip()</code> method; remove white space to the left.</li>
+</ul>
+<p><code class="codehilite">pyperclip</code> module.</p>
+<p>The <code class="codehilite">pyperclip.pyclip</code> function send text to and receive text from the clipboard:</p>
+<p>In addition:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pyperclip</span>
+
+<span class="n">pyperclip</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
+<span class="n">pyperclip</span><span class="o">.</span><span class="n">paste</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="chapter-7-pattern-matching-and-regular-expressions">Chapter 7, Pattern Matching and Regular Expressions<a class="headerlink" href="#chapter-7-pattern-matching-and-regular-expressions" title="Permanent link">&para;</a></h2>
+<p><sub>patterns of text, with, without regular expression, regex, object, match, matching, group, grouping, pipe, question mark, star, ?, *, plus, +, curly bracket, {, }, character class, digit, numeric, letter, underscore, space, tab, newline, caret, ^, dollar sign, $, wildcard, dot, ., dotstar, newline, symbols, case-sensitive, case-insensitive</sub></p>
+<p><code class="codehilite">re</code> module.</p>
+<ul>
+<li><code class="codehilite">re.compile()</code> method; find a single occurrence.</li>
+<li><code class="codehilite">re.findall()</code> method; find all occurrences.</li>
+<li><code class="codehilite">sub()</code> method; substitute.</li>
+<li><code class="codehilite">re.IGNORECASE</code>; ignore capitalization with the <code class="codehilite">compile()</code> method.</li>
+<li><code class="codehilite">re.DOTALL</code>; ignore dots with the <code class="codehilite">re.compile()</code> method.</li>
+<li><code class="codehilite">re.VERBOSE</code>; write comment with the <code class="codehilite">re.compile()</code> method.</li>
+</ul>
+<h2 id="chapter-8-reading-and-writing-files">Chapter 8, Reading and Writing Files<a class="headerlink" href="#chapter-8-reading-and-writing-files" title="Permanent link">&para;</a></h2>
+<p><sub>file, file path, filename</sub></p>
+<p><code class="codehilite">os</code> module.</p>
+<ul>
+<li>A relative path: <code class="codehilite"><span class="cp">..\eggs\spam.txt</span></code>, <code class="codehilite">.\fizz\spam.txt</code>.</li>
+<li>An absolute path: <code class="codehilite">C:\bacon\fizz\spam.txt</code>.</li>
+<li><code class="codehilite">os.getcwd()</code> or <code class="codehilite">os.chdir()</code> functions; extract the current working directory.</li>
+<li><code class="codehilite">os.makedir()</code>function; create a new folder.</li>
+</ul>
+<p><code class="codehilite">os.path</code> module. </p>
+<p>Handle absolute and relative paths. Find file sizes and folder contents. Check path validity.</p>
+<p>Windows: backslash or <code class="codehilite">\</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<p>Yields:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s1">&#39;usr</span><span class="se">\\</span><span class="s1">bin</span><span class="se">\\</span><span class="s1">spam&#39;</span>
+</pre></div>
+</td></tr></table>
+
+<p>UNIX: forwardslash or <code class="codehilite">/</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<p>Yields:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s1">&#39;usr/bin/spam&#39;</span>
+</pre></div>
+</td></tr></table>
+
+<p>Read and write files:</p>
+<ul>
+<li><code class="codehilite">os.path.open()</code> function.</li>
+<li><code class="codehilite">os.path.read()</code> method.</li>
+<li><code class="codehilite">os.path.readline()</code> method.</li>
+<li><code class="codehilite">os.path.write()</code> method.</li>
+<li><code class="codehilite">os.path.close()</code> method.</li>
+</ul>
+<p><code class="codehilite">shelve</code> module.</p>
+<p>Handle binary files.</p>
+<p><code class="codehilite">pprint</code> module. </p>
+<p>Pretty printing:</p>
+<ul>
+<li><code class="codehilite">pprint.pprint()</code>.</li>
+<li><code class="codehilite">pprint.pformat()</code>.</li>
+</ul>
+<h2 id="chapter-9-organizing-files">Chapter 9, Organizing Files<a class="headerlink" href="#chapter-9-organizing-files" title="Permanent link">&para;</a></h2>
+<p><sub>pdf, every sub-folder, folder, foldername, subfolder, filename, file, remove, zero, change titles, compress, decompress, zip, unzip</sub></p>
+<p><code class="codehilite">shutil</code> module. </p>
+<p>Copy, move, rename, and delete files and folders. <code class="codehilite">shutil.rmtree()</code> function; delete file and folder.</p>
+<p><code class="codehilite">os</code> module. </p>
+<p>Delete, empty, remove files and folders, and change the path. <code class="codehilite">os.walk()</code> method; walk the tree directory.</p>
+<p><code class="codehilite">send2trash</code> module. </p>
+<p>Delete files and folders, but much safer.</p>
+<p><code class="codehilite">zipfile</code> module. </p>
+<p>Compress and uncompress. Read the content of compressed and zipped files.</p>
+<ul>
+<li><code class="codehilite">zipfile.extracall()</code>; method  extracts all the files and folders from a zip file.</li>
+<li><code class="codehilite">write()</code> method; create a zip file.</li>
+</ul>
+<h2 id="chapter-10-debugging">Chapter 10, Debugging<a class="headerlink" href="#chapter-10-debugging" title="Permanent link">&para;</a></h2>
+<p>Handle errors with <code class="codehilite">try</code> and <code class="codehilite">except</code>.</p>
+<p>Raise exceptions with a <code class="codehilite">raise</code> statement and the <code class="codehilite">Exception()</code> function.</p>
+<p><code class="codehilite">traceback</code> module. </p>
+<p>Discover what and how an error happens and obtain it as a string with the <code class="codehilite">traceback.format_exc()</code> method. </p>
+<p>An assertion is a sanity check performed with an <code class="codehilite">assert</code> statement. </p>
+<p><code class="codehilite">logging</code> module. </p>
+<p>Display log messages as the program runs. Log to a file. Debug a code. Enable and disable logging. Enable an IDLE debugger.</p>
+<p>Set a <code class="codehilite">breakpoint</code> to check out potential bugs.</p>
+<h2 id="chapter-11-web-scraping">Chapter 11, Web Scraping<a class="headerlink" href="#chapter-11-web-scraping" title="Permanent link">&para;</a></h2>
+<p><sub>html</sub></p>
+<p><code class="codehilite">webbrowser</code> module.</p>
+<p>Open a browser to a specific webpage (in conjunction with the <code class="codehilite">sys</code> module). </p>
+<p>Use:</p>
+<ul>
+<li>Get a street address from the command line to the clipboard.</li>
+<li>Go to a Google Maps page.</li>
+<li>Read command line arguments from <code class="codehilite">sys.argv</code>.</li>
+<li>Read the clipboard content.</li>
+<li>Open all links on a page in separate tabs.</li>
+<li>Open the browser to the url for local weather.</li>
+<li>Open several social network sites.</li>
+</ul>
+<p><code class="codehilite">requests</code> module.</p>
+<p>Download files and webpages; similar to opening, reading, writing, closing files and folders. </p>
+<ul>
+<li>Simpler than the <code class="codehilite">urllib2</code> module.</li>
+<li>Can check out errors.</li>
+<li>Save the downloaded files.</li>
+</ul>
+<p>HTML crash course!</p>
+<p><code class="codehilite">bs4</code> module (BeautifulSoup).</p>
+<ul>
+<li><code class="codehilite">BeautifulSoup()</code> function; parses HTML. </li>
+<li><code class="codehilite">select()</code> method;  find an element. </li>
+<li>Get data from an element&rsquo;s attributes.</li>
+</ul>
+<p>Use:</p>
+<ul>
+<li>Search Google.</li>
+<li>Retrieve search results.</li>
+<li>Open tabs for each results.</li>
+<li>Read the command line arguments from <code class="codehilite">sys.argv</code>.</li>
+<li>Fetch results with the <code class="codehilite">requests</code> module.</li>
+<li>Find the links.</li>
+<li>Download all images, videos, files, etc.</li>
+<li>Back up an entire site by following all of its links.</li>
+<li>Copy all the messages off a web forum.</li>
+<li>Duplicate the catalogue of items for sale on an online store.</li>
+</ul>
+<p><code class="codehilite">selenium</code> module.</p>
+<p>Launches and controls a web browser. Fill and submit forms. Simulate mouse clicks. Find elements on a page. Click on a page. Send special keys.</p>
+<p>Combining modules :</p>
+<ul>
+<li>Command line emailer.</li>
+<li>Image site downloader.</li>
+<li>Link verification.</li>
+</ul>
+<h2 id="chapter-12-excel-spreadsheets">Chapter 12, Excel Spreadsheets<a class="headerlink" href="#chapter-12-excel-spreadsheets" title="Permanent link">&para;</a></h2>
+<p><code class="codehilite">openpyxl</code> module.</p>
+<p>Read Excel documents. Open Excel documents. Get sheets from a workbook. Get cells from the sheets. Convert letters and numbers. Get rows and columns from sheets. Write results to a file.</p>
+<p>Use:</p>
+<ul>
+<li>Compare data across multiple rows in a spreadsheet.</li>
+<li>Open multiple files and compare data.</li>
+<li>Check blank rows or invalid data in any cells.</li>
+<li>Read data and use it as the input for Python programs.</li>
+<li>Write Excel Documents.</li>
+<li>Create and save Excel documents.</li>
+<li>Create and remove sheets.</li>
+<li>Write values to cells.</li>
+<li>Update a spreadsheet.</li>
+<li>Read data from one spreadsheet and write it to parts of other spreadsheets.</li>
+<li>Read data from websites, text files, or the clipboard and write it to a spreadsheet.</li>
+<li>Clean up data, regular expressions.</li>
+<li>Set the font style, objects, formulas.</li>
+<li>Adjust rows and columns.</li>
+<li>Set row height and column width.</li>
+<li>Merge and unmerge cells.</li>
+<li>Freeze panes.</li>
+<li>Create charts.</li>
+<li>Insert blank rows.</li>
+<li>Convert text files to spreadsheets, vice-versa.</li>
+</ul>
+<h2 id="chapter-13-pdf-and-word-documents">Chapter 13, PDF and Word Documents<a class="headerlink" href="#chapter-13-pdf-and-word-documents" title="Permanent link">&para;</a></h2>
+<p><code class="codehilite">PyPDF2</code> module.</p>
+<p>Extract text from a PDF. Decrypt a PDF. Create PDF. Copy pages, rotate pages, overlay pages from a PDF. Add a logo, a timestamp, a watermark to a PDF.</p>
+<p>Use:</p>
+<ul>
+<li>Combine pages from many PDF.</li>
+<li>Cut out specific pages.</li>
+<li>Reorder pages.</li>
+<li>Create a PDF from only those pages that have some specific text.</li>
+</ul>
+<p><code class="codehilite">python-docx</code> module.</p>
+<p>Read word documents. Get the full text from a .docs file. Style paragraphs. Create word documents with nondefault styles. Write word documents. Add headings, lines, page breaks, and pictures. </p>
+<p>Use:</p>
+<ul>
+<li>PDF Paranoia or encrypting a bunch of files.</li>
+<li>Custom invitations in Word.</li>
+<li>Brute-force PDF password breaker.</li>
+</ul>
+<h2 id="chapter-14-csv-files-and-json-data">Chapter 14, CSV Files and JSON Data<a class="headerlink" href="#chapter-14-csv-files-and-json-data" title="Permanent link">&para;</a></h2>
+<p><code class="codehilite">csv</code> module.</p>
+<p>Read, open CSV. Split the file. Print CSV. Loop within a file or through many files. Write CSV. Change delimiters and lineterminators. Remove the header.</p>
+<p>Use:</p>
+<ul>
+<li>Compare data between different rows in a CSV file or between multiple CSV files.</li>
+<li>Copy specific data from a CSV file to an Excel file; vice-versa.</li>
+<li>Check for invalid data or formatting mistakes in CSV files and alert the user.</li>
+<li>Read data from CSV file as input for Python programs.</li>
+<li>Excel to CSV to Excel converter (in conjunction with the <code class="codehilite">openpyxl</code> module).</li>
+</ul>
+<p><code class="codehilite">json</code> module.</p>
+<p>Alike web scraping. API. Read,  load, write, dump data.</p>
+<p>Use:</p>
+<ul>
+<li>Fetch weather from a website.</li>
+<li>Collect weather forecasts for several campsites or hiking trails.</li>
+<li>Schedule a program to regularly check weather and send your a frost alert.</li>
+<li>Pull weather data from multiple sites to show all at once, or calculate and show the average of multiple weather predictions.</li>
+</ul>
+<h2 id="chapter-15-time-scheduling-tasks-and-launching-programs">Chapter 15, Time, Scheduling Tasks, and Launching Programs<a class="headerlink" href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Permanent link">&para;</a></h2>
+<p><code class="codehilite">time</code> module.</p>
+<p>Read the system clock for the current time. Pause a program (sleep). Round numbers.</p>
+<p>Use:</p>
+<ul>
+<li>Track how much time spent on tasks with a stopwatch.</li>
+<li>Record track times or lap times.</li>
+<li>Build a program that launches other programs on a schedule by using the <code class="codehilite">subprocess</code> and <code class="codehilite">threading</code> modules.</li>
+<li>Create a timesheet app that records when you enter data, and use the current time to clock them in or out.</li>
+<li>Add a feature to a program to display the elapsed time since a process started (in conjunction with the <code class="codehilite">requests</code> module).</li>
+<li>Check how long a program has been running and offer the user a chance to cancel tasks.</li>
+</ul>
+<p><code class="codehilite">datetime</code> module.</p>
+<p>Compute time and date delta. Retrieve a specific moment. Add a timestamp. Add pauses to a routine. Convert datetime object to strings. Convert strings to datetime objects.   </p>
+<p>Use:</p>
+<ul>
+<li>Multithreading; modify a program to use a function. Create and start threads (see above).</li>
+<li>Pass command line arguments.</li>
+<li>Task scheduler.</li>
+<li>Open websites (time event).</li>
+<li>Run Python scripts (time event).</li>
+<li>Open files (time event).</li>
+<li>Create a countdown program.</li>
+<li>Schedule downloader (time event).</li>
+</ul>
+<h2 id="chapter-16-sending-email-and-text-messages">Chapter 16, Sending Email and Text Messages<a class="headerlink" href="#chapter-16-sending-email-and-text-messages" title="Permanent link">&para;</a></h2>
+<p><sub>http, smtp, mail, imap</sub></p>
+<p><code class="codehilite">smtplib</code> module.</p>
+<p>Connect to an SMTP server. Log in. Search for emails. Send a message. Encrypt emails. Retrieve and delete emails. Disconnect from the SMTP server.</p>
+<p><code class="codehilite">imapclient</code> module.</p>
+<p>Connect to an IMAP server. Log in. Search for emails. Fetch an email and mark it as read. Get email addresses from a raw message. Get the body from a raw message. Delete emails. Disconnect from the IMAP server.</p>
+<p>Use:</p>
+<ul>
+<li>Send members dues reminders.</li>
+<li>Send text messages.</li>
+<li>Random emailer.</li>
+<li>&lsquo;Umbrella&rsquo; reminder (in conjunction with weather forecasts and the <code class="codehilite">requests</code> module).</li>
+<li>Auto-unsubscriber.</li>
+</ul>
+<p><code class="codehilite">twilio</code> module.</p>
+<p>Send text messages, SMS.</p>
+<h2 id="chapter-17-manipulating-images">Chapter 17, Manipulating Images<a class="headerlink" href="#chapter-17-manipulating-images" title="Permanent link">&para;</a></h2>
+<p>Color and RGBA crash course!</p>
+<p><code class="codehilite">PIL</code> module.</p>
+<p>Manipulate images with Pillow. Work with the image data type. Crop, copy, paste an image. Multiply images tiles. Resize, rotate, flip an image. Change pixels. Draw on images (points, lines, rectangles, ellipses, polygons, text). </p>
+<p>Use:</p>
+<ul>
+<li>Loop through a folder of images.</li>
+<li>Image batch processing: resizing, cropping, copying and pasting, rotating, etc.</li>
+<li>Adding a logo to several images.</li>
+<li>Identify the photo folders.</li>
+<li>Create custom cards with custom invitations in Word (see chapter 13).</li>
+</ul>
+<h2 id="chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation">Chapter 18, Controlling the Keyboard and Mouse with GUI Automation<a class="headerlink" href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Permanent link">&para;</a></h2>
+<p><sub>virtual keystrokes, mouse clicks</sub></p>
+<p><code class="codehilite">pyautogui</code> module and dependencies based of the OS in use.</p>
+<p>Shutdown the computer. Log out from a session. Pauses, fail-safes. Control mouse movements and move the mouse. Get the mouse position and control the mouse. Control the keyboard. Send a string from the keyboard. Type in key name. Press and release buttons. Activate hotkey.</p>
+<p>Use:</p>
+<ul>
+<li>Image recognition.</li>
+<li>Automatic form filler.</li>
+<li>Look busy!</li>
+<li>Instant messenger bot.</li>
+<li>Game-playing bot tutorial.</li>
+</ul>
+<h2 id="appendix-a">Appendix A<a class="headerlink" href="#appendix-a" title="Permanent link">&para;</a></h2>
+<ul>
+<li>PIP.</li>
+<li>Installing modules.</li>
+</ul>
+<h2 id="appendix-b">Appendix B<a class="headerlink" href="#appendix-b" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Running programs.</li>
+<li>Shebang line.</li>
+<li>On Windows.</li>
+<li>On UNIX.</li>
+</ul>
+<h2 id="appendix-c">Appendix C<a class="headerlink" href="#appendix-c" title="Permanent link">&para;</a></h2>
+<p>Answers from questions: chapter 2 to 18.</p>
+<h2 id="additional-content">Additional Content<a class="headerlink" href="#additional-content" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Download files used in the book.</li>
+<li>List of JSON API:<ul>
+<li>Twitter API.</li>
+<li>Facebook Social Graph API.</li>
+<li>Flickr.</li>
+<li>YouTube.</li>
+<li>OpenStreetMap.</li>
+<li>Google Maps.</li>
+<li>Imgur API.</li>
+<li>26 Weather APIs.</li>
+<li>Rotten Tomatoes.</li>
+<li>Reddit.</li>
+</ul>
+</li>
+<li>List of programming practice sites. (programming problems you can try to practice your coding skills).</li>
+<li>List of web comics.</li>
+<li>Schedulers (operating system scheduling process).</li>
+<li>How to do PyCon or any tech conference.</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../apprenez_a_programmer_en_python/" title="Apprenez à programmer en Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Apprenez à programmer en Python
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../codecademy_python/" title="Codecademy Python" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Codecademy Python
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+  </body>
+</html>

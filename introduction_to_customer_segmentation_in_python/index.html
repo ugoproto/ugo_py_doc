@@ -1,0 +1,1944 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="A Python documentation website.">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Introduction to Customer Segmentation - ugo_py_doc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ffa000">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#what-is-customer-segmentation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="ugo_py_doc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">layers</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                ugo_py_doc
+              </span>
+              <span class="md-header-nav__topic">
+                Introduction to Customer Segmentation
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="ugo_py_doc" class="md-nav__button md-logo">
+      
+        <i class="md-icon">layers</i>
+      
+    </a>
+    ugo_py_doc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      ugo_py_doc
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../py_cs/" title="Python Cheat Sheets" class="md-nav__link">
+      Python Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../databases/" title="Databases" class="md-nav__link">
+      Databases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../datetime/" title="Datetime" class="md-nav__link">
+      Datetime
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exceptions/" title="Exceptions" class="md-nav__link">
+      Exceptions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../freeze_the_code/" title="Freeze the Code" class="md-nav__link">
+      Freeze the Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gedit_execute_highlighted_python_code/" title="Gedit, Execute Highlighted Code" class="md-nav__link">
+      Gedit, Execute Highlighted Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_nice_to_have/" title="Python Nice to Have" class="md-nav__link">
+      Python Nice to Have
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Scipy Stack
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Scipy Stack
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jn_cs/" title="Jupyter Notebook Cheat Sheets" class="md-nav__link">
+      Jupyter Notebook Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scipy_cs/" title="Scipy Stack Cheat Sheets" class="md-nav__link">
+      Scipy Stack Cheat Sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eda_machine_learning_feature_engineering_and_kaggle/" title="EDA, Machine Learning, Feature Engineering, and Kaggle" class="md-nav__link">
+      EDA, Machine Learning, Feature Engineering, and Kaggle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exploratory_data_analysis/" title="Exploratory Data Analysis (EDA)" class="md-nav__link">
+      Exploratory Data Analysis (EDA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../feature_selection_in_python/" title="Feature Selection" class="md-nav__link">
+      Feature Selection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../geospatial_data_in_python/" title="Geospatial Data" class="md-nav__link">
+      Geospatial Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../importing_data_into_python/" title="Importing Data" class="md-nav__link">
+      Importing Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Introduction to Customer Segmentation
+      </label>
+    
+    <a href="./" title="Introduction to Customer Segmentation" class="md-nav__link md-nav__link--active">
+      Introduction to Customer Segmentation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-customer-segmentation" title="What is Customer Segmentation?" class="md-nav__link">
+    What is Customer Segmentation?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#need-of-customer-segmentation" title="Need of Customer Segmentation" class="md-nav__link">
+    Need of Customer Segmentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-segmentation" title="Types of Segmentation" class="md-nav__link">
+    Types of Segmentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-segmentation-using-rfm-analysis" title="Customer Segmentation using RFM analysis" class="md-nav__link">
+    Customer Segmentation using RFM analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rfm-in-python" title="RFM in Python" class="md-nav__link">
+    RFM in Python
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-data" title="Importing Data" class="md-nav__link">
+    Importing Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-insights" title="Data Insights" class="md-nav__link">
+    Data Insights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rfm-analysis" title="RFM Analysis" class="md-nav__link">
+    RFM Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computing-quantile-of-rfm-values" title="Computing Quantile of RFM values" class="md-nav__link">
+    Computing Quantile of RFM values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rfm-result-interpretation" title="RFM Result Interpretation" class="md-nav__link">
+    RFM Result Interpretation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../intro_to_data_world_in_python/" title="Introduction to data.world" class="md-nav__link">
+      Introduction to data.world
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview_of_scikit_learn/" title="Overview of scikit-learn" class="md-nav__link">
+      Overview of scikit-learn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_and_excel/" title="Python and Excel" class="md-nav__link">
+      Python and Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../scaling_centering_noise_with_knn_linear_regression_logit/" title="Scaling, Centering, Noise with kNN, Linear Regression, Logit" class="md-nav__link">
+      Scaling, Centering, Noise with kNN, Linear Regression, Logit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sentiment_analysis_with_twitter/" title="Sentiment Analysis with Twitter" class="md-nav__link">
+      Sentiment Analysis with Twitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../time_series_analysis/" title="Time Series Analysis" class="md-nav__link">
+      Time Series Analysis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vectors_and_arrays_linear_algebra/" title="Vectors and Arrays (Linear Algebra)" class="md-nav__link">
+      Vectors and Arrays (Linear Algebra)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../viewing_3d_volumetric_data_with_matplotlib/" title="Viewing 3D Volumetric Data with Matplotlib" class="md-nav__link">
+      Viewing 3D Volumetric Data with Matplotlib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../write_idiomatic_pandas_code/" title="Write Idiomatic Pandas Code" class="md-nav__link">
+      Write Idiomatic Pandas Code
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apprenez_a_programmer_en_python/" title="Apprenez à programmer en Python" class="md-nav__link">
+      Apprenez à programmer en Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../automate_the_boring_stuff_with_python/" title="Automate the Boring Stuff with Python" class="md-nav__link">
+      Automate the Boring Stuff with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../codecademy_python/" title="Codecademy Python" class="md-nav__link">
+      Codecademy Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../learn_python_the_hard_way/" title="Learn Python the Hard Way" class="md-nav__link">
+      Learn Python the Hard Way
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lpthw_python_code_snippets/" title="LPTHW, Python Code Snippets" class="md-nav__link">
+      LPTHW, Python Code Snippets
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Manuals
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Manuals
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../managing_your_biological_data_with_python/" title="Managing Your Biological Data with Python" class="md-nav__link">
+      Managing Your Biological Data with Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python_for_education/" title="Python for Education" class="md-nav__link">
+      Python for Education
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-customer-segmentation" title="What is Customer Segmentation?" class="md-nav__link">
+    What is Customer Segmentation?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#need-of-customer-segmentation" title="Need of Customer Segmentation" class="md-nav__link">
+    Need of Customer Segmentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-segmentation" title="Types of Segmentation" class="md-nav__link">
+    Types of Segmentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customer-segmentation-using-rfm-analysis" title="Customer Segmentation using RFM analysis" class="md-nav__link">
+    Customer Segmentation using RFM analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rfm-in-python" title="RFM in Python" class="md-nav__link">
+    RFM in Python
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importing-data" title="Importing Data" class="md-nav__link">
+    Importing Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-insights" title="Data Insights" class="md-nav__link">
+    Data Insights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rfm-analysis" title="RFM Analysis" class="md-nav__link">
+    RFM Analysis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computing-quantile-of-rfm-values" title="Computing Quantile of RFM values" class="md-nav__link">
+    Computing Quantile of RFM values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rfm-result-interpretation" title="RFM Result Interpretation" class="md-nav__link">
+    RFM Result Interpretation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/ugoproto/ugo_py_doc.git/edit/master/docs/introduction_to_customer_segmentation_in_python.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Introduction to Customer Segmentation</h1>
+                
+                <p><strong>Foreword</strong></p>
+<p>Notes and code snippets. Python 3. From DataCamp.</p>
+<hr />
+<h2 id="what-is-customer-segmentation">What is Customer Segmentation?<a class="headerlink" href="#what-is-customer-segmentation" title="Permanent link">&para;</a></h2>
+<p>Customer segmentation is a method of dividing customers into groups or clusters on the basis of common characteristics.</p>
+<ul>
+<li>The market researcher can segment customers into the B2C model using various customer&rsquo;s demographic characteristics such as occupation, gender, age, location, and marital status.</li>
+<li>Psychographic characteristics such as social class, lifestyle and personality characteristics and behavioral characteristics such as spending, consumption habits, product/service usage, and previously purchased products.</li>
+<li>In the B2B model using various company&rsquo;s characteristics such as the size of the company, type of industry, and location.</li>
+</ul>
+<h2 id="need-of-customer-segmentation">Need of Customer Segmentation<a class="headerlink" href="#need-of-customer-segmentation" title="Permanent link">&para;</a></h2>
+<p>In the Retail sector, the various chain of hypermarkets generating an exceptionally large amount of data. This data is generated on a daily basis across the stores.<br />
+This extensive database of customers transactions needs to analyze for designing profitable strategies.<br />
+All customers have different-different kind of needs. With the increase in customer base and transaction, it is not easy to understand the requirement of each customer.<br />
+Segmentation can play a better role in grouping those customers into various segments:</p>
+<ul>
+<li>It helps in identifying the most potential customers.</li>
+<li>It helps managers to easily communicate with a targetted group of the audience.</li>
+<li>It helps in selecting the best medium for communicating with the targetted segment.</li>
+<li>It improves the quality of service, loyalty, and retention.</li>
+<li>It improves customer relationship via better understanding needs of segments.</li>
+<li>It provides opportunities for upselling and cross-selling.</li>
+<li>It helps managers to design special offers for targetted customers, to encourage them to buy more products.</li>
+<li>It helps companies to stay a step ahead of competitors.</li>
+<li>It also helps in identifying new products that customers could be interested in.</li>
+</ul>
+<h2 id="types-of-segmentation">Types of Segmentation<a class="headerlink" href="#types-of-segmentation" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../img/Introduction_to_Customer_Segmentation_in_Python/types_of_segmentation.png" /></p>
+<h2 id="customer-segmentation-using-rfm-analysis">Customer Segmentation using RFM analysis<a class="headerlink" href="#customer-segmentation-using-rfm-analysis" title="Permanent link">&para;</a></h2>
+<p>RFM (Recency, Frequency, Monetary) analysis is a behavior-based approach grouping customers into segments.<br />
+It groups the customers on the basis of their previous purchase transactions. How recently, how often, and how much did a customer buy.<br />
+RFM filters customers into various groups for the purpose of better service.</p>
+<ul>
+<li>Recency (R): Who have purchased recently? Number of days since last purchase (least recency).</li>
+<li>Frequency (F): Who has purchased frequently? It means the total number of purchases. ( high frequency).</li>
+<li>Monetary Value(M): Who have high purchase amount? It means the total money customer spent (high monetary value).</li>
+</ul>
+<p>Steps of RFM(Recency, Frequency, Monetary):</p>
+<ul>
+<li>Calculate the Recency, Frequency, Monetary values for each customer.</li>
+<li>Add segment bin values to RFM table using quartile.</li>
+<li>Sort the customer RFM score in ascending order.</li>
+</ul>
+<h2 id="rfm-in-python">RFM in Python<a class="headerlink" href="#rfm-in-python" title="Permanent link">&para;</a></h2>
+<h3 id="importing-data">Importing Data<a class="headerlink" href="#importing-data" title="Permanent link">&para;</a></h3>
+<p>The <a href="http://archive.ics.uci.edu/ml/datasets/online+retail">dataset</a> is over 500K lines!</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Importing the necessary modules</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Loading the dataset</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Online_Retail.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Examining the data</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>InvoiceNo</th>
+      <th>StockCode</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>InvoiceDate</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>536365</td>
+      <td>85123A</td>
+      <td>WHITE HANGING HEART T-LIGHT HOLDER</td>
+      <td>6</td>
+      <td>2010-12-01 08:26</td>
+      <td>2.55</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>536365</td>
+      <td>71053</td>
+      <td>WHITE METAL LANTERN</td>
+      <td>6</td>
+      <td>2010-12-01 08:26</td>
+      <td>3.39</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>536365</td>
+      <td>84406B</td>
+      <td>CREAM CUPID HEARTS COAT HANGER</td>
+      <td>8</td>
+      <td>2010-12-01 08:26</td>
+      <td>2.75</td>
+      <td>17850.0</td>
+      <td>United Kingdom</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Examining the fields (culomns)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
+RangeIndex: 541909 entries, 0 to 541908
+Data columns (total 8 columns):
+InvoiceNo      541909 non-null object
+StockCode      541909 non-null object
+Description    540455 non-null object
+Quantity       541909 non-null int64
+InvoiceDate    541909 non-null object
+UnitPrice      541909 non-null float64
+CustomerID     406829 non-null float64
+Country        541909 non-null object
+dtypes: float64(2), int64(1), object(5)
+memory usage: 33.1+ MB
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;datetime64[ns]&#39;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
+RangeIndex: 541909 entries, 0 to 541908
+Data columns (total 8 columns):
+InvoiceNo      541909 non-null object
+StockCode      541909 non-null object
+Description    540455 non-null object
+Quantity       541909 non-null int64
+InvoiceDate    541909 non-null datetime64[ns]
+UnitPrice      541909 non-null float64
+CustomerID     406829 non-null float64
+Country        541909 non-null object
+dtypes: datetime64[ns](1), float64(2), int64(1), object(4)
+memory usage: 33.1+ MB
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Removing null ID</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">])]</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Removing duplicates</span>
+<span class="n">filtered_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="data-insights">Data Insights<a class="headerlink" href="#data-insights" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Filtering the top ten country&#39;s customer</span>
+<span class="c1"># Counting the number of occurrence by country</span>
+<span class="n">filtered_data</span><span class="o">.</span><span class="n">Country</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">);</span>
+</pre></div>
+</td></tr></table>
+
+<p><img alt="" src="../img/Introduction_to_Customer_Segmentation_in_Python/output_10_0.png" /></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Filtering for the United Kingdom</span>
+<span class="n">uk_data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">Country</span><span class="o">==</span><span class="s1">&#39;United Kingdom&#39;</span><span class="p">]</span>
+
+<span class="n">uk_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
+Int64Index: 361878 entries, 0 to 541893
+Data columns (total 8 columns):
+InvoiceNo      361878 non-null object
+StockCode      361878 non-null object
+Description    361878 non-null object
+Quantity       361878 non-null int64
+InvoiceDate    361878 non-null datetime64[ns]
+UnitPrice      361878 non-null float64
+CustomerID     361878 non-null float64
+Country        361878 non-null object
+dtypes: datetime64[ns](1), float64(2), int64(1), object(4)
+memory usage: 24.8+ MB
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Getting summary statistics for the UK</span>
+<span class="n">uk_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Quantity</th>
+      <th>UnitPrice</th>
+      <th>CustomerID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>361878.000000</td>
+      <td>361878.000000</td>
+      <td>361878.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>11.077029</td>
+      <td>3.256007</td>
+      <td>15547.871368</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>263.129266</td>
+      <td>70.654731</td>
+      <td>1594.402590</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-80995.000000</td>
+      <td>0.000000</td>
+      <td>12346.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.000000</td>
+      <td>1.250000</td>
+      <td>14194.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>4.000000</td>
+      <td>1.950000</td>
+      <td>15514.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>12.000000</td>
+      <td>3.750000</td>
+      <td>16931.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>80995.000000</td>
+      <td>38970.000000</td>
+      <td>18287.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Some of the customers have ordered in a negative quantity</span>
+<span class="c1"># Which is not possible</span>
+<span class="c1"># Filter Quantity greater than zero</span>
+
+<span class="c1"># Filtering quantity greater than zero</span>
+<span class="n">uk_data</span> <span class="o">=</span> <span class="n">uk_data</span><span class="p">[(</span><span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)]</span>
+
+<span class="n">uk_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
+Int64Index: 354345 entries, 0 to 541893
+Data columns (total 8 columns):
+InvoiceNo      354345 non-null object
+StockCode      354345 non-null object
+Description    354345 non-null object
+Quantity       354345 non-null int64
+InvoiceDate    354345 non-null datetime64[ns]
+UnitPrice      354345 non-null float64
+CustomerID     354345 non-null float64
+Country        354345 non-null object
+dtypes: datetime64[ns](1), float64(2), int64(1), object(4)
+memory usage: 24.3+ MB
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Filtering the required columns</span>
+<span class="c1"># for RFM analysis</span>
+
+<span class="c1"># InvoiceNo helps you to count the number of time transaction</span>
+<span class="c1"># performed(frequency)</span>
+<span class="c1"># Quantity purchased in each transaction and</span>
+<span class="c1"># UnitPrice of each unit purchased by the customer</span>
+<span class="c1"># helps calculating the total purchased amount</span>
+<span class="n">uk_data</span> <span class="o">=</span> <span class="n">uk_data</span><span class="p">[[</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;InvoiceDate&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;InvoiceNo&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;Quantity&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;UnitPrice&#39;</span><span class="p">]]</span>
+
+
+<span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;Quantity&#39;</span><span class="p">]</span> <span class="o">*</span> \
+    <span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;UnitPrice&#39;</span><span class="p">]</span>
+
+<span class="c1"># InvoiceDate help you calculate recency of purchase</span>
+<span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>(Timestamp(&#39;2010-12-01 08:26:00&#39;), Timestamp(&#39;2011-12-09 12:49:00&#39;))
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Creating a constant</span>
+<span class="n">PRESENT</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># InvoiceDate help you calculate recency of purchase</span>
+<span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">uk_data</span><span class="p">[</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">])</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">uk_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CustomerID</th>
+      <th>InvoiceDate</th>
+      <th>InvoiceNo</th>
+      <th>Quantity</th>
+      <th>UnitPrice</th>
+      <th>TotalPrice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>17850.0</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>536365</td>
+      <td>6</td>
+      <td>2.55</td>
+      <td>15.30</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17850.0</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>536365</td>
+      <td>6</td>
+      <td>3.39</td>
+      <td>20.34</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>17850.0</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>536365</td>
+      <td>8</td>
+      <td>2.75</td>
+      <td>22.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>17850.0</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>536365</td>
+      <td>6</td>
+      <td>3.39</td>
+      <td>20.34</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>17850.0</td>
+      <td>2010-12-01 08:26:00</td>
+      <td>536365</td>
+      <td>6</td>
+      <td>3.39</td>
+      <td>20.34</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="rfm-analysis">RFM Analysis<a class="headerlink" href="#rfm-analysis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For Recency, calculate the number of days between present date and date of last purchase each customer.</li>
+<li>For Frequency, calculate the number of orders for each customer.</li>
+<li>For Monetary, calculate the sum of purchase price for each customer.</li>
+</ul>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">rfm</span> <span class="o">=</span> <span class="n">uk_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;CustomerID&#39;</span><span class="p">)</span><span class="o">.</span> \
+    <span class="n">agg</span><span class="p">({</span><span class="s1">&#39;InvoiceDate&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">date</span><span class="p">:</span> <span class="p">(</span><span class="n">PRESENT</span> <span class="o">-</span> <span class="n">date</span><span class="o">.</span><span class="n">max</span><span class="p">())</span><span class="o">.</span><span class="n">days</span><span class="p">,</span>
+         <span class="s1">&#39;InvoiceNo&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">num</span><span class="p">),</span>
+         <span class="s1">&#39;TotalPrice&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">price</span><span class="p">:</span> <span class="n">price</span><span class="o">.</span><span class="n">sum</span><span class="p">()})</span>
+
+<span class="n">rfm</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Index([&#39;InvoiceDate&#39;, &#39;InvoiceNo&#39;, &#39;TotalPrice&#39;], dtype=&#39;object&#39;)
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Change the name of columns</span>
+<span class="n">rfm</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;monetary&#39;</span><span class="p">,</span><span class="s1">&#39;recency&#39;</span><span class="p">,</span><span class="s1">&#39;frequency&#39;</span><span class="p">]</span>
+
+<span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;recency&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;recency&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">rfm</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>monetary</th>
+      <th>recency</th>
+      <th>frequency</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346.0</th>
+      <td>325</td>
+      <td>1</td>
+      <td>77183.60</td>
+    </tr>
+    <tr>
+      <th>12747.0</th>
+      <td>2</td>
+      <td>103</td>
+      <td>4196.01</td>
+    </tr>
+    <tr>
+      <th>12748.0</th>
+      <td>0</td>
+      <td>4596</td>
+      <td>33719.73</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="computing-quantile-of-rfm-values">Computing Quantile of RFM values<a class="headerlink" href="#computing-quantile-of-rfm-values" title="Permanent link">&para;</a></h3>
+<p>Customers with the lowest recency, highest frequency and monetary amounts considered as top customers.</p>
+<p><code class="codehilite">qcut</code> isquantile-based discretization function.<br />
+<code class="codehilite">qcut</code> bins the data based on sample quantiles.<br />
+For example, 1000 values for 4 quantiles would produce a categorical object indicating quantile membership for each customer.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;r_quartile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;recency&#39;</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">])</span>
+<span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;f_quartile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;frequency&#39;</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">])</span>
+<span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;m_quartile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;monetary&#39;</span><span class="p">],</span> <span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">])</span>
+
+<span class="n">rfm</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>monetary</th>
+      <th>recency</th>
+      <th>frequency</th>
+      <th>r_quartile</th>
+      <th>f_quartile</th>
+      <th>m_quartile</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346.0</th>
+      <td>325</td>
+      <td>1</td>
+      <td>77183.60</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>12747.0</th>
+      <td>2</td>
+      <td>103</td>
+      <td>4196.01</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>12748.0</th>
+      <td>0</td>
+      <td>4596</td>
+      <td>33719.73</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="rfm-result-interpretation">RFM Result Interpretation<a class="headerlink" href="#rfm-result-interpretation" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;RFM_Score&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rfm</span><span class="o">.</span><span class="n">r_quartile</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">+</span> <span class="n">rfm</span><span class="o">.</span><span class="n">f_quartile</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="n">rfm</span><span class="o">.</span><span class="n">m_quartile</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+
+<span class="n">rfm</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>monetary</th>
+      <th>recency</th>
+      <th>frequency</th>
+      <th>r_quartile</th>
+      <th>f_quartile</th>
+      <th>m_quartile</th>
+      <th>RFM_Score</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12346.0</th>
+      <td>325</td>
+      <td>1</td>
+      <td>77183.60</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <th>12747.0</th>
+      <td>2</td>
+      <td>103</td>
+      <td>4196.01</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>414</td>
+    </tr>
+    <tr>
+      <th>12748.0</th>
+      <td>0</td>
+      <td>4596</td>
+      <td>33719.73</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>414</td>
+    </tr>
+    <tr>
+      <th>12749.0</th>
+      <td>3</td>
+      <td>199</td>
+      <td>4090.88</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>414</td>
+    </tr>
+    <tr>
+      <th>12820.0</th>
+      <td>3</td>
+      <td>59</td>
+      <td>942.34</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>324</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Filter out Top/Best customers</span>
+<span class="n">rfm</span><span class="p">[</span><span class="n">rfm</span><span class="p">[</span><span class="s1">&#39;RFM_Score&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;111&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;monetary&#39;</span><span class="p">,</span>
+                                         <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</td></tr></table>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>monetary</th>
+      <th>recency</th>
+      <th>frequency</th>
+      <th>r_quartile</th>
+      <th>f_quartile</th>
+      <th>m_quartile</th>
+      <th>RFM_Score</th>
+    </tr>
+    <tr>
+      <th>CustomerID</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>16754.0</th>
+      <td>372</td>
+      <td>2</td>
+      <td>2002.4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <th>12346.0</th>
+      <td>325</td>
+      <td>1</td>
+      <td>77183.6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <th>15749.0</th>
+      <td>235</td>
+      <td>10</td>
+      <td>44534.3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <th>16698.0</th>
+      <td>226</td>
+      <td>5</td>
+      <td>1998.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <th>13135.0</th>
+      <td>196</td>
+      <td>1</td>
+      <td>3096.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>111</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../importing_data_into_python/" title="Importing Data" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Importing Data
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../intro_to_data_world_in_python/" title="Introduction to data.world" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction to data.world
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+  </body>
+</html>

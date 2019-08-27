@@ -1,183 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Py_CS/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Databases/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Datetime/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Decorators/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/exceptions/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Freeze_the_Code/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Gedit_Execute_Highlighted_Python_Code/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Regex/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Python_Preliminaries/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Python_Nice_to_Have/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Write_Better_Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/JN_CS/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Scipy_CS/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/EDA_Machine_Learning_Feature_Engineering_and_Kaggle/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Exploratory Data Analysis/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Feature_Selection_in_Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Geospatial_Data_in_Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Importing Data into Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Introduction_to_Customer_Segmentation_in_Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Intro to data.world in Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Overview_of_scikit-learn/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Python+And+Excel/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Scaling_Centering_Noise_with_kNN_Linear_Regression_Logit/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Sentiment_Analysis_with_Twitter/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Time_Series_Analysis/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Vectors and Arrays (Linear Algebra)/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Viewing+3D+Volumetric+Data+With+Matplotlib/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Write Idiomatic Pandas Code/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Apprenez a programmer en Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Automate the Boring Stuff with Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Codecademy Python/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Learn Python the Hard Way/</loc>
-     <lastmod>2019-01-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/LPTHW, Python Code Snippets/</loc>
-     <lastmod>2019-01-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Managing Your Biological Data with Python/</loc>
-     <lastmod>2019-01-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://ugoproto.github.io/ugo_py_doc/Python for Education/</loc>
-     <lastmod>2019-01-24</lastmod>
+     <loc>None</loc>
+     <lastmod>2019-08-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
