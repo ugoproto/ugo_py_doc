@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Apprenez à programmer en Python
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -650,168 +655,168 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#shebang-line" title="Shebang Line" class="md-nav__link">
+  <a href="#shebang-line" class="md-nav__link">
     Shebang Line
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-8-exceptions" title="Chapter 8, Exceptions" class="md-nav__link">
+  <a href="#chapter-8-exceptions" class="md-nav__link">
     Chapter 8, Exceptions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-10-strings" title="Chapter 10, Strings" class="md-nav__link">
+  <a href="#chapter-10-strings" class="md-nav__link">
     Chapter 10, Strings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-11-lists-and-tuples-1" title="Chapter 11, Lists and Tuples 1" class="md-nav__link">
+  <a href="#chapter-11-lists-and-tuples-1" class="md-nav__link">
     Chapter 11, Lists and Tuples 1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-12-lists-and-tuples-2" title="Chapter 12, Lists and Tuples 2" class="md-nav__link">
+  <a href="#chapter-12-lists-and-tuples-2" class="md-nav__link">
     Chapter 12, Lists and Tuples 2
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-13-dictionaries" title="Chapter 13, Dictionaries" class="md-nav__link">
+  <a href="#chapter-13-dictionaries" class="md-nav__link">
     Chapter 13, Dictionaries
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-14-files" title="Chapter 14, Files" class="md-nav__link">
+  <a href="#chapter-14-files" class="md-nav__link">
     Chapter 14, Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-17-classes-and-docstrings" title="Chapter 17, Classes and docstrings" class="md-nav__link">
+  <a href="#chapter-17-classes-and-docstrings" class="md-nav__link">
     Chapter 17, Classes and docstrings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-18-class-properties" title="Chapter 18, (Class) Properties" class="md-nav__link">
+  <a href="#chapter-18-class-properties" class="md-nav__link">
     Chapter 18, (Class) Properties
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-19-special-methods" title="Chapter 19, Special Methods" class="md-nav__link">
+  <a href="#chapter-19-special-methods" class="md-nav__link">
     Chapter 19, Special Methods
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-20-heritage" title="Chapter 20, Heritage" class="md-nav__link">
+  <a href="#chapter-20-heritage" class="md-nav__link">
     Chapter 20, Heritage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-21-the-for-loop-again" title="Chapter 21, The for Loop Again" class="md-nav__link">
+  <a href="#chapter-21-the-for-loop-again" class="md-nav__link">
     Chapter 21, The for Loop Again
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-23-decorators" title="Chapter 23, Decorators" class="md-nav__link">
+  <a href="#chapter-23-decorators" class="md-nav__link">
     Chapter 23, Decorators
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-24-metaclasses" title="Chapter 24, Metaclasses" class="md-nav__link">
+  <a href="#chapter-24-metaclasses" class="md-nav__link">
     Chapter 24, Metaclasses
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-25-regular-expressions" title="Chapter 25, Regular Expressions" class="md-nav__link">
+  <a href="#chapter-25-regular-expressions" class="md-nav__link">
     Chapter 25, Regular Expressions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-26-time" title="Chapter 26, Time" class="md-nav__link">
+  <a href="#chapter-26-time" class="md-nav__link">
     Chapter 26, Time
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-27-system-programming" title="Chapter 27, System Programming" class="md-nav__link">
+  <a href="#chapter-27-system-programming" class="md-nav__link">
     Chapter 27, System Programming
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-28-maths" title="Chapter 28, Maths" class="md-nav__link">
+  <a href="#chapter-28-maths" class="md-nav__link">
     Chapter 28, Maths
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-29-password-management" title="Chapter 29, Password Management" class="md-nav__link">
+  <a href="#chapter-29-password-management" class="md-nav__link">
     Chapter 29, Password Management
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-30-network" title="Chapter 30, Network" class="md-nav__link">
+  <a href="#chapter-30-network" class="md-nav__link">
     Chapter 30, Network
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-31-tkinter" title="Chapter 31, Tkinter" class="md-nav__link">
+  <a href="#chapter-31-tkinter" class="md-nav__link">
     Chapter 31, Tkinter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-33-distribute-scripts-and-programs" title="Chapter 33, Distribute Scripts and Programs" class="md-nav__link">
+  <a href="#chapter-33-distribute-scripts-and-programs" class="md-nav__link">
     Chapter 33, Distribute Scripts and Programs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-34-pep" title="Chapter 34, PEP" class="md-nav__link">
+  <a href="#chapter-34-pep" class="md-nav__link">
     Chapter 34, PEP
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-35-more" title="Chapter 35, More..." class="md-nav__link">
+  <a href="#chapter-35-more" class="md-nav__link">
     Chapter 35, More...
   </a>
   
@@ -948,168 +953,168 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#shebang-line" title="Shebang Line" class="md-nav__link">
+  <a href="#shebang-line" class="md-nav__link">
     Shebang Line
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-8-exceptions" title="Chapter 8, Exceptions" class="md-nav__link">
+  <a href="#chapter-8-exceptions" class="md-nav__link">
     Chapter 8, Exceptions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-10-strings" title="Chapter 10, Strings" class="md-nav__link">
+  <a href="#chapter-10-strings" class="md-nav__link">
     Chapter 10, Strings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-11-lists-and-tuples-1" title="Chapter 11, Lists and Tuples 1" class="md-nav__link">
+  <a href="#chapter-11-lists-and-tuples-1" class="md-nav__link">
     Chapter 11, Lists and Tuples 1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-12-lists-and-tuples-2" title="Chapter 12, Lists and Tuples 2" class="md-nav__link">
+  <a href="#chapter-12-lists-and-tuples-2" class="md-nav__link">
     Chapter 12, Lists and Tuples 2
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-13-dictionaries" title="Chapter 13, Dictionaries" class="md-nav__link">
+  <a href="#chapter-13-dictionaries" class="md-nav__link">
     Chapter 13, Dictionaries
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-14-files" title="Chapter 14, Files" class="md-nav__link">
+  <a href="#chapter-14-files" class="md-nav__link">
     Chapter 14, Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-17-classes-and-docstrings" title="Chapter 17, Classes and docstrings" class="md-nav__link">
+  <a href="#chapter-17-classes-and-docstrings" class="md-nav__link">
     Chapter 17, Classes and docstrings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-18-class-properties" title="Chapter 18, (Class) Properties" class="md-nav__link">
+  <a href="#chapter-18-class-properties" class="md-nav__link">
     Chapter 18, (Class) Properties
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-19-special-methods" title="Chapter 19, Special Methods" class="md-nav__link">
+  <a href="#chapter-19-special-methods" class="md-nav__link">
     Chapter 19, Special Methods
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-20-heritage" title="Chapter 20, Heritage" class="md-nav__link">
+  <a href="#chapter-20-heritage" class="md-nav__link">
     Chapter 20, Heritage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-21-the-for-loop-again" title="Chapter 21, The for Loop Again" class="md-nav__link">
+  <a href="#chapter-21-the-for-loop-again" class="md-nav__link">
     Chapter 21, The for Loop Again
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-23-decorators" title="Chapter 23, Decorators" class="md-nav__link">
+  <a href="#chapter-23-decorators" class="md-nav__link">
     Chapter 23, Decorators
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-24-metaclasses" title="Chapter 24, Metaclasses" class="md-nav__link">
+  <a href="#chapter-24-metaclasses" class="md-nav__link">
     Chapter 24, Metaclasses
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-25-regular-expressions" title="Chapter 25, Regular Expressions" class="md-nav__link">
+  <a href="#chapter-25-regular-expressions" class="md-nav__link">
     Chapter 25, Regular Expressions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-26-time" title="Chapter 26, Time" class="md-nav__link">
+  <a href="#chapter-26-time" class="md-nav__link">
     Chapter 26, Time
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-27-system-programming" title="Chapter 27, System Programming" class="md-nav__link">
+  <a href="#chapter-27-system-programming" class="md-nav__link">
     Chapter 27, System Programming
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-28-maths" title="Chapter 28, Maths" class="md-nav__link">
+  <a href="#chapter-28-maths" class="md-nav__link">
     Chapter 28, Maths
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-29-password-management" title="Chapter 29, Password Management" class="md-nav__link">
+  <a href="#chapter-29-password-management" class="md-nav__link">
     Chapter 29, Password Management
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-30-network" title="Chapter 30, Network" class="md-nav__link">
+  <a href="#chapter-30-network" class="md-nav__link">
     Chapter 30, Network
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-31-tkinter" title="Chapter 31, Tkinter" class="md-nav__link">
+  <a href="#chapter-31-tkinter" class="md-nav__link">
     Chapter 31, Tkinter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-33-distribute-scripts-and-programs" title="Chapter 33, Distribute Scripts and Programs" class="md-nav__link">
+  <a href="#chapter-33-distribute-scripts-and-programs" class="md-nav__link">
     Chapter 33, Distribute Scripts and Programs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-34-pep" title="Chapter 34, PEP" class="md-nav__link">
+  <a href="#chapter-34-pep" class="md-nav__link">
     Chapter 34, PEP
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-35-more" title="Chapter 35, More..." class="md-nav__link">
+  <a href="#chapter-35-more" class="md-nav__link">
     Chapter 35, More...
   </a>
   
@@ -1145,11 +1150,11 @@
 <p><strong>At the top of scripts</strong></p>
 <ul>
 <li>In Windows, Python 2:<ul>
-<li><code class="codehilite">python</code>.</li>
+<li><code class="codehilite"><span class="n">python</span></code>.</li>
 </ul>
 </li>
 <li>Windows, Python 3:<ul>
-<li><code class="codehilite">python 3</code>.</li>
+<li><code class="codehilite"><span class="n">python</span> <span class="mi">3</span></code>.</li>
 </ul>
 </li>
 <li>UNIX, Python 2:<ul>
@@ -1157,243 +1162,243 @@
 </ul>
 </li>
 <li>UNIX, Python 3:<ul>
-<li><code class="codehilite">#!/usr/bin/env python 3</code>.</li>
+<li><code class="codehilite"><span class="o">#!/</span><span class="n">usr</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">env</span> <span class="n">python</span> <span class="mi">3</span></code>.</li>
 </ul>
 </li>
 <li>Add:<ul>
-<li><code class="codehilite"># -*coding: utf-8 -*-</code>.</li>
-<li><code class="codehilite"># -*coding: latin-1 -*-</code>.</li>
+<li><code class="codehilite"><span class="o">#</span> <span class="o">-*</span><span class="n">coding</span><span class="p">:</span> <span class="n">utf</span><span class="o">-</span><span class="mi">8</span> <span class="o">-*-</span></code>.</li>
+<li><code class="codehilite"><span class="o">#</span> <span class="o">-*</span><span class="n">coding</span><span class="p">:</span> <span class="n">latin</span><span class="o">-</span><span class="mi">1</span> <span class="o">-*-</span></code>.</li>
 </ul>
 </li>
 </ul>
 <p><strong>Launch a script</strong></p>
 <ul>
 <li>In Windows, Python 2:<ul>
-<li><code class="codehilite">python script.py</code>.</li>
-<li><code class="codehilite">py script.py</code>.</li>
-<li><code class="codehilite">py -2 script.py</code>.</li>
-<li><code class="codehilite">py -2.7 script.py</code>.</li>
+<li><code class="codehilite"><span class="n">python</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">2</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">7</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
 </ul>
 </li>
 <li>In UNIX, Python 2:<ul>
-<li><code class="codehilite">python script.py</code>.</li>
+<li><code class="codehilite"><span class="n">python</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
 </ul>
 </li>
 <li>In Windows, Python 3:<ul>
-<li><code class="codehilite">py -3 script.py</code>.</li>
-<li><code class="codehilite">py -3.5 script.py</code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">3</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">3</span><span class="p">.</span><span class="mi">5</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
 </ul>
 </li>
 <li>In UNIX, Python 3:<ul>
-<li><code class="codehilite">python3 script.py</code>.</li>
+<li><code class="codehilite"><span class="n">python3</span> <span class="n">script</span><span class="p">.</span><span class="n">py</span></code>.</li>
 </ul>
 </li>
 </ul>
 <p><strong>Launch the shell/bash</strong></p>
 <ul>
 <li>The shell, Python 2:<ul>
-<li><code class="codehilite">python</code>.</li>
-<li><code class="codehilite">py -2</code>.</li>
-<li><code class="codehilite">py -2.7</code>.</li>
+<li><code class="codehilite"><span class="n">python</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">2</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">7</span></code>.</li>
 </ul>
 </li>
 <li>The bash, Python 2:<ul>
-<li><code class="codehilite">python</code>.</li>
-<li><code class="codehilite">python2</code>.</li>
+<li><code class="codehilite"><span class="n">python</span></code>.</li>
+<li><code class="codehilite"><span class="n">python2</span></code>.</li>
 </ul>
 </li>
 <li>The shell, Python 3:<ul>
-<li><code class="codehilite">py -3</code>.</li>
-<li><code class="codehilite">py -3.5</code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">3</span></code>.</li>
+<li><code class="codehilite"><span class="n">py</span> <span class="o">-</span><span class="mi">3</span><span class="p">.</span><span class="mi">5</span></code>.</li>
 </ul>
 </li>
 <li>The bash, Python 3:<ul>
-<li><code class="codehilite">python3</code>.</li>
+<li><code class="codehilite"><span class="n">python3</span></code>.</li>
 </ul>
 </li>
 </ul>
 <h2 id="chapter-8-exceptions">Chapter 8, Exceptions<a class="headerlink" href="#chapter-8-exceptions" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <ul>
-<li><code class="codehilite">try:</code> block.</li>
-<li><code class="codehilite">except</code> errors.</li>
-<li><code class="codehilite">else:</code>.</li>
-<li><code class="codehilite">finally:</code>.</li>
-<li><code class="codehilite">assert</code> tests and conditions.</li>
-<li><code class="codehilite">raise</code> an exception.</li>
+<li><code class="codehilite"><span class="n">try</span><span class="p">:</span></code> block.</li>
+<li><code class="codehilite"><span class="k">except</span></code> errors.</li>
+<li><code class="codehilite"><span class="k">else</span>:</code>.</li>
+<li><code class="codehilite"><span class="n">finally</span><span class="p">:</span></code>.</li>
+<li><code class="codehilite"><span class="n">assert</span></code> tests and conditions.</li>
+<li><code class="codehilite"><span class="n">raise</span></code> an exception.</li>
 </ul>
 <h2 id="chapter-10-strings">Chapter 10, Strings<a class="headerlink" href="#chapter-10-strings" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
-<p>A <code class="codehilite">&quot;string&quot;</code>.</p>
+<p>A <code class="codehilite"><span class="ss">&quot;string&quot;</span></code>.</p>
 <ul>
-<li><code class="codehilite">str()</code> function.</li>
-<li><code class="codehilite">upper()</code> and <code class="codehilite">lower()</code> methods; upper/lower characters.</li>
-<li><code class="codehilite">capitalize()</code> method; first-letter upper character.</li>
-<li><code class="codehilite">left()</code>, <code class="codehilite">right()</code>, <code class="codehilite">center()</code> methods.</li>
-<li><code class="codehilite">strip()</code>, <code class="codehilite">lstrip()</code>, <code class="codehilite">rstrip()</code> methods; remove white space.</li>
-<li><code class="codehilite">format()</code> method.</li>
-<li><code class="codehilite">count()</code> method.</li>
-<li><code class="codehilite">find()</code> method.</li>
-<li><code class="codehilite">replace()</code> method.</li>
-<li><code class="codehilite">[:]</code> to subset a string.</li>
-<li><code class="codehilite">while</code> loop on a string.</li>
+<li><code class="codehilite"><span class="n">str</span><span class="p">()</span></code> function.</li>
+<li><code class="codehilite"><span class="k">upper</span><span class="p">()</span></code> and <code class="codehilite"><span class="k">lower</span><span class="p">()</span></code> methods; upper/lower characters.</li>
+<li><code class="codehilite"><span class="n">capitalize</span><span class="p">()</span></code> method; first-letter upper character.</li>
+<li><code class="codehilite"><span class="k">left</span><span class="p">()</span></code>, <code class="codehilite"><span class="k">right</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">center</span><span class="p">()</span></code> methods.</li>
+<li><code class="codehilite"><span class="n">strip</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">lstrip</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">rstrip</span><span class="p">()</span></code> methods; remove white space.</li>
+<li><code class="codehilite"><span class="n">format</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">count</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">find</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">replace</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="p">[:]</span></code> to subset a string.</li>
+<li><code class="codehilite"><span class="k">while</span></code> loop on a string.</li>
 </ul>
 <h2 id="chapter-11-lists-and-tuples-1">Chapter 11, Lists and Tuples 1<a class="headerlink" href="#chapter-11-lists-and-tuples-1" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>delete, length, size</sub></p>
 <p>Lists are mutable; can add or remove elements from a list; can change the order of elements.</p>
-<p>A <code class="codehilite">[list]</code>.</p>
+<p>A <code class="codehilite"><span class="o">[</span><span class="n">list</span><span class="o">]</span><span class="w"></span></code>.</p>
 <ul>
-<li><code class="codehilite">insert()</code> method.</li>
-<li><code class="codehilite">append()</code> method.</li>
-<li><code class="codehilite">extends()</code> method.</li>
-<li><code class="codehilite">del()</code> function; delete an indexed element.</li>
-<li><code class="codehilite">remove()</code> method; remove an occurrence.</li>
-<li><code class="codehilite">len()</code> function; length.</li>
-<li><code class="codehilite">for</code> loop, <code class="codehilite">in</code> a list.</li>
+<li><code class="codehilite"><span class="k">insert</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">append</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">extends</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">del</span><span class="p">()</span></code> function; delete an indexed element.</li>
+<li><code class="codehilite"><span class="n">remove</span><span class="p">()</span></code> method; remove an occurrence.</li>
+<li><code class="codehilite"><span class="n">len</span><span class="p">()</span></code> function; length.</li>
+<li><code class="codehilite"><span class="k">for</span></code> loop, <code class="codehilite"><span class="k">in</span></code> a list.</li>
 <li><code class="codehilite"><span class="n">enumerate</span>()</code> function; return the index and elements.</li>
 </ul>
 <p>Tuples are immutable; cannot be modified.</p>
-<p><code class="codehilite">(tuple)</code>.</p>
+<p><code class="codehilite"><span class="p">(</span><span class="n">tuple</span><span class="p">)</span></code>.</p>
 <h2 id="chapter-12-lists-and-tuples-2">Chapter 12, Lists and Tuples 2<a class="headerlink" href="#chapter-12-lists-and-tuples-2" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>flexible, function, flexibility, parameter</sub></p>
 <p>With lists, functions can have an undetermined number of parameters (very flexible!):</p>
 <ul>
-<li><code class="codehilite">def my_function(*parameter):</code>.</li>
-<li><code class="codehilite">def my_function(a, b, *parameter):</code>.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">my_function</span><span class="p">(</span><span class="o">*</span><span class="k">parameter</span><span class="p">):</span></code>.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">my_function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">*</span><span class="k">parameter</span><span class="p">):</span></code>.</li>
 </ul>
 <p>Strings and lists. Create, split, loop through a sequence. Even in a list of list.</p>
 <ul>
-<li><code class="codehilite">split()</code> method.</li>
-<li><code class="codehilite">join()</code> method.</li>
-<li><code class="codehilite">for</code> loop, <code class="codehilite">in</code> a list.</li>
+<li><code class="codehilite"><span class="n">split</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">join</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">for</span></code> loop, <code class="codehilite"><span class="k">in</span></code> a list.</li>
 </ul>
-<p>Find the <code class="codehilite">type()</code> of a variable (integer, float, boolean, etc.)</p>
+<p>Find the <code class="codehilite"><span class="k">type</span><span class="p">()</span></code> of a variable (integer, float, boolean, etc.)</p>
 <h2 id="chapter-13-dictionaries">Chapter 13, Dictionaries<a class="headerlink" href="#chapter-13-dictionaries" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>dictionary, flexible, function, flexibility, parameter</sub></p>
 <p>Dictionaries are mutable; you can add or remove elements from a dictionary; order of elements is unimportant.</p>
-<p>One-entry dictionary: <code class="codehilite">{&#39;key&#39;: &#39;value&#39;}</code>.</p>
+<p>One-entry dictionary: <code class="codehilite"><span class="err">{</span><span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="err">}</span></code>.</p>
 <p>With dictionaries, functions can have an undetermined number of parameters (very flexible!):</p>
 <ul>
-<li><code class="codehilite">def my_function(**parameter):</code>.</li>
-<li><code class="codehilite">def my_function(a, b, **parameter):</code>.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">my_function</span><span class="p">(</span><span class="o">**</span><span class="k">parameter</span><span class="p">):</span></code>.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">my_function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">**</span><span class="k">parameter</span><span class="p">):</span></code>.</li>
 </ul>
 <p>Combine lists and dictionaries in a function with an undetermined number of parameters:</p>
 <ul>
-<li><code class="codehilite">def my_function(*, parameter, **parameter):</code>.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">my_function</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="k">parameter</span><span class="p">,</span> <span class="o">**</span><span class="k">parameter</span><span class="p">):</span></code>.</li>
 <li>
-<p><code class="codehilite">def my_function(a, b, *parameter, **parameter):</code>.</p>
+<p><code class="codehilite"><span class="n">def</span> <span class="n">my_function</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">*</span><span class="k">parameter</span><span class="p">,</span> <span class="o">**</span><span class="k">parameter</span><span class="p">):</span></code>.</p>
 </li>
 <li>
-<p><code class="codehilite">del dict[&#39;key&#39;]</code> function; delete.</p>
+<p><code class="codehilite"><span class="n">del</span> <span class="n">dict</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span></code> function; delete.</p>
 </li>
-<li><code class="codehilite">pop()</code> method; pop out an element.</li>
-<li><code class="codehilite">for</code> loop, <code class="codehilite">in</code> a dictionary.</li>
-<li><code class="codehilite">in dict.keys()</code> method; extract the dictionary <code class="codehilite">dict</code> in order.</li>
-<li><code class="codehilite">in dict.values()</code> method; extract the values from dictionary <code class="codehilite">dict</code>.</li>
-<li><code class="codehilite">in dict.items()</code> method to extract the keys and values from dictionary <code class="codehilite">dict</code>.</li>
+<li><code class="codehilite"><span class="n">pop</span><span class="p">()</span></code> method; pop out an element.</li>
+<li><code class="codehilite"><span class="k">for</span></code> loop, <code class="codehilite"><span class="k">in</span></code> a dictionary.</li>
+<li><code class="codehilite"><span class="k">in</span> <span class="n">dict</span><span class="p">.</span><span class="n">keys</span><span class="p">()</span></code> method; extract the dictionary <code class="codehilite"><span class="n">dict</span></code> in order.</li>
+<li><code class="codehilite"><span class="k">in</span> <span class="n">dict</span><span class="p">.</span><span class="k">values</span><span class="p">()</span></code> method; extract the values from dictionary <code class="codehilite"><span class="n">dict</span></code>.</li>
+<li><code class="codehilite"><span class="k">in</span> <span class="n">dict</span><span class="p">.</span><span class="n">items</span><span class="p">()</span></code> method to extract the keys and values from dictionary <code class="codehilite"><span class="n">dict</span></code>.</li>
 </ul>
 <h2 id="chapter-14-files">Chapter 14, Files<a class="headerlink" href="#chapter-14-files" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
-<p><code class="codehilite">os</code> module. Perform bash, shell operations such as opening, closing, reading, and writing files. Manage relative and absolute path. In UNIX and Windows.</p>
+<p><code class="codehilite"><span class="n">os</span></code> module. Perform bash, shell operations such as opening, closing, reading, and writing files. Manage relative and absolute path. In UNIX and Windows.</p>
 <ul>
-<li><code class="codehilite">open()</code> method.</li>
-<li><code class="codehilite">close()</code> method.</li>
-<li><code class="codehilite">read()</code> method.</li>
+<li><code class="codehilite"><span class="k">open</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">close</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">read</span><span class="p">()</span></code> method.</li>
 <li>
-<p><code class="codehilite">write()</code> method.</p>
+<p><code class="codehilite"><span class="k">write</span><span class="p">()</span></code> method.</p>
 </li>
 <li>
-<p><code class="codehilite">with/as</code> method; create aliases.</p>
+<p><code class="codehilite"><span class="k">with</span><span class="o">/</span><span class="k">as</span></code> method; create aliases.</p>
 </li>
 </ul>
-<p><code class="codehilite">pickle</code> module. Record objects in a file and retrieve them.</p>
+<p><code class="codehilite"><span class="n">pickle</span></code> module. Record objects in a file and retrieve them.</p>
 <ul>
-<li><code class="codehilite">Pickler()</code> method.</li>
+<li><code class="codehilite"><span class="n">Pickler</span><span class="p">()</span></code> method.</li>
 </ul>
 <h2 id="chapter-17-classes-and-docstrings">Chapter 17, Classes and docstrings<a class="headerlink" href="#chapter-17-classes-and-docstrings" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>class, instance, self</sub></p>
-<p><code class="codehilite">docstring</code> module. Under a <code class="codehilite">Class</code>, a docstring documents the class. Under <code class="codehilite">def __init__():</code>, a docstring documents the attributes. Under <code class="codehilite">def function():</code>, a docstring documents the use of the function or class method, under <code class="codehilite">variable</code>, a docstring documents the use of the variable.</p>
-<p><code class="codehilite">object.__doc__</code> method; accesses the docstring.</p>
-<p><code class="codehilite">__all__</code> function; displays the list of public names (of objects).</p>
-<p><code class="codehilite">pydoc</code> module. Displays information about an object with the <code class="codehilite">help(object)</code> function.</p>
-<p><code class="codehilite">dir(object)</code> function; returns an object&rsquo;s parameters (all the attributes, methods, functions).</p>
-<p><code class="codehilite">object.__dict__</code> method; returns an object&rsquo;s attributes.</p>
-<p><code class="codehilite">object.__dict__[&quot;att_a&quot;] = &quot;att_b&quot;</code> changes an object&rsquo;s attribute.</p>
+<p><code class="codehilite"><span class="n">docstring</span></code> module. Under a <code class="codehilite"><span class="k">Class</span></code>, a docstring documents the class. Under <code class="codehilite"><span class="n">def</span> <span class="n">__init__</span><span class="p">():</span></code>, a docstring documents the attributes. Under <code class="codehilite"><span class="n">def</span> <span class="k">function</span><span class="p">():</span></code>, a docstring documents the use of the function or class method, under <code class="codehilite"><span class="k">variable</span></code>, a docstring documents the use of the variable.</p>
+<p><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__doc__</span></code> method; accesses the docstring.</p>
+<p><code class="codehilite"><span class="n">__all__</span></code> function; displays the list of public names (of objects).</p>
+<p><code class="codehilite"><span class="n">pydoc</span></code> module. Displays information about an object with the <code class="codehilite"><span class="n">help</span><span class="p">(</span><span class="k">object</span><span class="p">)</span></code> function.</p>
+<p><code class="codehilite"><span class="n">dir</span><span class="p">(</span><span class="k">object</span><span class="p">)</span></code> function; returns an object&rsquo;s parameters (all the attributes, methods, functions).</p>
+<p><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__dict__</span></code> method; returns an object&rsquo;s attributes.</p>
+<p><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__dict__</span><span class="p">[</span><span class="ss">&quot;att_a&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="ss">&quot;att_b&quot;</span></code> changes an object&rsquo;s attribute.</p>
 <h2 id="chapter-18-class-properties">Chapter 18, (Class) Properties<a class="headerlink" href="#chapter-18-class-properties" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>instance, constructor</sub></p>
-<p>More about the <code class="codehilite">def __init__():</code> constructor.</p>
+<p>More about the <code class="codehilite"><span class="n">def</span> <span class="n">__init__</span><span class="p">():</span></code> constructor.</p>
 <h2 id="chapter-19-special-methods">Chapter 19, Special Methods<a class="headerlink" href="#chapter-19-special-methods" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>mathematics, display results</sub></p>
 <ul>
-<li><code class="codehilite">def __repr__(self):</code> modifies the way an object is displayed when called.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">__repr__</span><span class="p">(</span><span class="k">self</span><span class="p">):</span></code> modifies the way an object is displayed when called.</li>
 <li>
-<p><code class="codehilite">def __str__(self):</code> method modifies the way an object is displayed when printed.</p>
+<p><code class="codehilite"><span class="n">def</span> <span class="n">__str__</span><span class="p">(</span><span class="k">self</span><span class="p">):</span></code> method modifies the way an object is displayed when printed.</p>
 </li>
 <li>
-<p><code class="codehilite">def __getattr__():</code> defines a message when an inexistent object&rsquo;s attributes is called (like a <code class="codehilite">try</code> block) vs the built-in <code class="codehilite">object.__dict__</code></p>
+<p><code class="codehilite"><span class="n">def</span> <span class="n">__getattr__</span><span class="p">():</span></code> defines a message when an inexistent object&rsquo;s attributes is called (like a <code class="codehilite"><span class="n">try</span></code> block) vs the built-in <code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__dict__</span></code></p>
 </li>
-<li><code class="codehilite">def __setattr__():</code> does the same when an object&rsquo;s attribute is modified vs the built-in <code class="codehilite">object.__dict__[&quot;att_a&quot;] = &quot;att_b&quot;</code></li>
-<li><code class="codehilite">def __delattr__():</code> does the same when an object&rsquo;s attribute is deleted.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">__setattr__</span><span class="p">():</span></code> does the same when an object&rsquo;s attribute is modified vs the built-in <code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__dict__</span><span class="p">[</span><span class="ss">&quot;att_a&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="ss">&quot;att_b&quot;</span></code></li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">__delattr__</span><span class="p">():</span></code> does the same when an object&rsquo;s attribute is deleted.</li>
 <li>
-<p><code class="codehilite">def __hasattr__():</code> returns true or false if the attribute exists.</p>
-</li>
-<li>
-<p><code class="codehilite">def __getitem__():</code>, <code class="codehilite">def __setitem__():</code>, and <code class="codehilite">def __delitem__():</code> all define what to do when we write, respectively: <code class="codehilite">object[index]</code>, <code class="codehilite">object[index] = value</code>, and <code class="codehilite">del object[index]</code>.</p>
+<p><code class="codehilite"><span class="n">def</span> <span class="n">__hasattr__</span><span class="p">():</span></code> returns true or false if the attribute exists.</p>
 </li>
 <li>
-<p><code class="codehilite">object.__contains__</code> checks out if a list contains a specific element; like <code class="codehilite">in</code></p>
+<p><code class="codehilite"><span class="n">def</span> <span class="n">__getitem__</span><span class="p">():</span></code>, <code class="codehilite"><span class="n">def</span> <span class="n">__setitem__</span><span class="p">():</span></code>, and <code class="codehilite"><span class="n">def</span> <span class="n">__delitem__</span><span class="p">():</span></code> all define what to do when we write, respectively: <code class="codehilite"><span class="k">object</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="w"></span></code>, <code class="codehilite"><span class="k">object</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">value</span><span class="w"></span></code>, and <code class="codehilite"><span class="n">del</span><span class="w"> </span><span class="k">object</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="w"></span></code>.</p>
 </li>
 <li>
-<p><code class="codehilite">object.__len__()</code> shows the size of an object.</p>
+<p><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__contains__</span></code> checks out if a list contains a specific element; like <code class="codehilite"><span class="k">in</span></code></p>
 </li>
 <li>
-<p><code class="codehilite">object.__add__(4)</code> is equivalent to <code class="codehilite">object + 4</code>; </p>
-</li>
-<li><code class="codehilite">def __add():</code> as well.</li>
-<li><code class="codehilite">object.__sub__()</code> or <code class="codehilite">-</code>.</li>
-<li><code class="codehilite">__mul__</code> or <code class="codehilite">*</code>.</li>
-<li><code class="codehilite">__truediv__</code> or <code class="codehilite">/</code>.</li>
-<li><code class="codehilite">__floordiv__</code> or <code class="codehilite">//</code>.</li>
-<li><code class="codehilite">__mod__</code> or <code class="codehilite"><span class="c">%</span></code>.</li>
-<li><code class="codehilite">__pow__</code> or <code class="codehilite">**</code>.</li>
-<li><code class="codehilite">__radd__</code>, <code class="codehilite">__iadd__</code>, etc.</li>
-<li><code class="codehilite">def __eq__():</code> or <code class="codehilite">==</code>.</li>
-<li><code class="codehilite">__ne__</code> or <code class="codehilite">!=</code>.</li>
-<li><code class="codehilite">__gt__</code> or <code class="codehilite">&gt;</code>.</li>
-<li><code class="codehilite">__ge__</code> or <code class="codehilite">&gt;=</code>.</li>
-<li><code class="codehilite">__lt__</code> or <code class="codehilite">&lt;</code>.</li>
-<li>
-<p><code class="codehilite">__le__</code> or <code class="codehilite">&lt;=</code>.</p>
+<p><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__len__</span><span class="p">()</span></code> shows the size of an object.</p>
 </li>
 <li>
-<p><code class="codehilite">pickle</code> module. Record objects in a file and retrieve them.</p>
+<p><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__add__</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span></code> is equivalent to <code class="codehilite"><span class="k">object</span> <span class="o">+</span> <span class="mi">4</span></code>; </p>
+</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">__add</span><span class="p">():</span></code> as well.</li>
+<li><code class="codehilite"><span class="k">object</span><span class="p">.</span><span class="n">__sub__</span><span class="p">()</span></code> or <code class="codehilite"><span class="o">-</span></code>.</li>
+<li><code class="codehilite"><span class="n">__mul__</span></code> or <code class="codehilite"><span class="o">*</span></code>.</li>
+<li><code class="codehilite"><span class="n">__truediv__</span></code> or <code class="codehilite"><span class="o">/</span></code>.</li>
+<li><code class="codehilite"><span class="n">__floordiv__</span></code> or <code class="codehilite"><span class="o">//</span></code>.</li>
+<li><code class="codehilite"><span class="n">__mod__</span></code> or <code class="codehilite"><span class="c">%</span></code>.</li>
+<li><code class="codehilite"><span class="n">__pow__</span></code> or <code class="codehilite"><span class="o">**</span></code>.</li>
+<li><code class="codehilite"><span class="n">__radd__</span></code>, <code class="codehilite"><span class="n">__iadd__</span></code>, etc.</li>
+<li><code class="codehilite"><span class="n">def</span> <span class="n">__eq__</span><span class="p">():</span></code> or <code class="codehilite"><span class="o">==</span></code>.</li>
+<li><code class="codehilite"><span class="n">__ne__</span></code> or <code class="codehilite"><span class="o">!=</span></code>.</li>
+<li><code class="codehilite"><span class="n">__gt__</span></code> or <code class="codehilite"><span class="o">&gt;</span></code>.</li>
+<li><code class="codehilite"><span class="n">__ge__</span></code> or <code class="codehilite"><span class="o">&gt;=</span></code>.</li>
+<li><code class="codehilite"><span class="n">__lt__</span></code> or <code class="codehilite"><span class="o">&lt;</span></code>.</li>
+<li>
+<p><code class="codehilite"><span class="n">__le__</span></code> or <code class="codehilite"><span class="o">&lt;=</span></code>.</p>
 </li>
 <li>
-<p><code class="codehilite">__getstate__</code> method.</p>
+<p><code class="codehilite"><span class="n">pickle</span></code> module. Record objects in a file and retrieve them.</p>
 </li>
-<li><code class="codehilite">__setstate__</code> method.</li>
+<li>
+<p><code class="codehilite"><span class="n">__getstate__</span></code> method.</p>
+</li>
+<li><code class="codehilite"><span class="n">__setstate__</span></code> method.</li>
 </ul>
 <h2 id="chapter-20-heritage">Chapter 20, Heritage<a class="headerlink" href="#chapter-20-heritage" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>except</sub></p>
 <p>Class heritage transfers all attributes, parameters and methods from a class to a subclass.</p>
 <ul>
-<li><code class="codehilite">issubclass</code> verifies (true or false) if a class is a subclass of another class.</li>
-<li><code class="codehilite">isinstance</code> verifies if an object comes from a class.</li>
+<li><code class="codehilite"><span class="n">issubclass</span></code> verifies (true or false) if a class is a subclass of another class.</li>
+<li><code class="codehilite"><span class="n">isinstance</span></code> verifies if an object comes from a class.</li>
 </ul>
 <p>A subclass can inherit from two or more classes (multiple heritage).</p>
-<p>More exceptions in a <code class="codehilite">try</code> block, <code class="codehilite">except</code>, heritage, <code class="codehilite">AttributeError</code>, <code class="codehilite">Exception</code>, <code class="codehilite">BaseException</code>, and resolution. </p>
+<p>More exceptions in a <code class="codehilite"><span class="n">try</span></code> block, <code class="codehilite"><span class="k">except</span></code>, heritage, <code class="codehilite"><span class="n">AttributeError</span></code>, <code class="codehilite"><span class="k">Exception</span></code>, <code class="codehilite"><span class="n">BaseException</span></code>, and resolution. </p>
 <p>Exceptions are classes with hierarchy.</p>
 <h2 id="chapter-21-the-for-loop-again">Chapter 21, The for Loop Again<a class="headerlink" href="#chapter-21-the-for-loop-again" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
-<p>Related to the <code class="codehilite">for</code> loop and how to dig deeper into the iterator with <code class="codehilite">__iter__</code> and <code class="codehilite">__next__</code>.</p>
-<p>Iterator can also skip items in a list: iterate from 1 to 5, them jump to 10 and go on. A sort of conditional <code class="codehilite">break</code>. For that, we must generate intervals with <code class="codehilite">yield</code>.</p>
+<p>Related to the <code class="codehilite"><span class="k">for</span></code> loop and how to dig deeper into the iterator with <code class="codehilite"><span class="n">__iter__</span></code> and <code class="codehilite"><span class="n">__next__</span></code>.</p>
+<p>Iterator can also skip items in a list: iterate from 1 to 5, them jump to 10 and go on. A sort of conditional <code class="codehilite"><span class="k">break</span></code>. For that, we must generate intervals with <code class="codehilite"><span class="n">yield</span></code>.</p>
 <h2 id="chapter-23-decorators">Chapter 23, Decorators<a class="headerlink" href="#chapter-23-decorators" title="Permanent link">&para;</a></h2>
 <p>Advanced!</p>
 <p><sub>simplify code</sub></p>
@@ -1419,32 +1424,32 @@ With:</p>
 <p>There are decorators without parameters, with parameters, applied to classes; chained together.</p>
 <p>Use:</p>
 <ol>
-<li>Limit a class instance to only one instance  or one object (a <code class="codehilite">singleton</code>).</li>
+<li>Limit a class instance to only one instance  or one object (a <code class="codehilite"><span class="n">singleton</span></code>).</li>
 <li>Add more control on the type of data going into functions. </li>
 </ol>
 <h2 id="chapter-24-metaclasses">Chapter 24, Metaclasses<a class="headerlink" href="#chapter-24-metaclasses" title="Permanent link">&para;</a></h2>
 <p>Advanced!</p>
-<p><code class="codehilite">__init__</code> initiates an object with attributes, but does not create the object itself. </p>
-<p>It is done by coding a new instance or with <code class="codehilite">__new__</code>. The method is useful to create immutable objects that cannot be modified.</p>
-<p>Create dynamic classes with <code class="codehilite">type</code>.</p>
+<p><code class="codehilite"><span class="n">__init__</span></code> initiates an object with attributes, but does not create the object itself. </p>
+<p>It is done by coding a new instance or with <code class="codehilite"><span class="n">__new__</span></code>. The method is useful to create immutable objects that cannot be modified.</p>
+<p>Create dynamic classes with <code class="codehilite"><span class="k">type</span></code>.</p>
 <h2 id="chapter-25-regular-expressions">Chapter 25, Regular Expressions<a class="headerlink" href="#chapter-25-regular-expressions" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>regex, string, search, beginning, end, replace,  occurrence, character, class, group, number, numbered group, name, named</sub></p>
-<p><code class="codehilite">re</code> module.</p>
+<p><code class="codehilite"><span class="n">re</span></code> module.</p>
 <h2 id="chapter-26-time">Chapter 26, Time<a class="headerlink" href="#chapter-26-time" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>date, time, year, month, day, hour, minute, second, time zone, timezone, time delta, timedelta, time stamp, timestamp, format</sub></p>
-<p><code class="codehilite">time</code> module and <code class="codehilite">datetime</code> module.</p>
+<p><code class="codehilite"><span class="n">time</span></code> module and <code class="codehilite"><span class="n">datetime</span></code> module.</p>
 <h2 id="chapter-27-system-programming">Chapter 27, System Programming<a class="headerlink" href="#chapter-27-system-programming" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p><sub>input, output, stdin, stdout, open, close, read, write, directory, file</sub></p>
-<p><code class="codehilite">sys</code> module and <code class="codehilite">os</code> module. Access system variables and control the operating system.</p>
-<p><code class="codehilite">signal</code> module. Read process signals sent to programs (such as stopping and exiting). </p>
+<p><code class="codehilite"><span class="n">sys</span></code> module and <code class="codehilite"><span class="n">os</span></code> module. Access system variables and control the operating system.</p>
+<p><code class="codehilite"><span class="n">signal</span></code> module. Read process signals sent to programs (such as stopping and exiting). </p>
 <p>Access and control the OS console, enter CLI arguments, program actions usually done with the mouse and the keyboard. </p>
-<p><code class="codehilite">system</code> module, related to <code class="codehilite">os</code>.</p>
+<p><code class="codehilite"><span class="k">system</span></code> module, related to <code class="codehilite"><span class="n">os</span></code>.</p>
 <ul>
-<li><code class="codehilite">os.system(&#39;ls&#39;)</code> on Linux.</li>
-<li><code class="codehilite">os.system(&#39;dir&#39;)</code> on Windows.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="k">system</span><span class="p">(</span><span class="s1">&#39;ls&#39;</span><span class="p">)</span></code> on Linux.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="k">system</span><span class="p">(</span><span class="s1">&#39;dir&#39;</span><span class="p">)</span></code> on Windows.</li>
 </ul>
 <p>For example:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -1463,30 +1468,30 @@ With:</p>
 
 <h2 id="chapter-28-maths">Chapter 28, Maths<a class="headerlink" href="#chapter-28-maths" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
-<p><code class="codehilite">math</code> module.</p>
-<p>Enables new methods in arithmetics, trigonometry, rounding: <code class="codehilite">pow()</code>, <code class="codehilite">sqrt()</code>, <code class="codehilite">exp()</code>, <code class="codehilite">fabs()</code>, <code class="codehilite">radians()</code>, <code class="codehilite">degrees()</code>, <code class="codehilite">ceil()</code>, <code class="codehilite">floor()</code>, <code class="codehilite">trunc()</code>, etc</p>
-<p><code class="codehilite">fractions</code> module.</p>
-<p><code class="codehilite">Fraction()</code>, <code class="codehilite">from_float()</code>, etc.</p>
-<p><code class="codehilite">random</code> module.</p>
-<p><code class="codehilite">random()</code>, <code class="codehilite">randrange()</code>, <code class="codehilite">randint()</code>, <code class="codehilite">choice()</code>, etc.</p>
+<p><code class="codehilite"><span class="n">math</span></code> module.</p>
+<p>Enables new methods in arithmetics, trigonometry, rounding: <code class="codehilite"><span class="n">pow</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">sqrt</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">exp</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">fabs</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">radians</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">degrees</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">ceil</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">floor</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">trunc</span><span class="p">()</span></code>, etc</p>
+<p><code class="codehilite"><span class="n">fractions</span></code> module.</p>
+<p><code class="codehilite"><span class="n">Fraction</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">from_float</span><span class="p">()</span></code>, etc.</p>
+<p><code class="codehilite"><span class="k">random</span></code> module.</p>
+<p><code class="codehilite"><span class="k">random</span><span class="ss">()</span></code>, <code class="codehilite"><span class="n">randrange</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">randint</span><span class="p">()</span></code>, <code class="codehilite"><span class="n">choice</span><span class="p">()</span></code>, etc.</p>
 <h2 id="chapter-29-password-management">Chapter 29, Password Management<a class="headerlink" href="#chapter-29-password-management" title="Permanent link">&para;</a></h2>
 <p>Web framework.</p>
-<p><code class="codehilite">getpass</code> module.</p>
+<p><code class="codehilite"><span class="n">getpass</span></code> module.</p>
 <p>Receive a password, cypher a password, etc.</p>
 <h2 id="chapter-30-network">Chapter 30, Network<a class="headerlink" href="#chapter-30-network" title="Permanent link">&para;</a></h2>
 <p>Web framework.</p>
 <p><sub>tcp, protocol, client, server, connection, http, port, socket, connect,  </sub></p>
-<p><code class="codehilite">socket</code> module and <code class="codehilite">select</code> module.</p>
+<p><code class="codehilite"><span class="n">socket</span></code> module and <code class="codehilite"><span class="k">select</span></code> module.</p>
 <h2 id="chapter-31-tkinter">Chapter 31, Tkinter<a class="headerlink" href="#chapter-31-tkinter" title="Permanent link">&para;</a></h2>
 <p>Software, application.</p>
 <p><sub>gui, graphic, interface, window, button, interactive, box, toggle, widget, labels, square, checkbox, list, command</sub></p>
-<p><code class="codehilite">Tkinter</code> module.</p>
+<p><code class="codehilite"><span class="n">Tkinter</span></code> module.</p>
 <h2 id="chapter-33-distribute-scripts-and-programs">Chapter 33, Distribute Scripts and Programs<a class="headerlink" href="#chapter-33-distribute-scripts-and-programs" title="Permanent link">&para;</a></h2>
 <p>Basic.</p>
 <p>Method 1: Executable File</p>
-<p><code class="codehilite">cx_freeze</code> creates a standalone executable file. <code class="codehilite">cx_Freeze</code> is portable (Windows, Linux, Mac OS X), compatible with Py -2 and Py -3, simple, fast, flexible.</p>
-<p>Download, install, use the <code class="codehilite">cxfreeze</code> script</p>
-<p>Alternative: <code class="codehilite">py2exe</code> (Windows only).</p>
+<p><code class="codehilite"><span class="n">cx_freeze</span></code> creates a standalone executable file. <code class="codehilite"><span class="n">cx_Freeze</span></code> is portable (Windows, Linux, Mac OS X), compatible with Py -2 and Py -3, simple, fast, flexible.</p>
+<p>Download, install, use the <code class="codehilite"><span class="n">cxfreeze</span></code> script</p>
+<p>Alternative: <code class="codehilite"><span class="n">py2exe</span></code> (Windows only).</p>
 <p>Method 2: Setup File</p>
 <p>The traditional way of distributing a code and a more powerful approach.</p>
 <h2 id="chapter-34-pep">Chapter 34, PEP<a class="headerlink" href="#chapter-34-pep" title="Permanent link">&para;</a></h2>
@@ -1578,25 +1583,17 @@ With:</p>
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

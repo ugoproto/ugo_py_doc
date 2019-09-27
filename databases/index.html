@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Databases
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -314,49 +319,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sqlite3" title="SQLite3" class="md-nav__link">
+  <a href="#sqlite3" class="md-nav__link">
     SQLite3
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sqlite3-cli" title="SQLite3 CLI" class="md-nav__link">
+  <a href="#sqlite3-cli" class="md-nav__link">
     SQLite3 CLI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sql-database-gui-administration-and-management-tools" title="SQL Database GUI, Administration, and Management Tools" class="md-nav__link">
+  <a href="#sql-database-gui-administration-and-management-tools" class="md-nav__link">
     SQL Database GUI, Administration, and Management Tools
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#spreadsheet-data-and-sqlite" title="Spreadsheet Data and SQLite" class="md-nav__link">
+  <a href="#spreadsheet-data-and-sqlite" class="md-nav__link">
     Spreadsheet Data and SQLite
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#r-and-python-with-sql" title="R and Python with SQL" class="md-nav__link">
+  <a href="#r-and-python-with-sql" class="md-nav__link">
     R and Python with SQL
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-chinook-sqlite-sample-database" title="The Chinook SQLite Sample Database" class="md-nav__link">
+  <a href="#the-chinook-sqlite-sample-database" class="md-nav__link">
     The Chinook SQLite Sample Database
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-a-python-orm-peewee" title="Using a Python ORM: peewee" class="md-nav__link">
+  <a href="#using-a-python-orm-peewee" class="md-nav__link">
     Using a Python ORM: peewee
   </a>
   
@@ -364,21 +369,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-peewee" title="Install peewee" class="md-nav__link">
+  <a href="#install-peewee" class="md-nav__link">
     Install peewee
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-database-with-a-script" title="Create a database with a script" class="md-nav__link">
+  <a href="#create-a-database-with-a-script" class="md-nav__link">
     Create a database with a script
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-read-update-and-delete-crud" title="Create, read, update, and delete (CRUD)" class="md-nav__link">
+  <a href="#create-read-update-and-delete-crud" class="md-nav__link">
     Create, read, update, and delete (CRUD)
   </a>
   
@@ -390,7 +395,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-diary-app-a-case" title="A diary app -- A Case" class="md-nav__link">
+  <a href="#a-diary-app-a-case" class="md-nav__link">
     A diary app -- A Case
   </a>
   
@@ -398,49 +403,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-the-skeleton-empty-classes-and-functions" title="A diary app -- The skeleton (empty classes and functions)" class="md-nav__link">
+  <a href="#a-diary-app-the-skeleton-empty-classes-and-functions" class="md-nav__link">
     A diary app -- The skeleton (empty classes and functions)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-initialize" title="A diary app -- Initialize" class="md-nav__link">
+  <a href="#a-diary-app-initialize" class="md-nav__link">
     A diary app -- Initialize
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-create-a-menu" title="A diary app -- Create a menu" class="md-nav__link">
+  <a href="#a-diary-app-create-a-menu" class="md-nav__link">
     A diary app -- Create a menu
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-data-entry" title="A diary app -- Data entry" class="md-nav__link">
+  <a href="#a-diary-app-data-entry" class="md-nav__link">
     A diary app -- Data entry
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-search-and-view-entries" title="A diary app -- Search and view entries" class="md-nav__link">
+  <a href="#a-diary-app-search-and-view-entries" class="md-nav__link">
     A diary app -- Search and view entries
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-delete-entries" title="A diary app -- Delete entries" class="md-nav__link">
+  <a href="#a-diary-app-delete-entries" class="md-nav__link">
     A diary app -- Delete entries
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-finalize-and-polish-up" title="A diary app -- Finalize and polish up" class="md-nav__link">
+  <a href="#a-diary-app-finalize-and-polish-up" class="md-nav__link">
     A diary app -- Finalize and polish up
   </a>
   
@@ -918,49 +923,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sqlite3" title="SQLite3" class="md-nav__link">
+  <a href="#sqlite3" class="md-nav__link">
     SQLite3
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sqlite3-cli" title="SQLite3 CLI" class="md-nav__link">
+  <a href="#sqlite3-cli" class="md-nav__link">
     SQLite3 CLI
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sql-database-gui-administration-and-management-tools" title="SQL Database GUI, Administration, and Management Tools" class="md-nav__link">
+  <a href="#sql-database-gui-administration-and-management-tools" class="md-nav__link">
     SQL Database GUI, Administration, and Management Tools
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#spreadsheet-data-and-sqlite" title="Spreadsheet Data and SQLite" class="md-nav__link">
+  <a href="#spreadsheet-data-and-sqlite" class="md-nav__link">
     Spreadsheet Data and SQLite
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#r-and-python-with-sql" title="R and Python with SQL" class="md-nav__link">
+  <a href="#r-and-python-with-sql" class="md-nav__link">
     R and Python with SQL
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-chinook-sqlite-sample-database" title="The Chinook SQLite Sample Database" class="md-nav__link">
+  <a href="#the-chinook-sqlite-sample-database" class="md-nav__link">
     The Chinook SQLite Sample Database
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-a-python-orm-peewee" title="Using a Python ORM: peewee" class="md-nav__link">
+  <a href="#using-a-python-orm-peewee" class="md-nav__link">
     Using a Python ORM: peewee
   </a>
   
@@ -968,21 +973,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#install-peewee" title="Install peewee" class="md-nav__link">
+  <a href="#install-peewee" class="md-nav__link">
     Install peewee
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-database-with-a-script" title="Create a database with a script" class="md-nav__link">
+  <a href="#create-a-database-with-a-script" class="md-nav__link">
     Create a database with a script
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-read-update-and-delete-crud" title="Create, read, update, and delete (CRUD)" class="md-nav__link">
+  <a href="#create-read-update-and-delete-crud" class="md-nav__link">
     Create, read, update, and delete (CRUD)
   </a>
   
@@ -994,7 +999,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-diary-app-a-case" title="A diary app -- A Case" class="md-nav__link">
+  <a href="#a-diary-app-a-case" class="md-nav__link">
     A diary app -- A Case
   </a>
   
@@ -1002,49 +1007,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-the-skeleton-empty-classes-and-functions" title="A diary app -- The skeleton (empty classes and functions)" class="md-nav__link">
+  <a href="#a-diary-app-the-skeleton-empty-classes-and-functions" class="md-nav__link">
     A diary app -- The skeleton (empty classes and functions)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-initialize" title="A diary app -- Initialize" class="md-nav__link">
+  <a href="#a-diary-app-initialize" class="md-nav__link">
     A diary app -- Initialize
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-create-a-menu" title="A diary app -- Create a menu" class="md-nav__link">
+  <a href="#a-diary-app-create-a-menu" class="md-nav__link">
     A diary app -- Create a menu
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-data-entry" title="A diary app -- Data entry" class="md-nav__link">
+  <a href="#a-diary-app-data-entry" class="md-nav__link">
     A diary app -- Data entry
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-search-and-view-entries" title="A diary app -- Search and view entries" class="md-nav__link">
+  <a href="#a-diary-app-search-and-view-entries" class="md-nav__link">
     A diary app -- Search and view entries
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-delete-entries" title="A diary app -- Delete entries" class="md-nav__link">
+  <a href="#a-diary-app-delete-entries" class="md-nav__link">
     A diary app -- Delete entries
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-diary-app-finalize-and-polish-up" title="A diary app -- Finalize and polish up" class="md-nav__link">
+  <a href="#a-diary-app-finalize-and-polish-up" class="md-nav__link">
     A diary app -- Finalize and polish up
   </a>
   
@@ -1095,19 +1100,19 @@ Although we work with SQLite, most concepts are applicable to MySQL and PostgreS
 <p><strong>Basics</strong></p>
 <ul>
 <li>In the shell/bash:<ul>
-<li><code class="codehilite">sqlite3 test.db</code>, create a database/open the database (show the prompt); the database is located in SQLite&rsquo;s directory.</li>
+<li><code class="codehilite"><span class="n">sqlite3</span> <span class="n">test</span><span class="p">.</span><span class="n">db</span></code>, create a database/open the database (show the prompt); the database is located in SQLite&rsquo;s directory.</li>
 </ul>
 </li>
 <li>Basic commands inside a database.<ul>
 <li><code class="codehilite"><span class="na">.help</span></code>.</li>
 <li><code class="codehilite"><span class="na">.databases</span></code>, show all databases.</li>
-<li><code class="codehilite">create table first (a int, b string);</code>, create a table with two fields.</li>
+<li><code class="codehilite"><span class="k">create</span> <span class="k">table</span> <span class="k">first</span> <span class="p">(</span><span class="n">a</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span> <span class="n">string</span><span class="p">);</span></code>, create a table with two fields.</li>
 <li><code class="codehilite"><span class="na">.schema</span></code>, show the last commands.</li>
 <li><code class="codehilite"><span class="na">.tables</span></code>, show all tables in the database.</li>
-<li><code class="codehilite">insert into first (a, b) values (1, &quot;hello&quot;);</code>, load the table.</li>
-<li><code class="codehilite">select * from first;</code>, extract all values from the table.</li>
-<li><code class="codehilite"><span class="na">.quit</span></code> or <code class="codehilite"><span class="na">.exit</span></code>.</li>
-<li><code class="codehilite">drop table first;</code>, delete a table (first).</li>
+<li><code class="codehilite"><span class="k">insert</span> <span class="k">into</span> <span class="k">first</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="k">values</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="ss">&quot;hello&quot;</span><span class="p">);</span></code>, load the table.</li>
+<li><code class="codehilite"><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">first</span><span class="p">;</span></code>, extract all values from the table.</li>
+<li><code class="codehilite"><span class="na">.quit</span></code> or <code class="codehilite">.<span class="k">exit</span></code>.</li>
+<li><code class="codehilite"><span class="k">drop</span> <span class="k">table</span> <span class="k">first</span><span class="p">;</span></code>, delete a table (first).</li>
 <li>Delete a database by deleting the database file in the directory.</li>
 </ul>
 </li>
@@ -1123,7 +1128,7 @@ Although we work with SQLite, most concepts are applicable to MySQL and PostgreS
 <li><code class="codehilite"><span class="na">.mode</span> <span class="no">column</span></code>, change the view (flat table with fixed width).<br />
         - <code class="codehilite"><span class="na">.width</span> <span class="mi">15</span> <span class="mi">20</span></code>, define the width by column.<ul>
 <li><code class="codehilite"><span class="na">.output</span> <span class="p">.</span><span class="err">/</span><span class="no">Documents</span><span class="err">/</span><span class="no">sqlite3Files</span><span class="err">/</span><span class="no">table.sql</span></code>, prepare the dump.</li>
-<li><code class="codehilite">select * from table;</code>, extract.</li>
+<li><code class="codehilite"><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">table</span><span class="p">;</span></code>, extract.</li>
 <li><code class="codehilite"><span class="na">.output</span> <span class="no">stdout</span></code>, dump the data.</li>
 </ul>
 </li>
@@ -1133,26 +1138,26 @@ Although we work with SQLite, most concepts are applicable to MySQL and PostgreS
 </li>
 <li><code class="codehilite"><span class="na">.mode</span> <span class="no">html</span></code>, change the view (html formats ready to be dumbed).<ul>
 <li><code class="codehilite"><span class="na">.output</span> <span class="p">.</span><span class="err">/</span><span class="no">Documents</span><span class="err">/</span><span class="no">sqlite3Files</span><span class="err">/</span><span class="no">table.html</span></code>, prepare the dump.</li>
-<li><code class="codehilite">select * from table;</code>, extract.</li>
+<li><code class="codehilite"><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">table</span><span class="p">;</span></code>, extract.</li>
 <li><code class="codehilite"><span class="na">.output</span> <span class="no">stdout</span></code>, dump the data.</li>
 </ul>
 </li>
 <li><code class="codehilite"><span class="na">.mode</span> <span class="no">tabs</span></code>, change the view (flat table separated by tabs).<ul>
 <li><code class="codehilite"><span class="na">.output</span> <span class="p">.</span><span class="err">/</span><span class="no">Documents</span><span class="err">/</span><span class="no">sqlite3Files</span><span class="err">/</span><span class="no">table.tsv</span></code>, prepare the dump.</li>
-<li><code class="codehilite">select * from table;</code>, extract.</li>
+<li><code class="codehilite"><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">table</span><span class="p">;</span></code>, extract.</li>
 <li><code class="codehilite"><span class="na">.output</span> <span class="no">stdout</span></code>, dump the data.</li>
 </ul>
 </li>
 <li><code class="codehilite"><span class="na">.mode</span> <span class="no">csv</span></code>, change the view (flat table separated by commas or semi-colons).<ul>
 <li><code class="codehilite"><span class="na">.separator</span> <span class="c">;</span></code>, change the separator.</li>
 <li><code class="codehilite"><span class="na">.output</span> <span class="p">.</span><span class="err">/</span><span class="no">Documents</span><span class="err">/</span><span class="no">sqlite3Files</span><span class="err">/</span><span class="no">table.csv</span></code>, prepare the dump.</li>
-<li><code class="codehilite">select * from table;</code>, extract.</li>
+<li><code class="codehilite"><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="k">table</span><span class="p">;</span></code>, extract.</li>
 <li><code class="codehilite"><span class="na">.output</span> <span class="no">stdout</span></code>, dump the data.</li>
 </ul>
 </li>
 <li><code class="codehilite"><span class="na">.mode</span> <span class="no">tcs</span></code>, change the view (flat table with double-quotes).</li>
 <li><code class="codehilite"><span class="na">.headers</span> <span class="no">on</span></code>, show the headers.</li>
-<li><code class="codehilite"><span class="na">.show</span></code>, show the (above) parameters (and change them).</li>
+<li><code class="codehilite">.<span class="k">show</span></code>, show the (above) parameters (and change them).</li>
 <li><code class="codehilite"><span class="na">.prompt</span> <span class="err">&#39;</span><span class="no">sqlite3</span><span class="err">&gt;</span> <span class="err">&#39;</span></code>, change the prompt.</li>
 <li><code class="codehilite"><span class="na">.read</span> <span class="err">&lt;</span><span class="no">path</span><span class="err">&gt;</span></code>, repopulate the database with the above.</li>
 </ul>
@@ -1218,9 +1223,9 @@ Although we work with SQLite, most concepts are applicable to MySQL and PostgreS
 </ul>
 <h2 id="r-and-python-with-sql">R and Python with SQL<a class="headerlink" href="#r-and-python-with-sql" title="Permanent link">&para;</a></h2>
 <ul>
-<li>R can import data from / export data to relational databases using specialized packages such as <code class="codehilite">DBI</code>, <code class="codehilite">RSQLite</code>, <code class="codehilite">RMySQL</code>, <code class="codehilite">RPostgreSQL</code>, etc.</li>
-<li>Python libraries are: <code class="codehilite">python-sql</code>, <code class="codehilite">sqlalchemy</code>, <code class="codehilite">records</code>, <code class="codehilite">peewee</code>, etc.<ul>
-<li><code class="codehilite">pip install &lt;library&gt;</code>.    </li>
+<li>R can import data from / export data to relational databases using specialized packages such as <code class="codehilite"><span class="n">DBI</span></code>, <code class="codehilite"><span class="n">RSQLite</span></code>, <code class="codehilite"><span class="n">RMySQL</span></code>, <code class="codehilite"><span class="n">RPostgreSQL</span></code>, etc.</li>
+<li>Python libraries are: <code class="codehilite"><span class="n">python</span><span class="o">-</span><span class="k">sql</span></code>, <code class="codehilite"><span class="n">sqlalchemy</span></code>, <code class="codehilite"><span class="n">records</span></code>, <code class="codehilite"><span class="n">peewee</span></code>, etc.<ul>
+<li><code class="codehilite"><span class="n">pip</span> <span class="n">install</span> <span class="o">&lt;</span><span class="n">library</span><span class="o">&gt;</span></code>.    </li>
 </ul>
 </li>
 </ul>
@@ -1234,14 +1239,14 @@ http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
 </ul>
 </li>
 </ul>
-<h2 id="using-a-python-orm-peewee">Using a Python ORM: <code class="codehilite">peewee</code><a class="headerlink" href="#using-a-python-orm-peewee" title="Permanent link">&para;</a></h2>
-<h3 id="install-peewee">Install <code class="codehilite">peewee</code><a class="headerlink" href="#install-peewee" title="Permanent link">&para;</a></h3>
-<p>We can run queries with SQL or use a Python wrapper: <code class="codehilite">peewee</code>. It is a lightweight Object Relational Mapper (ORM). <code class="codehilite">peewee</code> works with SQLite, MySQL, and PostgreSQL.</p>
+<h2 id="using-a-python-orm-peewee">Using a Python ORM: <code class="codehilite"><span class="n">peewee</span></code><a class="headerlink" href="#using-a-python-orm-peewee" title="Permanent link">&para;</a></h2>
+<h3 id="install-peewee">Install <code class="codehilite"><span class="n">peewee</span></code><a class="headerlink" href="#install-peewee" title="Permanent link">&para;</a></h3>
+<p>We can run queries with SQL or use a Python wrapper: <code class="codehilite"><span class="n">peewee</span></code>. It is a lightweight Object Relational Mapper (ORM). <code class="codehilite"><span class="n">peewee</span></code> works with SQLite, MySQL, and PostgreSQL.</p>
 <p>Install it with pip.</p>
 <p>We can manage our databases with Python scripts.</p>
 <h3 id="create-a-database-with-a-script">Create a database with a script<a class="headerlink" href="#create-a-database-with-a-script" title="Permanent link">&para;</a></h3>
-<p>In <code class="codehilite">peewee</code>, models are Python classes. Everything in the database is an object: tables, rows, columns, entries, etc.</p>
-<p>We create a new database, <code class="codehilite">students.db</code>, with Python. We connect to the database and create two fields with their SQL parameters. We run the script in the terminal.</p>
+<p>In <code class="codehilite"><span class="n">peewee</span></code>, models are Python classes. Everything in the database is an object: tables, rows, columns, entries, etc.</p>
+<p>We create a new database, <code class="codehilite"><span class="n">students</span><span class="p">.</span><span class="n">db</span></code>, with Python. We connect to the database and create two fields with their SQL parameters. We run the script in the terminal.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1377,8 +1382,8 @@ http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
 </pre></div>
 </td></tr></table>
 
-<p>We can run the script once, but not twice because of the <code class="codehilite">unique=True</code> in the <code class="codehilite"><span class="kr">class</span> <span class="nx">Student</span><span class="p">(</span><span class="nx">Model</span><span class="p">)</span><span class="o">:</span></code>. We get an <code class="codehilite">IntegrityError</code> in the terminal. </p>
-<p>We need to add a <code class="codehilite">try</code> block. Take two.</p>
+<p>We can run the script once, but not twice because of the <code class="codehilite"><span class="k">unique</span><span class="o">=</span><span class="k">True</span></code> in the <code class="codehilite"><span class="k">class</span> <span class="n">Student</span>(<span class="n">Model</span>):</code>. We get an <code class="codehilite"><span class="n">IntegrityError</span></code> in the terminal. </p>
+<p>We need to add a <code class="codehilite"><span class="n">try</span></code> block. Take two.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1747,7 +1752,7 @@ http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
 </td></tr></table>
 
 <h3 id="a-diary-app-initialize">A diary app &ndash; Initialize<a class="headerlink" href="#a-diary-app-initialize" title="Permanent link">&para;</a></h3>
-<p>Let&rsquo;s add some flesh to the skeleton. Add the the <code class="codehilite">datetime</code> library and a new function to initialize the diary.</p>
+<p>Let&rsquo;s add some flesh to the skeleton. Add the the <code class="codehilite"><span class="n">datetime</span></code> library and a new function to initialize the diary.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1830,7 +1835,7 @@ http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
 
 <p>We get no result in the terminal: a good sign. We can check out the results in the db.</p>
 <h3 id="a-diary-app-create-a-menu">A diary app &ndash; Create a menu<a class="headerlink" href="#a-diary-app-create-a-menu" title="Permanent link">&para;</a></h3>
-<p>We add a menu using a dictionary (we need the <code class="codehilite">OrderedDict</code> library).</p>
+<p>We add a menu using a dictionary (we need the <code class="codehilite"><span class="n">OrderedDict</span></code> library).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1943,8 +1948,8 @@ http://www.sqlitetutorial.net/sqlite-sample-database/">diagram</a>.<ul>
 </pre></div>
 </td></tr></table>
 
-<p>This is coded in Python 2. In Python 3, we would replace <code class="codehilite">raw_input</code> by <code class="codehilite">input</code>.</p>
-<p>The result is dynamic. We can input data in the terminal and the script continues to run until we quit with <code class="codehilite">q</code>. We cannot do much since the functions are still empty (<code class="codehilite">def add_entry():</code> and <code class="codehilite">def view_entries():</code>). The following is a snapshot.</p>
+<p>This is coded in Python 2. In Python 3, we would replace <code class="codehilite"><span class="n">raw_input</span></code> by <code class="codehilite"><span class="k">input</span></code>.</p>
+<p>The result is dynamic. We can input data in the terminal and the script continues to run until we quit with <code class="codehilite"><span class="n">q</span></code>. We cannot do much since the functions are still empty (<code class="codehilite"><span class="n">def</span> <span class="n">add_entry</span><span class="p">():</span></code> and <code class="codehilite"><span class="n">def</span> <span class="n">view_entries</span><span class="p">():</span></code>). The following is a snapshot.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1956,7 +1961,7 @@ Actions:
 </td></tr></table>
 
 <h3 id="a-diary-app-data-entry">A diary app &ndash; Data entry<a class="headerlink" href="#a-diary-app-data-entry" title="Permanent link">&para;</a></h3>
-<p>Add the <code class="codehilite">sys</code> library. We want to enter data and load the database.</p>
+<p>Add the <code class="codehilite"><span class="n">sys</span></code> library. We want to enter data and load the database.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2088,10 +2093,10 @@ Actions:
 </td></tr></table>
 
 <p>The result is dynamic.</p>
-<p>To the question <code class="codehilite">Enter your entry. Press ctrl+d when finished.</code>, write <code class="codehilite">Working with databases. I enjoy my day.</code>. Press enter, then press ctrl+z, then enter in Windows, ctrl+d in UNIX-based OS (for End-of-File key sequence). Save it (with a <code class="codehilite">y</code> input). Repeat. This time, do not save it (<code class="codehilite">n</code>). Check out the results in the database.</p>
-<p><code class="codehilite">raw_input</code> in Python 2 vs. <code class="codehilite">input</code> in Python 3. In Python 2, we can print with <code class="codehilite">print &quot; &quot;</code> or <code class="codehilite">print(&quot; &quot;)</code>. The later is only possible in Python 3.</p>
+<p>To the question <code class="codehilite"><span class="n">Enter</span> <span class="n">your</span> <span class="n">entry</span><span class="p">.</span> <span class="n">Press</span> <span class="n">ctrl</span><span class="o">+</span><span class="n">d</span> <span class="k">when</span> <span class="n">finished</span><span class="p">.</span></code>, write <code class="codehilite"><span class="n">Working</span> <span class="k">with</span> <span class="n">databases</span><span class="p">.</span> <span class="n">I</span> <span class="n">enjoy</span> <span class="n">my</span> <span class="k">day</span><span class="p">.</span></code>. Press enter, then press ctrl+z, then enter in Windows, ctrl+d in UNIX-based OS (for End-of-File key sequence). Save it (with a <code class="codehilite"><span class="n">y</span></code> input). Repeat. This time, do not save it (<code class="codehilite"><span class="n">n</span></code>). Check out the results in the database.</p>
+<p><code class="codehilite"><span class="n">raw_input</span></code> in Python 2 vs. <code class="codehilite"><span class="k">input</span></code> in Python 3. In Python 2, we can print with <code class="codehilite"><span class="n">print</span> <span class="ss">&quot; &quot;</span></code> or <code class="codehilite"><span class="n">print</span><span class="p">(</span><span class="ss">&quot; &quot;</span><span class="p">)</span></code>. The later is only possible in Python 3.</p>
 <h3 id="a-diary-app-search-and-view-entries">A diary app &ndash; Search and view entries<a class="headerlink" href="#a-diary-app-search-and-view-entries" title="Permanent link">&para;</a></h3>
-<p>We now want to read the data (query the database). We also want to search throught the entries. In SQL, we would code: <code class="codehilite">SELECT * FROM entry WHERE content LIKE &#39;%search_query$&#39; ORDER BY timestamp DESC;</code>.</p>
+<p>We now want to read the data (query the database). We also want to search throught the entries. In SQL, we would code: <code class="codehilite"><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">entry</span> <span class="k">WHERE</span> <span class="n">content</span> <span class="k">LIKE</span> <span class="s1">&#39;%search_query$&#39;</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="k">timestamp</span> <span class="k">DESC</span><span class="p">;</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2264,9 +2269,9 @@ Actions:
 </pre></div>
 </td></tr></table>
 
-<p>The result is dynamic. Try entering stuff, save it. Back to the menu, read the entry. We should get a date, a line of <code class="codehilite">=</code> and the entry. Quit and go back to the menu. Try search for a word. It should find a single word among all the entry and pull out the entry where the word appears.</p>
+<p>The result is dynamic. Try entering stuff, save it. Back to the menu, read the entry. We should get a date, a line of <code class="codehilite"><span class="o">=</span></code> and the entry. Quit and go back to the menu. Try search for a word. It should find a single word among all the entry and pull out the entry where the word appears.</p>
 <h3 id="a-diary-app-delete-entries">A diary app &ndash; Delete entries<a class="headerlink" href="#a-diary-app-delete-entries" title="Permanent link">&para;</a></h3>
-<p>Complete the last function: <code class="codehilite">def delete_entry(entry):</code>.</p>
+<p>Complete the last function: <code class="codehilite"><span class="n">def</span> <span class="n">delete_entry</span><span class="p">(</span><span class="n">entry</span><span class="p">):</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2453,7 +2458,7 @@ Actions:
 
 <p>The result is dynamic. Enter something. Save it. View it. Delete it (the last entry). Confirm it. Go back to the main menu. View the previous entries. The last entry was deleted and we see the previous entry.</p>
 <h3 id="a-diary-app-finalize-and-polish-up">A diary app &ndash; Finalize and polish up<a class="headerlink" href="#a-diary-app-finalize-and-polish-up" title="Permanent link">&para;</a></h3>
-<p>We can polish up the final result. We need to ventilate the onscreen printouts by cleaning the screen here and there. On Windows, we clear the screen with <code class="codehilite">cls</code>; on UNIX-based OS, with <code class="codehilite">clear</code>.</p>
+<p>We can polish up the final result. We need to ventilate the onscreen printouts by cleaning the screen here and there. On Windows, we clear the screen with <code class="codehilite"><span class="n">cls</span></code>; on UNIX-based OS, with <code class="codehilite"><span class="n">clear</span></code>.</p>
 <p>Here is the final product. It&rsquo;s not perfect, but it works.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>  1
   2
@@ -2719,25 +2724,17 @@ Actions:
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

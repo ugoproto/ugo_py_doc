@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Feature Selection
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -470,7 +475,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-feature-selection-case" title="A feature selection case" class="md-nav__link">
+  <a href="#a-feature-selection-case" class="md-nav__link">
     A feature selection case
   </a>
   
@@ -478,7 +483,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#filter-feature-selection-techniques" title="Filter feature selection techniques" class="md-nav__link">
+  <a href="#filter-feature-selection-techniques" class="md-nav__link">
     Filter feature selection techniques
   </a>
   
@@ -486,7 +491,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#in-r" title="In R" class="md-nav__link">
+  <a href="#in-r" class="md-nav__link">
     In R
   </a>
   
@@ -498,7 +503,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#wrapper-feature-selection-techniques" title="Wrapper feature selection techniques" class="md-nav__link">
+  <a href="#wrapper-feature-selection-techniques" class="md-nav__link">
     Wrapper feature selection techniques
   </a>
   
@@ -506,14 +511,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#another-dataset-another-example" title="Another dataset, another example" class="md-nav__link">
+  <a href="#another-dataset-another-example" class="md-nav__link">
     Another dataset, another example
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#in-r_1" title="In R" class="md-nav__link">
+  <a href="#in-r_1" class="md-nav__link">
     In R
   </a>
   
@@ -525,14 +530,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#embedded-feature-selection-techniques" title="Embedded feature selection techniques" class="md-nav__link">
+  <a href="#embedded-feature-selection-techniques" class="md-nav__link">
     Embedded feature selection techniques
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#takeway" title="Takeway" class="md-nav__link">
+  <a href="#takeway" class="md-nav__link">
     Takeway
   </a>
   
@@ -544,7 +549,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-penalize-the-magnitude-of-coefficients" title="Why Penalize the Magnitude of Coefficients?" class="md-nav__link">
+  <a href="#why-penalize-the-magnitude-of-coefficients" class="md-nav__link">
     Why Penalize the Magnitude of Coefficients?
   </a>
   
@@ -552,42 +557,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ridge-regression" title="Ridge regression" class="md-nav__link">
+  <a href="#ridge-regression" class="md-nav__link">
     Ridge regression
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lasso-regression" title="Lasso regression" class="md-nav__link">
+  <a href="#lasso-regression" class="md-nav__link">
     Lasso regression
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-difference" title="Key Difference" class="md-nav__link">
+  <a href="#key-difference" class="md-nav__link">
     Key Difference
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#typical-use-cases" title="Typical Use Cases" class="md-nav__link">
+  <a href="#typical-use-cases" class="md-nav__link">
     Typical Use Cases
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#presence-of-highly-correlated-features" title="Presence of Highly Correlated Features" class="md-nav__link">
+  <a href="#presence-of-highly-correlated-features" class="md-nav__link">
     Presence of Highly Correlated Features
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#elasticnet-regression" title="ElasticNet Regression" class="md-nav__link">
+  <a href="#elasticnet-regression" class="md-nav__link">
     ElasticNet Regression
   </a>
   
@@ -599,7 +604,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-reduction-techniques" title="Data reduction techniques" class="md-nav__link">
+  <a href="#data-reduction-techniques" class="md-nav__link">
     Data reduction techniques
   </a>
   
@@ -916,7 +921,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-feature-selection-case" title="A feature selection case" class="md-nav__link">
+  <a href="#a-feature-selection-case" class="md-nav__link">
     A feature selection case
   </a>
   
@@ -924,7 +929,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#filter-feature-selection-techniques" title="Filter feature selection techniques" class="md-nav__link">
+  <a href="#filter-feature-selection-techniques" class="md-nav__link">
     Filter feature selection techniques
   </a>
   
@@ -932,7 +937,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#in-r" title="In R" class="md-nav__link">
+  <a href="#in-r" class="md-nav__link">
     In R
   </a>
   
@@ -944,7 +949,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#wrapper-feature-selection-techniques" title="Wrapper feature selection techniques" class="md-nav__link">
+  <a href="#wrapper-feature-selection-techniques" class="md-nav__link">
     Wrapper feature selection techniques
   </a>
   
@@ -952,14 +957,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#another-dataset-another-example" title="Another dataset, another example" class="md-nav__link">
+  <a href="#another-dataset-another-example" class="md-nav__link">
     Another dataset, another example
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#in-r_1" title="In R" class="md-nav__link">
+  <a href="#in-r_1" class="md-nav__link">
     In R
   </a>
   
@@ -971,14 +976,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#embedded-feature-selection-techniques" title="Embedded feature selection techniques" class="md-nav__link">
+  <a href="#embedded-feature-selection-techniques" class="md-nav__link">
     Embedded feature selection techniques
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#takeway" title="Takeway" class="md-nav__link">
+  <a href="#takeway" class="md-nav__link">
     Takeway
   </a>
   
@@ -990,7 +995,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-penalize-the-magnitude-of-coefficients" title="Why Penalize the Magnitude of Coefficients?" class="md-nav__link">
+  <a href="#why-penalize-the-magnitude-of-coefficients" class="md-nav__link">
     Why Penalize the Magnitude of Coefficients?
   </a>
   
@@ -998,42 +1003,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ridge-regression" title="Ridge regression" class="md-nav__link">
+  <a href="#ridge-regression" class="md-nav__link">
     Ridge regression
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lasso-regression" title="Lasso regression" class="md-nav__link">
+  <a href="#lasso-regression" class="md-nav__link">
     Lasso regression
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-difference" title="Key Difference" class="md-nav__link">
+  <a href="#key-difference" class="md-nav__link">
     Key Difference
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#typical-use-cases" title="Typical Use Cases" class="md-nav__link">
+  <a href="#typical-use-cases" class="md-nav__link">
     Typical Use Cases
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#presence-of-highly-correlated-features" title="Presence of Highly Correlated Features" class="md-nav__link">
+  <a href="#presence-of-highly-correlated-features" class="md-nav__link">
     Presence of Highly Correlated Features
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#elasticnet-regression" title="ElasticNet Regression" class="md-nav__link">
+  <a href="#elasticnet-regression" class="md-nav__link">
     ElasticNet Regression
   </a>
   
@@ -1045,7 +1050,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-reduction-techniques" title="Data reduction techniques" class="md-nav__link">
+  <a href="#data-reduction-techniques" class="md-nav__link">
     Data reduction techniques
   </a>
   
@@ -1319,8 +1324,8 @@ The null hypothesis: mutually exclusive or statistically independent. When we re
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[  111.52   1411.887    17.605    53.108  2175.565   127.669     5.393
-   181.304]
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span>  <span class="mi">111</span><span class="p">.</span><span class="mi">52</span>   <span class="mi">1411</span><span class="p">.</span><span class="mi">887</span>    <span class="mi">17</span><span class="p">.</span><span class="mi">605</span>    <span class="mi">53</span><span class="p">.</span><span class="mi">108</span>  <span class="mi">2175</span><span class="p">.</span><span class="mi">565</span>   <span class="mi">127</span><span class="p">.</span><span class="mi">669</span>     <span class="mi">5</span><span class="p">.</span><span class="mi">393</span>
+   <span class="mi">181</span><span class="p">.</span><span class="mi">304</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -1397,7 +1402,7 @@ The null hypothesis: mutually exclusive or statistically independent. When we re
 </table>
 </div>
 
-<p>You can see the scores for each attribute and the 4 attributes chosen (those with the highest scores): <code class="codehilite">plas, test, mass, age</code>.<br />
+<p>You can see the scores for each attribute and the 4 attributes chosen (those with the highest scores): <code class="codehilite"><span class="n">plas</span><span class="p">,</span> <span class="n">test</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">age</span></code>.<br />
 This scores will help you further in determining the best features for training your model.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1413,11 +1418,11 @@ This scores will help you further in determining the best features for training 
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([[ 148. ,    0. ,   33.6,   50. ],
-       [  85. ,    0. ,   26.6,   31. ],
-       [ 183. ,    0. ,   23.3,   32. ],
-       [  89. ,   94. ,   28.1,   21. ],
-       [ 137. ,  168. ,   43.1,   33. ]])
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([[</span> <span class="mi">148</span><span class="p">.</span> <span class="p">,</span>    <span class="mi">0</span><span class="p">.</span> <span class="p">,</span>   <span class="mi">33</span><span class="p">.</span><span class="mi">6</span><span class="p">,</span>   <span class="mi">50</span><span class="p">.</span> <span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">85</span><span class="p">.</span> <span class="p">,</span>    <span class="mi">0</span><span class="p">.</span> <span class="p">,</span>   <span class="mi">26</span><span class="p">.</span><span class="mi">6</span><span class="p">,</span>   <span class="mi">31</span><span class="p">.</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mi">183</span><span class="p">.</span> <span class="p">,</span>    <span class="mi">0</span><span class="p">.</span> <span class="p">,</span>   <span class="mi">23</span><span class="p">.</span><span class="mi">3</span><span class="p">,</span>   <span class="mi">32</span><span class="p">.</span> <span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">89</span><span class="p">.</span> <span class="p">,</span>   <span class="mi">94</span><span class="p">.</span> <span class="p">,</span>   <span class="mi">28</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span>   <span class="mi">21</span><span class="p">.</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mi">137</span><span class="p">.</span> <span class="p">,</span>  <span class="mi">168</span><span class="p">.</span> <span class="p">,</span>   <span class="mi">43</span><span class="p">.</span><span class="mi">1</span><span class="p">,</span>   <span class="mi">33</span><span class="p">.</span> <span class="p">]])</span>
 </pre></div>
 </td></tr></table>
 
@@ -1595,7 +1600,7 @@ This scores will help you further in determining the best features for training 
 <p>The caret package provides tools to automatically report on the relevance and importance of attributes in your data and even select the most important features.<br />
 Data can contain attributes that are highly correlated with each other.<br />
 Many methods perform better if highly correlated attributes are removed.<br />
-The caret package provides <code class="codehilite">findCorrelation</code> which will analyze a correlation matrix of your data’s attributes report on attributes that can be removed.<br />
+The caret package provides <code class="codehilite"><span class="n">findCorrelation</span></code> which will analyze a correlation matrix of your data’s attributes report on attributes that can be removed.<br />
 Using the Pima Indians Diabetes dataset, let&rsquo;s remove attributes with an absolute correlation of 0.75 or higher.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1740,23 +1745,23 @@ The choice of algorithms does not matter too much as long as it is consistent.</
 14
 15
 16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Num Features: 3
-Selected Features: [ True False False False False  True  True False]
-Feature Ranking: [1 2 3 5 6 1 1 4]
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Num</span> <span class="n">Features</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Selected</span> <span class="n">Features</span><span class="p">:</span> <span class="p">[</span> <span class="k">True</span> <span class="k">False</span> <span class="k">False</span> <span class="k">False</span> <span class="k">False</span>  <span class="k">True</span>  <span class="k">True</span> <span class="k">False</span><span class="p">]</span>
+<span class="n">Feature</span> <span class="n">Ranking</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">5</span> <span class="mi">6</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">4</span><span class="p">]</span>
 
 
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -1842,7 +1847,7 @@ Feature Ranking: [1 2 3 5 6 1 1 4]
 </table>
 </div>
 
-<p>You can see that RFE chose the top 3 features as <code class="codehilite">preg, mass, pedi</code>.<br />
+<p>You can see that RFE chose the top 3 features as <code class="codehilite"><span class="n">preg</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">pedi</span></code>.<br />
 These are marked True in the support array and marked with a choice “1” in the ranking array.</p>
 <p>You can also use RFE with the Bagged decision trees like Random Forest and Extra Trees to estimate the importance of features.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -1864,12 +1869,12 @@ These are marked True in the support array and marked with a choice “1” in t
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[0.10490793 0.20041541 0.0958495  0.08070628 0.0849718  0.15844774
- 0.12226854 0.15243279]
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">10490793</span> <span class="mi">0</span><span class="p">.</span><span class="mi">20041541</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0958495</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">08070628</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0849718</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">15844774</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">12226854</span> <span class="mi">0</span><span class="p">.</span><span class="mi">15243279</span><span class="p">]</span>
 
 
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/ensemble/forest.py:248: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
-  &quot;10 in version 0.20 to 100 in 0.22.&quot;, FutureWarning)
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">ensemble</span><span class="o">/</span><span class="n">forest</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">248</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="n">The</span> <span class="k">default</span> <span class="n">value</span> <span class="k">of</span> <span class="n">n_estimators</span> <span class="n">will</span> <span class="n">change</span> <span class="k">from</span> <span class="mi">10</span> <span class="k">in</span> <span class="k">version</span> <span class="mi">0</span><span class="p">.</span><span class="mi">20</span> <span class="k">to</span> <span class="mi">100</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span>
+  <span class="ss">&quot;10 in version 0.20 to 100 in 0.22.&quot;</span><span class="p">,</span> <span class="n">FutureWarning</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -1881,9 +1886,9 @@ These are marked True in the support array and marked with a choice “1” in t
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Num Features: 8
-Features Importance: [0.10490793 0.20041541 0.0958495  0.08070628 0.0849718  0.15844774
- 0.12226854 0.15243279]
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Num</span> <span class="n">Features</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">Features</span> <span class="n">Importance</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">10490793</span> <span class="mi">0</span><span class="p">.</span><span class="mi">20041541</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0958495</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">08070628</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0849718</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">15844774</span>
+ <span class="mi">0</span><span class="p">.</span><span class="mi">12226854</span> <span class="mi">0</span><span class="p">.</span><span class="mi">15243279</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -2057,14 +2062,14 @@ Features Importance: [0.10490793 0.20041541 0.0958495  0.08070628 0.0849718  0.1
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:459: FutureWarning: Default multi_class will be changed to &#39;auto&#39; in 0.22. Specify the multi_class option to silence this warning.
-  &quot;this warning.&quot;, FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:459: FutureWarning: Default multi_class will be changed to &#39;auto&#39; in 0.22. Specify the multi_class option to silence this warning.
-  &quot;this warning.&quot;, FutureWarning)
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">459</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">multi_class</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;auto&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">the</span> <span class="n">multi_class</span> <span class="k">option</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="ss">&quot;this warning.&quot;</span><span class="p">,</span> <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">459</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">multi_class</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;auto&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">the</span> <span class="n">multi_class</span> <span class="k">option</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="ss">&quot;this warning.&quot;</span><span class="p">,</span> <span class="n">FutureWarning</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2078,9 +2083,9 @@ Features Importance: [0.10490793 0.20041541 0.0958495  0.08070628 0.0849718  0.1
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Num Features: 3
-Selected Features: [False  True  True  True]
-Feature Ranking: [2 1 1 1]
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Num</span> <span class="n">Features</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Selected</span> <span class="n">Features</span><span class="p">:</span> <span class="p">[</span><span class="k">False</span>  <span class="k">True</span>  <span class="k">True</span>  <span class="k">True</span><span class="p">]</span>
+<span class="n">Feature</span> <span class="n">Ranking</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -2184,8 +2189,8 @@ Feature Ranking: [2 1 1 1]
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Num Features: 4
-Features Importance: [0.08470961 0.02095061 0.37336503 0.52097475]
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Num</span> <span class="n">Features</span><span class="p">:</span> <span class="mi">4</span>
+<span class="n">Features</span> <span class="n">Importance</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">08470961</span> <span class="mi">0</span><span class="p">.</span><span class="mi">02095061</span> <span class="mi">0</span><span class="p">.</span><span class="mi">37336503</span> <span class="mi">0</span><span class="p">.</span><span class="mi">52097475</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -2316,8 +2321,8 @@ Features Importance: [0.08470961 0.02095061 0.37336503 0.52097475]
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Ridge(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=None,
-   normalize=False, random_state=None, solver=&#39;auto&#39;, tol=0.001)
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">copy_X</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">fit_intercept</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+   <span class="n">normalize</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">001</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2356,9 +2361,9 @@ Features Importance: [0.08470961 0.02095061 0.37336503 0.52097475]
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Ridge model: 0.021 * X0 + 0.006 * X1 + -0.002 * X2 + 0.0 * X3 + -0.0 * X4 + 0.013 * X5 + 0.145 * X6 + 0.003 * X7
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Ridge</span> <span class="n">model</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">021</span> <span class="o">*</span> <span class="n">X0</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">006</span> <span class="o">*</span> <span class="n">X1</span> <span class="o">+</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">002</span> <span class="o">*</span> <span class="n">X2</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="n">X3</span> <span class="o">+</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="n">X4</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">013</span> <span class="o">*</span> <span class="n">X5</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">145</span> <span class="o">*</span> <span class="n">X6</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">003</span> <span class="o">*</span> <span class="n">X7</span>
 
-Ridge model: 0.021 * preg + 0.006 * plas + -0.002 * pres + 0.0 * skin + -0.0 * test + 0.013 * mass + 0.145 * pedi + 0.003 * age
+<span class="n">Ridge</span> <span class="n">model</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">021</span> <span class="o">*</span> <span class="n">preg</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">006</span> <span class="o">*</span> <span class="n">plas</span> <span class="o">+</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">002</span> <span class="o">*</span> <span class="n">pres</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="n">skin</span> <span class="o">+</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="n">test</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">013</span> <span class="o">*</span> <span class="n">mass</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">145</span> <span class="o">*</span> <span class="n">pedi</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">003</span> <span class="o">*</span> <span class="n">age</span>
 </pre></div>
 </td></tr></table>
 
@@ -2368,13 +2373,13 @@ Ridge model: 0.021 * preg + 0.006 * plas + -0.002 * pres + 0.0 * skin + -0.0 * t
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Ridge model: 0.145 * pedi + 0.021 * preg + 0.013 * mass + 0.006 * plas + 0.003 * age + -0.002 * pres + -0.0 * test + 0.0 * skin
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Ridge</span> <span class="n">model</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">145</span> <span class="o">*</span> <span class="n">pedi</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">021</span> <span class="o">*</span> <span class="n">preg</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">013</span> <span class="o">*</span> <span class="n">mass</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">006</span> <span class="o">*</span> <span class="n">plas</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">003</span> <span class="o">*</span> <span class="n">age</span> <span class="o">+</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">002</span> <span class="o">*</span> <span class="n">pres</span> <span class="o">+</span> <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="n">test</span> <span class="o">+</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="n">skin</span>
 </pre></div>
 </td></tr></table>
 
 <p>You can spot all the coefficient terms appended with the feature variables.<br />
 You can pick the most essential features.<br />
-The sorted top 3 features are <code class="codehilite">pedi, preg, mass</code>.  </p>
+The sorted top 3 features are <code class="codehilite"><span class="n">pedi</span><span class="p">,</span> <span class="n">preg</span><span class="p">,</span> <span class="n">mass</span></code>.  </p>
 <p><strong>A word on the Ridge regression</strong></p>
 <ul>
 <li>It is also known as L2-Regularization.</li>
@@ -3118,10 +3123,10 @@ This is different from the simple linear regression case where each model had a 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/ridge.py:125: LinAlgWarning: scipy.linalg.solve
-Ill-conditioned matrix detected. Result is not guaranteed to be accurate.
-Reciprocal condition number4.572933e-17
-  overwrite_a=True).T
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">ridge</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">125</span><span class="p">:</span> <span class="n">LinAlgWarning</span><span class="p">:</span> <span class="n">scipy</span><span class="p">.</span><span class="n">linalg</span><span class="p">.</span><span class="n">solve</span>
+<span class="n">Ill</span><span class="o">-</span><span class="n">conditioned</span> <span class="n">matrix</span> <span class="n">detected</span><span class="p">.</span> <span class="k">Result</span> <span class="k">is</span> <span class="k">not</span> <span class="n">guaranteed</span> <span class="k">to</span> <span class="n">be</span> <span class="n">accurate</span><span class="p">.</span>
+<span class="n">Reciprocal</span> <span class="n">condition</span> <span class="n">number4</span><span class="p">.</span><span class="mi">572933</span><span class="n">e</span><span class="o">-</span><span class="mi">17</span>
+  <span class="n">overwrite_a</span><span class="o">=</span><span class="k">True</span><span class="p">).</span><span class="n">T</span>
 </pre></div>
 </td></tr></table>
 
@@ -3400,17 +3405,17 @@ Let’s reconfirm the same by determining the number of zeros in each row of the
  8
  9
 10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>alpha_1e-15     0
-alpha_1e-10     0
-alpha_1e-08     0
-alpha_0.0001    0
-alpha_0.001     0
-alpha_0.01      0
-alpha_1         0
-alpha_5         0
-alpha_10        0
-alpha_20        0
-dtype: int64
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">alpha_1e</span><span class="o">-</span><span class="mi">15</span>     <span class="mi">0</span>
+<span class="n">alpha_1e</span><span class="o">-</span><span class="mi">10</span>     <span class="mi">0</span>
+<span class="n">alpha_1e</span><span class="o">-</span><span class="mi">08</span>     <span class="mi">0</span>
+<span class="n">alpha_0</span><span class="p">.</span><span class="mi">0001</span>    <span class="mi">0</span>
+<span class="n">alpha_0</span><span class="p">.</span><span class="mi">001</span>     <span class="mi">0</span>
+<span class="n">alpha_0</span><span class="p">.</span><span class="mi">01</span>      <span class="mi">0</span>
+<span class="n">alpha_1</span>         <span class="mi">0</span>
+<span class="n">alpha_5</span>         <span class="mi">0</span>
+<span class="n">alpha_10</span>        <span class="mi">0</span>
+<span class="n">alpha_20</span>        <span class="mi">0</span>
+<span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </pre></div>
 </td></tr></table>
 
@@ -3473,7 +3478,7 @@ Lasso regression performs L1 regularization, i.e. it adds a factor of sum of abs
 </pre></div>
 </td></tr></table>
 
-<p>The additional parameters defined in Lasso function <code class="codehilite">max_iter</code> is the maximum number of iterations for which we want the model to run if it doesn&rsquo;t converge before.<br />
+<p>The additional parameters defined in Lasso function <code class="codehilite"><span class="n">max_iter</span></code> is the maximum number of iterations for which we want the model to run if it doesn&rsquo;t converge before.<br />
 This exists for Ridge regression as well but setting this to a higher than default value was required in this case.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -3518,12 +3523,12 @@ This exists for Ridge regression as well but setting this to a higher than defau
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/coordinate_descent.py:491: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Fitting data with very small alpha may cause precision problems.
-  ConvergenceWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/coordinate_descent.py:491: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Fitting data with very small alpha may cause precision problems.
-  ConvergenceWarning)
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/coordinate_descent.py:491: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations. Fitting data with very small alpha may cause precision problems.
-  ConvergenceWarning)
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">coordinate_descent</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">491</span><span class="p">:</span> <span class="n">ConvergenceWarning</span><span class="p">:</span> <span class="n">Objective</span> <span class="n">did</span> <span class="k">not</span> <span class="n">converge</span><span class="p">.</span> <span class="n">You</span> <span class="n">might</span> <span class="n">want</span> <span class="k">to</span> <span class="n">increase</span> <span class="n">the</span> <span class="nb">number</span> <span class="k">of</span> <span class="n">iterations</span><span class="p">.</span> <span class="n">Fitting</span> <span class="k">data</span> <span class="k">with</span> <span class="n">very</span> <span class="n">small</span> <span class="n">alpha</span> <span class="n">may</span> <span class="n">cause</span> <span class="k">precision</span> <span class="n">problems</span><span class="p">.</span>
+  <span class="n">ConvergenceWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">coordinate_descent</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">491</span><span class="p">:</span> <span class="n">ConvergenceWarning</span><span class="p">:</span> <span class="n">Objective</span> <span class="n">did</span> <span class="k">not</span> <span class="n">converge</span><span class="p">.</span> <span class="n">You</span> <span class="n">might</span> <span class="n">want</span> <span class="k">to</span> <span class="n">increase</span> <span class="n">the</span> <span class="nb">number</span> <span class="k">of</span> <span class="n">iterations</span><span class="p">.</span> <span class="n">Fitting</span> <span class="k">data</span> <span class="k">with</span> <span class="n">very</span> <span class="n">small</span> <span class="n">alpha</span> <span class="n">may</span> <span class="n">cause</span> <span class="k">precision</span> <span class="n">problems</span><span class="p">.</span>
+  <span class="n">ConvergenceWarning</span><span class="p">)</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">coordinate_descent</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">491</span><span class="p">:</span> <span class="n">ConvergenceWarning</span><span class="p">:</span> <span class="n">Objective</span> <span class="n">did</span> <span class="k">not</span> <span class="n">converge</span><span class="p">.</span> <span class="n">You</span> <span class="n">might</span> <span class="n">want</span> <span class="k">to</span> <span class="n">increase</span> <span class="n">the</span> <span class="nb">number</span> <span class="k">of</span> <span class="n">iterations</span><span class="p">.</span> <span class="n">Fitting</span> <span class="k">data</span> <span class="k">with</span> <span class="n">very</span> <span class="n">small</span> <span class="n">alpha</span> <span class="n">may</span> <span class="n">cause</span> <span class="k">precision</span> <span class="n">problems</span><span class="p">.</span>
+  <span class="n">ConvergenceWarning</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -3802,17 +3807,17 @@ Let&rsquo;s check the number of coefficients which are zero in each model using 
  8
  9
 10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>alpha_1e-15      0
-alpha_1e-10      0
-alpha_1e-08      0
-alpha_1e-05      8
-alpha_0.0001    10
-alpha_0.001     12
-alpha_0.01      13
-alpha_1         15
-alpha_5         15
-alpha_10        15
-dtype: int64
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">alpha_1e</span><span class="o">-</span><span class="mi">15</span>      <span class="mi">0</span>
+<span class="n">alpha_1e</span><span class="o">-</span><span class="mi">10</span>      <span class="mi">0</span>
+<span class="n">alpha_1e</span><span class="o">-</span><span class="mi">08</span>      <span class="mi">0</span>
+<span class="n">alpha_1e</span><span class="o">-</span><span class="mi">05</span>      <span class="mi">8</span>
+<span class="n">alpha_0</span><span class="p">.</span><span class="mi">0001</span>    <span class="mi">10</span>
+<span class="n">alpha_0</span><span class="p">.</span><span class="mi">001</span>     <span class="mi">12</span>
+<span class="n">alpha_0</span><span class="p">.</span><span class="mi">01</span>      <span class="mi">13</span>
+<span class="n">alpha_1</span>         <span class="mi">15</span>
+<span class="n">alpha_5</span>         <span class="mi">15</span>
+<span class="n">alpha_10</span>        <span class="mi">15</span>
+<span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </pre></div>
 </td></tr></table>
 
@@ -3843,7 +3848,7 @@ Thus, lasso provides a significant advantage.</p>
 <li>Lasso: it arbitrarily selects any one feature among the highly correlated ones and reduced the coefficients of the rest to zero. Also, the chosen variable changes randomly with changes in model parameters. This generally doesn&rsquo;t work that well as compared to ridge regression.</li>
 </ul>
 <p>This disadvantage of lasso can be observed in the example we discussed above.<br />
-Since we used a polynomial regression, the variables were highly correlated. (Not sure why? Check the output of <code class="codehilite">data.corr()</code>).<br />
+Since we used a polynomial regression, the variables were highly correlated. (Not sure why? Check the output of <code class="codehilite"><span class="k">data</span><span class="p">.</span><span class="n">corr</span><span class="p">()</span></code>).<br />
 Thus, we saw that even small values of alpha were giving significant sparsity (i.e. high numbers of coefficients as zero).</p>
 <p>Along with Ridge and Lasso, Elastic Net is another useful technique which combines both L1 and L2 regularization. It can be used to balance out the pros and cons of ridge and lasso regression. I encourage you to explore it further.</p>
 <h3 id="elasticnet-regression">ElasticNet Regression<a class="headerlink" href="#elasticnet-regression" title="Permanent link">&para;</a></h3>
@@ -3880,7 +3885,7 @@ A property of PCA is that you can choose the number of dimensions or principal c
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Explained Variance: [0.88854663 0.06159078 0.02579012]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Explained</span> <span class="n">Variance</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">88854663</span> <span class="mi">0</span><span class="p">.</span><span class="mi">06159078</span> <span class="mi">0</span><span class="p">.</span><span class="mi">02579012</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -3893,12 +3898,12 @@ A property of PCA is that you can choose the number of dimensions or principal c
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[[-2.02176587e-03  9.78115765e-02  1.60930503e-02  6.07566861e-02
-   9.93110844e-01  1.40108085e-02  5.37167919e-04 -3.56474430e-03]
- [-2.26488861e-02 -9.72210040e-01 -1.41909330e-01  5.78614699e-02
-   9.46266913e-02 -4.69729766e-02 -8.16804621e-04 -1.40168181e-01]
- [-2.24649003e-02  1.43428710e-01 -9.22467192e-01 -3.07013055e-01
-   2.09773019e-02 -1.32444542e-01 -6.39983017e-04 -1.25454310e-01]]
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[[</span><span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">02176587</span><span class="n">e</span><span class="o">-</span><span class="mi">03</span>  <span class="mi">9</span><span class="p">.</span><span class="mi">78115765</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span>  <span class="mi">1</span><span class="p">.</span><span class="mi">60930503</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span>  <span class="mi">6</span><span class="p">.</span><span class="mi">07566861</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span>
+   <span class="mi">9</span><span class="p">.</span><span class="mi">93110844</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span>  <span class="mi">1</span><span class="p">.</span><span class="mi">40108085</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span>  <span class="mi">5</span><span class="p">.</span><span class="mi">37167919</span><span class="n">e</span><span class="o">-</span><span class="mi">04</span> <span class="o">-</span><span class="mi">3</span><span class="p">.</span><span class="mi">56474430</span><span class="n">e</span><span class="o">-</span><span class="mi">03</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">26488861</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span> <span class="o">-</span><span class="mi">9</span><span class="p">.</span><span class="mi">72210040</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><span class="mi">41909330</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span>  <span class="mi">5</span><span class="p">.</span><span class="mi">78614699</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span>
+   <span class="mi">9</span><span class="p">.</span><span class="mi">46266913</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span> <span class="o">-</span><span class="mi">4</span><span class="p">.</span><span class="mi">69729766</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span> <span class="o">-</span><span class="mi">8</span><span class="p">.</span><span class="mi">16804621</span><span class="n">e</span><span class="o">-</span><span class="mi">04</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><span class="mi">40168181</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">24649003</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span>  <span class="mi">1</span><span class="p">.</span><span class="mi">43428710</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span> <span class="o">-</span><span class="mi">9</span><span class="p">.</span><span class="mi">22467192</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span> <span class="o">-</span><span class="mi">3</span><span class="p">.</span><span class="mi">07013055</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span>
+   <span class="mi">2</span><span class="p">.</span><span class="mi">09773019</span><span class="n">e</span><span class="o">-</span><span class="mi">02</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><span class="mi">32444542</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span> <span class="o">-</span><span class="mi">6</span><span class="p">.</span><span class="mi">39983017</span><span class="n">e</span><span class="o">-</span><span class="mi">04</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><span class="mi">25454310</span><span class="n">e</span><span class="o">-</span><span class="mi">01</span><span class="p">]]</span>
 </pre></div>
 </td></tr></table>
 
@@ -3966,25 +3971,17 @@ A property of PCA is that you can choose the number of dimensions or principal c
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

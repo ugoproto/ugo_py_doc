@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Python and Excel
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -542,7 +547,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-data-as-the-starting-point" title="The Data as the Starting Point" class="md-nav__link">
+  <a href="#the-data-as-the-starting-point" class="md-nav__link">
     The Data as the Starting Point
   </a>
   
@@ -550,14 +555,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#check-the-quality-of-the-spreadsheet" title="Check the Quality of the Spreadsheet" class="md-nav__link">
+  <a href="#check-the-quality-of-the-spreadsheet" class="md-nav__link">
     Check the Quality of the Spreadsheet
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#best-practices-for-spreadsheet-data" title="Best Practices for Spreadsheet Data" class="md-nav__link">
+  <a href="#best-practices-for-spreadsheet-data" class="md-nav__link">
     Best Practices for Spreadsheet Data
   </a>
   
@@ -569,28 +574,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#preparing-the-workspace" title="Preparing the Workspace" class="md-nav__link">
+  <a href="#preparing-the-workspace" class="md-nav__link">
     Preparing the Workspace
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-virtual-environments" title="Using Virtual Environments" class="md-nav__link">
+  <a href="#using-virtual-environments" class="md-nav__link">
     Using Virtual Environments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-loaded-dataset" title="Check the Loaded Dataset" class="md-nav__link">
+  <a href="#check-the-loaded-dataset" class="md-nav__link">
     Check the Loaded Dataset
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-packages-to-read-and-write-excel-files" title="Install Packages to Read and Write Excel Files" class="md-nav__link">
+  <a href="#install-packages-to-read-and-write-excel-files" class="md-nav__link">
     Install Packages to Read and Write Excel Files
   </a>
   
@@ -598,7 +603,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#packages-to-parse-excel-files-and-write-them-back-with-python" title="Packages to Parse Excel Files and Write them back with Python" class="md-nav__link">
+  <a href="#packages-to-parse-excel-files-and-write-them-back-with-python" class="md-nav__link">
     Packages to Parse Excel Files and Write them back with Python
   </a>
   
@@ -610,7 +615,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-excel-csv-files-as-pandas-dataframes" title="Load Excel &amp; CSV Files as Pandas DataFrames" class="md-nav__link">
+  <a href="#load-excel-csv-files-as-pandas-dataframes" class="md-nav__link">
     Load Excel &amp; CSV Files as Pandas DataFrames
   </a>
   
@@ -618,21 +623,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#excel" title="Excel" class="md-nav__link">
+  <a href="#excel" class="md-nav__link">
     Excel
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#csv" title="CSV" class="md-nav__link">
+  <a href="#csv" class="md-nav__link">
     CSV
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#flat-files-tables" title="Flat files, tables" class="md-nav__link">
+  <a href="#flat-files-tables" class="md-nav__link">
     Flat files, tables
   </a>
   
@@ -644,7 +649,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#write-pandas-dataframes-to-excel-and-csv-files" title="Write Pandas DataFrames to Excel and CSV Files" class="md-nav__link">
+  <a href="#write-pandas-dataframes-to-excel-and-csv-files" class="md-nav__link">
     Write Pandas DataFrames to Excel and CSV Files
   </a>
   
@@ -652,14 +657,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#excel_1" title="Excel" class="md-nav__link">
+  <a href="#excel_1" class="md-nav__link">
     Excel
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#csv-flat-files-tables" title="CSV, flat files, tables" class="md-nav__link">
+  <a href="#csv-flat-files-tables" class="md-nav__link">
     CSV, flat files, tables
   </a>
   
@@ -671,49 +676,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-and-write-excel-files-with-openyxl" title="Read and Write Excel Files with openyxl" class="md-nav__link">
+  <a href="#read-and-write-excel-files-with-openyxl" class="md-nav__link">
     Read and Write Excel Files with openyxl
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-and-format-excel-files-with-xlrd" title="Read and Format Excel Files with xlrd" class="md-nav__link">
+  <a href="#read-and-format-excel-files-with-xlrd" class="md-nav__link">
     Read and Format Excel Files with xlrd
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#write-to-excel-files-with-xlwt" title="Write to Excel Files with xlwt" class="md-nav__link">
+  <a href="#write-to-excel-files-with-xlwt" class="md-nav__link">
     Write to Excel Files with xlwt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-collection-of-utilities-xlutils" title="A Collection of Utilities: xlutils" class="md-nav__link">
+  <a href="#a-collection-of-utilities-xlutils" class="md-nav__link">
     A Collection of Utilities: xlutils
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-with-pyexcel" title="Read with pyexcel" class="md-nav__link">
+  <a href="#read-with-pyexcel" class="md-nav__link">
     Read with pyexcel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#write-with-pyexcel" title="Write with pyexcel" class="md-nav__link">
+  <a href="#write-with-pyexcel" class="md-nav__link">
     Write with pyexcel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-and-write-csv-files" title="Read and Write .csv Files" class="md-nav__link">
+  <a href="#read-and-write-csv-files" class="md-nav__link">
     Read and Write .csv Files
   </a>
   
@@ -721,7 +726,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#numpy" title="Numpy" class="md-nav__link">
+  <a href="#numpy" class="md-nav__link">
     Numpy
   </a>
   
@@ -971,7 +976,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-data-as-the-starting-point" title="The Data as the Starting Point" class="md-nav__link">
+  <a href="#the-data-as-the-starting-point" class="md-nav__link">
     The Data as the Starting Point
   </a>
   
@@ -979,14 +984,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#check-the-quality-of-the-spreadsheet" title="Check the Quality of the Spreadsheet" class="md-nav__link">
+  <a href="#check-the-quality-of-the-spreadsheet" class="md-nav__link">
     Check the Quality of the Spreadsheet
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#best-practices-for-spreadsheet-data" title="Best Practices for Spreadsheet Data" class="md-nav__link">
+  <a href="#best-practices-for-spreadsheet-data" class="md-nav__link">
     Best Practices for Spreadsheet Data
   </a>
   
@@ -998,28 +1003,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#preparing-the-workspace" title="Preparing the Workspace" class="md-nav__link">
+  <a href="#preparing-the-workspace" class="md-nav__link">
     Preparing the Workspace
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-virtual-environments" title="Using Virtual Environments" class="md-nav__link">
+  <a href="#using-virtual-environments" class="md-nav__link">
     Using Virtual Environments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#check-the-loaded-dataset" title="Check the Loaded Dataset" class="md-nav__link">
+  <a href="#check-the-loaded-dataset" class="md-nav__link">
     Check the Loaded Dataset
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-packages-to-read-and-write-excel-files" title="Install Packages to Read and Write Excel Files" class="md-nav__link">
+  <a href="#install-packages-to-read-and-write-excel-files" class="md-nav__link">
     Install Packages to Read and Write Excel Files
   </a>
   
@@ -1027,7 +1032,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#packages-to-parse-excel-files-and-write-them-back-with-python" title="Packages to Parse Excel Files and Write them back with Python" class="md-nav__link">
+  <a href="#packages-to-parse-excel-files-and-write-them-back-with-python" class="md-nav__link">
     Packages to Parse Excel Files and Write them back with Python
   </a>
   
@@ -1039,7 +1044,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#load-excel-csv-files-as-pandas-dataframes" title="Load Excel &amp; CSV Files as Pandas DataFrames" class="md-nav__link">
+  <a href="#load-excel-csv-files-as-pandas-dataframes" class="md-nav__link">
     Load Excel &amp; CSV Files as Pandas DataFrames
   </a>
   
@@ -1047,21 +1052,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#excel" title="Excel" class="md-nav__link">
+  <a href="#excel" class="md-nav__link">
     Excel
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#csv" title="CSV" class="md-nav__link">
+  <a href="#csv" class="md-nav__link">
     CSV
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#flat-files-tables" title="Flat files, tables" class="md-nav__link">
+  <a href="#flat-files-tables" class="md-nav__link">
     Flat files, tables
   </a>
   
@@ -1073,7 +1078,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#write-pandas-dataframes-to-excel-and-csv-files" title="Write Pandas DataFrames to Excel and CSV Files" class="md-nav__link">
+  <a href="#write-pandas-dataframes-to-excel-and-csv-files" class="md-nav__link">
     Write Pandas DataFrames to Excel and CSV Files
   </a>
   
@@ -1081,14 +1086,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#excel_1" title="Excel" class="md-nav__link">
+  <a href="#excel_1" class="md-nav__link">
     Excel
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#csv-flat-files-tables" title="CSV, flat files, tables" class="md-nav__link">
+  <a href="#csv-flat-files-tables" class="md-nav__link">
     CSV, flat files, tables
   </a>
   
@@ -1100,49 +1105,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-and-write-excel-files-with-openyxl" title="Read and Write Excel Files with openyxl" class="md-nav__link">
+  <a href="#read-and-write-excel-files-with-openyxl" class="md-nav__link">
     Read and Write Excel Files with openyxl
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-and-format-excel-files-with-xlrd" title="Read and Format Excel Files with xlrd" class="md-nav__link">
+  <a href="#read-and-format-excel-files-with-xlrd" class="md-nav__link">
     Read and Format Excel Files with xlrd
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#write-to-excel-files-with-xlwt" title="Write to Excel Files with xlwt" class="md-nav__link">
+  <a href="#write-to-excel-files-with-xlwt" class="md-nav__link">
     Write to Excel Files with xlwt
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-collection-of-utilities-xlutils" title="A Collection of Utilities: xlutils" class="md-nav__link">
+  <a href="#a-collection-of-utilities-xlutils" class="md-nav__link">
     A Collection of Utilities: xlutils
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-with-pyexcel" title="Read with pyexcel" class="md-nav__link">
+  <a href="#read-with-pyexcel" class="md-nav__link">
     Read with pyexcel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#write-with-pyexcel" title="Write with pyexcel" class="md-nav__link">
+  <a href="#write-with-pyexcel" class="md-nav__link">
     Write with pyexcel
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#read-and-write-csv-files" title="Read and Write .csv Files" class="md-nav__link">
+  <a href="#read-and-write-csv-files" class="md-nav__link">
     Read and Write .csv Files
   </a>
   
@@ -1150,7 +1155,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#numpy" title="Numpy" class="md-nav__link">
+  <a href="#numpy" class="md-nav__link">
     Numpy
   </a>
   
@@ -1186,7 +1191,7 @@
 <p>Code snippets and excerpts from the tutorial. Python 3. From DataCamp.</p>
 <hr />
 <h2 id="the-data-as-the-starting-point">The Data as the Starting Point<a class="headerlink" href="#the-data-as-the-starting-point" title="Permanent link">&para;</a></h2>
-<p>Work with packages such as <code class="codehilite">pandas, openpyxl, xlrd, xlutils, pyexcel</code>.</p>
+<p>Work with packages such as <code class="codehilite"><span class="n">pandas</span><span class="p">,</span> <span class="n">openpyxl</span><span class="p">,</span> <span class="n">xlrd</span><span class="p">,</span> <span class="n">xlutils</span><span class="p">,</span> <span class="n">pyexcel</span></code>.</p>
 <p>Datasets from Kaggle, Quandl, Google or on repositories (GitHub, Bitbucket, GitLab, etc.).</p>
 <h3 id="check-the-quality-of-the-spreadsheet">Check the Quality of the Spreadsheet<a class="headerlink" href="#check-the-quality-of-the-spreadsheet" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1209,7 +1214,7 @@
 </ul>
 </li>
 <li>Short names are preferred over longer names;</li>
-<li>Try to avoid using names that contain symbols such as <code class="codehilite">?, %, ^, &amp;, *, (, ), -, #, ?, &lt;, &gt;, /, |, \, [ ,] , {, }</code> and <code class="codehilite">,</code> and dollar sign;</li>
+<li>Try to avoid using names that contain symbols such as <code class="codehilite"><span class="o">?</span><span class="p">,</span> <span class="o">%</span><span class="p">,</span> <span class="o">^</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="p">(,</span> <span class="p">),</span> <span class="o">-</span><span class="p">,</span> <span class="o">#</span><span class="p">,</span> <span class="o">?</span><span class="p">,</span> <span class="o">&lt;</span><span class="p">,</span> <span class="o">&gt;</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="o">|</span><span class="p">,</span> <span class="err">\</span><span class="p">,</span> <span class="p">[</span> <span class="p">,]</span> <span class="p">,</span> <span class="err">{</span><span class="p">,</span> <span class="err">}</span></code> and <code class="codehilite"><span class="p">,</span></code> and dollar sign;</li>
 <li>Delete any comments that were made in the file to avoid extra columns or NA’s to be added to the file; and</li>
 <li>Make sure that any missing values in the dataset are indicated with NA.</li>
 </ul>
@@ -1227,7 +1232,7 @@
 </pre></div>
 </td></tr></table>
 
-<p>Print it with <code class="codehilite">cwd</code> or <code class="codehilite">print(cwd)</code>.</p>
+<p>Print it with <code class="codehilite"><span class="n">cwd</span></code> or <code class="codehilite"><span class="n">print</span><span class="p">(</span><span class="n">cwd</span><span class="p">)</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1310,19 +1315,19 @@ $ deactivate
 </td></tr></table>
 
 <h2 id="install-packages-to-read-and-write-excel-files">Install Packages to Read and Write Excel Files<a class="headerlink" href="#install-packages-to-read-and-write-excel-files" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">pandas, openpyxl, xlrd, xlutils, pyexcel</code>&hellip;</p>
+<p><code class="codehilite"><span class="n">pandas</span><span class="p">,</span> <span class="n">openpyxl</span><span class="p">,</span> <span class="n">xlrd</span><span class="p">,</span> <span class="n">xlutils</span><span class="p">,</span> <span class="n">pyexcel</span></code>&hellip;</p>
 <ul>
-<li><code class="codehilite">pip install</code>.</li>
-<li><code class="codehilite">conda install</code> (Anaconda includes <a href="https://docs.continuum.io/anaconda/packages/pkg-docs">100 of the most popular Python</a>, <a href="https://docs.continuum.io/anaconda/packages/r-language-pkg-docs">R</a> and Scala packages for data science and several open source development environments such as Jupyter and Spyder).</li>
+<li><code class="codehilite"><span class="n">pip</span> <span class="n">install</span></code>.</li>
+<li><code class="codehilite"><span class="n">conda</span> <span class="n">install</span></code> (Anaconda includes <a href="https://docs.continuum.io/anaconda/packages/pkg-docs">100 of the most popular Python</a>, <a href="https://docs.continuum.io/anaconda/packages/r-language-pkg-docs">R</a> and Scala packages for data science and several open source development environments such as Jupyter and Spyder).</li>
 </ul>
 <h3 id="packages-to-parse-excel-files-and-write-them-back-with-python">Packages to Parse Excel Files and Write them back with Python<a class="headerlink" href="#packages-to-parse-excel-files-and-write-them-back-with-python" title="Permanent link">&para;</a></h3>
 <p>From the <a href="http://www.python-excel.org/">site</a>:</p>
 <ul>
-<li><code class="codehilite">openpyxl</code>, the recommended package for reading and writing Excel 2010 files (ie: .xlsx). <a href="https://openpyxl.readthedocs.io/en/default/">Documentation</a>.</li>
-<li><code class="codehilite">xlsxwriter</code>, an alternative package for writing data, formatting information and, in particular, charts in the Excel 2010 format (ie: .xlsx). <a href="https://xlsxwriter.readthedocs.io/">Documentation</a>.</li>
-<li><code class="codehilite">xlrd</code>, this package is for reading data and formatting information from older Excel files (ie: .xls). <a href="https://github.com/python-excel/xlrd">Documentation</a>.</li>
-<li><code class="codehilite">xlwt</code>, this package is for writing data and formatting information to older Excel files (ie: .xls). <a href="http://xlwt.readthedocs.io/en/latest/">Documentation</a>.</li>
-<li><code class="codehilite">xlutils</code>, this package collects utilities that require both xlrd and xlwt, including the ability to copy and modify or filter existing excel files. <a href="http://xlutils.readthedocs.io/en/latest/">Documentation</a>.</li>
+<li><code class="codehilite"><span class="n">openpyxl</span></code>, the recommended package for reading and writing Excel 2010 files (ie: .xlsx). <a href="https://openpyxl.readthedocs.io/en/default/">Documentation</a>.</li>
+<li><code class="codehilite"><span class="n">xlsxwriter</span></code>, an alternative package for writing data, formatting information and, in particular, charts in the Excel 2010 format (ie: .xlsx). <a href="https://xlsxwriter.readthedocs.io/">Documentation</a>.</li>
+<li><code class="codehilite"><span class="n">xlrd</span></code>, this package is for reading data and formatting information from older Excel files (ie: .xls). <a href="https://github.com/python-excel/xlrd">Documentation</a>.</li>
+<li><code class="codehilite"><span class="n">xlwt</span></code>, this package is for writing data and formatting information to older Excel files (ie: .xls). <a href="http://xlwt.readthedocs.io/en/latest/">Documentation</a>.</li>
+<li><code class="codehilite"><span class="n">xlutils</span></code>, this package collects utilities that require both xlrd and xlwt, including the ability to copy and modify or filter existing excel files. <a href="http://xlutils.readthedocs.io/en/latest/">Documentation</a>.</li>
 </ul>
 <h2 id="load-excel-csv-files-as-pandas-dataframes">Load Excel &amp; CSV Files as Pandas DataFrames<a class="headerlink" href="#load-excel-csv-files-as-pandas-dataframes" title="Permanent link">&para;</a></h2>
 <h3 id="excel">Excel<a class="headerlink" href="#excel" title="Permanent link">&para;</a></h3>
@@ -1371,7 +1376,7 @@ $ deactivate
 
 <p><a href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html">More options</a>.</p>
 <h3 id="flat-files-tables">Flat files, tables<a class="headerlink" href="#flat-files-tables" title="Permanent link">&para;</a></h3>
-<p>Also: <code class="codehilite">read_table()</code> and <code class="codehilite">read_fwf()</code>. <a href="http://pandas.pydata.org/pandas-docs/stable/api.html#input-output">More options</a>.</p>
+<p>Also: <code class="codehilite"><span class="n">read_table</span><span class="p">()</span></code> and <code class="codehilite"><span class="n">read_fwf</span><span class="p">()</span></code>. <a href="http://pandas.pydata.org/pandas-docs/stable/api.html#input-output">More options</a>.</p>
 <h2 id="write-pandas-dataframes-to-excel-and-csv-files">Write Pandas DataFrames to Excel and CSV Files<a class="headerlink" href="#write-pandas-dataframes-to-excel-and-csv-files" title="Permanent link">&para;</a></h2>
 <h3 id="excel_1">Excel<a class="headerlink" href="#excel_1" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -1392,7 +1397,7 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<p>Pass the writer variable to the <code class="codehilite">to_excel()</code> function and specify the sheet name. Add a sheet with the data to an existing workbook: <code class="codehilite">ExcelWriter</code> save multiple, (slightly) different DataFrames to one workbook.</p>
+<p>Pass the writer variable to the <code class="codehilite"><span class="n">to_excel</span><span class="p">()</span></code> function and specify the sheet name. Add a sheet with the data to an existing workbook: <code class="codehilite"><span class="n">ExcelWriter</span></code> save multiple, (slightly) different DataFrames to one workbook.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1411,7 +1416,7 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<p>Save one DataFrame to a file, don’t specify the engine argument in the <code class="codehilite">pd.ExcelWriter()</code> function. The rest of the steps stay the same.</p>
+<p>Save one DataFrame to a file, don’t specify the engine argument in the <code class="codehilite"><span class="n">pd</span><span class="p">.</span><span class="n">ExcelWriter</span><span class="p">()</span></code> function. The rest of the steps stay the same.</p>
 <h3 id="csv-flat-files-tables">CSV, flat files, tables<a class="headerlink" href="#csv-flat-files-tables" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Write the DataFrame to csv</span>
@@ -1419,13 +1424,13 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<p>Tab-separated file, pass the <code class="codehilite">sep = &#39;\t&#39;</code> argument.</p>
-<h2 id="read-and-write-excel-files-with-openyxl">Read and Write Excel Files with <code class="codehilite">openyxl</code><a class="headerlink" href="#read-and-write-excel-files-with-openyxl" title="Permanent link">&para;</a></h2>
+<p>Tab-separated file, pass the <code class="codehilite"><span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;\t&#39;</span></code> argument.</p>
+<h2 id="read-and-write-excel-files-with-openyxl">Read and Write Excel Files with <code class="codehilite"><span class="n">openyxl</span></code><a class="headerlink" href="#read-and-write-excel-files-with-openyxl" title="Permanent link">&para;</a></h2>
 <p>Read and write .xlsx, xlsm, xltx, xltm files.</p>
 <p>The general advice for installing this package is to do it in a Python virtual environment without system packages. We can use virtual environment to create isolated Python environments: it creates a folder which contains all the necessary executables to use the packages that a Python project would need.</p>
 <ul>
-<li>Go to the directory in which the project is located and re-activate the virtual environment <code class="codehilite">venv</code>. </li>
-<li>Then proceed to install <code class="codehilite">openpyxl</code> with <code class="codehilite">pip</code> to make sure that we can read and write files with it:</li>
+<li>Go to the directory in which the project is located and re-activate the virtual environment <code class="codehilite"><span class="n">venv</span></code>. </li>
+<li>Then proceed to install <code class="codehilite"><span class="n">openpyxl</span></code> with <code class="codehilite"><span class="n">pip</span></code> to make sure that we can read and write files with it:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1440,8 +1445,8 @@ $ deactivate
 </td></tr></table>
 
 <ul>
-<li>Install <code class="codehilite">openpyxl</code> and start loading in the data.</li>
-<li>Make sure that we’re in the right directory where the spreadsheet is located (change the working directory with <code class="codehilite">os.chdir()</code>).</li>
+<li>Install <code class="codehilite"><span class="n">openpyxl</span></code> and start loading in the data.</li>
+<li>Make sure that we’re in the right directory where the spreadsheet is located (change the working directory with <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">chdir</span><span class="p">()</span></code>).</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1685,7 +1690,7 @@ $ deactivate
 </td></tr></table>
 
 <p>More options: change cell styles or use the write-only mode.</p>
-<h2 id="read-and-format-excel-files-with-xlrd">Read and Format Excel Files with <code class="codehilite">xlrd</code><a class="headerlink" href="#read-and-format-excel-files-with-xlrd" title="Permanent link">&para;</a></h2>
+<h2 id="read-and-format-excel-files-with-xlrd">Read and Format Excel Files with <code class="codehilite"><span class="n">xlrd</span></code><a class="headerlink" href="#read-and-format-excel-files-with-xlrd" title="Permanent link">&para;</a></h2>
 <p>.xls or .xlsx extensions.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1724,7 +1729,7 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<h2 id="write-to-excel-files-with-xlwt">Write to Excel Files with <code class="codehilite">xlwt</code><a class="headerlink" href="#write-to-excel-files-with-xlwt" title="Permanent link">&para;</a></h2>
+<h2 id="write-to-excel-files-with-xlwt">Write to Excel Files with <code class="codehilite"><span class="n">xlwt</span></code><a class="headerlink" href="#write-to-excel-files-with-xlwt" title="Permanent link">&para;</a></h2>
 <p>.xls extension</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1798,9 +1803,9 @@ $ deactivate
 </td></tr></table>
 
 <p><img alt="" src="../img/python_and_excel/content_xlwt.png" /></p>
-<h2 id="a-collection-of-utilities-xlutils">A Collection of Utilities: <code class="codehilite">xlutils</code><a class="headerlink" href="#a-collection-of-utilities-xlutils" title="Permanent link">&para;</a></h2>
-<p>Collection of utilities that require both <code class="codehilite">xlrd</code> and <code class="codehilite">xlwt</code>, which includes the ability to copy and modify or filter existing files. Generally speaking, these use cases are now covered by <code class="codehilite">openpyxl</code>.</p>
-<h2 id="read-with-pyexcel">Read with <code class="codehilite">pyexcel</code><a class="headerlink" href="#read-with-pyexcel" title="Permanent link">&para;</a></h2>
+<h2 id="a-collection-of-utilities-xlutils">A Collection of Utilities: <code class="codehilite"><span class="n">xlutils</span></code><a class="headerlink" href="#a-collection-of-utilities-xlutils" title="Permanent link">&para;</a></h2>
+<p>Collection of utilities that require both <code class="codehilite"><span class="n">xlrd</span></code> and <code class="codehilite"><span class="n">xlwt</span></code>, which includes the ability to copy and modify or filter existing files. Generally speaking, these use cases are now covered by <code class="codehilite"><span class="n">openpyxl</span></code>.</p>
+<h2 id="read-with-pyexcel">Read with <code class="codehilite"><span class="n">pyexcel</span></code><a class="headerlink" href="#read-with-pyexcel" title="Permanent link">&para;</a></h2>
 <p>Python Wrapper that provides one API for reading, manipulating and writing data in .csv, .ods, .xls, .xlsx and .xlsm.</p>
 <p><a href="https://pyexcel.readthedocs.io/en/latest/index.html">Documentation</a>.</p>
 <p>In an array.</p>
@@ -1835,7 +1840,7 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<p>The arrays and dictionaries of the spreadsheet, allow creating DataFrames of the data with <code class="codehilite">pd.DataFrame()</code>.</p>
+<p>The arrays and dictionaries of the spreadsheet, allow creating DataFrames of the data with <code class="codehilite"><span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">()</span></code>.</p>
 <p>Just retrieve the records.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Retrieve the records of the file</span>
@@ -1843,7 +1848,7 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<h2 id="write-with-pyexcel">Write with <code class="codehilite">pyexcel</code><a class="headerlink" href="#write-with-pyexcel" title="Permanent link">&para;</a></h2>
+<h2 id="write-with-pyexcel">Write with <code class="codehilite"><span class="n">pyexcel</span></code><a class="headerlink" href="#write-with-pyexcel" title="Permanent link">&para;</a></h2>
 <p>Arrays.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1857,7 +1862,7 @@ $ deactivate
 </pre></div>
 </td></tr></table>
 
-<p><code class="codehilite">dest_delimiter = &quot;;&quot;</code></p>
+<p><code class="codehilite"><span class="n">dest_delimiter</span> <span class="o">=</span> <span class="ss">&quot;;&quot;</span></code></p>
 <p>Dictionary.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1936,7 +1941,7 @@ $ deactivate
 </td></tr></table>
 
 <h3 id="numpy">Numpy<a class="headerlink" href="#numpy" title="Permanent link">&para;</a></h3>
-<p><code class="codehilite">genfromtxt()</code> allows to load in the data that is contained within .csv files into arrays which we can then put in DataFrames.</p>
+<p><code class="codehilite"><span class="n">genfromtxt</span><span class="p">()</span></code> allows to load in the data that is contained within .csv files into arrays which we can then put in DataFrames.</p>
                 
                   
                 
@@ -2000,25 +2005,17 @@ $ deactivate
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 EDA, Machine Learning, Feature Engineering, and Kaggle
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -446,7 +451,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exploratory-data-analysis-eda-prior-to-machine-learning" title="Exploratory Data Analysis (EDA) prior to Machine Learning" class="md-nav__link">
+  <a href="#exploratory-data-analysis-eda-prior-to-machine-learning" class="md-nav__link">
     Exploratory Data Analysis (EDA) prior to Machine Learning
   </a>
   
@@ -454,21 +459,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-start-with-supervised-learning-take-1" title="How to Start with Supervised Learning (Take 1)" class="md-nav__link">
+  <a href="#how-to-start-with-supervised-learning-take-1" class="md-nav__link">
     How to Start with Supervised Learning (Take 1)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#import-the-data-and-explore-it" title="Import the Data and Explore it" class="md-nav__link">
+  <a href="#import-the-data-and-explore-it" class="md-nav__link">
     Import the Data and Explore it
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#visual-exploratory-data-analysis-eda-and-a-first-model" title="Visual Exploratory Data Analysis (EDA) and a First Model" class="md-nav__link">
+  <a href="#visual-exploratory-data-analysis-eda-and-a-first-model" class="md-nav__link">
     Visual Exploratory Data Analysis (EDA) and a First Model
   </a>
   
@@ -476,7 +481,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-1st" title="Submit to Kaggle (1st)" class="md-nav__link">
+  <a href="#submit-to-kaggle-1st" class="md-nav__link">
     Submit to Kaggle (1st)
   </a>
   
@@ -488,7 +493,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#eda-on-feature-variables" title="EDA on Feature Variables" class="md-nav__link">
+  <a href="#eda-on-feature-variables" class="md-nav__link">
     EDA on Feature Variables
   </a>
   
@@ -496,7 +501,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-2nd" title="Submit to Kaggle (2nd)" class="md-nav__link">
+  <a href="#submit-to-kaggle-2nd" class="md-nav__link">
     Submit to Kaggle (2nd)
   </a>
   
@@ -508,14 +513,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#explore-the-data-more" title="Explore the Data More!" class="md-nav__link">
+  <a href="#explore-the-data-more" class="md-nav__link">
     Explore the Data More!
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#eda-with-numeric-variables" title="EDA with Numeric Variables" class="md-nav__link">
+  <a href="#eda-with-numeric-variables" class="md-nav__link">
     EDA with Numeric Variables
   </a>
   
@@ -527,7 +532,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-first-machine-learning-model" title="A First Machine Learning Model" class="md-nav__link">
+  <a href="#a-first-machine-learning-model" class="md-nav__link">
     A First Machine Learning Model
   </a>
   
@@ -535,14 +540,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-start-with-supervised-learning-take-2" title="How to Start with Supervised Learning (Take 2)" class="md-nav__link">
+  <a href="#how-to-start-with-supervised-learning-take-2" class="md-nav__link">
     How to Start with Supervised Learning (Take 2)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-a-decision-tree-classifier" title="Build a Decision Tree Classifier" class="md-nav__link">
+  <a href="#build-a-decision-tree-classifier" class="md-nav__link">
     Build a Decision Tree Classifier
   </a>
   
@@ -550,7 +555,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-3rd" title="Submit to Kaggle (3rd)" class="md-nav__link">
+  <a href="#submit-to-kaggle-3rd" class="md-nav__link">
     Submit to Kaggle (3rd)
   </a>
   
@@ -562,14 +567,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-decision-tree-classifier-in-more-details" title="A Decision Tree Classifier in More Details" class="md-nav__link">
+  <a href="#a-decision-tree-classifier-in-more-details" class="md-nav__link">
     A Decision Tree Classifier in More Details
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-choose-max_depth3" title="Why Choose max_depth=3?" class="md-nav__link">
+  <a href="#why-choose-max_depth3" class="md-nav__link">
     Why Choose max_depth=3?
   </a>
   
@@ -581,7 +586,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-engineering" title="Feature Engineering" class="md-nav__link">
+  <a href="#feature-engineering" class="md-nav__link">
     Feature Engineering
   </a>
   
@@ -589,14 +594,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-start-with-feature-engineering" title="How to Start with Feature Engineering" class="md-nav__link">
+  <a href="#how-to-start-with-feature-engineering" class="md-nav__link">
     How to Start with Feature Engineering
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-feature-engineer-at-all" title="Why Feature Engineer At All?" class="md-nav__link">
+  <a href="#why-feature-engineer-at-all" class="md-nav__link">
     Why Feature Engineer At All?
   </a>
   
@@ -604,42 +609,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#titanics-passenger-titles" title="Titanic's Passenger Titles" class="md-nav__link">
+  <a href="#titanics-passenger-titles" class="md-nav__link">
     Titanic's Passenger Titles
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#passengers-cabins" title="Passenger's Cabins" class="md-nav__link">
+  <a href="#passengers-cabins" class="md-nav__link">
     Passenger's Cabins
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#handling-missing-values" title="Handling Missing Values" class="md-nav__link">
+  <a href="#handling-missing-values" class="md-nav__link">
     Handling Missing Values
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#binning-numerical-data" title="Binning Numerical Data" class="md-nav__link">
+  <a href="#binning-numerical-data" class="md-nav__link">
     Binning Numerical Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#number-of-members-in-family-onboard" title="Number of Members in Family Onboard" class="md-nav__link">
+  <a href="#number-of-members-in-family-onboard" class="md-nav__link">
     Number of Members in Family Onboard
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#transforming-all-variables-into-numerical-variables" title="Transforming all Variables into Numerical Variables" class="md-nav__link">
+  <a href="#transforming-all-variables-into-numerical-variables" class="md-nav__link">
     Transforming all Variables into Numerical Variables
   </a>
   
@@ -651,7 +656,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#building-models-with-a-new-dataset" title="Building models with a New Dataset!" class="md-nav__link">
+  <a href="#building-models-with-a-new-dataset" class="md-nav__link">
     Building models with a New Dataset!
   </a>
   
@@ -659,7 +664,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-4th" title="Submit to Kaggle (4th)" class="md-nav__link">
+  <a href="#submit-to-kaggle-4th" class="md-nav__link">
     Submit to Kaggle (4th)
   </a>
   
@@ -1010,7 +1015,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exploratory-data-analysis-eda-prior-to-machine-learning" title="Exploratory Data Analysis (EDA) prior to Machine Learning" class="md-nav__link">
+  <a href="#exploratory-data-analysis-eda-prior-to-machine-learning" class="md-nav__link">
     Exploratory Data Analysis (EDA) prior to Machine Learning
   </a>
   
@@ -1018,21 +1023,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-start-with-supervised-learning-take-1" title="How to Start with Supervised Learning (Take 1)" class="md-nav__link">
+  <a href="#how-to-start-with-supervised-learning-take-1" class="md-nav__link">
     How to Start with Supervised Learning (Take 1)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#import-the-data-and-explore-it" title="Import the Data and Explore it" class="md-nav__link">
+  <a href="#import-the-data-and-explore-it" class="md-nav__link">
     Import the Data and Explore it
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#visual-exploratory-data-analysis-eda-and-a-first-model" title="Visual Exploratory Data Analysis (EDA) and a First Model" class="md-nav__link">
+  <a href="#visual-exploratory-data-analysis-eda-and-a-first-model" class="md-nav__link">
     Visual Exploratory Data Analysis (EDA) and a First Model
   </a>
   
@@ -1040,7 +1045,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-1st" title="Submit to Kaggle (1st)" class="md-nav__link">
+  <a href="#submit-to-kaggle-1st" class="md-nav__link">
     Submit to Kaggle (1st)
   </a>
   
@@ -1052,7 +1057,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#eda-on-feature-variables" title="EDA on Feature Variables" class="md-nav__link">
+  <a href="#eda-on-feature-variables" class="md-nav__link">
     EDA on Feature Variables
   </a>
   
@@ -1060,7 +1065,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-2nd" title="Submit to Kaggle (2nd)" class="md-nav__link">
+  <a href="#submit-to-kaggle-2nd" class="md-nav__link">
     Submit to Kaggle (2nd)
   </a>
   
@@ -1072,14 +1077,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#explore-the-data-more" title="Explore the Data More!" class="md-nav__link">
+  <a href="#explore-the-data-more" class="md-nav__link">
     Explore the Data More!
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#eda-with-numeric-variables" title="EDA with Numeric Variables" class="md-nav__link">
+  <a href="#eda-with-numeric-variables" class="md-nav__link">
     EDA with Numeric Variables
   </a>
   
@@ -1091,7 +1096,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-first-machine-learning-model" title="A First Machine Learning Model" class="md-nav__link">
+  <a href="#a-first-machine-learning-model" class="md-nav__link">
     A First Machine Learning Model
   </a>
   
@@ -1099,14 +1104,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-start-with-supervised-learning-take-2" title="How to Start with Supervised Learning (Take 2)" class="md-nav__link">
+  <a href="#how-to-start-with-supervised-learning-take-2" class="md-nav__link">
     How to Start with Supervised Learning (Take 2)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-a-decision-tree-classifier" title="Build a Decision Tree Classifier" class="md-nav__link">
+  <a href="#build-a-decision-tree-classifier" class="md-nav__link">
     Build a Decision Tree Classifier
   </a>
   
@@ -1114,7 +1119,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-3rd" title="Submit to Kaggle (3rd)" class="md-nav__link">
+  <a href="#submit-to-kaggle-3rd" class="md-nav__link">
     Submit to Kaggle (3rd)
   </a>
   
@@ -1126,14 +1131,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-decision-tree-classifier-in-more-details" title="A Decision Tree Classifier in More Details" class="md-nav__link">
+  <a href="#a-decision-tree-classifier-in-more-details" class="md-nav__link">
     A Decision Tree Classifier in More Details
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-choose-max_depth3" title="Why Choose max_depth=3?" class="md-nav__link">
+  <a href="#why-choose-max_depth3" class="md-nav__link">
     Why Choose max_depth=3?
   </a>
   
@@ -1145,7 +1150,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-engineering" title="Feature Engineering" class="md-nav__link">
+  <a href="#feature-engineering" class="md-nav__link">
     Feature Engineering
   </a>
   
@@ -1153,14 +1158,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-start-with-feature-engineering" title="How to Start with Feature Engineering" class="md-nav__link">
+  <a href="#how-to-start-with-feature-engineering" class="md-nav__link">
     How to Start with Feature Engineering
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-feature-engineer-at-all" title="Why Feature Engineer At All?" class="md-nav__link">
+  <a href="#why-feature-engineer-at-all" class="md-nav__link">
     Why Feature Engineer At All?
   </a>
   
@@ -1168,42 +1173,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#titanics-passenger-titles" title="Titanic's Passenger Titles" class="md-nav__link">
+  <a href="#titanics-passenger-titles" class="md-nav__link">
     Titanic's Passenger Titles
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#passengers-cabins" title="Passenger's Cabins" class="md-nav__link">
+  <a href="#passengers-cabins" class="md-nav__link">
     Passenger's Cabins
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#handling-missing-values" title="Handling Missing Values" class="md-nav__link">
+  <a href="#handling-missing-values" class="md-nav__link">
     Handling Missing Values
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#binning-numerical-data" title="Binning Numerical Data" class="md-nav__link">
+  <a href="#binning-numerical-data" class="md-nav__link">
     Binning Numerical Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#number-of-members-in-family-onboard" title="Number of Members in Family Onboard" class="md-nav__link">
+  <a href="#number-of-members-in-family-onboard" class="md-nav__link">
     Number of Members in Family Onboard
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#transforming-all-variables-into-numerical-variables" title="Transforming all Variables into Numerical Variables" class="md-nav__link">
+  <a href="#transforming-all-variables-into-numerical-variables" class="md-nav__link">
     Transforming all Variables into Numerical Variables
   </a>
   
@@ -1215,7 +1220,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#building-models-with-a-new-dataset" title="Building models with a New Dataset!" class="md-nav__link">
+  <a href="#building-models-with-a-new-dataset" class="md-nav__link">
     Building models with a New Dataset!
   </a>
   
@@ -1223,7 +1228,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#submit-to-kaggle-4th" title="Submit to Kaggle (4th)" class="md-nav__link">
+  <a href="#submit-to-kaggle-4th" class="md-nav__link">
     Submit to Kaggle (4th)
   </a>
   
@@ -1397,7 +1402,7 @@
 <li>The target variable is the variable we are trying to predict;</li>
 <li>Other variables are known as &ldquo;features&rdquo; (or &ldquo;predictor variables&rdquo;, the features that we are using to predict the target variable).</li>
 </ul>
-<p>Note that the <code class="codehilite">df_test</code> DataFrame doesn&rsquo;t have the <code class="codehilite">Survived</code> column because this is what we will try to predict!</p>
+<p>Note that the <code class="codehilite"><span class="n">df_test</span></code> DataFrame doesn&rsquo;t have the <code class="codehilite"><span class="n">Survived</span></code> column because this is what we will try to predict!</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># View first lines of test data</span>
 <span class="n">df_test</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -1502,23 +1507,23 @@
 14
 15
 16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-RangeIndex: 891 entries, 0 to 890
-Data columns (total 12 columns):
-PassengerId    891 non-null int64
-Survived       891 non-null int64
-Pclass         891 non-null int64
-Name           891 non-null object
-Sex            891 non-null object
-Age            714 non-null float64
-SibSp          891 non-null int64
-Parch          891 non-null int64
-Ticket         891 non-null object
-Fare           891 non-null float64
-Cabin          204 non-null object
-Embarked       889 non-null object
-dtypes: float64(2), int64(5), object(5)
-memory usage: 83.6+ KB
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">891</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">890</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">12</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">PassengerId</span>    <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Survived</span>       <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pclass</span>         <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Name</span>           <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Sex</span>            <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>            <span class="mi">714</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>          <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>          <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Ticket</span>         <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Fare</span>           <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Cabin</span>          <span class="mi">204</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Embarked</span>       <span class="mi">889</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">83</span><span class="p">.</span><span class="mi">6</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -1644,7 +1649,7 @@ memory usage: 83.6+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x7fc65fa0e668&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="n">axes</span><span class="p">.</span><span class="n">_subplots</span><span class="p">.</span><span class="n">AxesSubplot</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65fa0e668</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1652,8 +1657,8 @@ memory usage: 83.6+ KB
 <p><strong>Take-away</strong>: in the training set, less people survived than didn&rsquo;t. Let&rsquo;s then build a first model that predicts that nobody survived.</p>
 <p>This is a bad model as we know that people survived. But it gives us a <strong>baseline</strong>: any model that we build later needs to do better than this one.</p>
 <ul>
-<li>Create a column <code class="codehilite">Survived</code> for <code class="codehilite">df_test</code> that encodes &lsquo;did not survive&rsquo; for all rows;</li>
-<li>Save <code class="codehilite">PassengerId</code> and <code class="codehilite">Survived</code> columns of <code class="codehilite">df_test</code> to a .csv and submit to Kaggle.</li>
+<li>Create a column <code class="codehilite"><span class="n">Survived</span></code> for <code class="codehilite"><span class="n">df_test</span></code> that encodes &lsquo;did not survive&rsquo; for all rows;</li>
+<li>Save <code class="codehilite"><span class="n">PassengerId</span></code> and <code class="codehilite"><span class="n">Survived</span></code> columns of <code class="codehilite"><span class="n">df_test</span></code> to a .csv and submit to Kaggle.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1683,7 +1688,7 @@ memory usage: 83.6+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7fc65fa35a20&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65fa35a20</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1755,10 +1760,10 @@ memory usage: 83.6+ KB
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Sex
-female    233
-male      109
-Name: Survived, dtype: int64
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Sex</span>
+<span class="n">female</span>    <span class="mi">233</span>
+<span class="n">male</span>      <span class="mi">109</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Survived</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </pre></div>
 </td></tr></table>
 
@@ -1777,16 +1782,16 @@ Name: Survived, dtype: int64
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.742038216561
-0.188908145581
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">742038216561</span>
+<span class="mi">0</span><span class="p">.</span><span class="mi">188908145581</span>
 </pre></div>
 </td></tr></table>
 
 <p>74% of women survived, while 19% of men survived.</p>
 <p>Build a second model and predict that all women survived and all men didn&rsquo;t.</p>
 <ul>
-<li>Create a column <code class="codehilite">Survived</code> for <code class="codehilite">df_test</code> that encodes the above prediction.</li>
-<li>Save <code class="codehilite">PassengerId</code> and <code class="codehilite">Survived</code> columns of <code class="codehilite">df_test</code> to a .csv and submit to Kaggle.</li>
+<li>Create a column <code class="codehilite"><span class="n">Survived</span></code> for <code class="codehilite"><span class="n">df_test</span></code> that encodes the above prediction.</li>
+<li>Save <code class="codehilite"><span class="n">PassengerId</span></code> and <code class="codehilite"><span class="n">Survived</span></code> columns of <code class="codehilite"><span class="n">df_test</span></code> to a .csv and submit to Kaggle.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1898,7 +1903,7 @@ Name: Survived, dtype: int64
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7fc65f8dcf98&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f8dcf98</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1910,7 +1915,7 @@ Name: Survived, dtype: int64
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7fc65f937c50&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f937c50</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1921,7 +1926,7 @@ Name: Survived, dtype: int64
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x7fc6633fb9e8&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="n">axes</span><span class="p">.</span><span class="n">_subplots</span><span class="p">.</span><span class="n">AxesSubplot</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc6633fb9e8</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1936,10 +1941,10 @@ Name: Survived, dtype: int64
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Survived
-0    Axes(0.125,0.125;0.775x0.775)
-1    Axes(0.125,0.125;0.775x0.775)
-Name: Fare, dtype: object
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Survived</span>
+<span class="mi">0</span>    <span class="n">Axes</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">125</span><span class="p">,</span><span class="mi">0</span><span class="p">.</span><span class="mi">125</span><span class="p">;</span><span class="mi">0</span><span class="p">.</span><span class="mi">775</span><span class="n">x0</span><span class="p">.</span><span class="mi">775</span><span class="p">)</span>
+<span class="mi">1</span>    <span class="n">Axes</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">125</span><span class="p">,</span><span class="mi">0</span><span class="p">.</span><span class="mi">125</span><span class="p">;</span><span class="mi">0</span><span class="p">.</span><span class="mi">775</span><span class="n">x0</span><span class="p">.</span><span class="mi">775</span><span class="p">)</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Fare</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="k">object</span>
 </pre></div>
 </td></tr></table>
 
@@ -1955,7 +1960,7 @@ Name: Fare, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x7fc65f64be80&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="n">axes</span><span class="p">.</span><span class="n">_subplots</span><span class="p">.</span><span class="n">AxesSubplot</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f64be80</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1972,7 +1977,7 @@ Name: Fare, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x7fc65f5cca58&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="n">axes</span><span class="p">.</span><span class="n">_subplots</span><span class="p">.</span><span class="n">AxesSubplot</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f5cca58</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1987,7 +1992,7 @@ Name: Fare, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x7fc65f2e4ef0&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="n">axes</span><span class="p">.</span><span class="n">_subplots</span><span class="p">.</span><span class="n">AxesSubplot</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f2e4ef0</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -2077,7 +2082,7 @@ Name: Fare, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7fc65f5ccba8&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f5ccba8</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -2094,7 +2099,7 @@ Name: Fare, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7fc65f22d710&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f22d710</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -2104,7 +2109,7 @@ Name: Fare, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.PairGrid at 0x7fc65f8826d8&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">PairGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7fc65f8826d8</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -2171,23 +2176,23 @@ Name: Fare, dtype: object
 14
 15
 16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-RangeIndex: 891 entries, 0 to 890
-Data columns (total 12 columns):
-PassengerId    891 non-null int64
-Survived       891 non-null int64
-Pclass         891 non-null int64
-Name           891 non-null object
-Sex            891 non-null object
-Age            714 non-null float64
-SibSp          891 non-null int64
-Parch          891 non-null int64
-Ticket         891 non-null object
-Fare           891 non-null float64
-Cabin          204 non-null object
-Embarked       889 non-null object
-dtypes: float64(2), int64(5), object(5)
-memory usage: 83.6+ KB
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">891</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">890</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">12</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">PassengerId</span>    <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Survived</span>       <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pclass</span>         <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Name</span>           <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Sex</span>            <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>            <span class="mi">714</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>          <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>          <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Ticket</span>         <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Fare</span>           <span class="mi">891</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Cabin</span>          <span class="mi">204</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Embarked</span>       <span class="mi">889</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">83</span><span class="p">.</span><span class="mi">6</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -2210,22 +2215,22 @@ memory usage: 83.6+ KB
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-RangeIndex: 418 entries, 0 to 417
-Data columns (total 11 columns):
-PassengerId    418 non-null int64
-Pclass         418 non-null int64
-Name           418 non-null object
-Sex            418 non-null object
-Age            332 non-null float64
-SibSp          418 non-null int64
-Parch          418 non-null int64
-Ticket         418 non-null object
-Fare           417 non-null float64
-Cabin          91 non-null object
-Embarked       418 non-null object
-dtypes: float64(2), int64(4), object(5)
-memory usage: 36.0+ KB
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">418</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">11</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">PassengerId</span>    <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pclass</span>         <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Name</span>           <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Sex</span>            <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>            <span class="mi">332</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>          <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>          <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Ticket</span>         <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Fare</span>           <span class="mi">417</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Cabin</span>          <span class="mi">91</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Embarked</span>       <span class="mi">418</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">36</span><span class="p">.</span><span class="mi">0</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -2270,26 +2275,26 @@ memory usage: 36.0+ KB
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 1309 entries, 0 to 417
-Data columns (total 11 columns):
-PassengerId    1309 non-null int64
-Pclass         1309 non-null int64
-Name           1309 non-null object
-Sex            1309 non-null object
-Age            1046 non-null float64
-SibSp          1309 non-null int64
-Parch          1309 non-null int64
-Ticket         1309 non-null object
-Fare           1308 non-null float64
-Cabin          295 non-null object
-Embarked       1307 non-null object
-dtypes: float64(2), int64(4), object(5)
-memory usage: 122.7+ KB
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1309</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">11</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">PassengerId</span>    <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pclass</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Name</span>           <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Sex</span>            <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>            <span class="mi">1046</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Ticket</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Fare</span>           <span class="mi">1308</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Cabin</span>          <span class="mi">295</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Embarked</span>       <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">122</span><span class="p">.</span><span class="mi">7</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
-<p>Missing values for the <code class="codehilite">Age</code> and <code class="codehilite">Fare</code> columns! Also notice that <code class="codehilite">Cabin</code> and <code class="codehilite">Embarked</code> are also missing values and we will need to deal with that also at some point. However, now we will focus on fixing the numerical variables <code class="codehilite">Age</code> and <code class="codehilite">Fare</code>, using the median of the of these variables where we know them. It&rsquo;s perfect for dealing with outliers. In other words, the median is useful to use when the distribution of data is skewed. Other ways to impute the missing values would be to use the mean or the mode.</p>
+<p>Missing values for the <code class="codehilite"><span class="n">Age</span></code> and <code class="codehilite"><span class="n">Fare</span></code> columns! Also notice that <code class="codehilite"><span class="n">Cabin</span></code> and <code class="codehilite"><span class="n">Embarked</span></code> are also missing values and we will need to deal with that also at some point. However, now we will focus on fixing the numerical variables <code class="codehilite"><span class="n">Age</span></code> and <code class="codehilite"><span class="n">Fare</span></code>, using the median of the of these variables where we know them. It&rsquo;s perfect for dealing with outliers. In other words, the median is useful to use when the distribution of data is skewed. Other ways to impute the missing values would be to use the mean or the mode.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -2319,27 +2324,27 @@ memory usage: 122.7+ KB
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 1309 entries, 0 to 417
-Data columns (total 11 columns):
-PassengerId    1309 non-null int64
-Pclass         1309 non-null int64
-Name           1309 non-null object
-Sex            1309 non-null object
-Age            1309 non-null float64
-SibSp          1309 non-null int64
-Parch          1309 non-null int64
-Ticket         1309 non-null object
-Fare           1309 non-null float64
-Cabin          295 non-null object
-Embarked       1307 non-null object
-dtypes: float64(2), int64(4), object(5)
-memory usage: 122.7+ KB
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1309</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">11</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">PassengerId</span>    <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pclass</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Name</span>           <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Sex</span>            <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>            <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Ticket</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Fare</span>           <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Cabin</span>          <span class="mi">295</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Embarked</span>       <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">122</span><span class="p">.</span><span class="mi">7</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
 <p>Encode the data with numbers with <code class="codehilite"><span class="na">.get_dummies</span><span class="p">()</span></code>. </p>
-<p>It creates a new column for female, called <code class="codehilite">Sex_female</code>, and then a new column for <code class="codehilite">Sex_male</code>, which encodes whether that row was male or female (1 if that row is a male - and a 0 if that row is female). Because of <code class="codehilite">drop_first</code> argument, we dropped <code class="codehilite">Sex_female</code> because, essentially, these new columns, <code class="codehilite">Sex_female</code> and <code class="codehilite">Sex_male</code>, encode the same information.</p>
+<p>It creates a new column for female, called <code class="codehilite"><span class="n">Sex_female</span></code>, and then a new column for <code class="codehilite"><span class="n">Sex_male</span></code>, which encodes whether that row was male or female (1 if that row is a male - and a 0 if that row is female). Because of <code class="codehilite"><span class="n">drop_first</span></code> argument, we dropped <code class="codehilite"><span class="n">Sex_female</span></code> because, essentially, these new columns, <code class="codehilite"><span class="n">Sex_female</span></code> and <code class="codehilite"><span class="n">Sex_male</span></code>, encode the same information.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">],</span> <span class="n">drop_first</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -2499,24 +2504,24 @@ memory usage: 122.7+ KB
  7
  8
  9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 1309 entries, 0 to 417
-Data columns (total 5 columns):
-Sex_male    1309 non-null uint8
-Fare        1309 non-null float64
-Age         1309 non-null float64
-Pclass      1309 non-null int64
-SibSp       1309 non-null int64
-dtypes: float64(2), int64(2), uint8(1)
-memory usage: 52.4 KB
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1309</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">5</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">Sex_male</span>    <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">uint8</span>
+<span class="n">Fare</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Age</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Pclass</span>      <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">SibSp</span>       <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">uint8</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">52</span><span class="p">.</span><span class="mi">4</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
 <p>All the entries are non-null now.</p>
 <h3 id="build-a-decision-tree-classifier">Build a Decision Tree Classifier<a class="headerlink" href="#build-a-decision-tree-classifier" title="Permanent link">&para;</a></h3>
-<p>&ldquo;Was <code class="codehilite">Sex_male</code>&rdquo; less than 0.5? In other words, was the data point a female. If the answer to this question is <code class="codehilite">True</code>, we can go down to the left and we get <code class="codehilite">Survived</code>. If <code class="codehilite">False</code>, we go down the right and we get <code class="codehilite">Dead</code>.</p>
+<p>&ldquo;Was <code class="codehilite"><span class="n">Sex_male</span></code>&rdquo; less than 0.5? In other words, was the data point a female. If the answer to this question is <code class="codehilite"><span class="k">True</span></code>, we can go down to the left and we get <code class="codehilite"><span class="n">Survived</span></code>. If <code class="codehilite"><span class="k">False</span></code>, we go down the right and we get <code class="codehilite"><span class="n">Dead</span></code>.</p>
 <p><img alt="" src="../img/EDA_machine_learning/decision_tree_titanic_1.png" /></p>
-<p>That the first branch is on <code class="codehilite">Male</code> or not and that <code class="codehilite">Male</code> results in a prediction of <code class="codehilite">Dead</code>. The gini coefficient is used to make these decisions.</p>
+<p>That the first branch is on <code class="codehilite"><span class="n">Male</span></code> or not and that <code class="codehilite"><span class="n">Male</span></code> results in a prediction of <code class="codehilite"><span class="n">Dead</span></code>. The gini coefficient is used to make these decisions.</p>
 <p>Before fitting a model to the data, split it back into training and test sets:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">data_train</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">891</span><span class="p">]</span>
@@ -2547,17 +2552,17 @@ memory usage: 52.4 KB
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([[  1.    ,   7.25  ,  22.    ,   3.    ,   1.    ],
-       [  0.    ,  71.2833,  38.    ,   1.    ,   1.    ],
-       [  0.    ,   7.925 ,  26.    ,   3.    ,   0.    ],
-       ..., 
-       [  0.    ,  23.45  ,  28.    ,   3.    ,   1.    ],
-       [  1.    ,  30.    ,  26.    ,   1.    ,   0.    ],
-       [  1.    ,   7.75  ,  32.    ,   3.    ,   0.    ]])
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([[</span>  <span class="mi">1</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">7</span><span class="p">.</span><span class="mi">25</span>  <span class="p">,</span>  <span class="mi">22</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">3</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">1</span><span class="p">.</span>    <span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">0</span><span class="p">.</span>    <span class="p">,</span>  <span class="mi">71</span><span class="p">.</span><span class="mi">2833</span><span class="p">,</span>  <span class="mi">38</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">1</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">1</span><span class="p">.</span>    <span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">0</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">7</span><span class="p">.</span><span class="mi">925</span> <span class="p">,</span>  <span class="mi">26</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">3</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">0</span><span class="p">.</span>    <span class="p">],</span>
+       <span class="p">...,</span> 
+       <span class="p">[</span>  <span class="mi">0</span><span class="p">.</span>    <span class="p">,</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">45</span>  <span class="p">,</span>  <span class="mi">28</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">3</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">1</span><span class="p">.</span>    <span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">1</span><span class="p">.</span>    <span class="p">,</span>  <span class="mi">30</span><span class="p">.</span>    <span class="p">,</span>  <span class="mi">26</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">1</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">0</span><span class="p">.</span>    <span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">1</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">7</span><span class="p">.</span><span class="mi">75</span>  <span class="p">,</span>  <span class="mi">32</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">3</span><span class="p">.</span>    <span class="p">,</span>   <span class="mi">0</span><span class="p">.</span>    <span class="p">]])</span>
 </pre></div>
 </td></tr></table>
 
-<p>Build a decision tree classifier! First create such a model with <code class="codehilite">max_depth=3</code> and then fit it the data. Name the model <code class="codehilite">clf</code>, which is short for &ldquo;Classifier&rdquo;.</p>
+<p>Build a decision tree classifier! First create such a model with <code class="codehilite"><span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span></code> and then fit it the data. Name the model <code class="codehilite"><span class="n">clf</span></code>, which is short for &ldquo;Classifier&rdquo;.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -2577,12 +2582,12 @@ memory usage: 52.4 KB
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=3,
-            max_features=None, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
-            splitter=&#39;best&#39;)
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">class_weight</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+            <span class="n">max_features</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">max_leaf_nodes</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_impurity_decrease</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">min_impurity_split</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">min_weight_fraction_leaf</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">presort</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">splitter</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2620,14 +2625,14 @@ memory usage: 52.4 KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.8271604938271605
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">8271604938271605</span>
 </pre></div>
 </td></tr></table>
 
 <h3 id="a-decision-tree-classifier-in-more-details">A Decision Tree Classifier in More Details<a class="headerlink" href="#a-decision-tree-classifier-in-more-details" title="Permanent link">&para;</a></h3>
 <p>The Decision Tree Classifier we just built had a max_depth=3 and it looks like this:</p>
 <p><img alt="" src="../img/EDA_machine_learning/decision_tree_titanic_3.png" /></p>
-<p>The maximal distance between the first decision and the last is 3, so that&rsquo;s <code class="codehilite">max_depth=3</code>.</p>
+<p>The maximal distance between the first decision and the last is 3, so that&rsquo;s <code class="codehilite"><span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span></code>.</p>
 <p>Generate images with <a href="http://scikit-learn.org/stable/modules/tree.html">graphviz</a>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2643,7 +2648,7 @@ memory usage: 52.4 KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&#39;img/tree_data.pdf&#39;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s1">&#39;img/tree_data.pdf&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -2654,7 +2659,7 @@ memory usage: 52.4 KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[&#39;Sex_male&#39;, &#39;Fare&#39;, &#39;Age&#39;, &#39;Pclass&#39;, &#39;SibSp&#39;]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span><span class="s1">&#39;Sex_male&#39;</span><span class="p">,</span> <span class="s1">&#39;Fare&#39;</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="s1">&#39;SibSp&#39;</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -2681,11 +2686,11 @@ memory usage: 52.4 KB
 <p>IN THE NOTEBOOK ONLY!</p>
 <p>In building this model, what we are essentially doing is creating a <a href="http://scikit-learn.org/stable/auto_examples/ensemble/plot_voting_decision_regions.html">decision boundary</a> in the space of feature variables.</p>
 <p><img alt="" src="../img/EDA_machine_learning/dec_bound.png" /></p>
-<h3 id="why-choose-max_depth3">Why Choose <code class="codehilite">max_depth=3</code>?<a class="headerlink" href="#why-choose-max_depth3" title="Permanent link">&para;</a></h3>
-<p>The depth of the tree is known as a hyperparameter, which means a parameter we need to decide before we fit the model to the data. If we choose a larger <code class="codehilite">max_depth</code>, we will get a more complex decision boundary;  the bias-variance trade-off.</p>
+<h3 id="why-choose-max_depth3">Why Choose <code class="codehilite"><span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span></code>?<a class="headerlink" href="#why-choose-max_depth3" title="Permanent link">&para;</a></h3>
+<p>The depth of the tree is known as a hyperparameter, which means a parameter we need to decide before we fit the model to the data. If we choose a larger <code class="codehilite"><span class="n">max_depth</span></code>, we will get a more complex decision boundary;  the bias-variance trade-off.</p>
 <ul>
 <li>If the decision boundary is too complex, we can overfit to the data, which means that the model will be describing noise as well as signal.</li>
-<li>If the <code class="codehilite">max_depth</code> is too small, we might be underfitting the data, meaning that the model doesn&rsquo;t contain enough of the signal.</li>
+<li>If the <code class="codehilite"><span class="n">max_depth</span></code> is too small, we might be underfitting the data, meaning that the model doesn&rsquo;t contain enough of the signal.</li>
 </ul>
 <p>One way is to hold out a test set from the training data. We can then fit the model to the training data, make predictions on the test set and see how well the prediction does on the test set.</p>
 <p>Split the original training data into training and test sets:</p>
@@ -2693,7 +2698,7 @@ memory usage: 52.4 KB
 </pre></div>
 </td></tr></table>
 
-<p>Iterate over values of <code class="codehilite">max_depth</code> ranging from 1 to 9 and plot the accuracy of the models on training and test sets:</p>
+<p>Iterate over values of <code class="codehilite"><span class="n">max_depth</span></code> ranging from 1 to 9 and plot the accuracy of the models on training and test sets:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2751,9 +2756,9 @@ memory usage: 52.4 KB
 </td></tr></table>
 
 <p><img alt="" src="../img/EDA_machine_learning/output_76_0.png" /></p>
-<p>At <code class="codehilite">max_depth-3</code>, we get the same results as with the model before (around 82%).</p>
+<p>At <code class="codehilite"><span class="n">max_depth</span><span class="o">-</span><span class="mi">3</span></code>, we get the same results as with the model before (around 82%).</p>
 <p>As we increase the max_depth, we are going to fit better and better to the training data because we will make decisions that describe the training data. The accuracy for the training data will go up and up, but we see that this doesn&rsquo;t happen for the test data: we are overfitting.</p>
-<p>So that&rsquo;s why we chose <code class="codehilite">max_depth=3</code>. </p>
+<p>So that&rsquo;s why we chose <code class="codehilite"><span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span></code>. </p>
 <h2 id="feature-engineering">Feature Engineering<a class="headerlink" href="#feature-engineering" title="Permanent link">&para;</a></h2>
 <p>https://www.datacamp.com/community/tutorials/feature-engineering-kaggle</p>
 <p>A process where we use domain knowledge of the data to create additional relevant features (create new columns, transform variables and more) that increase the predictive power of the learning algorithm and make the machine learning models perform even better.</p>
@@ -2825,22 +2830,22 @@ memory usage: 52.4 KB
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 1309 entries, 0 to 417
-Data columns (total 11 columns):
-PassengerId    1309 non-null int64
-Pclass         1309 non-null int64
-Name           1309 non-null object
-Sex            1309 non-null object
-Age            1046 non-null float64
-SibSp          1309 non-null int64
-Parch          1309 non-null int64
-Ticket         1309 non-null object
-Fare           1308 non-null float64
-Cabin          295 non-null object
-Embarked       1307 non-null object
-dtypes: float64(2), int64(4), object(5)
-memory usage: 122.7+ KB
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1309</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">11</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">PassengerId</span>    <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pclass</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Name</span>           <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Sex</span>            <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>            <span class="mi">1046</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Ticket</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Fare</span>           <span class="mi">1308</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Cabin</span>          <span class="mi">295</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Embarked</span>       <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">122</span><span class="p">.</span><span class="mi">7</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -2857,12 +2862,12 @@ memory usage: 122.7+ KB
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>413              Spector, Mr. Woolf
-414    Oliva y Ocana, Dona. Fermina
-415    Saether, Mr. Simon Sivertsen
-416             Ware, Mr. Frederick
-417        Peter, Master. Michael J
-Name: Name, dtype: object
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">413</span>              <span class="n">Spector</span><span class="p">,</span> <span class="n">Mr</span><span class="p">.</span> <span class="n">Woolf</span>
+<span class="mi">414</span>    <span class="n">Oliva</span> <span class="n">y</span> <span class="n">Ocana</span><span class="p">,</span> <span class="n">Dona</span><span class="p">.</span> <span class="n">Fermina</span>
+<span class="mi">415</span>    <span class="n">Saether</span><span class="p">,</span> <span class="n">Mr</span><span class="p">.</span> <span class="n">Simon</span> <span class="n">Sivertsen</span>
+<span class="mi">416</span>             <span class="n">Ware</span><span class="p">,</span> <span class="n">Mr</span><span class="p">.</span> <span class="n">Frederick</span>
+<span class="mi">417</span>        <span class="n">Peter</span><span class="p">,</span> <span class="n">Master</span><span class="p">.</span> <span class="n">Michael</span> <span class="n">J</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Name</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="k">object</span>
 </pre></div>
 </td></tr></table>
 
@@ -2884,10 +2889,10 @@ Name: Name, dtype: object
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0      Mr
-1     Mrs
-2    Miss
-Name: Title, dtype: object
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>      <span class="n">Mr</span>
+<span class="mi">1</span>     <span class="n">Mrs</span>
+<span class="mi">2</span>    <span class="n">Miss</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Title</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="k">object</span>
 </pre></div>
 </td></tr></table>
 
@@ -2915,10 +2920,10 @@ Name: Title, dtype: object
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0      Mr
-1     Mrs
-2    Miss
-Name: Title, dtype: object
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>      <span class="n">Mr</span>
+<span class="mi">1</span>     <span class="n">Mrs</span>
+<span class="mi">2</span>    <span class="n">Miss</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">Title</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="k">object</span>
 </pre></div>
 </td></tr></table>
 
@@ -3018,7 +3023,7 @@ Name: Title, dtype: object
 </div>
 
 <h4 id="passengers-cabins">Passenger&rsquo;s Cabins<a class="headerlink" href="#passengers-cabins" title="Permanent link">&para;</a></h4>
-<p>There are several NaNs or missing values in the <code class="codehilite">Cabin</code> column. Those NaNs didn&rsquo;t have a cabin, which could tell us something about survival.</p>
+<p>There are several NaNs or missing values in the <code class="codehilite"><span class="n">Cabin</span></code> column. Those NaNs didn&rsquo;t have a cabin, which could tell us something about survival.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># View head of data</span>
 <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;PassengerId&#39;</span><span class="p">,</span> <span class="s1">&#39;Ticket&#39;</span><span class="p">,</span> <span class="s1">&#39;Cabin&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -3173,7 +3178,7 @@ Name: Title, dtype: object
 </table>
 </div>
 
-<p>Drop these columns, except <code class="codehilite">Has_Cabin</code>, in the actual <code class="codehilite">data</code> DataFrame; make sure to use the <code class="codehilite">inplace</code> argument in the <code class="codehilite"><span class="na">.drop</span><span class="p">()</span></code> method and set it to <code class="codehilite">True</code>:</p>
+<p>Drop these columns, except <code class="codehilite"><span class="n">Has_Cabin</span></code>, in the actual <code class="codehilite"><span class="k">data</span></code> DataFrame; make sure to use the <code class="codehilite"><span class="n">inplace</span></code> argument in the <code class="codehilite"><span class="na">.drop</span><span class="p">()</span></code> method and set it to <code class="codehilite"><span class="k">True</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Drop columns and view head</span>
@@ -3276,7 +3281,7 @@ Name: Title, dtype: object
 </table>
 </div>
 
-<p>New features such as <code class="codehilite">Title</code> and <code class="codehilite">Has_Cabin</code>. </p>
+<p>New features such as <code class="codehilite"><span class="n">Title</span></code> and <code class="codehilite"><span class="n">Has_Cabin</span></code>. </p>
 <p>Features that don&rsquo;t add any more useful information for the machine learning model are now dropped from the DataFrame.</p>
 <h4 id="handling-missing-values">Handling Missing Values<a class="headerlink" href="#handling-missing-values" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -3296,24 +3301,24 @@ Name: Title, dtype: object
 11
 12
 13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 1309 entries, 0 to 417
-Data columns (total 9 columns):
-Pclass       1309 non-null int64
-Sex          1309 non-null object
-Age          1046 non-null float64
-SibSp        1309 non-null int64
-Parch        1309 non-null int64
-Fare         1308 non-null float64
-Embarked     1307 non-null object
-Title        1309 non-null object
-Has_Cabin    1309 non-null bool
-dtypes: bool(1), float64(2), int64(3), object(3)
-memory usage: 133.3+ KB
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1309</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">9</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">Pclass</span>       <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Sex</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>          <span class="mi">1046</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Fare</span>         <span class="mi">1308</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Embarked</span>     <span class="mi">1307</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Title</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Has_Cabin</span>    <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">bool</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">133</span><span class="p">.</span><span class="mi">3</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
-<p>Missing values in <code class="codehilite">Age</code>, <code class="codehilite">Fare</code>, and <code class="codehilite">Embarked</code>. Impute these missing values with the help of <code class="codehilite"><span class="na">.fillna</span><span class="p">()</span></code> and use the median to fill in the columns (or the mean, the mode, etc.).</p>
+<p>Missing values in <code class="codehilite"><span class="n">Age</span></code>, <code class="codehilite"><span class="n">Fare</span></code>, and <code class="codehilite"><span class="n">Embarked</span></code>. Impute these missing values with the help of <code class="codehilite"><span class="na">.fillna</span><span class="p">()</span></code> and use the median to fill in the columns (or the mean, the mode, etc.).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3339,20 +3344,20 @@ memory usage: 133.3+ KB
 11
 12
 13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 1309 entries, 0 to 417
-Data columns (total 9 columns):
-Pclass       1309 non-null int64
-Sex          1309 non-null object
-Age          1309 non-null float64
-SibSp        1309 non-null int64
-Parch        1309 non-null int64
-Fare         1309 non-null float64
-Embarked     1309 non-null object
-Title        1309 non-null object
-Has_Cabin    1309 non-null bool
-dtypes: bool(1), float64(2), int64(3), object(3)
-memory usage: 133.3+ KB
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">1309</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">417</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">9</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">Pclass</span>       <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Sex</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Age</span>          <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">SibSp</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Parch</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Fare</span>         <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Embarked</span>     <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Title</span>        <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Has_Cabin</span>    <span class="mi">1309</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">bool</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">133</span><span class="p">.</span><span class="mi">3</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -3805,12 +3810,12 @@ memory usage: 133.3+ KB
 </td></tr></table>
 
 <h3 id="building-models-with-a-new-dataset">Building models with a New Dataset!<a class="headerlink" href="#building-models-with-a-new-dataset" title="Permanent link">&para;</a></h3>
-<p>Build a decision tree on a brand new feature-engineered dataset. To choose the hyperparameter <code class="codehilite">max_depth</code>, we will use a variation on test train split called &ldquo;cross validation&rdquo;.</p>
+<p>Build a decision tree on a brand new feature-engineered dataset. To choose the hyperparameter <code class="codehilite"><span class="n">max_depth</span></code>, we will use a variation on test train split called &ldquo;cross validation&rdquo;.</p>
 <p><img alt="" src="../img/EDA_machine_learning/cv_raxrt7.png" /></p>
 <p>Split the dataset into 5 groups or folds. Then we hold out the first fold as a test set, fit the model on the remaining four folds, predict on the test set and compute the metric of interest. Next, we hold out the second fold as the test set, fit on the remaining data, predict on the test set and compute the metric of interest. Then similarly with the third, fourth and fifth.</p>
 <p>As a result, we get five values of accuracy, from which we can compute statistics of interest, such as the median and/or mean and 95% confidence intervals.</p>
 <p>We do this for each value of each hyperparameter that we are tuning and choose the set of hyperparameters that performs the best. This is called grid search.</p>
-<p>In the following, we will use cross validation and grid search to choose the best <code class="codehilite">max_depth</code> for the new feature-engineered dataset:</p>
+<p>In the following, we will use cross validation and grid search to choose the best <code class="codehilite"><span class="n">max_depth</span></code> for the new feature-engineered dataset:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3846,13 +3851,13 @@ memory usage: 133.3+ KB
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Tuned Decision Tree Parameters: {&#39;max_depth&#39;: 3}
-Best score is 0.8294051627384961
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Tuned</span> <span class="n">Decision</span> <span class="n">Tree</span> <span class="k">Parameters</span><span class="p">:</span> <span class="err">{</span><span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="err">}</span>
+<span class="n">Best</span> <span class="n">score</span> <span class="k">is</span> <span class="mi">0</span><span class="p">.</span><span class="mi">8294051627384961</span>
 </pre></div>
 </td></tr></table>
 
-<p>Make predictions on the test set, create a new column <code class="codehilite">Survived</code> and store the predictions in it.</p>
-<p>Save the <code class="codehilite">PassengerId</code> and <code class="codehilite">Survived</code> columns of <code class="codehilite">df_test</code> to a .csv and submit it to Kaggle.</p>
+<p>Make predictions on the test set, create a new column <code class="codehilite"><span class="n">Survived</span></code> and store the predictions in it.</p>
+<p>Save the <code class="codehilite"><span class="n">PassengerId</span></code> and <code class="codehilite"><span class="n">Survived</span></code> columns of <code class="codehilite"><span class="n">df_test</span></code> to a .csv and submit it to Kaggle.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Y_pred</span> <span class="o">=</span> <span class="n">clf_cv</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
@@ -3933,25 +3938,17 @@ Best score is 0.8294051627384961
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

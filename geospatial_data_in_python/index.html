@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Geospatial Data
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -482,28 +487,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#geospatial-data-in-python" title="Geospatial Data in Python" class="md-nav__link">
+  <a href="#geospatial-data-in-python" class="md-nav__link">
     Geospatial Data in Python
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-dataset" title="The dataset" class="md-nav__link">
+  <a href="#the-dataset" class="md-nav__link">
     The dataset
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploratory-data-analysis" title="Exploratory Data Analysis" class="md-nav__link">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
     Exploratory Data Analysis
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualization" title="Visualization" class="md-nav__link">
+  <a href="#visualization" class="md-nav__link">
     Visualization
   </a>
   
@@ -808,28 +813,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#geospatial-data-in-python" title="Geospatial Data in Python" class="md-nav__link">
+  <a href="#geospatial-data-in-python" class="md-nav__link">
     Geospatial Data in Python
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-dataset" title="The dataset" class="md-nav__link">
+  <a href="#the-dataset" class="md-nav__link">
     The dataset
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploratory-data-analysis" title="Exploratory Data Analysis" class="md-nav__link">
+  <a href="#exploratory-data-analysis" class="md-nav__link">
     Exploratory Data Analysis
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualization" title="Visualization" class="md-nav__link">
+  <a href="#visualization" class="md-nav__link">
     Visualization
   </a>
   
@@ -968,29 +973,29 @@ Some packages are pre-requisites to the others: to install GeoPandas, it require
 </table>
 </div>
 
-<p>It is <code class="codehilite">GeoDataFrame</code>, which has all the regular characteristics of a Pandas <code class="codehilite">DataFrame</code>.</p>
+<p>It is <code class="codehilite"><span class="n">GeoDataFrame</span></code>, which has all the regular characteristics of a Pandas <code class="codehilite"><span class="n">DataFrame</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Printing</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">country</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>geopandas.geodataframe.GeoDataFrame
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">geopandas</span><span class="p">.</span><span class="n">geodataframe</span><span class="p">.</span><span class="n">GeoDataFrame</span>
 </pre></div>
 </td></tr></table>
 
-<p>The column (<code class="codehilite">geometry</code>) containing the coordinates is a <code class="codehilite">GeoSeries</code>.</p>
+<p>The column (<code class="codehilite"><span class="n">geometry</span></code>) containing the coordinates is a <code class="codehilite"><span class="n">GeoSeries</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Printing</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">country</span><span class="o">.</span><span class="n">geometry</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>geopandas.geoseries.GeoSeries
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">geopandas</span><span class="p">.</span><span class="n">geoseries</span><span class="p">.</span><span class="n">GeoSeries</span>
 </pre></div>
 </td></tr></table>
 
-<p>Each value in the <code class="codehilite">GeoSeries</code> is a Shapely Object: a point, a segment, a polygon (and a multipolygon).<br />
+<p>Each value in the <code class="codehilite"><span class="n">GeoSeries</span></code> is a Shapely Object: a point, a segment, a polygon (and a multipolygon).<br />
 Each object can represent something: a point for a building, a segment for a street, a polygon for acity, and multipolygon for a country with multiple borders inside.<br />
 For more information about each Geometric object, consult this <a href="https://shapely.readthedocs.io/en/stable/manual.html#geometric-objects">article</a>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -999,11 +1004,11 @@ For more information about each Geometric object, consult this <a href="https://
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>shapely.geometry.multipolygon.MultiPolygon
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">shapely</span><span class="p">.</span><span class="n">geometry</span><span class="p">.</span><span class="n">multipolygon</span><span class="p">.</span><span class="n">MultiPolygon</span>
 </pre></div>
 </td></tr></table>
 
-<p>Similar to a Pandas <code class="codehilite">DataFrame</code>, a <code class="codehilite">GeoDataFrame</code> can be plotted.</p>
+<p>Similar to a Pandas <code class="codehilite"><span class="n">DataFrame</span></code>, a <code class="codehilite"><span class="n">GeoDataFrame</span></code> can be plotted.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Plotting the multipolygon</span>
 <span class="n">country</span><span class="o">.</span><span class="n">plot</span><span class="p">();</span>
@@ -1140,27 +1145,27 @@ We can also add the figure size and colour to customize the plot</p>
 13
 14
 15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-RangeIndex: 105 entries, 0 to 104
-Data columns (total 11 columns):
-AdvisoryNumber    105 non-null object
-Date              105 non-null object
-Lat               105 non-null float64
-Long              105 non-null float64
-Wind              105 non-null int64
-Pres              105 non-null int64
-Movement          105 non-null object
-Type              105 non-null object
-Name              105 non-null object
-Received          105 non-null object
-Forecaster        104 non-null object
-dtypes: float64(2), int64(2), object(7)
-memory usage: 9.1+ KB
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">105</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">104</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">11</span> <span class="n">columns</span><span class="p">):</span>
+<span class="n">AdvisoryNumber</span>    <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="nb">Date</span>              <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Lat</span>               <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Long</span>              <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">float64</span>
+<span class="n">Wind</span>              <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Pres</span>              <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">Movement</span>          <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="k">Type</span>              <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Name</span>              <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Received</span>          <span class="mi">105</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">Forecaster</span>        <span class="mi">104</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">9</span><span class="p">.</span><span class="mi">1</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
 <p>Checking missing values using the missingno package.<br />
-There is only one missing value in column <code class="codehilite">Forecaster</code> which we don&rsquo;t need.<br />
+There is only one missing value in column <code class="codehilite"><span class="n">Forecaster</span></code> which we don&rsquo;t need.<br />
 So we can ignore it.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1266,8 +1271,8 @@ So we can ignore it.</p>
 </table>
 </div>
 
-<p>We only need the <code class="codehilite">date</code>, the coordinates: <code class="codehilite">lat</code> (latitude) and <code class="codehilite">long</code> (longitude), <code class="codehilite">Wind</code> speed, <code class="codehilite">Pres</code>sure, and <code class="codehilite">Name</code>.<br />
-<code class="codehilite">Movement</code> and <code class="codehilite">Type</code> are optional, but the rest can be dropped.</p>
+<p>We only need the <code class="codehilite"><span class="nb">date</span></code>, the coordinates: <code class="codehilite"><span class="n">lat</span></code> (latitude) and <code class="codehilite"><span class="n">long</span></code> (longitude), <code class="codehilite"><span class="n">Wind</span></code> speed, <code class="codehilite"><span class="n">Pres</span></code>sure, and <code class="codehilite"><span class="n">Name</span></code>.<br />
+<code class="codehilite"><span class="n">Movement</span></code> and <code class="codehilite"><span class="k">Type</span></code> are optional, but the rest can be dropped.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1350,7 +1355,7 @@ So we can ignore it.</p>
 
 <p>It is important to check out the longitude and latitude.<br />
 Here the longitude is west.<br />
-Add <code class="codehilite">-</code> to the <code class="codehilite">Long</code> values to correctly plot the data.<br />
+Add <code class="codehilite"><span class="o">-</span></code> to the <code class="codehilite"><span class="n">Long</span></code> values to correctly plot the data.<br />
 The US are west of the Greenwich meridian (0 degree).<br />
 Everything east of the 0 degree is positive, everything west is negative.<br />
 The same goes for the northern/southern hemispheres.</p>
@@ -1432,7 +1437,7 @@ The same goes for the northern/southern hemispheres.</p>
 </table>
 </div>
 
-<p>Let&rsquo;s combine the latitude and longitude to create coordinates, which will subsequently be turned into a <code class="codehilite">GeoSeries</code> for visualization purpose.</p>
+<p>Let&rsquo;s combine the latitude and longitude to create coordinates, which will subsequently be turned into a <code class="codehilite"><span class="n">GeoSeries</span></code> for visualization purpose.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1597,14 +1602,14 @@ The same goes for the northern/southern hemispheres.</p>
 </table>
 </div>
 
-<p>Checking the type of the <code class="codehilite">florence</code> and column <code class="codehilite">coordinates</code>: it is a <code class="codehilite">DataFrame</code> and a <code class="codehilite">Series</code>.</p>
+<p>Checking the type of the <code class="codehilite"><span class="n">florence</span></code> and column <code class="codehilite"><span class="n">coordinates</span></code>: it is a <code class="codehilite"><span class="n">DataFrame</span></code> and a <code class="codehilite"><span class="n">Series</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Printing</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">florence</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pandas.core.frame.DataFrame
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">pandas</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">DataFrame</span>
 </pre></div>
 </td></tr></table>
 
@@ -1614,11 +1619,11 @@ The same goes for the northern/southern hemispheres.</p>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pandas.core.series.Series
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">pandas</span><span class="p">.</span><span class="n">core</span><span class="p">.</span><span class="n">series</span><span class="p">.</span><span class="n">Series</span>
 </pre></div>
 </td></tr></table>
 
-<p>Convert the <code class="codehilite">DataFrame</code> into a <code class="codehilite">GeoDataFrame</code> and check the types once again: it is a <code class="codehilite">GeoDataFrame</code> and <code class="codehilite">GeoSeries</code>.</p>
+<p>Convert the <code class="codehilite"><span class="n">DataFrame</span></code> into a <code class="codehilite"><span class="n">GeoDataFrame</span></code> and check the types once again: it is a <code class="codehilite"><span class="n">GeoDataFrame</span></code> and <code class="codehilite"><span class="n">GeoSeries</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1709,7 +1714,7 @@ The same goes for the northern/southern hemispheres.</p>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>geopandas.geodataframe.GeoDataFrame
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">geopandas</span><span class="p">.</span><span class="n">geodataframe</span><span class="p">.</span><span class="n">GeoDataFrame</span>
 </pre></div>
 </td></tr></table>
 
@@ -1719,11 +1724,11 @@ The same goes for the northern/southern hemispheres.</p>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>geopandas.geoseries.GeoSeries
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">geopandas</span><span class="p">.</span><span class="n">geoseries</span><span class="p">.</span><span class="n">GeoSeries</span>
 </pre></div>
 </td></tr></table>
 
-<p>Notice that even though it&rsquo;s now a <code class="codehilite">GeoDataFrame</code> and a <code class="codehilite">GeoSeries</code>, we can still filter the rows.</p>
+<p>Notice that even though it&rsquo;s now a <code class="codehilite"><span class="n">GeoDataFrame</span></code> and a <code class="codehilite"><span class="n">GeoSeries</span></code>, we can still filter the rows.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1743,12 +1748,12 @@ The same goes for the northern/southern hemispheres.</p>
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Name
-FLORENCE     6
-Florence    85
-SIX          4
-Six         10
-Name: Type, dtype: int64
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Name</span>
+<span class="n">FLORENCE</span>     <span class="mi">6</span>
+<span class="n">Florence</span>    <span class="mi">85</span>
+<span class="n">SIX</span>          <span class="mi">4</span>
+<span class="n">Six</span>         <span class="mi">10</span>
+<span class="n">Name</span><span class="p">:</span> <span class="k">Type</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </pre></div>
 </td></tr></table>
 
@@ -1763,7 +1768,7 @@ Name: Type, dtype: int64
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>The average wind speed of Hurricane Florence is 74.4286 mph, and it can go up to 140 mph maximum
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">The</span><span class="w"> </span><span class="n">average</span><span class="w"> </span><span class="n">wind</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">Hurricane</span><span class="w"> </span><span class="n">Florence</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="mf">74.4286</span><span class="w"> </span><span class="n">mph</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="k">go</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="mi">140</span><span class="w"> </span><span class="n">mph</span><span class="w"> </span><span class="n">maximum</span><span class="w"></span>
 </pre></div>
 </td></tr></table>
 
@@ -1771,7 +1776,7 @@ Name: Type, dtype: int64
 To imagine how scary this wind speed is, the Beaufort Wind Scale, developed by U.K Royal Navy, shows the appearance of wind effects on the water and on land.<br />
 With the speed of 48 to 55 miles per hours, it can already break and uproot trees, and cause &ldquo;considerable structural damage&rdquo;.</p>
 <h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link">&para;</a></h2>
-<p>A <code class="codehilite">GeoDataFrame</code> also has a <code class="codehilite">plot</code> method.</p>
+<p>A <code class="codehilite"><span class="n">GeoDataFrame</span></code> also has a <code class="codehilite"><span class="n">plot</span></code> method.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Plotting</span>
 <span class="n">florence</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">));</span>
@@ -1779,7 +1784,7 @@ With the speed of 48 to 55 miles per hours, it can already break and uproot tree
 </td></tr></table>
 
 <p><img alt="" src="../img/Geospatial_Data_in_Python/output_40_0.png" /></p>
-<p>Because this <code class="codehilite">GeoDataFrame</code> only have coordinates information (location) of some points in time, we can only plot the position on a blank map.<br />
+<p>Because this <code class="codehilite"><span class="n">GeoDataFrame</span></code> only have coordinates information (location) of some points in time, we can only plot the position on a blank map.<br />
 Let&rsquo;s plot the hurricane position on a US map to see where Florence transited and how strong the wind was at that time.<br />
 We use a US States map (data we loaded at the beginning) as the background and we overlay Florence&rsquo;s  positions on top.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -1924,25 +1929,17 @@ As it approached the land, the hurricane started losing its strength, but with w
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Overview of scikit-learn
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -530,7 +535,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#three-types-of-machine-learning-algorithms" title="Three types of Machine Learning Algorithms" class="md-nav__link">
+  <a href="#three-types-of-machine-learning-algorithms" class="md-nav__link">
     Three types of Machine Learning Algorithms
   </a>
   
@@ -538,21 +543,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#supervised-learning" title="Supervised Learning" class="md-nav__link">
+  <a href="#supervised-learning" class="md-nav__link">
     Supervised Learning
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#unsupervised-learning" title="Unsupervised Learning" class="md-nav__link">
+  <a href="#unsupervised-learning" class="md-nav__link">
     Unsupervised Learning
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reinforcement-learning" title="Reinforcement Learning" class="md-nav__link">
+  <a href="#reinforcement-learning" class="md-nav__link">
     Reinforcement Learning
   </a>
   
@@ -564,14 +569,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-scikit-learn-module" title="The scikit-learn Module" class="md-nav__link">
+  <a href="#the-scikit-learn-module" class="md-nav__link">
     The scikit-learn Module
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-supervised-learning" title="Basic Supervised Learning" class="md-nav__link">
+  <a href="#basic-supervised-learning" class="md-nav__link">
     Basic Supervised Learning
   </a>
   
@@ -579,14 +584,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#with-a-hard-coded-dataset" title="With a Hard-Coded Dataset" class="md-nav__link">
+  <a href="#with-a-hard-coded-dataset" class="md-nav__link">
     With a Hard-Coded Dataset
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linear-regression" title="Linear Regression" class="md-nav__link">
+  <a href="#linear-regression" class="md-nav__link">
     Linear Regression
   </a>
   
@@ -594,14 +599,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#r-code" title="R Code" class="md-nav__link">
+  <a href="#r-code" class="md-nav__link">
     R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#python-code" title="Python Code" class="md-nav__link">
+  <a href="#python-code" class="md-nav__link">
     Python Code
   </a>
   
@@ -613,14 +618,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#linear-regression-with-statsmodels" title="Linear Regression with StatsModels" class="md-nav__link">
+  <a href="#linear-regression-with-statsmodels" class="md-nav__link">
     Linear Regression with StatsModels
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#logistic-regression" title="Logistic Regression" class="md-nav__link">
+  <a href="#logistic-regression" class="md-nav__link">
     Logistic Regression
   </a>
   
@@ -628,14 +633,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code" title="The R code" class="md-nav__link">
+  <a href="#the-r-code" class="md-nav__link">
     The R code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code" class="md-nav__link">
     The Python Code
   </a>
   
@@ -647,7 +652,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#decision-tree" title="Decision tree" class="md-nav__link">
+  <a href="#decision-tree" class="md-nav__link">
     Decision tree
   </a>
   
@@ -655,14 +660,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_1" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_1" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_1" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_1" class="md-nav__link">
     The Python Code
   </a>
   
@@ -674,7 +679,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-forests" title="Random Forests" class="md-nav__link">
+  <a href="#random-forests" class="md-nav__link">
     Random Forests
   </a>
   
@@ -682,14 +687,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_2" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_2" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_2" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_2" class="md-nav__link">
     The Python Code
   </a>
   
@@ -701,7 +706,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#k-nearest-neighbours" title="k-Nearest Neighbours" class="md-nav__link">
+  <a href="#k-nearest-neighbours" class="md-nav__link">
     k-Nearest Neighbours
   </a>
   
@@ -709,21 +714,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_3" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_3" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rescaling" title="Rescaling" class="md-nav__link">
+  <a href="#rescaling" class="md-nav__link">
     Rescaling
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_3" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_3" class="md-nav__link">
     The Python Code
   </a>
   
@@ -735,7 +740,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#naive-bayes" title="Naïve Bayes" class="md-nav__link">
+  <a href="#naive-bayes" class="md-nav__link">
     Naïve Bayes
   </a>
   
@@ -743,14 +748,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_4" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_4" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_4" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_4" class="md-nav__link">
     The Python Code
   </a>
   
@@ -762,7 +767,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#support-vector-machine" title="Support Vector Machine" class="md-nav__link">
+  <a href="#support-vector-machine" class="md-nav__link">
     Support Vector Machine
   </a>
   
@@ -770,14 +775,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_5" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_5" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_5" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_5" class="md-nav__link">
     The Python Code
   </a>
   
@@ -794,14 +799,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#split-a-dataset" title="Split a dataset" class="md-nav__link">
+  <a href="#split-a-dataset" class="md-nav__link">
     Split a dataset
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#intermediate-supervised-learning" title="Intermediate Supervised Learning" class="md-nav__link">
+  <a href="#intermediate-supervised-learning" class="md-nav__link">
     Intermediate Supervised Learning
   </a>
   
@@ -809,42 +814,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#logistic-regression_1" title="Logistic regression" class="md-nav__link">
+  <a href="#logistic-regression_1" class="md-nav__link">
     Logistic regression
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#decision-tree_1" title="Decision tree" class="md-nav__link">
+  <a href="#decision-tree_1" class="md-nav__link">
     Decision tree
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-forests_1" title="Random Forests" class="md-nav__link">
+  <a href="#random-forests_1" class="md-nav__link">
     Random Forests
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#k-nearest-neighbours_1" title="k-Nearest Neighbours" class="md-nav__link">
+  <a href="#k-nearest-neighbours_1" class="md-nav__link">
     k-Nearest Neighbours
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#naive-bayes_1" title="Naïve Bayes" class="md-nav__link">
+  <a href="#naive-bayes_1" class="md-nav__link">
     Naïve Bayes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#support-vector-machine_1" title="Support Vector Machine" class="md-nav__link">
+  <a href="#support-vector-machine_1" class="md-nav__link">
     Support Vector Machine
   </a>
   
@@ -856,7 +861,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#unsupervised-learning_1" title="Unsupervised Learning" class="md-nav__link">
+  <a href="#unsupervised-learning_1" class="md-nav__link">
     Unsupervised Learning
   </a>
   
@@ -864,7 +869,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#k-means" title="k-Means" class="md-nav__link">
+  <a href="#k-means" class="md-nav__link">
     k-Means
   </a>
   
@@ -872,14 +877,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_6" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_6" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_6" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_6" class="md-nav__link">
     The Python Code
   </a>
   
@@ -896,7 +901,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dimension-reduction" title="Dimension Reduction" class="md-nav__link">
+  <a href="#dimension-reduction" class="md-nav__link">
     Dimension Reduction
   </a>
   
@@ -904,7 +909,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#principal-component-analysis" title="Principal Component Analysis" class="md-nav__link">
+  <a href="#principal-component-analysis" class="md-nav__link">
     Principal Component Analysis
   </a>
   
@@ -1166,7 +1171,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#three-types-of-machine-learning-algorithms" title="Three types of Machine Learning Algorithms" class="md-nav__link">
+  <a href="#three-types-of-machine-learning-algorithms" class="md-nav__link">
     Three types of Machine Learning Algorithms
   </a>
   
@@ -1174,21 +1179,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#supervised-learning" title="Supervised Learning" class="md-nav__link">
+  <a href="#supervised-learning" class="md-nav__link">
     Supervised Learning
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#unsupervised-learning" title="Unsupervised Learning" class="md-nav__link">
+  <a href="#unsupervised-learning" class="md-nav__link">
     Unsupervised Learning
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reinforcement-learning" title="Reinforcement Learning" class="md-nav__link">
+  <a href="#reinforcement-learning" class="md-nav__link">
     Reinforcement Learning
   </a>
   
@@ -1200,14 +1205,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-scikit-learn-module" title="The scikit-learn Module" class="md-nav__link">
+  <a href="#the-scikit-learn-module" class="md-nav__link">
     The scikit-learn Module
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-supervised-learning" title="Basic Supervised Learning" class="md-nav__link">
+  <a href="#basic-supervised-learning" class="md-nav__link">
     Basic Supervised Learning
   </a>
   
@@ -1215,14 +1220,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#with-a-hard-coded-dataset" title="With a Hard-Coded Dataset" class="md-nav__link">
+  <a href="#with-a-hard-coded-dataset" class="md-nav__link">
     With a Hard-Coded Dataset
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#linear-regression" title="Linear Regression" class="md-nav__link">
+  <a href="#linear-regression" class="md-nav__link">
     Linear Regression
   </a>
   
@@ -1230,14 +1235,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#r-code" title="R Code" class="md-nav__link">
+  <a href="#r-code" class="md-nav__link">
     R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#python-code" title="Python Code" class="md-nav__link">
+  <a href="#python-code" class="md-nav__link">
     Python Code
   </a>
   
@@ -1249,14 +1254,14 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#linear-regression-with-statsmodels" title="Linear Regression with StatsModels" class="md-nav__link">
+  <a href="#linear-regression-with-statsmodels" class="md-nav__link">
     Linear Regression with StatsModels
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#logistic-regression" title="Logistic Regression" class="md-nav__link">
+  <a href="#logistic-regression" class="md-nav__link">
     Logistic Regression
   </a>
   
@@ -1264,14 +1269,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code" title="The R code" class="md-nav__link">
+  <a href="#the-r-code" class="md-nav__link">
     The R code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1283,7 +1288,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#decision-tree" title="Decision tree" class="md-nav__link">
+  <a href="#decision-tree" class="md-nav__link">
     Decision tree
   </a>
   
@@ -1291,14 +1296,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_1" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_1" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_1" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_1" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1310,7 +1315,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-forests" title="Random Forests" class="md-nav__link">
+  <a href="#random-forests" class="md-nav__link">
     Random Forests
   </a>
   
@@ -1318,14 +1323,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_2" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_2" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_2" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_2" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1337,7 +1342,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#k-nearest-neighbours" title="k-Nearest Neighbours" class="md-nav__link">
+  <a href="#k-nearest-neighbours" class="md-nav__link">
     k-Nearest Neighbours
   </a>
   
@@ -1345,21 +1350,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_3" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_3" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rescaling" title="Rescaling" class="md-nav__link">
+  <a href="#rescaling" class="md-nav__link">
     Rescaling
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_3" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_3" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1371,7 +1376,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#naive-bayes" title="Naïve Bayes" class="md-nav__link">
+  <a href="#naive-bayes" class="md-nav__link">
     Naïve Bayes
   </a>
   
@@ -1379,14 +1384,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_4" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_4" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_4" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_4" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1398,7 +1403,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#support-vector-machine" title="Support Vector Machine" class="md-nav__link">
+  <a href="#support-vector-machine" class="md-nav__link">
     Support Vector Machine
   </a>
   
@@ -1406,14 +1411,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_5" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_5" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_5" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_5" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1430,14 +1435,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#split-a-dataset" title="Split a dataset" class="md-nav__link">
+  <a href="#split-a-dataset" class="md-nav__link">
     Split a dataset
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#intermediate-supervised-learning" title="Intermediate Supervised Learning" class="md-nav__link">
+  <a href="#intermediate-supervised-learning" class="md-nav__link">
     Intermediate Supervised Learning
   </a>
   
@@ -1445,42 +1450,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#logistic-regression_1" title="Logistic regression" class="md-nav__link">
+  <a href="#logistic-regression_1" class="md-nav__link">
     Logistic regression
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#decision-tree_1" title="Decision tree" class="md-nav__link">
+  <a href="#decision-tree_1" class="md-nav__link">
     Decision tree
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#random-forests_1" title="Random Forests" class="md-nav__link">
+  <a href="#random-forests_1" class="md-nav__link">
     Random Forests
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#k-nearest-neighbours_1" title="k-Nearest Neighbours" class="md-nav__link">
+  <a href="#k-nearest-neighbours_1" class="md-nav__link">
     k-Nearest Neighbours
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#naive-bayes_1" title="Naïve Bayes" class="md-nav__link">
+  <a href="#naive-bayes_1" class="md-nav__link">
     Naïve Bayes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#support-vector-machine_1" title="Support Vector Machine" class="md-nav__link">
+  <a href="#support-vector-machine_1" class="md-nav__link">
     Support Vector Machine
   </a>
   
@@ -1492,7 +1497,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#unsupervised-learning_1" title="Unsupervised Learning" class="md-nav__link">
+  <a href="#unsupervised-learning_1" class="md-nav__link">
     Unsupervised Learning
   </a>
   
@@ -1500,7 +1505,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#k-means" title="k-Means" class="md-nav__link">
+  <a href="#k-means" class="md-nav__link">
     k-Means
   </a>
   
@@ -1508,14 +1513,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-r-code_6" title="The R Code" class="md-nav__link">
+  <a href="#the-r-code_6" class="md-nav__link">
     The R Code
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-python-code_6" title="The Python Code" class="md-nav__link">
+  <a href="#the-python-code_6" class="md-nav__link">
     The Python Code
   </a>
   
@@ -1532,7 +1537,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dimension-reduction" title="Dimension Reduction" class="md-nav__link">
+  <a href="#dimension-reduction" class="md-nav__link">
     Dimension Reduction
   </a>
   
@@ -1540,7 +1545,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#principal-component-analysis" title="Principal Component Analysis" class="md-nav__link">
+  <a href="#principal-component-analysis" class="md-nav__link">
     Principal Component Analysis
   </a>
   
@@ -1724,8 +1729,8 @@
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None,
-         normalize=False)
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">LinearRegression</span><span class="p">(</span><span class="n">copy_X</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">fit_intercept</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+         <span class="n">normalize</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -1735,7 +1740,7 @@
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.7754597107685945
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">7754597107685945</span>
 </pre></div>
 </td></tr></table>
 
@@ -1750,10 +1755,10 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Intercept (alpha): 
- -2.5061026710063232
-Coefficient (betas): 
- [-0.03917782  0.00991846  0.22230002]
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Intercept</span> <span class="p">(</span><span class="n">alpha</span><span class="p">):</span> 
+ <span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">5061026710063232</span>
+<span class="n">Coefficient</span> <span class="p">(</span><span class="n">betas</span><span class="p">):</span> 
+ <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">03917782</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">00991846</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">22230002</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -1765,7 +1770,7 @@ Coefficient (betas):
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([0.30330465, 0.26795454])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">0</span><span class="p">.</span><span class="mi">30330465</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">26795454</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -1775,7 +1780,7 @@ Coefficient (betas):
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>-0.11436808286011502
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">11436808286011502</span>
 </pre></div>
 </td></tr></table>
 
@@ -1893,11 +1898,11 @@ Coefficient (betas):
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Intercept   -2.506103
-height      -0.039178
-weight       0.009918
-shoe_size    0.222300
-dtype: float64
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Intercept</span>   <span class="o">-</span><span class="mi">2</span><span class="p">.</span><span class="mi">506103</span>
+<span class="n">height</span>      <span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">039178</span>
+<span class="n">weight</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">009918</span>
+<span class="n">shoe_size</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">222300</span>
+<span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
 </pre></div>
 </td></tr></table>
 
@@ -1908,8 +1913,8 @@ dtype: float64
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">/</span><span class="nt">home</span><span class="o">/</span><span class="nt">ugo</span><span class="o">/</span><span class="nt">miniconda3</span><span class="o">/</span><span class="nt">lib</span><span class="o">/</span><span class="nt">python3</span><span class="p">.</span><span class="nc">6</span><span class="o">/</span><span class="nt">site-packages</span><span class="o">/</span><span class="nt">scipy</span><span class="o">/</span><span class="nt">stats</span><span class="o">/</span><span class="nt">stats</span><span class="p">.</span><span class="nc">py</span><span class="p">:</span><span class="nd">1394</span><span class="o">:</span> <span class="nt">UserWarning</span><span class="o">:</span> <span class="nt">kurtosistest</span> <span class="nt">only</span> <span class="nt">valid</span> <span class="nt">for</span> <span class="nt">n</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;=</span><span class="nt">20</span> <span class="o">...</span> <span class="nt">continuing</span> <span class="nt">anyway</span><span class="o">,</span> <span class="nt">n</span><span class="o">=</span><span class="nt">11</span>
-  <span class="s2">&quot;anyway, n=%i&quot;</span> <span class="o">%</span> <span class="nt">int</span><span class="o">(</span><span class="nt">n</span><span class="o">))</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">/</span><span class="nv">home</span><span class="o">/</span><span class="nv">ugo</span><span class="o">/</span><span class="nv">miniconda3</span><span class="o">/</span><span class="nv">lib</span><span class="o">/</span><span class="nv">python3</span>.<span class="mi">6</span><span class="o">/</span><span class="nv">site</span><span class="o">-</span><span class="nv">packages</span><span class="o">/</span><span class="nv">scipy</span><span class="o">/</span><span class="nv">stats</span><span class="o">/</span><span class="nv">stats</span>.<span class="nv">py</span>:<span class="mi">1394</span>: <span class="nv">UserWarning</span>: <span class="nv">kurtosistest</span> <span class="nv">only</span> <span class="nv">valid</span> <span class="k">for</span> <span class="nv">n</span><span class="o">&gt;=</span><span class="mi">20</span> ... <span class="nv">continuing</span> <span class="nv">anyway</span>, <span class="nv">n</span><span class="o">=</span><span class="mi">11</span>
+  <span class="s2">&quot;</span><span class="s">anyway, n=%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nv">int</span><span class="ss">(</span><span class="nv">n</span><span class="ss">))</span>
 </pre></div>
 </td></tr></table>
 
@@ -1980,7 +1985,7 @@ dtype: float64
 <p><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.<br/>[2] The condition number is large, 6.25e+03. This might indicate that there are<br/>strong multicollinearity or other numerical problems.</p>
 <h3 id="logistic-regression">Logistic Regression<a class="headerlink" href="#logistic-regression" title="Permanent link">&para;</a></h3>
 <p>We estimate discrete values (binary values like 0/1, yes/no, true/false). It predicts the probability of occurrence of an event by fitting data to a logit function. Since, it predicts the probability, its output values lies between 0 and 1.</p>
-<p>Note: we can work with strings in <code class="codehilite">Y</code>.</p>
+<p>Note: we can work with strings in <code class="codehilite"><span class="n">Y</span></code>.</p>
 <h4 id="the-r-code">The R code<a class="headerlink" href="#the-r-code" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2096,10 +2101,10 @@ dtype: float64
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-          intercept_scaling=1, max_iter=100, multi_class=&#39;ovr&#39;, n_jobs=1,
-          penalty=&#39;l2&#39;, random_state=None, solver=&#39;liblinear&#39;, tol=0.0001,
-          verbose=0, warm_start=False)
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">LogisticRegression</span><span class="p">(</span><span class="k">C</span><span class="o">=</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">dual</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">fit_intercept</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
+          <span class="n">intercept_scaling</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">multi_class</span><span class="o">=</span><span class="s1">&#39;ovr&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+          <span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;l2&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;liblinear&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0001</span><span class="p">,</span>
+          <span class="k">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">warm_start</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2109,7 +2114,7 @@ dtype: float64
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2124,10 +2129,10 @@ dtype: float64
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Coefficient: 
- [[-0.43920419  0.62276186  0.8290359 ]]
-Intercept: 
- [-0.00585817]
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Coefficient</span><span class="p">:</span> 
+ <span class="p">[[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">43920419</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">62276186</span>  <span class="mi">0</span><span class="p">.</span><span class="mi">8290359</span> <span class="p">]]</span>
+<span class="n">Intercept</span><span class="p">:</span> 
+ <span class="p">[</span><span class="o">-</span><span class="mi">0</span><span class="p">.</span><span class="mi">00585817</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -2139,7 +2144,7 @@ Intercept:
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([0, 0])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -2149,7 +2154,7 @@ Intercept:
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.5
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span>
 </pre></div>
 </td></tr></table>
 
@@ -2181,26 +2186,26 @@ Intercept:
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-           0       0.50      1.00      0.67         1
-           1       0.00      0.00      0.00         1
+           <span class="mi">0</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>         <span class="mi">1</span>
+           <span class="mi">1</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
 
-   micro avg       0.50      0.50      0.50         2
-   macro avg       0.25      0.50      0.33         2
-weighted avg       0.25      0.50      0.33         2
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>         <span class="mi">2</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">25</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">33</span>         <span class="mi">2</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">25</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">33</span>         <span class="mi">2</span>
 
 
 
-/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
-  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">metrics</span><span class="o">/</span><span class="n">classification</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1143</span><span class="p">:</span> <span class="n">UndefinedMetricWarning</span><span class="p">:</span> <span class="k">Precision</span> <span class="k">and</span> <span class="n">F</span><span class="o">-</span><span class="n">score</span> <span class="k">are</span> <span class="n">ill</span><span class="o">-</span><span class="k">defined</span> <span class="k">and</span> <span class="n">being</span> <span class="k">set</span> <span class="k">to</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span> <span class="k">in</span> <span class="n">labels</span> <span class="k">with</span> <span class="k">no</span> <span class="n">predicted</span> <span class="n">samples</span><span class="p">.</span>
+  <span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;predicted&#39;</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">warn_for</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
 <h3 id="decision-tree">Decision tree<a class="headerlink" href="#decision-tree" title="Permanent link">&para;</a></h3>
 <p>It is a type of supervised learning algorithm that is mostly used for classification problems. Surprisingly, it works for both categorical and continuous dependent variables. In this algorithm, we split the population into two or more homogeneous sets. This is done based on most significant attributes/independent variables to make as distinct groups as possible.</p>
 <p><a href="https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/">Decision Tree Simplified</a>.</p>
-<p>Note: we can work with strings in <code class="codehilite">Y</code>.</p>
+<p>Note: we can work with strings in <code class="codehilite"><span class="n">Y</span></code>.</p>
 <h4 id="the-r-code_1">The R Code<a class="headerlink" href="#the-r-code_1" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2306,12 +2311,12 @@ weighted avg       0.25      0.50      0.33         2
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=None,
-            max_features=None, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
-            splitter=&#39;best&#39;)
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">class_weight</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">max_features</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">max_leaf_nodes</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_impurity_decrease</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">min_impurity_split</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">min_weight_fraction_leaf</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">presort</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">splitter</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2321,7 +2326,7 @@ weighted avg       0.25      0.50      0.33         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2333,7 +2338,7 @@ weighted avg       0.25      0.50      0.33         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([1, 0])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -2343,7 +2348,7 @@ weighted avg       0.25      0.50      0.33         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2370,14 +2375,14 @@ weighted avg       0.25      0.50      0.33         2
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-           0       1.00      1.00      1.00         1
-           1       1.00      1.00      1.00         1
+           <span class="mi">0</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
+           <span class="mi">1</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
 
-   micro avg       1.00      1.00      1.00         2
-   macro avg       1.00      1.00      1.00         2
-weighted avg       1.00      1.00      1.00         2
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
 </pre></div>
 </td></tr></table>
 
@@ -2394,7 +2399,7 @@ weighted avg       1.00      1.00      1.00         2
 - <a href="https://www.analyticsvidhya.com/blog/2014/06/comparing-cart-random-forest-1/">Comparing a CART model to Random Forest (Part 1)</a><br />
 - <a href="https://www.analyticsvidhya.com/blog/2014/06/comparing-random-forest-simple-cart-model/">Comparing a Random Forest to a CART model (Part 2)</a><br />
 - <a href="https://www.analyticsvidhya.com/blog/2015/06/tuning-random-forest-model/">Tuning the parameters of your Random Forest model</a></p>
-<p>Note: we can work with strings in <code class="codehilite">Y</code>.</p>
+<p>Note: we can work with strings in <code class="codehilite"><span class="n">Y</span></code>.</p>
 <h4 id="the-r-code_2">The R Code<a class="headerlink" href="#the-r-code_2" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2487,13 +2492,13 @@ weighted avg       1.00      1.00      1.00         2
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>RandomForestClassifier(bootstrap=True, class_weight=None, criterion=&#39;gini&#39;,
-            max_depth=None, max_features=&#39;auto&#39;, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, n_estimators=1000, n_jobs=None,
-            oob_score=False, random_state=None, verbose=0,
-            warm_start=False)
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">bootstrap</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span>
+            <span class="n">max_depth</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">max_leaf_nodes</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_impurity_decrease</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">min_impurity_split</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">min_weight_fraction_leaf</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">oob_score</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="k">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">warm_start</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2503,7 +2508,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2515,7 +2520,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([1, 0])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -2525,7 +2530,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2552,14 +2557,14 @@ weighted avg       1.00      1.00      1.00         2
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-           0       1.00      1.00      1.00         1
-           1       1.00      1.00      1.00         1
+           <span class="mi">0</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
+           <span class="mi">1</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
 
-   micro avg       1.00      1.00      1.00         2
-   macro avg       1.00      1.00      1.00         2
-weighted avg       1.00      1.00      1.00         2
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
 </pre></div>
 </td></tr></table>
 
@@ -2572,14 +2577,14 @@ weighted avg       1.00      1.00      1.00         2
 <li>Minkowski, and </li>
 <li>Hamming. </li>
 </ul>
-<p>First three functions are used for continuous function and fourth one (Hamming) for categorical variables. If <code class="codehilite">k = 1</code>, then the case is simply assigned to the class of its nearest neighbor. At times, choosing k turns out to be a challenge while performing kNN modeling.</p>
+<p>First three functions are used for continuous function and fourth one (Hamming) for categorical variables. If <code class="codehilite"><span class="n">k</span> <span class="o">=</span> <span class="mi">1</span></code>, then the case is simply assigned to the class of its nearest neighbor. At times, choosing k turns out to be a challenge while performing kNN modeling.</p>
 <p>Things to consider before selecting kNN:</p>
 <ul>
 <li>kNN is computationally expensive;</li>
 <li>Variables should be <strong>normalized</strong>/standardized/rescaled or else higher range variables can bias it;</li>
 <li>Works on pre-processing stage more before going for kNN like outlier, noise removal.</li>
 </ul>
-<p>Note: we can work with strings in <code class="codehilite">Y</code>.</p>
+<p>Note: we can work with strings in <code class="codehilite"><span class="n">Y</span></code>.</p>
 <h4 id="the-r-code_3">The R Code<a class="headerlink" href="#the-r-code_3" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2732,13 +2737,13 @@ weighted avg       1.00      1.00      1.00         2
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>RandomForestClassifier(bootstrap=True, class_weight=None, criterion=&#39;gini&#39;,
-            max_depth=None, max_features=&#39;auto&#39;, max_leaf_nodes=None,
-            min_impurity_decrease=0.0, min_impurity_split=None,
-            min_samples_leaf=1, min_samples_split=2,
-            min_weight_fraction_leaf=0.0, n_estimators=1000, n_jobs=None,
-            oob_score=False, random_state=None, verbose=0,
-            warm_start=False)
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">bootstrap</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">criterion</span><span class="o">=</span><span class="s1">&#39;gini&#39;</span><span class="p">,</span>
+            <span class="n">max_depth</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">max_leaf_nodes</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_impurity_decrease</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">min_impurity_split</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">min_weight_fraction_leaf</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+            <span class="n">oob_score</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="k">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">warm_start</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2748,7 +2753,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2760,7 +2765,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([1, 0])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -2770,7 +2775,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2797,14 +2802,14 @@ weighted avg       1.00      1.00      1.00         2
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-           0       1.00      1.00      1.00         1
-           1       1.00      1.00      1.00         1
+           <span class="mi">0</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
+           <span class="mi">1</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
 
-   micro avg       1.00      1.00      1.00         2
-   macro avg       1.00      1.00      1.00         2
-weighted avg       1.00      1.00      1.00         2
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
 </pre></div>
 </td></tr></table>
 
@@ -2812,7 +2817,7 @@ weighted avg       1.00      1.00      1.00         2
 <p>It is a classification technique based on Bayes’ theorem with an assumption of independence between predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature. For example, a fruit may be considered to be an apple if it is red, round, and about 3 inches in diameter. Even if these features depend on each other or upon the existence of the other features, a naive Bayes classifier would consider all of these properties to independently contribute to the probability that this fruit is an apple.</p>
 <p>Naive Bayesian model is easy to build and particularly useful for very large data sets. Along with simplicity, Naive Bayes is known to outperform even highly sophisticated classification methods.</p>
 <p><a href="https://scikit-learn.org/stable/modules/naive_bayes.html">Documentation</a>.</p>
-<p>Note: we can work with strings in <code class="codehilite">Y</code>.</p>
+<p>Note: we can work with strings in <code class="codehilite"><span class="n">Y</span></code>.</p>
 <h4 id="the-r-code_4">The R Code<a class="headerlink" href="#the-r-code_4" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2907,7 +2912,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>GaussianNB(priors=None, var_smoothing=1e-09)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">GaussianNB</span><span class="p">(</span><span class="n">priors</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">var_smoothing</span><span class="o">=</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">09</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -2917,7 +2922,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.8181818181818182
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">8181818181818182</span>
 </pre></div>
 </td></tr></table>
 
@@ -2929,7 +2934,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([1, 0])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -2939,7 +2944,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -2966,21 +2971,21 @@ weighted avg       1.00      1.00      1.00         2
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-           0       1.00      1.00      1.00         1
-           1       1.00      1.00      1.00         1
+           <span class="mi">0</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
+           <span class="mi">1</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
 
-   micro avg       1.00      1.00      1.00         2
-   macro avg       1.00      1.00      1.00         2
-weighted avg       1.00      1.00      1.00         2
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
 </pre></div>
 </td></tr></table>
 
 <h3 id="support-vector-machine">Support Vector Machine<a class="headerlink" href="#support-vector-machine" title="Permanent link">&para;</a></h3>
 <p>SVM is a classification method. In this algorithm, we plot each data item as a point in n-dimensional space (where n is number of features you have) with the value of each feature being the value of a particular coordinate.</p>
 <p><a href="https://www.analyticsvidhya.com/blog/2014/10/support-vector-machine-simplified/">For more</a>.</p>
-<p>Note: we can work with strings in <code class="codehilite">Y</code>.</p>
+<p>Note: we can work with strings in <code class="codehilite"><span class="n">Y</span></code>.</p>
 <h4 id="the-r-code_5">The R Code<a class="headerlink" href="#the-r-code_5" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -3076,10 +3081,10 @@ weighted avg       1.00      1.00      1.00         2
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
-  decision_function_shape=&#39;ovr&#39;, degree=3, gamma=&#39;auto&#39;, kernel=&#39;rbf&#39;,
-  max_iter=-1, probability=False, random_state=None, shrinking=True,
-  tol=0.001, verbose=False)
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">SVC</span><span class="p">(</span><span class="k">C</span><span class="o">=</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">cache_size</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">coef0</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span>
+  <span class="n">decision_function_shape</span><span class="o">=</span><span class="s1">&#39;ovr&#39;</span><span class="p">,</span> <span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">,</span>
+  <span class="n">max_iter</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">shrinking</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
+  <span class="n">tol</span><span class="o">=</span><span class="mi">0</span><span class="p">.</span><span class="mi">001</span><span class="p">,</span> <span class="k">verbose</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -3089,7 +3094,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -3101,7 +3106,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([1, 0])
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
@@ -3111,7 +3116,7 @@ weighted avg       1.00      1.00      1.00         2
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1.0
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
 </pre></div>
 </td></tr></table>
 
@@ -3138,14 +3143,14 @@ weighted avg       1.00      1.00      1.00         2
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-           0       1.00      1.00      1.00         1
-           1       1.00      1.00      1.00         1
+           <span class="mi">0</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
+           <span class="mi">1</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">1</span>
 
-   micro avg       1.00      1.00      1.00         2
-   macro avg       1.00      1.00      1.00         2
-weighted avg       1.00      1.00      1.00         2
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>      <span class="mi">1</span><span class="p">.</span><span class="mi">00</span>         <span class="mi">2</span>
 </pre></div>
 </td></tr></table>
 
@@ -3349,11 +3354,11 @@ weighted avg       1.00      1.00      1.00         2
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>/home/ugo/miniconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:432: FutureWarning: Default solver will be changed to &#39;lbfgs&#39; in 0.22. Specify a solver to silence this warning.
-  FutureWarning)
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">ugo</span><span class="o">/</span><span class="n">miniconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="p">.</span><span class="mi">6</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">sklearn</span><span class="o">/</span><span class="n">linear_model</span><span class="o">/</span><span class="n">logistic</span><span class="p">.</span><span class="n">py</span><span class="p">:</span><span class="mi">432</span><span class="p">:</span> <span class="n">FutureWarning</span><span class="p">:</span> <span class="k">Default</span> <span class="n">solver</span> <span class="n">will</span> <span class="n">be</span> <span class="n">changed</span> <span class="k">to</span> <span class="s1">&#39;lbfgs&#39;</span> <span class="k">in</span> <span class="mi">0</span><span class="p">.</span><span class="mi">22</span><span class="p">.</span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">solver</span> <span class="k">to</span> <span class="n">silence</span> <span class="n">this</span> <span class="n">warning</span><span class="p">.</span>
+  <span class="n">FutureWarning</span><span class="p">)</span>
 
 
-Accuracy: 0.6801105537926093
+<span class="n">Accuracy</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">6801105537926093</span>
 </pre></div>
 </td></tr></table>
 
@@ -3377,7 +3382,7 @@ Accuracy: 0.6801105537926093
 
 
 
-<span class="na">array([&#39;Male&#39;, &#39;Male&#39;, &#39;Male&#39;, ..., &#39;Male&#39;, &#39;Male&#39;, &#39;Male&#39;], dtype</span><span class="o">=</span><span class="s">&#39;&amp;lt;U6&#39;)</span>
+<span class="na">array([&#39;Male&#39;, &#39;Male&#39;, &#39;Male&#39;, ..., &#39;Male&#39;, &#39;Male&#39;, &#39;Male&#39;], dtype</span><span class="o">=</span><span class="s">&#39;&lt;U6&#39;)</span>
 </pre></div>
 </td></tr></table>
 
@@ -3404,14 +3409,14 @@ Accuracy: 0.6801105537926093
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-      Female       0.16      0.53      0.24       944
-        Male       0.93      0.70      0.80      8825
+      <span class="n">Female</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">16</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">53</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">24</span>       <span class="mi">944</span>
+        <span class="n">Male</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">93</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">70</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">80</span>      <span class="mi">8825</span>
 
-   micro avg       0.68      0.68      0.68      9769
-   macro avg       0.54      0.61      0.52      9769
-weighted avg       0.86      0.68      0.74      9769
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">9769</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">54</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">61</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">52</span>      <span class="mi">9769</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">86</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">9769</span>
 </pre></div>
 </td></tr></table>
 
@@ -3485,14 +3490,14 @@ weighted avg       0.86      0.68      0.74      9769
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-      Female       0.50      0.61      0.55      2603
-        Male       0.85      0.78      0.81      7166
+      <span class="n">Female</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">50</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">61</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">55</span>      <span class="mi">2603</span>
+        <span class="n">Male</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">85</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">78</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">81</span>      <span class="mi">7166</span>
 
-   micro avg       0.73      0.73      0.73      9769
-   macro avg       0.67      0.69      0.68      9769
-weighted avg       0.75      0.73      0.74      9769
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">9769</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">69</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">9769</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">75</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">9769</span>
 </pre></div>
 </td></tr></table>
 
@@ -3568,14 +3573,14 @@ weighted avg       0.75      0.73      0.74      9769
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-      Female       0.47      0.62      0.53      2425
-        Male       0.86      0.77      0.81      7344
+      <span class="n">Female</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">47</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">62</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">53</span>      <span class="mi">2425</span>
+        <span class="n">Male</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">86</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">77</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">81</span>      <span class="mi">7344</span>
 
-   micro avg       0.73      0.73      0.73      9769
-   macro avg       0.67      0.69      0.67      9769
-weighted avg       0.76      0.73      0.74      9769
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">9769</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">69</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">9769</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">76</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">73</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">9769</span>
 </pre></div>
 </td></tr></table>
 
@@ -3627,8 +3632,8 @@ weighted avg       0.76      0.73      0.74      9769
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([&#39;Female&#39;, &#39;Female&#39;, &#39;Male&#39;, ..., &#39;Female&#39;, &#39;Male&#39;, &#39;Male&#39;],
-      dtype=&#39;&amp;lt;U6&#39;)
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="s1">&#39;Female&#39;</span><span class="p">,</span> <span class="s1">&#39;Female&#39;</span><span class="p">,</span> <span class="s1">&#39;Male&#39;</span><span class="p">,</span> <span class="p">...,</span> <span class="s1">&#39;Female&#39;</span><span class="p">,</span> <span class="s1">&#39;Male&#39;</span><span class="p">,</span> <span class="s1">&#39;Male&#39;</span><span class="p">],</span>
+      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U6&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -3655,14 +3660,14 @@ weighted avg       0.76      0.73      0.74      9769
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-      Female       0.55      0.51      0.53      3391
-        Male       0.75      0.78      0.76      6378
+      <span class="n">Female</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">55</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">51</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">53</span>      <span class="mi">3391</span>
+        <span class="n">Male</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">75</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">78</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">76</span>      <span class="mi">6378</span>
 
-   micro avg       0.68      0.68      0.68      9769
-   macro avg       0.65      0.65      0.65      9769
-weighted avg       0.68      0.68      0.68      9769
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">9769</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">65</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">65</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">65</span>      <span class="mi">9769</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">9769</span>
 </pre></div>
 </td></tr></table>
 
@@ -3713,7 +3718,7 @@ weighted avg       0.68      0.68      0.68      9769
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[&#39;Male&#39; &#39;Female&#39; &#39;Male&#39; ... &#39;Male&#39; &#39;Male&#39; &#39;Male&#39;]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span><span class="s1">&#39;Male&#39;</span> <span class="s1">&#39;Female&#39;</span> <span class="s1">&#39;Male&#39;</span> <span class="p">...</span> <span class="s1">&#39;Male&#39;</span> <span class="s1">&#39;Male&#39;</span> <span class="s1">&#39;Male&#39;</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -3740,14 +3745,14 @@ weighted avg       0.68      0.68      0.68      9769
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-      Female       0.20      0.49      0.28      1310
-        Male       0.90      0.70      0.79      8459
+      <span class="n">Female</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">20</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">49</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">28</span>      <span class="mi">1310</span>
+        <span class="n">Male</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">90</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">70</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">79</span>      <span class="mi">8459</span>
 
-   micro avg       0.67      0.67      0.67      9769
-   macro avg       0.55      0.59      0.53      9769
-weighted avg       0.80      0.67      0.72      9769
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">9769</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">55</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">59</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">53</span>      <span class="mi">9769</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">80</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">72</span>      <span class="mi">9769</span>
 </pre></div>
 </td></tr></table>
 
@@ -3798,7 +3803,7 @@ weighted avg       0.80      0.67      0.72      9769
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[&#39;Male&#39; &#39;Female&#39; &#39;Female&#39; ... &#39;Female&#39; &#39;Male&#39; &#39;Male&#39;]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span><span class="s1">&#39;Male&#39;</span> <span class="s1">&#39;Female&#39;</span> <span class="s1">&#39;Female&#39;</span> <span class="p">...</span> <span class="s1">&#39;Female&#39;</span> <span class="s1">&#39;Male&#39;</span> <span class="s1">&#39;Male&#39;</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -3825,14 +3830,14 @@ weighted avg       0.80      0.67      0.72      9769
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              precision    recall  f1-score   support
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>              <span class="k">precision</span>    <span class="n">recall</span>  <span class="n">f1</span><span class="o">-</span><span class="n">score</span>   <span class="n">support</span>
 
-      Female       0.48      0.62      0.54      2440
-        Male       0.86      0.77      0.81      7329
+      <span class="n">Female</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">48</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">62</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">54</span>      <span class="mi">2440</span>
+        <span class="n">Male</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">86</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">77</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">81</span>      <span class="mi">7329</span>
 
-   micro avg       0.74      0.74      0.74      9769
-   macro avg       0.67      0.70      0.68      9769
-weighted avg       0.76      0.74      0.75      9769
+   <span class="n">micro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">9769</span>
+   <span class="n">macro</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">67</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">70</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">68</span>      <span class="mi">9769</span>
+<span class="n">weighted</span> <span class="k">avg</span>       <span class="mi">0</span><span class="p">.</span><span class="mi">76</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">74</span>      <span class="mi">0</span><span class="p">.</span><span class="mi">75</span>      <span class="mi">9769</span>
 </pre></div>
 </td></tr></table>
 
@@ -3895,7 +3900,7 @@ weighted avg       0.76      0.74      0.75      9769
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Accuracy: -478732.018200623
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Accuracy</span><span class="p">:</span> <span class="o">-</span><span class="mi">478732</span><span class="p">.</span><span class="mi">018200623</span>
 </pre></div>
 </td></tr></table>
 
@@ -3915,17 +3920,17 @@ weighted avg       0.76      0.74      0.75      9769
  8
  9
 10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>{&#39;algorithm&#39;: &#39;auto&#39;,
- &#39;copy_x&#39;: True,
- &#39;init&#39;: &#39;k-means++&#39;,
- &#39;max_iter&#39;: 300,
- &#39;n_clusters&#39;: 3,
- &#39;n_init&#39;: 10,
- &#39;n_jobs&#39;: None,
- &#39;precompute_distances&#39;: &#39;auto&#39;,
- &#39;random_state&#39;: 0,
- &#39;tol&#39;: 0.0001,
- &#39;verbose&#39;: 0}
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">{</span><span class="s1">&#39;algorithm&#39;</span><span class="p">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;copy_x&#39;</span><span class="p">:</span> <span class="k">True</span><span class="p">,</span>
+ <span class="s1">&#39;init&#39;</span><span class="p">:</span> <span class="s1">&#39;k-means++&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;max_iter&#39;</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+ <span class="s1">&#39;n_clusters&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+ <span class="s1">&#39;n_init&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+ <span class="s1">&#39;n_jobs&#39;</span><span class="p">:</span> <span class="k">None</span><span class="p">,</span>
+ <span class="s1">&#39;precompute_distances&#39;</span><span class="p">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;random_state&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+ <span class="s1">&#39;tol&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0001</span><span class="p">,</span>
+ <span class="s1">&#39;verbose&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -3937,7 +3942,7 @@ weighted avg       0.76      0.74      0.75      9769
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([1, 0, 0, ..., 0, 0, 2], dtype=int32)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">...,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">int32</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -3962,10 +3967,10 @@ weighted avg       0.76      0.74      0.75      9769
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0    Male
-1    Male
-2    Male
-Name: sex, dtype: object
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>    <span class="n">Male</span>
+<span class="mi">1</span>    <span class="n">Male</span>
+<span class="mi">2</span>    <span class="n">Male</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">sex</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="k">object</span>
 </pre></div>
 </td></tr></table>
 
@@ -3975,7 +3980,7 @@ Name: sex, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0.6692054912318418
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span><span class="p">.</span><span class="mi">6692054912318418</span>
 </pre></div>
 </td></tr></table>
 
@@ -4115,7 +4120,7 @@ Name: sex, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>(32561, 2)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">(</span><span class="mi">32561</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -4127,9 +4132,9 @@ Name: sex, dtype: object
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>array([[-112262.33316765,    1099.76011639],
-       [-106467.39923916,   -1074.41772634],
-       [  25867.60075685,   -1078.43450794]])
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">112262</span><span class="p">.</span><span class="mi">33316765</span><span class="p">,</span>    <span class="mi">1099</span><span class="p">.</span><span class="mi">76011639</span><span class="p">],</span>
+       <span class="p">[</span><span class="o">-</span><span class="mi">106467</span><span class="p">.</span><span class="mi">39923916</span><span class="p">,</span>   <span class="o">-</span><span class="mi">1074</span><span class="p">.</span><span class="mi">41772634</span><span class="p">],</span>
+       <span class="p">[</span>  <span class="mi">25867</span><span class="p">.</span><span class="mi">60075685</span><span class="p">,</span>   <span class="o">-</span><span class="mi">1078</span><span class="p">.</span><span class="mi">43450794</span><span class="p">]])</span>
 </pre></div>
 </td></tr></table>
 
@@ -4164,7 +4169,7 @@ Name: sex, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>list
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">list</span>
 </pre></div>
 </td></tr></table>
 
@@ -4177,10 +4182,10 @@ Name: sex, dtype: object
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0    True
-1    True
-2    True
-Name: sex, dtype: bool
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>    <span class="k">True</span>
+<span class="mi">1</span>    <span class="k">True</span>
+<span class="mi">2</span>    <span class="k">True</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">sex</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">bool</span>
 </pre></div>
 </td></tr></table>
 
@@ -4197,10 +4202,10 @@ Name: sex, dtype: bool
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0    False
-1    False
-2    False
-Name: sex, dtype: bool
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>    <span class="k">False</span>
+<span class="mi">1</span>    <span class="k">False</span>
+<span class="mi">2</span>    <span class="k">False</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">sex</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">bool</span>
 </pre></div>
 </td></tr></table>
 
@@ -4217,8 +4222,8 @@ Name: sex, dtype: bool
 </td></tr></table>
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0
-1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>
+<span class="mi">1</span>
 </pre></div>
 </td></tr></table>
 
@@ -4424,25 +4429,17 @@ Name: sex, dtype: bool
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Managing Your Biological Data with Python
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -734,7 +739,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#part-1-getting-started" title="Part 1, Getting Started" class="md-nav__link">
+  <a href="#part-1-getting-started" class="md-nav__link">
     Part 1, Getting Started
   </a>
   
@@ -742,14 +747,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-1-the-python-shell-and-basics" title="Chapter 1, The Python Shell and Basics" class="md-nav__link">
+  <a href="#chapter-1-the-python-shell-and-basics" class="md-nav__link">
     Chapter 1, The Python Shell and Basics
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-2-your-first-python-program" title="Chapter 2, Your First Python Program" class="md-nav__link">
+  <a href="#chapter-2-your-first-python-program" class="md-nav__link">
     Chapter 2, Your First Python Program
   </a>
   
@@ -761,7 +766,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-2-data-management" title="Part 2, Data management" class="md-nav__link">
+  <a href="#part-2-data-management" class="md-nav__link">
     Part 2, Data management
   </a>
   
@@ -769,49 +774,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-3-analyzing-a-data-column" title="Chapter 3, Analyzing a Data Column" class="md-nav__link">
+  <a href="#chapter-3-analyzing-a-data-column" class="md-nav__link">
     Chapter 3, Analyzing a Data Column
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-4-parsing-data-records" title="Chapter 4, Parsing Data Records" class="md-nav__link">
+  <a href="#chapter-4-parsing-data-records" class="md-nav__link">
     Chapter 4, Parsing Data Records
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-5-searching-data" title="Chapter 5, Searching Data" class="md-nav__link">
+  <a href="#chapter-5-searching-data" class="md-nav__link">
     Chapter 5, Searching Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-6-filtering-data" title="Chapter 6, Filtering Data" class="md-nav__link">
+  <a href="#chapter-6-filtering-data" class="md-nav__link">
     Chapter 6, Filtering Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-7-managing-tabular-data" title="Chapter 7, Managing Tabular Data" class="md-nav__link">
+  <a href="#chapter-7-managing-tabular-data" class="md-nav__link">
     Chapter 7, Managing Tabular Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-8-sorting-data" title="Chapter 8, Sorting Data" class="md-nav__link">
+  <a href="#chapter-8-sorting-data" class="md-nav__link">
     Chapter 8, Sorting Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-9-pattern-matching-and-text-mining" title="Chapter 9, Pattern Matching and Text Mining" class="md-nav__link">
+  <a href="#chapter-9-pattern-matching-and-text-mining" class="md-nav__link">
     Chapter 9, Pattern Matching and Text Mining
   </a>
   
@@ -823,7 +828,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-3-modular-programming" title="Part 3, Modular Programming" class="md-nav__link">
+  <a href="#part-3-modular-programming" class="md-nav__link">
     Part 3, Modular Programming
   </a>
   
@@ -831,42 +836,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-10-divide-a-program-into-functions" title="Chapter 10, Divide a Program into Functions" class="md-nav__link">
+  <a href="#chapter-10-divide-a-program-into-functions" class="md-nav__link">
     Chapter 10, Divide a Program into Functions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-11-managing-complexity-with-classes" title="Chapter 11 Managing Complexity with Classes" class="md-nav__link">
+  <a href="#chapter-11-managing-complexity-with-classes" class="md-nav__link">
     Chapter 11 Managing Complexity with Classes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-12-debugging" title="Chapter 12, Debugging" class="md-nav__link">
+  <a href="#chapter-12-debugging" class="md-nav__link">
     Chapter 12, Debugging
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-13-using-external-modules-the-python-interface-to-r" title="Chapter 13, Using External Modules, The Python Interface to R" class="md-nav__link">
+  <a href="#chapter-13-using-external-modules-the-python-interface-to-r" class="md-nav__link">
     Chapter 13, Using External Modules, The Python Interface to R
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-14-building-program-pipelines" title="Chapter 14, Building Program Pipelines" class="md-nav__link">
+  <a href="#chapter-14-building-program-pipelines" class="md-nav__link">
     Chapter 14, Building Program Pipelines
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-15-writing-good-programs" title="Chapter 15, Writing Good Programs" class="md-nav__link">
+  <a href="#chapter-15-writing-good-programs" class="md-nav__link">
     Chapter 15, Writing Good Programs
   </a>
   
@@ -878,7 +883,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-4-data-visualization" title="Part 4, Data Visualization" class="md-nav__link">
+  <a href="#part-4-data-visualization" class="md-nav__link">
     Part 4, Data Visualization
   </a>
   
@@ -886,14 +891,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-16-creating-scientific-diagrams" title="Chapter 16, Creating Scientific Diagrams" class="md-nav__link">
+  <a href="#chapter-16-creating-scientific-diagrams" class="md-nav__link">
     Chapter 16, Creating Scientific Diagrams
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-18-manipulating-images" title="Chapter 18, Manipulating Images" class="md-nav__link">
+  <a href="#chapter-18-manipulating-images" class="md-nav__link">
     Chapter 18, Manipulating Images
   </a>
   
@@ -905,7 +910,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-6-cookbook" title="Part 6, Cookbook" class="md-nav__link">
+  <a href="#part-6-cookbook" class="md-nav__link">
     Part 6, Cookbook
   </a>
   
@@ -913,14 +918,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recipe-2-reversing-and-randomizing-a-sequence" title="Recipe 2, Reversing and Randomizing a Sequence" class="md-nav__link">
+  <a href="#recipe-2-reversing-and-randomizing-a-sequence" class="md-nav__link">
     Recipe 2, Reversing and Randomizing a Sequence
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#recipe-3-creating-a-random-sequence-with-probabilities" title="Recipe 3, Creating a Random Sequence with Probabilities" class="md-nav__link">
+  <a href="#recipe-3-creating-a-random-sequence-with-probabilities" class="md-nav__link">
     Recipe 3, Creating a Random Sequence with Probabilities
   </a>
   
@@ -978,7 +983,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#part-1-getting-started" title="Part 1, Getting Started" class="md-nav__link">
+  <a href="#part-1-getting-started" class="md-nav__link">
     Part 1, Getting Started
   </a>
   
@@ -986,14 +991,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-1-the-python-shell-and-basics" title="Chapter 1, The Python Shell and Basics" class="md-nav__link">
+  <a href="#chapter-1-the-python-shell-and-basics" class="md-nav__link">
     Chapter 1, The Python Shell and Basics
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-2-your-first-python-program" title="Chapter 2, Your First Python Program" class="md-nav__link">
+  <a href="#chapter-2-your-first-python-program" class="md-nav__link">
     Chapter 2, Your First Python Program
   </a>
   
@@ -1005,7 +1010,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-2-data-management" title="Part 2, Data management" class="md-nav__link">
+  <a href="#part-2-data-management" class="md-nav__link">
     Part 2, Data management
   </a>
   
@@ -1013,49 +1018,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-3-analyzing-a-data-column" title="Chapter 3, Analyzing a Data Column" class="md-nav__link">
+  <a href="#chapter-3-analyzing-a-data-column" class="md-nav__link">
     Chapter 3, Analyzing a Data Column
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-4-parsing-data-records" title="Chapter 4, Parsing Data Records" class="md-nav__link">
+  <a href="#chapter-4-parsing-data-records" class="md-nav__link">
     Chapter 4, Parsing Data Records
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-5-searching-data" title="Chapter 5, Searching Data" class="md-nav__link">
+  <a href="#chapter-5-searching-data" class="md-nav__link">
     Chapter 5, Searching Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-6-filtering-data" title="Chapter 6, Filtering Data" class="md-nav__link">
+  <a href="#chapter-6-filtering-data" class="md-nav__link">
     Chapter 6, Filtering Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-7-managing-tabular-data" title="Chapter 7, Managing Tabular Data" class="md-nav__link">
+  <a href="#chapter-7-managing-tabular-data" class="md-nav__link">
     Chapter 7, Managing Tabular Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-8-sorting-data" title="Chapter 8, Sorting Data" class="md-nav__link">
+  <a href="#chapter-8-sorting-data" class="md-nav__link">
     Chapter 8, Sorting Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-9-pattern-matching-and-text-mining" title="Chapter 9, Pattern Matching and Text Mining" class="md-nav__link">
+  <a href="#chapter-9-pattern-matching-and-text-mining" class="md-nav__link">
     Chapter 9, Pattern Matching and Text Mining
   </a>
   
@@ -1067,7 +1072,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-3-modular-programming" title="Part 3, Modular Programming" class="md-nav__link">
+  <a href="#part-3-modular-programming" class="md-nav__link">
     Part 3, Modular Programming
   </a>
   
@@ -1075,42 +1080,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-10-divide-a-program-into-functions" title="Chapter 10, Divide a Program into Functions" class="md-nav__link">
+  <a href="#chapter-10-divide-a-program-into-functions" class="md-nav__link">
     Chapter 10, Divide a Program into Functions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-11-managing-complexity-with-classes" title="Chapter 11 Managing Complexity with Classes" class="md-nav__link">
+  <a href="#chapter-11-managing-complexity-with-classes" class="md-nav__link">
     Chapter 11 Managing Complexity with Classes
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-12-debugging" title="Chapter 12, Debugging" class="md-nav__link">
+  <a href="#chapter-12-debugging" class="md-nav__link">
     Chapter 12, Debugging
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-13-using-external-modules-the-python-interface-to-r" title="Chapter 13, Using External Modules, The Python Interface to R" class="md-nav__link">
+  <a href="#chapter-13-using-external-modules-the-python-interface-to-r" class="md-nav__link">
     Chapter 13, Using External Modules, The Python Interface to R
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-14-building-program-pipelines" title="Chapter 14, Building Program Pipelines" class="md-nav__link">
+  <a href="#chapter-14-building-program-pipelines" class="md-nav__link">
     Chapter 14, Building Program Pipelines
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-15-writing-good-programs" title="Chapter 15, Writing Good Programs" class="md-nav__link">
+  <a href="#chapter-15-writing-good-programs" class="md-nav__link">
     Chapter 15, Writing Good Programs
   </a>
   
@@ -1122,7 +1127,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-4-data-visualization" title="Part 4, Data Visualization" class="md-nav__link">
+  <a href="#part-4-data-visualization" class="md-nav__link">
     Part 4, Data Visualization
   </a>
   
@@ -1130,14 +1135,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chapter-16-creating-scientific-diagrams" title="Chapter 16, Creating Scientific Diagrams" class="md-nav__link">
+  <a href="#chapter-16-creating-scientific-diagrams" class="md-nav__link">
     Chapter 16, Creating Scientific Diagrams
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#chapter-18-manipulating-images" title="Chapter 18, Manipulating Images" class="md-nav__link">
+  <a href="#chapter-18-manipulating-images" class="md-nav__link">
     Chapter 18, Manipulating Images
   </a>
   
@@ -1149,7 +1154,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#part-6-cookbook" title="Part 6, Cookbook" class="md-nav__link">
+  <a href="#part-6-cookbook" class="md-nav__link">
     Part 6, Cookbook
   </a>
   
@@ -1157,14 +1162,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#recipe-2-reversing-and-randomizing-a-sequence" title="Recipe 2, Reversing and Randomizing a Sequence" class="md-nav__link">
+  <a href="#recipe-2-reversing-and-randomizing-a-sequence" class="md-nav__link">
     Recipe 2, Reversing and Randomizing a Sequence
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#recipe-3-creating-a-random-sequence-with-probabilities" title="Recipe 3, Creating a Random Sequence with Probabilities" class="md-nav__link">
+  <a href="#recipe-3-creating-a-random-sequence-with-probabilities" class="md-nav__link">
     Recipe 3, Creating a Random Sequence with Probabilities
   </a>
   
@@ -1203,108 +1208,108 @@
 <h3 id="chapter-1-the-python-shell-and-basics">Chapter 1, The Python Shell and Basics<a class="headerlink" href="#chapter-1-the-python-shell-and-basics" title="Permanent link">&para;</a></h3>
 <p><strong>Data structure</strong></p>
 <ul>
-<li>Booleans: <code class="codehilite">True</code> or <code class="codehilite">False</code>.</li>
-<li>Dictionaries: unordered collections of key-value pairs; both can be numbers or strings; indicated with <code class="codehilite">{key1: value1, &#39;key2&#39;: &#39;value2&#39;}</code>.</li>
+<li>Booleans: <code class="codehilite"><span class="k">True</span></code> or <code class="codehilite"><span class="k">False</span></code>.</li>
+<li>Dictionaries: unordered collections of key-value pairs; both can be numbers or strings; indicated with <code class="codehilite"><span class="err">{</span><span class="n">key1</span><span class="p">:</span> <span class="n">value1</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="s1">&#39;value2&#39;</span><span class="err">}</span></code>.</li>
 <li>Floats: numbers with digits after the dicemal point,</li>
 <li>Integers: numbers without digits after the decimal point.</li>
-<li>Lists: mutable ordered collections of objects; indicated with <code class="codehilite">[a, b, c]</code>.</li>
-<li>Sets: immutable unordered collections of unique elements; indicated by <code class="codehilite">([a, b, c])</code>.</li>
-<li>Strings: immutable ordered collections of characters; indicated with <code class="codehilite">&#39;single&#39;</code> or <code class="codehilite">&quot;double&quot;</code> quotation marks.</li>
-<li>Tuples: immutable ordered collections of objects; indicated with <code class="codehilite">(a, b, c)</code>.</li>
+<li>Lists: mutable ordered collections of objects; indicated with <code class="codehilite"><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="k">c</span><span class="p">]</span></code>.</li>
+<li>Sets: immutable unordered collections of unique elements; indicated by <code class="codehilite"><span class="p">([</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="k">c</span><span class="p">])</span></code>.</li>
+<li>Strings: immutable ordered collections of characters; indicated with <code class="codehilite"><span class="s1">&#39;single&#39;</span></code> or <code class="codehilite"><span class="ss">&quot;double&quot;</span></code> quotation marks.</li>
+<li>Tuples: immutable ordered collections of objects; indicated with <code class="codehilite"><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="k">c</span><span class="p">)</span></code>.</li>
 </ul>
 <p><strong>Conversions</strong></p>
 <p>Convert or coerce data:<br />
-- <code class="codehilite">float(value)</code>; into a float.<br />
-- <code class="codehilite">int(value)</code>; into an integer.<br />
-- <code class="codehilite">str(value)</code>; into a string.</p>
+- <code class="codehilite"><span class="nb">float</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>; into a float.<br />
+- <code class="codehilite"><span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>; into an integer.<br />
+- <code class="codehilite"><span class="n">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span></code>; into a string.</p>
 <p><strong>Strings</strong></p>
-<p><code class="codehilite">&#39;Single&#39;</code> and <code class="codehilite">&quot;double&quot;</code> quotes are for short strings.</p>
+<p><code class="codehilite"><span class="s1">&#39;Single&#39;</span></code> and <code class="codehilite"><span class="ss">&quot;double&quot;</span></code> quotes are for short strings.</p>
 <p>&rsquo;&lsquo;&rsquo;Triple single and double quotes<br />
 are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 <p><strong>Access character and substrings</strong></p>
 <ul>
-<li><code class="codehilite">print s[-1]</code>; print the last character of a string.</li>
-<li><code class="codehilite">print s[-5:]</code>; print from the 5<sup>th</sup> position from the end to the end.</li>
+<li><code class="codehilite"><span class="n">print</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></code>; print the last character of a string.</li>
+<li><code class="codehilite"><span class="n">print</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]</span></code>; print from the 5<sup>th</sup> position from the end to the end.</li>
 </ul>
 <p><strong>String functions</strong></p>
 <ul>
-<li><code class="codehilite">len(s)</code>; length of the string,</li>
-<li><code class="codehilite">s.upper()</code>; convert to uppercase.</li>
-<li><code class="codehilite">s.lower()</code>; convert to lowercase.</li>
-<li><code class="codehilite">s.strip()</code>; remove white spaces and tabs from both ends.</li>
-<li><code class="codehilite">s.strio(&#39;m&#39;)</code>; remove <code class="codehilite">&#39;m&#39;</code> from both ends.</li>
-<li><code class="codehilite">s.rstrip()</code>; remove on the right only.</li>
-<li><code class="codehilite">s.lstrip(&#39;m&#39;)</code>; remove on the left only.</li>
-<li><code class="codehilite">s.split(&#39; &#39;)</code>; cut into words where there is space.</li>
-<li><code class="codehilite">s.find(&#39;m&#39;)</code>; search for the <code class="codehilite">&#39;m&#39;</code> substring and return the starting position.</li>
-<li><code class="codehilite">s.replace(&#39;m&#39;, &#39;n&#39;)</code>; replace <code class="codehilite">&#39;m&#39;</code> with <code class="codehilite">&#39;n&#39;</code>.</li>
-<li><code class="codehilite">s.startwith(&#39;m&#39;)</code>; check beginning and return <code class="codehilite">True</code> or <code class="codehilite">False</code>.</li>
-<li><code class="codehilite">s.endwith(&#39;m&#39;)</code>; check end and return <code class="codehilite">True</code> or <code class="codehilite">False</code>.</li>
+<li><code class="codehilite"><span class="n">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code>; length of the string,</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="k">upper</span><span class="p">()</span></code>; convert to uppercase.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="k">lower</span><span class="p">()</span></code>; convert to lowercase.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span></code>; remove white spaces and tabs from both ends.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">strio</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span></code>; remove <code class="codehilite"><span class="s1">&#39;m&#39;</span></code> from both ends.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">rstrip</span><span class="p">()</span></code>; remove on the right only.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">lstrip</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span></code>; remove on the left only.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span></code>; cut into words where there is space.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span></code>; search for the <code class="codehilite"><span class="s1">&#39;m&#39;</span></code> substring and return the starting position.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="k">replace</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">)</span></code>; replace <code class="codehilite"><span class="s1">&#39;m&#39;</span></code> with <code class="codehilite"><span class="s1">&#39;n&#39;</span></code>.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">startwith</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span></code>; check beginning and return <code class="codehilite"><span class="k">True</span></code> or <code class="codehilite"><span class="k">False</span></code>.</li>
+<li><code class="codehilite"><span class="n">s</span><span class="p">.</span><span class="n">endwith</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span></code>; check end and return <code class="codehilite"><span class="k">True</span></code> or <code class="codehilite"><span class="k">False</span></code>.</li>
 </ul>
 <p><strong>Create lists</strong></p>
 <ul>
-<li><code class="codehilite">data = [1, 2, 3, 4, 5]</code>.</li>
-<li><code class="codehilite">data[1:3]</code>; <code class="codehilite">[2, 3]</code>.</li>
-<li><code class="codehilite">data[0:2]</code>; <code class="codehilite">[1, 2]</code>.</li>
-<li><code class="codehilite">data[:3]</code>; <code class="codehilite">[1, 2, 3]</code>.</li>
-<li><code class="codehilite">data[-2:]</code>; <code class="codehilite">[4, 5]</code>.</li>
-<li><code class="codehilite">data2 = data[:]</code>; create a copy.</li>
+<li><code class="codehilite"><span class="k">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span></code>.</li>
+<li><code class="codehilite"><span class="k">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span></code>; <code class="codehilite"><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span></code>.</li>
+<li><code class="codehilite"><span class="k">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span></code>; <code class="codehilite"><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span></code>.</li>
+<li><code class="codehilite"><span class="k">data</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span></code>; <code class="codehilite"><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span></code>.</li>
+<li><code class="codehilite"><span class="k">data</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span></code>; <code class="codehilite"><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span></code>.</li>
+<li><code class="codehilite"><span class="n">data2</span> <span class="o">=</span> <span class="k">data</span><span class="p">[:]</span></code>; create a copy.</li>
 </ul>
 <p><strong>Modify lists</strong></p>
 <ul>
-<li><code class="codehilite">l[i] = x</code>; replace the i<sup>th</sup> element with <code class="codehilite">x</code>.</li>
-<li><code class="codehilite">l[i;j] = t</code>; replace elements from <code class="codehilite">i</code> to <code class="codehilite">j</code> by <code class="codehilite">t</code> (iterable).</li>
-<li><code class="codehilite">del l[i;j]</code>; delete the elements of the list from <code class="codehilite">i</code> to <code class="codehilite">j</code>.</li>
-<li><code class="codehilite">del s[i;k;k]</code>; delete the elements of the list from <code class="codehilite">i</code> to <code class="codehilite">j</code> with stop <code class="codehilite">k</code>.</li>
-<li><code class="codehilite">l.append(x)</code>; add element <code class="codehilite">x</code> to the list.</li>
-<li><code class="codehilite">l.extend(x)</code>; add several element <code class="codehilite">x</code> to the list (iterable).</li>
-<li><code class="codehilite">l.count(x)</code>; return the number of elements <code class="codehilite">x</code> in the list.</li>
-<li><code class="codehilite">l.index(x[. i[. j]])</code>; return the smaller <code class="codehilite">k</code> such that <code class="codehilite">l[k] = x</code> and <code class="codehilite">i &lt;= k &lt;= j</code>.</li>
-<li><code class="codehilite">l.insert(i.x)</code>; insert(wedge in) <code class="codehilite">x</code>.</li>
-<li><code class="codehilite">l.pop(i)</code>; cancel the ith element and return its value; <code class="codehilite">l.pop()</code> does it for the last element.</li>
-<li><code class="codehilite">l.remove(x)</code>; delete a choosen <code class="codehilite">x</code> element.</li>
-<li><code class="codehilite">l.reverse()</code>; reverse the list order.</li>
-<li><code class="codehilite">l.sort()</code>; sort the list.</li>
-<li><code class="codehilite">l.sort([cmp[. key[. reverse]]])</code>; sort the list; <code class="codehilite">cmp</code> is a customized function for the comparison of element pairs that must return a negative value, zero, or a positive value depending on if the first element of the pair is lower than. equal to. or greater than the second element.</li>
-<li><code class="codehilite">sorted(l)</code>; create a new list made of a simple ascending sort of the list without modifying the list.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"></span></code>; replace the i<sup>th</sup> element with <code class="codehilite"><span class="n">x</span></code>.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span></code>; replace elements from <code class="codehilite"><span class="n">i</span></code> to <code class="codehilite"><span class="n">j</span></code> by <code class="codehilite"><span class="n">t</span></code> (iterable).</li>
+<li><code class="codehilite"><span class="n">del</span> <span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="p">]</span></code>; delete the elements of the list from <code class="codehilite"><span class="n">i</span></code> to <code class="codehilite"><span class="n">j</span></code>.</li>
+<li><code class="codehilite"><span class="n">del</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">;</span><span class="n">k</span><span class="p">;</span><span class="n">k</span><span class="p">]</span></code>; delete the elements of the list from <code class="codehilite"><span class="n">i</span></code> to <code class="codehilite"><span class="n">j</span></code> with stop <code class="codehilite"><span class="n">k</span></code>.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>; add element <code class="codehilite"><span class="n">x</span></code> to the list.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">extend</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>; add several element <code class="codehilite"><span class="n">x</span></code> to the list (iterable).</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="k">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>; return the number of elements <code class="codehilite"><span class="n">x</span></code> in the list.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="k">index</span><span class="p">(</span><span class="n">x</span><span class="p">[.</span> <span class="n">i</span><span class="p">[.</span> <span class="n">j</span><span class="p">]])</span></code>; return the smaller <code class="codehilite"><span class="n">k</span></code> such that <code class="codehilite"><span class="n">l</span><span class="o">[</span><span class="n">k</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"></span></code> and <code class="codehilite"><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">k</span> <span class="o">&lt;=</span> <span class="n">j</span></code>.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="k">insert</span><span class="p">(</span><span class="n">i</span><span class="p">.</span><span class="n">x</span><span class="p">)</span></code>; insert(wedge in) <code class="codehilite"><span class="n">x</span></code>.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code>; cancel the ith element and return its value; <code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span></code> does it for the last element.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>; delete a choosen <code class="codehilite"><span class="n">x</span></code> element.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">reverse</span><span class="p">()</span></code>; reverse the list order.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span></code>; sort the list.</li>
+<li><code class="codehilite"><span class="n">l</span><span class="p">.</span><span class="n">sort</span><span class="p">([</span><span class="n">cmp</span><span class="p">[.</span> <span class="k">key</span><span class="p">[.</span> <span class="n">reverse</span><span class="p">]]])</span></code>; sort the list; <code class="codehilite"><span class="n">cmp</span></code> is a customized function for the comparison of element pairs that must return a negative value, zero, or a positive value depending on if the first element of the pair is lower than. equal to. or greater than the second element.</li>
+<li><code class="codehilite"><span class="n">sorted</span><span class="p">(</span><span class="n">l</span><span class="p">)</span></code>; create a new list made of a simple ascending sort of the list without modifying the list.</li>
 </ul>
 <p><strong>Functions working of lists</strong></p>
 <ul>
-<li><code class="codehilite">len(data)</code>; length of the list.</li>
-<li><code class="codehilite">min(data)</code>; smallest.</li>
-<li><code class="codehilite">max(data)</code>; largest.</li>
-<li><code class="codehilite">sum(data)</code>; sum.</li>
-<li><code class="codehilite">range(4)</code>; create a list of number from 0 to 3.</li>
-<li><code class="codehilite">range(1.5)</code>; create a list of number from 1 to 4.</li>
-<li><code class="codehilite">range(2.9.2)</code>; create <code class="codehilite">[2, 4, 6, 8]</code>.</li>
-<li><code class="codehilite">range(5, 0, -1)</code>; create <code class="codehilite">[5, 4, 3, 2, 1]</code></li>
+<li><code class="codehilite"><span class="n">len</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>; length of the list.</li>
+<li><code class="codehilite"><span class="k">min</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>; smallest.</li>
+<li><code class="codehilite"><span class="k">max</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>; largest.</li>
+<li><code class="codehilite"><span class="k">sum</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>; sum.</li>
+<li><code class="codehilite"><span class="n">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span></code>; create a list of number from 0 to 3.</li>
+<li><code class="codehilite"><span class="n">range</span><span class="p">(</span><span class="mi">1</span><span class="p">.</span><span class="mi">5</span><span class="p">)</span></code>; create a list of number from 1 to 4.</li>
+<li><code class="codehilite"><span class="n">range</span><span class="p">(</span><span class="mi">2</span><span class="p">.</span><span class="mi">9</span><span class="p">.</span><span class="mi">2</span><span class="p">)</span></code>; create <code class="codehilite"><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span></code>.</li>
+<li><code class="codehilite"><span class="n">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span></code>; create <code class="codehilite"><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span></code></li>
 </ul>
 <p><strong>Tuples</strong></p>
 <ul>
-<li><code class="codehilite">t = 1, 2, 3</code> or <code class="codehilite">t = (1, 2, 3)</code></li>
-<li><code class="codehilite">t = 1</code> or <code class="codehilite">tuple = (1,)</code></li>
+<li><code class="codehilite"><span class="n">t</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span></code> or <code class="codehilite"><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span></code></li>
+<li><code class="codehilite"><span class="n">t</span> <span class="o">=</span> <span class="mi">1</span></code> or <code class="codehilite"><span class="n">tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,)</span></code></li>
 </ul>
 <p><strong>Accessing data in dictionaries</strong></p>
 <ul>
-<li><code class="codehilite">prices[&#39;banana&#39;]</code>; return the value of the key.</li>
-<li><code class="codehilite">prices.get(&#39;banaba&#39;)</code>; do the same thing, but if the key does not exit, it returns <code class="codehilite">None</code>.</li>
-<li><code class="codehilite">prices.has_key(&#39;apple&#39;)</code>; check whether the key(s) is(are) defined.</li>
-<li><code class="codehilite">prices.keys()</code>; return a list of all keys.</li>
-<li><code class="codehilite">prices.values()</code>; return a list of all values.</li>
-<li><code class="codehilite">prices.items()</code>; return all keys and values as a list of tuples.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">]</span></code>; return the value of the key.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">.</span><span class="k">get</span><span class="p">(</span><span class="s1">&#39;banaba&#39;</span><span class="p">)</span></code>; do the same thing, but if the key does not exit, it returns <code class="codehilite"><span class="k">None</span></code>.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span><span class="p">)</span></code>; check whether the key(s) is(are) defined.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">.</span><span class="n">keys</span><span class="p">()</span></code>; return a list of all keys.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">.</span><span class="k">values</span><span class="p">()</span></code>; return a list of all values.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">.</span><span class="n">items</span><span class="p">()</span></code>; return all keys and values as a list of tuples.</li>
 </ul>
 <p><strong>Modifying dictionaries</strong></p>
 <ul>
-<li><code class="codehilite">prices[&#39;kiwi&#39;] = 0.6</code>; set the value of the key.</li>
-<li><code class="codehilite">prices.setdefault(&#39;egg&#39;, 0.9)</code>; set the value of the key if it is not yet defined.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">[</span><span class="s1">&#39;kiwi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">6</span></code>; set the value of the key.</li>
+<li><code class="codehilite"><span class="n">prices</span><span class="p">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;egg&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">)</span></code>; set the value of the key if it is not yet defined.</li>
 </ul>
 <p><strong>None</strong></p>
 <p>None indicate the object or part of it is empty. For example:<br />
-- <code class="codehilite">a = None</code>.<br />
-- <code class="codehilite">b = [None, None, &#39;green&#39;]</code>.</p>
+- <code class="codehilite"><span class="n">a</span> <span class="o">=</span> <span class="k">None</span></code>.<br />
+- <code class="codehilite"><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="k">None</span><span class="p">,</span> <span class="k">None</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">]</span></code>.</p>
 <h3 id="chapter-2-your-first-python-program">Chapter 2, Your First Python Program<a class="headerlink" href="#chapter-2-your-first-python-program" title="Permanent link">&para;</a></h3>
 <p><strong>Difference between functions and methods</strong></p>
-<p>Functions are generic; use them anywhere without constraints. For example, <code class="codehilite">len()</code> works on all data.</p>
+<p>Functions are generic; use them anywhere without constraints. For example, <code class="codehilite"><span class="n">len</span><span class="p">()</span></code> works on all data.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1315,7 +1320,7 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 </pre></div>
 </td></tr></table>
 
-<p>Other funtions, called methods, are specific; use them on a certain type of data. For example, <code class="codehilite">count()</code> works only for strings or a &lsquo;string&rsquo; variable (below, <code class="codehilite">protein</code> is a string).</p>
+<p>Other funtions, called methods, are specific; use them on a certain type of data. For example, <code class="codehilite"><span class="k">count</span><span class="p">()</span></code> works only for strings or a &lsquo;string&rsquo; variable (below, <code class="codehilite"><span class="n">protein</span></code> is a string).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1365,7 +1370,7 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 <h3 id="chapter-3-analyzing-a-data-column">Chapter 3, Analyzing a Data Column<a class="headerlink" href="#chapter-3-analyzing-a-data-column" title="Permanent link">&para;</a></h3>
 <p><strong>Read from a text file</strong></p>
 <ul>
-<li><code class="codehilite">readlines()</code>.</li>
+<li><code class="codehilite"><span class="n">readlines</span><span class="p">()</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1386,7 +1391,7 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">read()</code>. </li>
+<li><code class="codehilite"><span class="k">read</span><span class="p">()</span></code>. </li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1402,12 +1407,12 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 </pre></div>
 </td></tr></table>
 
-<p><strong>Difference between <code class="codehilite">read()</code> and <code class="codehilite">readlines()</code></strong></p>
+<p><strong>Difference between <code class="codehilite"><span class="k">read</span><span class="p">()</span></code> and <code class="codehilite"><span class="n">readlines</span><span class="p">()</span></code></strong></p>
 <ul>
-<li><code class="codehilite">read(x)</code>; read up to x bytes in a file. If you don&rsquo;t supply the size, it reads the entire file. The output is displayed as strings only once.</li>
+<li><code class="codehilite"><span class="k">read</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>; read up to x bytes in a file. If you don&rsquo;t supply the size, it reads the entire file. The output is displayed as strings only once.</li>
 <li>One character = 1 byte.</li>
 <li>Close and reopen the file to read it again.</li>
-<li><code class="codehilite">readlines(x)</code>; read up to x bytes. If you don&rsquo;t supply a size, it reads all the data until it reaches a newline (<code class="codehilite">\n</code>) or the end of a paragraph.</li>
+<li><code class="codehilite"><span class="n">readlines</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code>; read up to x bytes. If you don&rsquo;t supply a size, it reads all the data until it reaches a newline (<code class="codehilite"><span class="err">\</span><span class="n">n</span></code>) or the end of a paragraph.</li>
 <li>Close and reopen the file to read it again.</li>
 </ul>
 <p><strong>Write a text file</strong></p>
@@ -1428,9 +1433,9 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 <p><strong>Clean a text file</strong></p>
 <p><sub>strip</sub></p>
 <ul>
-<li><code class="codehilite">strip()</code>; removes blanks spaces.</li>
-<li><code class="codehilite">rstrip()</code>; right only.</li>
-<li><code class="codehilite">lstrip()</code>; left only.</li>
+<li><code class="codehilite"><span class="n">strip</span><span class="p">()</span></code>; removes blanks spaces.</li>
+<li><code class="codehilite"><span class="n">rstrip</span><span class="p">()</span></code>; right only.</li>
+<li><code class="codehilite"><span class="n">lstrip</span><span class="p">()</span></code>; left only.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1454,10 +1459,10 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 
 <p><strong>Write and then read the same file</strong></p>
 <ul>
-<li><code class="codehilite">&#39;r&#39;</code>; cannot write with, only reads.</li>
-<li><code class="codehilite">&#39;w&#39;</code>; cannot read with, only writes (an existing file with the same name will be erased).</li>
-<li><code class="codehilite">&#39;a&#39;</code> append; data added to the end. </li>
-<li><code class="codehilite">&#39;r+&#39;</code>; both read and write (by replacing the existing string at the beginning by the new string).</li>
+<li><code class="codehilite"><span class="s1">&#39;r&#39;</span></code>; cannot write with, only reads.</li>
+<li><code class="codehilite"><span class="s1">&#39;w&#39;</span></code>; cannot read with, only writes (an existing file with the same name will be erased).</li>
+<li><code class="codehilite"><span class="s1">&#39;a&#39;</span></code> append; data added to the end. </li>
+<li><code class="codehilite"><span class="s1">&#39;r+&#39;</span></code>; both read and write (by replacing the existing string at the beginning by the new string).</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1510,14 +1515,14 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 <p><strong>Read a series of numbers from a text file and print a summary of the data</strong></p>
 <p><sub>strip, append, length, minimum, maximum, sort, format, integer, float</sub></p>
 <ul>
-<li><code class="codehilite">strip()</code>; remove blank spaces.</li>
+<li><code class="codehilite"><span class="n">strip</span><span class="p">()</span></code>; remove blank spaces.</li>
 <li>A text is string by default even thought the file contains numbers; transform the text into float.</li>
-<li><code class="codehilite">append()</code>; each line to a list.</li>
-<li><code class="codehilite">len(data)</code>.</li>
-<li><code class="codehilite">sum(data)</code>.</li>
-<li><code class="codehilite">min(data)</code>.</li>
-<li><code class="codehilite">max(data)</code>.</li>
-<li><code class="codehilite">sort()</code>.</li>
+<li><code class="codehilite"><span class="n">append</span><span class="p">()</span></code>; each line to a list.</li>
+<li><code class="codehilite"><span class="n">len</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="k">sum</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="k">min</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="k">max</span><span class="p">(</span><span class="k">data</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="n">sort</span><span class="p">()</span></code>.</li>
 <li><code class="codehilite"><span class="c">%4i</span></code> is an integer with 4 digits.</li>
 <li><code class="codehilite"><span class="c">%6.1f</span></code> is a float with 6 digits and 2 decimals.</li>
 </ul>
@@ -1583,9 +1588,9 @@ are rather multilines.&rsquo;&lsquo;&rsquo;</p>
 <li><code class="codehilite"><span class="c">%2.2f</span></code>; has 2 digits and 2 decimals.</li>
 <li><code class="codehilite"><span class="c">%2i</span></code>; has 2 digits.</li>
 <li>And so on.</li>
-<li><code class="codehilite">str()</code>; turn a variable into a string (digit <code class="codehilite">3</code> to string <code class="codehilite">&#39;3&#39;</code> for example).</li>
-<li><code class="codehilite">int()</code>; turn a variable into an integer (string <code class="codehilite">&#39;3&#39;</code> to digit <code class="codehilite">3</code> for example).</li>
-<li><code class="codehilite">float()</code>; turn a variable into a float (digit <code class="codehilite">3</code> to <code class="codehilite">3.0</code> for example).</li>
+<li><code class="codehilite"><span class="n">str</span><span class="p">()</span></code>; turn a variable into a string (digit <code class="codehilite"><span class="mi">3</span></code> to string <code class="codehilite"><span class="s1">&#39;3&#39;</span></code> for example).</li>
+<li><code class="codehilite"><span class="nb">int</span><span class="p">()</span></code>; turn a variable into an integer (string <code class="codehilite"><span class="s1">&#39;3&#39;</span></code> to digit <code class="codehilite"><span class="mi">3</span></code> for example).</li>
+<li><code class="codehilite"><span class="nb">float</span><span class="p">()</span></code>; turn a variable into a float (digit <code class="codehilite"><span class="mi">3</span></code> to <code class="codehilite"><span class="mi">3</span><span class="p">.</span><span class="mi">0</span></code> for example).</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1998,22 +2003,22 @@ O75832 not observed
 <p><strong>List vs Tuple vs Set</strong></p>
 <ul>
 <li>mutable: change, replace, reorder, add elements.</li>
-<li><code class="codehilite">List = [1, 2, 3]</code>; mutable sequences of objects. </li>
-<li><code class="codehilite">Tuple = (1, 2, 3)</code>; immutable ordered sequences of objects;.</li>
-<li><code class="codehilite">Set = set([1, 2, 3])</code>; immutable unordered  collections of unique elements.</li>
+<li><code class="codehilite"><span class="n">List</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span></code>; mutable sequences of objects. </li>
+<li><code class="codehilite"><span class="n">Tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span></code>; immutable ordered sequences of objects;.</li>
+<li><code class="codehilite"><span class="k">Set</span> <span class="o">=</span> <span class="k">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span></code>; immutable unordered  collections of unique elements.</li>
 <li>The three can contain digits, strings or other objects (embedded).</li>
 </ul>
 <p><strong>More on lists</strong></p>
 <ul>
-<li><code class="codehilite">List[0]</code>; extract</li>
-<li><code class="codehilite">Llist = [[1, 2, 3],[a, b, c],[x, 4, &#39;text&#39;], &#39;seq&#39;]</code>; embedded lists.</li>
-<li><code class="codehilite">List[0][1]</code>; extract from embedded lists.</li>
-<li><code class="codehilite">List.append(5)</code>; add.</li>
+<li><code class="codehilite"><span class="n">List</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></code>; extract</li>
+<li><code class="codehilite"><span class="n">Llist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="k">c</span><span class="p">],[</span><span class="n">x</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="s1">&#39;seq&#39;</span><span class="p">]</span></code>; embedded lists.</li>
+<li><code class="codehilite"><span class="n">List</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span></code>; extract from embedded lists.</li>
+<li><code class="codehilite"><span class="n">List</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span></code>; add.</li>
 <li>Create:<ul>
-<li><code class="codehilite">range(3)</code>.</li>
-<li><code class="codehilite">seq(0, 2, 1)</code>.</li>
-<li><code class="codehilite">[0.0] * 10</code>.</li>
-<li><code class="codehilite">[x**2 for x in range(5)]</code>.</li>
+<li><code class="codehilite"><span class="n">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="n">seq</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span></code>.</li>
+<li><code class="codehilite">[<span class="nv">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="nv">x</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span>]</code>.</li>
 </ul>
 </li>
 </ul>
@@ -2535,7 +2540,7 @@ WGSGCAQKNKPGVYTKVCNYVSWIKQTIASN
 <p><strong>More about sets</strong></p>
 <p><sub>set</sub></p>
 <ul>
-<li><code class="codehilite">Set = set([1, 2, 3])</code>; immutable unordered collections of unique elements.</li>
+<li><code class="codehilite"><span class="k">Set</span> <span class="o">=</span> <span class="k">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span></code>; immutable unordered collections of unique elements.</li>
 <li>They are not sequential objects like lists.</li>
 <li>They cannot contain identical elements.<ul>
 <li>to remove duplicates</li>
@@ -2546,7 +2551,7 @@ WGSGCAQKNKPGVYTKVCNYVSWIKQTIASN
 </ul>
 </li>
 <li>They do not support indexing and slicing operations.</li>
-<li>They take the <code class="codehilite">in</code> and <code class="codehilite">not in</code> operators (test an element for membership in a set).</li>
+<li>They take the <code class="codehilite"><span class="k">in</span></code> and <code class="codehilite"><span class="k">not</span> <span class="k">in</span></code> operators (test an element for membership in a set).</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2816,8 +2821,8 @@ set([2, 3, 4, 6, 7, 8, 9])
 
 <p><strong>Remove elements from a list</strong></p>
 <ul>
-<li><code class="codehilite">pop()</code>; return and remove the first value.</li>
-<li><code class="codehilite">pop(0)</code>; return and remove a specific position in the index.</li>
+<li><code class="codehilite"><span class="n">pop</span><span class="p">()</span></code>; return and remove the first value.</li>
+<li><code class="codehilite"><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></code>; return and remove a specific position in the index.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2834,7 +2839,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">del()</code>; remove a specific position in the index only.</li>
+<li><code class="codehilite"><span class="n">del</span><span class="p">()</span></code>; remove a specific position in the index only.</li>
 </ul>
 <p><sub>delete</sub></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -2848,7 +2853,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">remove()</code>;  remove a specific element only.</li>
+<li><code class="codehilite"><span class="n">remove</span><span class="p">()</span></code>;  remove a specific element only.</li>
 </ul>
 <p><sub>remove</sub></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -3362,14 +3367,14 @@ set([2, 3, 4, 6, 7, 8, 9])
 <p><strong>Extract, access rows and cells from a 2D table</strong></p>
 <p><sub>tabular, table, two dimensions</sub></p>
 <ul>
-<li><code class="codehilite">table[1]</code>; extract the 2<sup>nd</sup> row.</li>
-<li><code class="codehilite">table[1][2]</code>; extract a single cell (2<sup>nd</sup> row, 3<sup>rd</sup> column).</li>
-<li><code class="codehilite">table[1:]</code> or <code class="codehilite">table.pop(0)</code>; slice the 1<sup>st</sup> row, keep the remaining.</li>
-<li><code class="codehilite">table.pop(2)</code>; delete the 3<sup>rd</sup> row.</li>
-<li><code class="codehilite">table[:2]</code>; slice the 3<sup>rd</sup> column, keep the remaining.</li>
-<li><code class="codehilite">table[:2] + table[3:]</code>; slice the 3<sup>rd</sup> column and 4<sup>th</sup> row, keep the remaining.</li>
-<li><code class="codehilite">table.insert(2, [0.55, 0.12, 0.12, 0.14])</code>; insert a new row in 3<sup>rd</sup> position</li>
-<li><code class="codehilite">table.append([0.55, 0.12, 0.12, 0.14])</code>; insert a new row at the end.</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span></code>; extract the 2<sup>nd</sup> row.</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span></code>; extract a single cell (2<sup>nd</sup> row, 3<sup>rd</sup> column).</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span></code> or <code class="codehilite"><span class="k">table</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></code>; slice the 1<sup>st</sup> row, keep the remaining.</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span></code>; delete the 3<sup>rd</sup> row.</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span></code>; slice the 3<sup>rd</sup> column, keep the remaining.</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="k">table</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span></code>; slice the 3<sup>rd</sup> column and 4<sup>th</sup> row, keep the remaining.</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">.</span><span class="k">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">55</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">14</span><span class="p">])</span></code>; insert a new row in 3<sup>rd</sup> position</li>
+<li><code class="codehilite"><span class="k">table</span><span class="p">.</span><span class="n">append</span><span class="p">([</span><span class="mi">0</span><span class="p">.</span><span class="mi">55</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">14</span><span class="p">])</span></code>; insert a new row at the end.</li>
 </ul>
 <p><strong>Looping to access each row</strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -3410,7 +3415,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">protein, ex1. ext2, ext3 = zip(*table)</code>; access many columns; now each column is in a separate tuple.</li>
+<li><code class="codehilite"><span class="n">protein</span><span class="p">,</span> <span class="n">ex1</span><span class="p">.</span> <span class="n">ext2</span><span class="p">,</span> <span class="n">ext3</span> <span class="o">=</span> <span class="n">zip</span><span class="p">(</span><span class="o">*</span><span class="k">table</span><span class="p">)</span></code>; access many columns; now each column is in a separate tuple.</li>
 </ul>
 <p><strong>Flip a table 90 degrees</strong></p>
 <p><sub>convert column to row, row to column</sub></p>
@@ -3485,9 +3490,9 @@ set([2, 3, 4, 6, 7, 8, 9])
 </pre></div>
 </td></tr></table>
 
-<p><strong>The <code class="codehilite">zip()</code> function</strong></p>
+<p><strong>The <code class="codehilite"><span class="n">zip</span><span class="p">()</span></code> function</strong></p>
 <ul>
-<li><code class="codehilite">zip()</code>; iterate though lists, tuples, and strings.</li>
+<li><code class="codehilite"><span class="n">zip</span><span class="p">()</span></code>; iterate though lists, tuples, and strings.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -3582,7 +3587,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 </td></tr></table>
 
 <p><strong>Extract, access cells in a table, in a dictionary</strong></p>
-<p>More readable this way; second row, cell <code class="codehilite">&#39;ext2&#39;</code>:</p>
+<p>More readable this way; second row, cell <code class="codehilite"><span class="s1">&#39;ext2&#39;</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3734,8 +3739,8 @@ set([2, 3, 4, 6, 7, 8, 9])
 <p><strong>Sort a table by one column and write it to a file</strong></p>
 <p><sub>add, index, list</sub></p>
 <ul>
-<li><code class="codehilite">sorted()</code>.</li>
-<li><code class="codehilite">itemgetter()</code>; turn elements of each column into a sortable key.</li>
+<li><code class="codehilite"><span class="n">sorted</span><span class="p">()</span></code>.</li>
+<li><code class="codehilite"><span class="n">itemgetter</span><span class="p">()</span></code>; turn elements of each column into a sortable key.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -3979,13 +3984,13 @@ set([2, 3, 4, 6, 7, 8, 9])
 </tr>
 </tbody>
 </table>
-<p><strong>Difference between <code class="codehilite">sort()</code> and <code class="codehilite">sorted()</code></strong></p>
+<p><strong>Difference between <code class="codehilite"><span class="n">sort</span><span class="p">()</span></code> and <code class="codehilite"><span class="n">sorted</span><span class="p">()</span></code></strong></p>
 <ul>
-<li><code class="codehilite">sort()</code>; apply to lists</li>
-<li><code class="codehilite">sorted()</code>; apply to lists, tuples, and dictionary keys.</li>
-<li><code class="codehilite">reverse()</code> sort the other way around.</li>
-<li><code class="codehilite">sorted(data, reverse = True)</code>; idem.</li>
-<li><code class="codehilite">operator.itemgetter(i)(T)</code> returns the <code class="codehilite">i</code>th element of <code class="codehilite">T</code>, a string, a list, a tuple, or a dictionary.</li>
+<li><code class="codehilite"><span class="n">sort</span><span class="p">()</span></code>; apply to lists</li>
+<li><code class="codehilite"><span class="n">sorted</span><span class="p">()</span></code>; apply to lists, tuples, and dictionary keys.</li>
+<li><code class="codehilite"><span class="n">reverse</span><span class="p">()</span></code> sort the other way around.</li>
+<li><code class="codehilite"><span class="n">sorted</span><span class="p">(</span><span class="k">data</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="k">True</span><span class="p">)</span></code>; idem.</li>
+<li><code class="codehilite"><span class="k">operator</span><span class="p">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="n">i</span><span class="p">)(</span><span class="n">T</span><span class="p">)</span></code> returns the <code class="codehilite"><span class="n">i</span></code>th element of <code class="codehilite"><span class="n">T</span></code>, a string, a list, a tuple, or a dictionary.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -4007,7 +4012,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 
 <p><strong>Sort entries in a tabular output file in reverse order</strong></p>
 <ul>
-<li>Notice the <code class="codehilite">table_sorted = sorted(table, key = itemgetter(2), reverse=True)</code>.</li>
+<li>Notice the <code class="codehilite"><span class="n">table_sorted</span> <span class="o">=</span> <span class="n">sorted</span><span class="p">(</span><span class="k">table</span><span class="p">,</span> <span class="k">key</span> <span class="o">=</span> <span class="n">itemgetter</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">reverse</span><span class="o">=</span><span class="k">True</span><span class="p">)</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -4146,7 +4151,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 <p><strong>Sort strings by their length</strong></p>
 <p><sub>lamda, function</sub></p>
 <ul>
-<li>Use a <code class="codehilite">lambda</code> function and replace <code class="codehilite">itemgetter()</code>.</li>
+<li>Use a <code class="codehilite"><span class="n">lambda</span></code> function and replace <code class="codehilite"><span class="n">itemgetter</span><span class="p">()</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -4311,7 +4316,7 @@ set([2, 3, 4, 6, 7, 8, 9])
 <p><strong>Find a sequence pattern in a sequence</strong></p>
 <p><sub>regex, regular expression</sub></p>
 <ul>
-<li><code class="codehilite">re</code> package.</li>
+<li><code class="codehilite"><span class="n">re</span></code> package.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -4356,16 +4361,16 @@ set([2, 3, 4, 6, 7, 8, 9])
 </pre></div>
 </td></tr></table>
 
-<p><strong><code class="codehilite">re</code> methods</strong></p>
+<p><strong><code class="codehilite"><span class="n">re</span></code> methods</strong></p>
 <ul>
-<li><code class="codehilite">group()</code>; return the matching subgroup.</li>
-<li><code class="codehilite">span()</code>; return a tuple containing the starting and ending position of the match.</li>
-<li><code class="codehilite">start()</code>; return the starting position.</li>
-<li><code class="codehilite">end()</code>; return the ending position.</li>
-<li><code class="codehilite">search()</code>; find the <strong>first</strong> occurence within the string.</li>
-<li><code class="codehilite">match()</code>; attempt to match a pattern to a string. If the pattern is within the string, it will not match it. It will find &lsquo;S&rsquo; in &lsquo;ST&rsquo;, but not in &lsquo;TST&rsquo;. </li>
-<li><code class="codehilite">findall()</code>; return a list containing <strong>all</strong> the matching substrings.</li>
-<li><code class="codehilite">finditer()</code>; find <strong>all</strong> the match objects corresponding to the regex matches and returns them in the form of an iterator.</li>
+<li><code class="codehilite"><span class="k">group</span><span class="p">()</span></code>; return the matching subgroup.</li>
+<li><code class="codehilite"><span class="n">span</span><span class="p">()</span></code>; return a tuple containing the starting and ending position of the match.</li>
+<li><code class="codehilite"><span class="k">start</span><span class="p">()</span></code>; return the starting position.</li>
+<li><code class="codehilite"><span class="k">end</span><span class="ss">()</span></code>; return the ending position.</li>
+<li><code class="codehilite"><span class="k">search</span><span class="p">()</span></code>; find the <strong>first</strong> occurence within the string.</li>
+<li><code class="codehilite"><span class="k">match</span><span class="p">()</span></code>; attempt to match a pattern to a string. If the pattern is within the string, it will not match it. It will find &lsquo;S&rsquo; in &lsquo;ST&rsquo;, but not in &lsquo;TST&rsquo;. </li>
+<li><code class="codehilite"><span class="n">findall</span><span class="p">()</span></code>; return a list containing <strong>all</strong> the matching substrings.</li>
+<li><code class="codehilite"><span class="n">finditer</span><span class="p">()</span></code>; find <strong>all</strong> the match objects corresponding to the regex matches and returns them in the form of an iterator.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -4406,21 +4411,21 @@ set([2, 3, 4, 6, 7, 8, 9])
 </pre></div>
 </td></tr></table>
 
-<p><strong>More <code class="codehilite">re</code> methods</strong></p>
+<p><strong>More <code class="codehilite"><span class="n">re</span></code> methods</strong></p>
 <ul>
 <li>Divide regex in subgroups, each matching a different component of interest.</li>
-<li><code class="codehilite">(.)</code>; delimite a group.</li>
-<li><code class="codehilite">R(.)[ST][^P]</code>; stand for &lsquo;R&rsquo;, &lsquo;any character&rsquo;, pattern &lsquo;ST&rsquo;, any character different from &lsquo;P&rsquo;.<ul>
+<li><code class="codehilite"><span class="p">(.)</span></code>; delimite a group.</li>
+<li><code class="codehilite"><span class="n">R</span><span class="p">(.)</span><span class="o">[</span><span class="n">ST</span><span class="o">][</span><span class="n">^P</span><span class="o">]</span><span class="w"></span></code>; stand for &lsquo;R&rsquo;, &lsquo;any character&rsquo;, pattern &lsquo;ST&rsquo;, any character different from &lsquo;P&rsquo;.<ul>
 <li>The &lsquo;any character&rsquo; is also a subgroup.</li>
-<li>What ever is found between <code class="codehilite">R</code> and <code class="codehilite">[ST][^P]</code> is a subgroup.</li>
+<li>What ever is found between <code class="codehilite"><span class="n">R</span></code> and <code class="codehilite"><span class="o">[</span><span class="n">ST</span><span class="o">][</span><span class="n">^P</span><span class="o">]</span><span class="w"></span></code> is a subgroup.</li>
 </ul>
 </li>
-<li><code class="codehilite">R(.{0,3})[ST][^P]</code>; add a `{0,3}.<ul>
+<li><code class="codehilite"><span class="n">R</span><span class="p">(.</span><span class="err">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="err">}</span><span class="p">)</span><span class="o">[</span><span class="n">ST</span><span class="o">][</span><span class="n">^P</span><span class="o">]</span><span class="w"></span></code>; add a `{0,3}.<ul>
 <li>This qualifier or quantifiers means that at least 0 and at most 3 repetitions of &lsquo;R&rsquo;.</li>
 </ul>
 </li>
-<li><code class="codehilite">group()</code>; always return the complete matching substring (0 for no subgroup).</li>
-<li><code class="codehilite">group(#)</code>; return subgroups numbered from left to right in increasing order (subgroup #).</li>
+<li><code class="codehilite"><span class="k">group</span><span class="p">()</span></code>; always return the complete matching substring (0 for no subgroup).</li>
+<li><code class="codehilite"><span class="k">group</span><span class="p">(</span><span class="o">#</span><span class="p">)</span></code>; return subgroups numbered from left to right in increasing order (subgroup #).</li>
 </ul>
 <p><strong>Find multiple patterns in a search string</strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -4486,7 +4491,7 @@ RR
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">groups()</code>; return a tuple with the substrings corresponding to all subgroups.</li>
+<li><code class="codehilite"><span class="n">groups</span><span class="p">()</span></code>; return a tuple with the substrings corresponding to all subgroups.</li>
 </ul>
 <p>Output:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -4499,7 +4504,7 @@ RR
 </pre></div>
 </td></tr></table>
 
-<p><strong>Assign  names to subgroup: <code class="codehilite">?P&lt;w1&gt;</code> and <code class="codehilite">?P&lt;w2&gt;</code></strong></p>
+<p><strong>Assign  names to subgroup: <code class="codehilite"><span class="o">?</span><span class="n">P</span><span class="o">&lt;</span><span class="n">w1</span><span class="o">&gt;</span></code> and <code class="codehilite"><span class="o">?</span><span class="n">P</span><span class="o">&lt;</span><span class="n">w2</span><span class="o">&gt;</span></code></strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -4529,11 +4534,11 @@ b
 </pre></div>
 </td></tr></table>
 
-<p><strong>More <code class="codehilite">re</code> methods</strong></p>
+<p><strong>More <code class="codehilite"><span class="n">re</span></code> methods</strong></p>
 <ul>
-<li><code class="codehilite">splits(s)</code>; split the string <code class="codehilite">s</code> at the matches of a regex.</li>
-<li><code class="codehilite">sub(r, s, [c])</code>; return a new string <code class="codehilite">s</code> where nonoverlapping occurrences of a given pattern in the string are all replaced with the value of <code class="codehilite">r</code>. <code class="codehilite">c</code>, an optional number, stands for the maximum numbers of occurences.</li>
-<li><code class="codehilite">subn(r, s, [c])</code>; do what <code class="codehilite">sub()</code> does, but returns a tuple of two elements; the first element is the new string (as with <code class="codehilite">sub(r, s, [c])</code>) and the second is the number of replacements.</li>
+<li><code class="codehilite"><span class="n">splits</span><span class="p">(</span><span class="n">s</span><span class="p">)</span></code>; split the string <code class="codehilite"><span class="n">s</span></code> at the matches of a regex.</li>
+<li><code class="codehilite"><span class="n">sub</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="o">[</span><span class="n">c</span><span class="o">]</span><span class="p">)</span><span class="w"></span></code>; return a new string <code class="codehilite"><span class="n">s</span></code> where nonoverlapping occurrences of a given pattern in the string are all replaced with the value of <code class="codehilite"><span class="n">r</span></code>. <code class="codehilite"><span class="k">c</span></code>, an optional number, stands for the maximum numbers of occurences.</li>
+<li><code class="codehilite"><span class="n">subn</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="o">[</span><span class="n">c</span><span class="o">]</span><span class="p">)</span><span class="w"></span></code>; do what <code class="codehilite"><span class="n">sub</span><span class="p">()</span></code> does, but returns a tuple of two elements; the first element is the new string (as with <code class="codehilite"><span class="n">sub</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="o">[</span><span class="n">c</span><span class="o">]</span><span class="p">)</span><span class="w"></span></code>) and the second is the number of replacements.</li>
 </ul>
 <p><strong>Split text and replace separators with a pattern</strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -4658,8 +4663,8 @@ b
 <ul>
 <li>The script opens the HTML webpage and parses it in order to selectively fetch some parts of it.</li>
 <li>Extract the title and the abstract text.</li>
-<li>The title of the paper is enclosed between <code class="codehilite">&lt;h1&gt;</code> and <code class="codehilite">&lt;/h1&gt;</code>.</li>
-<li>Whereas the text of the abstract is enclosed between <code class="codehilite"><span class="nt">&lt;h3&gt;</span>Abstract<span class="nt">&lt;/h3&gt;&lt;div</span> <span class="na">class =</span> <span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;p&gt;</span></code> and <code class="codehilite">&lt;/p&gt;</code>.</li>
+<li>The title of the paper is enclosed between <code class="codehilite"><span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span></code> and <code class="codehilite"><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span></code>.</li>
+<li>Whereas the text of the abstract is enclosed between <code class="codehilite"><span class="nt">&lt;h3&gt;</span>Abstract<span class="nt">&lt;/h3&gt;&lt;div</span> <span class="na">class =</span> <span class="s">&quot;&quot;</span><span class="nt">&gt;&lt;p&gt;</span></code> and <code class="codehilite"><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span></code>.</li>
 <li><a href="http://www.ncbi.nlm.nih.gov/pubmed/18235848">The paper.</a></li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -4757,7 +4762,7 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 </td></tr></table>
 
 <ul>
-<li>Circumvent the problem with the <code class="codehilite">finditer()</code> method.</li>
+<li>Circumvent the problem with the <code class="codehilite"><span class="n">finditer</span><span class="p">()</span></code> method.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -4820,13 +4825,13 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 </pre></div>
 </td></tr></table>
 
-<p><strong>More <code class="codehilite">re</code> methods</strong></p>
+<p><strong>More <code class="codehilite"><span class="n">re</span></code> methods</strong></p>
 <ul>
-<li><code class="codehilite">findall()</code>; look for all (non-overlapping) occurrences of pattern in string; return a list of matches.</li>
-<li><code class="codehilite">finditer()</code>; same as above except returns an iterator instead of a list; for each match, the iterator returns a match object; it is adapted for loops!</li>
-<li><code class="codehilite">|</code>;  &lsquo;OR&rsquo;.</li>
-<li><code class="codehilite">$</code>; indicate that a match exists in the string only if the pattern is in the last position of the string.</li>
-<li><code class="codehilite">^</code>; indicate that a match exists in the string only if the pattern is in the first position of the string.</li>
+<li><code class="codehilite"><span class="n">findall</span><span class="p">()</span></code>; look for all (non-overlapping) occurrences of pattern in string; return a list of matches.</li>
+<li><code class="codehilite"><span class="n">finditer</span><span class="p">()</span></code>; same as above except returns an iterator instead of a list; for each match, the iterator returns a match object; it is adapted for loops!</li>
+<li><code class="codehilite"><span class="o">|</span></code>;  &lsquo;OR&rsquo;.</li>
+<li><code class="codehilite"><span class="err">$</span></code>; indicate that a match exists in the string only if the pattern is in the last position of the string.</li>
+<li><code class="codehilite"><span class="o">^</span></code>; indicate that a match exists in the string only if the pattern is in the first position of the string.</li>
 </ul>
 <p><strong>Python Regex, Characters and Metacharaters</strong></p>
 <p><img alt="Regex" src="../img/managing_your_biological/regex.png" /></p>
@@ -4835,15 +4840,15 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 <p><strong>Built-in functions</strong></p>
 <p><sub>length, total, sum, range</sub></p>
 <ul>
-<li><code class="codehilite">len()</code>.</li>
-<li><code class="codehilite">sum()</code>.</li>
-<li><code class="codehilite">range(n, m, step)</code>; from n to m-1, n = 0 by default.</li>
-<li><code class="codehilite">xrange(n, m, step)</code>; better suited for big numbers.</li>
+<li><code class="codehilite"><span class="n">len</span><span class="p">()</span></code>.</li>
+<li><code class="codehilite"><span class="k">sum</span><span class="p">()</span></code>.</li>
+<li><code class="codehilite"><span class="n">range</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span></code>; from n to m-1, n = 0 by default.</li>
+<li><code class="codehilite"><span class="n">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span></code>; better suited for big numbers.</li>
 </ul>
 <p><strong>Define functions</strong></p>
 <p><sub>docstring, docstrings</sub></p>
 <ul>
-<li>The documentation is retrieved with the <code class="codehilite">__doc__</code> attribute: type <code class="codehilite">addition.__doc__</code>.</li>
+<li>The documentation is retrieved with the <code class="codehilite"><span class="n">__doc__</span></code> attribute: type <code class="codehilite"><span class="n">addition</span><span class="p">.</span><span class="n">__doc__</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -4865,7 +4870,7 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 
 <p><strong>Lambda functions</strong></p>
 <ul>
-<li>Small anonymous functions; they are not declared using <code class="codehilite">def</code>.</li>
+<li>Small anonymous functions; they are not declared using <code class="codehilite"><span class="n">def</span></code>.</li>
 <li>They do not contain return statement.</li>
 <li>They can be defined in an argument in a function (useful).</li>
 <li>There are nameless.</li>
@@ -4895,7 +4900,7 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 </td></tr></table>
 
 <ul>
-<li>Use a <code class="codehilite">lambda</code> function as an argument of a built-in function:</li>
+<li>Use a <code class="codehilite"><span class="n">lambda</span></code> function as an argument of a built-in function:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -5023,8 +5028,8 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 
 <p><strong>Convert a string into a tuple or vice-versa</strong></p>
 <ul>
-<li><code class="codehilite">struct</code> package.</li>
-<li>In the format, <code class="codehilite">s</code> stands for string, <code class="codehilite">3s</code> stands for a three-character string.</li>
+<li><code class="codehilite"><span class="n">struct</span></code> package.</li>
+<li>In the format, <code class="codehilite"><span class="n">s</span></code> stands for string, <code class="codehilite"><span class="mi">3</span><span class="n">s</span></code> stands for a three-character string.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -5077,12 +5082,12 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 <p><strong>Function to calculate distance between two coordinates</strong></p>
 <p><sub>power</sub></p>
 <ul>
-<li><code class="codehilite">math</code> package.<ul>
-<li><code class="codehilite">pow(x, y)</code> replaces <code class="codehilite">x ** y</code>.</li>
+<li><code class="codehilite"><span class="n">math</span></code> package.<ul>
+<li><code class="codehilite"><span class="n">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code> replaces <code class="codehilite"><span class="n">x</span> <span class="o">**</span> <span class="n">y</span></code>.</li>
 </ul>
 </li>
-<li><code class="codehilite">distance</code> package; geometric calculations.<ul>
-<li><code class="codehilite">calc-dist()</code>.</li>
+<li><code class="codehilite"><span class="n">distance</span></code> package; geometric calculations.<ul>
+<li><code class="codehilite"><span class="n">calc</span><span class="o">-</span><span class="n">dist</span><span class="p">()</span></code>.</li>
 </ul>
 </li>
 </ul>
@@ -5120,10 +5125,10 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 <h3 id="chapter-11-managing-complexity-with-classes">Chapter 11 Managing Complexity with Classes<a class="headerlink" href="#chapter-11-managing-complexity-with-classes" title="Permanent link">&para;</a></h3>
 <p><strong>Classes</strong></p>
 <ul>
-<li>Define a Class: <code class="codehilite"><span class="kr">class</span> <span class="nx">Protein</span></code>.</li>
+<li>Define a Class: <code class="codehilite"><span class="k">class</span> <span class="n">Protein</span></code>.</li>
 <li>Add docstrings.</li>
-<li>The constructor <code class="codehilite">__init__()</code> is a special function that defines what kinds of data your class should contain and enables the creation of instances. Add a docstring.</li>
-<li>One class can have many instances. <code class="codehilite">lys = Protein(&#39;lysozyme&#39;)</code> is an instance of <code class="codehilite"><span class="kr">class</span> <span class="nx">Protein</span></code>.</li>
+<li>The constructor <code class="codehilite"><span class="n">__init__</span><span class="p">()</span></code> is a special function that defines what kinds of data your class should contain and enables the creation of instances. Add a docstring.</li>
+<li>One class can have many instances. <code class="codehilite"><span class="n">lys</span> <span class="o">=</span> <span class="n">Protein</span><span class="p">(</span><span class="s1">&#39;lysozyme&#39;</span><span class="p">)</span></code> is an instance of <code class="codehilite"><span class="k">class</span> <span class="n">Protein</span></code>.</li>
 <li>Create a class function; a class function works like a method.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -5271,7 +5276,7 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">__repr__</code> fixes this problem. The <code class="codehilite">__repr__</code> method takes no parameters except self.</li>
+<li><code class="codehilite"><span class="n">__repr__</span></code> fixes this problem. The <code class="codehilite"><span class="n">__repr__</span></code> method takes no parameters except self.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -5354,17 +5359,17 @@ ABSTRACT: <span class="p">&lt;</span><span class="nt">AbstractText</span><span c
 
 <ul>
 <li>
-<p>No difference between <code class="codehilite">print yellow</code> and <code class="codehilite">print repr(yellow)</code>.</p>
+<p>No difference between <code class="codehilite"><span class="n">print</span> <span class="n">yellow</span></code> and <code class="codehilite"><span class="n">print</span> <span class="n">repr</span><span class="p">(</span><span class="n">yellow</span><span class="p">)</span></code>.</p>
 </li>
 <li>
 <p>Objects&rsquo; predefined class attributes:</p>
 <ul>
-<li><code class="codehilite">__doc__</code>: the docstring.</li>
-<li><code class="codehilite">__dict__</code>: a list of attributes.</li>
-<li><code class="codehilite">__name__</code>: the name of the object.</li>
-<li><code class="codehilite">__bases__</code>: the object inherits from what object. For example, above, the PeaStrain class inherits from the Pea class. Classes (subclasses) can inherit from other classes<br />
+<li><code class="codehilite"><span class="n">__doc__</span></code>: the docstring.</li>
+<li><code class="codehilite"><span class="n">__dict__</span></code>: a list of attributes.</li>
+<li><code class="codehilite"><span class="n">__name__</span></code>: the name of the object.</li>
+<li><code class="codehilite"><span class="n">__bases__</span></code>: the object inherits from what object. For example, above, the PeaStrain class inherits from the Pea class. Classes (subclasses) can inherit from other classes<br />
 and extend their functionality.</li>
-<li><code class="codehilite">__module__</code>: the name of the module in which this class was defined. <code class="codehilite">__main__</code> means the object is in the current module. </li>
+<li><code class="codehilite"><span class="n">__module__</span></code>: the name of the module in which this class was defined. <code class="codehilite"><span class="n">__main__</span></code> means the object is in the current module. </li>
 </ul>
 </li>
 <li>
@@ -5473,10 +5478,10 @@ and extend their functionality.</li>
 
 <ul>
 <li>More attributes:<ul>
-<li><code class="codehilite">__del__</code>.</li>
-<li><code class="codehilite">__getattr__</code>.</li>
-<li><code class="codehilite">__setattr__</code>.</li>
-<li><code class="codehilite">__delattr__</code>.</li>
+<li><code class="codehilite"><span class="n">__del__</span></code>.</li>
+<li><code class="codehilite"><span class="n">__getattr__</span></code>.</li>
+<li><code class="codehilite"><span class="n">__setattr__</span></code>.</li>
+<li><code class="codehilite"><span class="n">__delattr__</span></code>.</li>
 </ul>
 </li>
 </ul>
@@ -5601,9 +5606,9 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <ul>
-<li>Other common <code class="codehilite">SyntaxErrors</code>:<ul>
-<li><code class="codehilite">EOL</code>or End Of Line; an open quote somewhere without a matching closing quote.</li>
-<li><code class="codehilite">TokenError</code>; an open parenthesis, but not a matching closing parenthesis.</li>
+<li>Other common <code class="codehilite"><span class="n">SyntaxErrors</span></code>:<ul>
+<li><code class="codehilite"><span class="n">EOL</span></code>or End Of Line; an open quote somewhere without a matching closing quote.</li>
+<li><code class="codehilite"><span class="n">TokenError</span></code>; an open parenthesis, but not a matching closing parenthesis.</li>
 <li>etc.</li>
 </ul>
 </li>
@@ -5630,13 +5635,13 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <p><strong>3. Runtime Error</strong></p>
-<p><strong><code class="codehilite">IOError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">IOError</span></code></strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">primary</span><span class="p">,</span> <span class="n">secondary</span> <span class="o">=</span> <span class="n">read_data</span><span class="p">(</span><span class="s1">&#39;neuron_data.xls&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
 <ul>
-<li>Cause: <code class="codehilite">IOError: [Errno21] No such file or directory: &#39;neuron_data.xls&#39;</code></li>
+<li>Cause: <code class="codehilite"><span class="nl">IOError</span><span class="p">:</span><span class="w"> </span><span class="o">[</span><span class="n">Errno21</span><span class="o">]</span><span class="w"> </span><span class="k">No</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="k">file</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="nl">directory</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;neuron_data.xls&#39;</span><span class="w"></span></code></li>
 <li>Fix: the file extention is .txt.</li>
 <li>Other common bugs and causes:<ul>
 <li>Mispelled files, directory name.</li>
@@ -5651,7 +5656,7 @@ and extend their functionality.</li>
 </ul>
 </li>
 </ul>
-<p><strong><code class="codehilite">NameError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">NameError</span></code></strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -5663,22 +5668,22 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <ul>
-<li>Cause: <code class="codehilite">NameError: &#39;secondary&#39; is not defined</code>. The &lsquo;name&rsquo; was misspelled when called.</li>
-<li>Fix: add the line <code class="codehilite">print dir()</code> before the errors occurs. It shows the list of variables that are known. In the above case, only <code class="codehilite">secondry</code> exits while <code class="codehilite">secondary</code> is called. Choose one.</li>
+<li>Cause: <code class="codehilite"><span class="n">NameError</span><span class="p">:</span> <span class="s1">&#39;secondary&#39;</span> <span class="k">is</span> <span class="k">not</span> <span class="k">defined</span></code>. The &lsquo;name&rsquo; was misspelled when called.</li>
+<li>Fix: add the line <code class="codehilite"><span class="n">print</span> <span class="n">dir</span><span class="p">()</span></code> before the errors occurs. It shows the list of variables that are known. In the above case, only <code class="codehilite"><span class="n">secondry</span></code> exits while <code class="codehilite"><span class="n">secondary</span></code> is called. Choose one.</li>
 <li>Other common bugs and causes:<ul>
 <li>Unknown object name:<ul>
 <li>a name was not imported (<code class="codehilite"><span class="kn">import</span> <span class="o">*</span></code>).</li>
-<li>a name was not initialized (as in <code class="codehilite">counter = 0</code> for <code class="codehilite">counter += 1</code>).</li>
+<li>a name was not initialized (as in <code class="codehilite"><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span></code> for <code class="codehilite"><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span></code>).</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<p><strong><code class="codehilite">IndexError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">IndexError</span></code></strong></p>
 <ul>
-<li>Cause and fix: when <code class="codehilite">print data[3]</code> looks into <code class="codehilite">data = [1, 2, 3]</code>, the list index is out of range.</li>
+<li>Cause and fix: when <code class="codehilite"><span class="n">print</span> <span class="k">data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span></code> looks into <code class="codehilite"><span class="k">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span></code>, the list index is out of range.</li>
 </ul>
-<p><strong><code class="codehilite">KeyError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">KeyError</span></code></strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">spam</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cat&#39;</span><span class="p">:</span> <span class="s1">&#39;Zophie&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">:</span> <span class="s1">&#39;Basil&#39;</span><span class="p">,</span> <span class="s1">&#39;mouse&#39;</span><span class="p">:</span> <span class="s1">&#39;Whiskers&#39;</span><span class="p">}</span>
 <span class="k">print</span><span class="p">(</span><span class="s1">&#39;The name of my pet zebra is &#39;</span> <span class="o">+</span> <span class="n">spam</span><span class="p">[</span><span class="s1">&#39;zebra&#39;</span><span class="p">])</span>
@@ -5688,22 +5693,22 @@ and extend their functionality.</li>
 <ul>
 <li>Cause and fix: the key does not exist!</li>
 </ul>
-<p><strong><code class="codehilite">ImportError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">ImportError</span></code></strong></p>
 <ul>
 <li>Causes and fixes:<ul>
 <li>The imported module name is mispelled.</li>
-<li>The imported module is located in a subdirectory without an <code class="codehilite">__init__.py</code> file.</li>
+<li>The imported module is located in a subdirectory without an <code class="codehilite"><span class="n">__init__</span><span class="p">.</span><span class="n">py</span></code> file.</li>
 <li>Try adding import sys and print sys.path; you need to add the directory to the PYTHONPATH variable or to append it to the sys.path.</li>
 <li>The imported module has a duplicate name (two functions with the same name; try working with classes to avoir that).</li>
 </ul>
 </li>
 </ul>
-<p><strong><code class="codehilite">ValueError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">ValueError</span></code></strong></p>
 <ul>
-<li>Cause and fix: when an object is loaded with a wrong type to perform another operation; variable <code class="codehilite">range_a</code> should be a number for the loop <code class="codehilite">for a in range(range_a):</code>, but a string is given instead.</li>
+<li>Cause and fix: when an object is loaded with a wrong type to perform another operation; variable <code class="codehilite"><span class="n">range_a</span></code> should be a number for the loop <code class="codehilite"><span class="k">for</span> <span class="nv">a</span> <span class="nv">in</span> <span class="nv">range</span><span class="ss">(</span><span class="nv">range_a</span><span class="ss">)</span>:</code>, but a string is given instead.</li>
 <li>Other common bugs and causes: <code class="codehilite"><span class="n">IndentationError</span><span class="o">:</span> <span class="n">unexpected</span> <span class="n">indent</span></code>, <code class="codehilite"><span class="n">IndentationError</span><span class="o">:</span> <span class="n">unindent</span> <span class="n">does</span> <span class="n">not</span> <span class="n">match</span> <span class="n">any</span> <span class="n">outer</span> <span class="n">indentation</span> <span class="n">level</span></code>, and <code class="codehilite"><span class="n">IndentationError</span><span class="o">:</span> <span class="n">expected</span> <span class="n">an</span> <span class="n">indented</span> <span class="n">block</span></code>.</li>
 </ul>
-<p><strong><code class="codehilite">TypeError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">TypeError</span></code></strong></p>
 <ul>
 <li>Cause and fix: an object does not support item assignment.</li>
 </ul>
@@ -5743,9 +5748,9 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <ul>
-<li>Fix: <code class="codehilite">for i in spam:</code>.</li>
+<li>Fix: <code class="codehilite"><span class="k">for</span> <span class="nv">i</span> <span class="nv">in</span> <span class="nv">spam</span>:</code>.</li>
 </ul>
-<p><strong><code class="codehilite">AttributeError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">AttributeError</span></code></strong></p>
 <ul>
 <li>Cause and fix: apply the right method.</li>
 </ul>
@@ -5755,27 +5760,27 @@ and extend their functionality.</li>
 </pre></div>
 </td></tr></table>
 
-<p><strong><code class="codehilite">UnboundLocalError</code></strong></p>
+<p><strong><code class="codehilite"><span class="n">UnboundLocalError</span></code></strong></p>
 <ul>
 <li>Cause and fix: a variable is referenced before assignment.</li>
 </ul>
 <p><strong>Countermeasures to prevent errors</strong></p>
 <ul>
-<li>Break down the code in parts; print to a file using <code class="codehilite">python code.py &gt; output.txt</code>.</li>
+<li>Break down the code in parts; print to a file using <code class="codehilite"><span class="n">python</span> <span class="n">code</span><span class="p">.</span><span class="n">py</span> <span class="o">&gt;</span> <span class="k">output</span><span class="p">.</span><span class="n">txt</span></code>.</li>
 <li>Compare the input and output (print the input data, print the output data, create control points).</li>
-<li>Add lots of <code class="codehilite">print</code> statements within the code as control points,</li>
-<li>Use descriptive and explicit object names (<code class="codehilite">sequence_file</code> is better than <code class="codehilite">s_file</code>).</li>
-<li>Start function with verbs (<code class="codehilite">read_sequence_file</code> is better than <code class="codehilite">seq_file</code>).</li>
+<li>Add lots of <code class="codehilite"><span class="n">print</span></code> statements within the code as control points,</li>
+<li>Use descriptive and explicit object names (<code class="codehilite"><span class="n">sequence_file</span></code> is better than <code class="codehilite"><span class="n">s_file</span></code>).</li>
+<li>Start function with verbs (<code class="codehilite"><span class="n">read_sequence_file</span></code> is better than <code class="codehilite"><span class="n">seq_file</span></code>).</li>
 <li>Add comments.</li>
 <li>Avoid <code class="codehilite"><span class="kn">import</span> <span class="o">*</span></code>, but rather <code class="codehilite"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span></code>.</li>
-<li>Follow PEP8 and PEP20! <code class="codehilite">pylint</code> and <code class="codehilite">flake8</code> packages.</li>
-<li>IDE (Eric, PyCharm, Spyder, etc.) automate debugging and easily execute <code class="codehilite">pylint</code> and <code class="codehilite">flake8</code>.</li>
+<li>Follow PEP8 and PEP20! <code class="codehilite"><span class="n">pylint</span></code> and <code class="codehilite"><span class="n">flake8</span></code> packages.</li>
+<li>IDE (Eric, PyCharm, Spyder, etc.) automate debugging and easily execute <code class="codehilite"><span class="n">pylint</span></code> and <code class="codehilite"><span class="n">flake8</span></code>.</li>
 </ul>
-<p><strong>A note on <code class="codehilite">raw_input()</code> and <code class="codehilite">input()</code></strong></p>
+<p><strong>A note on <code class="codehilite"><span class="n">raw_input</span><span class="p">()</span></code> and <code class="codehilite"><span class="k">input</span><span class="p">()</span></code></strong></p>
 <p><sub>python2, python3, py2, py3</sub></p>
 <ul>
-<li>In Python 2, <code class="codehilite">raw_input()</code> takes exactly what the user typed and passes it back as a string. <code class="codehilite">input()</code> takes the <code class="codehilite">raw_input()</code> and performs an <code class="codehilite">eval()</code> on it as well. <code class="codehilite">input()</code> expects a syntactically correct python statement where <code class="codehilite">raw_input()</code> does not.</li>
-<li>The <code class="codehilite">eval()</code> function run the code within itself:</li>
+<li>In Python 2, <code class="codehilite"><span class="n">raw_input</span><span class="p">()</span></code> takes exactly what the user typed and passes it back as a string. <code class="codehilite"><span class="k">input</span><span class="p">()</span></code> takes the <code class="codehilite"><span class="n">raw_input</span><span class="p">()</span></code> and performs an <code class="codehilite"><span class="n">eval</span><span class="p">()</span></code> on it as well. <code class="codehilite"><span class="k">input</span><span class="p">()</span></code> expects a syntactically correct python statement where <code class="codehilite"><span class="n">raw_input</span><span class="p">()</span></code> does not.</li>
+<li>The <code class="codehilite"><span class="n">eval</span><span class="p">()</span></code> function run the code within itself:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -5790,11 +5795,11 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <ul>
-<li>In Python 3, <code class="codehilite">raw_input()</code> is renamed to <code class="codehilite">input()</code> and the old <code class="codehilite">input()</code> is removed. If you want to use the old <code class="codehilite">input()</code>, you can do <code class="codehilite">eval(input())</code>.</li>
+<li>In Python 3, <code class="codehilite"><span class="n">raw_input</span><span class="p">()</span></code> is renamed to <code class="codehilite"><span class="k">input</span><span class="p">()</span></code> and the old <code class="codehilite"><span class="k">input</span><span class="p">()</span></code> is removed. If you want to use the old <code class="codehilite"><span class="k">input</span><span class="p">()</span></code>, you can do <code class="codehilite"><span class="n">eval</span><span class="p">(</span><span class="k">input</span><span class="p">())</span></code>.</li>
 </ul>
-<p><strong>Countermeasures to prevent errors: the Python debugger or <code class="codehilite">pdb</code></strong></p>
+<p><strong>Countermeasures to prevent errors: the Python debugger or <code class="codehilite"><span class="n">pdb</span></code></strong></p>
 <ul>
-<li><code class="codehilite">pdb</code> package.</li>
+<li><code class="codehilite"><span class="n">pdb</span></code> package.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -5815,7 +5820,7 @@ and extend their functionality.</li>
 </ul>
 </li>
 </ul>
-<p><strong>Countermeasurea to prevent errors: <code class="codehilite">try, except</code></strong></p>
+<p><strong>Countermeasurea to prevent errors: <code class="codehilite"><span class="n">try</span><span class="p">,</span> <span class="k">except</span></code></strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -5831,7 +5836,7 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <ul>
-<li><code class="codehilite">else</code> is optional and only executed if no exception was generated.</li>
+<li><code class="codehilite"><span class="k">else</span></code> is optional and only executed if no exception was generated.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -5857,25 +5862,25 @@ and extend their functionality.</li>
 
 <ul>
 <li>Usually, exceptions are typos and wrong entries:<ul>
-<li><code class="codehilite">SyntaxError</code>.</li>
-<li><code class="codehilite">IOError</code>.</li>
-<li><code class="codehilite">NameError</code>.</li>
-<li><code class="codehilite">ValueError</code>.</li>
+<li><code class="codehilite"><span class="n">SyntaxError</span></code>.</li>
+<li><code class="codehilite"><span class="n">IOError</span></code>.</li>
+<li><code class="codehilite"><span class="n">NameError</span></code>.</li>
+<li><code class="codehilite"><span class="n">ValueError</span></code>.</li>
 </ul>
 </li>
 <li>Rarely will we see:<ul>
-<li><code class="codehilite">IndexError</code>.</li>
-<li><code class="codehilite">KeyError</code>.</li>
-<li><code class="codehilite">ImportError</code>.</li>
-<li><code class="codehilite">TypeError</code>.</li>
-<li><code class="codehilite">AttributeError</code>.</li>
-<li><code class="codehilite">UnbounLocalError</code>.</li>
+<li><code class="codehilite"><span class="n">IndexError</span></code>.</li>
+<li><code class="codehilite"><span class="n">KeyError</span></code>.</li>
+<li><code class="codehilite"><span class="n">ImportError</span></code>.</li>
+<li><code class="codehilite"><span class="n">TypeError</span></code>.</li>
+<li><code class="codehilite"><span class="n">AttributeError</span></code>.</li>
+<li><code class="codehilite"><span class="n">UnbounLocalError</span></code>.</li>
 </ul>
 </li>
 </ul>
 <h3 id="chapter-13-using-external-modules-the-python-interface-to-r">Chapter 13, Using External Modules, The Python Interface to R<a class="headerlink" href="#chapter-13-using-external-modules-the-python-interface-to-r" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code class="codehilite">RPy2</code> package; bridge Python with R.</li>
+<li><code class="codehilite"><span class="n">RPy2</span></code> package; bridge Python with R.</li>
 </ul>
 <p>The R code:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -6050,14 +6055,14 @@ and extend their functionality.</li>
 
 <h3 id="chapter-14-building-program-pipelines">Chapter 14, Building Program Pipelines<a class="headerlink" href="#chapter-14-building-program-pipelines" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code class="codehilite">os</code> package.</li>
-<li><code class="codehilite">sys</code> package.</li>
+<li><code class="codehilite"><span class="n">os</span></code> package.</li>
+<li><code class="codehilite"><span class="n">sys</span></code> package.</li>
 </ul>
 <p><strong>Programs can work together with Python</strong></p>
 <ul>
 <li>Create path and file variables.</li>
 <li>Create command line.</li>
-<li>Execute commands from the command line (as if you did it with a mouse and keyboard) with <code class="codehilite">os.system</code>.</li>
+<li>Execute commands from the command line (as if you did it with a mouse and keyboard) with <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="k">system</span></code>.</li>
 </ul>
 <p><em>REF: Appendix D.</em></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -6081,11 +6086,11 @@ and extend their functionality.</li>
 <p><strong>Command lines in Python</strong></p>
 <ul>
 <li>UNIX to Python:<ul>
-<li>UNIX <code class="codehilite">pwd</code>; <code class="codehilite">print os.getcwd()</code>.</li>
-<li>UNIX <code class="codehilite">ls</code>; <code class="codehilite">print os.listdir(&#39;.&#39;)</code>.</li>
-<li>UNIX <code class="codehilite">cd</code>; <code class="codehilite">os.chdir(&#39;../data/&#39;)</code>.</li>
-<li>UNIX <code class="codehilite">mkdir</code>; <code class="codehilite">os.mkdir()</code>.</li>
-<li>UNIX <code class="codehilite">rmdir</code>; <code class="codehilite">os.rmdir()</code>.</li>
+<li>UNIX <code class="codehilite"><span class="n">pwd</span></code>; <code class="codehilite"><span class="n">print</span> <span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">()</span></code>.</li>
+<li>UNIX <code class="codehilite"><span class="n">ls</span></code>; <code class="codehilite"><span class="n">print</span> <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>.</li>
+<li>UNIX <code class="codehilite"><span class="n">cd</span></code>; <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;../data/&#39;</span><span class="p">)</span></code>.</li>
+<li>UNIX <code class="codehilite"><span class="n">mkdir</span></code>; <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">mkdir</span><span class="p">()</span></code>.</li>
+<li>UNIX <code class="codehilite"><span class="n">rmdir</span></code>; <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">rmdir</span><span class="p">()</span></code>.</li>
 <li>and many more.</li>
 </ul>
 </li>
@@ -6095,7 +6100,7 @@ and extend their functionality.</li>
 <li>Pipeline are scripts connecting programs to each other (run two or more external programs from command lines).</li>
 <li>A program that runs another program is a <em>wrapper</em>.</li>
 <li>Exchange filenames and data between programs.</li>
-<li><code class="codehilite">sys.argv</code>; Python program sorted parameters.</li>
+<li><code class="codehilite"><span class="n">sys</span><span class="p">.</span><span class="n">argv</span></code>; Python program sorted parameters.</li>
 <li><code class="codehilite"><span class="kn">import</span> <span class="nn">sys</span></code>; access or print them.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -6125,7 +6130,7 @@ and extend their functionality.</li>
 <ul>
 <li>One problem with pipelines is lagging. </li>
 <li>The system call of the second program should occur when the execution of the first program has finished, especially if the second one uses as input the output of the first one.</li>
-<li>Use subprocesses, such as <code class="codehilite">os.popen()</code> or <code class="codehilite">subprocess.call()</code>, to wait for the command to complete and return a value corresponding to the program exit status (0 for success, 256 for failure)</li>
+<li>Use subprocesses, such as <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">popen</span><span class="p">()</span></code> or <code class="codehilite"><span class="n">subprocess</span><span class="p">.</span><span class="k">call</span><span class="p">()</span></code>, to wait for the command to complete and return a value corresponding to the program exit status (0 for success, 256 for failure)</li>
 <li>A more robust trick is to insert an action and verify its success after a system call and before the subsequent system call.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -6172,12 +6177,12 @@ and extend their functionality.</li>
 
 <p><strong>Attributes</strong></p>
 <ul>
-<li><code class="codehilite">print dir()</code>; Visualize attributes.</li>
+<li><code class="codehilite"><span class="n">print</span> <span class="n">dir</span><span class="p">()</span></code>; Visualize attributes.</li>
 <li>Some attributes are module-specific, such as locatime, whereas others refer to modules in general:<ul>
-<li><code class="codehilite">__file__</code>; return the path of the module.</li>
-<li><code class="codehilite">__doc__</code>; return the module documentation, if present.</li>
-<li><code class="codehilite">__name__</code>; return the name of the imported file without the .py suffix if the module is imported and the string <code class="codehilite">&#39;__main__&#39;</code> is executed.<ul>
-<li>Execute <code class="codehilite">&lt;statements&gt;</code> only if the module is run from the command line and not imported by means of an import statement:</li>
+<li><code class="codehilite"><span class="n">__file__</span></code>; return the path of the module.</li>
+<li><code class="codehilite"><span class="n">__doc__</span></code>; return the module documentation, if present.</li>
+<li><code class="codehilite"><span class="n">__name__</span></code>; return the name of the imported file without the .py suffix if the module is imported and the string <code class="codehilite"><span class="s1">&#39;__main__&#39;</span></code> is executed.<ul>
+<li>Execute <code class="codehilite"><span class="o">&lt;</span><span class="n">statements</span><span class="o">&gt;</span></code> only if the module is run from the command line and not imported by means of an import statement:</li>
 </ul>
 </li>
 </ul>
@@ -6191,9 +6196,9 @@ and extend their functionality.</li>
 
 <p><strong>Working with files and directories</strong></p>
 <ul>
-<li><code class="codehilite">os.path</code> package.</li>
-<li><code class="codehilite">os.path.split(filename)</code>; split a filename from the directory names.</li>
-<li><code class="codehilite">os.path.exists(filename)</code>; verify if the file exists, return True or False.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span></code> package.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></code>; split a filename from the directory names.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="k">exists</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span></code>; verify if the file exists, return True or False.</li>
 </ul>
 <p><strong>Export the path</strong></p>
 <ul>
@@ -6201,7 +6206,7 @@ and extend their functionality.</li>
 <li>In PowerShell: <code class="codehilite"><span class="o">$</span><span class="nt">env</span><span class="p">:</span><span class="nd">PYTHONPATH</span> <span class="o">=</span> <span class="s2">&quot;$env:PYTHONPATH;.&quot;</span></code></li>
 </ul>
 </li>
-<li>In UNIX, enter in the bash: <code class="codehilite">export PYTHONPATH=.</code> or <code class="codehilite">add PYTHONPATH=.</code>.</li>
+<li>In UNIX, enter in the bash: <code class="codehilite"><span class="n">export</span> <span class="n">PYTHONPATH</span><span class="o">=</span><span class="p">.</span></code> or <code class="codehilite"><span class="k">add</span> <span class="n">PYTHONPATH</span><span class="o">=</span><span class="p">.</span></code>.</li>
 <li>In a Python code, add to the beginning of the script:</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -6213,7 +6218,7 @@ and extend their functionality.</li>
 </td></tr></table>
 
 <ul>
-<li>Or with <code class="codehilite">sys.path.append(&#39;pathmodules/&#39;)</code>.</li>
+<li>Or with <code class="codehilite"><span class="n">sys</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;pathmodules/&#39;</span><span class="p">)</span></code>.</li>
 </ul>
 <p><strong>Read files from directories</strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -6228,10 +6233,10 @@ and extend their functionality.</li>
 
 <ul>
 <li>
-<p><code class="codehilite">os.remove(&#39;log.txt&#39;)</code>; remove files.</p>
+<p><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;log.txt&#39;</span><span class="p">)</span></code>; remove files.</p>
 </li>
 <li>
-<p><code class="codehilite">tempfile</code> package;  create temporary files. </p>
+<p><code class="codehilite"><span class="n">tempfile</span></code> package;  create temporary files. </p>
 </li>
 </ul>
 <h3 id="chapter-15-writing-good-programs">Chapter 15, Writing Good Programs<a class="headerlink" href="#chapter-15-writing-good-programs" title="Permanent link">&para;</a></h3>
@@ -6303,21 +6308,21 @@ and extend their functionality.</li>
 <li>After each logical chunks of long functions, one empty line.</li>
 <li>Comment.</li>
 <li>Keep lines shorter than 80 characters long.</li>
-<li>Each class, function, and variable has a docstring; docstrings can be read with <code class="codehilite">print object.__doc__</code>.</li>
+<li>Each class, function, and variable has a docstring; docstrings can be read with <code class="codehilite"><span class="n">print</span> <span class="k">object</span><span class="p">.</span><span class="n">__doc__</span></code>.</li>
 </ul>
 <p><strong>Enforce PEP</strong></p>
 <ul>
-<li><code class="codehilite">pylint</code> package.<ul>
-<li><code class="codehilite">pylint</code> is a Python source code analyzer which looks for programming errors, helps enforcing a coding standard and sniffs for some code smells.</li>
+<li><code class="codehilite"><span class="n">pylint</span></code> package.<ul>
+<li><code class="codehilite"><span class="n">pylint</span></code> is a Python source code analyzer which looks for programming errors, helps enforcing a coding standard and sniffs for some code smells.</li>
 <li><a href="https://www.pylint.org/">Download</a> an install pylint.</li>
-<li>Or install it with <code class="codehilite">pip</code>.</li>
+<li>Or install it with <code class="codehilite"><span class="n">pip</span></code>.</li>
 <li><a href="https://www.pylint.org/">Doc</a></li>
-<li>Run <code class="codehilite">pylint python_file.py</code>.</li>
+<li>Run <code class="codehilite"><span class="n">pylint</span> <span class="n">python_file</span><span class="p">.</span><span class="n">py</span></code>.</li>
 </ul>
 </li>
-<li><code class="codehilite">flake8</code> package.<ul>
-<li><code class="codehilite">flake8</code> is a modular source code checker (a <em>wrapper</em>).</li>
-<li>It works with <code class="codehilite">pep8</code>, <code class="codehilite">pyflakes</code>, <code class="codehilite">pycodestyle</code>, and so on.</li>
+<li><code class="codehilite"><span class="n">flake8</span></code> package.<ul>
+<li><code class="codehilite"><span class="n">flake8</span></code> is a modular source code checker (a <em>wrapper</em>).</li>
+<li>It works with <code class="codehilite"><span class="n">pep8</span></code>, <code class="codehilite"><span class="n">pyflakes</span></code>, <code class="codehilite"><span class="n">pycodestyle</span></code>, and so on.</li>
 </ul>
 </li>
 </ul>
@@ -6349,16 +6354,16 @@ and extend their functionality.</li>
 <ul>
 <li>Non-programmer would rather want an execuble program they can unzip and run.</li>
 <li>Compile the code or freeze it!<ol>
-<li><code class="codehilite">cx_freeze</code> is a set of utilities that create standalone executables from python scripts for any platform or OS.<br />
-    i. There are alternatives to &lsquo;cx_freeze&rsquo; such as <code class="codehilite">bbfreeze</code>.</li>
-<li><code class="codehilite">pyinstaller</code> is a simpler alternative (it is not as flexible as <code class="codehilite">cx_freeze</code> but it can create single files).</li>
-<li><code class="codehilite">distutils</code> is a Python package that provides support for building and installing additional modules (libraries or packages) into a Python installation. The new modules may be either 100%-pure Python, written in C, or coded in both Python and C. <code class="codehilite">distutils</code> autogenerates an install script.<br />
-    i. Such distribution needs a <code class="codehilite">setup.py</code> file with the group of subdirectories and program files.<br />
-    i. <code class="codehilite">py2exe</code> is an extension to the <code class="codehilite">distutils</code> package to create executable files on Windows.<br />
-    i. <code class="codehilite">py2app</code> is an extension to the <code class="codehilite">distutils</code> packages to create executable files on OS X.</li>
-<li><code class="codehilite">nuitka</code> is a Python compiler, compatible with CPython.<br />
+<li><code class="codehilite"><span class="n">cx_freeze</span></code> is a set of utilities that create standalone executables from python scripts for any platform or OS.<br />
+    i. There are alternatives to &lsquo;cx_freeze&rsquo; such as <code class="codehilite"><span class="n">bbfreeze</span></code>.</li>
+<li><code class="codehilite"><span class="n">pyinstaller</span></code> is a simpler alternative (it is not as flexible as <code class="codehilite"><span class="n">cx_freeze</span></code> but it can create single files).</li>
+<li><code class="codehilite"><span class="n">distutils</span></code> is a Python package that provides support for building and installing additional modules (libraries or packages) into a Python installation. The new modules may be either 100%-pure Python, written in C, or coded in both Python and C. <code class="codehilite"><span class="n">distutils</span></code> autogenerates an install script.<br />
+    i. Such distribution needs a <code class="codehilite"><span class="n">setup</span><span class="p">.</span><span class="n">py</span></code> file with the group of subdirectories and program files.<br />
+    i. <code class="codehilite"><span class="n">py2exe</span></code> is an extension to the <code class="codehilite"><span class="n">distutils</span></code> package to create executable files on Windows.<br />
+    i. <code class="codehilite"><span class="n">py2app</span></code> is an extension to the <code class="codehilite"><span class="n">distutils</span></code> packages to create executable files on OS X.</li>
+<li><code class="codehilite"><span class="n">nuitka</span></code> is a Python compiler, compatible with CPython.<br />
     i. CPython is a source code interpreter with an interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.</li>
-<li><code class="codehilite">pypy</code> is an alternative to <code class="codehilite">nuitka</code>.</li>
+<li><code class="codehilite"><span class="n">pypy</span></code> is an alternative to <code class="codehilite"><span class="n">nuitka</span></code>.</li>
 <li>Cython is a compiled language that generates CPython extension modules.</li>
 <li>Jython does the same, but in Java.</li>
 </ol>
@@ -6382,18 +6387,18 @@ and extend their functionality.</li>
 <h2 id="part-4-data-visualization">Part 4, Data Visualization<a class="headerlink" href="#part-4-data-visualization" title="Permanent link">&para;</a></h2>
 <h3 id="chapter-16-creating-scientific-diagrams">Chapter 16, Creating Scientific Diagrams<a class="headerlink" href="#chapter-16-creating-scientific-diagrams" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code class="codehilite">matplotlib</code> package.</li>
-<li><code class="codehilite">Pillow</code> or <code class="codehilite">PIL</code> package.</li>
+<li><code class="codehilite"><span class="n">matplotlib</span></code> package.</li>
+<li><code class="codehilite"><span class="n">Pillow</span></code> or <code class="codehilite"><span class="n">PIL</span></code> package.</li>
 <li>Tip: install the entire SciPy Stack: (Python (2.x &gt;= 2.6 or 3.x &gt;= 3.2), NumPy (&gt;= 1.6), SciPy library (&gt;= 0.10), Matplotlib (&gt;= 1.1) with dateutil and pytz, IPython (&gt;= 0.13) with pyzmq and tornado, pandas (&gt;= 0.8), Sympy (&gt;= 0.7), nose (&gt;= 1.1).</li>
-<li><code class="codehilite">Matplotlib</code> depends on <code class="codehilite">Pillow</code> for reading and saving JPEG, BMP, and TIFF image files. <code class="codehilite">Matplotlib</code> requires MiKTeX and GhostScript for rendering text with LaTeX. FFmpeg, avconv, mencoder, or ImageMagick are required for the animation module. Add <code class="codehilite">nose</code>, <code class="codehilite">mock</code>, and Inkscape.</li>
+<li><code class="codehilite"><span class="n">Matplotlib</span></code> depends on <code class="codehilite"><span class="n">Pillow</span></code> for reading and saving JPEG, BMP, and TIFF image files. <code class="codehilite"><span class="n">Matplotlib</span></code> requires MiKTeX and GhostScript for rendering text with LaTeX. FFmpeg, avconv, mencoder, or ImageMagick are required for the animation module. Add <code class="codehilite"><span class="n">nose</span></code>, <code class="codehilite"><span class="n">mock</span></code>, and Inkscape.</li>
 </ul>
 <p><strong>Draw a simple line plot</strong></p>
 <ul>
-<li>Provide <code class="codehilite">(x, y)</code> points.</li>
-<li><code class="codehilite">figure()</code>; main function is</li>
-<li><code class="codehilite">plot()</code>.</li>
-<li><code class="codehilite">savefig()</code>; save the plot in a file.</li>
-<li><code class="codehilite">show()</code>; show the plot in a window.</li>
+<li>Provide <code class="codehilite"><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code> points.</li>
+<li><code class="codehilite"><span class="n">figure</span><span class="p">()</span></code>; main function is</li>
+<li><code class="codehilite"><span class="n">plot</span><span class="p">()</span></code>.</li>
+<li><code class="codehilite"><span class="n">savefig</span><span class="p">()</span></code>; save the plot in a file.</li>
+<li><code class="codehilite"><span class="k">show</span><span class="ss">()</span></code>; show the plot in a window.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -6419,8 +6424,8 @@ and extend their functionality.</li>
 <p><img alt="Figure 1" src="../img/managing_your_biological/figure1.png" /></p>
 <p><strong>Plot a sine function</strong></p>
 <ul>
-<li>Generate <code class="codehilite">(x, y)</code> points; first the <code class="codehilite">x</code>; then generate the <code class="codehilite">y</code> with the <code class="codehilite">x</code>.</li>
-<li><code class="codehilite">plot()</code> with a line type <code class="codehilite">&#39;kd&#39;</code> and <code class="codehilite">linewidth = 1</code>.</li>
+<li>Generate <code class="codehilite"><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code> points; first the <code class="codehilite"><span class="n">x</span></code>; then generate the <code class="codehilite"><span class="n">y</span></code> with the <code class="codehilite"><span class="n">x</span></code>.</li>
+<li><code class="codehilite"><span class="n">plot</span><span class="p">()</span></code> with a line type <code class="codehilite"><span class="s1">&#39;kd&#39;</span></code> and <code class="codehilite"><span class="n">linewidth</span> <span class="o">=</span> <span class="mi">1</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -6454,9 +6459,9 @@ and extend their functionality.</li>
 <p><img alt="Sin Function" src="../img/managing_your_biological/sinfunc.png" /></p>
 <p><strong>Draw a histogram</strong></p>
 <ul>
-<li>Provide the <code class="codehilite">(x, y)</code> points in lists, and the number of bins.</li>
-<li><code class="codehilite">hist()</code> needs <code class="codehilite">data</code> points and <code class="codehilite">n_bins</code>.</li>
-<li><code class="codehilite">alpha</code> stands for the graph color transparency.</li>
+<li>Provide the <code class="codehilite"><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code> points in lists, and the number of bins.</li>
+<li><code class="codehilite"><span class="n">hist</span><span class="p">()</span></code> needs <code class="codehilite"><span class="k">data</span></code> points and <code class="codehilite"><span class="n">n_bins</span></code>.</li>
+<li><code class="codehilite"><span class="n">alpha</span></code> stands for the graph color transparency.</li>
 <li>Add a title, labels, axes, and gridlines.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
@@ -6495,11 +6500,11 @@ and extend their functionality.</li>
 <p><img alt="Histogram" src="../img/managing_your_biological/histogram.png" /></p>
 <p><strong>Draw a bar plot</strong></p>
 <ul>
-<li><code class="codehilite">count</code>: two series, <code class="codehilite">x1</code> and <code class="codehilite">x2</code> with each four categories, <code class="codehilite">nucleotides</code>. </li>
+<li><code class="codehilite"><span class="k">count</span></code>: two series, <code class="codehilite"><span class="n">x1</span></code> and <code class="codehilite"><span class="n">x2</span></code> with each four categories, <code class="codehilite"><span class="n">nucleotides</span></code>. </li>
 <li>Add a title, labels, axes and ticks to the axes, and a legend.</li>
-<li><code class="codehilite">xticks(x1, nucleotides)</code>,  where the first element is the list of <code class="codehilite">x</code> points and the second element is the label variable.</li>
-<li><code class="codehilite">legend()</code> takes the labels of all data sets that are plotted.</li>
-<li><code class="codehilite">axis()</code> is set with a list [from left to right, bottom,  and top].</li>
+<li><code class="codehilite"><span class="n">xticks</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">nucleotides</span><span class="p">)</span></code>,  where the first element is the list of <code class="codehilite"><span class="n">x</span></code> points and the second element is the label variable.</li>
+<li><code class="codehilite"><span class="n">legend</span><span class="p">()</span></code> takes the labels of all data sets that are plotted.</li>
+<li><code class="codehilite"><span class="n">axis</span><span class="p">()</span></code> is set with a list [from left to right, bottom,  and top].</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -6559,8 +6564,8 @@ and extend their functionality.</li>
 <p><img alt="Bar Plot" src="../img/managing_your_biological/barplot.png" /></p>
 <p><strong>Add error bars to a scatterplot or a bar chart</strong></p>
 <ul>
-<li><code class="codehilite">errorbar()</code>.</li>
-<li><code class="codehilite">bar()</code>.</li>
+<li><code class="codehilite"><span class="n">errorbar</span><span class="p">()</span></code>.</li>
+<li><code class="codehilite"><span class="n">bar</span><span class="p">()</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -6647,24 +6652,24 @@ and extend their functionality.</li>
 <p><img alt="Pie Chart" src="../img/managing_your_biological/piechart.png" /></p>
 <ul>
 <li>It is possible to use math symbols, subscripts, and superscripts in the strings:<ul>
-<li><code class="codehilite">xlabel(&#39;protein concentration [mM]&#39;)</code>.</li>
-<li><code class="codehilite">xlabel(&#39;protein concentration [$\muM$]&#39;)</code>.</li>
+<li><code class="codehilite"><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;protein concentration [mM]&#39;</span><span class="p">)</span><span class="w"></span></code>.</li>
+<li><code class="codehilite"><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;protein concentration [$\muM$]&#39;</span><span class="p">)</span></code>.</li>
 </ul>
 </li>
 <li>It is possible to use placeholder for variables such as:<ul>
-<li><code class="codehilite">&quot;4.1f%%&quot; % (variable)</code>.</li>
-<li><code class="codehilite">&quot;2i%&quot; % (variable)</code>.</li>
+<li><code class="codehilite"><span class="ss">&quot;4.1f%%&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="k">variable</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="ss">&quot;2i%&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="k">variable</span><span class="p">)</span></code>.</li>
 <li>etc. </li>
 <li>The <code class="codehilite"><span class="c">%%</span></code> stands for percentage.</li>
 </ul>
 </li>
-<li>Change the image file resolution (dpi = 100 or 150 or 300 or 600) as in <code class="codehilite">savefig(&#39;chart.png&#39;, dpi=150)</code>.</li>
+<li>Change the image file resolution (dpi = 100 or 150 or 300 or 600) as in <code class="codehilite"><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;chart.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span></code>.</li>
 <li>Colors are based on the PIL library.</li>
 <li>PIL has 140 colors (X11 color names) such as:<ul>
-<li><code class="codehilite">&#39;red&#39;</code>, <code class="codehilite">&#39;lightred&#39;</code>, <code class="codehilite">&#39;magenta&#39;</code>, etc.</li>
-<li>in RGB, red is <code class="codehilite">(255, 0, 0)</code>.</li>
-<li>white is <code class="codehilite">(255, 255, 255)</code> or <code class="codehilite">&#39;#ffffff&#39;</code>.</li>
-<li>&lsquo;black&rsquo; is <code class="codehilite">(0, 0, 0)</code> or <code class="codehilite">&#39;#000000&#39;</code>.</li>
+<li><code class="codehilite"><span class="s1">&#39;red&#39;</span></code>, <code class="codehilite"><span class="s1">&#39;lightred&#39;</span></code>, <code class="codehilite"><span class="s1">&#39;magenta&#39;</span></code>, etc.</li>
+<li>in RGB, red is <code class="codehilite"><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code>.</li>
+<li>white is <code class="codehilite"><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span></code> or <code class="codehilite"><span class="s1">&#39;#ffffff&#39;</span></code>.</li>
+<li>&lsquo;black&rsquo; is <code class="codehilite"><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></code> or <code class="codehilite"><span class="s1">&#39;#000000&#39;</span></code>.</li>
 <li>etc.</li>
 </ul>
 </li>
@@ -6672,7 +6677,7 @@ and extend their functionality.</li>
 </ul>
 <h3 id="chapter-18-manipulating-images">Chapter 18, Manipulating Images<a class="headerlink" href="#chapter-18-manipulating-images" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code class="codehilite">Pillow</code> or <code class="codehilite">PIL</code> package.</li>
+<li><code class="codehilite"><span class="n">Pillow</span></code> or <code class="codehilite"><span class="n">PIL</span></code> package.</li>
 </ul>
 <p><strong>Paste a small image into a big one</strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -6752,14 +6757,14 @@ and extend their functionality.</li>
 </pre></div>
 </td></tr></table>
 
-<p>For <code class="codehilite">os.listdir(&#39;.&#39;)</code>, consult <a href="#chapter-14,-building-program-pipelines,-command-line-in-python">Chapter 14, Building Program Pipelines, Command lines in Python</a>.</p>
+<p>For <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span></code>, consult <a href="#chapter-14,-building-program-pipelines,-command-line-in-python">Chapter 14, Building Program Pipelines, Command lines in Python</a>.</p>
 <p><strong>Draw an image of a plasmid</strong></p>
 <ul>
-<li>Use constant variable: <code class="codehilite">PLASMID_LENGTH = 4361</code> is the total number of base pairs in the entire plastmid, <code class="codehilite">SIZE = (500, 500)</code> is the size of the entire image, <code class="codehilite">CENTER = (250, 250)</code> is the center point of the plasmid circle, the center of the image.</li>
-<li>Create an image: <code class="codehilite">pBR322 = Image.new(&#39;RGB&#39;, SIZE, &#39;white&#39;)</code>. <code class="codehilite">&#39;RGB&#39;</code> color scheme, <code class="codehilite">SIZE = (x, y)</code> size in pixels, <code class="codehilite">&#39;white&#39;</code> set the background color.</li>
-<li>Draw object <code class="codehilite">pBR322</code>: <code class="codehilite">DRAW = ImageDraw.Draw(pBR322)</code>.</li>
-<li>The image object is now in object <code class="codehilite">DRAW</code>.</li>
-<li>Finally, save the object: <code class="codehilite">pBR322.save(&#39;plasmid_pBR322.png&#39;)</code>.</li>
+<li>Use constant variable: <code class="codehilite"><span class="n">PLASMID_LENGTH</span> <span class="o">=</span> <span class="mi">4361</span></code> is the total number of base pairs in the entire plastmid, <code class="codehilite"><span class="k">SIZE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span></code> is the size of the entire image, <code class="codehilite"><span class="n">CENTER</span> <span class="o">=</span> <span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">)</span></code> is the center point of the plasmid circle, the center of the image.</li>
+<li>Create an image: <code class="codehilite"><span class="n">pBR322</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="k">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="k">SIZE</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">)</span></code>. <code class="codehilite"><span class="s1">&#39;RGB&#39;</span></code> color scheme, <code class="codehilite"><span class="k">SIZE</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code> size in pixels, <code class="codehilite"><span class="s1">&#39;white&#39;</span></code> set the background color.</li>
+<li>Draw object <code class="codehilite"><span class="n">pBR322</span></code>: <code class="codehilite"><span class="n">DRAW</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="p">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">pBR322</span><span class="p">)</span></code>.</li>
+<li>The image object is now in object <code class="codehilite"><span class="n">DRAW</span></code>.</li>
+<li>Finally, save the object: <code class="codehilite"><span class="n">pBR322</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;plasmid_pBR322.png&#39;</span><span class="p">)</span></code>.</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -6867,48 +6872,48 @@ and extend their functionality.</li>
 <li>TIF; bigger and more precise than PNG.</li>
 </ul>
 </li>
-<li><code class="codehilite">image = Image.open(&#39;color.png&#39;, &#39;r&#39;)</code>; read the object.</li>
+<li><code class="codehilite"><span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="k">open</span><span class="p">(</span><span class="s1">&#39;color.png&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span></code>; read the object.</li>
 <li>Write points:<ul>
-<li><code class="codehilite">point = (100, 100)</code>; with tuples (x, y); x pixels from the left border, y pixels from the top of the image.</li>
+<li><code class="codehilite"><span class="n">point</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></code>; with tuples (x, y); x pixels from the left border, y pixels from the top of the image.</li>
 </ul>
 </li>
 <li>Write rectangles<ul>
-<li><code class="codehilite">BOX = (100, 100, 150, 150)</code>; with tuple (x, y, x&rsquo;, y&rsquo;); <code class="codehilite">BOX</code> becomes a constant.</li>
-<li><code class="codehilite">DRAW.rectangle(BOX, fill = &#39;lightblue&#39;, outline = &#39;black&#39;)</code></li>
+<li><code class="codehilite"><span class="n">BOX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">)</span></code>; with tuple (x, y, x&rsquo;, y&rsquo;); <code class="codehilite"><span class="n">BOX</span></code> becomes a constant.</li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">BOX</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">outline</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span></code></li>
 </ul>
 </li>
 <li>Draw circles inside &lsquo;guidelines&rsquo; or a rectangle:<ul>
-<li><code class="codehilite">DRAW.pieslice((50, 50, 450, 450), 0, 360, fill = &#39;grey&#39;)</code>.</li>
-<li><code class="codehilite">DRAW.pieslice((50, 50, 450, 450), 0, 360, fill = (0, 0, 0))</code>.</li>
-<li><code class="codehilite">DRAW.pieslice((50, 50, 450, 450), 0, 360, fill = &#39;#ffffff&#39;)</code>.</li>
-<li><code class="codehilite">BOX = (50, 50, 450, 450)</code><ul>
-<li><code class="codehilite">DRAW.pieslice(BOX, 0, 360, fill = &#39;grey&#39;, outline = &#39;black&#39;)</code></li>
-<li><code class="codehilite">DRAW.pieslice(BOX, 7, 106, fill = &#39;blue&#39;)</code></li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">pieslice</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">pieslice</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code>.</li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">pieslice</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;#ffffff&#39;</span><span class="p">)</span></code>.</li>
+<li><code class="codehilite"><span class="n">BOX</span> <span class="o">=</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">450</span><span class="p">)</span></code><ul>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">pieslice</span><span class="p">(</span><span class="n">BOX</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;grey&#39;</span><span class="p">,</span> <span class="n">outline</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span></code></li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">pieslice</span><span class="p">(</span><span class="n">BOX</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">106</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span></code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Draw an arc:<ul>
-<li><code class="codehilite">DRAW.arc(BOX, 0, 360, fill = &#39;black&#39;)</code></li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">arc</span><span class="p">(</span><span class="n">BOX</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span></code></li>
 </ul>
 </li>
 <li>Draw a polygon:<ul>
-<li><code class="codehilite">DRAW.polygon((point1, point2, point3) fill = &#39;lightblue&#39;, outline = &#39;blue&#39;)</code></li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">polygon</span><span class="p">((</span><span class="n">point1</span><span class="p">,</span> <span class="n">point2</span><span class="p">,</span> <span class="n">point3</span><span class="p">)</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">outline</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span></code></li>
 </ul>
 </li>
 <li>Draw a line:<ul>
-<li><code class="codehilite">ECOR1 = angle(4359)</code></li>
-<li><code class="codehilite">p1 = coord(ECOR1, CENTER, 160)</code></li>
-<li><code class="codehilite">p1 = coord(ECOR1, CENTER, 210)</code></li>
-<li><code class="codehilite">DRAW.line((p1, p2), fill = &#39;black&#39;, width = 3)</code></li>
+<li><code class="codehilite"><span class="n">ECOR1</span> <span class="o">=</span> <span class="n">angle</span><span class="p">(</span><span class="mi">4359</span><span class="p">)</span></code></li>
+<li><code class="codehilite"><span class="n">p1</span> <span class="o">=</span> <span class="n">coord</span><span class="p">(</span><span class="n">ECOR1</span><span class="p">,</span> <span class="n">CENTER</span><span class="p">,</span> <span class="mi">160</span><span class="p">)</span></code></li>
+<li><code class="codehilite"><span class="n">p1</span> <span class="o">=</span> <span class="n">coord</span><span class="p">(</span><span class="n">ECOR1</span><span class="p">,</span> <span class="n">CENTER</span><span class="p">,</span> <span class="mi">210</span><span class="p">)</span></code></li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="n">line</span><span class="p">((</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">),</span> <span class="n">fill</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span></code></li>
 </ul>
 </li>
 <li>Rotate the image:<ul>
-<li><code class="codehilite">pBR322 = pBR322.rotate(45)</code></li>
+<li><code class="codehilite"><span class="n">pBR322</span> <span class="o">=</span> <span class="n">pBR322</span><span class="p">.</span><span class="n">rotate</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span></code></li>
 </ul>
 </li>
 <li>Add text:<ul>
-<li><code class="codehilite">DRAW.text((370, 240), &quot;EcoR1&quot;, fill = &quot;black&quot;)</code></li>
+<li><code class="codehilite"><span class="n">DRAW</span><span class="p">.</span><span class="nb">text</span><span class="p">((</span><span class="mi">370</span><span class="p">,</span> <span class="mi">240</span><span class="p">),</span> <span class="ss">&quot;EcoR1&quot;</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="ss">&quot;black&quot;</span><span class="p">)</span></code></li>
 </ul>
 </li>
 </ul>
@@ -7265,25 +7270,17 @@ RNSEMHAPXFWKJIYTZGVOCBQDLU
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Datetime
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -326,7 +331,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-datatime-library" title="The datatime library" class="md-nav__link">
+  <a href="#the-datatime-library" class="md-nav__link">
     The datatime library
   </a>
   
@@ -334,42 +339,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#now-or-any-date-time" title="now or any date-time" class="md-nav__link">
+  <a href="#now-or-any-date-time" class="md-nav__link">
     now or any date-time
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#date-time-difference" title="Date-time difference" class="md-nav__link">
+  <a href="#date-time-difference" class="md-nav__link">
     Date-time difference
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#measure-duration-with-timedelta" title="Measure duration with timedelta" class="md-nav__link">
+  <a href="#measure-duration-with-timedelta" class="md-nav__link">
     Measure duration with timedelta
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#now-vs-today" title="now vs. today" class="md-nav__link">
+  <a href="#now-vs-today" class="md-nav__link">
     now vs. today
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#formatting-date-time" title="Formatting date-time" class="md-nav__link">
+  <a href="#formatting-date-time" class="md-nav__link">
     Formatting date-time
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-little-printing-app" title="A little printing app" class="md-nav__link">
+  <a href="#a-little-printing-app" class="md-nav__link">
     A little printing app
   </a>
   
@@ -381,7 +386,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-a-quiz-application" title="Build a Quiz application" class="md-nav__link">
+  <a href="#build-a-quiz-application" class="md-nav__link">
     Build a Quiz application
   </a>
   
@@ -389,21 +394,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#build-the-skeleton" title="Build the skeleton" class="md-nav__link">
+  <a href="#build-the-skeleton" class="md-nav__link">
     Build the skeleton
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#generate-questions" title="Generate questions" class="md-nav__link">
+  <a href="#generate-questions" class="md-nav__link">
     Generate questions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#finalize-the-application" title="Finalize the application" class="md-nav__link">
+  <a href="#finalize-the-application" class="md-nav__link">
     Finalize the application
   </a>
   
@@ -415,7 +420,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#time-zones" title="Time zones" class="md-nav__link">
+  <a href="#time-zones" class="md-nav__link">
     Time zones
   </a>
   
@@ -423,28 +428,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#time-zones-with-datatime-only" title="Time zones with datatime only" class="md-nav__link">
+  <a href="#time-zones-with-datatime-only" class="md-nav__link">
     Time zones with datatime only
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#time-zones-with-datatime-and-pytz" title="Time zones with datatime and pytz" class="md-nav__link">
+  <a href="#time-zones-with-datatime-and-pytz" class="md-nav__link">
     Time zones with datatime and pytz
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#find-out-more-about-pytz" title="Find out more about pytz" class="md-nav__link">
+  <a href="#find-out-more-about-pytz" class="md-nav__link">
     Find out more about pytz
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-a-script-to-convert-time-zones" title="Build a script to convert time zones" class="md-nav__link">
+  <a href="#build-a-script-to-convert-time-zones" class="md-nav__link">
     Build a script to convert time zones
   </a>
   
@@ -910,7 +915,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-datatime-library" title="The datatime library" class="md-nav__link">
+  <a href="#the-datatime-library" class="md-nav__link">
     The datatime library
   </a>
   
@@ -918,42 +923,42 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#now-or-any-date-time" title="now or any date-time" class="md-nav__link">
+  <a href="#now-or-any-date-time" class="md-nav__link">
     now or any date-time
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#date-time-difference" title="Date-time difference" class="md-nav__link">
+  <a href="#date-time-difference" class="md-nav__link">
     Date-time difference
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#measure-duration-with-timedelta" title="Measure duration with timedelta" class="md-nav__link">
+  <a href="#measure-duration-with-timedelta" class="md-nav__link">
     Measure duration with timedelta
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#now-vs-today" title="now vs. today" class="md-nav__link">
+  <a href="#now-vs-today" class="md-nav__link">
     now vs. today
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#formatting-date-time" title="Formatting date-time" class="md-nav__link">
+  <a href="#formatting-date-time" class="md-nav__link">
     Formatting date-time
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#a-little-printing-app" title="A little printing app" class="md-nav__link">
+  <a href="#a-little-printing-app" class="md-nav__link">
     A little printing app
   </a>
   
@@ -965,7 +970,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-a-quiz-application" title="Build a Quiz application" class="md-nav__link">
+  <a href="#build-a-quiz-application" class="md-nav__link">
     Build a Quiz application
   </a>
   
@@ -973,21 +978,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#build-the-skeleton" title="Build the skeleton" class="md-nav__link">
+  <a href="#build-the-skeleton" class="md-nav__link">
     Build the skeleton
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#generate-questions" title="Generate questions" class="md-nav__link">
+  <a href="#generate-questions" class="md-nav__link">
     Generate questions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#finalize-the-application" title="Finalize the application" class="md-nav__link">
+  <a href="#finalize-the-application" class="md-nav__link">
     Finalize the application
   </a>
   
@@ -999,7 +1004,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#time-zones" title="Time zones" class="md-nav__link">
+  <a href="#time-zones" class="md-nav__link">
     Time zones
   </a>
   
@@ -1007,28 +1012,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#time-zones-with-datatime-only" title="Time zones with datatime only" class="md-nav__link">
+  <a href="#time-zones-with-datatime-only" class="md-nav__link">
     Time zones with datatime only
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#time-zones-with-datatime-and-pytz" title="Time zones with datatime and pytz" class="md-nav__link">
+  <a href="#time-zones-with-datatime-and-pytz" class="md-nav__link">
     Time zones with datatime and pytz
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#find-out-more-about-pytz" title="Find out more about pytz" class="md-nav__link">
+  <a href="#find-out-more-about-pytz" class="md-nav__link">
     Find out more about pytz
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#build-a-script-to-convert-time-zones" title="Build a script to convert time zones" class="md-nav__link">
+  <a href="#build-a-script-to-convert-time-zones" class="md-nav__link">
     Build a script to convert time zones
   </a>
   
@@ -1063,10 +1068,10 @@
                 <p><strong>Foreword</strong></p>
 <p>Notes. Python 2 &amp; 3. Consult the <a href="http://docs.python-guide.org/en/latest/">Hitchicker&rsquo;s Guide to Python</a>.</p>
 <hr />
-<h2 id="the-datatime-library">The <code class="codehilite">datatime</code> library<a class="headerlink" href="#the-datatime-library" title="Permanent link">&para;</a></h2>
+<h2 id="the-datatime-library">The <code class="codehilite"><span class="n">datatime</span></code> library<a class="headerlink" href="#the-datatime-library" title="Permanent link">&para;</a></h2>
 <p>When building an application incorporating a time triggers, events, records log entries, and much more, we need to deal with dates and times; and time zones. Whether it is a simple script that starts every morning to scrape web data, build a report, and send emails or a comprehensive web framework script that records data entries.</p>
-<h3 id="now-or-any-date-time"><code class="codehilite">now</code> or any date-time<a class="headerlink" href="#now-or-any-date-time" title="Permanent link">&para;</a></h3>
-<p>The <code class="codehilite">datatime</code> library has handy built-in functions: <code class="codehilite">date</code>, <code class="codehilite">time</code>, <code class="codehilite">datetime</code>, <code class="codehilite">timedelta</code>, and <code class="codehilite">tzinfo</code>. The following script demonstrates some of the functionalities.</p>
+<h3 id="now-or-any-date-time"><code class="codehilite"><span class="n">now</span></code> or any date-time<a class="headerlink" href="#now-or-any-date-time" title="Permanent link">&para;</a></h3>
+<p>The <code class="codehilite"><span class="n">datatime</span></code> library has handy built-in functions: <code class="codehilite"><span class="nb">date</span></code>, <code class="codehilite"><span class="n">time</span></code>, <code class="codehilite"><span class="n">datetime</span></code>, <code class="codehilite"><span class="n">timedelta</span></code>, and <code class="codehilite"><span class="n">tzinfo</span></code>. The following script demonstrates some of the functionalities.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1195,7 +1200,7 @@ minutes (round(seconds/60)) =  144.0
 </pre></div>
 </td></tr></table>
 
-<h3 id="measure-duration-with-timedelta">Measure duration with <code class="codehilite">timedelta</code><a class="headerlink" href="#measure-duration-with-timedelta" title="Permanent link">&para;</a></h3>
+<h3 id="measure-duration-with-timedelta">Measure duration with <code class="codehilite"><span class="n">timedelta</span></code><a class="headerlink" href="#measure-duration-with-timedelta" title="Permanent link">&para;</a></h3>
 <p>Create a delta.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1294,7 +1299,7 @@ datetime.datetime.now() + datetime.timedelta(hours=work):
 </pre></div>
 </td></tr></table>
 
-<p>Use <code class="codehilite">timedelta</code>.</p>
+<p>Use <code class="codehilite"><span class="n">timedelta</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1414,8 +1419,8 @@ Appointment:
 </pre></div>
 </td></tr></table>
 
-<h3 id="now-vs-today"><code class="codehilite">now</code> vs. <code class="codehilite">today</code><a class="headerlink" href="#now-vs-today" title="Permanent link">&para;</a></h3>
-<p>The difference between <code class="codehilite">now</code> and <code class="codehilite">today</code> is&hellip;</p>
+<h3 id="now-vs-today"><code class="codehilite"><span class="n">now</span></code> vs. <code class="codehilite"><span class="n">today</span></code><a class="headerlink" href="#now-vs-today" title="Permanent link">&para;</a></h3>
+<p>The difference between <code class="codehilite"><span class="n">now</span></code> and <code class="codehilite"><span class="n">today</span></code> is&hellip;</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1443,7 +1448,7 @@ Appointment:
 </pre></div>
 </td></tr></table>
 
-<p>&hellip;<code class="codehilite">now</code> can take a timezone. We deal with timezones further down. <code class="codehilite">Today</code>&hellip;</p>
+<p>&hellip;<code class="codehilite"><span class="n">now</span></code> can take a timezone. We deal with timezones further down. <code class="codehilite"><span class="n">Today</span></code>&hellip;</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1518,7 +1523,7 @@ April 08
 </pre></div>
 </td></tr></table>
 
-<p><code class="codehilite">strptime</code> (strings-parse-time) turns strings into datetime digits. Look for help online for date and time types.</p>
+<p><code class="codehilite"><span class="n">strptime</span></code> (strings-parse-time) turns strings into datetime digits. Look for help online for date and time types.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2209,7 +2214,7 @@ It took you 21 seconds total.
 
 <h2 id="time-zones">Time zones<a class="headerlink" href="#time-zones" title="Permanent link">&para;</a></h2>
 <p>Timezones are major challenges for websites and web frameworks. The following is coded in Python 3 since the most common Python frameworks (Flask, Django, Pyramid) at the time this documentation is written work under Python 3. One of the reason is the multi-language ability.</p>
-<h3 id="time-zones-with-datatime-only">Time zones with <code class="codehilite">datatime</code> only<a class="headerlink" href="#time-zones-with-datatime-only" title="Permanent link">&para;</a></h3>
+<h3 id="time-zones-with-datatime-only">Time zones with <code class="codehilite"><span class="n">datatime</span></code> only<a class="headerlink" href="#time-zones-with-datatime-only" title="Permanent link">&para;</a></h3>
 <p>We build two timezone-aware variables.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2317,8 +2322,8 @@ UTC+05:30
 </pre></div>
 </td></tr></table>
 
-<h3 id="time-zones-with-datatime-and-pytz">Time zones with <code class="codehilite">datatime</code> and <code class="codehilite">pytz</code><a class="headerlink" href="#time-zones-with-datatime-and-pytz" title="Permanent link">&para;</a></h3>
-<p><code class="codehilite">pytz</code> simplify things (a lot!).</p>
+<h3 id="time-zones-with-datatime-and-pytz">Time zones with <code class="codehilite"><span class="n">datatime</span></code> and <code class="codehilite"><span class="n">pytz</span></code><a class="headerlink" href="#time-zones-with-datatime-and-pytz" title="Permanent link">&para;</a></h3>
+<p><code class="codehilite"><span class="n">pytz</span></code> simplify things (a lot!).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2488,8 +2493,8 @@ convert it, change location:
 </pre></div>
 </td></tr></table>
 
-<h3 id="find-out-more-about-pytz">Find out more about <code class="codehilite">pytz</code><a class="headerlink" href="#find-out-more-about-pytz" title="Permanent link">&para;</a></h3>
-<p>Find out about timezones: <code class="codehilite">print(pytz.all_timezones)</code>. Or focus on a country&rsquo;s timezones. The US.</p>
+<h3 id="find-out-more-about-pytz">Find out more about <code class="codehilite"><span class="n">pytz</span></code><a class="headerlink" href="#find-out-more-about-pytz" title="Permanent link">&para;</a></h3>
+<p>Find out about timezones: <code class="codehilite"><span class="n">print</span><span class="p">(</span><span class="n">pytz</span><span class="p">.</span><span class="n">all_timezones</span><span class="p">)</span></code>. Or focus on a country&rsquo;s timezones. The US.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">pytz</span><span class="o">.</span><span class="n">country_timezones</span><span class="p">[</span><span class="s1">&#39;us&#39;</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
@@ -2664,25 +2669,17 @@ convert it, change location:
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

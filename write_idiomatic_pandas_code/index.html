@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Write Idiomatic Pandas Code
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -614,7 +619,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#load-and-explore-the-data" title="Load and Explore the Data" class="md-nav__link">
+  <a href="#load-and-explore-the-data" class="md-nav__link">
     Load and Explore the Data
   </a>
   
@@ -622,14 +627,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-data" title="The Data" class="md-nav__link">
+  <a href="#the-data" class="md-nav__link">
     The Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quickly-inspecting-the-data" title="Quickly Inspecting the Data" class="md-nav__link">
+  <a href="#quickly-inspecting-the-data" class="md-nav__link">
     Quickly Inspecting the Data
   </a>
   
@@ -641,14 +646,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#index-and-pull-values" title="Index and Pull Values" class="md-nav__link">
+  <a href="#index-and-pull-values" class="md-nav__link">
     Index and Pull Values
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-chaining" title="Method Chaining" class="md-nav__link">
+  <a href="#method-chaining" class="md-nav__link">
     Method Chaining
   </a>
   
@@ -656,14 +661,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clean-the-data" title="Clean the Data" class="md-nav__link">
+  <a href="#clean-the-data" class="md-nav__link">
     Clean the Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#concatenate-into-a-single-dataframe" title="Concatenate into a single DataFrame" class="md-nav__link">
+  <a href="#concatenate-into-a-single-dataframe" class="md-nav__link">
     Concatenate into a single DataFrame
   </a>
   
@@ -675,7 +680,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#memory-optimization" title="Memory Optimization" class="md-nav__link">
+  <a href="#memory-optimization" class="md-nav__link">
     Memory Optimization
   </a>
   
@@ -683,7 +688,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cast-object-types" title="Cast Object Types" class="md-nav__link">
+  <a href="#cast-object-types" class="md-nav__link">
     Cast Object Types
   </a>
   
@@ -695,7 +700,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#replace-rank-subset-groupby" title="Replace, Rank, Subset, groupby" class="md-nav__link">
+  <a href="#replace-rank-subset-groupby" class="md-nav__link">
     Replace, Rank, Subset, groupby
   </a>
   
@@ -703,14 +708,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#replace" title="Replace" class="md-nav__link">
+  <a href="#replace" class="md-nav__link">
     Replace
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rank-subset-groupby" title="Rank, Subset, groupby" class="md-nav__link">
+  <a href="#rank-subset-groupby" class="md-nav__link">
     Rank, Subset, groupby
   </a>
   
@@ -722,7 +727,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualization" title="Visualization" class="md-nav__link">
+  <a href="#visualization" class="md-nav__link">
     Visualization
   </a>
   
@@ -730,35 +735,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#matplotlib" title="Matplotlib" class="md-nav__link">
+  <a href="#matplotlib" class="md-nav__link">
     Matplotlib
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove-values" title="Remove values" class="md-nav__link">
+  <a href="#remove-values" class="md-nav__link">
     Remove values
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seaborn" title="Seaborn" class="md-nav__link">
+  <a href="#seaborn" class="md-nav__link">
     Seaborn
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter-rows" title="Filter rows" class="md-nav__link">
+  <a href="#filter-rows" class="md-nav__link">
     Filter rows
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#correlation" title="Correlation" class="md-nav__link">
+  <a href="#correlation" class="md-nav__link">
     Correlation
   </a>
   
@@ -770,7 +775,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-go-beyond" title="To go beyond" class="md-nav__link">
+  <a href="#to-go-beyond" class="md-nav__link">
     To go beyond
   </a>
   
@@ -943,7 +948,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#load-and-explore-the-data" title="Load and Explore the Data" class="md-nav__link">
+  <a href="#load-and-explore-the-data" class="md-nav__link">
     Load and Explore the Data
   </a>
   
@@ -951,14 +956,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-data" title="The Data" class="md-nav__link">
+  <a href="#the-data" class="md-nav__link">
     The Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#quickly-inspecting-the-data" title="Quickly Inspecting the Data" class="md-nav__link">
+  <a href="#quickly-inspecting-the-data" class="md-nav__link">
     Quickly Inspecting the Data
   </a>
   
@@ -970,14 +975,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#index-and-pull-values" title="Index and Pull Values" class="md-nav__link">
+  <a href="#index-and-pull-values" class="md-nav__link">
     Index and Pull Values
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#method-chaining" title="Method Chaining" class="md-nav__link">
+  <a href="#method-chaining" class="md-nav__link">
     Method Chaining
   </a>
   
@@ -985,14 +990,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#clean-the-data" title="Clean the Data" class="md-nav__link">
+  <a href="#clean-the-data" class="md-nav__link">
     Clean the Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#concatenate-into-a-single-dataframe" title="Concatenate into a single DataFrame" class="md-nav__link">
+  <a href="#concatenate-into-a-single-dataframe" class="md-nav__link">
     Concatenate into a single DataFrame
   </a>
   
@@ -1004,7 +1009,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#memory-optimization" title="Memory Optimization" class="md-nav__link">
+  <a href="#memory-optimization" class="md-nav__link">
     Memory Optimization
   </a>
   
@@ -1012,7 +1017,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cast-object-types" title="Cast Object Types" class="md-nav__link">
+  <a href="#cast-object-types" class="md-nav__link">
     Cast Object Types
   </a>
   
@@ -1024,7 +1029,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#replace-rank-subset-groupby" title="Replace, Rank, Subset, groupby" class="md-nav__link">
+  <a href="#replace-rank-subset-groupby" class="md-nav__link">
     Replace, Rank, Subset, groupby
   </a>
   
@@ -1032,14 +1037,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#replace" title="Replace" class="md-nav__link">
+  <a href="#replace" class="md-nav__link">
     Replace
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rank-subset-groupby" title="Rank, Subset, groupby" class="md-nav__link">
+  <a href="#rank-subset-groupby" class="md-nav__link">
     Rank, Subset, groupby
   </a>
   
@@ -1051,7 +1056,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#visualization" title="Visualization" class="md-nav__link">
+  <a href="#visualization" class="md-nav__link">
     Visualization
   </a>
   
@@ -1059,35 +1064,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#matplotlib" title="Matplotlib" class="md-nav__link">
+  <a href="#matplotlib" class="md-nav__link">
     Matplotlib
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove-values" title="Remove values" class="md-nav__link">
+  <a href="#remove-values" class="md-nav__link">
     Remove values
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seaborn" title="Seaborn" class="md-nav__link">
+  <a href="#seaborn" class="md-nav__link">
     Seaborn
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter-rows" title="Filter rows" class="md-nav__link">
+  <a href="#filter-rows" class="md-nav__link">
     Filter rows
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#correlation" title="Correlation" class="md-nav__link">
+  <a href="#correlation" class="md-nav__link">
     Correlation
   </a>
   
@@ -1099,7 +1104,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-go-beyond" title="To go beyond" class="md-nav__link">
+  <a href="#to-go-beyond" class="md-nav__link">
     To go beyond
   </a>
   
@@ -1154,7 +1159,7 @@
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Populating</span> <span class="n">the</span> <span class="n">interactive</span> <span class="n">namespace</span> <span class="k">from</span> <span class="n">numpy</span> <span class="k">and</span> <span class="n">matplotlib</span>
 </pre></div>
 </td></tr></table>
 
@@ -1638,14 +1643,14 @@
 </div>
 
 <h2 id="index-and-pull-values">Index and Pull Values<a class="headerlink" href="#index-and-pull-values" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">[]</code> for row numbers or column names, <code class="codehilite">loc[]</code>, <code class="codehilite">iloc[]</code>, <code class="codehilite">query</code>.</p>
+<p><code class="codehilite"><span class="p">[]</span></code> for row numbers or column names, <code class="codehilite"><span class="n">loc</span><span class="p">[]</span></code>, <code class="codehilite"><span class="n">iloc</span><span class="p">[]</span></code>, <code class="codehilite"><span class="n">query</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Retrieve the total score of the first row</span>
 <span class="k">print</span><span class="p">(</span><span class="n">times_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;total_score&#39;</span><span class="p">])</span>
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>96.1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">96</span><span class="p">.</span><span class="mi">1</span>
 </pre></div>
 </td></tr></table>
 
@@ -1669,21 +1674,21 @@
 12
 13
 14
-15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>  world_rank                     university_name                   country  \
-0          1                  Harvard University  United States of America   
-1          2  California Institute of Technology  United States of America
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>  <span class="n">world_rank</span>                     <span class="n">university_name</span>                   <span class="n">country</span>  <span class="err">\</span>
+<span class="mi">0</span>          <span class="mi">1</span>                  <span class="n">Harvard</span> <span class="n">University</span>  <span class="n">United</span> <span class="n">States</span> <span class="k">of</span> <span class="n">America</span>   
+<span class="mi">1</span>          <span class="mi">2</span>  <span class="n">California</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span>  <span class="n">United</span> <span class="n">States</span> <span class="k">of</span> <span class="n">America</span>
 
-   teaching international  research  citations income total_score  \
-0      99.7          72.4      98.7       98.8   34.5        96.1   
-1      97.7          54.6      98.0       99.9   83.7        96.0
+   <span class="n">teaching</span> <span class="n">international</span>  <span class="n">research</span>  <span class="n">citations</span> <span class="n">income</span> <span class="n">total_score</span>  <span class="err">\</span>
+<span class="mi">0</span>      <span class="mi">99</span><span class="p">.</span><span class="mi">7</span>          <span class="mi">72</span><span class="p">.</span><span class="mi">4</span>      <span class="mi">98</span><span class="p">.</span><span class="mi">7</span>       <span class="mi">98</span><span class="p">.</span><span class="mi">8</span>   <span class="mi">34</span><span class="p">.</span><span class="mi">5</span>        <span class="mi">96</span><span class="p">.</span><span class="mi">1</span>   
+<span class="mi">1</span>      <span class="mi">97</span><span class="p">.</span><span class="mi">7</span>          <span class="mi">54</span><span class="p">.</span><span class="mi">6</span>      <span class="mi">98</span><span class="p">.</span><span class="mi">0</span>       <span class="mi">99</span><span class="p">.</span><span class="mi">9</span>   <span class="mi">83</span><span class="p">.</span><span class="mi">7</span>        <span class="mi">96</span><span class="p">.</span><span class="mi">0</span>
 
-   num_students  student_staff_ratio international_students female_male_ratio  \
-0       20152.0                  8.9                    25%               NaN   
-1        2243.0                  6.9                    27%           33 : 67
+   <span class="n">num_students</span>  <span class="n">student_staff_ratio</span> <span class="n">international_students</span> <span class="n">female_male_ratio</span>  <span class="err">\</span>
+<span class="mi">0</span>       <span class="mi">20152</span><span class="p">.</span><span class="mi">0</span>                  <span class="mi">8</span><span class="p">.</span><span class="mi">9</span>                    <span class="mi">25</span><span class="o">%</span>               <span class="n">NaN</span>   
+<span class="mi">1</span>        <span class="mi">2243</span><span class="p">.</span><span class="mi">0</span>                  <span class="mi">6</span><span class="p">.</span><span class="mi">9</span>                    <span class="mi">27</span><span class="o">%</span>           <span class="mi">33</span> <span class="p">:</span> <span class="mi">67</span>
 
-   year  
-0  2011  
-1  2011
+   <span class="k">year</span>  
+<span class="mi">0</span>  <span class="mi">2011</span>  
+<span class="mi">1</span>  <span class="mi">2011</span>
 </pre></div>
 </td></tr></table>
 
@@ -1696,10 +1701,10 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                         university_name                   country  teaching
-1     California Institute of Technology  United States of America      97.7
-2  Massachusetts Institute of Technology  United States of America      97.8
-3                    Stanford University  United States of America      98.3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                         <span class="n">university_name</span>                   <span class="n">country</span>  <span class="n">teaching</span>
+<span class="mi">1</span>     <span class="n">California</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span>  <span class="n">United</span> <span class="n">States</span> <span class="k">of</span> <span class="n">America</span>      <span class="mi">97</span><span class="p">.</span><span class="mi">7</span>
+<span class="mi">2</span>  <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span>  <span class="n">United</span> <span class="n">States</span> <span class="k">of</span> <span class="n">America</span>      <span class="mi">97</span><span class="p">.</span><span class="mi">8</span>
+<span class="mi">3</span>                    <span class="n">Stanford</span> <span class="n">University</span>  <span class="n">United</span> <span class="n">States</span> <span class="k">of</span> <span class="n">America</span>      <span class="mi">98</span><span class="p">.</span><span class="mi">3</span>
 </pre></div>
 </td></tr></table>
 
@@ -1770,68 +1775,68 @@
 59
 60
 61
-62</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0       96.1
-1       96.0
-2       95.6
-3       94.3
-4       94.2
-5       91.2
-6       91.2
-7       91.1
-8       90.6
-9       89.5
-10      87.7
-11      86.9
-12      86.4
-13      83.9
-14      83.4
-15      83.4
-16      82.0
-17      81.0
-18      79.5
-19      79.3
-20      79.2
-21      78.4
-22      78.0
-23      76.5
-24      75.9
-25      75.6
-26      75.3
-27      75.1
-28      75.0
-29      73.8
-        ... 
-2573       -
-2574       -
-2575       -
-2576       -
-2577       -
-2578       -
-2579       -
-2580       -
-2581       -
-2582       -
-2583       -
-2584       -
-2585       -
-2586       -
-2587       -
-2588       -
-2589       -
-2590       -
-2591       -
-2592       -
-2593       -
-2594       -
-2595       -
-2596       -
-2597       -
-2598       -
-2599       -
-2600       -
-2601       -
-2602       -
-Name: total_score, Length: 2603, dtype: object
+62</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>       <span class="mi">96</span><span class="p">.</span><span class="mi">1</span>
+<span class="mi">1</span>       <span class="mi">96</span><span class="p">.</span><span class="mi">0</span>
+<span class="mi">2</span>       <span class="mi">95</span><span class="p">.</span><span class="mi">6</span>
+<span class="mi">3</span>       <span class="mi">94</span><span class="p">.</span><span class="mi">3</span>
+<span class="mi">4</span>       <span class="mi">94</span><span class="p">.</span><span class="mi">2</span>
+<span class="mi">5</span>       <span class="mi">91</span><span class="p">.</span><span class="mi">2</span>
+<span class="mi">6</span>       <span class="mi">91</span><span class="p">.</span><span class="mi">2</span>
+<span class="mi">7</span>       <span class="mi">91</span><span class="p">.</span><span class="mi">1</span>
+<span class="mi">8</span>       <span class="mi">90</span><span class="p">.</span><span class="mi">6</span>
+<span class="mi">9</span>       <span class="mi">89</span><span class="p">.</span><span class="mi">5</span>
+<span class="mi">10</span>      <span class="mi">87</span><span class="p">.</span><span class="mi">7</span>
+<span class="mi">11</span>      <span class="mi">86</span><span class="p">.</span><span class="mi">9</span>
+<span class="mi">12</span>      <span class="mi">86</span><span class="p">.</span><span class="mi">4</span>
+<span class="mi">13</span>      <span class="mi">83</span><span class="p">.</span><span class="mi">9</span>
+<span class="mi">14</span>      <span class="mi">83</span><span class="p">.</span><span class="mi">4</span>
+<span class="mi">15</span>      <span class="mi">83</span><span class="p">.</span><span class="mi">4</span>
+<span class="mi">16</span>      <span class="mi">82</span><span class="p">.</span><span class="mi">0</span>
+<span class="mi">17</span>      <span class="mi">81</span><span class="p">.</span><span class="mi">0</span>
+<span class="mi">18</span>      <span class="mi">79</span><span class="p">.</span><span class="mi">5</span>
+<span class="mi">19</span>      <span class="mi">79</span><span class="p">.</span><span class="mi">3</span>
+<span class="mi">20</span>      <span class="mi">79</span><span class="p">.</span><span class="mi">2</span>
+<span class="mi">21</span>      <span class="mi">78</span><span class="p">.</span><span class="mi">4</span>
+<span class="mi">22</span>      <span class="mi">78</span><span class="p">.</span><span class="mi">0</span>
+<span class="mi">23</span>      <span class="mi">76</span><span class="p">.</span><span class="mi">5</span>
+<span class="mi">24</span>      <span class="mi">75</span><span class="p">.</span><span class="mi">9</span>
+<span class="mi">25</span>      <span class="mi">75</span><span class="p">.</span><span class="mi">6</span>
+<span class="mi">26</span>      <span class="mi">75</span><span class="p">.</span><span class="mi">3</span>
+<span class="mi">27</span>      <span class="mi">75</span><span class="p">.</span><span class="mi">1</span>
+<span class="mi">28</span>      <span class="mi">75</span><span class="p">.</span><span class="mi">0</span>
+<span class="mi">29</span>      <span class="mi">73</span><span class="p">.</span><span class="mi">8</span>
+        <span class="p">...</span> 
+<span class="mi">2573</span>       <span class="o">-</span>
+<span class="mi">2574</span>       <span class="o">-</span>
+<span class="mi">2575</span>       <span class="o">-</span>
+<span class="mi">2576</span>       <span class="o">-</span>
+<span class="mi">2577</span>       <span class="o">-</span>
+<span class="mi">2578</span>       <span class="o">-</span>
+<span class="mi">2579</span>       <span class="o">-</span>
+<span class="mi">2580</span>       <span class="o">-</span>
+<span class="mi">2581</span>       <span class="o">-</span>
+<span class="mi">2582</span>       <span class="o">-</span>
+<span class="mi">2583</span>       <span class="o">-</span>
+<span class="mi">2584</span>       <span class="o">-</span>
+<span class="mi">2585</span>       <span class="o">-</span>
+<span class="mi">2586</span>       <span class="o">-</span>
+<span class="mi">2587</span>       <span class="o">-</span>
+<span class="mi">2588</span>       <span class="o">-</span>
+<span class="mi">2589</span>       <span class="o">-</span>
+<span class="mi">2590</span>       <span class="o">-</span>
+<span class="mi">2591</span>       <span class="o">-</span>
+<span class="mi">2592</span>       <span class="o">-</span>
+<span class="mi">2593</span>       <span class="o">-</span>
+<span class="mi">2594</span>       <span class="o">-</span>
+<span class="mi">2595</span>       <span class="o">-</span>
+<span class="mi">2596</span>       <span class="o">-</span>
+<span class="mi">2597</span>       <span class="o">-</span>
+<span class="mi">2598</span>       <span class="o">-</span>
+<span class="mi">2599</span>       <span class="o">-</span>
+<span class="mi">2600</span>       <span class="o">-</span>
+<span class="mi">2601</span>       <span class="o">-</span>
+<span class="mi">2602</span>       <span class="o">-</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">total_score</span><span class="p">,</span> <span class="k">Length</span><span class="p">:</span> <span class="mi">2603</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="k">object</span>
 </pre></div>
 </td></tr></table>
 
@@ -1841,7 +1846,7 @@ Name: total_score, Length: 2603, dtype: object
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Series([], Name: year, dtype: bool)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Series</span><span class="p">([],</span> <span class="n">Name</span><span class="p">:</span> <span class="k">year</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">bool</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -1863,19 +1868,19 @@ Name: total_score, Length: 2603, dtype: object
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0      True
-1      True
-2     False
-3     False
-4     False
-5     False
-6     False
-7     False
-8     False
-9     False
-10    False
-11    False
-Name: alumni, dtype: bool
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>      <span class="k">True</span>
+<span class="mi">1</span>      <span class="k">True</span>
+<span class="mi">2</span>     <span class="k">False</span>
+<span class="mi">3</span>     <span class="k">False</span>
+<span class="mi">4</span>     <span class="k">False</span>
+<span class="mi">5</span>     <span class="k">False</span>
+<span class="mi">6</span>     <span class="k">False</span>
+<span class="mi">7</span>     <span class="k">False</span>
+<span class="mi">8</span>     <span class="k">False</span>
+<span class="mi">9</span>     <span class="k">False</span>
+<span class="mi">10</span>    <span class="k">False</span>
+<span class="mi">11</span>    <span class="k">False</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">alumni</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">bool</span>
 </pre></div>
 </td></tr></table>
 
@@ -2017,133 +2022,133 @@ Name: alumni, dtype: bool
 124
 125
 126
-127</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>     world_rank                                    university_name  \
-15           16                  University of Wisconsin - Madison   
-16           17                           University of Washington   
-17           18            University of California, San Francisco   
-18           19                       The Johns Hopkins University   
-19           20                            The University of Tokyo   
-20           21                 University of Michigan - Ann Arbor   
-21           22                                   Kyoto University   
-22           23  The Imperial College of Science, Technology an...   
-23           24                              University of Toronto   
-24           25         University of Illinois at Urbana-Champaign   
-25           26                          University College London   
-26           27       Swiss Federal Institute of Technology Zurich   
-27           28                 Washington University in St. Louis   
-28           29                                New York University   
-29           30                             Rockefeller University   
-30           31                            Northwestern University   
-31           32                                    Duke University   
-32           32               University of Minnesota, Twin Cities   
-33           34            University of California, Santa Barbara   
-34           35                  University of Colorado at Boulder   
-35           36                  The University of Texas at Austin   
-36           37                     University of British Columbia   
-37           38  The University of Texas Southwestern Medical C...   
-38           39    Pennsylvania State University - University Park   
-39           39                              Vanderbilt University   
-40           41                    University of California, Davis   
-41           41                                 Utrecht University   
-42           43  Rutgers, The State University of New Jersey - ...   
-43           43                           University of Pittsburgh   
-44           45                               Karolinska Institute   
-...         ...                                                ...   
-4467         71                                   Ghent University   
-4468         72                   Ecole Normale Superieure - Paris   
-4469         73                                  Aarhus University   
-4470         73                                  Boston University   
-4471         75                                   Brown University   
-4472         75                            University of Groningen   
-4473         77                                  Nagoya University   
-4474         77                               Stockholm University   
-4475         77            Technion-Israel Institute of Technology   
-4476         77                 The Australian National University   
-4477         77                       The University of Queensland   
-4478         82                                  Leiden University   
-4479         83                              University of Florida   
-4480         84                                    Rice University   
-4481         85                                   Osaka University   
-4482         86                            Moscow State University   
-4483         87                The University of Western Australia   
-4484         87                                University of Basel   
-4485         87                           University of Strasbourg   
-4486         90                                          KU Leuven   
-4487         90                              University of Arizona   
-4488         92                              University of Warwick   
-4489         93                           Arizona State University   
-4490         93               University of California, Santa Cruz   
-4491         93                                 University of Utah   
-4492         96                                McMaster University   
-4493         97                                 University of Bonn   
-4494         98                            VU University Amsterdam   
-4495         99                          Michigan State University   
-4496        100                               Texas A&amp;amp;M University
+127</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>     <span class="n">world_rank</span>                                    <span class="n">university_name</span>  <span class="err">\</span>
+<span class="mi">15</span>           <span class="mi">16</span>                  <span class="n">University</span> <span class="k">of</span> <span class="n">Wisconsin</span> <span class="o">-</span> <span class="n">Madison</span>   
+<span class="mi">16</span>           <span class="mi">17</span>                           <span class="n">University</span> <span class="k">of</span> <span class="n">Washington</span>   
+<span class="mi">17</span>           <span class="mi">18</span>            <span class="n">University</span> <span class="k">of</span> <span class="n">California</span><span class="p">,</span> <span class="n">San</span> <span class="n">Francisco</span>   
+<span class="mi">18</span>           <span class="mi">19</span>                       <span class="n">The</span> <span class="n">Johns</span> <span class="n">Hopkins</span> <span class="n">University</span>   
+<span class="mi">19</span>           <span class="mi">20</span>                            <span class="n">The</span> <span class="n">University</span> <span class="k">of</span> <span class="n">Tokyo</span>   
+<span class="mi">20</span>           <span class="mi">21</span>                 <span class="n">University</span> <span class="k">of</span> <span class="n">Michigan</span> <span class="o">-</span> <span class="n">Ann</span> <span class="n">Arbor</span>   
+<span class="mi">21</span>           <span class="mi">22</span>                                   <span class="n">Kyoto</span> <span class="n">University</span>   
+<span class="mi">22</span>           <span class="mi">23</span>  <span class="n">The</span> <span class="n">Imperial</span> <span class="n">College</span> <span class="k">of</span> <span class="n">Science</span><span class="p">,</span> <span class="n">Technology</span> <span class="n">an</span><span class="p">...</span>   
+<span class="mi">23</span>           <span class="mi">24</span>                              <span class="n">University</span> <span class="k">of</span> <span class="n">Toronto</span>   
+<span class="mi">24</span>           <span class="mi">25</span>         <span class="n">University</span> <span class="k">of</span> <span class="n">Illinois</span> <span class="k">at</span> <span class="n">Urbana</span><span class="o">-</span><span class="n">Champaign</span>   
+<span class="mi">25</span>           <span class="mi">26</span>                          <span class="n">University</span> <span class="n">College</span> <span class="n">London</span>   
+<span class="mi">26</span>           <span class="mi">27</span>       <span class="n">Swiss</span> <span class="n">Federal</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span> <span class="n">Zurich</span>   
+<span class="mi">27</span>           <span class="mi">28</span>                 <span class="n">Washington</span> <span class="n">University</span> <span class="k">in</span> <span class="n">St</span><span class="p">.</span> <span class="n">Louis</span>   
+<span class="mi">28</span>           <span class="mi">29</span>                                <span class="k">New</span> <span class="n">York</span> <span class="n">University</span>   
+<span class="mi">29</span>           <span class="mi">30</span>                             <span class="n">Rockefeller</span> <span class="n">University</span>   
+<span class="mi">30</span>           <span class="mi">31</span>                            <span class="n">Northwestern</span> <span class="n">University</span>   
+<span class="mi">31</span>           <span class="mi">32</span>                                    <span class="n">Duke</span> <span class="n">University</span>   
+<span class="mi">32</span>           <span class="mi">32</span>               <span class="n">University</span> <span class="k">of</span> <span class="n">Minnesota</span><span class="p">,</span> <span class="n">Twin</span> <span class="n">Cities</span>   
+<span class="mi">33</span>           <span class="mi">34</span>            <span class="n">University</span> <span class="k">of</span> <span class="n">California</span><span class="p">,</span> <span class="n">Santa</span> <span class="n">Barbara</span>   
+<span class="mi">34</span>           <span class="mi">35</span>                  <span class="n">University</span> <span class="k">of</span> <span class="n">Colorado</span> <span class="k">at</span> <span class="n">Boulder</span>   
+<span class="mi">35</span>           <span class="mi">36</span>                  <span class="n">The</span> <span class="n">University</span> <span class="k">of</span> <span class="n">Texas</span> <span class="k">at</span> <span class="n">Austin</span>   
+<span class="mi">36</span>           <span class="mi">37</span>                     <span class="n">University</span> <span class="k">of</span> <span class="n">British</span> <span class="n">Columbia</span>   
+<span class="mi">37</span>           <span class="mi">38</span>  <span class="n">The</span> <span class="n">University</span> <span class="k">of</span> <span class="n">Texas</span> <span class="n">Southwestern</span> <span class="n">Medical</span> <span class="k">C</span><span class="p">...</span>   
+<span class="mi">38</span>           <span class="mi">39</span>    <span class="n">Pennsylvania</span> <span class="k">State</span> <span class="n">University</span> <span class="o">-</span> <span class="n">University</span> <span class="n">Park</span>   
+<span class="mi">39</span>           <span class="mi">39</span>                              <span class="n">Vanderbilt</span> <span class="n">University</span>   
+<span class="mi">40</span>           <span class="mi">41</span>                    <span class="n">University</span> <span class="k">of</span> <span class="n">California</span><span class="p">,</span> <span class="n">Davis</span>   
+<span class="mi">41</span>           <span class="mi">41</span>                                 <span class="n">Utrecht</span> <span class="n">University</span>   
+<span class="mi">42</span>           <span class="mi">43</span>  <span class="n">Rutgers</span><span class="p">,</span> <span class="n">The</span> <span class="k">State</span> <span class="n">University</span> <span class="k">of</span> <span class="k">New</span> <span class="n">Jersey</span> <span class="o">-</span> <span class="p">...</span>   
+<span class="mi">43</span>           <span class="mi">43</span>                           <span class="n">University</span> <span class="k">of</span> <span class="n">Pittsburgh</span>   
+<span class="mi">44</span>           <span class="mi">45</span>                               <span class="n">Karolinska</span> <span class="n">Institute</span>   
+<span class="p">...</span>         <span class="p">...</span>                                                <span class="p">...</span>   
+<span class="mi">4467</span>         <span class="mi">71</span>                                   <span class="n">Ghent</span> <span class="n">University</span>   
+<span class="mi">4468</span>         <span class="mi">72</span>                   <span class="n">Ecole</span> <span class="n">Normale</span> <span class="n">Superieure</span> <span class="o">-</span> <span class="n">Paris</span>   
+<span class="mi">4469</span>         <span class="mi">73</span>                                  <span class="n">Aarhus</span> <span class="n">University</span>   
+<span class="mi">4470</span>         <span class="mi">73</span>                                  <span class="n">Boston</span> <span class="n">University</span>   
+<span class="mi">4471</span>         <span class="mi">75</span>                                   <span class="n">Brown</span> <span class="n">University</span>   
+<span class="mi">4472</span>         <span class="mi">75</span>                            <span class="n">University</span> <span class="k">of</span> <span class="n">Groningen</span>   
+<span class="mi">4473</span>         <span class="mi">77</span>                                  <span class="n">Nagoya</span> <span class="n">University</span>   
+<span class="mi">4474</span>         <span class="mi">77</span>                               <span class="n">Stockholm</span> <span class="n">University</span>   
+<span class="mi">4475</span>         <span class="mi">77</span>            <span class="n">Technion</span><span class="o">-</span><span class="n">Israel</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span>   
+<span class="mi">4476</span>         <span class="mi">77</span>                 <span class="n">The</span> <span class="n">Australian</span> <span class="k">National</span> <span class="n">University</span>   
+<span class="mi">4477</span>         <span class="mi">77</span>                       <span class="n">The</span> <span class="n">University</span> <span class="k">of</span> <span class="n">Queensland</span>   
+<span class="mi">4478</span>         <span class="mi">82</span>                                  <span class="n">Leiden</span> <span class="n">University</span>   
+<span class="mi">4479</span>         <span class="mi">83</span>                              <span class="n">University</span> <span class="k">of</span> <span class="n">Florida</span>   
+<span class="mi">4480</span>         <span class="mi">84</span>                                    <span class="n">Rice</span> <span class="n">University</span>   
+<span class="mi">4481</span>         <span class="mi">85</span>                                   <span class="n">Osaka</span> <span class="n">University</span>   
+<span class="mi">4482</span>         <span class="mi">86</span>                            <span class="n">Moscow</span> <span class="k">State</span> <span class="n">University</span>   
+<span class="mi">4483</span>         <span class="mi">87</span>                <span class="n">The</span> <span class="n">University</span> <span class="k">of</span> <span class="n">Western</span> <span class="n">Australia</span>   
+<span class="mi">4484</span>         <span class="mi">87</span>                                <span class="n">University</span> <span class="k">of</span> <span class="n">Basel</span>   
+<span class="mi">4485</span>         <span class="mi">87</span>                           <span class="n">University</span> <span class="k">of</span> <span class="n">Strasbourg</span>   
+<span class="mi">4486</span>         <span class="mi">90</span>                                          <span class="n">KU</span> <span class="n">Leuven</span>   
+<span class="mi">4487</span>         <span class="mi">90</span>                              <span class="n">University</span> <span class="k">of</span> <span class="n">Arizona</span>   
+<span class="mi">4488</span>         <span class="mi">92</span>                              <span class="n">University</span> <span class="k">of</span> <span class="n">Warwick</span>   
+<span class="mi">4489</span>         <span class="mi">93</span>                           <span class="n">Arizona</span> <span class="k">State</span> <span class="n">University</span>   
+<span class="mi">4490</span>         <span class="mi">93</span>               <span class="n">University</span> <span class="k">of</span> <span class="n">California</span><span class="p">,</span> <span class="n">Santa</span> <span class="n">Cruz</span>   
+<span class="mi">4491</span>         <span class="mi">93</span>                                 <span class="n">University</span> <span class="k">of</span> <span class="n">Utah</span>   
+<span class="mi">4492</span>         <span class="mi">96</span>                                <span class="n">McMaster</span> <span class="n">University</span>   
+<span class="mi">4493</span>         <span class="mi">97</span>                                 <span class="n">University</span> <span class="k">of</span> <span class="n">Bonn</span>   
+<span class="mi">4494</span>         <span class="mi">98</span>                            <span class="n">VU</span> <span class="n">University</span> <span class="n">Amsterdam</span>   
+<span class="mi">4495</span>         <span class="mi">99</span>                          <span class="n">Michigan</span> <span class="k">State</span> <span class="n">University</span>   
+<span class="mi">4496</span>        <span class="mi">100</span>                               <span class="n">Texas</span> <span class="n">A</span><span class="o">&amp;</span><span class="n">M</span> <span class="n">University</span>
 
-     national_rank  total_score  alumni  award  hici    ns   pub   pcp  year  
-15              14         49.2    43.0   36.3  52.1  46.3  68.7  29.0  2005  
-16              15         48.4    28.8   32.4  53.9  47.1  73.8  27.2  2005  
-17              16         47.8     0.0   37.6  55.6  57.9  58.8  45.2  2005  
-18              17         46.9    51.4   28.3  41.6  52.2  67.7  24.9  2005  
-19               1         46.7    36.0   14.4  38.5  52.1  86.5  34.7  2005  
-20              18         44.9    43.0    0.0  61.9  43.0  76.5  30.9  2005  
-21               2         43.8    39.7   34.1  34.2  37.0  72.3  31.1  2005  
-22               3         43.7    20.8   38.1  40.8  38.2  64.6  40.3  2005  
-23               1         43.1    28.1   19.7  39.3  38.9  76.7  41.9  2005  
-24              19         42.8    41.6   37.4  44.4  34.1  58.0  26.0  2005  
-25               4         42.6    30.7   32.9  37.7  41.5  60.5  38.8  2005  
-26               1         41.7    40.2   37.0  35.1  41.1  43.4  52.4  2005  
-27              20         40.7    25.1   26.6  38.5  46.5  53.9  39.9  2005  
-28              21         38.8    33.8   25.0  43.0  35.3  55.4  26.3  2005  
-29              22         38.2    22.6   59.8  28.3  44.1  24.0  35.9  2005  
-30              23         37.9    21.7   19.3  44.4  33.8  57.6  36.2  2005  
-31              24         37.7    20.8    0.0  47.1  45.3  60.8  38.9  2005  
-32              24         37.7    36.0    0.0  49.7  35.2  68.4  23.8  2005  
-33              26         36.9     0.0   36.0  42.3  39.0  44.1  35.8  2005  
-34              27         36.3    16.6   29.8  40.8  36.6  46.3  29.5  2005  
-35              28         35.5    21.7   17.1  49.1  30.0  54.8  21.7  2005  
-36               2         35.4    20.8   19.3  32.4  32.5  60.4  33.9  2005  
-37              29         34.8    24.3   33.9  31.4  38.2  37.9  31.0  2005  
-38              30         33.4    14.0    0.0  45.8  37.9  59.9  24.0  2005  
-39              30         33.4    12.5   30.2  34.2  24.5  49.2  35.6  2005  
-40              32         32.9     0.0    0.0  46.5  34.5  64.0  29.8  2005  
-41               1         32.9    30.7   21.4  27.2  27.3  55.7  25.9  2005  
-42              33         32.3    15.4   20.4  36.9  32.9  47.1  24.1  2005  
-43              33         32.3    25.1    0.0  40.1  25.9  64.3  28.2  2005  
-44               1         32.1    30.7   27.8  33.3  19.7  47.3  25.1  2005  
-...            ...          ...     ...    ...   ...   ...   ...   ...   ...  
-4467             1         27.8     5.1   13.3  26.9  18.3  57.5  34.5  2015  
-4468             3         27.6    48.9   28.0   6.2  19.5  26.4  60.5  2015  
-4469             2         27.3    11.5   22.1  12.3  25.8  51.8  31.0  2015  
-4470            42         27.3    11.5   11.5  29.1  26.3  49.5  21.8  2015  
-4471            43         27.0    14.5   13.3  26.2  25.1  43.6  32.8  2015  
-4472             2         27.0     0.0   18.8  23.0  21.0  52.6  32.7  2015  
-4473             3         26.7    29.0   25.3  16.8  17.7  44.3  23.1  2015  
-4474             3         26.7    24.1   27.4  18.1  19.4  40.4  25.6  2015  
-4475             2         26.7    23.5   37.6  15.2  18.3  33.3  28.2  2015  
-4476             2         26.7    13.6   19.2  24.8  20.1  45.1  29.1  2015  
-4477             2         26.7    12.6    0.0  22.0  24.0  63.2  29.3  2015  
-4478             3         26.5    17.8    9.4  25.7  22.0  46.9  32.9  2015  
-4479            44         26.2    17.0    0.0  30.9  21.0  58.7  17.3  2015  
-4480            45         26.0    16.2   21.7  28.1  22.8  29.2  34.3  2015  
-4481             4         25.7     8.9    0.0  31.6  26.7  51.7  21.7  2015  
-4482             1         25.3    41.4   33.0   0.0   7.7  46.4  31.3  2015  
-4483             4         24.9    13.6   14.1  24.1  14.5  47.5  28.9  2015  
-4484             4         24.9    19.2   16.3  17.4  21.4  39.2  35.0  2015  
-4485             4         24.9    25.1   28.8  15.9  19.0  34.6  21.7  2015  
-4486             2         24.7     0.0    0.0  30.1  18.6  56.6  30.4  2015  
-4487            46         24.7    14.5    0.0  27.2  27.5  48.4  20.3  2015  
-4488             9         24.6     0.0   29.8  23.7  14.0  39.3  26.8  2015  
-4489            47         24.5     0.0   20.0  22.2  25.5  42.6  19.1  2015  
-4490            47         24.5     0.0    0.0  37.9  33.9  29.0  37.6  2015  
-4491            47         24.5     0.0   11.5  26.5  25.5  46.7  18.7  2015  
-4492             4         24.4    12.6   18.8  23.2  15.1  44.5  22.5  2015  
-4493             4         24.3    15.4   19.8  17.4  21.1  39.8  25.9  2015  
-4494             4         24.2     0.0    0.0  27.8  18.0  55.5  33.3  2015  
-4495            50         24.0     8.9    0.0  30.7  21.8  50.6  18.9  2015  
-4496            51         23.9     0.0    0.0  34.3  22.7  49.5  20.9  2015
+     <span class="n">national_rank</span>  <span class="n">total_score</span>  <span class="n">alumni</span>  <span class="n">award</span>  <span class="n">hici</span>    <span class="n">ns</span>   <span class="n">pub</span>   <span class="n">pcp</span>  <span class="k">year</span>  
+<span class="mi">15</span>              <span class="mi">14</span>         <span class="mi">49</span><span class="p">.</span><span class="mi">2</span>    <span class="mi">43</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">36</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">52</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">68</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">2005</span>  
+<span class="mi">16</span>              <span class="mi">15</span>         <span class="mi">48</span><span class="p">.</span><span class="mi">4</span>    <span class="mi">28</span><span class="p">.</span><span class="mi">8</span>   <span class="mi">32</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">53</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">47</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">73</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">27</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">2005</span>  
+<span class="mi">17</span>              <span class="mi">16</span>         <span class="mi">47</span><span class="p">.</span><span class="mi">8</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">37</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">55</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">57</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">58</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">45</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">2005</span>  
+<span class="mi">18</span>              <span class="mi">17</span>         <span class="mi">46</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">51</span><span class="p">.</span><span class="mi">4</span>   <span class="mi">28</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">41</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">52</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">67</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">19</span>               <span class="mi">1</span>         <span class="mi">46</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">36</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">14</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">52</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">86</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">2005</span>  
+<span class="mi">20</span>              <span class="mi">18</span>         <span class="mi">44</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">43</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">61</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">43</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">76</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">30</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">21</span>               <span class="mi">2</span>         <span class="mi">43</span><span class="p">.</span><span class="mi">8</span>    <span class="mi">39</span><span class="p">.</span><span class="mi">7</span>   <span class="mi">34</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">37</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">72</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">31</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">2005</span>  
+<span class="mi">22</span>               <span class="mi">3</span>         <span class="mi">43</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">20</span><span class="p">.</span><span class="mi">8</span>   <span class="mi">38</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">40</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">64</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">40</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2005</span>  
+<span class="mi">23</span>               <span class="mi">1</span>         <span class="mi">43</span><span class="p">.</span><span class="mi">1</span>    <span class="mi">28</span><span class="p">.</span><span class="mi">1</span>   <span class="mi">19</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">76</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">41</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">24</span>              <span class="mi">19</span>         <span class="mi">42</span><span class="p">.</span><span class="mi">8</span>    <span class="mi">41</span><span class="p">.</span><span class="mi">6</span>   <span class="mi">37</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">44</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">58</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">2005</span>  
+<span class="mi">25</span>               <span class="mi">4</span>         <span class="mi">42</span><span class="p">.</span><span class="mi">6</span>    <span class="mi">30</span><span class="p">.</span><span class="mi">7</span>   <span class="mi">32</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">37</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">41</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">60</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2005</span>  
+<span class="mi">26</span>               <span class="mi">1</span>         <span class="mi">41</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">40</span><span class="p">.</span><span class="mi">2</span>   <span class="mi">37</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">41</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">43</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">52</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">2005</span>  
+<span class="mi">27</span>              <span class="mi">20</span>         <span class="mi">40</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">25</span><span class="p">.</span><span class="mi">1</span>   <span class="mi">26</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">53</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">28</span>              <span class="mi">21</span>         <span class="mi">38</span><span class="p">.</span><span class="mi">8</span>    <span class="mi">33</span><span class="p">.</span><span class="mi">8</span>   <span class="mi">25</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">43</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">55</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2005</span>  
+<span class="mi">29</span>              <span class="mi">22</span>         <span class="mi">38</span><span class="p">.</span><span class="mi">2</span>    <span class="mi">22</span><span class="p">.</span><span class="mi">6</span>   <span class="mi">59</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">28</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">44</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">30</span>              <span class="mi">23</span>         <span class="mi">37</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">21</span><span class="p">.</span><span class="mi">7</span>   <span class="mi">19</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">44</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">33</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">57</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">36</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">2005</span>  
+<span class="mi">31</span>              <span class="mi">24</span>         <span class="mi">37</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">20</span><span class="p">.</span><span class="mi">8</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">47</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">45</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">60</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">32</span>              <span class="mi">24</span>         <span class="mi">37</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">36</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">49</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">68</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2005</span>  
+<span class="mi">33</span>              <span class="mi">26</span>         <span class="mi">36</span><span class="p">.</span><span class="mi">9</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">36</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">42</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">44</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2005</span>  
+<span class="mi">34</span>              <span class="mi">27</span>         <span class="mi">36</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">16</span><span class="p">.</span><span class="mi">6</span>   <span class="mi">29</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">40</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">36</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">2005</span>  
+<span class="mi">35</span>              <span class="mi">28</span>         <span class="mi">35</span><span class="p">.</span><span class="mi">5</span>    <span class="mi">21</span><span class="p">.</span><span class="mi">7</span>   <span class="mi">17</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">49</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">30</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">54</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">2005</span>  
+<span class="mi">36</span>               <span class="mi">2</span>         <span class="mi">35</span><span class="p">.</span><span class="mi">4</span>    <span class="mi">20</span><span class="p">.</span><span class="mi">8</span>   <span class="mi">19</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">60</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">33</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">37</span>              <span class="mi">29</span>         <span class="mi">34</span><span class="p">.</span><span class="mi">8</span>    <span class="mi">24</span><span class="p">.</span><span class="mi">3</span>   <span class="mi">33</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">31</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">38</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">37</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">31</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">2005</span>  
+<span class="mi">38</span>              <span class="mi">30</span>         <span class="mi">33</span><span class="p">.</span><span class="mi">4</span>    <span class="mi">14</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">45</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">37</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">59</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">2005</span>  
+<span class="mi">39</span>              <span class="mi">30</span>         <span class="mi">33</span><span class="p">.</span><span class="mi">4</span>    <span class="mi">12</span><span class="p">.</span><span class="mi">5</span>   <span class="mi">30</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">49</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">2005</span>  
+<span class="mi">40</span>              <span class="mi">32</span>         <span class="mi">32</span><span class="p">.</span><span class="mi">9</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">64</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2005</span>  
+<span class="mi">41</span>               <span class="mi">1</span>         <span class="mi">32</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">30</span><span class="p">.</span><span class="mi">7</span>   <span class="mi">21</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">27</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">27</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">55</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2005</span>  
+<span class="mi">42</span>              <span class="mi">33</span>         <span class="mi">32</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">15</span><span class="p">.</span><span class="mi">4</span>   <span class="mi">20</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">36</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">47</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">2005</span>  
+<span class="mi">43</span>              <span class="mi">33</span>         <span class="mi">32</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">25</span><span class="p">.</span><span class="mi">1</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">40</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">64</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">28</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">2005</span>  
+<span class="mi">44</span>               <span class="mi">1</span>         <span class="mi">32</span><span class="p">.</span><span class="mi">1</span>    <span class="mi">30</span><span class="p">.</span><span class="mi">7</span>   <span class="mi">27</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">33</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">19</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">47</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">2005</span>  
+<span class="p">...</span>            <span class="p">...</span>          <span class="p">...</span>     <span class="p">...</span>    <span class="p">...</span>   <span class="p">...</span>   <span class="p">...</span>   <span class="p">...</span>   <span class="p">...</span>   <span class="p">...</span>  
+<span class="mi">4467</span>             <span class="mi">1</span>         <span class="mi">27</span><span class="p">.</span><span class="mi">8</span>     <span class="mi">5</span><span class="p">.</span><span class="mi">1</span>   <span class="mi">13</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">57</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">2015</span>  
+<span class="mi">4468</span>             <span class="mi">3</span>         <span class="mi">27</span><span class="p">.</span><span class="mi">6</span>    <span class="mi">48</span><span class="p">.</span><span class="mi">9</span>   <span class="mi">28</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">6</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">19</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">60</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">2015</span>  
+<span class="mi">4469</span>             <span class="mi">2</span>         <span class="mi">27</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">11</span><span class="p">.</span><span class="mi">5</span>   <span class="mi">22</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">12</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">51</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">31</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">2015</span>  
+<span class="mi">4470</span>            <span class="mi">42</span>         <span class="mi">27</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">11</span><span class="p">.</span><span class="mi">5</span>   <span class="mi">11</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">49</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2015</span>  
+<span class="mi">4471</span>            <span class="mi">43</span>         <span class="mi">27</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">14</span><span class="p">.</span><span class="mi">5</span>   <span class="mi">13</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">43</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2015</span>  
+<span class="mi">4472</span>             <span class="mi">2</span>         <span class="mi">27</span><span class="p">.</span><span class="mi">0</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">18</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">52</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">2015</span>  
+<span class="mi">4473</span>             <span class="mi">3</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">29</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">25</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">16</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">17</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">44</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">2015</span>  
+<span class="mi">4474</span>             <span class="mi">3</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">24</span><span class="p">.</span><span class="mi">1</span>   <span class="mi">27</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">19</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">40</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">2015</span>  
+<span class="mi">4475</span>             <span class="mi">2</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">23</span><span class="p">.</span><span class="mi">5</span>   <span class="mi">37</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">15</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">33</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">28</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">2015</span>  
+<span class="mi">4476</span>             <span class="mi">2</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">13</span><span class="p">.</span><span class="mi">6</span>   <span class="mi">19</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">20</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">45</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">2015</span>  
+<span class="mi">4477</span>             <span class="mi">2</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">12</span><span class="p">.</span><span class="mi">6</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">22</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">63</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2015</span>  
+<span class="mi">4478</span>             <span class="mi">3</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">5</span>    <span class="mi">17</span><span class="p">.</span><span class="mi">8</span>    <span class="mi">9</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">22</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2015</span>  
+<span class="mi">4479</span>            <span class="mi">44</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">2</span>    <span class="mi">17</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">30</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">58</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">17</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2015</span>  
+<span class="mi">4480</span>            <span class="mi">45</span>         <span class="mi">26</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">16</span><span class="p">.</span><span class="mi">2</span>   <span class="mi">21</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">28</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">22</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2015</span>  
+<span class="mi">4481</span>             <span class="mi">4</span>         <span class="mi">25</span><span class="p">.</span><span class="mi">7</span>     <span class="mi">8</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">31</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">51</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">2015</span>  
+<span class="mi">4482</span>             <span class="mi">1</span>         <span class="mi">25</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">41</span><span class="p">.</span><span class="mi">4</span>   <span class="mi">33</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">7</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">31</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2015</span>  
+<span class="mi">4483</span>             <span class="mi">4</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">13</span><span class="p">.</span><span class="mi">6</span>   <span class="mi">14</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">24</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">14</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">47</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">28</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2015</span>  
+<span class="mi">4484</span>             <span class="mi">4</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">19</span><span class="p">.</span><span class="mi">2</span>   <span class="mi">16</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">17</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">35</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">2015</span>  
+<span class="mi">4485</span>             <span class="mi">4</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">25</span><span class="p">.</span><span class="mi">1</span>   <span class="mi">28</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">15</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">19</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">2015</span>  
+<span class="mi">4486</span>             <span class="mi">2</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">7</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">30</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">56</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">30</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">2015</span>  
+<span class="mi">4487</span>            <span class="mi">46</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">7</span>    <span class="mi">14</span><span class="p">.</span><span class="mi">5</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">27</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">27</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">48</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">20</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2015</span>  
+<span class="mi">4488</span>             <span class="mi">9</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">6</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">29</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">14</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">2015</span>  
+<span class="mi">4489</span>            <span class="mi">47</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">5</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">20</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">22</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">42</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">19</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">2015</span>  
+<span class="mi">4490</span>            <span class="mi">47</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">5</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">37</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">33</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">29</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">37</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">2015</span>  
+<span class="mi">4491</span>            <span class="mi">47</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">5</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>   <span class="mi">11</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">26</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">46</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">2015</span>  
+<span class="mi">4492</span>             <span class="mi">4</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">4</span>    <span class="mi">12</span><span class="p">.</span><span class="mi">6</span>   <span class="mi">18</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">2</span>  <span class="mi">15</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">44</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">22</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">2015</span>  
+<span class="mi">4493</span>             <span class="mi">4</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">3</span>    <span class="mi">15</span><span class="p">.</span><span class="mi">4</span>   <span class="mi">19</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">17</span><span class="p">.</span><span class="mi">4</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">1</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">25</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2015</span>  
+<span class="mi">4494</span>             <span class="mi">4</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">2</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">27</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">55</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">33</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">2015</span>  
+<span class="mi">4495</span>            <span class="mi">50</span>         <span class="mi">24</span><span class="p">.</span><span class="mi">0</span>     <span class="mi">8</span><span class="p">.</span><span class="mi">9</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">30</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">21</span><span class="p">.</span><span class="mi">8</span>  <span class="mi">50</span><span class="p">.</span><span class="mi">6</span>  <span class="mi">18</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2015</span>  
+<span class="mi">4496</span>            <span class="mi">51</span>         <span class="mi">23</span><span class="p">.</span><span class="mi">9</span>     <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>    <span class="mi">0</span><span class="p">.</span><span class="mi">0</span>  <span class="mi">34</span><span class="p">.</span><span class="mi">3</span>  <span class="mi">22</span><span class="p">.</span><span class="mi">7</span>  <span class="mi">49</span><span class="p">.</span><span class="mi">5</span>  <span class="mi">20</span><span class="p">.</span><span class="mi">9</span>  <span class="mi">2015</span>
 
-[948 rows x 11 columns]
+<span class="p">[</span><span class="mi">948</span> <span class="k">rows</span> <span class="n">x</span> <span class="mi">11</span> <span class="n">columns</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
@@ -3083,8 +3088,8 @@ Name: alumni, dtype: bool
 </div>
 
 <h2 id="method-chaining">Method Chaining<a class="headerlink" href="#method-chaining" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">pipe()</code> to chain operations and thus eliminate the need for intermediate DataFrames.</p>
-<p>Without this operator, instead of writing <code class="codehilite">df.pipe(f).pipe(g).pipe(h)</code> write: <code class="codehilite">h(g(f(df)))</code>. This becomes harder to follow once the number of nested functions grows large.</p>
+<p><code class="codehilite"><span class="n">pipe</span><span class="p">()</span></code> to chain operations and thus eliminate the need for intermediate DataFrames.</p>
+<p>Without this operator, instead of writing <code class="codehilite"><span class="n">df</span><span class="p">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">f</span><span class="p">).</span><span class="n">pipe</span><span class="p">(</span><span class="k">g</span><span class="p">).</span><span class="n">pipe</span><span class="p">(</span><span class="n">h</span><span class="p">)</span></code> write: <code class="codehilite"><span class="n">h</span><span class="p">(</span><span class="k">g</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">df</span><span class="p">)))</span></code>. This becomes harder to follow once the number of nested functions grows large.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3109,9 +3114,9 @@ Name: alumni, dtype: bool
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>       name  nb_cols  nb_rows
-0     times       14     2603
-0  shanghai       11     4897
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>       <span class="n">name</span>  <span class="n">nb_cols</span>  <span class="n">nb_rows</span>
+<span class="mi">0</span>     <span class="n">times</span>       <span class="mi">14</span>     <span class="mi">2603</span>
+<span class="mi">0</span>  <span class="n">shanghai</span>       <span class="mi">11</span>     <span class="mi">4897</span>
 </pre></div>
 </td></tr></table>
 
@@ -3126,7 +3131,7 @@ Name: alumni, dtype: bool
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>{&#39;year&#39;, &#39;university_name&#39;, &#39;total_score&#39;, &#39;world_rank&#39;}
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">{</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;university_name&#39;</span><span class="p">,</span> <span class="s1">&#39;total_score&#39;</span><span class="p">,</span> <span class="s1">&#39;world_rank&#39;</span><span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -3155,7 +3160,7 @@ Name: alumni, dtype: bool
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>{2011, 2012, 2013, 2014, 2015}
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">{</span><span class="mi">2011</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2015</span><span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -3190,7 +3195,7 @@ Name: alumni, dtype: bool
 </td></tr></table>
 
 <h3 id="concatenate-into-a-single-dataframe">Concatenate into a single DataFrame<a class="headerlink" href="#concatenate-into-a-single-dataframe" title="Permanent link">&para;</a></h3>
-<p>38% of data missing from the <code class="codehilite">total_score column</code>: drop this column with the <code class="codehilite"><span class="na">.drop</span></code> method.</p>
+<p>38% of data missing from the <code class="codehilite"><span class="n">total_score</span> <span class="k">column</span></code>: drop this column with the <code class="codehilite"><span class="na">.drop</span></code> method.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3210,7 +3215,7 @@ Name: alumni, dtype: bool
 </td></tr></table>
 
 <h2 id="memory-optimization">Memory Optimization<a class="headerlink" href="#memory-optimization" title="Permanent link">&para;</a></h2>
-<p>Memory can start to play a big part in how fast the pipelines can run. Without the “deep” flag turned on, Pandas won’t estimate memory consumption for the <code class="codehilite">object</code> dtype: <code class="codehilite">category</code> when dealing with categorical data, etc. <code class="codehilite">int64</code> or even <code class="codehilite">int16</code> takes less memory.</p>
+<p>Memory can start to play a big part in how fast the pipelines can run. Without the “deep” flag turned on, Pandas won’t estimate memory consumption for the <code class="codehilite"><span class="k">object</span></code> dtype: <code class="codehilite"><span class="n">category</span></code> when dealing with categorical data, etc. <code class="codehilite"><span class="n">int64</span></code> or even <code class="codehilite"><span class="n">int16</span></code> takes less memory.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># Print the memory usage of `ranking_df` </span>
 <span class="n">ranking_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -3225,15 +3230,15 @@ Name: alumni, dtype: bool
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 3686 entries, 0 to 4896
-Data columns (total 4 columns):
-year               3686 non-null int64
-world_rank         3686 non-null object
-university_name    3685 non-null object
-name               3686 non-null object
-dtypes: int64(1), object(3)
-memory usage: 144.0+ KB
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">3686</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">4896</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">):</span>
+<span class="k">year</span>               <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">world_rank</span>         <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">university_name</span>    <span class="mi">3685</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">name</span>               <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">int64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">144</span><span class="p">.</span><span class="mi">0</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -3251,15 +3256,15 @@ memory usage: 144.0+ KB
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 3686 entries, 0 to 4896
-Data columns (total 4 columns):
-year               3686 non-null int64
-world_rank         3686 non-null object
-university_name    3685 non-null object
-name               3686 non-null object
-dtypes: int64(1), object(3)
-memory usage: 803.1 KB
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">3686</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">4896</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">):</span>
+<span class="k">year</span>               <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">world_rank</span>         <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">university_name</span>    <span class="mi">3685</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">name</span>               <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">int64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">803</span><span class="p">.</span><span class="mi">1</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
@@ -3295,9 +3300,9 @@ memory usage: 803.1 KB
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>The inital memory footprint for world_rank is: 244.43KB.
-The casted world_rank now takes: 36.0KB.
-A change of 85.27 %.
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">The</span> <span class="nv">inital</span> <span class="nv">memory</span> <span class="nv">footprint</span> <span class="k">for</span> <span class="nv">world_rank</span> <span class="nv">is</span>: <span class="mi">244</span>.<span class="mi">43</span><span class="nv">KB</span>.
+<span class="nv">The</span> <span class="nv">casted</span> <span class="nv">world_rank</span> <span class="nv">now</span> <span class="nv">takes</span>: <span class="mi">36</span>.<span class="mi">0</span><span class="nv">KB</span>.
+<span class="nv">A</span> <span class="nv">change</span> <span class="nv">of</span> <span class="mi">85</span>.<span class="mi">27</span> <span class="o">%</span>.
 </pre></div>
 </td></tr></table>
 
@@ -3307,9 +3312,9 @@ A change of 85.27 %.
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>The inital memory footprint for university_name is: 329.98KB.
-The casted university_name now takes: 121.37KB.
-A change of 63.22 %.
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">The</span> <span class="nv">inital</span> <span class="nv">memory</span> <span class="nv">footprint</span> <span class="k">for</span> <span class="nv">university_name</span> <span class="nv">is</span>: <span class="mi">329</span>.<span class="mi">98</span><span class="nv">KB</span>.
+<span class="nv">The</span> <span class="nv">casted</span> <span class="nv">university_name</span> <span class="nv">now</span> <span class="nv">takes</span>: <span class="mi">121</span>.<span class="mi">37</span><span class="nv">KB</span>.
+<span class="nv">A</span> <span class="nv">change</span> <span class="nv">of</span> <span class="mi">63</span>.<span class="mi">22</span> <span class="o">%</span>.
 </pre></div>
 </td></tr></table>
 
@@ -3319,9 +3324,9 @@ A change of 63.22 %.
 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>The inital memory footprint for name is: 257.49KB.
-The casted name now takes: 32.6KB.
-A change of 87.34 %.
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">The</span> <span class="nv">inital</span> <span class="nv">memory</span> <span class="nv">footprint</span> <span class="k">for</span> <span class="nv">name</span> <span class="nv">is</span>: <span class="mi">257</span>.<span class="mi">49</span><span class="nv">KB</span>.
+<span class="nv">The</span> <span class="nv">casted</span> <span class="nv">name</span> <span class="nv">now</span> <span class="nv">takes</span>: <span class="mi">32</span>.<span class="mi">6</span><span class="nv">KB</span>.
+<span class="nv">A</span> <span class="nv">change</span> <span class="nv">of</span> <span class="mi">87</span>.<span class="mi">34</span> <span class="o">%</span>.
 </pre></div>
 </td></tr></table>
 
@@ -3357,21 +3362,21 @@ A change of 87.34 %.
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-Int64Index: 3686 entries, 0 to 4896
-Data columns (total 4 columns):
-year               3686 non-null int64
-university_name    3685 non-null category
-world_rank         3686 non-null int16
-name               3686 non-null category
-dtypes: category(2), int16(1), int64(1)
-memory usage: 161.2 KB
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">Int64Index</span><span class="p">:</span> <span class="mi">3686</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">4896</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">):</span>
+<span class="k">year</span>               <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">university_name</span>    <span class="mi">3685</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">category</span>
+<span class="n">world_rank</span>         <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int16</span>
+<span class="n">name</span>               <span class="mi">3686</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">category</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">category</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">int16</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">int64</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">161</span><span class="p">.</span><span class="mi">2</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
 <p>From 803.1 KB!</p>
 <p>We have a well-formed data set (i.e. it is in a tidy state) with an optimized memory footprint, data analysis can start.</p>
-<h2 id="replace-rank-subset-groupby">Replace, Rank, Subset, <code class="codehilite">groupby</code><a class="headerlink" href="#replace-rank-subset-groupby" title="Permanent link">&para;</a></h2>
+<h2 id="replace-rank-subset-groupby">Replace, Rank, Subset, <code class="codehilite"><span class="n">groupby</span></code><a class="headerlink" href="#replace-rank-subset-groupby" title="Permanent link">&para;</a></h2>
 <h3 id="replace">Replace<a class="headerlink" href="#replace" title="Permanent link">&para;</a></h3>
 <p>‘Massachusetts Institute of Technology (MIT)’ and ‘Massachusetts Institute of Technology’ are two different records of the same university. Thus, change the first name to the latter.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -3385,12 +3390,12 @@ memory usage: 161.2 KB
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>      year                              university_name  world_rank      name
-3016  2011  Massachusetts Institute of Technology (MIT)           3  shanghai
-3516  2012  Massachusetts Institute of Technology (MIT)           3  shanghai
-3801  2013  Massachusetts Institute of Technology (MIT)           4  shanghai
-3899  2014  Massachusetts Institute of Technology (MIT)           3  shanghai
-4399  2015  Massachusetts Institute of Technology (MIT)           3  shanghai
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>      <span class="k">year</span>                              <span class="n">university_name</span>  <span class="n">world_rank</span>      <span class="n">name</span>
+<span class="mi">3016</span>  <span class="mi">2011</span>  <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span> <span class="p">(</span><span class="n">MIT</span><span class="p">)</span>           <span class="mi">3</span>  <span class="n">shanghai</span>
+<span class="mi">3516</span>  <span class="mi">2012</span>  <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span> <span class="p">(</span><span class="n">MIT</span><span class="p">)</span>           <span class="mi">3</span>  <span class="n">shanghai</span>
+<span class="mi">3801</span>  <span class="mi">2013</span>  <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span> <span class="p">(</span><span class="n">MIT</span><span class="p">)</span>           <span class="mi">4</span>  <span class="n">shanghai</span>
+<span class="mi">3899</span>  <span class="mi">2014</span>  <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span> <span class="p">(</span><span class="n">MIT</span><span class="p">)</span>           <span class="mi">3</span>  <span class="n">shanghai</span>
+<span class="mi">4399</span>  <span class="mi">2015</span>  <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span> <span class="p">(</span><span class="n">MIT</span><span class="p">)</span>           <span class="mi">3</span>  <span class="n">shanghai</span>
 </pre></div>
 </td></tr></table>
 
@@ -3408,20 +3413,20 @@ memory usage: 161.2 KB
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>0                       Harvard University
-1       California Institute of Technology
-2    Massachusetts Institute of Technology
-3                      Stanford University
-4                     Princeton University
-Name: university_name, dtype: category
-Categories (785, object): [Aalborg University, Aalto University, Aarhus University, Aberystwyth University, ..., École Normale Supérieure, École Normale Supérieure de Lyon, École Polytechnique, École Polytechnique Fédérale de Lausanne]
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">0</span>                       <span class="n">Harvard</span> <span class="n">University</span>
+<span class="mi">1</span>       <span class="n">California</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span>
+<span class="mi">2</span>    <span class="n">Massachusetts</span> <span class="n">Institute</span> <span class="k">of</span> <span class="n">Technology</span>
+<span class="mi">3</span>                      <span class="n">Stanford</span> <span class="n">University</span>
+<span class="mi">4</span>                     <span class="n">Princeton</span> <span class="n">University</span>
+<span class="n">Name</span><span class="p">:</span> <span class="n">university_name</span><span class="p">,</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">category</span>
+<span class="n">Categories</span> <span class="p">(</span><span class="mi">785</span><span class="p">,</span> <span class="k">object</span><span class="p">):</span> <span class="p">[</span><span class="n">Aalborg</span> <span class="n">University</span><span class="p">,</span> <span class="n">Aalto</span> <span class="n">University</span><span class="p">,</span> <span class="n">Aarhus</span> <span class="n">University</span><span class="p">,</span> <span class="n">Aberystwyth</span> <span class="n">University</span><span class="p">,</span> <span class="p">...,</span> <span class="err">É</span><span class="n">cole</span> <span class="n">Normale</span> <span class="n">Supérieure</span><span class="p">,</span> <span class="err">É</span><span class="n">cole</span> <span class="n">Normale</span> <span class="n">Supérieure</span> <span class="n">de</span> <span class="n">Lyon</span><span class="p">,</span> <span class="err">É</span><span class="n">cole</span> <span class="n">Polytechnique</span><span class="p">,</span> <span class="err">É</span><span class="n">cole</span> <span class="n">Polytechnique</span> <span class="n">Fédérale</span> <span class="n">de</span> <span class="n">Lausanne</span><span class="p">]</span>
 </pre></div>
 </td></tr></table>
 
-<h3 id="rank-subset-groupby">Rank, Subset, <code class="codehilite">groupby</code><a class="headerlink" href="#rank-subset-groupby" title="Permanent link">&para;</a></h3>
-<p>To find the 5 (more generally <code class="codehilite">n</code>) top universities over the years, for each ranking system, here is how to do it in pseudo-code:</p>
+<h3 id="rank-subset-groupby">Rank, Subset, <code class="codehilite"><span class="n">groupby</span></code><a class="headerlink" href="#rank-subset-groupby" title="Permanent link">&para;</a></h3>
+<p>To find the 5 (more generally <code class="codehilite"><span class="n">n</span></code>) top universities over the years, for each ranking system, here is how to do it in pseudo-code:</p>
 <ul>
-<li>For each year (in the <code class="codehilite">year</code> column) and for each ranking system (in the <code class="codehilite">name</code> column):<ul>
+<li>For each year (in the <code class="codehilite"><span class="k">year</span></code> column) and for each ranking system (in the <code class="codehilite"><span class="n">name</span></code> column):<ul>
 <li>Select the subset of the data for this given year and the given ranking system.</li>
 <li>Select the 5 top universities and store them in a list.</li>
 <li>Store the result in a dictionary with (year, name) as key and the list of the universities (in descending order) as the value.</li>
@@ -3462,7 +3467,7 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>{(2011, &#39;times&#39;): [&#39;Princeton University&#39;, &#39;Stanford University&#39;, &#39;Massachusetts Institute of Technology&#39;, &#39;California Institute of Technology&#39;, &#39;Harvard University&#39;], (2011, &#39;shanghai&#39;): [&#39;University of Cambridge&#39;, &#39;University of California, Berkeley&#39;, &#39;Massachusetts Institute of Technology&#39;, &#39;Stanford University&#39;, &#39;Harvard University&#39;], (2012, &#39;times&#39;): [&#39;Princeton University&#39;, &#39;University of Oxford&#39;, &#39;Harvard University&#39;, &#39;Stanford University&#39;, &#39;California Institute of Technology&#39;], (2012, &#39;shanghai&#39;): [&#39;University of Cambridge&#39;, &#39;University of California, Berkeley&#39;, &#39;Massachusetts Institute of Technology&#39;, &#39;Stanford University&#39;, &#39;Harvard University&#39;], (2013, &#39;times&#39;): [&#39;Massachusetts Institute of Technology&#39;, &#39;Harvard University&#39;, &#39;Stanford University&#39;, &#39;University of Oxford&#39;, &#39;California Institute of Technology&#39;], (2013, &#39;shanghai&#39;): [&#39;University of Cambridge&#39;, &#39;Massachusetts Institute of Technology&#39;, &#39;University of California, Berkeley&#39;, &#39;Stanford University&#39;, &#39;Harvard University&#39;], (2014, &#39;times&#39;): [&#39;Massachusetts Institute of Technology&#39;, &#39;Stanford University&#39;, &#39;Harvard University&#39;, &#39;University of Oxford&#39;, &#39;California Institute of Technology&#39;], (2014, &#39;shanghai&#39;): [&#39;University of Cambridge&#39;, &#39;University of California-Berkeley&#39;, &#39;Massachusetts Institute of Technology&#39;, &#39;Stanford University&#39;, &#39;Harvard University&#39;], (2015, &#39;times&#39;): [&#39;University of Cambridge&#39;, &#39;Stanford University&#39;, &#39;University of Oxford&#39;, &#39;Harvard University&#39;, &#39;California Institute of Technology&#39;], (2015, &#39;shanghai&#39;): [&#39;University of Cambridge&#39;, &#39;University of California, Berkeley&#39;, &#39;Massachusetts Institute of Technology&#39;, &#39;Stanford University&#39;, &#39;Harvard University&#39;]}
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">{</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="s1">&#39;times&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;Princeton University&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;California Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2011</span><span class="p">,</span> <span class="s1">&#39;shanghai&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;University of Cambridge&#39;</span><span class="p">,</span> <span class="s1">&#39;University of California, Berkeley&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2012</span><span class="p">,</span> <span class="s1">&#39;times&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;Princeton University&#39;</span><span class="p">,</span> <span class="s1">&#39;University of Oxford&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;California Institute of Technology&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2012</span><span class="p">,</span> <span class="s1">&#39;shanghai&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;University of Cambridge&#39;</span><span class="p">,</span> <span class="s1">&#39;University of California, Berkeley&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2013</span><span class="p">,</span> <span class="s1">&#39;times&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;University of Oxford&#39;</span><span class="p">,</span> <span class="s1">&#39;California Institute of Technology&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2013</span><span class="p">,</span> <span class="s1">&#39;shanghai&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;University of Cambridge&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;University of California, Berkeley&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="s1">&#39;times&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">,</span> <span class="s1">&#39;University of Oxford&#39;</span><span class="p">,</span> <span class="s1">&#39;California Institute of Technology&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="s1">&#39;shanghai&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;University of Cambridge&#39;</span><span class="p">,</span> <span class="s1">&#39;University of California-Berkeley&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="s1">&#39;times&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;University of Cambridge&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;University of Oxford&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">,</span> <span class="s1">&#39;California Institute of Technology&#39;</span><span class="p">],</span> <span class="p">(</span><span class="mi">2015</span><span class="p">,</span> <span class="s1">&#39;shanghai&#39;</span><span class="p">):</span> <span class="p">[</span><span class="s1">&#39;University of Cambridge&#39;</span><span class="p">,</span> <span class="s1">&#39;University of California, Berkeley&#39;</span><span class="p">,</span> <span class="s1">&#39;Massachusetts Institute of Technology&#39;</span><span class="p">,</span> <span class="s1">&#39;Stanford University&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvard University&#39;</span><span class="p">]</span><span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -3505,7 +3510,7 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>{2011: 60.0, 2012: 40.0, 2013: 60.0, 2014: 60.0, 2015: 60.0}
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">{</span><span class="mi">2011</span><span class="p">:</span> <span class="mi">60</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2012</span><span class="p">:</span> <span class="mi">40</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2013</span><span class="p">:</span> <span class="mi">60</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2014</span><span class="p">:</span> <span class="mi">60</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2015</span><span class="p">:</span> <span class="mi">60</span><span class="p">.</span><span class="mi">0</span><span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -3754,7 +3759,7 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
 
 <p><img alt="" src="../img/write_idiomatic/output_56_0.png" /></p>
 <h3 id="remove-values">Remove values<a class="headerlink" href="#remove-values" title="Permanent link">&para;</a></h3>
-<p>There are some 0 values for the alumni column (0, -, <code class="codehilite">NaN</code>, etc.). Remove them.</p>
+<p>There are some 0 values for the alumni column (0, -, <code class="codehilite"><span class="n">NaN</span></code>, etc.). Remove them.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3951,7 +3956,7 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>{&#39;divide&#39;: &#39;warn&#39;, &#39;invalid&#39;: &#39;warn&#39;, &#39;over&#39;: &#39;warn&#39;, &#39;under&#39;: &#39;ignore&#39;}
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">{</span><span class="s1">&#39;divide&#39;</span><span class="p">:</span> <span class="s1">&#39;warn&#39;</span><span class="p">,</span> <span class="s1">&#39;invalid&#39;</span><span class="p">:</span> <span class="s1">&#39;warn&#39;</span><span class="p">,</span> <span class="s1">&#39;over&#39;</span><span class="p">:</span> <span class="s1">&#39;warn&#39;</span><span class="p">,</span> <span class="s1">&#39;under&#39;</span><span class="p">:</span> <span class="s1">&#39;ignore&#39;</span><span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -4081,25 +4086,17 @@ Categories (785, object): [Aalborg University, Aalto University, Aarhus Universi
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

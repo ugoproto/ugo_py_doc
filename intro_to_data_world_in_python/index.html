@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Introduction to data.world
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -518,14 +523,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-datasets" title="Working with Datasets" class="md-nav__link">
+  <a href="#working-with-datasets" class="md-nav__link">
     Working with Datasets
   </a>
   
@@ -533,28 +538,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-a-dataset" title="Import a Dataset" class="md-nav__link">
+  <a href="#import-a-dataset" class="md-nav__link">
     Import a Dataset
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#working-with-datasets_1" title="Working with Datasets" class="md-nav__link">
+  <a href="#working-with-datasets_1" class="md-nav__link">
     Working with Datasets
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reading-the-metadata" title="Reading the metadata" class="md-nav__link">
+  <a href="#reading-the-metadata" class="md-nav__link">
     Reading the metadata
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#accessing-the-data" title="Accessing the data" class="md-nav__link">
+  <a href="#accessing-the-data" class="md-nav__link">
     Accessing the data
   </a>
   
@@ -566,14 +571,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-multiple-datasets" title="Working with multiple datasets" class="md-nav__link">
+  <a href="#working-with-multiple-datasets" class="md-nav__link">
     Working with multiple datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#querying-with-dataworld" title="Querying with data.world" class="md-nav__link">
+  <a href="#querying-with-dataworld" class="md-nav__link">
     Querying with data.world
   </a>
   
@@ -581,21 +586,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sql-querying-a-table" title="SQL: Querying a table" class="md-nav__link">
+  <a href="#sql-querying-a-table" class="md-nav__link">
     SQL: Querying a table
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sql-query-multiple-tables-join" title="SQL: Query multiple tables (join)" class="md-nav__link">
+  <a href="#sql-query-multiple-tables-join" class="md-nav__link">
     SQL: Query multiple tables (join)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sparql-querying-linked-data" title="SPARQL: Querying linked data" class="md-nav__link">
+  <a href="#sparql-querying-linked-data" class="md-nav__link">
     SPARQL: Querying linked data
   </a>
   
@@ -607,14 +612,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wrap-up" title="Wrap up" class="md-nav__link">
+  <a href="#wrap-up" class="md-nav__link">
     Wrap up
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-sdk-functionality" title="Advanced SDK Functionality" class="md-nav__link">
+  <a href="#advanced-sdk-functionality" class="md-nav__link">
     Advanced SDK Functionality
   </a>
   
@@ -622,28 +627,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#open-the-api" title="Open the API" class="md-nav__link">
+  <a href="#open-the-api" class="md-nav__link">
     Open the API
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-dataset-using-create_dataset-method" title="Create a dataset using create_dataset method" class="md-nav__link">
+  <a href="#create-a-dataset-using-create_dataset-method" class="md-nav__link">
     Create a dataset using create_dataset method
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" title="Write a data frame to a local file and upload to dataset" class="md-nav__link">
+  <a href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" class="md-nav__link">
     Write a data frame to a local file and upload to dataset
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-dataset" title="Update dataset" class="md-nav__link">
+  <a href="#update-dataset" class="md-nav__link">
     Update dataset
   </a>
   
@@ -917,14 +922,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" title="Introduction" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     Introduction
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-datasets" title="Working with Datasets" class="md-nav__link">
+  <a href="#working-with-datasets" class="md-nav__link">
     Working with Datasets
   </a>
   
@@ -932,28 +937,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#import-a-dataset" title="Import a Dataset" class="md-nav__link">
+  <a href="#import-a-dataset" class="md-nav__link">
     Import a Dataset
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#working-with-datasets_1" title="Working with Datasets" class="md-nav__link">
+  <a href="#working-with-datasets_1" class="md-nav__link">
     Working with Datasets
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reading-the-metadata" title="Reading the metadata" class="md-nav__link">
+  <a href="#reading-the-metadata" class="md-nav__link">
     Reading the metadata
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#accessing-the-data" title="Accessing the data" class="md-nav__link">
+  <a href="#accessing-the-data" class="md-nav__link">
     Accessing the data
   </a>
   
@@ -965,14 +970,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#working-with-multiple-datasets" title="Working with multiple datasets" class="md-nav__link">
+  <a href="#working-with-multiple-datasets" class="md-nav__link">
     Working with multiple datasets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#querying-with-dataworld" title="Querying with data.world" class="md-nav__link">
+  <a href="#querying-with-dataworld" class="md-nav__link">
     Querying with data.world
   </a>
   
@@ -980,21 +985,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sql-querying-a-table" title="SQL: Querying a table" class="md-nav__link">
+  <a href="#sql-querying-a-table" class="md-nav__link">
     SQL: Querying a table
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sql-query-multiple-tables-join" title="SQL: Query multiple tables (join)" class="md-nav__link">
+  <a href="#sql-query-multiple-tables-join" class="md-nav__link">
     SQL: Query multiple tables (join)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sparql-querying-linked-data" title="SPARQL: Querying linked data" class="md-nav__link">
+  <a href="#sparql-querying-linked-data" class="md-nav__link">
     SPARQL: Querying linked data
   </a>
   
@@ -1006,14 +1011,14 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wrap-up" title="Wrap up" class="md-nav__link">
+  <a href="#wrap-up" class="md-nav__link">
     Wrap up
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-sdk-functionality" title="Advanced SDK Functionality" class="md-nav__link">
+  <a href="#advanced-sdk-functionality" class="md-nav__link">
     Advanced SDK Functionality
   </a>
   
@@ -1021,28 +1026,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#open-the-api" title="Open the API" class="md-nav__link">
+  <a href="#open-the-api" class="md-nav__link">
     Open the API
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-a-dataset-using-create_dataset-method" title="Create a dataset using create_dataset method" class="md-nav__link">
+  <a href="#create-a-dataset-using-create_dataset-method" class="md-nav__link">
     Create a dataset using create_dataset method
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" title="Write a data frame to a local file and upload to dataset" class="md-nav__link">
+  <a href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" class="md-nav__link">
     Write a data frame to a local file and upload to dataset
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#update-dataset" title="Update dataset" class="md-nav__link">
+  <a href="#update-dataset" class="md-nav__link">
     Update dataset
   </a>
   
@@ -1080,9 +1085,9 @@
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Open data is at the heart of <a href="https://data.world/integrations/python">data.world</a>. </p>
 <p>Open an account, log in, find a dataset, download it or copy URL or integrate data.world with Python/R/Tableau by installing dw in the terminal. In Python for example.</p>
-<p><code class="codehilite">pip install datadotworld[pandas]</code> or <code class="codehilite">conda install datadotworld-py</code>.</p>
+<p><code class="codehilite"><span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">datadotworld</span><span class="o">[</span><span class="n">pandas</span><span class="o">]</span><span class="w"></span></code> or <code class="codehilite"><span class="n">conda</span> <span class="n">install</span> <span class="n">datadotworld</span><span class="o">-</span><span class="n">py</span></code>.</p>
 <p>then,</p>
-<p><code class="codehilite">dw configure</code>.</p>
+<p><code class="codehilite"><span class="n">dw</span> <span class="n">configure</span></code>.</p>
 <p>Pull the API token from the account and enter it.</p>
 <p>There are similar procedures for R and Tableau. Everything is documented on the website (when trying to download any dataset, more options appear for Python/R/Tableau).</p>
 <p>Option 1: use the data.world Jupyter Notebook template as a way to jump-start a project with Python.</p>
@@ -1101,7 +1106,7 @@
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Populating the interactive namespace from numpy and matplotlib
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">Populating</span> <span class="n">the</span> <span class="n">interactive</span> <span class="n">namespace</span> <span class="k">from</span> <span class="n">numpy</span> <span class="k">and</span> <span class="n">matplotlib</span>
 </pre></div>
 </td></tr></table>
 
@@ -1348,9 +1353,9 @@
 </td></tr></table>
 
 <h3 id="reading-the-metadata">Reading the metadata<a class="headerlink" href="#reading-the-metadata" title="Permanent link">&para;</a></h3>
-<p>All fields begin with <code class="codehilite">{</code>. The <code class="codehilite">alderman_votes</code> variable has 5 fields.</p>
+<p>All fields begin with <code class="codehilite"><span class="err">{</span></code>. The <code class="codehilite"><span class="n">alderman_votes</span></code> variable has 5 fields.</p>
 <h3 id="accessing-the-data">Accessing the data<a class="headerlink" href="#accessing-the-data" title="Permanent link">&para;</a></h3>
-<p>We have access to three properties: <code class="codehilite">raw_data</code>, <code class="codehilite">tables</code>, and <code class="codehilite">dataframes</code>. Each of these returns a dictionary of values, just in different formats: <code class="codehilite">bytes</code>, <code class="codehilite">list</code> and <code class="codehilite">pandas.DataFrame</code> objects.</p>
+<p>We have access to three properties: <code class="codehilite"><span class="n">raw_data</span></code>, <code class="codehilite"><span class="n">tables</span></code>, and <code class="codehilite"><span class="n">dataframes</span></code>. Each of these returns a dictionary of values, just in different formats: <code class="codehilite"><span class="n">bytes</span></code>, <code class="codehilite"><span class="n">list</span></code> and <code class="codehilite"><span class="n">pandas</span><span class="p">.</span><span class="n">DataFrame</span></code> objects.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -1367,7 +1372,7 @@
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>(10850, 5)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">(</span><span class="mi">10850</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
@@ -1382,10 +1387,10 @@
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                alderman vote  ward       date       record
-0          Manuel Flores    N     1 2006-07-26  SO2006-3086
-1  Madeline L. Haithcock    N     2 2006-07-26  SO2006-3086
-2     Dorothy J. Tillman    N     3 2006-07-26  SO2006-3086
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                <span class="n">alderman</span> <span class="n">vote</span>  <span class="n">ward</span>       <span class="nb">date</span>       <span class="n">record</span>
+<span class="mi">0</span>          <span class="n">Manuel</span> <span class="n">Flores</span>    <span class="n">N</span>     <span class="mi">1</span> <span class="mi">2006</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">26</span>  <span class="n">SO2006</span><span class="o">-</span><span class="mi">3086</span>
+<span class="mi">1</span>  <span class="n">Madeline</span> <span class="n">L</span><span class="p">.</span> <span class="n">Haithcock</span>    <span class="n">N</span>     <span class="mi">2</span> <span class="mi">2006</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">26</span>  <span class="n">SO2006</span><span class="o">-</span><span class="mi">3086</span>
+<span class="mi">2</span>     <span class="n">Dorothy</span> <span class="n">J</span><span class="p">.</span> <span class="n">Tillman</span>    <span class="n">N</span>     <span class="mi">3</span> <span class="mi">2006</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">26</span>  <span class="n">SO2006</span><span class="o">-</span><span class="mi">3086</span>
 </pre></div>
 </td></tr></table>
 
@@ -1474,38 +1479,38 @@
 24
 25
 26
-27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>   id                name        date   manner_of_death       armed   age  \
-0   3          Tim Elliot  2015-01-02              shot         gun  53.0   
-1   4    Lewis Lee Lembke  2015-01-02              shot         gun  47.0   
-2   5  John Paul Quintero  2015-01-03  shot and Tasered     unarmed  23.0   
-3   8     Matthew Hoffman  2015-01-04              shot  toy weapon  32.0   
-4   9   Michael Rodriguez  2015-01-04              shot    nail gun  39.0
+27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>   <span class="n">id</span>                <span class="n">name</span>        <span class="nb">date</span>   <span class="n">manner_of_death</span>       <span class="n">armed</span>   <span class="n">age</span>  <span class="err">\</span>
+<span class="mi">0</span>   <span class="mi">3</span>          <span class="n">Tim</span> <span class="n">Elliot</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">02</span>              <span class="n">shot</span>         <span class="n">gun</span>  <span class="mi">53</span><span class="p">.</span><span class="mi">0</span>   
+<span class="mi">1</span>   <span class="mi">4</span>    <span class="n">Lewis</span> <span class="n">Lee</span> <span class="n">Lembke</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">02</span>              <span class="n">shot</span>         <span class="n">gun</span>  <span class="mi">47</span><span class="p">.</span><span class="mi">0</span>   
+<span class="mi">2</span>   <span class="mi">5</span>  <span class="n">John</span> <span class="n">Paul</span> <span class="n">Quintero</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">03</span>  <span class="n">shot</span> <span class="k">and</span> <span class="n">Tasered</span>     <span class="n">unarmed</span>  <span class="mi">23</span><span class="p">.</span><span class="mi">0</span>   
+<span class="mi">3</span>   <span class="mi">8</span>     <span class="n">Matthew</span> <span class="n">Hoffman</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">04</span>              <span class="n">shot</span>  <span class="n">toy</span> <span class="n">weapon</span>  <span class="mi">32</span><span class="p">.</span><span class="mi">0</span>   
+<span class="mi">4</span>   <span class="mi">9</span>   <span class="n">Michael</span> <span class="n">Rodriguez</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">04</span>              <span class="n">shot</span>    <span class="n">nail</span> <span class="n">gun</span>  <span class="mi">39</span><span class="p">.</span><span class="mi">0</span>
 
-  gender race           city state  signs_of_mental_illness threat_level  \
-0      M    A        Shelton    WA                     True       attack   
-1      M    W          Aloha    OR                    False       attack   
-2      M    H        Wichita    KS                    False        other   
-3      M    W  San Francisco    CA                     True       attack   
-4      M    H          Evans    CO                    False       attack
+  <span class="n">gender</span> <span class="n">race</span>           <span class="n">city</span> <span class="k">state</span>  <span class="n">signs_of_mental_illness</span> <span class="n">threat_level</span>  <span class="err">\</span>
+<span class="mi">0</span>      <span class="n">M</span>    <span class="n">A</span>        <span class="n">Shelton</span>    <span class="n">WA</span>                     <span class="k">True</span>       <span class="n">attack</span>   
+<span class="mi">1</span>      <span class="n">M</span>    <span class="n">W</span>          <span class="n">Aloha</span>    <span class="k">OR</span>                    <span class="k">False</span>       <span class="n">attack</span>   
+<span class="mi">2</span>      <span class="n">M</span>    <span class="n">H</span>        <span class="n">Wichita</span>    <span class="n">KS</span>                    <span class="k">False</span>        <span class="n">other</span>   
+<span class="mi">3</span>      <span class="n">M</span>    <span class="n">W</span>  <span class="n">San</span> <span class="n">Francisco</span>    <span class="n">CA</span>                     <span class="k">True</span>       <span class="n">attack</span>   
+<span class="mi">4</span>      <span class="n">M</span>    <span class="n">H</span>          <span class="n">Evans</span>    <span class="n">CO</span>                    <span class="k">False</span>       <span class="n">attack</span>
 
-          flee  body_camera  state_fips stusab  state_name  statens  \
-0  Not fleeing        False          53     WA  Washington  1779804   
-1  Not fleeing        False          41     OR      Oregon  1155107   
-2  Not fleeing        False          20     KS      Kansas   481813   
-3  Not fleeing        False           6     CA  California  1779778   
-4  Not fleeing        False           8     CO    Colorado  1779779
+          <span class="n">flee</span>  <span class="n">body_camera</span>  <span class="n">state_fips</span> <span class="n">stusab</span>  <span class="n">state_name</span>  <span class="n">statens</span>  <span class="err">\</span>
+<span class="mi">0</span>  <span class="k">Not</span> <span class="n">fleeing</span>        <span class="k">False</span>          <span class="mi">53</span>     <span class="n">WA</span>  <span class="n">Washington</span>  <span class="mi">1779804</span>   
+<span class="mi">1</span>  <span class="k">Not</span> <span class="n">fleeing</span>        <span class="k">False</span>          <span class="mi">41</span>     <span class="k">OR</span>      <span class="n">Oregon</span>  <span class="mi">1155107</span>   
+<span class="mi">2</span>  <span class="k">Not</span> <span class="n">fleeing</span>        <span class="k">False</span>          <span class="mi">20</span>     <span class="n">KS</span>      <span class="n">Kansas</span>   <span class="mi">481813</span>   
+<span class="mi">3</span>  <span class="k">Not</span> <span class="n">fleeing</span>        <span class="k">False</span>           <span class="mi">6</span>     <span class="n">CA</span>  <span class="n">California</span>  <span class="mi">1779778</span>   
+<span class="mi">4</span>  <span class="k">Not</span> <span class="n">fleeing</span>        <span class="k">False</span>           <span class="mi">8</span>     <span class="n">CO</span>    <span class="n">Colorado</span>  <span class="mi">1779779</span>
 
-                   citystate  
-0        Shelton, Washington  
-1              Aloha, Oregon  
-2            Wichita, Kansas  
-3  San Francisco, California  
-4            Evans, Colorado
+                   <span class="n">citystate</span>  
+<span class="mi">0</span>        <span class="n">Shelton</span><span class="p">,</span> <span class="n">Washington</span>  
+<span class="mi">1</span>              <span class="n">Aloha</span><span class="p">,</span> <span class="n">Oregon</span>  
+<span class="mi">2</span>            <span class="n">Wichita</span><span class="p">,</span> <span class="n">Kansas</span>  
+<span class="mi">3</span>  <span class="n">San</span> <span class="n">Francisco</span><span class="p">,</span> <span class="n">California</span>  
+<span class="mi">4</span>            <span class="n">Evans</span><span class="p">,</span> <span class="n">Colorado</span>
 </pre></div>
 </td></tr></table>
 
 <h2 id="querying-with-dataworld">Querying with data.world<a class="headerlink" href="#querying-with-dataworld" title="Permanent link">&para;</a></h2>
-<p>Another way to pull data in from data.world is to use the <code class="codehilite">query()</code> method to use SQL or SPARQL to query one or more datasets. Check out the full dwSQL <a href="https://docs.data.world/tutorials/dwsql/">documentation</a>.</p>
+<p>Another way to pull data in from data.world is to use the <code class="codehilite"><span class="n">query</span><span class="p">()</span></code> method to use SQL or SPARQL to query one or more datasets. Check out the full dwSQL <a href="https://docs.data.world/tutorials/dwsql/">documentation</a>.</p>
 <h3 id="sql-querying-a-table">SQL: Querying a table<a class="headerlink" href="#sql-querying-a-table" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -1647,13 +1652,13 @@
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    FName  LName
-0    Robb  Stark
-1     Jon   Snow
-2   Sansa  Stark
-3    Arya  Stark
-4    Bran  Stark
-5  Rickon  Stark
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="n">FName</span>  <span class="n">LName</span>
+<span class="mi">0</span>    <span class="n">Robb</span>  <span class="n">Stark</span>
+<span class="mi">1</span>     <span class="n">Jon</span>   <span class="n">Snow</span>
+<span class="mi">2</span>   <span class="n">Sansa</span>  <span class="n">Stark</span>
+<span class="mi">3</span>    <span class="n">Arya</span>  <span class="n">Stark</span>
+<span class="mi">4</span>    <span class="n">Bran</span>  <span class="n">Stark</span>
+<span class="mi">5</span>  <span class="n">Rickon</span>  <span class="n">Stark</span>
 </pre></div>
 </td></tr></table>
 
@@ -1678,7 +1683,7 @@
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>56
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="mi">56</span>
 </pre></div>
 </td></tr></table>
 
@@ -1698,13 +1703,13 @@
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&#39;refugees2011_15&#39;
-&#39;refugees_all_years&#39;
-&#39;refugees_per_capita&#39;
-&#39;unhcr_2015&#39;
-&#39;unhcr_all&#39;
-&#39;worldbank_data_dict&#39;
-&#39;worldbank_indicators&#39;
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s1">&#39;refugees2011_15&#39;</span>
+<span class="s1">&#39;refugees_all_years&#39;</span>
+<span class="s1">&#39;refugees_per_capita&#39;</span>
+<span class="s1">&#39;unhcr_2015&#39;</span>
+<span class="s1">&#39;unhcr_all&#39;</span>
+<span class="s1">&#39;worldbank_data_dict&#39;</span>
+<span class="s1">&#39;worldbank_indicators&#39;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1759,54 +1764,54 @@
 31
 32
 33
-34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&#39;name:&#39;
-&#39;refugees2011_15&#39;
-&#39;refugees_all_years&#39;
-&#39;refugees_per_capita&#39;
-&#39;unhcr_2015&#39;
-&#39;unhcr_all&#39;
-&#39;worldbank_data_dict&#39;
-&#39;worldbank_indicators&#39;
-&#39;original/Refugees.ipynb&#39;
-&#39;original/refs.py&#39;
-&#39;original/refugees2011-15.csv&#39;
-&#39;original/refugees_all_years.csv&#39;
-&#39;original/refugees_per_capita.csv&#39;
-&#39;original/unhcr_2015.csv&#39;
-&#39;original/unhcr_all.csv&#39;
-&#39;original/worldbank_data_dict.csv&#39;
-&#39;original/worldbank_indicators.csv&#39;
-&#39;\ntype of file:&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;ipynb&#39;
-&#39;py&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
-&#39;csv&#39;
+34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s1">&#39;name:&#39;</span>
+<span class="s1">&#39;refugees2011_15&#39;</span>
+<span class="s1">&#39;refugees_all_years&#39;</span>
+<span class="s1">&#39;refugees_per_capita&#39;</span>
+<span class="s1">&#39;unhcr_2015&#39;</span>
+<span class="s1">&#39;unhcr_all&#39;</span>
+<span class="s1">&#39;worldbank_data_dict&#39;</span>
+<span class="s1">&#39;worldbank_indicators&#39;</span>
+<span class="s1">&#39;original/Refugees.ipynb&#39;</span>
+<span class="s1">&#39;original/refs.py&#39;</span>
+<span class="s1">&#39;original/refugees2011-15.csv&#39;</span>
+<span class="s1">&#39;original/refugees_all_years.csv&#39;</span>
+<span class="s1">&#39;original/refugees_per_capita.csv&#39;</span>
+<span class="s1">&#39;original/unhcr_2015.csv&#39;</span>
+<span class="s1">&#39;original/unhcr_all.csv&#39;</span>
+<span class="s1">&#39;original/worldbank_data_dict.csv&#39;</span>
+<span class="s1">&#39;original/worldbank_indicators.csv&#39;</span>
+<span class="s1">&#39;\ntype of file:&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;ipynb&#39;</span>
+<span class="s1">&#39;py&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
+<span class="s1">&#39;csv&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <h2 id="advanced-sdk-functionality">Advanced SDK Functionality<a class="headerlink" href="#advanced-sdk-functionality" title="Permanent link">&para;</a></h2>
-<p>The data.world Python SDK includes a variety of API wrappers, available via the <code class="codehilite">ApiClient</code> class, to create, replace, update, and delete a dataset. In this section, we walk through a few common tasks:</p>
+<p>The data.world Python SDK includes a variety of API wrappers, available via the <code class="codehilite"><span class="n">ApiClient</span></code> class, to create, replace, update, and delete a dataset. In this section, we walk through a few common tasks:</p>
 <ul>
-<li>Use <code class="codehilite">api_client()</code> to get an instance of the <code class="codehilite">ApiClient</code>.</li>
+<li>Use <code class="codehilite"><span class="n">api_client</span><span class="p">()</span></code> to get an instance of the <code class="codehilite"><span class="n">ApiClient</span></code>.</li>
 <li>Create a dataset.</li>
 <li>Add a file from a data frame: we write to a local csv and the upload the file.</li>
 <li>Add a file from a source URL: this is an easy way to add external data to the dataset and keep it up to date. We use a file from GitHub as an example, but we can use any URL source that points to a file.</li>
 <li>Sync the dataset: this simple call reloads any files with a source URL, to ensure the latest version.</li>
-<li>Update the dataset: after creating a dataset, use <code class="codehilite">update_dataset</code> to change attiributes like description, summary or tags.</li>
+<li>Update the dataset: after creating a dataset, use <code class="codehilite"><span class="n">update_dataset</span></code> to change attiributes like description, summary or tags.</li>
 </ul>
-<p>Use <code class="codehilite">help(api_client)</code> to learn more about each available function or see the full <a href="https://docs.data.world/documentation/api/">data.world API documentation</a>.</p>
+<p>Use <code class="codehilite"><span class="n">help</span><span class="p">(</span><span class="n">api_client</span><span class="p">)</span></code> to learn more about each available function or see the full <a href="https://docs.data.world/documentation/api/">data.world API documentation</a>.</p>
 <h3 id="open-the-api">Open the API<a class="headerlink" href="#open-the-api" title="Permanent link">&para;</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -2133,10 +2138,10 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.acme.inc/example.csv&#39;</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">add_files_via_url</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.acme.inc/example.csv&#39;</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">add_files_via_url</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="s1">&#39;username/test-dataset&#39;</span><span class="p">,</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="p">{</span><span class="s1">&#39;example.csv&#39;</span><span class="p">:</span> <span class="n">url</span><span class="p">})</span>  <span class="c1"># doctest: +SKIP</span>
  <span class="o">|</span>  
@@ -2175,9 +2180,9 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Test dataset&#39;</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="n">license</span><span class="o">=</span><span class="s1">&#39;Public Domain&#39;</span><span class="p">)</span>  <span class="c1"># doctest: +SKIP</span>
  <span class="o">|</span>  
@@ -2198,9 +2203,9 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">delete_files</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">delete_files</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="s1">&#39;username/test-dataset&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;example.csv&#39;</span><span class="p">])</span>  <span class="c1"># doctest: +SKIP</span>
  <span class="o">|</span>  
  <span class="o">|</span>  <span class="n">download_datapackage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_key</span><span class="p">,</span> <span class="n">dest_dir</span><span class="p">)</span>
@@ -2225,11 +2230,11 @@
  <span class="o">|</span>          <span class="n">If</span> <span class="n">a</span> <span class="n">server</span> <span class="n">error</span> <span class="n">occurs</span>
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">datapackage_descriptor</span> <span class="o">=</span> <span class="n">api_client</span><span class="o">.</span><span class="n">download_datapackage</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">datapackage_descriptor</span> <span class="o">=</span> <span class="n">api_client</span><span class="o">.</span><span class="n">download_datapackage</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="s1">&#39;jonloyens/an-intro-to-dataworld-dataset&#39;</span><span class="p">,</span> <span class="s1">&#39;/tmp/test&#39;</span><span class="p">)</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">datapackage_descriptor</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">datapackage_descriptor</span>
  <span class="o">|</span>      <span class="s1">&#39;/tmp/test/datapackage.json&#39;</span>
  <span class="o">|</span>  
  <span class="o">|</span>  <span class="n">get_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_key</span><span class="p">)</span>
@@ -2254,11 +2259,11 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">intro_dataset</span> <span class="o">=</span> <span class="n">api_client</span><span class="o">.</span><span class="n">get_dataset</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">intro_dataset</span> <span class="o">=</span> <span class="n">api_client</span><span class="o">.</span><span class="n">get_dataset</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="s1">&#39;jonloyens/an-intro-to-dataworld-dataset&#39;</span><span class="p">)</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">intro_dataset</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">intro_dataset</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
  <span class="o">|</span>      <span class="s1">&#39;An Intro to data.world Dataset&#39;</span>
  <span class="o">|</span>  
  <span class="o">|</span>  <span class="n">replace_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_key</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -2289,9 +2294,9 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">replace_dataset</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">replace_dataset</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="s1">&#39;username/test-dataset&#39;</span><span class="p">,</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="n">visibility</span><span class="o">=</span><span class="s1">&#39;PRIVATE&#39;</span><span class="p">,</span> <span class="n">license</span><span class="o">=</span><span class="s1">&#39;Public Domain&#39;</span><span class="p">,</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A better description&#39;</span><span class="p">)</span>  <span class="c1"># doctest: +SKIP</span>
@@ -2312,9 +2317,9 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">sync_files</span><span class="p">(</span><span class="s1">&#39;username/test-dataset&#39;</span><span class="p">)</span>  <span class="c1"># doctest: +SKIP</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">sync_files</span><span class="p">(</span><span class="s1">&#39;username/test-dataset&#39;</span><span class="p">)</span>  <span class="c1"># doctest: +SKIP</span>
  <span class="o">|</span>  
  <span class="o">|</span>  <span class="n">update_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_key</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
  <span class="o">|</span>      <span class="n">Update</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">dataset</span>
@@ -2342,9 +2347,9 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">update_dataset</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">update_dataset</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="s1">&#39;username/test-dataset&#39;</span><span class="p">,</span>
  <span class="o">|</span>      <span class="o">...</span>    <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;demo&#39;</span><span class="p">,</span> <span class="s1">&#39;datadotworld&#39;</span><span class="p">])</span>  <span class="c1"># doctest: +SKIP</span>
  <span class="o">|</span>  
@@ -2365,9 +2370,9 @@
  <span class="o">|</span>      
  <span class="o">|</span>      <span class="n">Examples</span>
  <span class="o">|</span>      <span class="o">--------</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
- <span class="o">|</span>      <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">upload_files</span><span class="p">(</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datadotworld</span> <span class="kn">as</span> <span class="nn">dw</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span> <span class="o">=</span> <span class="n">dw</span><span class="o">.</span><span class="n">api_client</span><span class="p">()</span>
+ <span class="o">|</span>      <span class="o">&gt;&gt;&gt;</span> <span class="n">api_client</span><span class="o">.</span><span class="n">upload_files</span><span class="p">(</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="s1">&#39;username/test-dataset&#39;</span><span class="p">,</span>
  <span class="o">|</span>      <span class="o">...</span>     <span class="p">[</span><span class="s1">&#39;/my/local/example.csv&#39;</span><span class="p">])</span>  <span class="c1"># doctest: +SKIP</span>
  <span class="o">|</span>  
@@ -2382,8 +2387,8 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="create-a-dataset-using-create_dataset-method">Create a dataset using <code class="codehilite">create_dataset</code> method<a class="headerlink" href="#create-a-dataset-using-create_dataset-method" title="Permanent link">&para;</a></h3>
-<p><code class="codehilite">api_client.create_dataset(owner_id=&quot;&lt;YOUR_USERNAME&gt;&quot;, title=&quot;&lt;DATASET_TITLE&gt;&quot;, visibility=&#39;PRIVATE&#39;)</code>.</p>
+<h3 id="create-a-dataset-using-create_dataset-method">Create a dataset using <code class="codehilite"><span class="n">create_dataset</span></code> method<a class="headerlink" href="#create-a-dataset-using-create_dataset-method" title="Permanent link">&para;</a></h3>
+<p><code class="codehilite"><span class="n">api_client</span><span class="p">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="n">owner_id</span><span class="o">=</span><span class="ss">&quot;&lt;YOUR_USERNAME&gt;&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="ss">&quot;&lt;DATASET_TITLE&gt;&quot;</span><span class="p">,</span> <span class="n">visibility</span><span class="o">=</span><span class="s1">&#39;PRIVATE&#39;</span><span class="p">)</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -2396,13 +2401,13 @@
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&#39;https://data.world/ugo/intermediate-data-world&#39;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="s1">&#39;https://data.world/ugo/intermediate-data-world&#39;</span>
 </pre></div>
 </td></tr></table>
 
 <h3 id="write-a-data-frame-to-a-local-file-and-upload-to-dataset">Write a data frame to a local file and upload to dataset<a class="headerlink" href="#write-a-data-frame-to-a-local-file-and-upload-to-dataset" title="Permanent link">&para;</a></h3>
-<p>Add file to the dataset using <code class="codehilite">upload_files()</code>. Replace the <code class="codehilite">&lt; &gt;</code> items with the dataset values.</p>
-<p><code class="codehilite">api_client.upload_files(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;,[&#39;police_shootings.csv&#39;])</code>.</p>
+<p>Add file to the dataset using <code class="codehilite"><span class="n">upload_files</span><span class="p">()</span></code>. Replace the <code class="codehilite"><span class="o">&lt;</span> <span class="o">&gt;</span></code> items with the dataset values.</p>
+<p><code class="codehilite"><span class="n">api_client</span><span class="p">.</span><span class="n">upload_files</span><span class="p">(</span><span class="s1">&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;</span><span class="p">,[</span><span class="s1">&#39;police_shootings.csv&#39;</span><span class="p">])</span></code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -2435,11 +2440,11 @@
 <h3 id="update-dataset">Update dataset<a class="headerlink" href="#update-dataset" title="Permanent link">&para;</a></h3>
 <p>Add a file from an external source URL. In this example we use GitHub. <br />
 Replace the &lt; &gt; items with the dataset values</p>
-<p><code class="codehilite">api_client.add_files_via_url(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;,{&#39;shootings_of_police.csv&#39;: &#39;https://github.com/fivethirtyeight/data/blob/master/police-deaths/all_data.csv’})</code>.</p>
-<p>For files added with <code class="codehilite">add_files_via_url</code>, fetch the latest version using the <code class="codehilite">sync()</code> method:</p>
-<p><code class="codehilite">api_client.sync_files(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;)</code>.</p>
-<p>Use the <code class="codehilite">update_dataset()</code> method to update the metadata after dataset creation:</p>
-<p><code class="codehilite">api_client.update_dataset(&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;, description=&#39;Dataset created to test out the python SDK functionality.&#39;, tags=[&#39;test&#39;, &#39;datacamp&#39;])</code>.</p>
+<p><code class="codehilite"><span class="n">api_client</span><span class="p">.</span><span class="n">add_files_via_url</span><span class="p">(</span><span class="s1">&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;</span><span class="p">,</span><span class="err">{</span><span class="s1">&#39;shootings_of_police.csv&#39;</span><span class="p">:</span> <span class="err">&#39;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/</span><span class="n">fivethirtyeight</span><span class="o">/</span><span class="k">data</span><span class="o">/</span><span class="nb">blob</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">police</span><span class="o">-</span><span class="n">deaths</span><span class="o">/</span><span class="n">all_data</span><span class="p">.</span><span class="n">csv</span><span class="err">’}</span><span class="p">)</span></code>.</p>
+<p>For files added with <code class="codehilite"><span class="n">add_files_via_url</span></code>, fetch the latest version using the <code class="codehilite"><span class="n">sync</span><span class="p">()</span></code> method:</p>
+<p><code class="codehilite"><span class="n">api_client</span><span class="p">.</span><span class="n">sync_files</span><span class="p">(</span><span class="s1">&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;</span><span class="p">)</span></code>.</p>
+<p>Use the <code class="codehilite"><span class="n">update_dataset</span><span class="p">()</span></code> method to update the metadata after dataset creation:</p>
+<p><code class="codehilite"><span class="n">api_client</span><span class="p">.</span><span class="n">update_dataset</span><span class="p">(</span><span class="s1">&#39;&lt;YOUR_USERNAME&gt;/&lt;DATASET_TITLE&gt;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Dataset created to test out the python SDK functionality.&#39;</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="s1">&#39;datacamp&#39;</span><span class="p">])</span></code>.</p>
                 
                   
                 
@@ -2503,25 +2508,17 @@ Replace the &lt; &gt; items with the dataset values</p>
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

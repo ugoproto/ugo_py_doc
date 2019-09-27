@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Automate the Boring Stuff with Python
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -662,147 +667,147 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chapter-2-flow-control" title="Chapter 2, Flow Control" class="md-nav__link">
+  <a href="#chapter-2-flow-control" class="md-nav__link">
     Chapter 2, Flow Control
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-3-functions" title="Chapter 3, Functions" class="md-nav__link">
+  <a href="#chapter-3-functions" class="md-nav__link">
     Chapter 3, Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-4-lists-and-tuples" title="Chapter 4, Lists (and Tuples)" class="md-nav__link">
+  <a href="#chapter-4-lists-and-tuples" class="md-nav__link">
     Chapter 4, Lists (and Tuples)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-5-dictionaries-and-structuring-data" title="Chapter 5, Dictionaries and Structuring Data" class="md-nav__link">
+  <a href="#chapter-5-dictionaries-and-structuring-data" class="md-nav__link">
     Chapter 5, Dictionaries and Structuring Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-6-manipulating-strings" title="Chapter 6, Manipulating Strings" class="md-nav__link">
+  <a href="#chapter-6-manipulating-strings" class="md-nav__link">
     Chapter 6, Manipulating Strings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-7-pattern-matching-and-regular-expressions" title="Chapter 7, Pattern Matching and Regular Expressions" class="md-nav__link">
+  <a href="#chapter-7-pattern-matching-and-regular-expressions" class="md-nav__link">
     Chapter 7, Pattern Matching and Regular Expressions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-8-reading-and-writing-files" title="Chapter 8, Reading and Writing Files" class="md-nav__link">
+  <a href="#chapter-8-reading-and-writing-files" class="md-nav__link">
     Chapter 8, Reading and Writing Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-9-organizing-files" title="Chapter 9, Organizing Files" class="md-nav__link">
+  <a href="#chapter-9-organizing-files" class="md-nav__link">
     Chapter 9, Organizing Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-10-debugging" title="Chapter 10, Debugging" class="md-nav__link">
+  <a href="#chapter-10-debugging" class="md-nav__link">
     Chapter 10, Debugging
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-11-web-scraping" title="Chapter 11, Web Scraping" class="md-nav__link">
+  <a href="#chapter-11-web-scraping" class="md-nav__link">
     Chapter 11, Web Scraping
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-12-excel-spreadsheets" title="Chapter 12, Excel Spreadsheets" class="md-nav__link">
+  <a href="#chapter-12-excel-spreadsheets" class="md-nav__link">
     Chapter 12, Excel Spreadsheets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-13-pdf-and-word-documents" title="Chapter 13, PDF and Word Documents" class="md-nav__link">
+  <a href="#chapter-13-pdf-and-word-documents" class="md-nav__link">
     Chapter 13, PDF and Word Documents
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-14-csv-files-and-json-data" title="Chapter 14, CSV Files and JSON Data" class="md-nav__link">
+  <a href="#chapter-14-csv-files-and-json-data" class="md-nav__link">
     Chapter 14, CSV Files and JSON Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Chapter 15, Time, Scheduling Tasks, and Launching Programs" class="md-nav__link">
+  <a href="#chapter-15-time-scheduling-tasks-and-launching-programs" class="md-nav__link">
     Chapter 15, Time, Scheduling Tasks, and Launching Programs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-16-sending-email-and-text-messages" title="Chapter 16, Sending Email and Text Messages" class="md-nav__link">
+  <a href="#chapter-16-sending-email-and-text-messages" class="md-nav__link">
     Chapter 16, Sending Email and Text Messages
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-17-manipulating-images" title="Chapter 17, Manipulating Images" class="md-nav__link">
+  <a href="#chapter-17-manipulating-images" class="md-nav__link">
     Chapter 17, Manipulating Images
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Chapter 18, Controlling the Keyboard and Mouse with GUI Automation" class="md-nav__link">
+  <a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" class="md-nav__link">
     Chapter 18, Controlling the Keyboard and Mouse with GUI Automation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#appendix-a" title="Appendix A" class="md-nav__link">
+  <a href="#appendix-a" class="md-nav__link">
     Appendix A
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#appendix-b" title="Appendix B" class="md-nav__link">
+  <a href="#appendix-b" class="md-nav__link">
     Appendix B
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#appendix-c" title="Appendix C" class="md-nav__link">
+  <a href="#appendix-c" class="md-nav__link">
     Appendix C
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-content" title="Additional Content" class="md-nav__link">
+  <a href="#additional-content" class="md-nav__link">
     Additional Content
   </a>
   
@@ -927,147 +932,147 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#chapter-2-flow-control" title="Chapter 2, Flow Control" class="md-nav__link">
+  <a href="#chapter-2-flow-control" class="md-nav__link">
     Chapter 2, Flow Control
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-3-functions" title="Chapter 3, Functions" class="md-nav__link">
+  <a href="#chapter-3-functions" class="md-nav__link">
     Chapter 3, Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-4-lists-and-tuples" title="Chapter 4, Lists (and Tuples)" class="md-nav__link">
+  <a href="#chapter-4-lists-and-tuples" class="md-nav__link">
     Chapter 4, Lists (and Tuples)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-5-dictionaries-and-structuring-data" title="Chapter 5, Dictionaries and Structuring Data" class="md-nav__link">
+  <a href="#chapter-5-dictionaries-and-structuring-data" class="md-nav__link">
     Chapter 5, Dictionaries and Structuring Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-6-manipulating-strings" title="Chapter 6, Manipulating Strings" class="md-nav__link">
+  <a href="#chapter-6-manipulating-strings" class="md-nav__link">
     Chapter 6, Manipulating Strings
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-7-pattern-matching-and-regular-expressions" title="Chapter 7, Pattern Matching and Regular Expressions" class="md-nav__link">
+  <a href="#chapter-7-pattern-matching-and-regular-expressions" class="md-nav__link">
     Chapter 7, Pattern Matching and Regular Expressions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-8-reading-and-writing-files" title="Chapter 8, Reading and Writing Files" class="md-nav__link">
+  <a href="#chapter-8-reading-and-writing-files" class="md-nav__link">
     Chapter 8, Reading and Writing Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-9-organizing-files" title="Chapter 9, Organizing Files" class="md-nav__link">
+  <a href="#chapter-9-organizing-files" class="md-nav__link">
     Chapter 9, Organizing Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-10-debugging" title="Chapter 10, Debugging" class="md-nav__link">
+  <a href="#chapter-10-debugging" class="md-nav__link">
     Chapter 10, Debugging
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-11-web-scraping" title="Chapter 11, Web Scraping" class="md-nav__link">
+  <a href="#chapter-11-web-scraping" class="md-nav__link">
     Chapter 11, Web Scraping
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-12-excel-spreadsheets" title="Chapter 12, Excel Spreadsheets" class="md-nav__link">
+  <a href="#chapter-12-excel-spreadsheets" class="md-nav__link">
     Chapter 12, Excel Spreadsheets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-13-pdf-and-word-documents" title="Chapter 13, PDF and Word Documents" class="md-nav__link">
+  <a href="#chapter-13-pdf-and-word-documents" class="md-nav__link">
     Chapter 13, PDF and Word Documents
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-14-csv-files-and-json-data" title="Chapter 14, CSV Files and JSON Data" class="md-nav__link">
+  <a href="#chapter-14-csv-files-and-json-data" class="md-nav__link">
     Chapter 14, CSV Files and JSON Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Chapter 15, Time, Scheduling Tasks, and Launching Programs" class="md-nav__link">
+  <a href="#chapter-15-time-scheduling-tasks-and-launching-programs" class="md-nav__link">
     Chapter 15, Time, Scheduling Tasks, and Launching Programs
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-16-sending-email-and-text-messages" title="Chapter 16, Sending Email and Text Messages" class="md-nav__link">
+  <a href="#chapter-16-sending-email-and-text-messages" class="md-nav__link">
     Chapter 16, Sending Email and Text Messages
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-17-manipulating-images" title="Chapter 17, Manipulating Images" class="md-nav__link">
+  <a href="#chapter-17-manipulating-images" class="md-nav__link">
     Chapter 17, Manipulating Images
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Chapter 18, Controlling the Keyboard and Mouse with GUI Automation" class="md-nav__link">
+  <a href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" class="md-nav__link">
     Chapter 18, Controlling the Keyboard and Mouse with GUI Automation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#appendix-a" title="Appendix A" class="md-nav__link">
+  <a href="#appendix-a" class="md-nav__link">
     Appendix A
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#appendix-b" title="Appendix B" class="md-nav__link">
+  <a href="#appendix-b" class="md-nav__link">
     Appendix B
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#appendix-c" title="Appendix C" class="md-nav__link">
+  <a href="#appendix-c" class="md-nav__link">
     Appendix C
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-content" title="Additional Content" class="md-nav__link">
+  <a href="#additional-content" class="md-nav__link">
     Additional Content
   </a>
   
@@ -1112,50 +1117,50 @@
 <h2 id="chapter-2-flow-control">Chapter 2, Flow Control<a class="headerlink" href="#chapter-2-flow-control" title="Permanent link">&para;</a></h2>
 <p><sub>boolean, comparison, operator, flow control, condition, conditional, loop</sub></p>
 <ul>
-<li><code class="codehilite">True</code>, <code class="codehilite">False</code>.</li>
-<li><code class="codehilite">and</code>, <code class="codehilite">or</code>, <code class="codehilite">not</code>.</li>
-<li><code class="codehilite">==</code>, <code class="codehilite">!=</code>, <code class="codehilite">&lt;</code>, <code class="codehilite">&gt;</code>, etc.</li>
-<li><code class="codehilite">if</code>, <code class="codehilite">else</code>, <code class="codehilite">elif</code></li>
-<li>Loops: <code class="codehilite">while</code>, <code class="codehilite">for</code> with <code class="codehilite">in</code>, <code class="codehilite">range</code>.</li>
-<li><code class="codehilite">break</code>, <code class="codehilite">continue</code>.</li>
+<li><code class="codehilite"><span class="k">True</span></code>, <code class="codehilite"><span class="k">False</span></code>.</li>
+<li><code class="codehilite"><span class="k">and</span></code>, <code class="codehilite"><span class="k">or</span></code>, <code class="codehilite"><span class="k">not</span></code>.</li>
+<li><code class="codehilite"><span class="o">==</span></code>, <code class="codehilite"><span class="o">!=</span></code>, <code class="codehilite"><span class="o">&lt;</span></code>, <code class="codehilite"><span class="o">&gt;</span></code>, etc.</li>
+<li><code class="codehilite"><span class="k">if</span></code>, <code class="codehilite"><span class="k">else</span></code>, <code class="codehilite"><span class="n">elif</span></code></li>
+<li>Loops: <code class="codehilite"><span class="k">while</span></code>, <code class="codehilite"><span class="k">for</span></code> with <code class="codehilite"><span class="k">in</span></code>, <code class="codehilite"><span class="n">range</span></code>.</li>
+<li><code class="codehilite"><span class="k">break</span></code>, <code class="codehilite"><span class="k">continue</span></code>.</li>
 <li><code class="codehilite"><span class="kn">import</span> <span class="nn">random</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">math</span></code>.</li>
-<li><code class="codehilite">random.randint</code>.</li>
+<li><code class="codehilite"><span class="k">random</span>.<span class="nv">randint</span></code>.</li>
 <li><code class="codehilite"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="o">*</span></code>.</li>
-<li><code class="codehilite">sys.exit()</code>.</li>
+<li><code class="codehilite"><span class="nv">sys</span>.<span class="k">exit</span><span class="ss">()</span></code>.</li>
 </ul>
 <h2 id="chapter-3-functions">Chapter 3, Functions<a class="headerlink" href="#chapter-3-functions" title="Permanent link">&para;</a></h2>
 <p><sub>global, local, variable, scope</sub></p>
-<p>Exception handling with <code class="codehilite">try:</code> and <code class="codehilite">except</code>.</p>
+<p>Exception handling with <code class="codehilite"><span class="n">try</span><span class="p">:</span></code> and <code class="codehilite"><span class="k">except</span></code>.</p>
 <h2 id="chapter-4-lists-and-tuples">Chapter 4, Lists (and Tuples)<a class="headerlink" href="#chapter-4-lists-and-tuples" title="Permanent link">&para;</a></h2>
 <p><sub>data type, index, sublist, subset, slice,  change, concatenate, concatenation, tuple, convert, tuple to list</sub></p>
 <ul>
-<li><code class="codehilite">len()</code> function; length.</li>
-<li><code class="codehilite">in</code> and <code class="codehilite">not in</code> operators.</li>
-<li><code class="codehilite">+=</code>, <code class="codehilite">-=</code>, <code class="codehilite">*=</code>, <code class="codehilite">/=</code>, <code class="codehilite"><span class="c">%=</span></code> augmented assignments.</li>
-<li><code class="codehilite">index()</code> method; extract the position of an element.</li>
-<li><code class="codehilite">append()</code> method.</li>
-<li><code class="codehilite">insert()</code> method.</li>
-<li><code class="codehilite">remove()</code> method.</li>
-<li><code class="codehilite">sort()</code> method.</li>
-<li><code class="codehilite">copy</code> module and <code class="codehilite">copy()</code> method.</li>
-<li><code class="codehilite">deepcopy()</code> method; for inner list or a list of lists (ensure the key exists).</li>
+<li><code class="codehilite"><span class="n">len</span><span class="p">()</span></code> function; length.</li>
+<li><code class="codehilite"><span class="k">in</span></code> and <code class="codehilite"><span class="k">not</span> <span class="k">in</span></code> operators.</li>
+<li><code class="codehilite"><span class="o">+=</span></code>, <code class="codehilite"><span class="o">-=</span></code>, <code class="codehilite"><span class="o">*=</span></code>, <code class="codehilite"><span class="o">/=</span></code>, <code class="codehilite"><span class="c">%=</span></code> augmented assignments.</li>
+<li><code class="codehilite"><span class="k">index</span><span class="p">()</span></code> method; extract the position of an element.</li>
+<li><code class="codehilite"><span class="n">append</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">insert</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">remove</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">sort</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">copy</span></code> module and <code class="codehilite"><span class="k">copy</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">deepcopy</span><span class="p">()</span></code> method; for inner list or a list of lists (ensure the key exists).</li>
 </ul>
 <h2 id="chapter-5-dictionaries-and-structuring-data">Chapter 5, Dictionaries and Structuring Data<a class="headerlink" href="#chapter-5-dictionaries-and-structuring-data" title="Permanent link">&para;</a></h2>
 <p><sub>loop</sub></p>
 <p>Dictionaries are not indexed and ordered like lists.</p>
 <ul>
-<li><code class="codehilite">keys()</code> method; extract keys.</li>
-<li><code class="codehilite">values()</code> method; extract values.</li>
-<li><code class="codehilite">items()</code> method; extract both.</li>
-<li><code class="codehilite">get()</code> method; check out both.</li>
-<li><code class="codehilite">in</code> and <code class="codehilite">not in</code> operators. </li>
-<li><code class="codehilite">setdefault()</code> method, check out a key and set value to a key.</li>
+<li><code class="codehilite"><span class="n">keys</span><span class="p">()</span></code> method; extract keys.</li>
+<li><code class="codehilite"><span class="k">values</span><span class="p">()</span></code> method; extract values.</li>
+<li><code class="codehilite"><span class="n">items</span><span class="p">()</span></code> method; extract both.</li>
+<li><code class="codehilite"><span class="k">get</span><span class="p">()</span></code> method; check out both.</li>
+<li><code class="codehilite"><span class="k">in</span></code> and <code class="codehilite"><span class="k">not</span> <span class="k">in</span></code> operators. </li>
+<li><code class="codehilite"><span class="n">setdefault</span><span class="p">()</span></code> method, check out a key and set value to a key.</li>
 </ul>
-<p>Pretty print with the <code class="codehilite">pprint()</code> and <code class="codehilite">pformat()</code> functions.</p>
+<p>Pretty print with the <code class="codehilite"><span class="n">pprint</span><span class="p">()</span></code> and <code class="codehilite"><span class="n">pformat</span><span class="p">()</span></code> functions.</p>
 <p>Nested dictionaries and lists.</p>
 <h2 id="chapter-6-manipulating-strings">Chapter 6, Manipulating Strings<a class="headerlink" href="#chapter-6-manipulating-strings" title="Permanent link">&para;</a></h2>
-<p>Escape character: <code class="codehilite">\</code>: <code class="codehilite">\&#39;</code>, <code class="codehilite">\&quot;</code>, <code class="codehilite">\t</code>, <code class="codehilite">\n</code>, <code class="codehilite">\\</code>.</p>
-<p>Raw strings: <code class="codehilite">print(r&#39;That is Carol&#39;)</code>.</p>
+<p>Escape character: <code class="codehilite"><span class="err">\</span></code>: <code class="codehilite"><span class="err">\&#39;</span></code>, <code class="codehilite"><span class="err">\&quot;</span></code>, <code class="codehilite"><span class="err">\</span><span class="n">t</span></code>, <code class="codehilite"><span class="err">\</span><span class="n">n</span></code>, <code class="codehilite"><span class="err">\\</span></code>.</p>
+<p>Raw strings: <code class="codehilite"><span class="n">print</span><span class="p">(</span><span class="n">r</span><span class="s1">&#39;That is Carol&#39;</span><span class="p">)</span></code>.</p>
 <p>Triple quotes:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1173,35 +1178,35 @@
 </pre></div>
 </td></tr></table>
 
-<p>Comment: <code class="codehilite">#</code>.<br />
-Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quot;</code>.</p>
+<p>Comment: <code class="codehilite"><span class="o">#</span></code>.<br />
+Multiline comments: <code class="codehilite"><span class="ss">&quot;&quot;&quot; &quot;&quot;&quot;</span></code>.</p>
 <ul>
-<li>Slice, subset with <code class="codehilite">[:]</code>.</li>
-<li><code class="codehilite">in</code> and <code class="codehilite">not in</code> operators.</li>
-<li><code class="codehilite">lower()</code> method.</li>
-<li><code class="codehilite">upper()</code> method.</li>
-<li><code class="codehilite">capitalize()</code> method.</li>
-<li><code class="codehilite">is</code> method; check if x is part of y.</li>
-<li><code class="codehilite">islower()</code> method.</li>
-<li><code class="codehilite">isupper()</code> method.</li>
-<li><code class="codehilite">isalpha()</code> method; check letters, not blank.</li>
-<li><code class="codehilite">isalnum()</code> method; check letters and numbers, and not blank.</li>
-<li><code class="codehilite">isdecimal()</code> method; check numeric characters and not blank.</li>
-<li><code class="codehilite">isspace()</code> method; check spaces, tabs and new lines and not blank.</li>
-<li><code class="codehilite">istitle()</code> method; check if it begins with an uppercase letter followed with lowercase letters.</li>
-<li><code class="codehilite">startwith()</code> method; check if a string begins with a string of characters.</li>
-<li><code class="codehilite">endwith()</code> method; idem.</li>
-<li><code class="codehilite">join()</code> method; concatenate.</li>
-<li><code class="codehilite">split()</code> method.</li>
-<li><code class="codehilite">rjust()</code> method; justify.</li>
-<li><code class="codehilite">ljust()</code> method justify.</li>
-<li><code class="codehilite">center()</code> method.</li>
-<li><code class="codehilite">strip()</code> method; remove white space.</li>
-<li><code class="codehilite">rstrip()</code> method; ; remove white space to the right.</li>
-<li><code class="codehilite">lstrip()</code> method; remove white space to the left.</li>
+<li>Slice, subset with <code class="codehilite"><span class="p">[:]</span></code>.</li>
+<li><code class="codehilite"><span class="k">in</span></code> and <code class="codehilite"><span class="k">not</span> <span class="k">in</span></code> operators.</li>
+<li><code class="codehilite"><span class="k">lower</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">upper</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">capitalize</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="k">is</span></code> method; check if x is part of y.</li>
+<li><code class="codehilite"><span class="n">islower</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">isupper</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">isalpha</span><span class="p">()</span></code> method; check letters, not blank.</li>
+<li><code class="codehilite"><span class="n">isalnum</span><span class="p">()</span></code> method; check letters and numbers, and not blank.</li>
+<li><code class="codehilite"><span class="n">isdecimal</span><span class="p">()</span></code> method; check numeric characters and not blank.</li>
+<li><code class="codehilite"><span class="n">isspace</span><span class="p">()</span></code> method; check spaces, tabs and new lines and not blank.</li>
+<li><code class="codehilite"><span class="n">istitle</span><span class="p">()</span></code> method; check if it begins with an uppercase letter followed with lowercase letters.</li>
+<li><code class="codehilite"><span class="n">startwith</span><span class="p">()</span></code> method; check if a string begins with a string of characters.</li>
+<li><code class="codehilite"><span class="n">endwith</span><span class="p">()</span></code> method; idem.</li>
+<li><code class="codehilite"><span class="k">join</span><span class="p">()</span></code> method; concatenate.</li>
+<li><code class="codehilite"><span class="n">split</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">rjust</span><span class="p">()</span></code> method; justify.</li>
+<li><code class="codehilite"><span class="n">ljust</span><span class="p">()</span></code> method justify.</li>
+<li><code class="codehilite"><span class="n">center</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">strip</span><span class="p">()</span></code> method; remove white space.</li>
+<li><code class="codehilite"><span class="n">rstrip</span><span class="p">()</span></code> method; ; remove white space to the right.</li>
+<li><code class="codehilite"><span class="n">lstrip</span><span class="p">()</span></code> method; remove white space to the left.</li>
 </ul>
-<p><code class="codehilite">pyperclip</code> module.</p>
-<p>The <code class="codehilite">pyperclip.pyclip</code> function send text to and receive text from the clipboard:</p>
+<p><code class="codehilite"><span class="n">pyperclip</span></code> module.</p>
+<p>The <code class="codehilite"><span class="n">pyperclip</span><span class="p">.</span><span class="n">pyclip</span></code> function send text to and receive text from the clipboard:</p>
 <p>In addition:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -1215,27 +1220,27 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 
 <h2 id="chapter-7-pattern-matching-and-regular-expressions">Chapter 7, Pattern Matching and Regular Expressions<a class="headerlink" href="#chapter-7-pattern-matching-and-regular-expressions" title="Permanent link">&para;</a></h2>
 <p><sub>patterns of text, with, without regular expression, regex, object, match, matching, group, grouping, pipe, question mark, star, ?, *, plus, +, curly bracket, {, }, character class, digit, numeric, letter, underscore, space, tab, newline, caret, ^, dollar sign, $, wildcard, dot, ., dotstar, newline, symbols, case-sensitive, case-insensitive</sub></p>
-<p><code class="codehilite">re</code> module.</p>
+<p><code class="codehilite"><span class="n">re</span></code> module.</p>
 <ul>
-<li><code class="codehilite">re.compile()</code> method; find a single occurrence.</li>
-<li><code class="codehilite">re.findall()</code> method; find all occurrences.</li>
-<li><code class="codehilite">sub()</code> method; substitute.</li>
-<li><code class="codehilite">re.IGNORECASE</code>; ignore capitalization with the <code class="codehilite">compile()</code> method.</li>
-<li><code class="codehilite">re.DOTALL</code>; ignore dots with the <code class="codehilite">re.compile()</code> method.</li>
-<li><code class="codehilite">re.VERBOSE</code>; write comment with the <code class="codehilite">re.compile()</code> method.</li>
+<li><code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="n">compile</span><span class="p">()</span></code> method; find a single occurrence.</li>
+<li><code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="n">findall</span><span class="p">()</span></code> method; find all occurrences.</li>
+<li><code class="codehilite"><span class="n">sub</span><span class="p">()</span></code> method; substitute.</li>
+<li><code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="n">IGNORECASE</span></code>; ignore capitalization with the <code class="codehilite"><span class="n">compile</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="n">DOTALL</span></code>; ignore dots with the <code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="n">compile</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="k">VERBOSE</span></code>; write comment with the <code class="codehilite"><span class="n">re</span><span class="p">.</span><span class="n">compile</span><span class="p">()</span></code> method.</li>
 </ul>
 <h2 id="chapter-8-reading-and-writing-files">Chapter 8, Reading and Writing Files<a class="headerlink" href="#chapter-8-reading-and-writing-files" title="Permanent link">&para;</a></h2>
 <p><sub>file, file path, filename</sub></p>
-<p><code class="codehilite">os</code> module.</p>
+<p><code class="codehilite"><span class="n">os</span></code> module.</p>
 <ul>
-<li>A relative path: <code class="codehilite"><span class="cp">..\eggs\spam.txt</span></code>, <code class="codehilite">.\fizz\spam.txt</code>.</li>
-<li>An absolute path: <code class="codehilite">C:\bacon\fizz\spam.txt</code>.</li>
-<li><code class="codehilite">os.getcwd()</code> or <code class="codehilite">os.chdir()</code> functions; extract the current working directory.</li>
-<li><code class="codehilite">os.makedir()</code>function; create a new folder.</li>
+<li>A relative path: <code class="codehilite"><span class="cp">..\eggs\spam.txt</span></code>, <code class="codehilite"><span class="p">.</span><span class="err">\</span><span class="n">fizz</span><span class="err">\</span><span class="n">spam</span><span class="p">.</span><span class="n">txt</span></code>.</li>
+<li>An absolute path: <code class="codehilite"><span class="k">C</span><span class="p">:</span><span class="err">\</span><span class="n">bacon</span><span class="err">\</span><span class="n">fizz</span><span class="err">\</span><span class="n">spam</span><span class="p">.</span><span class="n">txt</span></code>.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">getcwd</span><span class="p">()</span></code> or <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">chdir</span><span class="p">()</span></code> functions; extract the current working directory.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">makedir</span><span class="p">()</span></code>function; create a new folder.</li>
 </ul>
-<p><code class="codehilite">os.path</code> module. </p>
+<p><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span></code> module. </p>
 <p>Handle absolute and relative paths. Find file sizes and folder contents. Check path validity.</p>
-<p>Windows: backslash or <code class="codehilite">\</code>:</p>
+<p>Windows: backslash or <code class="codehilite"><span class="err">\</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">)</span>
@@ -1247,7 +1252,7 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 </pre></div>
 </td></tr></table>
 
-<p>UNIX: forwardslash or <code class="codehilite">/</code>:</p>
+<p>UNIX: forwardslash or <code class="codehilite"><span class="o">/</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">)</span>
@@ -1261,69 +1266,69 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 
 <p>Read and write files:</p>
 <ul>
-<li><code class="codehilite">os.path.open()</code> function.</li>
-<li><code class="codehilite">os.path.read()</code> method.</li>
-<li><code class="codehilite">os.path.readline()</code> method.</li>
-<li><code class="codehilite">os.path.write()</code> method.</li>
-<li><code class="codehilite">os.path.close()</code> method.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="k">open</span><span class="p">()</span></code> function.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="k">read</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">readline</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="k">write</span><span class="p">()</span></code> method.</li>
+<li><code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="k">close</span><span class="p">()</span></code> method.</li>
 </ul>
-<p><code class="codehilite">shelve</code> module.</p>
+<p><code class="codehilite"><span class="n">shelve</span></code> module.</p>
 <p>Handle binary files.</p>
-<p><code class="codehilite">pprint</code> module. </p>
+<p><code class="codehilite"><span class="n">pprint</span></code> module. </p>
 <p>Pretty printing:</p>
 <ul>
-<li><code class="codehilite">pprint.pprint()</code>.</li>
-<li><code class="codehilite">pprint.pformat()</code>.</li>
+<li><code class="codehilite"><span class="n">pprint</span><span class="p">.</span><span class="n">pprint</span><span class="p">()</span></code>.</li>
+<li><code class="codehilite"><span class="n">pprint</span><span class="p">.</span><span class="n">pformat</span><span class="p">()</span></code>.</li>
 </ul>
 <h2 id="chapter-9-organizing-files">Chapter 9, Organizing Files<a class="headerlink" href="#chapter-9-organizing-files" title="Permanent link">&para;</a></h2>
 <p><sub>pdf, every sub-folder, folder, foldername, subfolder, filename, file, remove, zero, change titles, compress, decompress, zip, unzip</sub></p>
-<p><code class="codehilite">shutil</code> module. </p>
-<p>Copy, move, rename, and delete files and folders. <code class="codehilite">shutil.rmtree()</code> function; delete file and folder.</p>
-<p><code class="codehilite">os</code> module. </p>
-<p>Delete, empty, remove files and folders, and change the path. <code class="codehilite">os.walk()</code> method; walk the tree directory.</p>
-<p><code class="codehilite">send2trash</code> module. </p>
+<p><code class="codehilite"><span class="n">shutil</span></code> module. </p>
+<p>Copy, move, rename, and delete files and folders. <code class="codehilite"><span class="n">shutil</span><span class="p">.</span><span class="n">rmtree</span><span class="p">()</span></code> function; delete file and folder.</p>
+<p><code class="codehilite"><span class="n">os</span></code> module. </p>
+<p>Delete, empty, remove files and folders, and change the path. <code class="codehilite"><span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">()</span></code> method; walk the tree directory.</p>
+<p><code class="codehilite"><span class="n">send2trash</span></code> module. </p>
 <p>Delete files and folders, but much safer.</p>
-<p><code class="codehilite">zipfile</code> module. </p>
+<p><code class="codehilite"><span class="n">zipfile</span></code> module. </p>
 <p>Compress and uncompress. Read the content of compressed and zipped files.</p>
 <ul>
-<li><code class="codehilite">zipfile.extracall()</code>; method  extracts all the files and folders from a zip file.</li>
-<li><code class="codehilite">write()</code> method; create a zip file.</li>
+<li><code class="codehilite"><span class="n">zipfile</span><span class="p">.</span><span class="n">extracall</span><span class="p">()</span></code>; method  extracts all the files and folders from a zip file.</li>
+<li><code class="codehilite"><span class="k">write</span><span class="p">()</span></code> method; create a zip file.</li>
 </ul>
 <h2 id="chapter-10-debugging">Chapter 10, Debugging<a class="headerlink" href="#chapter-10-debugging" title="Permanent link">&para;</a></h2>
-<p>Handle errors with <code class="codehilite">try</code> and <code class="codehilite">except</code>.</p>
-<p>Raise exceptions with a <code class="codehilite">raise</code> statement and the <code class="codehilite">Exception()</code> function.</p>
-<p><code class="codehilite">traceback</code> module. </p>
-<p>Discover what and how an error happens and obtain it as a string with the <code class="codehilite">traceback.format_exc()</code> method. </p>
-<p>An assertion is a sanity check performed with an <code class="codehilite">assert</code> statement. </p>
-<p><code class="codehilite">logging</code> module. </p>
+<p>Handle errors with <code class="codehilite"><span class="n">try</span></code> and <code class="codehilite"><span class="k">except</span></code>.</p>
+<p>Raise exceptions with a <code class="codehilite"><span class="n">raise</span></code> statement and the <code class="codehilite"><span class="k">Exception</span><span class="p">()</span></code> function.</p>
+<p><code class="codehilite"><span class="n">traceback</span></code> module. </p>
+<p>Discover what and how an error happens and obtain it as a string with the <code class="codehilite"><span class="n">traceback</span><span class="p">.</span><span class="n">format_exc</span><span class="p">()</span></code> method. </p>
+<p>An assertion is a sanity check performed with an <code class="codehilite"><span class="n">assert</span></code> statement. </p>
+<p><code class="codehilite"><span class="n">logging</span></code> module. </p>
 <p>Display log messages as the program runs. Log to a file. Debug a code. Enable and disable logging. Enable an IDLE debugger.</p>
-<p>Set a <code class="codehilite">breakpoint</code> to check out potential bugs.</p>
+<p>Set a <code class="codehilite"><span class="n">breakpoint</span></code> to check out potential bugs.</p>
 <h2 id="chapter-11-web-scraping">Chapter 11, Web Scraping<a class="headerlink" href="#chapter-11-web-scraping" title="Permanent link">&para;</a></h2>
 <p><sub>html</sub></p>
-<p><code class="codehilite">webbrowser</code> module.</p>
-<p>Open a browser to a specific webpage (in conjunction with the <code class="codehilite">sys</code> module). </p>
+<p><code class="codehilite"><span class="n">webbrowser</span></code> module.</p>
+<p>Open a browser to a specific webpage (in conjunction with the <code class="codehilite"><span class="n">sys</span></code> module). </p>
 <p>Use:</p>
 <ul>
 <li>Get a street address from the command line to the clipboard.</li>
 <li>Go to a Google Maps page.</li>
-<li>Read command line arguments from <code class="codehilite">sys.argv</code>.</li>
+<li>Read command line arguments from <code class="codehilite"><span class="n">sys</span><span class="p">.</span><span class="n">argv</span></code>.</li>
 <li>Read the clipboard content.</li>
 <li>Open all links on a page in separate tabs.</li>
 <li>Open the browser to the url for local weather.</li>
 <li>Open several social network sites.</li>
 </ul>
-<p><code class="codehilite">requests</code> module.</p>
+<p><code class="codehilite"><span class="n">requests</span></code> module.</p>
 <p>Download files and webpages; similar to opening, reading, writing, closing files and folders. </p>
 <ul>
-<li>Simpler than the <code class="codehilite">urllib2</code> module.</li>
+<li>Simpler than the <code class="codehilite"><span class="n">urllib2</span></code> module.</li>
 <li>Can check out errors.</li>
 <li>Save the downloaded files.</li>
 </ul>
 <p>HTML crash course!</p>
-<p><code class="codehilite">bs4</code> module (BeautifulSoup).</p>
+<p><code class="codehilite"><span class="n">bs4</span></code> module (BeautifulSoup).</p>
 <ul>
-<li><code class="codehilite">BeautifulSoup()</code> function; parses HTML. </li>
-<li><code class="codehilite">select()</code> method;  find an element. </li>
+<li><code class="codehilite"><span class="n">BeautifulSoup</span><span class="p">()</span></code> function; parses HTML. </li>
+<li><code class="codehilite"><span class="k">select</span><span class="p">()</span></code> method;  find an element. </li>
 <li>Get data from an element&rsquo;s attributes.</li>
 </ul>
 <p>Use:</p>
@@ -1331,15 +1336,15 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Search Google.</li>
 <li>Retrieve search results.</li>
 <li>Open tabs for each results.</li>
-<li>Read the command line arguments from <code class="codehilite">sys.argv</code>.</li>
-<li>Fetch results with the <code class="codehilite">requests</code> module.</li>
+<li>Read the command line arguments from <code class="codehilite"><span class="n">sys</span><span class="p">.</span><span class="n">argv</span></code>.</li>
+<li>Fetch results with the <code class="codehilite"><span class="n">requests</span></code> module.</li>
 <li>Find the links.</li>
 <li>Download all images, videos, files, etc.</li>
 <li>Back up an entire site by following all of its links.</li>
 <li>Copy all the messages off a web forum.</li>
 <li>Duplicate the catalogue of items for sale on an online store.</li>
 </ul>
-<p><code class="codehilite">selenium</code> module.</p>
+<p><code class="codehilite"><span class="n">selenium</span></code> module.</p>
 <p>Launches and controls a web browser. Fill and submit forms. Simulate mouse clicks. Find elements on a page. Click on a page. Send special keys.</p>
 <p>Combining modules :</p>
 <ul>
@@ -1348,7 +1353,7 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Link verification.</li>
 </ul>
 <h2 id="chapter-12-excel-spreadsheets">Chapter 12, Excel Spreadsheets<a class="headerlink" href="#chapter-12-excel-spreadsheets" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">openpyxl</code> module.</p>
+<p><code class="codehilite"><span class="n">openpyxl</span></code> module.</p>
 <p>Read Excel documents. Open Excel documents. Get sheets from a workbook. Get cells from the sheets. Convert letters and numbers. Get rows and columns from sheets. Write results to a file.</p>
 <p>Use:</p>
 <ul>
@@ -1374,7 +1379,7 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Convert text files to spreadsheets, vice-versa.</li>
 </ul>
 <h2 id="chapter-13-pdf-and-word-documents">Chapter 13, PDF and Word Documents<a class="headerlink" href="#chapter-13-pdf-and-word-documents" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">PyPDF2</code> module.</p>
+<p><code class="codehilite"><span class="n">PyPDF2</span></code> module.</p>
 <p>Extract text from a PDF. Decrypt a PDF. Create PDF. Copy pages, rotate pages, overlay pages from a PDF. Add a logo, a timestamp, a watermark to a PDF.</p>
 <p>Use:</p>
 <ul>
@@ -1383,7 +1388,7 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Reorder pages.</li>
 <li>Create a PDF from only those pages that have some specific text.</li>
 </ul>
-<p><code class="codehilite">python-docx</code> module.</p>
+<p><code class="codehilite"><span class="n">python</span><span class="o">-</span><span class="n">docx</span></code> module.</p>
 <p>Read word documents. Get the full text from a .docs file. Style paragraphs. Create word documents with nondefault styles. Write word documents. Add headings, lines, page breaks, and pictures. </p>
 <p>Use:</p>
 <ul>
@@ -1392,7 +1397,7 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Brute-force PDF password breaker.</li>
 </ul>
 <h2 id="chapter-14-csv-files-and-json-data">Chapter 14, CSV Files and JSON Data<a class="headerlink" href="#chapter-14-csv-files-and-json-data" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">csv</code> module.</p>
+<p><code class="codehilite"><span class="n">csv</span></code> module.</p>
 <p>Read, open CSV. Split the file. Print CSV. Loop within a file or through many files. Write CSV. Change delimiters and lineterminators. Remove the header.</p>
 <p>Use:</p>
 <ul>
@@ -1400,9 +1405,9 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Copy specific data from a CSV file to an Excel file; vice-versa.</li>
 <li>Check for invalid data or formatting mistakes in CSV files and alert the user.</li>
 <li>Read data from CSV file as input for Python programs.</li>
-<li>Excel to CSV to Excel converter (in conjunction with the <code class="codehilite">openpyxl</code> module).</li>
+<li>Excel to CSV to Excel converter (in conjunction with the <code class="codehilite"><span class="n">openpyxl</span></code> module).</li>
 </ul>
-<p><code class="codehilite">json</code> module.</p>
+<p><code class="codehilite"><span class="n">json</span></code> module.</p>
 <p>Alike web scraping. API. Read,  load, write, dump data.</p>
 <p>Use:</p>
 <ul>
@@ -1412,18 +1417,18 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 <li>Pull weather data from multiple sites to show all at once, or calculate and show the average of multiple weather predictions.</li>
 </ul>
 <h2 id="chapter-15-time-scheduling-tasks-and-launching-programs">Chapter 15, Time, Scheduling Tasks, and Launching Programs<a class="headerlink" href="#chapter-15-time-scheduling-tasks-and-launching-programs" title="Permanent link">&para;</a></h2>
-<p><code class="codehilite">time</code> module.</p>
+<p><code class="codehilite"><span class="n">time</span></code> module.</p>
 <p>Read the system clock for the current time. Pause a program (sleep). Round numbers.</p>
 <p>Use:</p>
 <ul>
 <li>Track how much time spent on tasks with a stopwatch.</li>
 <li>Record track times or lap times.</li>
-<li>Build a program that launches other programs on a schedule by using the <code class="codehilite">subprocess</code> and <code class="codehilite">threading</code> modules.</li>
+<li>Build a program that launches other programs on a schedule by using the <code class="codehilite"><span class="n">subprocess</span></code> and <code class="codehilite"><span class="n">threading</span></code> modules.</li>
 <li>Create a timesheet app that records when you enter data, and use the current time to clock them in or out.</li>
-<li>Add a feature to a program to display the elapsed time since a process started (in conjunction with the <code class="codehilite">requests</code> module).</li>
+<li>Add a feature to a program to display the elapsed time since a process started (in conjunction with the <code class="codehilite"><span class="n">requests</span></code> module).</li>
 <li>Check how long a program has been running and offer the user a chance to cancel tasks.</li>
 </ul>
-<p><code class="codehilite">datetime</code> module.</p>
+<p><code class="codehilite"><span class="n">datetime</span></code> module.</p>
 <p>Compute time and date delta. Retrieve a specific moment. Add a timestamp. Add pauses to a routine. Convert datetime object to strings. Convert strings to datetime objects.   </p>
 <p>Use:</p>
 <ul>
@@ -1438,23 +1443,23 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 </ul>
 <h2 id="chapter-16-sending-email-and-text-messages">Chapter 16, Sending Email and Text Messages<a class="headerlink" href="#chapter-16-sending-email-and-text-messages" title="Permanent link">&para;</a></h2>
 <p><sub>http, smtp, mail, imap</sub></p>
-<p><code class="codehilite">smtplib</code> module.</p>
+<p><code class="codehilite"><span class="n">smtplib</span></code> module.</p>
 <p>Connect to an SMTP server. Log in. Search for emails. Send a message. Encrypt emails. Retrieve and delete emails. Disconnect from the SMTP server.</p>
-<p><code class="codehilite">imapclient</code> module.</p>
+<p><code class="codehilite"><span class="n">imapclient</span></code> module.</p>
 <p>Connect to an IMAP server. Log in. Search for emails. Fetch an email and mark it as read. Get email addresses from a raw message. Get the body from a raw message. Delete emails. Disconnect from the IMAP server.</p>
 <p>Use:</p>
 <ul>
 <li>Send members dues reminders.</li>
 <li>Send text messages.</li>
 <li>Random emailer.</li>
-<li>&lsquo;Umbrella&rsquo; reminder (in conjunction with weather forecasts and the <code class="codehilite">requests</code> module).</li>
+<li>&lsquo;Umbrella&rsquo; reminder (in conjunction with weather forecasts and the <code class="codehilite"><span class="n">requests</span></code> module).</li>
 <li>Auto-unsubscriber.</li>
 </ul>
-<p><code class="codehilite">twilio</code> module.</p>
+<p><code class="codehilite"><span class="n">twilio</span></code> module.</p>
 <p>Send text messages, SMS.</p>
 <h2 id="chapter-17-manipulating-images">Chapter 17, Manipulating Images<a class="headerlink" href="#chapter-17-manipulating-images" title="Permanent link">&para;</a></h2>
 <p>Color and RGBA crash course!</p>
-<p><code class="codehilite">PIL</code> module.</p>
+<p><code class="codehilite"><span class="n">PIL</span></code> module.</p>
 <p>Manipulate images with Pillow. Work with the image data type. Crop, copy, paste an image. Multiply images tiles. Resize, rotate, flip an image. Change pixels. Draw on images (points, lines, rectangles, ellipses, polygons, text). </p>
 <p>Use:</p>
 <ul>
@@ -1466,7 +1471,7 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
 </ul>
 <h2 id="chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation">Chapter 18, Controlling the Keyboard and Mouse with GUI Automation<a class="headerlink" href="#chapter-18-controlling-the-keyboard-and-mouse-with-gui-automation" title="Permanent link">&para;</a></h2>
 <p><sub>virtual keystrokes, mouse clicks</sub></p>
-<p><code class="codehilite">pyautogui</code> module and dependencies based of the OS in use.</p>
+<p><code class="codehilite"><span class="n">pyautogui</span></code> module and dependencies based of the OS in use.</p>
 <p>Shutdown the computer. Log out from a session. Pauses, fail-safes. Control mouse movements and move the mouse. Get the mouse position and control the mouse. Control the keyboard. Send a string from the keyboard. Type in key name. Press and release buttons. Activate hotkey.</p>
 <p>Use:</p>
 <ul>
@@ -1574,25 +1579,17 @@ Multiline comments: <code class="codehilite">&quot;&quot;&quot; &quot;&quot;&quo
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>

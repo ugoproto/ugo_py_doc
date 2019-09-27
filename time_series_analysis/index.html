@@ -34,7 +34,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -53,12 +53,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
@@ -66,6 +66,34 @@
     
     
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-93008985-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -78,24 +106,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -124,22 +135,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                ugo_py_doc
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              ugo_py_doc
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Time Series Analysis
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -162,7 +172,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -173,20 +182,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
           </div>
         </div>
       
@@ -199,7 +206,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -222,20 +229,18 @@
 
   
 
-
-  <a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      ugo_py_doc
+<a href="https://github.com/ugoproto/ugo_py_doc.git/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    ugo_py_doc
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -578,35 +583,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#approach" title="Approach" class="md-nav__link">
+  <a href="#approach" class="md-nav__link">
     Approach
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importing-packages-and-the-data" title="Importing Packages and the Data" class="md-nav__link">
+  <a href="#importing-packages-and-the-data" class="md-nav__link">
     Importing Packages and the Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wrangle-the-data" title="Wrangle the Data" class="md-nav__link">
+  <a href="#wrangle-the-data" class="md-nav__link">
     Wrangle the Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploratory-data-analysis-eda" title="Exploratory Data Analysis (EDA)" class="md-nav__link">
+  <a href="#exploratory-data-analysis-eda" class="md-nav__link">
     Exploratory Data Analysis (EDA)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#trends-and-seasonality-in-time-series" title="Trends and Seasonality in Time Series" class="md-nav__link">
+  <a href="#trends-and-seasonality-in-time-series" class="md-nav__link">
     Trends and Seasonality in Time Series
   </a>
   
@@ -614,14 +619,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identifying-trends-in-time-series" title="Identifying Trends in Time Series" class="md-nav__link">
+  <a href="#identifying-trends-in-time-series" class="md-nav__link">
     Identifying Trends in Time Series
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seasonal-patterns-in-time-series" title="Seasonal Patterns in Time Series" class="md-nav__link">
+  <a href="#seasonal-patterns-in-time-series" class="md-nav__link">
     Seasonal Patterns in Time Series
   </a>
   
@@ -629,7 +634,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#first-order-differencing" title="First-order differencing" class="md-nav__link">
+  <a href="#first-order-differencing" class="md-nav__link">
     First-order differencing
   </a>
   
@@ -641,7 +646,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#periodicity-and-autocorrelation" title="Periodicity and Autocorrelation" class="md-nav__link">
+  <a href="#periodicity-and-autocorrelation" class="md-nav__link">
     Periodicity and Autocorrelation
   </a>
   
@@ -649,21 +654,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-word-about-correlation" title="A Word about Correlation" class="md-nav__link">
+  <a href="#a-word-about-correlation" class="md-nav__link">
     A Word about Correlation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#periodicity-and-autocorrelation-continued" title="Periodicity and Autocorrelation (continued)" class="md-nav__link">
+  <a href="#periodicity-and-autocorrelation-continued" class="md-nav__link">
     Periodicity and Autocorrelation (continued)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#autocorrelation" title="Autocorrelation" class="md-nav__link">
+  <a href="#autocorrelation" class="md-nav__link">
     Autocorrelation
   </a>
   
@@ -680,7 +685,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#forecasts-arima" title="Forecasts, ARIMA..." class="md-nav__link">
+  <a href="#forecasts-arima" class="md-nav__link">
     Forecasts, ARIMA...
   </a>
   
@@ -889,35 +894,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#approach" title="Approach" class="md-nav__link">
+  <a href="#approach" class="md-nav__link">
     Approach
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importing-packages-and-the-data" title="Importing Packages and the Data" class="md-nav__link">
+  <a href="#importing-packages-and-the-data" class="md-nav__link">
     Importing Packages and the Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wrangle-the-data" title="Wrangle the Data" class="md-nav__link">
+  <a href="#wrangle-the-data" class="md-nav__link">
     Wrangle the Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exploratory-data-analysis-eda" title="Exploratory Data Analysis (EDA)" class="md-nav__link">
+  <a href="#exploratory-data-analysis-eda" class="md-nav__link">
     Exploratory Data Analysis (EDA)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#trends-and-seasonality-in-time-series" title="Trends and Seasonality in Time Series" class="md-nav__link">
+  <a href="#trends-and-seasonality-in-time-series" class="md-nav__link">
     Trends and Seasonality in Time Series
   </a>
   
@@ -925,14 +930,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#identifying-trends-in-time-series" title="Identifying Trends in Time Series" class="md-nav__link">
+  <a href="#identifying-trends-in-time-series" class="md-nav__link">
     Identifying Trends in Time Series
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seasonal-patterns-in-time-series" title="Seasonal Patterns in Time Series" class="md-nav__link">
+  <a href="#seasonal-patterns-in-time-series" class="md-nav__link">
     Seasonal Patterns in Time Series
   </a>
   
@@ -940,7 +945,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#first-order-differencing" title="First-order differencing" class="md-nav__link">
+  <a href="#first-order-differencing" class="md-nav__link">
     First-order differencing
   </a>
   
@@ -952,7 +957,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#periodicity-and-autocorrelation" title="Periodicity and Autocorrelation" class="md-nav__link">
+  <a href="#periodicity-and-autocorrelation" class="md-nav__link">
     Periodicity and Autocorrelation
   </a>
   
@@ -960,21 +965,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-word-about-correlation" title="A Word about Correlation" class="md-nav__link">
+  <a href="#a-word-about-correlation" class="md-nav__link">
     A Word about Correlation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#periodicity-and-autocorrelation-continued" title="Periodicity and Autocorrelation (continued)" class="md-nav__link">
+  <a href="#periodicity-and-autocorrelation-continued" class="md-nav__link">
     Periodicity and Autocorrelation (continued)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#autocorrelation" title="Autocorrelation" class="md-nav__link">
+  <a href="#autocorrelation" class="md-nav__link">
     Autocorrelation
   </a>
   
@@ -991,7 +996,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#forecasts-arima" title="Forecasts, ARIMA..." class="md-nav__link">
+  <a href="#forecasts-arima" class="md-nav__link">
     Forecasts, ARIMA...
   </a>
   
@@ -1133,20 +1138,20 @@
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;class &#39;pandas.core.frame.DataFrame&#39;&amp;gt;
-RangeIndex: 168 entries, 0 to 167
-Data columns (total 4 columns):
-Month                   168 non-null object
-diet: (Worldwide)       168 non-null int64
-gym: (Worldwide)        168 non-null int64
-finance: (Worldwide)    168 non-null int64
-dtypes: int64(3), object(1)
-memory usage: 5.3+ KB
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="k">class</span> <span class="s1">&#39;pandas.core.frame.DataFrame&#39;</span><span class="o">&gt;</span>
+<span class="n">RangeIndex</span><span class="p">:</span> <span class="mi">168</span> <span class="n">entries</span><span class="p">,</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">167</span>
+<span class="k">Data</span> <span class="n">columns</span> <span class="p">(</span><span class="n">total</span> <span class="mi">4</span> <span class="n">columns</span><span class="p">):</span>
+<span class="k">Month</span>                   <span class="mi">168</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="k">object</span>
+<span class="n">diet</span><span class="p">:</span> <span class="p">(</span><span class="n">Worldwide</span><span class="p">)</span>       <span class="mi">168</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">gym</span><span class="p">:</span> <span class="p">(</span><span class="n">Worldwide</span><span class="p">)</span>        <span class="mi">168</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">finance</span><span class="p">:</span> <span class="p">(</span><span class="n">Worldwide</span><span class="p">)</span>    <span class="mi">168</span> <span class="n">non</span><span class="o">-</span><span class="k">null</span> <span class="n">int64</span>
+<span class="n">dtypes</span><span class="p">:</span> <span class="n">int64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="k">object</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">memory</span> <span class="k">usage</span><span class="p">:</span> <span class="mi">5</span><span class="p">.</span><span class="mi">3</span><span class="o">+</span> <span class="n">KB</span>
 </pre></div>
 </td></tr></table>
 
 <h2 id="wrangle-the-data">Wrangle the Data<a class="headerlink" href="#wrangle-the-data" title="Permanent link">&para;</a></h2>
-<p>Rename the columns of the DataFrame <code class="codehilite">df</code> so that they have no whitespaces in them.</p>
+<p>Rename the columns of the DataFrame <code class="codehilite"><span class="n">df</span></code> so that they have no whitespaces in them.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;diet&#39;</span><span class="p">,</span> <span class="s1">&#39;gym&#39;</span><span class="p">,</span> <span class="s1">&#39;finance&#39;</span><span class="p">]</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1217,12 +1222,12 @@ memory usage: 5.3+ KB
 </table>
 </div>
 
-<p>Turn the <code class="codehilite">month</code> column into a <code class="codehilite">DateTime</code> data type (vs. <code class="codehilite">object</code>).</p>
+<p>Turn the <code class="codehilite"><span class="k">month</span></code> column into a <code class="codehilite"><span class="n">DateTime</span></code> data type (vs. <code class="codehilite"><span class="k">object</span></code>).</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">month</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
-<p>Make it the index of the DataFrame. Include the <code class="codehilite">inplace</code> argument when setting the index of the DataFrame <code class="codehilite">df</code> so that we alter the original index and set it to the <code class="codehilite">month</code> column.</p>
+<p>Make it the index of the DataFrame. Include the <code class="codehilite"><span class="n">inplace</span></code> argument when setting the index of the DataFrame <code class="codehilite"><span class="n">df</span></code> so that we alter the original index and set it to the <code class="codehilite"><span class="k">month</span></code> column.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1294,7 +1299,7 @@ memory usage: 5.3+ KB
 </div>
 
 <h2 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)<a class="headerlink" href="#exploratory-data-analysis-eda" title="Permanent link">&para;</a></h2>
-<p>Use a built-in <code class="codehilite">pandas</code> visualization method <code class="codehilite"><span class="na">.plot</span><span class="p">()</span></code> to plot the data. Specify the label on the x-axis.</p>
+<p>Use a built-in <code class="codehilite"><span class="n">pandas</span></code> visualization method <code class="codehilite"><span class="na">.plot</span><span class="p">()</span></code> to plot the data. Specify the label on the x-axis.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">);</span>
@@ -1334,7 +1339,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.text.Text at 0x7f3c0630c240&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="nb">text</span><span class="p">.</span><span class="nb">Text</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c0630c240</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1357,7 +1362,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.text.Text at 0x7f3c0da837f0&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="nb">text</span><span class="p">.</span><span class="nb">Text</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c0da837f0</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1380,7 +1385,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.text.Text at 0x7f3c0621c7f0&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="nb">text</span><span class="p">.</span><span class="nb">Text</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c0621c7f0</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1485,7 +1490,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7f3c060fb5f8&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c060fb5f8</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1503,7 +1508,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;seaborn.axisgrid.FacetGrid at 0x7f3c060b7438&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">seaborn</span><span class="p">.</span><span class="n">axisgrid</span><span class="p">.</span><span class="n">FacetGrid</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c060b7438</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1719,7 +1724,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.text.Text at 0x7f3c062fd390&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="nb">text</span><span class="p">.</span><span class="nb">Text</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c062fd390</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1774,7 +1779,7 @@ memory usage: 5.3+ KB
 </table>
 </div>
 
-<p><code class="codehilite">diet</code> and <code class="codehilite">gym</code> are negatively correlated. However, from looking at the times series, it looks as though their seasonal components would be positively correlated and their trends negatively correlated. The actual correlation coefficient is actually capturing both of those.</p>
+<p><code class="codehilite"><span class="n">diet</span></code> and <code class="codehilite"><span class="n">gym</span></code> are negatively correlated. However, from looking at the times series, it looks as though their seasonal components would be positively correlated and their trends negatively correlated. The actual correlation coefficient is actually capturing both of those.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># first-order differences</span>
@@ -1783,12 +1788,12 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.text.Text at 0x7f3c05fcfac8&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="nb">text</span><span class="p">.</span><span class="nb">Text</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c05fcfac8</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
 <p><img alt="" src="../img/time_series_analysis/output_32_1.png" /></p>
-<p><code class="codehilite">diet</code> and <code class="codehilite">gym</code> are incredibly correlated once we remove the trend.</p>
+<p><code class="codehilite"><span class="n">diet</span></code> and <code class="codehilite"><span class="n">gym</span></code> are incredibly correlated once we remove the trend.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 </pre></div>
 </td></tr></table>
@@ -1846,7 +1851,7 @@ memory usage: 5.3+ KB
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x7f3c05f587b8&amp;gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="p">.</span><span class="n">axes</span><span class="p">.</span><span class="n">_subplots</span><span class="p">.</span><span class="n">AxesSubplot</span> <span class="k">at</span> <span class="mi">0</span><span class="n">x7f3c05f587b8</span><span class="o">&gt;</span>
 </pre></div>
 </td></tr></table>
 
@@ -1918,25 +1923,17 @@ memory usage: 5.3+ KB
           Material for MkDocs</a>
       </div>
       
-        
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      <script src="../assets/javascripts/application.c648116f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-      
-    
-    
-      
-        <script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-93008985-2","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(a){a.host!=document.location.host&&a.addEventListener("click",function(){var e=a.getAttribute("data-md-action")||"follow";ga("send","event","outbound",e,a.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
   </body>
