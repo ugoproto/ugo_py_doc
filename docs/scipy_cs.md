@@ -37,7 +37,13 @@
     - Probabilities and Statistics;
     - Linear Algebra and Calculus.
 
----
+- [Super pense-bête Machine Learning](pdf/super-pense-bete-machine-learning.pdf). PDF only.
+
+- [Microsoft Azure Machine Learning](pdf/microsoft_ml_cs.pdf). PDF.
+
+<center>
+![](img/scipy_cs/microsoft_ml_cs.png)
+</center>
 
 - [scikit-learn](pdf/Scikit_Learn_Cheat_Sheet_Python.pdf). PDF.
 
@@ -62,8 +68,6 @@
 
 ![](img/scipy_cs/NumPy_SciPy_Pandas_Quandl_Cheat_Sheetd.png)
 </center>
-
----
 
 - [Numpy](pdf/Numpy_Python_Cheat_Sheet.pdf). PDF.
 
@@ -101,8 +105,6 @@
 <center>
 ![](img/scipy_cs/PySpark_Cheat_Sheet_Python.png)
 </center>
-
----
 
 - [PySpark SQL](pdf/PySpark_SQL_Cheat_Sheet_Python.pdf). PDF.
 

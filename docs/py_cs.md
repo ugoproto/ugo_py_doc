@@ -1,9 +1,6 @@
 # Python 3
 
 - [Python 3 Notes](pdf/Python_Notes.pdf). PDF only.
-
----
-
 - [Python 3](pdf/Python-3-Cheatsheet.pdf). PDF.
 
 <center>
@@ -12,15 +9,11 @@
 ![](img/py_cs/Python-3-Cheatsheetb.png)
 </center>
 
----
-
 - [Python, Intermediate](pdf/python-cheat-sheet-intermediate.pdf). PDF.
 
 <center>
 ![](img/py_cs/python-cheat-sheet-intermediate.png)
 </center>
-
----
 
 - [Python 3](pdf/Python-Cheat-Sheet-by-CodeConquestDOTcom.pdf). PDF.
 
@@ -64,8 +57,6 @@
 ![](img/py_cs/Python-Cheatsheet-1a.png)
 </center>
 
----
-
 - [Python 2](pdf/Python-Cheatsheet-2.pdf). PDF.
    
 <center>
@@ -76,8 +67,6 @@
 ![](img/py_cs/Python-Cheatsheet-2c.png)
 </center>
 
----
-
 - [Python 2 Quick Reference](pdf/Python-Quick-Reference'Sheet.pdf). PDF.
 
 <center>
@@ -85,8 +74,6 @@
 img/
 ![](img/py_cs/Python-Quick-Reference-Sheetb.png)
 </center>
-
----
 
 - [Python 2](pdf/PythonCheatsheet-3.pdf). PDF.
 

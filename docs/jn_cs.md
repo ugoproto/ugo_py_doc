@@ -17,8 +17,6 @@
 ![](img/scipy_cs/Jupyter_Notebook_Cheat_Sheet.png)
 </center>
 
----
-
 - [Jupyter Notebook](pdf/weidadeyue_jupyter-notebook.pdf). PDF
 
 <center>
@@ -77,8 +75,6 @@ who
 ```
 
     a	 b	 c	 d	 
-
------
 
 # Logging
 
@@ -154,8 +150,6 @@ logstate
     Timestamping   : False
     State          : active
 
------
-
 # Magic & Help
 
 List, help.
@@ -188,8 +182,6 @@ Open a window about the command (minimum, maximum help).
 ```python
 %alias??
 ```
-
------
 
 # Function
 
@@ -231,8 +223,6 @@ Open a window about the function.
 pinfo print_number
 
 ```
-
------
 
 # Navigation
 
@@ -284,8 +274,6 @@ dhist
 
     Directory history (kept in _dh)
     0: /home/user
-
------
 
 # External
 
