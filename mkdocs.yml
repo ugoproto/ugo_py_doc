@@ -6,33 +6,33 @@ repo_url: 'https://github.com/ugoproto/ugo_py_doc.git'
 site_description: 'A Python documentation website.'
 #site_author:
 #copyright:
-google_analytics: 
-  - 'UA-93008985-2'
-  - 'auto'
 
 theme: 
   name: 'material' # 'readthedocs'
-  language: 'en'
-  search:
-    language: 'en, fr' 
+  locale: 'en'
+  analytics: 
+    gtag: 'UA-93008985-2'
 ## 'Volkorn' 'Libre Baskerville' 'Merriweather'
 ## https://fonts.google.com
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-## https://fonts.google.com
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
   palette:
     primary: 'amber'
     accent: 'indigo'
 ## red, pink, purple, deep purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange, brown, grey and blue-grey
-  logo:
-    icon: 'layers'
-## https://material.io/icons/
+  icon:
+    logo: 'material/layers'
   favicon: 'img/favicon.ico' 
-## default, assets/images/favicon.png
   feature:
     tabs: false
-     
+
+plugins:
+    - search:
+        lang:
+          - en
+          - fr
+    
 ## Les icônes gitlab, twitter, linkedin dans le bandeau du bas.
 #extra:
 #  social:
@@ -45,6 +45,11 @@ theme:
 #  disqus: 'your-shortname'
 ## https://disqus.com/
 ## repo_icon: 'github' # gitlab, bitbucket
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+extra_css:
+  - extra.css
 
 nav:
   - Home: 'index.md'
@@ -84,11 +89,6 @@ nav:
   - Manuals:
     - Managing Your Biological Data with Python: 'managing_your_biological_data_with_python.md'
     - Python for Education: 'python_for_education.md'
-
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
-extra_css:
-  - extra.css
 
 markdown_extensions:
 # python-markdown
